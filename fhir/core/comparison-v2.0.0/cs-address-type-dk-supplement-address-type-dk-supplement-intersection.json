@@ -1,0 +1,55 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "512d43d9-837c-41b7-8ae7-5b5914acb92d-6",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/512d43d9-837c-41b7-8ae7-5b5914acb92d-6",
+  "name" : "IntersectionAddressTypeAndAddressType",
+  "title" : "Intersection of null And DK Address Type",
+  "status" : "draft",
+  "date" : "2022-11-08T22:33:22+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "concept" : [{
+    "code" : "postal",
+    "display" : "Postal",
+    "definition" : "Mailing addresses - PO Boxes and care-of addresses.",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Post"
+    }]
+  },
+  {
+    "code" : "physical",
+    "display" : "Physical",
+    "definition" : "A physical address that can be visited.",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Fysisk"
+    }]
+  },
+  {
+    "code" : "both",
+    "display" : "Postal & Physical",
+    "definition" : "An address that is both physical and postal.",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Post & fysisk"
+    }]
+  }]
+}

@@ -1,0 +1,31 @@
+<html><head><title>Terminology Server Log</title></head><body><h2>Terminology Server Log</h2>
+<hr/><a name="l1"> </a>
+<p>#1</p>
+<pre>
+POST http://tx.fhir.org/r4/ValueSet/$expand?_limit=1000&_incomplete=true HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;x-system-cache-id&quot;,&quot;valueString&quot;:&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;},{&quot;name&quot;:&quot;includeDefinition&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;excludeNested&quot;,&quot;valueBoolean&quot;:true},{&quot;name&quot;:&quot;tx-resource&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;CodeSystem&quot;,&quot;id&quot;:&quot;dk-marital-status&quot;,&quot;url&quot;:&quot;http://hl7.dk/fhir/core/CodeSystem/dk-marital-status&quot;,&quot;version&quot;:&quot;2.1.0&quot;,&quot;name&quot;:&quot;DkMaritalStatus&quot;,&quot;title&quot;:&quot;DK Marital Statuses&quot;,&quot;status&quot;:&quot;active&quot;,&quot;experimental&quot;:false,&quot;date&quot;:&quot;2022-11-08T22:29:29+01:00&quot;,&quot;publisher&quot;:&quot;HL7 Denmark&quot;,&quot;contact&quot;:[{&quot;name&quot;:&quot;HL7 Denmark&quot;,&quot;telecom&quot;:[{&quot;system&quot;:&quot;url&quot;,&quot;value&quot;:&quot;http://www.hl7.dk&quot;},{&quot;system&quot;:&quot;email&quot;,&quot;value&quot;:&quot;jenskristianvilladsen@gmail.com&quot;}]}],&quot;description&quot;:&quot;DK marital statuses&quot;,&quot;jurisdiction&quot;:[{&quot;coding&quot;:[{&quot;system&quot;:&quot;urn:iso:std:iso:3166&quot;,&quot;code&quot;:&quot;DK&quot;,&quot;display&quot;:&quot;Denmark&quot;}]}],&quot;caseSensitive&quot;:false,&quot;content&quot;:&quot;complete&quot;,&quot;count&quot;:2,&quot;concept&quot;:[{&quot;code&quot;:&quot;P&quot;,&quot;display&quot;:&quot;Registered partnership&quot;,&quot;designation&quot;:[{&quot;language&quot;:&quot;da&quot;,&quot;value&quot;:&quot;Registreret partnerskab&quot;}]},{&quot;code&quot;:&quot;O&quot;,&quot;display&quot;:&quot;Dissolved partnership&quot;,&quot;designation&quot;:[{&quot;language&quot;:&quot;da&quot;,&quot;value&quot;:&quot;Ophævet partnerskab&quot;}]}]}},{&quot;name&quot;:&quot;cache-id&quot;,&quot;valueString&quot;:&quot;ac260b4e-7d95-497e-9241-5adda2138ace&quot;},{&quot;name&quot;:&quot;valueSet&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;ValueSet&quot;,&quot;status&quot;:&quot;active&quot;,&quot;compose&quot;:{&quot;inactive&quot;:true,&quot;include&quot;:[{&quot;system&quot;:&quot;http://hl7.dk/fhir/core/CodeSystem/dk-marital-status&quot;,&quot;concept&quot;:[{&quot;code&quot;:&quot;P&quot;,&quot;display&quot;:&quot;Registered partnership&quot;,&quot;designation&quot;:[{&quot;language&quot;:&quot;da&quot;,&quot;value&quot;:&quot;Registreret partnerskab&quot;}]},{&quot;code&quot;:&quot;O&quot;,&quot;display&quot;:&quot;Dissolved partnership&quot;,&quot;designation&quot;:[{&quot;language&quot;:&quot;da&quot;,&quot;value&quot;:&quot;Ophævet partnerskab&quot;}]}]}]}}},{&quot;name&quot;:&quot;_limit&quot;,&quot;valueString&quot;:&quot;1000&quot;},{&quot;name&quot;:&quot;_incomplete&quot;,&quot;valueString&quot;:&quot;true&quot;}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:649
+content-type:application/fhir+json
+date:Tue, 08 Nov 2022 21:29:33 GMT
+last-modified:Tue, 08 Nov 2022 21:29:33 GMT
+pragma:no-cache
+server:nginx
+x-gdpr-disclosure:All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+x-request-id:48-522440
+
+{&quot;resourceType&quot; : &quot;ValueSet&quot;,&quot;language&quot; : &quot;en&quot;,&quot;status&quot; : &quot;active&quot;,&quot;expansion&quot; : {&quot;identifier&quot; : &quot;urn:uuid:8b0f6d0a-3025-4a35-8511-bc4f4e970ae3&quot;,&quot;timestamp&quot; : &quot;2022-11-08T21:29:33.512Z&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;limitedExpansion&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;excludeNested&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;version&quot;,&quot;valueUri&quot; : &quot;http://hl7.dk/fhir/core/CodeSystem/dk-marital-status|2.1.0&quot;}],&quot;contains&quot; : [{&quot;system&quot; : &quot;http://hl7.dk/fhir/core/CodeSystem/dk-marital-status&quot;,&quot;code&quot; : &quot;P&quot;,&quot;display&quot; : &quot;Registreret partnerskab&quot;},{&quot;system&quot; : &quot;http://hl7.dk/fhir/core/CodeSystem/dk-marital-status&quot;,&quot;code&quot; : &quot;O&quot;,&quot;display&quot; : &quot;Ophævet partnerskab&quot;}]}}
+</pre>
+</head></html>

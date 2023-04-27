@@ -1,0 +1,32 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "942e5ffd-e57b-49ae-9332-a34ac435f2ed-36",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/942e5ffd-e57b-49ae-9332-a34ac435f2ed-36",
+  "name" : "IntersectionDK Marital Status CodesAndDK Marital Status Codes",
+  "title" : "Intersection of null And null",
+  "status" : "active",
+  "date" : "2022-09-14T19:18:52+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "concept" : [{
+    "code" : "P",
+    "display" : "Registered partnership",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Registreret partnerskab"
+    }]
+  },
+  {
+    "code" : "O",
+    "display" : "Dissolved partnership",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Ophævet partnerskab"
+    }]
+  }]
+}

@@ -1,0 +1,44 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "942e5ffd-e57b-49ae-9332-a34ac435f2ed-12",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/942e5ffd-e57b-49ae-9332-a34ac435f2ed-12",
+  "name" : "IntersectionAdministrativeGenderDkSupplementAndAdministrativeGenderDkSupplement",
+  "title" : "Intersection of null And null",
+  "status" : "draft",
+  "date" : "2022-09-14T19:18:52+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "concept" : [{
+    "code" : "male",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Mand"
+    }]
+  },
+  {
+    "code" : "female",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Kvinde"
+    }]
+  },
+  {
+    "code" : "other",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Andet"
+    }]
+  },
+  {
+    "code" : "unknown",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Ukendt"
+    }]
+  }]
+}
