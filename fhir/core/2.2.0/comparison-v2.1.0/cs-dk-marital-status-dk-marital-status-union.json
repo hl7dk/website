@@ -1,0 +1,32 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "027da29f-beb3-429d-b737-26c92bc842ee-32",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/027da29f-beb3-429d-b737-26c92bc842ee-32",
+  "name" : "UnionDkMaritalStatusAndDkMaritalStatus",
+  "title" : "Union of DK Marital Statuses And DK Marital Statuses",
+  "status" : "active",
+  "date" : "2023-04-30T22:08:12+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "concept" : [{
+    "code" : "P",
+    "display" : "Registered partnership",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Registreret partnerskab"
+    }]
+  },
+  {
+    "code" : "O",
+    "display" : "Dissolved partnership",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Ophævet partnerskab"
+    }]
+  }]
+}

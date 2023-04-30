@@ -1,0 +1,82 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "dk-core-municipality-codes-greenland"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td style=\"white-space:nowrap\">0955<a name=\"dk-core-municipality-codes-greenland-0955\"> </a></td><td>Kujalleq</td><td>Kujalleq</td></tr><tr><td style=\"white-space:nowrap\">0956<a name=\"dk-core-municipality-codes-greenland-0956\"> </a></td><td>Sermersooq</td><td>Sermersooq</td></tr><tr><td style=\"white-space:nowrap\">0957<a name=\"dk-core-municipality-codes-greenland-0957\"> </a></td><td>Qeqqata</td><td>Qeqqata</td></tr><tr><td style=\"white-space:nowrap\">0959<a name=\"dk-core-municipality-codes-greenland-0959\"> </a></td><td>Qeqertalik</td><td>Qeqertalik</td></tr><tr><td style=\"white-space:nowrap\">0960<a name=\"dk-core-municipality-codes-greenland-0960\"> </a></td><td>Avannaata</td><td>Avannaata</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.2.0"] ; # 
+  fhir:name [ fhir:v "GreenlandMunicipalityCodes"] ; # 
+  fhir:title [ fhir:v "DK Greenland Municipality Codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-04-30T22:07:34+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Denmark" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "jenskristianvilladsen@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Greenland municipality codes as defined by https://www.iso.org/obp/ui/#iso:code:3166:GL and https://cpr.dk/cpr-systemet/kommunesammenlaegninger-opdeling/groenland-2018/"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "0955" ] ;
+     fhir:display [ fhir:v "Kujalleq" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Kujalleq" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0956" ] ;
+     fhir:display [ fhir:v "Sermersooq" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Sermersooq" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0957" ] ;
+     fhir:display [ fhir:v "Qeqqata" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Qeqqata" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0959" ] ;
+     fhir:display [ fhir:v "Qeqertalik" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Qeqertalik" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0960" ] ;
+     fhir:display [ fhir:v "Avannaata" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Avannaata" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

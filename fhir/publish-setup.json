@@ -1,0 +1,17 @@
+{
+    "website": {
+      "style": "fhir.layout",
+      "url": "http://hl7.dk/",
+      "server": "apache",
+      "org": "HL7 Denmark",
+      "no-registry": "1",
+      "layout": {
+        "id": "hl7.fhir.dk.[code]",
+        "canonical": "http://hl7.dk/fhir/[code]"
+      }
+    },
+    "feeds": {
+      "package": "package-feed.xml",
+      "publication": "publication-feed.xml"
+    }
+  }

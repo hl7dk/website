@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="c99d3f16-6c3c-42c4-b664-e30c51d22295"/>
+  <id value="8640bce8-4d11-41f0-b3eb-7824f3411527"/>
   <meta>
-    <lastUpdated value="2022-11-08T22:32:51.332+01:00"/>
+    <lastUpdated value="2023-04-30T22:11:32.962+02:00"/>
   </meta>
   <type value="collection"/>
   <entry>
     <fullUrl value="http://hl7.dk/fhir/core/ValueSet/DkCoreProfessionGroupValueSet"/>
     <resource>
       <ValueSet>
-        <id value="DkCoreProfessionGroupValueSet"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 21 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-DkCoreProfessionGroupCodes.html">DK Profession Group Codes v2.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-DkCoreProfessionGroupCodes.html">DK Profession Group Codes v2.2.0 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -202,12 +201,12 @@
           </div>
         </text>
         <url value="http://hl7.dk/fhir/core/ValueSet/DkCoreProfessionGroupValueSet"/>
-        <version value="2.1.0"/>
+        <version value="2.2.0"/>
         <name value="DkCoreProfessionGroupValueSet"/>
         <title value="DK Profession Group"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2022-11-08T22:32:51+01:00"/>
+        <date value="2023-04-30T22:11:32+02:00"/>
         <publisher value="HL7 Denmark"/>
         <contact>
           <name value="HL7 Denmark"/>
@@ -229,8 +228,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:21143809-cc49-4015-8719-0a26d5d8ec70"/>
-          <timestamp value="2022-11-08T22:33:51+01:00"/>
+          <identifier value="urn:uuid:706ea36e-c676-4675-8357-86eb5ead3ac6"/>
+          <timestamp value="2023-04-30T22:12:05+02:00"/>
           <total value="21"/>
           <parameter>
             <name value="excludeNested"/>
@@ -238,7 +237,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes|2.1.0"/>
+            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes|2.2.0"/>
           </parameter>
           <contains>
             <system value="http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes"/>
@@ -353,7 +352,6 @@
     <fullUrl value="http://hl7.dk/fhir/core/ValueSet/dk-marital-status"/>
     <resource>
       <ValueSet>
-        <id value="dk-marital-status"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -365,13 +363,13 @@
                   <a href="http://hl7.org/fhir/R4/valueset-marital-status.html">MaritalStatus v4.0.1 (ValueSet)</a>
                 </li>
                 <li>
-                  <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v3-MaritalStatus.html">MaritalStatus v2.1.0 (CodeSystem)</a>
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html">MaritalStatus v2.1.0 (CodeSystem)</a>
                 </li>
                 <li>
-                  <a href="CodeSystem-dk-marital-status.html">DK Marital Statuses v2.1.0 (CodeSystem)</a>
+                  <a href="CodeSystem-dk-marital-status.html">DK Marital Statuses v2.2.0 (CodeSystem)</a>
                 </li>
                 <li>
-                  <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v3-NullFlavor.html">NullFlavor v2.1.0 (CodeSystem)</a>
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-NullFlavor.html">NullFlavor v2.1.0 (CodeSystem)</a>
                 </li>
               </ul>
             </div>
@@ -393,7 +391,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-A"> </a>  
-                  <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-A">A</a>
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-A">A</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
                 <td>Annulled</td>
@@ -407,7 +405,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-D"> </a>  
-                  <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-D">D</a>
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-D">D</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
                 <td>Divorced</td>
@@ -421,7 +419,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-I"> </a>  
-                  <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-I">I</a>
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-I">I</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
                 <td>Interlocutory</td>
@@ -435,7 +433,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-L"> </a>  
-                  <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-L">L</a>
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-L">L</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
                 <td>Legally Separated</td>
@@ -446,7 +444,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-M"> </a>  
-                  <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-M">M</a>
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-M">M</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
                 <td>Married</td>
@@ -460,7 +458,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-C"> </a>  
-                  <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-C">C</a>
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-C">C</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
                 <td>Common Law</td>
@@ -476,7 +474,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-P"> </a>  
-                  <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-P">P</a>
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-P">P</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
                 <td>Polygamous</td>
@@ -490,7 +488,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-T"> </a>  
-                  <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-T">T</a>
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-T">T</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
                 <td>Domestic partner</td>
@@ -504,7 +502,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-U"> </a>  
-                  <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-U">U</a>
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-U">U</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
                 <td>unmarried</td>
@@ -518,7 +516,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-S"> </a>  
-                  <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-S">S</a>
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-S">S</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
                 <td>Never Married</td>
@@ -532,7 +530,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-W"> </a>  
-                  <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-W">W</a>
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-W">W</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
                 <td>Widowed</td>
@@ -546,7 +544,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-UNK"> </a>  
-                  <a href="http://terminology.hl7.org/4.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a>
+                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
                 <td>unknown</td>
@@ -595,7 +593,7 @@
           </div>
         </text>
         <url value="http://hl7.dk/fhir/core/ValueSet/dk-marital-status"/>
-        <version value="2.1.0"/>
+        <version value="2.2.0"/>
         <title value="DK MaritalStatus"/>
         <status value="active"/>
         <experimental value="false"/>
@@ -622,8 +620,8 @@
         </jurisdiction>
         <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:63339ae7-f84b-42e8-a97a-7c4b1c04dc44"/>
-          <timestamp value="2022-11-08T22:33:54+01:00"/>
+          <identifier value="urn:uuid:7fe022c0-de05-4b9b-a310-77251d9d8486"/>
+          <timestamp value="2023-04-30T22:12:07+02:00"/>
           <total value="14"/>
           <parameter>
             <name value="excludeNested"/>
@@ -643,7 +641,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-marital-status|2.1.0"/>
+            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-marital-status|2.2.0"/>
           </parameter>
           <contains>
             <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
@@ -723,13 +721,12 @@
     <fullUrl value="http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes"/>
     <resource>
       <ValueSet>
-        <id value="dk-core-RegionalSubDivisionCodes"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 5 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-dk-core-regional-subdivision-codes.html">DK Regional Subdivision Codes v2.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-dk-core-regional-subdivision-codes.html">DK Regional Subdivision Codes v2.2.0 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -787,12 +784,12 @@
           </div>
         </text>
         <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes"/>
-        <version value="2.1.0"/>
+        <version value="2.2.0"/>
         <name value="RegionalSubdivisionCodes"/>
         <title value="DK Regional Subdivision Codes"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2022-11-08T22:32:51+01:00"/>
+        <date value="2023-04-30T22:11:32+02:00"/>
         <publisher value="HL7 Denmark"/>
         <contact>
           <name value="HL7 Denmark"/>
@@ -814,8 +811,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5b2e7ae0-5d34-44b8-b8d5-bcabb6ba70f8"/>
-          <timestamp value="2022-11-08T22:33:56+01:00"/>
+          <identifier value="urn:uuid:ba9880a6-a2ad-4ed9-8b02-be794c0e658b"/>
+          <timestamp value="2023-04-30T22:12:11+02:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -823,7 +820,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes|2.1.0"/>
+            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes|2.2.0"/>
           </parameter>
           <contains>
             <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"/>
@@ -858,7 +855,6 @@
     <fullUrl value="http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes"/>
     <resource>
       <ValueSet>
-        <id value="dk-core-MunicipalityCodes"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -867,10 +863,10 @@
               <p>Expansion based on: </p>
               <ul>
                 <li>
-                  <a href="CodeSystem-dk-core-municipality-codes-greenland.html">DK Greenland Municipality Codes v2.1.0 (CodeSystem)</a>
+                  <a href="CodeSystem-dk-core-municipality-codes-greenland.html">DK Greenland Municipality Codes v2.2.0 (CodeSystem)</a>
                 </li>
                 <li>
-                  <a href="CodeSystem-dk-core-municipality-codes.html">DK Municipality Codes v2.1.0 (CodeSystem)</a>
+                  <a href="CodeSystem-dk-core-municipality-codes.html">DK Municipality Codes v2.2.0 (CodeSystem)</a>
                 </li>
               </ul>
             </div>
@@ -1722,12 +1718,12 @@
           </div>
         </text>
         <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes"/>
-        <version value="2.1.0"/>
+        <version value="2.2.0"/>
         <name value="MunicipalityCodes"/>
         <title value="DK Municipality Codes"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2022-11-08T22:32:51+01:00"/>
+        <date value="2023-04-30T22:11:32+02:00"/>
         <publisher value="HL7 Denmark"/>
         <contact>
           <name value="HL7 Denmark"/>
@@ -1749,8 +1745,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ace74cda-8275-4550-874a-b1756c7acdf0"/>
-          <timestamp value="2022-11-08T22:34:01+01:00"/>
+          <identifier value="urn:uuid:8a4aa8b2-0f5e-4bda-a4f8-9575567de3c3"/>
+          <timestamp value="2023-04-30T22:12:15+02:00"/>
           <total value="104"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1758,11 +1754,11 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes|2.1.0"/>
+            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes|2.2.0"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland|2.1.0"/>
+            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland|2.2.0"/>
           </parameter>
           <contains>
             <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes"/>
@@ -2292,7 +2288,6 @@
     <fullUrl value="http://hl7.dk/fhir/core/ValueSet/sor-organization-type"/>
     <resource>
       <ValueSet>
-        <id value="sor-organization-type"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -2864,12 +2859,12 @@
           </div>
         </text>
         <url value="http://hl7.dk/fhir/core/ValueSet/sor-organization-type"/>
-        <version value="2.1.0"/>
+        <version value="2.2.0"/>
         <name value="SorOrganizationType"/>
         <title value="DK SOR Organization Type"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2022-11-08T22:32:51+01:00"/>
+        <date value="2023-04-30T22:11:32+02:00"/>
         <publisher value="HL7 Denmark"/>
         <contact>
           <name value="HL7 Denmark"/>
@@ -2892,8 +2887,8 @@
         </jurisdiction>
         <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
         <expansion>
-          <identifier value="urn:uuid:bbf0efc0-e0d8-439d-952c-f70964dc50ff"/>
-          <timestamp value="2022-11-08T22:34:03+01:00"/>
+          <identifier value="urn:uuid:fa2fd21b-bc9a-4e18-ba18-3798f0fddd22"/>
+          <timestamp value="2023-04-30T22:12:17+02:00"/>
           <total value="68"/>
           <parameter>
             <name value="excludeNested"/>

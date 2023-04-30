@@ -1,5 +1,5 @@
 {
-  "version": "2.1.0",
-  "date": "20221108223211",
-  "name": "hl7.fhir.dk.core.r4b"
+  "version" : "2.2.0",
+  "date" : "20230430221106",
+  "name" : "hl7.fhir.dk.core.r4b"
 }
