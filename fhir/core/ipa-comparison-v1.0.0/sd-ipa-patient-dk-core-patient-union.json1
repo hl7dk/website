@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "9e52f66e-7bb4-4012-a8db-86836ebe2c89-5",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/9e52f66e-7bb4-4012-a8db-86836ebe2c89-5",
+  "id" : "98041a14-e3f2-454e-a5c8-0d1560df48e9-5",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/98041a14-e3f2-454e-a5c8-0d1560df48e9-5",
   "name" : "UnionIPAPatientAndDkCorePatient",
   "title" : "Union of IPA-Patient And Danish Core Patient Profile",
   "status" : "active",
-  "date" : "2023-04-30T22:11:57+02:00",
+  "date" : "2023-05-04T21:41:45+02:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -580,10 +580,10 @@
     },
     {
       "path" : "Patient.identifier.value",
-      "short" : "The value that is unique within the system.",
+      "short" : "left: The value that is unique within the system.; right: The value that is unique",
       "definition" : "The portion of the identifier typically relevant to the user and which is unique within the context of the system.",
       "comment" : "If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the [Rendered Value extension]. Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "string"
@@ -1531,7 +1531,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "The domestic partnership status of a person.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/9e52f66e-7bb4-4012-a8db-86836ebe2c89-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/98041a14-e3f2-454e-a5c8-0d1560df48e9-8"
       },
       "mapping" : [{
         "identity" : "v2",

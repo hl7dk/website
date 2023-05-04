@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "a9b7884f-b6d4-493d-84f9-cfce330cbbfc-5",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/a9b7884f-b6d4-493d-84f9-cfce330cbbfc-5",
+  "id" : "8aa5708d-92ec-44b6-a34c-d2327605b0fb-5",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/8aa5708d-92ec-44b6-a34c-d2327605b0fb-5",
   "name" : "UnionAddressTypeAndAddressType",
   "title" : "Union of DK Address Type And DK Address Type",
   "status" : "draft",
-  "date" : "2023-04-30T22:11:56+02:00",
+  "date" : "2023-05-04T21:41:43+02:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

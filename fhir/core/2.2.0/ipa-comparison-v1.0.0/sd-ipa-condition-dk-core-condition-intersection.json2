@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "ce697bd7-a7e3-439a-ba84-45c4476a62ee-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/ce697bd7-a7e3-439a-ba84-45c4476a62ee-3",
+  "id" : "24655559-3c84-40a3-b40a-990b802fd20e-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/24655559-3c84-40a3-b40a-990b802fd20e-3",
   "name" : "IntersectionIPAConditionAndDkCoreCondition",
   "title" : "Intersection of IPA-Condition And Danish Core Condition Profile",
   "status" : "active",
-  "date" : "2023-04-30T22:08:14+02:00",
+  "date" : "2023-05-04T21:36:48+02:00",
   "snapshot" : {
     "element" : [{
       "path" : "Condition",
@@ -886,7 +886,8 @@
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"]
+        "targetProfile" : ["http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient",
+        "#sd-ipa-patient-dk-core-patient"]
       }],
       "constraint" : [{
         "extension" : [{

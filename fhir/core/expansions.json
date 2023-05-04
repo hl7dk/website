@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "8640bce8-4d11-41f0-b3eb-7824f3411527",
+  "id" : "00302997-84b4-47fc-8626-2b2efa919bc4",
   "meta" : {
-    "lastUpdated" : "2023-04-30T22:11:32.962+02:00"
+    "lastUpdated" : "2023-05-04T21:41:07.274+02:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "title" : "DK Profession Group",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-04-30T22:11:32+02:00",
+      "date" : "2023-05-04T21:41:07+02:00",
       "publisher" : "HL7 Denmark",
       "contact" : [{
         "name" : "HL7 Denmark",
@@ -41,8 +41,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:706ea36e-c676-4675-8357-86eb5ead3ac6",
-        "timestamp" : "2023-04-30T22:12:05+02:00",
+        "identifier" : "urn:uuid:2ca34d12-b4a4-4675-8dbe-304b545d200f",
+        "timestamp" : "2023-05-04T21:42:04+02:00",
         "total" : 21,
         "parameter" : [{
           "name" : "excludeNested",
@@ -166,14 +166,14 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 14 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"http://hl7.org/fhir/R4/valueset-marital-status.html\">MaritalStatus v4.0.1 (ValueSet)</a></li><li><a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html\">MaritalStatus v2.1.0 (CodeSystem)</a></li><li><a href=\"CodeSystem-dk-marital-status.html\">DK Marital Statuses v2.2.0 (CodeSystem)</a></li><li><a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-NullFlavor.html\">NullFlavor v2.1.0 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-A\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-A\">A</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Annulled</td><td><div><p>Marriage contract has been declared null and to not have existed</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-D\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-D\">D</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Divorced</td><td><div><p>Marriage contract has been declared dissolved and inactive</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-I\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-I\">I</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Interlocutory</td><td><div><p>Subject to an Interlocutory Decree.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-L\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-L\">L</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Legally Separated</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-M\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-M\">M</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Married</td><td><div><p>A current marriage contract is active</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-C\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-C\">C</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Common Law</td><td><div><p>a marriage recognized in some jurisdictions and based on the parties' agreement to consider themselves married and can also be based on documentation of cohabitation.</p>\n<p>This definition was based on https://www.merriam-webster.com/dictionary/common-law%20marriage.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-P\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-P\">P</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Polygamous</td><td><div><p>More than 1 current spouse</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-T\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-T\">T</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Domestic partner</td><td><div><p>Person declares that a domestic partner relationship exists.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-U\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-U\">U</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>unmarried</td><td><div><p>Currently not in a marriage contract.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-S\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-S\">S</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Never Married</td><td><div><p>No marriage contract has ever been entered</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-W\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-W\">W</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Widowed</td><td><div><p>The spouse has died</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-NullFlavor-UNK\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK\">UNK</a></td><td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td><td>unknown</td><td><div><p>**Description:**A proper value is applicable, but not known.</p>\n<p><strong>Usage Notes</strong>: This means the actual value is not known. If the only thing that is unknown is how to properly express the value in the necessary constraints (value set, datatype, etc.), then the OTH or UNC flavor should be used. No properties should be included for a datatype with this property unless:</p>\n<ol>\n<li>Those properties themselves directly translate to a semantic of &quot;unknown&quot;. (E.g. a local code sent as a translation that conveys 'unknown')</li>\n<li>Those properties further qualify the nature of what is unknown. (E.g. specifying a use code of &quot;H&quot; and a URL prefix of &quot;tel:&quot; to convey that it is the home phone number that is unknown.)</li>\n</ol>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-marital-status-P\"> </a>\u00a0\u00a0<a href=\"CodeSystem-dk-marital-status.html#dk-marital-status-P\">P</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-marital-status</td><td>Registered partnership</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-marital-status-O\"> </a>\u00a0\u00a0<a href=\"CodeSystem-dk-marital-status.html#dk-marital-status-O\">O</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-marital-status</td><td>Dissolved partnership</td><td><div></div></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 14 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"http://hl7.org/fhir/R4/valueset-marital-status.html\">MaritalStatus v4.0.1 (ValueSet)</a></li><li><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html\">MaritalStatus v2.1.0 (CodeSystem)</a></li><li><a href=\"CodeSystem-dk-marital-status.html\">DK Marital Statuses v2.2.0 (CodeSystem)</a></li><li><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html\">NullFlavor v2.1.0 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-A\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-A\">A</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Annulled</td><td><div><p>Marriage contract has been declared null and to not have existed</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-D\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-D\">D</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Divorced</td><td><div><p>Marriage contract has been declared dissolved and inactive</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-I\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-I\">I</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Interlocutory</td><td><div><p>Subject to an Interlocutory Decree.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-L\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-L\">L</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Legally Separated</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-M\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-M\">M</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Married</td><td><div><p>A current marriage contract is active</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-C\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-C\">C</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Common Law</td><td><div><p>a marriage recognized in some jurisdictions and based on the parties' agreement to consider themselves married and can also be based on documentation of cohabitation.</p>\n<p>This definition was based on https://www.merriam-webster.com/dictionary/common-law%20marriage.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-P\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-P\">P</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Polygamous</td><td><div><p>More than 1 current spouse</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-T\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-T\">T</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Domestic partner</td><td><div><p>Person declares that a domestic partner relationship exists.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-U\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-U\">U</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>unmarried</td><td><div><p>Currently not in a marriage contract.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-S\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-S\">S</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Never Married</td><td><div><p>No marriage contract has ever been entered</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-W\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-W\">W</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Widowed</td><td><div><p>The spouse has died</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-NullFlavor-UNK\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK\">UNK</a></td><td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td><td>unknown</td><td><div><p>**Description:**A proper value is applicable, but not known.</p>\n<p><strong>Usage Notes</strong>: This means the actual value is not known. If the only thing that is unknown is how to properly express the value in the necessary constraints (value set, datatype, etc.), then the OTH or UNC flavor should be used. No properties should be included for a datatype with this property unless:</p>\n<ol>\n<li>Those properties themselves directly translate to a semantic of &quot;unknown&quot;. (E.g. a local code sent as a translation that conveys 'unknown')</li>\n<li>Those properties further qualify the nature of what is unknown. (E.g. specifying a use code of &quot;H&quot; and a URL prefix of &quot;tel:&quot; to convey that it is the home phone number that is unknown.)</li>\n</ol>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-marital-status-P\"> </a>\u00a0\u00a0<a href=\"CodeSystem-dk-marital-status.html#dk-marital-status-P\">P</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-marital-status</td><td>Registered partnership</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-marital-status-O\"> </a>\u00a0\u00a0<a href=\"CodeSystem-dk-marital-status.html#dk-marital-status-O\">O</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-marital-status</td><td>Dissolved partnership</td><td><div></div></td></tr></table></div>"
       },
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-marital-status",
       "version" : "2.2.0",
       "title" : "DK MaritalStatus",
       "status" : "active",
       "experimental" : false,
-      "date" : "2019-11-01T09:29:23+11:00",
+      "date" : "2023-05-04T21:41:07+02:00",
       "publisher" : "HL7 Denmark",
       "contact" : [{
         "name" : "HL7 Denmark",
@@ -196,8 +196,8 @@
       }],
       "copyright" : "CC-BY-SA-4.0",
       "expansion" : {
-        "identifier" : "urn:uuid:7fe022c0-de05-4b9b-a310-77251d9d8486",
-        "timestamp" : "2023-04-30T22:12:07+02:00",
+        "identifier" : "urn:uuid:671e5eae-0ef7-4ffa-aefc-b2823f4c4d43",
+        "timestamp" : "2023-05-04T21:42:07+02:00",
         "total" : 14,
         "parameter" : [{
           "name" : "excludeNested",
@@ -304,9 +304,9 @@
       "version" : "2.2.0",
       "name" : "RegionalSubdivisionCodes",
       "title" : "DK Regional Subdivision Codes",
-      "status" : "draft",
-      "experimental" : true,
-      "date" : "2023-04-30T22:11:32+02:00",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-05-04T21:41:07+02:00",
       "publisher" : "HL7 Denmark",
       "contact" : [{
         "name" : "HL7 Denmark",
@@ -328,8 +328,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ba9880a6-a2ad-4ed9-8b02-be794c0e658b",
-        "timestamp" : "2023-04-30T22:12:11+02:00",
+        "identifier" : "urn:uuid:524890e0-671e-4f45-a6c0-4880a4ecab4d",
+        "timestamp" : "2023-05-04T21:42:10+02:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -368,6 +368,90 @@
     }
   },
   {
+    "fullUrl" : "http://hl7.dk/fhir/core/ValueSet/dk-core-LoincVitalSigns",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-9279-1\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/9279-1/\">9279-1</a></td><td>http://loinc.org</td><td>Respiratory rate</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-8867-4\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/8867-4/\">8867-4</a></td><td>http://loinc.org</td><td>Heart rate</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2708-6\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/2708-6/\">2708-6</a></td><td>http://loinc.org</td><td>Oxygen saturation in Arterial blood</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-8310-5\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/8310-5/\">8310-5</a></td><td>http://loinc.org</td><td>Body temperature</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-8480-6\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/8480-6/\">8480-6</a></td><td>http://loinc.org</td><td>Systolic blood pressure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-8462-4\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/8462-4/\">8462-4</a></td><td>http://loinc.org</td><td>Diastolic blood pressure</td></tr></table></div>"
+      },
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-LoincVitalSigns",
+      "version" : "2.2.0",
+      "name" : "LoincVitalSigns",
+      "title" : "DK Core Vital Signs",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-05-04T21:41:07+02:00",
+      "publisher" : "HL7 Denmark",
+      "contact" : [{
+        "name" : "HL7 Denmark",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://www.hl7.dk"
+        },
+        {
+          "system" : "email",
+          "value" : "jenskristianvilladsen@gmail.com"
+        }]
+      }],
+      "description" : "LOINC codes describing vital signs.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DK",
+          "display" : "Denmark"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:667bee51-3155-496a-9eb2-9bc547745050",
+        "timestamp" : "2023-05-04T21:42:11+02:00",
+        "total" : 6,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.73"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "9279-1",
+          "display" : "Respiratory rate"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8867-4",
+          "display" : "Heart rate"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "2708-6",
+          "display" : "Oxygen saturation in Arterial blood"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8310-5",
+          "display" : "Body temperature"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8480-6",
+          "display" : "Systolic blood pressure"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8462-4",
+          "display" : "Diastolic blood pressure"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -379,9 +463,9 @@
       "version" : "2.2.0",
       "name" : "MunicipalityCodes",
       "title" : "DK Municipality Codes",
-      "status" : "draft",
-      "experimental" : true,
-      "date" : "2023-04-30T22:11:32+02:00",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-05-04T21:41:07+02:00",
       "publisher" : "HL7 Denmark",
       "contact" : [{
         "name" : "HL7 Denmark",
@@ -403,8 +487,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:8a4aa8b2-0f5e-4bda-a4f8-9575567de3c3",
-        "timestamp" : "2023-04-30T22:12:15+02:00",
+        "identifier" : "urn:uuid:e7f43f80-7486-45ff-883f-2bccdb4d7c71",
+        "timestamp" : "2023-05-04T21:42:14+02:00",
         "total" : 104,
         "parameter" : [{
           "name" : "excludeNested",
@@ -955,7 +1039,7 @@
       "title" : "DK SOR Organization Type",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-04-30T22:11:32+02:00",
+      "date" : "2023-05-04T21:41:07+02:00",
       "publisher" : "HL7 Denmark",
       "contact" : [{
         "name" : "HL7 Denmark",
@@ -978,8 +1062,8 @@
       }],
       "copyright" : "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
       "expansion" : {
-        "identifier" : "urn:uuid:fa2fd21b-bc9a-4e18-ba18-3798f0fddd22",
-        "timestamp" : "2023-04-30T22:12:17+02:00",
+        "identifier" : "urn:uuid:6f863669-2829-41e3-8b7c-676f1884d66b",
+        "timestamp" : "2023-05-04T21:42:16+02:00",
         "total" : 68,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1340,6 +1424,75 @@
           "system" : "http://snomed.info/sct",
           "code" : "264372000",
           "display" : "Pharmacy"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.dk/fhir/core/ValueSet/TechniqesSCTCodes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jan 2023</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-761996005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/761996005\">761996005</a></td><td>http://snomed.info/sct</td><td>Estimation technique (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-733985002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/733985002\">733985002</a></td><td>http://snomed.info/sct</td><td>Reported (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-272391002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/272391002\">272391002</a></td><td>http://snomed.info/sct</td><td>Measurement technique (qualifier value)</td></tr></table></div>"
+      },
+      "url" : "http://hl7.dk/fhir/core/ValueSet/TechniqesSCTCodes",
+      "version" : "2.2.0",
+      "name" : "TechniqesSCTCodes",
+      "title" : "TechniqesSCTCodes",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-05-04T21:41:07+02:00",
+      "publisher" : "HL7 Denmark",
+      "contact" : [{
+        "name" : "HL7 Denmark",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://www.hl7.dk"
+        },
+        {
+          "system" : "email",
+          "value" : "jenskristianvilladsen@gmail.com"
+        }]
+      }],
+      "description" : "SNOMED CT Codes for the techniqe used when obtaining an observation",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DK",
+          "display" : "Denmark"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:39f607c1-98a0-4b41-9099-229810596b1a",
+        "timestamp" : "2023-05-04T21:42:21+02:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230131"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "761996005",
+          "display" : "Estimation technique (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "733985002",
+          "display" : "Reported (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "272391002",
+          "display" : "Measurement technique (qualifier value)"
         }]
       }
     }

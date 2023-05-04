@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "027da29f-beb3-429d-b737-26c92bc842ee-30",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/027da29f-beb3-429d-b737-26c92bc842ee-30",
+  "id" : "abfd44ce-4722-4d80-8d4e-eca1282934eb-30",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/abfd44ce-4722-4d80-8d4e-eca1282934eb-30",
   "name" : "IntersectionDKCoreRegionalSubdivisionCodesAndDKCoreRegionalSubdivisionCodes",
   "title" : "Intersection of DK Regional Subdivision Codes And DK Regional Subdivision Codes",
   "status" : "draft",
-  "date" : "2023-04-30T22:08:12+02:00",
+  "date" : "2023-05-04T21:36:46+02:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

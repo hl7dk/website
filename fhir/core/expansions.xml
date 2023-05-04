@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="8640bce8-4d11-41f0-b3eb-7824f3411527"/>
+  <id value="00302997-84b4-47fc-8626-2b2efa919bc4"/>
   <meta>
-    <lastUpdated value="2023-04-30T22:11:32.962+02:00"/>
+    <lastUpdated value="2023-05-04T21:41:07.274+02:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -206,7 +206,7 @@
         <title value="DK Profession Group"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-04-30T22:11:32+02:00"/>
+        <date value="2023-05-04T21:41:07+02:00"/>
         <publisher value="HL7 Denmark"/>
         <contact>
           <name value="HL7 Denmark"/>
@@ -228,8 +228,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:706ea36e-c676-4675-8357-86eb5ead3ac6"/>
-          <timestamp value="2023-04-30T22:12:05+02:00"/>
+          <identifier value="urn:uuid:2ca34d12-b4a4-4675-8dbe-304b545d200f"/>
+          <timestamp value="2023-05-04T21:42:04+02:00"/>
           <total value="21"/>
           <parameter>
             <name value="excludeNested"/>
@@ -363,13 +363,13 @@
                   <a href="http://hl7.org/fhir/R4/valueset-marital-status.html">MaritalStatus v4.0.1 (ValueSet)</a>
                 </li>
                 <li>
-                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html">MaritalStatus v2.1.0 (CodeSystem)</a>
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html">MaritalStatus v2.1.0 (CodeSystem)</a>
                 </li>
                 <li>
                   <a href="CodeSystem-dk-marital-status.html">DK Marital Statuses v2.2.0 (CodeSystem)</a>
                 </li>
                 <li>
-                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-NullFlavor.html">NullFlavor v2.1.0 (CodeSystem)</a>
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html">NullFlavor v2.1.0 (CodeSystem)</a>
                 </li>
               </ul>
             </div>
@@ -391,7 +391,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-A"> </a>  
-                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-A">A</a>
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-A">A</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
                 <td>Annulled</td>
@@ -405,7 +405,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-D"> </a>  
-                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-D">D</a>
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-D">D</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
                 <td>Divorced</td>
@@ -419,7 +419,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-I"> </a>  
-                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-I">I</a>
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-I">I</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
                 <td>Interlocutory</td>
@@ -433,7 +433,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-L"> </a>  
-                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-L">L</a>
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-L">L</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
                 <td>Legally Separated</td>
@@ -444,7 +444,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-M"> </a>  
-                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-M">M</a>
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-M">M</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
                 <td>Married</td>
@@ -458,7 +458,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-C"> </a>  
-                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-C">C</a>
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-C">C</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
                 <td>Common Law</td>
@@ -474,7 +474,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-P"> </a>  
-                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-P">P</a>
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-P">P</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
                 <td>Polygamous</td>
@@ -488,7 +488,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-T"> </a>  
-                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-T">T</a>
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-T">T</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
                 <td>Domestic partner</td>
@@ -502,7 +502,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-U"> </a>  
-                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-U">U</a>
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-U">U</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
                 <td>unmarried</td>
@@ -516,7 +516,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-S"> </a>  
-                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-S">S</a>
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-S">S</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
                 <td>Never Married</td>
@@ -530,7 +530,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-W"> </a>  
-                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-W">W</a>
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-W">W</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
                 <td>Widowed</td>
@@ -544,7 +544,7 @@
               <tr>
                 <td style="white-space:nowrap">
                   <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-UNK"> </a>  
-                  <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a>
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a>
                 </td>
                 <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
                 <td>unknown</td>
@@ -597,7 +597,7 @@
         <title value="DK MaritalStatus"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2019-11-01T09:29:23+11:00"/>
+        <date value="2023-05-04T21:41:07+02:00"/>
         <publisher value="HL7 Denmark"/>
         <contact>
           <name value="HL7 Denmark"/>
@@ -620,8 +620,8 @@
         </jurisdiction>
         <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:7fe022c0-de05-4b9b-a310-77251d9d8486"/>
-          <timestamp value="2023-04-30T22:12:07+02:00"/>
+          <identifier value="urn:uuid:671e5eae-0ef7-4ffa-aefc-b2823f4c4d43"/>
+          <timestamp value="2023-05-04T21:42:07+02:00"/>
           <total value="14"/>
           <parameter>
             <name value="excludeNested"/>
@@ -787,9 +787,9 @@
         <version value="2.2.0"/>
         <name value="RegionalSubdivisionCodes"/>
         <title value="DK Regional Subdivision Codes"/>
-        <status value="draft"/>
-        <experimental value="true"/>
-        <date value="2023-04-30T22:11:32+02:00"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-05-04T21:41:07+02:00"/>
         <publisher value="HL7 Denmark"/>
         <contact>
           <name value="HL7 Denmark"/>
@@ -811,8 +811,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ba9880a6-a2ad-4ed9-8b02-be794c0e658b"/>
-          <timestamp value="2023-04-30T22:12:11+02:00"/>
+          <identifier value="urn:uuid:524890e0-671e-4f45-a6c0-4880a4ecab4d"/>
+          <timestamp value="2023-05-04T21:42:10+02:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -846,6 +846,155 @@
             <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"/>
             <code value="DK-83"/>
             <display value="Region of Southern Denmark"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.dk/fhir/core/ValueSet/dk-core-LoincVitalSigns"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 6 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.73</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-9279-1"> </a>  
+                  <a href="https://loinc.org/9279-1/">9279-1</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Respiratory rate</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-8867-4"> </a>  
+                  <a href="https://loinc.org/8867-4/">8867-4</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Heart rate</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2708-6"> </a>  
+                  <a href="https://loinc.org/2708-6/">2708-6</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Oxygen saturation in Arterial blood</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-8310-5"> </a>  
+                  <a href="https://loinc.org/8310-5/">8310-5</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Body temperature</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-8480-6"> </a>  
+                  <a href="https://loinc.org/8480-6/">8480-6</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Systolic blood pressure</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-8462-4"> </a>  
+                  <a href="https://loinc.org/8462-4/">8462-4</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Diastolic blood pressure</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-LoincVitalSigns"/>
+        <version value="2.2.0"/>
+        <name value="LoincVitalSigns"/>
+        <title value="DK Core Vital Signs"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-05-04T21:41:07+02:00"/>
+        <publisher value="HL7 Denmark"/>
+        <contact>
+          <name value="HL7 Denmark"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.dk"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="jenskristianvilladsen@gmail.com"/>
+          </telecom>
+        </contact>
+        <description value="LOINC codes describing vital signs."/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DK"/>
+            <display value="Denmark"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:667bee51-3155-496a-9eb2-9bc547745050"/>
+          <timestamp value="2023-05-04T21:42:11+02:00"/>
+          <total value="6"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.73"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="9279-1"/>
+            <display value="Respiratory rate"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="8867-4"/>
+            <display value="Heart rate"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2708-6"/>
+            <display value="Oxygen saturation in Arterial blood"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="8310-5"/>
+            <display value="Body temperature"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="8480-6"/>
+            <display value="Systolic blood pressure"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="8462-4"/>
+            <display value="Diastolic blood pressure"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -1721,9 +1870,9 @@
         <version value="2.2.0"/>
         <name value="MunicipalityCodes"/>
         <title value="DK Municipality Codes"/>
-        <status value="draft"/>
-        <experimental value="true"/>
-        <date value="2023-04-30T22:11:32+02:00"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-05-04T21:41:07+02:00"/>
         <publisher value="HL7 Denmark"/>
         <contact>
           <name value="HL7 Denmark"/>
@@ -1745,8 +1894,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8a4aa8b2-0f5e-4bda-a4f8-9575567de3c3"/>
-          <timestamp value="2023-04-30T22:12:15+02:00"/>
+          <identifier value="urn:uuid:e7f43f80-7486-45ff-883f-2bccdb4d7c71"/>
+          <timestamp value="2023-05-04T21:42:14+02:00"/>
           <total value="104"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2864,7 +3013,7 @@
         <title value="DK SOR Organization Type"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-04-30T22:11:32+02:00"/>
+        <date value="2023-05-04T21:41:07+02:00"/>
         <publisher value="HL7 Denmark"/>
         <contact>
           <name value="HL7 Denmark"/>
@@ -2887,8 +3036,8 @@
         </jurisdiction>
         <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
         <expansion>
-          <identifier value="urn:uuid:fa2fd21b-bc9a-4e18-ba18-3798f0fddd22"/>
-          <timestamp value="2023-04-30T22:12:17+02:00"/>
+          <identifier value="urn:uuid:6f863669-2829-41e3-8b7c-676f1884d66b"/>
+          <timestamp value="2023-05-04T21:42:16+02:00"/>
           <total value="68"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3249,6 +3398,116 @@
             <system value="http://snomed.info/sct"/>
             <code value="264372000"/>
             <display value="Pharmacy"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.dk/fhir/core/ValueSet/TechniqesSCTCodes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2023</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-761996005"> </a>  
+                  <a href="http://snomed.info/id/761996005">761996005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Estimation technique (qualifier value)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-733985002"> </a>  
+                  <a href="http://snomed.info/id/733985002">733985002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Reported (qualifier value)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-272391002"> </a>  
+                  <a href="http://snomed.info/id/272391002">272391002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Measurement technique (qualifier value)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.dk/fhir/core/ValueSet/TechniqesSCTCodes"/>
+        <version value="2.2.0"/>
+        <name value="TechniqesSCTCodes"/>
+        <title value="TechniqesSCTCodes"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-05-04T21:41:07+02:00"/>
+        <publisher value="HL7 Denmark"/>
+        <contact>
+          <name value="HL7 Denmark"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://www.hl7.dk"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="jenskristianvilladsen@gmail.com"/>
+          </telecom>
+        </contact>
+        <description value="SNOMED CT Codes for the techniqe used when obtaining an observation"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DK"/>
+            <display value="Denmark"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:39f607c1-98a0-4b41-9099-229810596b1a"/>
+          <timestamp value="2023-05-04T21:42:21+02:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230131"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="761996005"/>
+            <display value="Estimation technique (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="733985002"/>
+            <display value="Reported (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="272391002"/>
+            <display value="Measurement technique (qualifier value)"/>
           </contains>
         </expansion>
       </ValueSet>

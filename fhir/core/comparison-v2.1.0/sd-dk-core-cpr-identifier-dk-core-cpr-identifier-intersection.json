@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "a9b7884f-b6d4-493d-84f9-cfce330cbbfc-66",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/a9b7884f-b6d4-493d-84f9-cfce330cbbfc-66",
+  "id" : "8aa5708d-92ec-44b6-a34c-d2327605b0fb-66",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/8aa5708d-92ec-44b6-a34c-d2327605b0fb-66",
   "name" : "IntersectionDkCoreCprIdentifierAndDkCoreCprIdentifier",
   "title" : "Intersection of Danish Central Person Register (CPR) Identifier And Danish Central Person Register (CPR) Identifier",
   "status" : "draft",
-  "date" : "2023-04-30T22:11:56+02:00",
+  "date" : "2023-05-04T21:41:44+02:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

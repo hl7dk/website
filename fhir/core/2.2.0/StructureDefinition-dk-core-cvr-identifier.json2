@@ -9,8 +9,8 @@
   "version" : "2.2.0",
   "name" : "CVRIdentifier",
   "title" : "Danish Central Business Register (CVR) Identifier",
-  "status" : "draft",
-  "date" : "2023-04-30T22:07:34+02:00",
+  "status" : "active",
+  "date" : "2023-05-04T21:35:52+02:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",

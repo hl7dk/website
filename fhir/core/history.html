@@ -1,168 +1,172 @@
 <!DOCTYPE HTML>
 
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-   <title>[%title%]</title>
- 
- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <meta name="author" content="http://www.hl7.org"/>
- 
-   <link href="fhir.css" rel="stylesheet"/>
- 
-    <!-- Bootstrap core CSS -->
-   <link href="dist-hist/css/bootstrap.css" rel="stylesheet"/>
-   <link href="assets-hist/css/bootstrap-fhir.css" rel="stylesheet"/>
- 
-   <!-- Project extras -->
-   <link href="assets-hist/css/project.css" rel="stylesheet"/>
-   <link href="assets-hist/css/pygments-manni.css" rel="stylesheet"/>
-   <link href="jquery-ui.css" rel="stylesheet"/>
-   <link rel="stylesheet" href="assets/css/hl7-dk.css"/>
- 
-   <!-- Favicons -->
-   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets-hist/ico/apple-touch-icon-144-precomposed.png"/>
-   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets-hist/ico/apple-touch-icon-114-precomposed.png"/>
-   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets-hist/ico/apple-touch-icon-72-precomposed.png"/>
-   <link rel="apple-touch-icon-precomposed" href="assets-hist/ico/apple-touch-icon-57-precomposed.png"/>
-   <link rel="shortcut icon" href="assets-hist/ico/favicon.png"/>
-   <script type="application/javascript" src="https://hl7.org/fhir/history-cm.js"> </script>
-   <script type="application/javascript" src="https://hl7.org/fhir/history.js"> </script>
-   <link href="history.css" rel="stylesheet"/>
- 
- </head>
- <body onload="document.body.style.opacity='1'">
- 
-  <div id="segment-header" class="segment">  <!-- segment-header -->
-   <div class="container">  <!-- container -->
-     <div id="project-nav">
-           <a no-external="true" id="hl7-logo" href="https://hl7dk.github.io">
-             <img src="assets/images/hl7dk-logo-header.png" alt="HL7 Denmark" height="65"/>
-           </a>
-   </div>
-   <div id="fhir-nav">
-     <a no-external="true" id="fhir-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/>
-     </a>
-    </div>
-    <div id="ig-status" style="font-size:24px;padding-top: 20px;">
- <b id="ig-title">[%title%]</b>
- </div>
-  </div>
-   <div class="container">  <!-- container -->
-  </div></div>  <!-- /segment-header -->
- 
-  <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
-   <div id="stripe"> </div>
-   <div class="container">  <!-- container -->
-    <!-- HEADER CONTENT -->
- 
-    <nav class="navbar navbar-inverse">
-     <div class="container">
-      <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
-       <span class="icon-bar"> </span>
-       <span class="icon-bar"> </span>
-       <span class="icon-bar"> </span>
-      </button>
-      <a class="navbar-brand hidden" href="http://hl7.org/fhir/index.html">FHIR</a>
-      <div class="nav-collapse collapse navbar-inverse-collapse">
-       <ul class="nav navbar-nav">
-               <li><a href="history.html">History</a></li>
-             </ul>
- 
-      </div>  <!-- /.nav-collapse -->
-     </div>  <!-- /.container -->
-    </nav>  <!-- /.navbar -->
- 
-   <!-- /HEADER CONTENT -->
-   </div>  <!-- /container -->
-  </div>  <!-- /segment-navbar -->
- 
- 
- 
-   <!-- ============BreadCrumb=============== -->
- 
-   </div>  <!-- /container -->
-  </div>  <!-- /segment-breadcrumb -->
- 
-  <div id="segment-content" class="segment">  <!-- segment-content -->
+<head>
+   <meta charset="UTF-8"/>
+  <title>HL7 FHIR Implementation Guide: DK Core</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="http://www.hl7.org"/>
+  <link href="fhir.css" rel="stylesheet"/>
+  <link href="dist-hist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="assets-hist/css/bootstrap-fhir.css" rel="stylesheet"/>
+  <link href="assets-hist/css/project.css" rel="stylesheet"/>
+  <link href="assets-hist/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+  <script type="application/javascript" src="https://hl7.org/fhir/history-cm.js"> </script>
+  <script type="application/javascript" src="https://hl7.org/fhir/history.js"> </script>
+  <link href="history.css" rel="stylesheet"/>
+  <!-- header.template starts here -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets-hist/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets-hist/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets-hist/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="assets-hist/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="assets-hist/ico/favicon.png"/>
+
+  <link href="assets/css/hl7-dk.css" rel="stylesheet"/>
+  <link href="assets/css/colors.css" rel="stylesheet"/>
+
+  <link rel="shortcut icon" href="assets/ico/favicon.png"/>  
+  <!-- header.template ends here -->
+</head>
+<!-- preamble.template starts here -->
+<body>
+ <div id="segment-header" class="segment">  <!-- segment-header -->
   <div class="container">  <!-- container -->
-             <div class="row">
-              <div class="inner-wrapper">
- 
- 
- <div class="col-12">
- 
- <h2>Publication (Version) History</h2>
- 
- <div id="intro"></div>
- 
-   <!-- ============CONTENT CONTENT=============== -->
- 
- <div id="history-data"></div>
- <style>
-     #history-data table td { padding-right: 1em; }
- </style>
- 
-   <!-- ==============END CONTENT END CONTENT=================== -->
- 
- <p></p>
-  </div>
- 
-     </div>  <!-- /inner-wrapper -->
-             </div>  <!-- /row -->
-         </div>  <!-- /container -->
- 
-     </div>  <!-- /segment-content -->
- 
- 
-     
+
+    <div id="project-nav">
+      <a id="dk-logo" no-external="true" href="http://hl7.dk">
+        <img height="71" alt="HL7 DK" src="assets/images/HL7_Denmark.png"/>
+      </a>
+    </div>
+    <div id="family-nav">
+      <a id="fhir-logo" no-external="true" href="http://hl7.dk"><img height="50" style="margin-top: 15px;" alt="HL7 Denmark" src="assets/images/fire.png"/> </a>
+        </a>
+    </div>    
+    
+   <div id="ig-status" style="font-size:24px;padding-top: 20px;">
+<b id="ig-title">HL7 FHIR Implementation Guide: DK Core</b>
+</div>
  </div>
- 
-     </div>  <!-- /inner-wrapper -->
-             </div>  <!-- /row -->
-         </div>  <!-- /container -->
- 
-     </div>  <!-- /segment-content -->
- 
- 
- <div id="segment-footer" class="segment">  <!-- segment-footer -->
-   <div class="container">  <!-- container -->
-    <div class="inner-wrapper">
-     <p>
-       <span id="ig-footer">TBD </span> &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir">FHIR</a> |
-              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
-                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
-         </p>
+  <div class="container">  <!-- container -->
+ </div></div>  <!-- /segment-header -->
+
+ <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+  <div id="stripe"> </div>
+  <div class="container">  <!-- container -->
+   <!-- HEADER CONTENT -->
+
+   <nav class="navbar navbar-inverse">
+    <div class="container">
+     <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+      <span class="icon-bar"> </span>
+      <span class="icon-bar"> </span>
+      <span class="icon-bar"> </span>
+     </button>
+     <a class="navbar-brand hidden" href="http://hl7.org/fhir/index.html">FHIR</a>
+     <div class="nav-collapse collapse navbar-inverse-collapse">
+      <ul class="nav navbar-nav">
+              <li><a href="history.html">History</a></li>
+            </ul>
+
+     </div>  <!-- /.nav-collapse -->
+    </div>  <!-- /.container -->
+   </nav>  <!-- /.navbar -->
+
+  <!-- /HEADER CONTENT -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-navbar -->
+
+
+
+  <!-- ============BreadCrumb=============== -->
+
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-breadcrumb -->
+
+ <div id="segment-content" class="segment">  <!-- segment-content -->
+ <div class="container">  <!-- container -->
+            <div class="row">
+             <div class="inner-wrapper">
+
+<!-- preamble.template ends here -->
+
+<div class="col-12">
+
+<h2>Publication (Version) History</h2>
+
+<div id="intro"></div>
+
+  <!-- ============CONTENT CONTENT=============== -->
+
+<div id="history-data"></div>
+<style>
+    #history-data table td { padding-right: 1em; }
+</style>
+
+  <!-- postamble.template starts here -->
+  <!-- ==============END CONTENT END CONTENT=================== -->
+
+<p></p>
+ </div>
+
     </div>  <!-- /inner-wrapper -->
-   </div>  <!-- /container -->
-  </div>  <!-- /segment-footer -->
-   <!-- disqus thread -->
-   <!-- disqus -->
-   <!-- end disqus -->
- 
-  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
-   <div class="container">  <!-- container -->
-   </div>  <!-- /container -->
-  </div>  <!-- /segment-post-footer -->
- 
-  <!-- JS and analytics only. -->
- <!-- Bootstrap core JavaScript
- ================================================== -->
- <!-- Placed at the end of the document so the pages load faster -->
- <script src="./assets-hist/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
- <script src="./dist-hist/js/bootstrap.min.js"> </script>
- <script src="./assets-hist/js/respond.min.js"> </script>
- 
- <script src="./assets-hist/js/fhir.js"> </script>
- 
- <!-- Analytics Below
- ================================================== -->
- 
- <!--- Include in the page --->
- <script>
-var pageJSON = '{"package-id":"hl7.fhir.dk.core","title":"HL7 FHIR Implementation Guide: DK Core","canonical":"http://hl7.dk/fhir/core","introduction":"A FHIR Implementation Guide for the Danish common needs across healthcare sectors","category":"National Core","list":[{"version":"current","desc":"Continuous Integration Build","path":"http://build.fhir.org/ig/hl7dk/dk-core","status":"ci-build","current":true},{"version":"2.2.0","path":"http://hl7.dk/fhir/core/2.2.0","status":"release","sequence":"Release","fhirversion":"4.0.1","date":"2023-04-30","current":true,"desc": "DK-core version 2.2.0 has been approved by HL7 Denmark. During spring, 2023, this version will go through the needed evaluations to be approved for the national catalogue.","descmd":"DK-core version 2.2.0 has been approved by HL7 Denmark. During spring, 2023, this version will go through the needed evaluations to be approved for the national catalogue.\n\nThe changes between 2.1.0 and 2.2.0 is:\n\n* Addition of Observation profile with associated documentation and instances.\n* Updated all CPR-identifiers of the Patient instances.\n* Added experimental-status = false to all CodeSystems and ValueSets\n* Removed draft-status from identifiers."},{"version":"2.1.0","date":"2022-11-08","path":"http://hl7.dk/fhir/core/2.1.0","status":"release","sequence":"Release","fhirversion":"4.0.1","descmd":"DK-core version 2.1.0 has been approved by HL7 Denmark, but it is not part of the national catalogue of ICT standards <br/> to be used in the Danish health care system (Sundhedsdatastyrelsens standardkatalog). The spring 2023 version is expected to go through the needed evaluations to be approved for the national catalogue. <br/> <br/>  The changes between 2.0.0 and 2.1.0 is: <br/>  \n* Addition of Condition profile with associated documentation and examples <br/> \n* A disclaimer has been added regarding use of dk-core. It can be read on the IG\\\\`s front page in section 1.7 and 1.8 <br/> \n* Unused LPR3 identifier has been removed <br/> \n* In the documentation of the patient profile, new details are described regarding NNDNK <br/> \n* Adding how to represent a GP in the documentation for Organization and Practitioner to avoid SOR vs. ydernummer issues. <br/> \n* Clarification of primary and secondary sector the in descriptions of the Organization and Practitioner profiles.<br/> \n* Explanation of the use of Danish/English in the \\\\`Language\\\\` section on the front page of dk-core <br/> \n* Insertion of specific terms/explanations on all slices and extensions in profiles. <br/> \n* Target group and inclusion in the standard catalog have been added in the \\\\`Scope\\\\` section on dk-core\\\\`s front page. <br/> \n* Documentation has been strengthened in Patient and Practitioner profiles in the \\\\`scope and usage\\\\` section. <br/> \n* The section \\\\`Connection between dk-core and common Danish architectures and standards\\\\` has been added to dk-core\\\\`s front page."},{"version":"2.0.0","desc":"Release version 2.0.0 contains three DKcore profiles. In DkCorePatient the cardinality of the extensions dk-core-RegionalSubDivisionCodes and dk-core-municipalityCodes is changed from 0..* to 0..1 and the MustSupport flags are removed from Patient.id and Patient.name. DkCoreCprIdentifier.system is changed from a ValueSet to a fixed value, where both solutions contain the same OID. In DkCoreOrganization the binding strength of the ValueSet attached to the element Organization.type is changed from required to preferred.","status":"release","sequence":"Release","history_template_repo":"https://github.com/hl7dk/fhir-ig-history-template.git","path":"http://hl7.dk/fhir/core/2.0.0","fhirversion":"4.0.1","date":"2022-09-14"},{"version":"1.1.0","status":"release","date":"2021-12-18","desc":"Release version 1.1.0 contains three DK core profiles. The Danish Core Practitioner and Organization profiles are both introduced in this release, and the Danish Core Patient profile has been updated with some minor changes. These updates include 1) change of the minimum allowed length from 15 to 11 units in the element for the SOR-identifier Patient.generalPractitioner:referencesSORUnit.identifier, 2) removal of the fixed value `NNDNK` in the element Patient.identifier.type.coding.code, and 3) change of the invariant expression for validation of a CPR.","sequence":"Release","history_template_repo":"https://github.com/hl7dk/fhir-ig-history-template","path":"http://hl7.dk/fhir/core/1.1.0","fhirversion":"4.0.1"}]}';
- load(pageJSON);
- </script>
- 
- </body>
- </html>
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+
+    </div>  <!-- /segment-content -->
+
+
+    
+</div>
+
+    </div>  <!-- /inner-wrapper -->
+            </div>  <!-- /row -->
+        </div>  <!-- /container -->
+
+    </div>  <!-- /segment-content -->
+
+
+<div id="segment-footer" class="segment">  <!-- segment-footer -->
+  <div class="container">  <!-- container -->
+   <div class="inner-wrapper">
+    <p>
+      <span id="ig-footer">hl7.fhir.dk.core </span> &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir">FHIR</a> |
+             <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
+                <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+        </p>
+   </div>  <!-- /inner-wrapper -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-footer -->
+  <!-- disqus thread -->
+  <!-- disqus -->
+  <!-- end disqus -->
+
+ <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+  <div class="container">  <!-- container -->
+  </div>  <!-- /container -->
+ </div>  <!-- /segment-post-footer -->
+
+  <!-- postamble.template ends here -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets-hist/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist-hist/js/bootstrap.min.js"> </script>
+<script src="./assets-hist/js/respond.min.js"> </script>
+<script src="./assets-hist/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+<!--- Include in the page --->
+<script>
+var pageJSON = '{"package-id":"hl7.fhir.dk.core","title":"HL7 FHIR Implementation Guide: DK Core","canonical":"http://hl7.dk/fhir/core","introduction":"A FHIR Implementation Guide for the Danish common needs across healthcare sectors","category":"National Core","list":[{"version":"current","desc":"Continuous Integration Build","path":"http://build.fhir.org/ig/hl7dk/dk-core","status":"ci-build","current":true},{"version":"2.2.0","path":"http://hl7.dk/fhir/core/2.2.0","status":"release","sequence":"Release","fhirversion":"4.0.1","date":"2023-05-04","current":true,"descmd":"DK-core version 2.2.0 has been approved by HL7 Denmark. During spring, 2023, this version will go through the needed evaluations to be approved for the national catalogue.\n\nThe changes between 2.1.0 and 2.2.0 is:\n\n* Addition of Observation profile with associated documentation and instances.\n* Updated all CPR-identifiers of the Patient instances.\n* Added experimental-status = false to all CodeSystems and ValueSets\n* Removed draft-status from identifiers."},{"version":"2.1.0","date":"2022-11-08","path":"http://hl7.dk/fhir/core/2.1.0","status":"release","sequence":"Release","fhirversion":"4.0.1","descmd":"DK-core version 2.1.0 has been approved by HL7 Denmark, but it is not part of the national catalogue of ICT standards <br/> to be used in the Danish health care system (Sundhedsdatastyrelsens standardkatalog). The spring 2023 version is expected to go through the needed evaluations to be approved for the national catalogue. <br/> <br/>  The changes between 2.0.0 and 2.1.0 is: <br/>  • Addition of Condition profile with associated documentation and examples <br/> • A disclaimer has been added regarding use of dk-core. It can be read on the IG\\\\`s front page in section 1.7 and 1.8 <br/> • Unused LPR3 identifier has been removed <br/> • In the documentation of the patient profile, new details are described regarding NNDNK <br/> • Adding how to represent a GP in the documentation for Organization and Practitioner to avoid SOR vs. ydernummer issues. <br/> • Clarification of primary and secondary sector the in descriptions of the Organization and Practitioner profiles.<br/> • Explanation of the use of Danish/English in the \\\\`Language\\\\` section on the front page of dk-core <br/> • Insertion of specific terms/explanations on all slices and extensions in profiles. <br/> • Target group and inclusion in the standard catalog have been added in the \\\\`Scope\\\\` section on dk-core\\\\`s front page. <br/> • Documentation has been strengthened in Patient and Practitioner profiles in the \\\\`scope and usage\\\\` section. <br/> • The section \\\\`Connection between dk-core and common Danish architectures and standards\\\\` has been added to dk-core\\\\`s front page."},{"version":"2.0.0","desc":"Release version 2.0.0 contains three DKcore profiles. In DkCorePatient the cardinality of the extensions dk-core-RegionalSubDivisionCodes and dk-core-municipalityCodes is changed from 0..* to 0..1 and the MustSupport flags are removed from Patient.id and Patient.name. DkCoreCprIdentifier.system is changed from a ValueSet to a fixed value, where both solutions contain the same OID. In DkCoreOrganization the binding strength of the ValueSet attached to the element Organization.type is changed from required to preferred.","status":"release","sequence":"Release","history_template_repo":"https://github.com/hl7dk/fhir-ig-history-template.git","path":"http://hl7.dk/fhir/core/2.0.0","fhirversion":"4.0.1","date":"2022-09-14"},{"version":"1.1.0","status":"release","date":"2021-12-18","desc":"Release version 1.1.0 contains three DK core profiles. The Danish Core Practitioner and Organization profiles are both introduced in this release, and the Danish Core Patient profile has been updated with some minor changes. These updates include 1) change of the minimum allowed length from 15 to 11 units in the element for the SOR-identifier Patient.generalPractitioner:referencesSORUnit.identifier, 2) removal of the fixed value `NNDNK` in the element Patient.identifier.type.coding.code, and 3) change of the invariant expression for validation of a CPR.","sequence":"Release","history_template_repo":"https://github.com/hl7dk/fhir-ig-history-template","path":"http://hl7.dk/fhir/core/1.1.0","fhirversion":"4.0.1"}]}';
+load(pageJSON);
+</script>
+
+</body>
+</html>
+
+
