@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "98041a14-e3f2-454e-a5c8-0d1560df48e9-2",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/98041a14-e3f2-454e-a5c8-0d1560df48e9-2",
+  "id" : "25aa7014-306f-42a7-bcb4-48ade50c344f-2",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/25aa7014-306f-42a7-bcb4-48ade50c344f-2",
   "name" : "UnionIPAConditionAndDkCoreCondition",
   "title" : "Union of IPA-Condition And Danish Core Condition Profile",
   "status" : "active",
-  "date" : "2023-05-04T21:41:45+02:00",
+  "date" : "2023-05-05T01:43:27+02:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",

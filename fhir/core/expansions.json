@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "00302997-84b4-47fc-8626-2b2efa919bc4",
+  "id" : "bacc7ef0-0bcf-47e6-9cda-6fcfbaca944b",
   "meta" : {
-    "lastUpdated" : "2023-05-04T21:41:07.274+02:00"
+    "lastUpdated" : "2023-05-05T01:43:00.587+02:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,8 +19,7 @@
       "title" : "DK Profession Group",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-05-04T21:41:07+02:00",
-      "publisher" : "HL7 Denmark",
+      "date" : "2023-05-05T01:43:00+02:00",
       "contact" : [{
         "name" : "HL7 Denmark",
         "telecom" : [{
@@ -41,8 +40,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:2ca34d12-b4a4-4675-8dbe-304b545d200f",
-        "timestamp" : "2023-05-04T21:42:04+02:00",
+        "identifier" : "urn:uuid:587ae553-d3b7-4cb2-ba15-452f7d6e2305",
+        "timestamp" : "2023-05-05T01:44:07+02:00",
         "total" : 21,
         "parameter" : [{
           "name" : "excludeNested",
@@ -173,8 +172,7 @@
       "title" : "DK MaritalStatus",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-05-04T21:41:07+02:00",
-      "publisher" : "HL7 Denmark",
+      "date" : "2023-05-05T01:43:00+02:00",
       "contact" : [{
         "name" : "HL7 Denmark",
         "telecom" : [{
@@ -196,8 +194,8 @@
       }],
       "copyright" : "CC-BY-SA-4.0",
       "expansion" : {
-        "identifier" : "urn:uuid:671e5eae-0ef7-4ffa-aefc-b2823f4c4d43",
-        "timestamp" : "2023-05-04T21:42:07+02:00",
+        "identifier" : "urn:uuid:ec467206-6490-46f7-b2af-06be40ae884c",
+        "timestamp" : "2023-05-05T01:44:10+02:00",
         "total" : 14,
         "parameter" : [{
           "name" : "excludeNested",
@@ -306,8 +304,7 @@
       "title" : "DK Regional Subdivision Codes",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-05-04T21:41:07+02:00",
-      "publisher" : "HL7 Denmark",
+      "date" : "2023-05-05T01:43:00+02:00",
       "contact" : [{
         "name" : "HL7 Denmark",
         "telecom" : [{
@@ -328,8 +325,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:524890e0-671e-4f45-a6c0-4880a4ecab4d",
-        "timestamp" : "2023-05-04T21:42:10+02:00",
+        "identifier" : "urn:uuid:3cd83c54-cbaa-4ac0-9f8e-876e6bfe1c95",
+        "timestamp" : "2023-05-05T01:44:13+02:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -381,8 +378,7 @@
       "title" : "DK Core Vital Signs",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-05-04T21:41:07+02:00",
-      "publisher" : "HL7 Denmark",
+      "date" : "2023-05-05T01:43:00+02:00",
       "contact" : [{
         "name" : "HL7 Denmark",
         "telecom" : [{
@@ -403,8 +399,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:667bee51-3155-496a-9eb2-9bc547745050",
-        "timestamp" : "2023-05-04T21:42:11+02:00",
+        "identifier" : "urn:uuid:d8b5955b-f598-43c8-a007-c909c4bc6079",
+        "timestamp" : "2023-05-05T01:44:15+02:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
@@ -465,8 +461,7 @@
       "title" : "DK Municipality Codes",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-05-04T21:41:07+02:00",
-      "publisher" : "HL7 Denmark",
+      "date" : "2023-05-05T01:43:00+02:00",
       "contact" : [{
         "name" : "HL7 Denmark",
         "telecom" : [{
@@ -487,8 +482,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:e7f43f80-7486-45ff-883f-2bccdb4d7c71",
-        "timestamp" : "2023-05-04T21:42:14+02:00",
+        "identifier" : "urn:uuid:2c239adb-8690-4835-83cb-c03c6d1053c5",
+        "timestamp" : "2023-05-05T01:44:18+02:00",
         "total" : 104,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1039,8 +1034,7 @@
       "title" : "DK SOR Organization Type",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-05-04T21:41:07+02:00",
-      "publisher" : "HL7 Denmark",
+      "date" : "2023-05-05T01:43:00+02:00",
       "contact" : [{
         "name" : "HL7 Denmark",
         "telecom" : [{
@@ -1062,8 +1056,8 @@
       }],
       "copyright" : "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
       "expansion" : {
-        "identifier" : "urn:uuid:6f863669-2829-41e3-8b7c-676f1884d66b",
-        "timestamp" : "2023-05-04T21:42:16+02:00",
+        "identifier" : "urn:uuid:3497c010-3736-42fe-b033-ee4f48395f41",
+        "timestamp" : "2023-05-05T01:44:20+02:00",
         "total" : 68,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1442,8 +1436,7 @@
       "title" : "TechniqesSCTCodes",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-05-04T21:41:07+02:00",
-      "publisher" : "HL7 Denmark",
+      "date" : "2023-05-05T01:43:00+02:00",
       "contact" : [{
         "name" : "HL7 Denmark",
         "telecom" : [{
@@ -1464,8 +1457,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:39f607c1-98a0-4b41-9099-229810596b1a",
-        "timestamp" : "2023-05-04T21:42:21+02:00",
+        "identifier" : "urn:uuid:10c67b7f-6c0f-4e3c-b23b-8ca88e1fe513",
+        "timestamp" : "2023-05-05T01:44:25+02:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",

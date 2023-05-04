@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "KombitOrgIdentifier"] ; # 
   fhir:title [ fhir:v "Kombit Org Identifier"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-05-04T21:35:52+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-05-05T01:37:30+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;

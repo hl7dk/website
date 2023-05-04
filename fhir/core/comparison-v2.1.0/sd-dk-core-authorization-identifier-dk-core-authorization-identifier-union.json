@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "8aa5708d-92ec-44b6-a34c-d2327605b0fb-53",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/8aa5708d-92ec-44b6-a34c-d2327605b0fb-53",
+  "id" : "6bd37026-96a3-4ede-a00c-c484fcc62a05-53",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/6bd37026-96a3-4ede-a00c-c484fcc62a05-53",
   "name" : "UnionAuthorizationIdentifierAndAuthorizationIdentifier",
   "title" : "Union of Danish Health Professionals Authorization Identifier And Danish Health Professionals Authorization Identifier",
   "status" : "active",
-  "date" : "2023-05-04T21:41:44+02:00",
+  "date" : "2023-05-05T01:43:26+02:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

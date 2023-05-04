@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "8aa5708d-92ec-44b6-a34c-d2327605b0fb-3",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/8aa5708d-92ec-44b6-a34c-d2327605b0fb-3",
+  "id" : "6bd37026-96a3-4ede-a00c-c484fcc62a05-3",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/6bd37026-96a3-4ede-a00c-c484fcc62a05-3",
   "name" : "IntersectionDkCoreProfessionGroupCodesAndDkCoreProfessionGroupCodes",
   "title" : "Intersection of DK Profession Group Codes And DK Profession Group Codes",
   "status" : "active",
-  "date" : "2023-05-04T21:41:43+02:00",
+  "date" : "2023-05-05T01:43:26+02:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

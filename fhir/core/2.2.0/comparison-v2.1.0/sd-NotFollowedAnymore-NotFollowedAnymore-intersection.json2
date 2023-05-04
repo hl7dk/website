@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "abfd44ce-4722-4d80-8d4e-eca1282934eb-48",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/abfd44ce-4722-4d80-8d4e-eca1282934eb-48",
+  "id" : "a402c0f3-19c7-45fb-9d12-c2a1307a8b97-48",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/a402c0f3-19c7-45fb-9d12-c2a1307a8b97-48",
   "name" : "IntersectionNotFollowedAnymoreAndNotFollowedAnymore",
   "title" : "Intersection of NotFollowedAnymore And NotFollowedAnymore",
   "status" : "active",
-  "date" : "2023-05-04T21:36:46+02:00",
+  "date" : "2023-05-05T01:38:27+02:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

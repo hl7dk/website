@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "8aa5708d-92ec-44b6-a34c-d2327605b0fb-36",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/8aa5708d-92ec-44b6-a34c-d2327605b0fb-36",
+  "id" : "6bd37026-96a3-4ede-a00c-c484fcc62a05-36",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/6bd37026-96a3-4ede-a00c-c484fcc62a05-36",
   "name" : "IntersectionEpisodeOfCareStatusAndEpisodeOfCareStatus",
   "title" : "Intersection of DK Episode Of Care Status And DK Episode Of Care Status",
   "status" : "draft",
-  "date" : "2023-05-04T21:41:43+02:00",
+  "date" : "2023-05-05T01:43:26+02:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

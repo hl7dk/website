@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "8aa5708d-92ec-44b6-a34c-d2327605b0fb-50",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/8aa5708d-92ec-44b6-a34c-d2327605b0fb-50",
+  "id" : "6bd37026-96a3-4ede-a00c-c484fcc62a05-50",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/6bd37026-96a3-4ede-a00c-c484fcc62a05-50",
   "name" : "UnionRegionalSubDivisionCodesAndRegionalSubDivisionCodes",
   "title" : "Union of Danish Core Regional Sub Division Codes Extension And Danish Core Regional Sub Division Codes Extension",
   "status" : "draft",
-  "date" : "2023-05-04T21:41:44+02:00",
+  "date" : "2023-05-05T01:43:26+02:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

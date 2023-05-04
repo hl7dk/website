@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "8aa5708d-92ec-44b6-a34c-d2327605b0fb-74",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/8aa5708d-92ec-44b6-a34c-d2327605b0fb-74",
+  "id" : "6bd37026-96a3-4ede-a00c-c484fcc62a05-74",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/6bd37026-96a3-4ede-a00c-c484fcc62a05-74",
   "name" : "UnionKombitOrgIdentifierAndKombitOrgIdentifier",
   "title" : "Union of Kombit Org Identifier And Kombit Org Identifier",
   "status" : "draft",
-  "date" : "2023-05-04T21:41:44+02:00",
+  "date" : "2023-05-05T01:43:27+02:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

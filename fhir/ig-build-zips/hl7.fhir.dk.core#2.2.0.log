@@ -1,79 +1,80 @@
-FHIR IG Publisher Version 1.3.6 (Git# 5725e71c33ed). Built 2023-04-29T01:56:24.545Z (5 days old)
+FHIR IG Publisher Version 1.3.8 (Git# b97c9154f9fb). Built 2023-05-04T13:45:40.124Z (9 hours old)
 Detected Java version: 18.0.2.1 from /Users/jkiddo/Library/Java/JavaVirtualMachines/temurin-18.0.2.1/Contents/Home on x86_64 (64bit). 8192MB available
 dir = /Users/jkiddo/work, path = /Users/jkiddo/.gem/ruby/3.1.2/bin:/Users/jkiddo/.rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/bin:/Users/jkiddo/.rubies/ruby-3.1.2/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
 Parameters: -go-publish -source /Users/jkiddo/work/dk-core -web /Users/jkiddo/work/website/fhir -temp /Users/jkiddo/work/temp -registry ig-registry/fhir-ig-list.json -history fhir-ig-history-template -templates /Users/jkiddo/work/website/fhir/templates
 ---------------
 Publication Run: publish /Users/jkiddo/work/dk-core to /Users/jkiddo/work/website/fhir
-Run Number: 2
+Run Number: 1
 Web Layout using the HL7 defined rules
 Relative directory for IG is '/core'
-All checks passed. Do the publication build from /Users/jkiddo/work/dk-core and publish to /Users/jkiddo/work/temp/web-root/run-20230504/core
+All checks passed. Do the publication build from /Users/jkiddo/work/dk-core and publish to /Users/jkiddo/work/temp/web-root/run-20230505/core
 Prepare Build space in /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0
 Build IG at /Users/jkiddo/work/dk-core: final copy suitable for publication (in /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0)
-FHIR IG Publisher Version 1.3.6 (Git# 5725e71c33ed). Built 2023-04-29T01:56:24.545Z (5 days old)
+FHIR IG Publisher Version 1.3.8 (Git# b97c9154f9fb). Built 2023-05-04T13:45:40.124Z (9 hours old)
 Detected Java version: 18.0.2.1 from /Users/jkiddo/Library/Java/JavaVirtualMachines/temurin-18.0.2.1/Contents/Home on Mac OS X/x86_64 (64bit). 8192MB available
 dir = /Users/jkiddo/work, path = /Users/jkiddo/.gem/ruby/3.1.2/bin:/Users/jkiddo/.rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/bin:/Users/jkiddo/.rubies/ruby-3.1.2/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
 Parameters: -ig /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0 -resetTx -publish http://hl7.dk/fhir/core/2.2.0 -no-exit
-Start Clock @ Thursday, 4 May 2023 at 21.34.55 Central European Summer Time (2023-05-04T21:34:55+02:00)
+Start Clock @ Friday, 5 May 2023 at 01.36.21 Central European Summer Time (2023-05-05T01:36:21+02:00)
 
-Build FHIR IG from /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0                (00:00.033)
-Build Formal Publication package, intended for http://hl7.dk/fhir/core/2.2.0     (00:00.034)
-API keys loaded from /Users/jkiddo/.fhir/fhir-settings.json                      (00:00.035)
-Package Cache: /Users/jkiddo/.fhir/packages                                      (00:00.039)
-Run Sushi on /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0                      (00:00.044)
-Sushi: info  Running SUSHI v2.10.1 (implements FHIR Shorthand specification v2.0.0) (00:04.365)
-Sushi: info  Arguments:                                                          (00:04.371)
-Sushi: info    --require-latest                                                  (00:04.374)
-Sushi: info    --out /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0              (00:04.375)
-Sushi: info    /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0                    (00:04.376)
-Sushi: (node:4639) Warning: Accessing non-existent property 'INVALID_ALT_NUMBER' of module exports inside circular dependency (00:08.753)
-Sushi: (Use `node --trace-warnings ...` to show where the warning was created)   (00:08.756)
-Sushi: (node:4639) Warning: Accessing non-existent property 'INVALID_ALT_NUMBER' of module exports inside circular dependency (00:08.758)
-Sushi: info  Using configuration file: /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0/sushi-config.yaml (00:08.772)
-Sushi: info  Importing FSH text...                                               (00:08.778)
-Sushi: info  Preprocessed 18 documents with 40 aliases.                          (00:08.857)
-Sushi: info  Imported 35 definitions and 39 instances.                           (00:08.874)
-Sushi: info  Checking local cache for hl7.fhir.uv.tools#current...               (00:08.877)
-Sushi: info  Found hl7.fhir.uv.tools#current in local cache.                     (00:09.196)
-Sushi: info  Loaded package hl7.fhir.uv.tools#current                            (00:10.371)
-Sushi: info  Checking local cache for hl7.terminology.r4#5.0.0...                (00:10.630)
-Sushi: info  Found hl7.terminology.r4#5.0.0 in local cache.                      (00:17.538)
-Sushi: info  Loaded package hl7.terminology.r4#5.0.0                             (00:17.540)
-Sushi: info  Checking local cache for hl7.fhir.uv.phd#1.0.0...                   (00:17.542)
-Sushi: info  Found hl7.fhir.uv.phd#1.0.0 in local cache.                         (00:17.712)
-Sushi: info  Loaded package hl7.fhir.uv.phd#1.0.0                                (00:17.714)
-Sushi: info  Checking local cache for hl7.fhir.r4.core#4.0.1...                  (00:17.715)
-Sushi: info  Found hl7.fhir.r4.core#4.0.1 in local cache.                        (00:32.129)
-Sushi: info  Loaded package hl7.fhir.r4.core#4.0.1                               (00:32.133)
-Sushi: info  Converting FSH to FHIR resources...                                 (00:32.199)
-Sushi: info  Converted 16 FHIR StructureDefinitions.                             (00:32.637)
-Sushi: info  Converted 14 FHIR CodeSystems.                                      (00:33.540)
-Sushi: info  Converted 5 FHIR ValueSets.                                         (00:33.555)
-Sushi: info  Converted 39 FHIR instances.                                        (00:34.219)
-Sushi: info  Exporting FHIR resources as JSON...                                 (00:34.220)
-Sushi: info  Exported 70 FHIR resources as JSON.                                 (00:34.248)
-Sushi: info  Assembling Implementation Guide sources...                          (00:34.248)
-Sushi: info  Generated ImplementationGuide-hl7.fhir.dk.core.json                 (00:34.278)
-Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.     (00:34.279)
-Sushi:                                                                           (00:34.280)
-Sushi: ========================= SUSHI RESULTS ===========================       (00:34.280)
-Sushi: |  -------------------------------------------------------------  |       (00:34.281)
-Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |       (00:34.281)
-Sushi: | |-------------------------------------------------------------| |       (00:34.283)
-Sushi: | |      12       |      4       |      0       |       0       | |       (00:34.284)
-Sushi: |  -------------------------------------------------------------  |       (00:34.284)
-Sushi: |  -------------------------------------------------------------  |       (00:34.285)
-Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |       (00:34.285)
-Sushi: | |-------------------------------------------------------------| |       (00:34.285)
-Sushi: | |         5          |        14         |         39         | |       (00:34.286)
-Sushi: |  -------------------------------------------------------------  |       (00:34.286)
-Sushi: |                                                                 |       (00:34.287)
-Sushi: ===================================================================       (00:34.288)
-Sushi: | Well hooked and landed!                0 Errors      0 Warnings |       (00:34.288)
-Sushi: ===================================================================       (00:34.289)
-Sushi:                                                                           (00:34.289)
-Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:34.720)
-Load Template from fhir.base.template#current                                    (00:35.170)
+Build FHIR IG from /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0                (00:00.035)
+Build Formal Publication package, intended for http://hl7.dk/fhir/core/2.2.0     (00:00.036)
+API keys loaded from /Users/jkiddo/.fhir/fhir-settings.json                      (00:00.037)
+Package Cache: /Users/jkiddo/.fhir/packages                                      (00:00.042)
+Run Sushi on /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0                      (00:00.045)
+Sushi: info  Running SUSHI v2.10.1 (implements FHIR Shorthand specification v2.0.0) (00:03.343)
+Sushi: info  Arguments:                                                          (00:03.347)
+Sushi: info    --require-latest                                                  (00:03.349)
+Sushi: info    --out /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0              (00:03.351)
+Sushi: info    /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0                    (00:03.352)
+Sushi: (node:18437) Warning: Accessing non-existent property 'INVALID_ALT_NUMBER' of module exports inside circular dependency (00:08.532)
+Sushi: (Use `node --trace-warnings ...` to show where the warning was created)   (00:08.538)
+Sushi: (node:18437) Warning: Accessing non-existent property 'INVALID_ALT_NUMBER' of module exports inside circular dependency (00:08.540)
+Sushi: info  Using configuration file: /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0/sushi-config.yaml (00:08.545)
+Sushi: info  Importing FSH text...                                               (00:08.553)
+Sushi: info  Preprocessed 18 documents with 40 aliases.                          (00:08.640)
+Sushi: info  Imported 35 definitions and 39 instances.                           (00:08.655)
+Sushi: info  Checking local cache for hl7.fhir.uv.tools#current...               (00:08.655)
+Sushi: info  Found hl7.fhir.uv.tools#current in local cache.                     (00:09.006)
+Sushi: info  Loaded package hl7.fhir.uv.tools#current                            (00:10.222)
+Sushi: info  Checking local cache for hl7.terminology.r4#5.0.0...                (00:10.529)
+Sushi: info  Found hl7.terminology.r4#5.0.0 in local cache.                      (00:25.718)
+Sushi: info  Loaded package hl7.terminology.r4#5.0.0                             (00:25.721)
+Sushi: info  Checking local cache for hl7.fhir.uv.phd#1.0.0...                   (00:25.723)
+Sushi: info  Found hl7.fhir.uv.phd#1.0.0 in local cache.                         (00:25.933)
+Sushi: info  Loaded package hl7.fhir.uv.phd#1.0.0                                (00:25.938)
+Sushi: info  Checking local cache for hl7.fhir.r4.core#4.0.1...                  (00:25.940)
+Sushi: info  Found hl7.fhir.r4.core#4.0.1 in local cache.                        (00:42.221)
+Sushi: info  Loaded package hl7.fhir.r4.core#4.0.1                               (00:42.225)
+Sushi: info  Converting FSH to FHIR resources...                                 (00:42.301)
+Sushi: info  Converted 16 FHIR StructureDefinitions.                             (00:42.730)
+Sushi: info  Converted 14 FHIR CodeSystems.                                      (00:43.656)
+Sushi: info  Converted 5 FHIR ValueSets.                                         (00:43.671)
+Sushi: info  Converted 39 FHIR instances.                                        (00:44.345)
+Sushi: info  Exporting FHIR resources as JSON...                                 (00:44.346)
+Sushi: info  Exported 70 FHIR resources as JSON.                                 (00:44.375)
+Sushi: info  Assembling Implementation Guide sources...                          (00:44.376)
+Sushi: info  Generated ImplementationGuide-hl7.fhir.dk.core.json                 (00:44.410)
+Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.     (00:44.410)
+Sushi:                                                                           (00:44.411)
+Sushi: ========================= SUSHI RESULTS ===========================       (00:44.412)
+Sushi: |  -------------------------------------------------------------  |       (00:44.413)
+Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |       (00:44.414)
+Sushi: | |-------------------------------------------------------------| |       (00:44.415)
+Sushi: | |      12       |      4       |      0       |       0       | |       (00:44.416)
+Sushi: |  -------------------------------------------------------------  |       (00:44.417)
+Sushi: |  -------------------------------------------------------------  |       (00:44.418)
+Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |       (00:44.418)
+Sushi: | |-------------------------------------------------------------| |       (00:44.419)
+Sushi: | |         5          |        14         |         39         | |       (00:44.419)
+Sushi: |  -------------------------------------------------------------  |       (00:44.420)
+Sushi: |                                                                 |       (00:44.420)
+Sushi: ===================================================================       (00:44.422)
+Sushi: | Well hooked and landed!                0 Errors      0 Warnings |       (00:44.422)
+Sushi: ===================================================================       (00:44.437)
+Sushi:                                                                           (00:44.438)
+Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:44.887)
+Load Template from https://github.com/hl7dk/dk-ig-template                       (00:45.320)
+ Load Template from fhir.base.template#current                                   (00:46.666)
 
 onLoad.findSpreadsheets:
 
@@ -84,36 +85,36 @@ onLoad.updateIg:
 onLoad.extend:
 
 onLoad:
-Root directory: /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0                   (00:39.858)
+Root directory: /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0                   (00:50.813)
 Core Package hl7.fhir.r4.core#4.0.1
-.:Terminology Cache is at /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0/input-cache/txcache. Clearing now (00:48.386)
-Connect to Terminology Server at http://tx.fhir.org                              (00:48.403)
+.:Terminology Cache is at /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0/input-cache/txcache. Clearing now (00:59.155)
+Connect to Terminology Server at http://tx.fhir.org                              (00:59.174)
 Load Package hl7.fhir.pubpack#0.1.4
 Load Package hl7.fhir.xver-extensions#0.0.12
 Load Package hl7.terminology.r4#5.0.0
 Load Package hl7.terminology.r4#3.1.0
 Load Package hl7.fhir.uv.phd#1.0.0
-Version mismatch. This IG is version 4.0.1, while the IG 'igtools' is from version 5.0.0 (will try to run anyway) (00:52.119)
+Version mismatch. This IG is version 4.0.1, while the IG 'igtools' is from version 5.0.0 (will try to run anyway) (01:03.389)
 Load Package hl7.fhir.uv.tools#0.1.0
-Initialization complete                                                          (00:53.873)
-Fetch http://hl7.dk/fhir/core/package-list.json for version check                (00:53.880)
-Fetch http://hl7.org/fhir/uv/ipa/package-list.json for version check             (00:54.284)
-Load Content                                                                     (00:54.816)
+Initialization complete                                                          (01:05.887)
+Fetch http://hl7.dk/fhir/core/package-list.json for version check                (01:05.914)
+Fetch http://hl7.org/fhir/uv/ipa/package-list.json for version check             (01:06.218)
+Load Content                                                                     (01:06.554)
 loadPrePages from FetchedFile[/Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0/fsh-generated/includes] as /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0/fsh-generated/includes
 loadPrePages from FetchedFile[/Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0/input/pagecontent] as /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0/input/pagecontent
-Processing Conformance Resources                                                 (00:57.180)
-Generating Snapshots                                                             (00:58.492)
-Propagating status                                                               (01:02.327)
-Generating Narratives                                                            (01:02.330)
-Validating Conformance Resources                                                 (01:09.015)
-.:.:Validating Resources                                                             (01:53.682)
+Processing Conformance Resources                                                 (01:08.886)
+Generating Snapshots                                                             (01:10.146)
+Propagating status                                                               (01:14.078)
+Generating Narratives                                                            (01:14.081)
+Validating Conformance Resources                                                 (01:21.074)
+.:.:Validating Resources                                                             (02:08.486)
 todo: handle filters with property = source =
 org.hl7.fhir.exceptions.FHIRException: Unable to handle system http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7 filter with property = source, op = =
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInFilter(ValueSetCheckerSimple.java:1013)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.inComponent(ValueSetCheckerSimple.java:976)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:886)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:873)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.validateCode(ValueSetCheckerSimple.java:215)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInFilter(ValueSetCheckerSimple.java:1131)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.inComponent(ValueSetCheckerSimple.java:1094)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:1004)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:990)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.validateCode(ValueSetCheckerSimple.java:295)
 	at org.hl7.fhir.r5.context.BaseWorkerContext.validateCode(BaseWorkerContext.java:1222)
 	at org.hl7.fhir.r5.utils.FHIRPathEngine.opMemberOf(FHIRPathEngine.java:2564)
 	at org.hl7.fhir.r5.utils.FHIRPathEngine.operate(FHIRPathEngine.java:1851)
@@ -131,23 +132,23 @@ org.hl7.fhir.exceptions.FHIRException: Unable to handle system http://hl7.org/fh
 	at org.hl7.fhir.validation.instance.InstanceValidator.start(InstanceValidator.java:4786)
 	at org.hl7.fhir.validation.instance.InstanceValidator.validateResource(InstanceValidator.java:6225)
 	at org.hl7.fhir.validation.instance.InstanceValidator.validate(InstanceValidator.java:884)
-	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6519)
-	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6288)
-	at org.hl7.fhir.igtools.publisher.Publisher.createIg(Publisher.java:1090)
-	at org.hl7.fhir.igtools.publisher.Publisher.execute(Publisher.java:916)
-	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:11125)
+	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6675)
+	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6444)
+	at org.hl7.fhir.igtools.publisher.Publisher.createIg(Publisher.java:1103)
+	at org.hl7.fhir.igtools.publisher.Publisher.execute(Publisher.java:929)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:11288)
 	at org.hl7.fhir.igtools.web.PublicationProcess.runBuild(PublicationProcess.java:816)
 	at org.hl7.fhir.igtools.web.PublicationProcess.doPublish(PublicationProcess.java:416)
 	at org.hl7.fhir.igtools.web.PublicationProcess.publishInner(PublicationProcess.java:333)
 	at org.hl7.fhir.igtools.web.PublicationProcess.publish(PublicationProcess.java:125)
-	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:10882)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:11045)
 todo: handle filters with property = source =
 org.hl7.fhir.exceptions.FHIRException: Unable to handle system http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7 filter with property = source, op = =
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInFilter(ValueSetCheckerSimple.java:1013)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.inComponent(ValueSetCheckerSimple.java:976)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:886)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:873)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.validateCode(ValueSetCheckerSimple.java:215)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInFilter(ValueSetCheckerSimple.java:1131)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.inComponent(ValueSetCheckerSimple.java:1094)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:1004)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:990)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.validateCode(ValueSetCheckerSimple.java:295)
 	at org.hl7.fhir.r5.context.BaseWorkerContext.validateCode(BaseWorkerContext.java:1222)
 	at org.hl7.fhir.validation.instance.InstanceValidator.checkCodeOnServer(InstanceValidator.java:6409)
 	at org.hl7.fhir.validation.instance.InstanceValidator.checkCodeableConcept(InstanceValidator.java:1240)
@@ -161,23 +162,23 @@ org.hl7.fhir.exceptions.FHIRException: Unable to handle system http://hl7.org/fh
 	at org.hl7.fhir.validation.instance.InstanceValidator.start(InstanceValidator.java:4786)
 	at org.hl7.fhir.validation.instance.InstanceValidator.validateResource(InstanceValidator.java:6225)
 	at org.hl7.fhir.validation.instance.InstanceValidator.validate(InstanceValidator.java:884)
-	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6519)
-	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6288)
-	at org.hl7.fhir.igtools.publisher.Publisher.createIg(Publisher.java:1090)
-	at org.hl7.fhir.igtools.publisher.Publisher.execute(Publisher.java:916)
-	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:11125)
+	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6675)
+	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6444)
+	at org.hl7.fhir.igtools.publisher.Publisher.createIg(Publisher.java:1103)
+	at org.hl7.fhir.igtools.publisher.Publisher.execute(Publisher.java:929)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:11288)
 	at org.hl7.fhir.igtools.web.PublicationProcess.runBuild(PublicationProcess.java:816)
 	at org.hl7.fhir.igtools.web.PublicationProcess.doPublish(PublicationProcess.java:416)
 	at org.hl7.fhir.igtools.web.PublicationProcess.publishInner(PublicationProcess.java:333)
 	at org.hl7.fhir.igtools.web.PublicationProcess.publish(PublicationProcess.java:125)
-	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:10882)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:11045)
 todo: handle filters with property = source =
 org.hl7.fhir.exceptions.FHIRException: Unable to handle system http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7 filter with property = source, op = =
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInFilter(ValueSetCheckerSimple.java:1013)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.inComponent(ValueSetCheckerSimple.java:976)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:886)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:873)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.validateCode(ValueSetCheckerSimple.java:215)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInFilter(ValueSetCheckerSimple.java:1131)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.inComponent(ValueSetCheckerSimple.java:1094)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:1004)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:990)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.validateCode(ValueSetCheckerSimple.java:295)
 	at org.hl7.fhir.r5.context.BaseWorkerContext.validateCode(BaseWorkerContext.java:1222)
 	at org.hl7.fhir.r5.utils.FHIRPathEngine.opMemberOf(FHIRPathEngine.java:2564)
 	at org.hl7.fhir.r5.utils.FHIRPathEngine.operate(FHIRPathEngine.java:1851)
@@ -195,23 +196,23 @@ org.hl7.fhir.exceptions.FHIRException: Unable to handle system http://hl7.org/fh
 	at org.hl7.fhir.validation.instance.InstanceValidator.start(InstanceValidator.java:4786)
 	at org.hl7.fhir.validation.instance.InstanceValidator.validateResource(InstanceValidator.java:6225)
 	at org.hl7.fhir.validation.instance.InstanceValidator.validate(InstanceValidator.java:884)
-	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6519)
-	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6288)
-	at org.hl7.fhir.igtools.publisher.Publisher.createIg(Publisher.java:1090)
-	at org.hl7.fhir.igtools.publisher.Publisher.execute(Publisher.java:916)
-	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:11125)
+	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6675)
+	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6444)
+	at org.hl7.fhir.igtools.publisher.Publisher.createIg(Publisher.java:1103)
+	at org.hl7.fhir.igtools.publisher.Publisher.execute(Publisher.java:929)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:11288)
 	at org.hl7.fhir.igtools.web.PublicationProcess.runBuild(PublicationProcess.java:816)
 	at org.hl7.fhir.igtools.web.PublicationProcess.doPublish(PublicationProcess.java:416)
 	at org.hl7.fhir.igtools.web.PublicationProcess.publishInner(PublicationProcess.java:333)
 	at org.hl7.fhir.igtools.web.PublicationProcess.publish(PublicationProcess.java:125)
-	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:10882)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:11045)
 todo: handle filters with property = source =
 org.hl7.fhir.exceptions.FHIRException: Unable to handle system http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7 filter with property = source, op = =
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInFilter(ValueSetCheckerSimple.java:1013)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.inComponent(ValueSetCheckerSimple.java:976)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:886)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:873)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.validateCode(ValueSetCheckerSimple.java:215)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInFilter(ValueSetCheckerSimple.java:1131)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.inComponent(ValueSetCheckerSimple.java:1094)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:1004)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:990)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.validateCode(ValueSetCheckerSimple.java:295)
 	at org.hl7.fhir.r5.context.BaseWorkerContext.validateCode(BaseWorkerContext.java:1222)
 	at org.hl7.fhir.r5.utils.FHIRPathEngine.opMemberOf(FHIRPathEngine.java:2564)
 	at org.hl7.fhir.r5.utils.FHIRPathEngine.operate(FHIRPathEngine.java:1851)
@@ -229,23 +230,23 @@ org.hl7.fhir.exceptions.FHIRException: Unable to handle system http://hl7.org/fh
 	at org.hl7.fhir.validation.instance.InstanceValidator.start(InstanceValidator.java:4786)
 	at org.hl7.fhir.validation.instance.InstanceValidator.validateResource(InstanceValidator.java:6225)
 	at org.hl7.fhir.validation.instance.InstanceValidator.validate(InstanceValidator.java:884)
-	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6519)
-	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6288)
-	at org.hl7.fhir.igtools.publisher.Publisher.createIg(Publisher.java:1090)
-	at org.hl7.fhir.igtools.publisher.Publisher.execute(Publisher.java:916)
-	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:11125)
+	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6675)
+	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6444)
+	at org.hl7.fhir.igtools.publisher.Publisher.createIg(Publisher.java:1103)
+	at org.hl7.fhir.igtools.publisher.Publisher.execute(Publisher.java:929)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:11288)
 	at org.hl7.fhir.igtools.web.PublicationProcess.runBuild(PublicationProcess.java:816)
 	at org.hl7.fhir.igtools.web.PublicationProcess.doPublish(PublicationProcess.java:416)
 	at org.hl7.fhir.igtools.web.PublicationProcess.publishInner(PublicationProcess.java:333)
 	at org.hl7.fhir.igtools.web.PublicationProcess.publish(PublicationProcess.java:125)
-	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:10882)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:11045)
 todo: handle filters with property = source =
 org.hl7.fhir.exceptions.FHIRException: Unable to handle system http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7 filter with property = source, op = =
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInFilter(ValueSetCheckerSimple.java:1013)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.inComponent(ValueSetCheckerSimple.java:976)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:886)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:873)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.validateCode(ValueSetCheckerSimple.java:215)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInFilter(ValueSetCheckerSimple.java:1131)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.inComponent(ValueSetCheckerSimple.java:1094)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:1004)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:990)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.validateCode(ValueSetCheckerSimple.java:295)
 	at org.hl7.fhir.r5.context.BaseWorkerContext.validateCode(BaseWorkerContext.java:1222)
 	at org.hl7.fhir.validation.instance.InstanceValidator.checkCodeOnServer(InstanceValidator.java:6409)
 	at org.hl7.fhir.validation.instance.InstanceValidator.checkCodeableConcept(InstanceValidator.java:1240)
@@ -259,23 +260,23 @@ org.hl7.fhir.exceptions.FHIRException: Unable to handle system http://hl7.org/fh
 	at org.hl7.fhir.validation.instance.InstanceValidator.start(InstanceValidator.java:4786)
 	at org.hl7.fhir.validation.instance.InstanceValidator.validateResource(InstanceValidator.java:6225)
 	at org.hl7.fhir.validation.instance.InstanceValidator.validate(InstanceValidator.java:884)
-	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6519)
-	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6288)
-	at org.hl7.fhir.igtools.publisher.Publisher.createIg(Publisher.java:1090)
-	at org.hl7.fhir.igtools.publisher.Publisher.execute(Publisher.java:916)
-	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:11125)
+	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6675)
+	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6444)
+	at org.hl7.fhir.igtools.publisher.Publisher.createIg(Publisher.java:1103)
+	at org.hl7.fhir.igtools.publisher.Publisher.execute(Publisher.java:929)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:11288)
 	at org.hl7.fhir.igtools.web.PublicationProcess.runBuild(PublicationProcess.java:816)
 	at org.hl7.fhir.igtools.web.PublicationProcess.doPublish(PublicationProcess.java:416)
 	at org.hl7.fhir.igtools.web.PublicationProcess.publishInner(PublicationProcess.java:333)
 	at org.hl7.fhir.igtools.web.PublicationProcess.publish(PublicationProcess.java:125)
-	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:10882)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:11045)
 todo: handle filters with property = source =
 org.hl7.fhir.exceptions.FHIRException: Unable to handle system http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7 filter with property = source, op = =
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInFilter(ValueSetCheckerSimple.java:1013)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.inComponent(ValueSetCheckerSimple.java:976)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:886)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:873)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.validateCode(ValueSetCheckerSimple.java:215)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInFilter(ValueSetCheckerSimple.java:1131)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.inComponent(ValueSetCheckerSimple.java:1094)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:1004)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:990)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.validateCode(ValueSetCheckerSimple.java:295)
 	at org.hl7.fhir.r5.context.BaseWorkerContext.validateCode(BaseWorkerContext.java:1222)
 	at org.hl7.fhir.validation.instance.InstanceValidator.checkCodeOnServer(InstanceValidator.java:6409)
 	at org.hl7.fhir.validation.instance.InstanceValidator.checkCodeableConcept(InstanceValidator.java:1240)
@@ -289,23 +290,23 @@ org.hl7.fhir.exceptions.FHIRException: Unable to handle system http://hl7.org/fh
 	at org.hl7.fhir.validation.instance.InstanceValidator.start(InstanceValidator.java:4786)
 	at org.hl7.fhir.validation.instance.InstanceValidator.validateResource(InstanceValidator.java:6225)
 	at org.hl7.fhir.validation.instance.InstanceValidator.validate(InstanceValidator.java:884)
-	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6519)
-	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6288)
-	at org.hl7.fhir.igtools.publisher.Publisher.createIg(Publisher.java:1090)
-	at org.hl7.fhir.igtools.publisher.Publisher.execute(Publisher.java:916)
-	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:11125)
+	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6675)
+	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6444)
+	at org.hl7.fhir.igtools.publisher.Publisher.createIg(Publisher.java:1103)
+	at org.hl7.fhir.igtools.publisher.Publisher.execute(Publisher.java:929)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:11288)
 	at org.hl7.fhir.igtools.web.PublicationProcess.runBuild(PublicationProcess.java:816)
 	at org.hl7.fhir.igtools.web.PublicationProcess.doPublish(PublicationProcess.java:416)
 	at org.hl7.fhir.igtools.web.PublicationProcess.publishInner(PublicationProcess.java:333)
 	at org.hl7.fhir.igtools.web.PublicationProcess.publish(PublicationProcess.java:125)
-	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:10882)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:11045)
 todo: handle filters with property = source =
 org.hl7.fhir.exceptions.FHIRException: Unable to handle system http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7 filter with property = source, op = =
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInFilter(ValueSetCheckerSimple.java:1013)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.inComponent(ValueSetCheckerSimple.java:976)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:886)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:873)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.validateCode(ValueSetCheckerSimple.java:215)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInFilter(ValueSetCheckerSimple.java:1131)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.inComponent(ValueSetCheckerSimple.java:1094)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:1004)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:990)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.validateCode(ValueSetCheckerSimple.java:295)
 	at org.hl7.fhir.r5.context.BaseWorkerContext.validateCode(BaseWorkerContext.java:1222)
 	at org.hl7.fhir.r5.utils.FHIRPathEngine.opMemberOf(FHIRPathEngine.java:2564)
 	at org.hl7.fhir.r5.utils.FHIRPathEngine.operate(FHIRPathEngine.java:1851)
@@ -333,23 +334,23 @@ org.hl7.fhir.exceptions.FHIRException: Unable to handle system http://hl7.org/fh
 	at org.hl7.fhir.validation.instance.InstanceValidator.start(InstanceValidator.java:4786)
 	at org.hl7.fhir.validation.instance.InstanceValidator.validateResource(InstanceValidator.java:6225)
 	at org.hl7.fhir.validation.instance.InstanceValidator.validate(InstanceValidator.java:866)
-	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6519)
-	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6288)
-	at org.hl7.fhir.igtools.publisher.Publisher.createIg(Publisher.java:1090)
-	at org.hl7.fhir.igtools.publisher.Publisher.execute(Publisher.java:916)
-	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:11125)
+	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6675)
+	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6444)
+	at org.hl7.fhir.igtools.publisher.Publisher.createIg(Publisher.java:1103)
+	at org.hl7.fhir.igtools.publisher.Publisher.execute(Publisher.java:929)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:11288)
 	at org.hl7.fhir.igtools.web.PublicationProcess.runBuild(PublicationProcess.java:816)
 	at org.hl7.fhir.igtools.web.PublicationProcess.doPublish(PublicationProcess.java:416)
 	at org.hl7.fhir.igtools.web.PublicationProcess.publishInner(PublicationProcess.java:333)
 	at org.hl7.fhir.igtools.web.PublicationProcess.publish(PublicationProcess.java:125)
-	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:10882)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:11045)
 todo: handle filters with property = source =
 org.hl7.fhir.exceptions.FHIRException: Unable to handle system http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7 filter with property = source, op = =
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInFilter(ValueSetCheckerSimple.java:1013)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.inComponent(ValueSetCheckerSimple.java:976)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:886)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:873)
-	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.validateCode(ValueSetCheckerSimple.java:215)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInFilter(ValueSetCheckerSimple.java:1131)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.inComponent(ValueSetCheckerSimple.java:1094)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:1004)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.codeInValueSet(ValueSetCheckerSimple.java:990)
+	at org.hl7.fhir.r5.terminologies.ValueSetCheckerSimple.validateCode(ValueSetCheckerSimple.java:295)
 	at org.hl7.fhir.r5.context.BaseWorkerContext.validateCode(BaseWorkerContext.java:1222)
 	at org.hl7.fhir.validation.instance.InstanceValidator.checkCodeOnServer(InstanceValidator.java:6409)
 	at org.hl7.fhir.validation.instance.InstanceValidator.checkCodeableConcept(InstanceValidator.java:1240)
@@ -373,19 +374,19 @@ org.hl7.fhir.exceptions.FHIRException: Unable to handle system http://hl7.org/fh
 	at org.hl7.fhir.validation.instance.InstanceValidator.start(InstanceValidator.java:4786)
 	at org.hl7.fhir.validation.instance.InstanceValidator.validateResource(InstanceValidator.java:6225)
 	at org.hl7.fhir.validation.instance.InstanceValidator.validate(InstanceValidator.java:866)
-	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6519)
-	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6288)
-	at org.hl7.fhir.igtools.publisher.Publisher.createIg(Publisher.java:1090)
-	at org.hl7.fhir.igtools.publisher.Publisher.execute(Publisher.java:916)
-	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:11125)
+	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6675)
+	at org.hl7.fhir.igtools.publisher.Publisher.validate(Publisher.java:6444)
+	at org.hl7.fhir.igtools.publisher.Publisher.createIg(Publisher.java:1103)
+	at org.hl7.fhir.igtools.publisher.Publisher.execute(Publisher.java:929)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:11288)
 	at org.hl7.fhir.igtools.web.PublicationProcess.runBuild(PublicationProcess.java:816)
 	at org.hl7.fhir.igtools.web.PublicationProcess.doPublish(PublicationProcess.java:416)
 	at org.hl7.fhir.igtools.web.PublicationProcess.publishInner(PublicationProcess.java:333)
 	at org.hl7.fhir.igtools.web.PublicationProcess.publish(PublicationProcess.java:125)
-	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:10882)
-Processing Provenance Records                                                    (02:19.363)
-Generating Outputs in /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0/output      (02:19.365)
-Run Template                                                                     (02:21.314)
+	at org.hl7.fhir.igtools.publisher.Publisher.main(Publisher.java:11045)
+Processing Provenance Records                                                    (02:34.366)
+Generating Outputs in /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0/output      (02:34.367)
+Run Template                                                                     (02:36.427)
 
 onGenerate.checkVersions:
      [xslt] Processing /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0/template/onGenerate-ig-working.xml to /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0/template/versions.txt
@@ -467,99 +468,100 @@ onGenerate.copyDataFiles:
 onGenerate.extend:
 
 onGenerate:
-Template Done                                                                    (02:24.011)
-Generating Summary Outputs                                                       (03:04.638)
-Sending Usage Stats to Server                                                    (04:27.065)
-## Memory (MB): Use = 1733, Free = 738, Total = 2472, Max =8192
+Template Done                                                                    (02:39.149)
+Generating Summary Outputs                                                       (03:24.381)
+Sending Usage Stats to Server                                                    (05:02.492)
+## Memory (MB): Use = 1114, Free = 205, Total = 1320, Max =8192
 Reclaiming memory...
-## Memory (MB): Use = 880, Free = 1591, Total = 2472, Max =8192
-Run jekyll: jekyll build --destination "/Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0/output" (in folder /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0/temp/pages) (04:27.354)
-Jekyll: Source: /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0/temp/pages        (04:30.744)
-Jekyll: Generating...                                                            (04:30.748)
-Jekyll: done in 4.029 seconds.                                                   (04:34.764)
+## Memory (MB): Use = 881, Free = 626, Total = 1508, Max =8192
+Run jekyll: jekyll build --destination "/Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0/output" (in folder /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0/temp/pages) (05:02.848)
+Jekyll: Source: /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0/temp/pages        (05:05.966)
+Jekyll: Generating...                                                            (05:05.968)
+Jekyll: done in 4.049 seconds.                                                   (05:10.009)
 Installing hl7.fhir.dk.core#2.2.0 to the package cache
   Fetching:
 .
-  Installing: Checking Output HTML                                                             (04:37.533)
-found 1246 files                                                                 (04:37.544)
+  Installing: Checking Output HTML                                                             (05:13.078)
+found 1248 files                                                                 (05:13.092)
 ........................................
 ........................................
-  ... 1246 html files, 0 pages invalid xhtml (0%)                                (04:55.915)
-  ... 130396 links, 0 broken links (0%)                                          (04:55.919)
-Build final .zip                                                                 (04:55.920)
-Final .zip built                                                                 (04:57.653)
-Built. Times: loading: 00:02.360, generate: 04:04.409, narrative generation: 00:06.684, realm-rules: 00:00.000, previous-version: 00:12.322, jekyll: 00:07.425, validation: 00:57.887 (#71), template: 00:02.692 (#3) (05:01.608)
+  ... 1248 html files, 0 pages invalid xhtml (0%)                                (05:32.010)
+  ... 132160 links, 0 broken links (0%)                                          (05:32.014)
+Build final .zip                                                                 (05:32.015)
+Final .zip built                                                                 (05:34.278)
+Built. Times: loading: 00:02.328, generate: 04:29.604, narrative generation: 00:06.991, realm-rules: 00:00.000, previous-version: 00:13.263, jekyll: 00:07.179, validation: 00:59.895 (#71), template: 00:02.718 (#3) (05:38.509)
 Validation output in /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0/output/qa.html
-Errors: 5, Warnings: 18, Info: 12, Broken Links: 0 (05:04.346)
-Finished                                                                         (05:04.350)
-Done                                                                             (05:04.351)
+Errors: 1, Warnings: 17, Info: 12, Broken Links: 0 (05:41.287)
+Finished                                                                         (05:41.291)
+Done                                                                             (05:41.292)
 Prepare Build space in /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone
 Build IG at /Users/jkiddo/work/dk-core: final copy suitable for publication (in /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone) (milestone build)
-FHIR IG Publisher Version 1.3.6 (Git# 5725e71c33ed). Built 2023-04-29T01:56:24.545Z (5 days old)
+FHIR IG Publisher Version 1.3.8 (Git# b97c9154f9fb). Built 2023-05-04T13:45:40.124Z (9 hours old)
 Detected Java version: 18.0.2.1 from /Users/jkiddo/Library/Java/JavaVirtualMachines/temurin-18.0.2.1/Contents/Home on Mac OS X/x86_64 (64bit). 8192MB available
 dir = /Users/jkiddo/work, path = /Users/jkiddo/.gem/ruby/3.1.2/bin:/Users/jkiddo/.rubies/ruby-3.1.2/lib/ruby/gems/3.1.0/bin:/Users/jkiddo/.rubies/ruby-3.1.2/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
 Parameters: -ig /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone -publish http://hl7.dk/fhir/core/2.2.0 -milestone -no-exit
-Start Clock @ Thursday, 4 May 2023 at 21.40.27 Central European Summer Time (2023-05-04T21:40:27+02:00)
+Start Clock @ Friday, 5 May 2023 at 01.42.16 Central European Summer Time (2023-05-05T01:42:16+02:00)
 
-Build FHIR IG from /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone      (00:00.054)
-Build Formal Publication package, intended for http://hl7.dk/fhir/core/2.2.0     (00:00.055)
-API keys loaded from /Users/jkiddo/.fhir/fhir-settings.json                      (00:00.056)
-Package Cache: /Users/jkiddo/.fhir/packages                                      (00:00.057)
-Run Sushi on /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone            (00:00.058)
-Sushi: info  Running SUSHI v2.10.1 (implements FHIR Shorthand specification v2.0.0) (00:00.958)
-Sushi: info  Arguments:                                                          (00:00.959)
-Sushi: info    --require-latest                                                  (00:00.959)
-Sushi: info    --out /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone    (00:00.961)
-Sushi: info    /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone          (00:00.965)
-Sushi: (node:5394) Warning: Accessing non-existent property 'INVALID_ALT_NUMBER' of module exports inside circular dependency (00:02.750)
-Sushi: (Use `node --trace-warnings ...` to show where the warning was created)   (00:02.752)
-Sushi: (node:5394) Warning: Accessing non-existent property 'INVALID_ALT_NUMBER' of module exports inside circular dependency (00:02.753)
-Sushi: info  Using configuration file: /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone/sushi-config.yaml (00:02.774)
-Sushi: info  Importing FSH text...                                               (00:02.784)
-Sushi: info  Preprocessed 18 documents with 40 aliases.                          (00:02.874)
-Sushi: info  Imported 35 definitions and 39 instances.                           (00:02.889)
-Sushi: info  Checking local cache for hl7.fhir.uv.tools#current...               (00:02.889)
-Sushi: info  Found hl7.fhir.uv.tools#current in local cache.                     (00:02.988)
-Sushi: info  Loaded package hl7.fhir.uv.tools#current                            (00:04.134)
-Sushi: info  Checking local cache for hl7.terminology.r4#5.0.0...                (00:04.519)
-Sushi: info  Found hl7.terminology.r4#5.0.0 in local cache.                      (00:17.665)
-Sushi: info  Loaded package hl7.terminology.r4#5.0.0                             (00:17.667)
-Sushi: info  Checking local cache for hl7.fhir.uv.phd#1.0.0...                   (00:17.668)
-Sushi: info  Found hl7.fhir.uv.phd#1.0.0 in local cache.                         (00:17.731)
-Sushi: info  Loaded package hl7.fhir.uv.phd#1.0.0                                (00:17.733)
-Sushi: info  Checking local cache for hl7.fhir.r4.core#4.0.1...                  (00:17.734)
-Sushi: info  Found hl7.fhir.r4.core#4.0.1 in local cache.                        (00:24.137)
-Sushi: info  Loaded package hl7.fhir.r4.core#4.0.1                               (00:24.140)
-Sushi: info  Converting FSH to FHIR resources...                                 (00:24.217)
-Sushi: info  Converted 16 FHIR StructureDefinitions.                             (00:24.632)
-Sushi: info  Converted 14 FHIR CodeSystems.                                      (00:25.501)
-Sushi: info  Converted 5 FHIR ValueSets.                                         (00:25.516)
-Sushi: info  Converted 39 FHIR instances.                                        (00:26.150)
-Sushi: info  Exporting FHIR resources as JSON...                                 (00:26.150)
-Sushi: info  Exported 70 FHIR resources as JSON.                                 (00:26.177)
-Sushi: info  Assembling Implementation Guide sources...                          (00:26.178)
-Sushi: info  Generated ImplementationGuide-hl7.fhir.dk.core.json                 (00:26.209)
-Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.     (00:26.209)
-Sushi:                                                                           (00:26.210)
-Sushi: ========================= SUSHI RESULTS ===========================       (00:26.211)
-Sushi: |  -------------------------------------------------------------  |       (00:26.211)
-Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |       (00:26.212)
-Sushi: | |-------------------------------------------------------------| |       (00:26.212)
-Sushi: | |      12       |      4       |      0       |       0       | |       (00:26.212)
-Sushi: |  -------------------------------------------------------------  |       (00:26.213)
-Sushi: |  -------------------------------------------------------------  |       (00:26.214)
-Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |       (00:26.215)
-Sushi: | |-------------------------------------------------------------| |       (00:26.215)
-Sushi: | |         5          |        14         |         39         | |       (00:26.216)
-Sushi: |  -------------------------------------------------------------  |       (00:26.217)
-Sushi: |                                                                 |       (00:26.217)
-Sushi: ===================================================================       (00:26.219)
-Sushi: | O-fish-ally error free!                0 Errors      0 Warnings |       (00:26.221)
-Sushi: ===================================================================       (00:26.221)
-Sushi:                                                                           (00:26.221)
-Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:26.255)
-Load Template from fhir.base.template#current                                    (00:26.294)
+Build FHIR IG from /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone      (00:00.016)
+Build Formal Publication package, intended for http://hl7.dk/fhir/core/2.2.0     (00:00.016)
+API keys loaded from /Users/jkiddo/.fhir/fhir-settings.json                      (00:00.017)
+Package Cache: /Users/jkiddo/.fhir/packages                                      (00:00.018)
+Run Sushi on /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone            (00:00.019)
+Sushi: info  Running SUSHI v2.10.1 (implements FHIR Shorthand specification v2.0.0) (00:02.809)
+Sushi: info  Arguments:                                                          (00:02.812)
+Sushi: info    --require-latest                                                  (00:02.813)
+Sushi: info    --out /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone    (00:02.815)
+Sushi: info    /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone          (00:02.818)
+Sushi: (node:19230) Warning: Accessing non-existent property 'INVALID_ALT_NUMBER' of module exports inside circular dependency (00:07.979)
+Sushi: (Use `node --trace-warnings ...` to show where the warning was created)   (00:07.987)
+Sushi: (node:19230) Warning: Accessing non-existent property 'INVALID_ALT_NUMBER' of module exports inside circular dependency (00:07.988)
+Sushi: info  Using configuration file: /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone/sushi-config.yaml (00:07.992)
+Sushi: info  Importing FSH text...                                               (00:07.999)
+Sushi: info  Preprocessed 18 documents with 40 aliases.                          (00:08.084)
+Sushi: info  Imported 35 definitions and 39 instances.                           (00:08.100)
+Sushi: info  Checking local cache for hl7.fhir.uv.tools#current...               (00:08.100)
+Sushi: info  Found hl7.fhir.uv.tools#current in local cache.                     (00:08.561)
+Sushi: info  Loaded package hl7.fhir.uv.tools#current                            (00:09.654)
+Sushi: info  Checking local cache for hl7.terminology.r4#5.0.0...                (00:09.880)
+Sushi: info  Found hl7.terminology.r4#5.0.0 in local cache.                      (00:11.569)
+Sushi: info  Loaded package hl7.terminology.r4#5.0.0                             (00:11.569)
+Sushi: info  Checking local cache for hl7.fhir.uv.phd#1.0.0...                   (00:11.570)
+Sushi: info  Found hl7.fhir.uv.phd#1.0.0 in local cache.                         (00:11.675)
+Sushi: info  Loaded package hl7.fhir.uv.phd#1.0.0                                (00:11.677)
+Sushi: info  Checking local cache for hl7.fhir.r4.core#4.0.1...                  (00:11.678)
 Sending usage stats failed: test.fhir.org:80 failed to respond
+Sushi: info  Found hl7.fhir.r4.core#4.0.1 in local cache.                        (00:26.012)
+Sushi: info  Loaded package hl7.fhir.r4.core#4.0.1                               (00:26.015)
+Sushi: info  Converting FSH to FHIR resources...                                 (00:26.091)
+Sushi: info  Converted 16 FHIR StructureDefinitions.                             (00:26.524)
+Sushi: info  Converted 14 FHIR CodeSystems.                                      (00:27.454)
+Sushi: info  Converted 5 FHIR ValueSets.                                         (00:27.469)
+Sushi: info  Converted 39 FHIR instances.                                        (00:28.116)
+Sushi: info  Exporting FHIR resources as JSON...                                 (00:28.116)
+Sushi: info  Exported 70 FHIR resources as JSON.                                 (00:28.144)
+Sushi: info  Assembling Implementation Guide sources...                          (00:28.144)
+Sushi: info  Generated ImplementationGuide-hl7.fhir.dk.core.json                 (00:28.176)
+Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.     (00:28.177)
+Sushi:                                                                           (00:28.177)
+Sushi: ========================= SUSHI RESULTS ===========================       (00:28.178)
+Sushi: |  -------------------------------------------------------------  |       (00:28.178)
+Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |       (00:28.179)
+Sushi: | |-------------------------------------------------------------| |       (00:28.179)
+Sushi: | |      12       |      4       |      0       |       0       | |       (00:28.180)
+Sushi: |  -------------------------------------------------------------  |       (00:28.180)
+Sushi: |  -------------------------------------------------------------  |       (00:28.181)
+Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |       (00:28.182)
+Sushi: | |-------------------------------------------------------------| |       (00:28.183)
+Sushi: | |         5          |        14         |         39         | |       (00:28.184)
+Sushi: |  -------------------------------------------------------------  |       (00:28.184)
+Sushi: |                                                                 |       (00:28.185)
+Sushi: ===================================================================       (00:28.185)
+Sushi: | Valedictorian of the School of FSH!    0 Errors      0 Warnings |       (00:28.185)
+Sushi: ===================================================================       (00:28.186)
+Sushi:                                                                           (00:28.188)
+Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:28.223)
+Load Template from https://github.com/hl7dk/dk-ig-template                       (00:28.264)
+ Load Template from fhir.base.template#current                                   (00:28.890)
 
 onLoad.findSpreadsheets:
 
@@ -570,32 +572,32 @@ onLoad.updateIg:
 onLoad.extend:
 
 onLoad:
-Root directory: /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone         (00:29.498)
+Root directory: /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone         (00:31.916)
 Core Package hl7.fhir.r4.core#4.0.1
-.:Terminology Cache is at /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone/input-cache/txcache. 22 files in cache (00:33.572)
-Connect to Terminology Server at http://tx.fhir.org                              (00:33.573)
+.:Terminology Cache is at /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone/input-cache/txcache. 22 files in cache (00:38.033)
+Connect to Terminology Server at http://tx.fhir.org                              (00:38.035)
 Load Package hl7.fhir.pubpack#0.1.4
 Load Package hl7.fhir.xver-extensions#0.0.12
 Load Package hl7.terminology.r4#5.0.0
 Load Package hl7.terminology.r4#3.1.0
 Load Package hl7.fhir.uv.phd#1.0.0
-Version mismatch. This IG is version 4.0.1, while the IG 'igtools' is from version 5.0.0 (will try to run anyway) (00:36.350)
+Version mismatch. This IG is version 4.0.1, while the IG 'igtools' is from version 5.0.0 (will try to run anyway) (00:40.275)
 Load Package hl7.fhir.uv.tools#0.1.0
-Initialization complete                                                          (00:37.300)
-Fetch http://hl7.dk/fhir/core/package-list.json for version check                (00:37.301)
-Fetch http://hl7.org/fhir/uv/ipa/package-list.json for version check             (00:37.393)
-Load Content                                                                     (00:37.742)
+Initialization complete                                                          (00:41.399)
+Fetch http://hl7.dk/fhir/core/package-list.json for version check                (00:41.405)
+Fetch http://hl7.org/fhir/uv/ipa/package-list.json for version check             (00:41.534)
+Load Content                                                                     (00:41.795)
 loadPrePages from FetchedFile[/Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone/fsh-generated/includes] as /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone/fsh-generated/includes
 loadPrePages from FetchedFile[/Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone/input/pagecontent] as /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone/input/pagecontent
-Processing Conformance Resources                                                 (00:39.492)
-Generating Snapshots                                                             (00:40.524)
-Propagating status                                                               (00:43.744)
-Generating Narratives                                                            (00:43.745)
-Validating Conformance Resources                                                 (00:48.017)
-.:.:Validating Resources                                                             (01:17.891)
-Processing Provenance Records                                                    (01:19.066)
-Generating Outputs in /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone/output (01:19.070)
-Run Template                                                                     (01:20.603)
+Processing Conformance Resources                                                 (00:43.605)
+Generating Snapshots                                                             (00:44.637)
+Propagating status                                                               (00:48.175)
+Generating Narratives                                                            (00:48.176)
+Validating Conformance Resources                                                 (00:52.674)
+.:.:Validating Resources                                                             (01:11.245)
+Processing Provenance Records                                                    (01:12.478)
+Generating Outputs in /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone/output (01:12.481)
+Run Template                                                                     (01:14.031)
 
 onGenerate.checkVersions:
      [xslt] Processing /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone/template/onGenerate-ig-working.xml to /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone/template/versions.txt
@@ -677,56 +679,57 @@ onGenerate.copyDataFiles:
 onGenerate.extend:
 
 onGenerate:
-Template Done                                                                    (01:22.552)
-Generating Summary Outputs                                                       (01:54.848)
-Sending Usage Stats to Server                                                    (02:01.172)
-## Memory (MB): Use = 2008, Free = 461, Total = 2472, Max =8192
+Template Done                                                                    (01:16.093)
+Generating Summary Outputs                                                       (02:09.476)
+Sending Usage Stats to Server                                                    (02:16.558)
+## Memory (MB): Use = 1746, Free = 2425, Total = 4172, Max =8192
 Reclaiming memory...
-## Memory (MB): Use = 882, Free = 1589, Total = 2472, Max =8192
-Run jekyll: jekyll build --destination "/Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone/output" (in folder /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone/temp/pages) (02:01.493)
-Jekyll: Source: /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone/temp/pages (02:03.400)
-Jekyll: Generating...                                                            (02:03.401)
-Jekyll: done in 3.047 seconds.                                                   (02:06.446)
+## Memory (MB): Use = 885, Free = 2130, Total = 3016, Max =8192
+Run jekyll: jekyll build --destination "/Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone/output" (in folder /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone/temp/pages) (02:16.874)
+Jekyll: Source: /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone/temp/pages (02:18.487)
+Jekyll: Generating...                                                            (02:18.488)
+Jekyll: done in 5.716 seconds.                                                   (02:24.203)
 Installing hl7.fhir.dk.core#2.2.0 to the package cache
   Fetching:
 .
-  Installing: Checking Output HTML                                                             (02:08.415)
-found 1246 files                                                                 (02:08.432)
+  Installing: Checking Output HTML                                                             (02:26.433)
+found 1248 files                                                                 (02:26.445)
 ........................................
 ........................................
-  ... 1246 html files, 0 pages invalid xhtml (0%)                                (02:26.087)
-  ... 130396 links, 0 broken links (0%)                                          (02:26.088)
-Build final .zip                                                                 (02:26.088)
-Final .zip built                                                                 (02:28.347)
-Built. Times: loading: 00:01.749, generate: 01:52.399, narrative generation: 00:04.271, realm-rules: 00:00.000, previous-version: 00:11.245, jekyll: 00:04.960, validation: 00:19.684 (#71), template: 00:01.948 (#3) (02:31.897)
+  ... 1248 html files, 0 pages invalid xhtml (0%)                                (02:44.050)
+  ... 132160 links, 0 broken links (0%)                                          (02:44.055)
+Build final .zip                                                                 (02:44.056)
+Final .zip built                                                                 (02:47.492)
+Built. Times: loading: 00:01.809, generate: 02:07.542, narrative generation: 00:04.497, realm-rules: 00:00.000, previous-version: 00:10.132, jekyll: 00:07.338, validation: 00:09.553 (#71), template: 00:02.062 (#3) (02:51.149)
 Validation output in /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone/output/qa.html
-Errors: 5, Warnings: 18, Info: 12, Broken Links: 0 (02:34.379)
-Finished                                                                         (02:34.381)
-Done                                                                             (02:34.381)
-Keep a copy of the build directory at /Users/jkiddo/work/temp/web-root/run-20230504/ig-build-zips/hl7.fhir.dk.core#2.2.0.zip
+Errors: 1, Warnings: 17, Info: 12, Broken Links: 0 (02:53.623)
+Finished                                                                         (02:53.626)
+Done                                                                             (02:53.627)
+Keep a copy of the build directory at /Users/jkiddo/work/temp/web-root/run-20230505/ig-build-zips/hl7.fhir.dk.core#2.2.0.zip
+Sending usage stats failed: test.fhir.org:80 failed to respond
 
-ok. All checks passed. Publish v2.2.0 to /Users/jkiddo/work/temp/web-root/run-20230504/core/2.2.0
-Copy the IG to /Users/jkiddo/work/temp/web-root/run-20230504/core/2.2.0
-Update /Users/jkiddo/work/temp/web-root/run-20230504/core/package-list.json
+ok. All checks passed. Publish v2.2.0 to /Users/jkiddo/work/temp/web-root/run-20230505/core/2.2.0
+Copy the IG to /Users/jkiddo/work/temp/web-root/run-20230505/core/2.2.0
+Update /Users/jkiddo/work/temp/web-root/run-20230505/core/package-list.json
 Publish Box Statement: This page is part of the HL7 FHIR Implementation Guide: DK Core (v2.2.0: Release) based on <a href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a href="http://hl7.dk/fhir/core/history.html">Directory of published versions <img src="external.png" style="text-align: baseline"></a>
-no html insert in /Users/jkiddo/work/temp/web-root/run-20230504/core/2.2.0/ipa-comparison-v1.0.0/template-comparison-CodeSystem.html
-no html insert in /Users/jkiddo/work/temp/web-root/run-20230504/core/2.2.0/ipa-comparison-v1.0.0/sd-ipa-practitioner-dk-core-practitioner.html
-no html insert in /Users/jkiddo/work/temp/web-root/run-20230504/core/2.2.0/ipa-comparison-v1.0.0/index.html
-no html insert in /Users/jkiddo/work/temp/web-root/run-20230504/core/2.2.0/ipa-comparison-v1.0.0/template-comparison-CapabilityStatement.html
-no html insert in /Users/jkiddo/work/temp/web-root/run-20230504/core/2.2.0/ipa-comparison-v1.0.0/sd-ipa-condition-dk-core-condition.html
-no html insert in /Users/jkiddo/work/temp/web-root/run-20230504/core/2.2.0/ipa-comparison-v1.0.0/sd-ipa-patient-dk-core-patient.html
-no html insert in /Users/jkiddo/work/temp/web-root/run-20230504/core/2.2.0/ipa-comparison-v1.0.0/template-comparison-Profile.html
-no html insert in /Users/jkiddo/work/temp/web-root/run-20230504/core/2.2.0/ipa-comparison-v1.0.0/sd-SimpleQuantity-SimpleQuantity.html
-no html insert in /Users/jkiddo/work/temp/web-root/run-20230504/core/2.2.0/ipa-comparison-v1.0.0/template-comparison-ValueSet.html
-no html insert in /Users/jkiddo/work/temp/web-root/run-20230504/core/2.2.0/ipa-comparison-v1.0.0/template-comparison-index.html
-no html insert in /Users/jkiddo/work/temp/web-root/run-20230504/core/2.2.0/ipa-comparison-v1.0.0/vs-marital-status-dk-marital-status.html
-no html insert in /Users/jkiddo/work/temp/web-root/run-20230504/core/2.2.0/ipa-comparison-v1.0.0/sd-ipa-observation-dk-core-observation.html
-no html insert in /Users/jkiddo/work/temp/web-root/run-20230504/core/2.2.0/ipa-comparison-v1.0.0/template-comparison-set.html
-no html insert in /Users/jkiddo/work/temp/web-root/run-20230504/core/2.2.0/ipa-comparison-v1.0.0/template-comparison.html
+no html insert in /Users/jkiddo/work/temp/web-root/run-20230505/core/2.2.0/ipa-comparison-v1.0.0/template-comparison-CodeSystem.html
+no html insert in /Users/jkiddo/work/temp/web-root/run-20230505/core/2.2.0/ipa-comparison-v1.0.0/sd-ipa-practitioner-dk-core-practitioner.html
+no html insert in /Users/jkiddo/work/temp/web-root/run-20230505/core/2.2.0/ipa-comparison-v1.0.0/index.html
+no html insert in /Users/jkiddo/work/temp/web-root/run-20230505/core/2.2.0/ipa-comparison-v1.0.0/template-comparison-CapabilityStatement.html
+no html insert in /Users/jkiddo/work/temp/web-root/run-20230505/core/2.2.0/ipa-comparison-v1.0.0/sd-ipa-condition-dk-core-condition.html
+no html insert in /Users/jkiddo/work/temp/web-root/run-20230505/core/2.2.0/ipa-comparison-v1.0.0/sd-ipa-patient-dk-core-patient.html
+no html insert in /Users/jkiddo/work/temp/web-root/run-20230505/core/2.2.0/ipa-comparison-v1.0.0/template-comparison-Profile.html
+no html insert in /Users/jkiddo/work/temp/web-root/run-20230505/core/2.2.0/ipa-comparison-v1.0.0/sd-SimpleQuantity-SimpleQuantity.html
+no html insert in /Users/jkiddo/work/temp/web-root/run-20230505/core/2.2.0/ipa-comparison-v1.0.0/template-comparison-ValueSet.html
+no html insert in /Users/jkiddo/work/temp/web-root/run-20230505/core/2.2.0/ipa-comparison-v1.0.0/template-comparison-index.html
+no html insert in /Users/jkiddo/work/temp/web-root/run-20230505/core/2.2.0/ipa-comparison-v1.0.0/vs-marital-status-dk-marital-status.html
+no html insert in /Users/jkiddo/work/temp/web-root/run-20230505/core/2.2.0/ipa-comparison-v1.0.0/sd-ipa-observation-dk-core-observation.html
+no html insert in /Users/jkiddo/work/temp/web-root/run-20230505/core/2.2.0/ipa-comparison-v1.0.0/template-comparison-set.html
+no html insert in /Users/jkiddo/work/temp/web-root/run-20230505/core/2.2.0/ipa-comparison-v1.0.0/template-comparison.html
   .. 441 files checked, 441 updated
   .. 235 clones checked, 470 updated
   .. 71 redirections (71 created/updated)
-This is a milestone release - publish v2.2.0 to /Users/jkiddo/work/temp/web-root/run-20230504/core
+This is a milestone release - publish v2.2.0 to /Users/jkiddo/work/temp/web-root/run-20230505/core
 Publish Box Statement: This page is part of the HL7 FHIR Implementation Guide: DK Core (v2.2.0: Release) based on <a href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version.  For a full list of available versions, see the <a href="http://hl7.dk/fhir/core/history.html">Directory of published versions <img src="external.png" style="text-align: baseline"></a>
 no html insert in /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone/output/ipa-comparison-v1.0.0/template-comparison-CodeSystem.html
 no html insert in /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone/output/ipa-comparison-v1.0.0/sd-ipa-practitioner-dk-core-practitioner.html
@@ -747,8 +750,8 @@ no html insert in /Users/jkiddo/work/temp/hl7.fhir.dk.core#2.2.0-milestone/outpu
   .. 71 redirections (71 created/updated)
 Check for Files to delete
   ... 0 files
-Copy to new IG to /Users/jkiddo/work/temp/web-root/run-20230504/core
-Update history page at /Users/jkiddo/work/temp/web-root/run-20230504/core from /Users/jkiddo/work/fhir-ig-history-template and /Users/jkiddo/work/website/fhir/templates
-Build is complete. Copy from /Users/jkiddo/work/temp/web-root/run-20230504
+Copy to new IG to /Users/jkiddo/work/temp/web-root/run-20230505/core
+Update history page at /Users/jkiddo/work/temp/web-root/run-20230505/core from /Users/jkiddo/work/fhir-ig-history-template and /Users/jkiddo/work/website/fhir/templates
+Build is complete. Copy from /Users/jkiddo/work/temp/web-root/run-20230505
 hl7.fhir.dk.core (http://hl7.dk/fhir/core): HL7 FHIR Implementation Guide: DK Core @ http://build.fhir.org/ig/hl7dk/dk-core
   release: Release 2.2.0/4.0.1 @ http://hl7.dk/fhir/core/2.2.0

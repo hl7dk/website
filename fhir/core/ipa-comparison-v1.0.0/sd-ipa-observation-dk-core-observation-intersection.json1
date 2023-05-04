@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "98041a14-e3f2-454e-a5c8-0d1560df48e9-15",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/98041a14-e3f2-454e-a5c8-0d1560df48e9-15",
+  "id" : "25aa7014-306f-42a7-bcb4-48ade50c344f-15",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/25aa7014-306f-42a7-bcb4-48ade50c344f-15",
   "name" : "IntersectionIPAObservationAndDkCoreObservation",
   "title" : "Intersection of IPA-Observation And Danish Core Observation Profiles",
   "status" : "active",
-  "date" : "2023-05-04T21:41:45+02:00",
+  "date" : "2023-05-05T01:43:27+02:00",
   "snapshot" : {
     "element" : [{
       "path" : "Observation",

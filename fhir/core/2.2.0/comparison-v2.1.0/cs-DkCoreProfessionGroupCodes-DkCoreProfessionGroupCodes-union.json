@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "abfd44ce-4722-4d80-8d4e-eca1282934eb-2",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/abfd44ce-4722-4d80-8d4e-eca1282934eb-2",
+  "id" : "a402c0f3-19c7-45fb-9d12-c2a1307a8b97-2",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/a402c0f3-19c7-45fb-9d12-c2a1307a8b97-2",
   "name" : "UnionDkCoreProfessionGroupCodesAndDkCoreProfessionGroupCodes",
   "title" : "Union of DK Profession Group Codes And DK Profession Group Codes",
   "status" : "active",
-  "date" : "2023-05-04T21:36:46+02:00",
+  "date" : "2023-05-05T01:38:26+02:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

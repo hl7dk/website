@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="00302997-84b4-47fc-8626-2b2efa919bc4"/>
+  <id value="bacc7ef0-0bcf-47e6-9cda-6fcfbaca944b"/>
   <meta>
-    <lastUpdated value="2023-05-04T21:41:07.274+02:00"/>
+    <lastUpdated value="2023-05-05T01:43:00.587+02:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -206,8 +206,7 @@
         <title value="DK Profession Group"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-05-04T21:41:07+02:00"/>
-        <publisher value="HL7 Denmark"/>
+        <date value="2023-05-05T01:43:00+02:00"/>
         <contact>
           <name value="HL7 Denmark"/>
           <telecom>
@@ -228,8 +227,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2ca34d12-b4a4-4675-8dbe-304b545d200f"/>
-          <timestamp value="2023-05-04T21:42:04+02:00"/>
+          <identifier value="urn:uuid:587ae553-d3b7-4cb2-ba15-452f7d6e2305"/>
+          <timestamp value="2023-05-05T01:44:07+02:00"/>
           <total value="21"/>
           <parameter>
             <name value="excludeNested"/>
@@ -597,8 +596,7 @@
         <title value="DK MaritalStatus"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-05-04T21:41:07+02:00"/>
-        <publisher value="HL7 Denmark"/>
+        <date value="2023-05-05T01:43:00+02:00"/>
         <contact>
           <name value="HL7 Denmark"/>
           <telecom>
@@ -620,8 +618,8 @@
         </jurisdiction>
         <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:671e5eae-0ef7-4ffa-aefc-b2823f4c4d43"/>
-          <timestamp value="2023-05-04T21:42:07+02:00"/>
+          <identifier value="urn:uuid:ec467206-6490-46f7-b2af-06be40ae884c"/>
+          <timestamp value="2023-05-05T01:44:10+02:00"/>
           <total value="14"/>
           <parameter>
             <name value="excludeNested"/>
@@ -789,8 +787,7 @@
         <title value="DK Regional Subdivision Codes"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-05-04T21:41:07+02:00"/>
-        <publisher value="HL7 Denmark"/>
+        <date value="2023-05-05T01:43:00+02:00"/>
         <contact>
           <name value="HL7 Denmark"/>
           <telecom>
@@ -811,8 +808,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:524890e0-671e-4f45-a6c0-4880a4ecab4d"/>
-          <timestamp value="2023-05-04T21:42:10+02:00"/>
+          <identifier value="urn:uuid:3cd83c54-cbaa-4ac0-9f8e-876e6bfe1c95"/>
+          <timestamp value="2023-05-05T01:44:13+02:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -929,8 +926,7 @@
         <title value="DK Core Vital Signs"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-05-04T21:41:07+02:00"/>
-        <publisher value="HL7 Denmark"/>
+        <date value="2023-05-05T01:43:00+02:00"/>
         <contact>
           <name value="HL7 Denmark"/>
           <telecom>
@@ -951,8 +947,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:667bee51-3155-496a-9eb2-9bc547745050"/>
-          <timestamp value="2023-05-04T21:42:11+02:00"/>
+          <identifier value="urn:uuid:d8b5955b-f598-43c8-a007-c909c4bc6079"/>
+          <timestamp value="2023-05-05T01:44:15+02:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1872,8 +1868,7 @@
         <title value="DK Municipality Codes"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-05-04T21:41:07+02:00"/>
-        <publisher value="HL7 Denmark"/>
+        <date value="2023-05-05T01:43:00+02:00"/>
         <contact>
           <name value="HL7 Denmark"/>
           <telecom>
@@ -1894,8 +1889,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e7f43f80-7486-45ff-883f-2bccdb4d7c71"/>
-          <timestamp value="2023-05-04T21:42:14+02:00"/>
+          <identifier value="urn:uuid:2c239adb-8690-4835-83cb-c03c6d1053c5"/>
+          <timestamp value="2023-05-05T01:44:18+02:00"/>
           <total value="104"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3013,8 +3008,7 @@
         <title value="DK SOR Organization Type"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-05-04T21:41:07+02:00"/>
-        <publisher value="HL7 Denmark"/>
+        <date value="2023-05-05T01:43:00+02:00"/>
         <contact>
           <name value="HL7 Denmark"/>
           <telecom>
@@ -3036,8 +3030,8 @@
         </jurisdiction>
         <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
         <expansion>
-          <identifier value="urn:uuid:6f863669-2829-41e3-8b7c-676f1884d66b"/>
-          <timestamp value="2023-05-04T21:42:16+02:00"/>
+          <identifier value="urn:uuid:3497c010-3736-42fe-b033-ee4f48395f41"/>
+          <timestamp value="2023-05-05T01:44:20+02:00"/>
           <total value="68"/>
           <parameter>
             <name value="excludeNested"/>
@@ -3457,8 +3451,7 @@
         <title value="TechniqesSCTCodes"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-05-04T21:41:07+02:00"/>
-        <publisher value="HL7 Denmark"/>
+        <date value="2023-05-05T01:43:00+02:00"/>
         <contact>
           <name value="HL7 Denmark"/>
           <telecom>
@@ -3479,8 +3472,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:39f607c1-98a0-4b41-9099-229810596b1a"/>
-          <timestamp value="2023-05-04T21:42:21+02:00"/>
+          <identifier value="urn:uuid:10c67b7f-6c0f-4e3c-b23b-8ca88e1fe513"/>
+          <timestamp value="2023-05-05T01:44:25+02:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>

@@ -1,11 +1,11 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "98041a14-e3f2-454e-a5c8-0d1560df48e9-8",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/98041a14-e3f2-454e-a5c8-0d1560df48e9-8",
+  "id" : "25aa7014-306f-42a7-bcb4-48ade50c344f-8",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/25aa7014-306f-42a7-bcb4-48ade50c344f-8",
   "name" : "UnionMarital Status CodesAndnull",
   "title" : "Union of MaritalStatus And DK MaritalStatus",
   "status" : "active",
-  "date" : "2023-05-04T21:41:45+02:00",
+  "date" : "2023-05-05T01:43:27+02:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
