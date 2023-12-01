@@ -4,11 +4,22 @@
     <description>New Packages published by HL7 Denmark&gt;</description>
     <link>http://hl7.dk/fhir/package-feed.xml</link>
     <generator>HL7, Inc FHIR Publication tooling</generator>
-    <lastBuildDate>Fri, 05 May 2023 01:36:21 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 01 Dec 2023 01:59:44 +0100</lastBuildDate>
     <atom:link href="http://hl7.dk/fhir/package-feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 05 May 2023 01:36:21 +0200</pubDate>
+    <pubDate>Fri, 01 Dec 2023 01:59:44 +0100</pubDate>
     <language>en</language>
     <ttl>600</ttl>
+    <item>
+      <title>hl7.fhir.dk.core#3.0.0</title>
+      <description>DK Core version 3.0.0</description>
+      <link>http://hl7.dk/fhir/core/3.0.0/package.tgz</link>
+      <guid isPermaLink="true">http://hl7.dk/fhir/core/3.0.0/package.tgz</guid>
+      <dc:creator>HL7 Denmark</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Fri, 01 Dec 2023 01:59:44 +0100</pubDate>
+      <fhir:details>Publication run at 01/12/2023 by jkiddo using vVersion 1.5.5 (Git# 3db07b9b9942). Built 2023-11-24T21:11:01.665Z (6 days old) source id Unknown (todo) Run #3</fhir:details>
+    </item>
     <item>
       <title>hl7.fhir.dk.core#2.2.0</title>
       <description/>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="bacc7ef0-0bcf-47e6-9cda-6fcfbaca944b"/>
+  <id value="72dc0bc3-f345-436d-a367-08e69d6c12ac"/>
   <meta>
-    <lastUpdated value="2023-05-05T01:43:00.587+02:00"/>
+    <lastUpdated value="2023-12-01T14:04:08.962+01:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -13,10 +13,10 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 21 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-DkCoreProfessionGroupCodes.html">DK Profession Group Codes v2.2.0 (CodeSystem)</a>
+              <a href="CodeSystem-DkCoreProfessionGroupCodes.html">codesystem DK Profession Group Codes v3.0.0 (CodeSystem)</a>
             </p>
+            <p>This value set contains 21 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -201,24 +201,12 @@
           </div>
         </text>
         <url value="http://hl7.dk/fhir/core/ValueSet/DkCoreProfessionGroupValueSet"/>
-        <version value="2.2.0"/>
+        <version value="3.0.0"/>
         <name value="DkCoreProfessionGroupValueSet"/>
         <title value="DK Profession Group"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-05-05T01:43:00+02:00"/>
-        <contact>
-          <name value="HL7 Denmark"/>
-          <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.dk"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="jenskristianvilladsen@gmail.com"/>
-          </telecom>
-        </contact>
-        <description value="DK Profession Group codes"/>
+        <date value="2023-12-01T14:04:08+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -227,16 +215,16 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:587ae553-d3b7-4cb2-ba15-452f7d6e2305"/>
-          <timestamp value="2023-05-05T01:44:07+02:00"/>
+          <identifier value="urn:uuid:4e597905-8bac-4f5c-8dff-716541919368"/>
+          <timestamp value="2023-12-01T14:05:32+01:00"/>
           <total value="21"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes|2.2.0"/>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes|3.0.0"/>
           </parameter>
           <contains>
             <system value="http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes"/>
@@ -348,515 +336,20 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.dk/fhir/core/ValueSet/dk-marital-status"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 14 concepts</p>
-            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
-              <p>Expansion based on: </p>
-              <ul>
-                <li>
-                  <a href="http://hl7.org/fhir/R4/valueset-marital-status.html">MaritalStatus v4.0.1 (ValueSet)</a>
-                </li>
-                <li>
-                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html">MaritalStatus v2.1.0 (CodeSystem)</a>
-                </li>
-                <li>
-                  <a href="CodeSystem-dk-marital-status.html">DK Marital Statuses v2.2.0 (CodeSystem)</a>
-                </li>
-                <li>
-                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html">NullFlavor v2.1.0 (CodeSystem)</a>
-                </li>
-              </ul>
-            </div>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-A"> </a>  
-                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-A">A</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
-                <td>Annulled</td>
-                <td>
-                  <div>
-                    <p>Marriage contract has been declared null and to not have existed</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-D"> </a>  
-                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-D">D</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
-                <td>Divorced</td>
-                <td>
-                  <div>
-                    <p>Marriage contract has been declared dissolved and inactive</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-I"> </a>  
-                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-I">I</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
-                <td>Interlocutory</td>
-                <td>
-                  <div>
-                    <p>Subject to an Interlocutory Decree.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-L"> </a>  
-                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-L">L</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
-                <td>Legally Separated</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-M"> </a>  
-                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-M">M</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
-                <td>Married</td>
-                <td>
-                  <div>
-                    <p>A current marriage contract is active</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-C"> </a>  
-                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-C">C</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
-                <td>Common Law</td>
-                <td>
-                  <div>
-                    <p>a marriage recognized in some jurisdictions and based on the parties' agreement to consider themselves married and can also be based on documentation of cohabitation.</p>
-
-                    <p>This definition was based on https://www.merriam-webster.com/dictionary/common-law%20marriage.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-P"> </a>  
-                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-P">P</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
-                <td>Polygamous</td>
-                <td>
-                  <div>
-                    <p>More than 1 current spouse</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-T"> </a>  
-                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-T">T</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
-                <td>Domestic partner</td>
-                <td>
-                  <div>
-                    <p>Person declares that a domestic partner relationship exists.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-U"> </a>  
-                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-U">U</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
-                <td>unmarried</td>
-                <td>
-                  <div>
-                    <p>Currently not in a marriage contract.</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-S"> </a>  
-                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-S">S</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
-                <td>Never Married</td>
-                <td>
-                  <div>
-                    <p>No marriage contract has ever been entered</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-W"> </a>  
-                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-W">W</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
-                <td>Widowed</td>
-                <td>
-                  <div>
-                    <p>The spouse has died</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-UNK"> </a>  
-                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
-                <td>unknown</td>
-                <td>
-                  <div>
-                    <p>**Description:**A proper value is applicable, but not known.</p>
-
-                    <p>
-                      <strong>Usage Notes</strong>: This means the actual value is not known. If the only thing that is unknown is how to properly express the value in the necessary constraints (value set, datatype, etc.), then the OTH or UNC flavor should be used. No properties should be included for a datatype with this property unless:
-                    </p>
-
-                    <ol>
-
-                      <li>Those properties themselves directly translate to a semantic of &quot;unknown&quot;. (E.g. a local code sent as a translation that conveys 'unknown')</li>
-
-                      <li>Those properties further qualify the nature of what is unknown. (E.g. specifying a use code of &quot;H&quot; and a URL prefix of &quot;tel:&quot; to convey that it is the home phone number that is unknown.)</li>
-
-                    </ol>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.dk-fhir-core-CodeSystem-dk-marital-status-P"> </a>  
-                  <a href="CodeSystem-dk-marital-status.html#dk-marital-status-P">P</a>
-                </td>
-                <td>http://hl7.dk/fhir/core/CodeSystem/dk-marital-status</td>
-                <td>Registered partnership</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.dk-fhir-core-CodeSystem-dk-marital-status-O"> </a>  
-                  <a href="CodeSystem-dk-marital-status.html#dk-marital-status-O">O</a>
-                </td>
-                <td>http://hl7.dk/fhir/core/CodeSystem/dk-marital-status</td>
-                <td>Dissolved partnership</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://hl7.dk/fhir/core/ValueSet/dk-marital-status"/>
-        <version value="2.2.0"/>
-        <title value="DK MaritalStatus"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2023-05-05T01:43:00+02:00"/>
-        <contact>
-          <name value="HL7 Denmark"/>
-          <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.dk"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="jenskristianvilladsen@gmail.com"/>
-          </telecom>
-        </contact>
-        <description value="This value set defines the set of codes that can be used to indicate the marital status of a person in Denmark."/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="DK"/>
-            <display value="Denmark"/>
-          </coding>
-        </jurisdiction>
-        <copyright value="CC-BY-SA-4.0"/>
-        <expansion>
-          <identifier value="urn:uuid:ec467206-6490-46f7-b2af-06be40ae884c"/>
-          <timestamp value="2023-05-05T01:44:10+02:00"/>
-          <total value="14"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/ValueSet/marital-status|4.0.1"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus|2.1.0"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor|2.1.0"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-marital-status|2.2.0"/>
-          </parameter>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
-            <code value="A"/>
-            <display value="Annulled"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
-            <code value="D"/>
-            <display value="Divorced"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
-            <code value="I"/>
-            <display value="Interlocutory"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
-            <code value="L"/>
-            <display value="Legally Separated"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
-            <code value="M"/>
-            <display value="Married"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
-            <code value="C"/>
-            <display value="Common Law"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
-            <code value="P"/>
-            <display value="Polygamous"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
-            <code value="T"/>
-            <display value="Domestic partner"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
-            <code value="U"/>
-            <display value="unmarried"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
-            <code value="S"/>
-            <display value="Never Married"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
-            <code value="W"/>
-            <display value="Widowed"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
-            <code value="UNK"/>
-            <display value="unknown"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.dk/fhir/core/CodeSystem/dk-marital-status"/>
-            <code value="P"/>
-            <display value="Registered partnership"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.dk/fhir/core/CodeSystem/dk-marital-status"/>
-            <code value="O"/>
-            <display value="Dissolved partnership"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 5 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-dk-core-regional-subdivision-codes.html">DK Regional Subdivision Codes v2.2.0 (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.dk-fhir-core-CodeSystem-dk-core-regional-subdivision-codes-DK-84"> </a>  
-                  <a href="CodeSystem-dk-core-regional-subdivision-codes.html#dk-core-regional-subdivision-codes-DK-84">DK-84</a>
-                </td>
-                <td>http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes</td>
-                <td>Capital Region of Denmark</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.dk-fhir-core-CodeSystem-dk-core-regional-subdivision-codes-DK-82"> </a>  
-                  <a href="CodeSystem-dk-core-regional-subdivision-codes.html#dk-core-regional-subdivision-codes-DK-82">DK-82</a>
-                </td>
-                <td>http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes</td>
-                <td>Central Denmark Region</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.dk-fhir-core-CodeSystem-dk-core-regional-subdivision-codes-DK-81"> </a>  
-                  <a href="CodeSystem-dk-core-regional-subdivision-codes.html#dk-core-regional-subdivision-codes-DK-81">DK-81</a>
-                </td>
-                <td>http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes</td>
-                <td>Nord Denmark Region</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.dk-fhir-core-CodeSystem-dk-core-regional-subdivision-codes-DK-85"> </a>  
-                  <a href="CodeSystem-dk-core-regional-subdivision-codes.html#dk-core-regional-subdivision-codes-DK-85">DK-85</a>
-                </td>
-                <td>http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes</td>
-                <td>Region Zealand</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.dk-fhir-core-CodeSystem-dk-core-regional-subdivision-codes-DK-83"> </a>  
-                  <a href="CodeSystem-dk-core-regional-subdivision-codes.html#dk-core-regional-subdivision-codes-DK-83">DK-83</a>
-                </td>
-                <td>http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes</td>
-                <td>Region of Southern Denmark</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes"/>
-        <version value="2.2.0"/>
-        <name value="RegionalSubdivisionCodes"/>
-        <title value="DK Regional Subdivision Codes"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2023-05-05T01:43:00+02:00"/>
-        <contact>
-          <name value="HL7 Denmark"/>
-          <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.dk"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="jenskristianvilladsen@gmail.com"/>
-          </telecom>
-        </contact>
-        <description value="Subdivision codes (Regional codes) used in Denmark"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="DK"/>
-            <display value="Denmark"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:3cd83c54-cbaa-4ac0-9f8e-876e6bfe1c95"/>
-          <timestamp value="2023-05-05T01:44:13+02:00"/>
-          <total value="5"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes|2.2.0"/>
-          </parameter>
-          <contains>
-            <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"/>
-            <code value="DK-84"/>
-            <display value="Capital Region of Denmark"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"/>
-            <code value="DK-82"/>
-            <display value="Central Denmark Region"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"/>
-            <code value="DK-81"/>
-            <display value="Nord Denmark Region"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"/>
-            <code value="DK-85"/>
-            <display value="Region Zealand"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"/>
-            <code value="DK-83"/>
-            <display value="Region of Southern Denmark"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
     <fullUrl value="http://hl7.dk/fhir/core/ValueSet/dk-core-LoincVitalSigns"/>
     <resource>
       <ValueSet>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>Loinc v2.74</li>
+                <li>Loinc v2.74</li>
+              </ul>
+            </div>
             <p>This value set contains 6 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.73</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -921,24 +414,12 @@
           </div>
         </text>
         <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-LoincVitalSigns"/>
-        <version value="2.2.0"/>
+        <version value="3.0.0"/>
         <name value="LoincVitalSigns"/>
         <title value="DK Core Vital Signs"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-05-05T01:43:00+02:00"/>
-        <contact>
-          <name value="HL7 Denmark"/>
-          <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.dk"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="jenskristianvilladsen@gmail.com"/>
-          </telecom>
-        </contact>
-        <description value="LOINC codes describing vital signs."/>
+        <date value="2023-12-01T14:04:08+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -947,20 +428,28 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d8b5955b-f598-43c8-a007-c909c4bc6079"/>
-          <timestamp value="2023-05-05T01:44:15+02:00"/>
+          <identifier value="urn:uuid:083571cb-476f-40af-b759-5aabd55c900c"/>
+          <timestamp value="2023-12-01T14:05:32+01:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
           </parameter>
           <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.74"/>
+          </parameter>
+          <parameter>
             <name value="version"/>
-            <valueUri value="http://loinc.org|2.73"/>
+            <valueUri value="http://loinc.org|2.74"/>
           </parameter>
           <contains>
             <system value="http://loinc.org"/>
@@ -1003,18 +492,18 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 104 concepts</p>
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on: </p>
               <ul>
                 <li>
-                  <a href="CodeSystem-dk-core-municipality-codes-greenland.html">DK Greenland Municipality Codes v2.2.0 (CodeSystem)</a>
+                  <a href="CodeSystem-dk-core-municipality-codes.html">codesystem DK Municipality Codes v3.0.0 (CodeSystem)</a>
                 </li>
                 <li>
-                  <a href="CodeSystem-dk-core-municipality-codes.html">DK Municipality Codes v2.2.0 (CodeSystem)</a>
+                  <a href="CodeSystem-dk-core-municipality-codes-greenland.html">codesystem DK Greenland Municipality Codes v3.0.0 (CodeSystem)</a>
                 </li>
               </ul>
             </div>
+            <p>This value set contains 104 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -1863,24 +1352,12 @@
           </div>
         </text>
         <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes"/>
-        <version value="2.2.0"/>
+        <version value="3.0.0"/>
         <name value="MunicipalityCodes"/>
         <title value="DK Municipality Codes"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-05-05T01:43:00+02:00"/>
-        <contact>
-          <name value="HL7 Denmark"/>
-          <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.dk"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="jenskristianvilladsen@gmail.com"/>
-          </telecom>
-        </contact>
-        <description value="Municipality codes used in Denmark"/>
+        <date value="2023-12-01T14:04:08+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1889,20 +1366,20 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2c239adb-8690-4835-83cb-c03c6d1053c5"/>
-          <timestamp value="2023-05-05T01:44:18+02:00"/>
+          <identifier value="urn:uuid:f8dd7fee-b0ef-44c9-b94e-2db18471792f"/>
+          <timestamp value="2023-12-01T14:05:32+01:00"/>
           <total value="104"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes|2.2.0"/>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes|3.0.0"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland|2.2.0"/>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland|3.0.0"/>
           </parameter>
           <contains>
             <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes"/>
@@ -2429,20 +1906,16 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.dk/fhir/core/ValueSet/sor-organization-type"/>
+    <fullUrl value="http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes"/>
     <resource>
       <ValueSet>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 68 concepts</p>
-            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
-              <p>Expansion based on: </p>
-              <ul>
-                <li>SNOMED CT Danish edition 30-Sep 2021</li>
-                <li>SNOMED CT International edition 31-Jul 2022</li>
-              </ul>
-            </div>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-dk-core-regional-subdivision-codes.html">codesystem DK Regional Subdivision Codes v3.0.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 5 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -2457,11 +1930,608 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
+                  <a name="http---hl7.dk-fhir-core-CodeSystem-dk-core-regional-subdivision-codes-DK-84"> </a>  
+                  <a href="CodeSystem-dk-core-regional-subdivision-codes.html#dk-core-regional-subdivision-codes-DK-84">DK-84</a>
+                </td>
+                <td>http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes</td>
+                <td>Capital Region of Denmark</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.dk-fhir-core-CodeSystem-dk-core-regional-subdivision-codes-DK-82"> </a>  
+                  <a href="CodeSystem-dk-core-regional-subdivision-codes.html#dk-core-regional-subdivision-codes-DK-82">DK-82</a>
+                </td>
+                <td>http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes</td>
+                <td>Central Denmark Region</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.dk-fhir-core-CodeSystem-dk-core-regional-subdivision-codes-DK-81"> </a>  
+                  <a href="CodeSystem-dk-core-regional-subdivision-codes.html#dk-core-regional-subdivision-codes-DK-81">DK-81</a>
+                </td>
+                <td>http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes</td>
+                <td>Nord Denmark Region</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.dk-fhir-core-CodeSystem-dk-core-regional-subdivision-codes-DK-85"> </a>  
+                  <a href="CodeSystem-dk-core-regional-subdivision-codes.html#dk-core-regional-subdivision-codes-DK-85">DK-85</a>
+                </td>
+                <td>http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes</td>
+                <td>Region Zealand</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.dk-fhir-core-CodeSystem-dk-core-regional-subdivision-codes-DK-83"> </a>  
+                  <a href="CodeSystem-dk-core-regional-subdivision-codes.html#dk-core-regional-subdivision-codes-DK-83">DK-83</a>
+                </td>
+                <td>http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes</td>
+                <td>Region of Southern Denmark</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes"/>
+        <version value="3.0.0"/>
+        <name value="RegionalSubdivisionCodes"/>
+        <title value="DK Regional Subdivision Codes"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-12-01T14:04:08+01:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DK"/>
+            <display value="Denmark"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:1c11a4c7-c5ca-49c6-b8d8-9a39f332709c"/>
+          <timestamp value="2023-12-01T14:05:32+01:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes|3.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"/>
+            <code value="DK-84"/>
+            <display value="Capital Region of Denmark"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"/>
+            <code value="DK-82"/>
+            <display value="Central Denmark Region"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"/>
+            <code value="DK-81"/>
+            <display value="Nord Denmark Region"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"/>
+            <code value="DK-85"/>
+            <display value="Region Zealand"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"/>
+            <code value="DK-83"/>
+            <display value="Region of Southern Denmark"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.dk/fhir/core/ValueSet/dk-core-TechniquesSCTCodes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>SNOMED CT International edition 01-Sept 2023</li>
+                <li>SNOMED CT International edition 01-Sept 2023</li>
+              </ul>
+            </div>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-761996005"> </a>  
+                  <a href="http://snomed.info/id/761996005">761996005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Estimation technique (qualifier value)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-733985002"> </a>  
+                  <a href="http://snomed.info/id/733985002">733985002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Reported (qualifier value)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-272391002"> </a>  
+                  <a href="http://snomed.info/id/272391002">272391002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Measurement technique (qualifier value)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-TechniquesSCTCodes"/>
+        <version value="3.0.0"/>
+        <name value="TechniquesSCTCodes"/>
+        <title value="DK TechniquesSCTCodes"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-12-01T14:04:08+01:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DK"/>
+            <display value="Denmark"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:f06315f4-be33-42ed-913f-b2893126e92e"/>
+          <timestamp value="2023-12-01T14:05:32+01:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="761996005"/>
+            <display value="Estimation technique (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="733985002"/>
+            <display value="Reported (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="272391002"/>
+            <display value="Measurement technique (qualifier value)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.dk/fhir/core/ValueSet/dk-marital-status"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-dk-marital-status.html">codesystem DK Marital Statuses v3.0.0 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html">codesystem MaritalStatus v2.1.0 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html">codesystem NullFlavor v2.1.0 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="http://hl7.org/fhir/R4/valueset-marital-status.html">valueset MaritalStatus v4.0.1 (ValueSet)</a>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 14 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-A"> </a>  
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-A">A</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
+                <td>Annulled</td>
+                <td>
+                  <div>
+                    <p>Marriage contract has been declared null and to not have existed</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-D"> </a>  
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-D">D</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
+                <td>Divorced</td>
+                <td>
+                  <div>
+                    <p>Marriage contract has been declared dissolved and inactive</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-I"> </a>  
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-I">I</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
+                <td>Interlocutory</td>
+                <td>
+                  <div>
+                    <p>Subject to an Interlocutory Decree.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-L"> </a>  
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-L">L</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
+                <td>Legally Separated</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-M"> </a>  
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-M">M</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
+                <td>Married</td>
+                <td>
+                  <div>
+                    <p>A current marriage contract is active</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-C"> </a>  
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-C">C</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
+                <td>Common Law</td>
+                <td>
+                  <div>
+                    <p>a marriage recognized in some jurisdictions and based on the parties' agreement to consider themselves married and can also be based on documentation of cohabitation.</p>
+
+                    <p>This definition was based on https://www.merriam-webster.com/dictionary/common-law%20marriage.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-P"> </a>  
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-P">P</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
+                <td>Polygamous</td>
+                <td>
+                  <div>
+                    <p>More than 1 current spouse</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-T"> </a>  
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-T">T</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
+                <td>Domestic partner</td>
+                <td>
+                  <div>
+                    <p>Person declares that a domestic partner relationship exists.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-U"> </a>  
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-U">U</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
+                <td>unmarried</td>
+                <td>
+                  <div>
+                    <p>Currently not in a marriage contract.</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-S"> </a>  
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-S">S</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
+                <td>Never Married</td>
+                <td>
+                  <div>
+                    <p>No marriage contract has ever been entered</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-W"> </a>  
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-W">W</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td>
+                <td>Widowed</td>
+                <td>
+                  <div>
+                    <p>The spouse has died</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-UNK"> </a>  
+                  <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td>
+                <td>unknown</td>
+                <td>
+                  <div>
+                    <p>**Description:**A proper value is applicable, but not known.</p>
+
+                    <p>
+                      <strong>Usage Notes</strong>: This means the actual value is not known. If the only thing that is unknown is how to properly express the value in the necessary constraints (value set, datatype, etc.), then the OTH or UNC flavor should be used. No properties should be included for a datatype with this property unless:
+                    </p>
+
+                    <ol>
+
+                      <li>Those properties themselves directly translate to a semantic of &quot;unknown&quot;. (E.g. a local code sent as a translation that conveys 'unknown')</li>
+
+                      <li>Those properties further qualify the nature of what is unknown. (E.g. specifying a use code of &quot;H&quot; and a URL prefix of &quot;tel:&quot; to convey that it is the home phone number that is unknown.)</li>
+
+                    </ol>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.dk-fhir-core-CodeSystem-dk-marital-status-P"> </a>  
+                  <a href="CodeSystem-dk-marital-status.html#dk-marital-status-P">P</a>
+                </td>
+                <td>http://hl7.dk/fhir/core/CodeSystem/dk-marital-status</td>
+                <td>Registered partnership</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.dk-fhir-core-CodeSystem-dk-marital-status-O"> </a>  
+                  <a href="CodeSystem-dk-marital-status.html#dk-marital-status-O">O</a>
+                </td>
+                <td>http://hl7.dk/fhir/core/CodeSystem/dk-marital-status</td>
+                <td>Dissolved partnership</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.dk/fhir/core/ValueSet/dk-marital-status"/>
+        <version value="3.0.0"/>
+        <title value="DK MaritalStatus"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-12-01T14:04:08+01:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DK"/>
+            <display value="Denmark"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:eade2465-4e8b-472e-9dc5-6f2c5cdb9ae4"/>
+          <timestamp value="2023-12-01T14:05:32+01:00"/>
+          <total value="14"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="http://hl7.org/fhir/ValueSet/marital-status|4.0.1"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus|2.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor|2.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-marital-status|3.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+            <code value="A"/>
+            <display value="Annulled"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+            <code value="D"/>
+            <display value="Divorced"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+            <code value="I"/>
+            <display value="Interlocutory"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+            <code value="L"/>
+            <display value="Legally Separated"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+            <code value="M"/>
+            <display value="Married"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+            <code value="C"/>
+            <display value="Common Law"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+            <code value="P"/>
+            <display value="Polygamous"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+            <code value="T"/>
+            <display value="Domestic partner"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+            <code value="U"/>
+            <display value="unmarried"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+            <code value="S"/>
+            <display value="Never Married"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+            <code value="W"/>
+            <display value="Widowed"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+            <code value="UNK"/>
+            <display value="unknown"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.dk/fhir/core/CodeSystem/dk-marital-status"/>
+            <code value="P"/>
+            <display value="Registered partnership"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.dk/fhir/core/CodeSystem/dk-marital-status"/>
+            <code value="O"/>
+            <display value="Dissolved partnership"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.dk/fhir/core/ValueSet/sor-organization-type"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>SNOMED CT Danish edition 30-Sept 2021</li>
+                <li>SNOMED CT International edition 01-Sept 2023</li>
+                <li>SNOMED CT Danish edition 30-Sept 2021</li>
+                <li>SNOMED CT International edition 01-Sept 2023</li>
+              </ul>
+            </div>
+            <p>This value set contains 68 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Inactive</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-554221000005108"> </a>  
                   <a href="http://snomed.info/id/554221000005108">554221000005108</a>
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Dwilling place</td>
+                <td>inactive</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2470,6 +2540,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Occupational therapy clinic</td>
+                <td>inactive</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2478,6 +2549,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Physiotherapy clinic</td>
+                <td>inactive</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2486,6 +2558,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Rehabilitation center</td>
+                <td>inactive</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2494,6 +2567,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>District nursing</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2502,6 +2576,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Midwife clinic</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2510,6 +2585,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Chiropractic clinic</td>
+                <td>inactive</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2518,6 +2594,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Medical laboratory</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2526,6 +2603,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Emergency medical service</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2534,6 +2612,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Prehospital unit</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2542,6 +2621,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Psychological counseling clinic</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2550,6 +2630,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Medical specialist practice site</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2558,6 +2639,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Chiropodist clinic</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2566,6 +2648,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Health administration</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2574,6 +2657,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Health visitors</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2581,7 +2665,8 @@
                   <a href="http://snomed.info/id/550681000005102">550681000005102</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Dental practice</td>
+                <td>dental practice</td>
+                <td>inactive</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2590,6 +2675,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Dental care clinic</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2598,6 +2684,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Dental technician clinic</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2606,6 +2693,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Vaccination clinic</td>
+                <td>inactive</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2614,6 +2702,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Reflexology clinic</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2622,6 +2711,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Administrative unit</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2630,6 +2720,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Municipality</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2638,6 +2729,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Private</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2646,6 +2738,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Region</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2654,6 +2747,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Other health institution</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2662,6 +2756,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Asylum centre</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2670,6 +2765,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Physiotherapy and occupational clinic</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2678,6 +2774,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Handicap and psychiatry</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2686,6 +2783,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Handicap</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2694,6 +2792,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Home care</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2702,6 +2801,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Employment agency</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2710,6 +2810,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Psychiatry</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2718,6 +2819,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Service unit</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2726,6 +2828,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Emergency admission unit</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2734,6 +2837,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Technical location number</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2742,6 +2846,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Research unit</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2750,6 +2855,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Clinical unit</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2758,6 +2864,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Surgical ward</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2766,6 +2873,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Hospital pharmacy</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2774,6 +2882,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Education unit</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2781,7 +2890,8 @@
                   <a href="http://snomed.info/id/554031000005103">554031000005103</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Dietician clinic</td>
+                <td>dietician clinic</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2790,6 +2900,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Acupuncture clinic</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2798,6 +2909,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Pharmacy branch</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2806,6 +2918,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Prosthetist clinic</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2814,6 +2927,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Web-based care</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2822,6 +2936,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Alternative treatment clinic</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2830,6 +2945,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Consulting firm</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2838,6 +2954,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Cosmetic treatment clinic</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2846,6 +2963,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Optometrist or optician clinic</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2854,6 +2972,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Social psychological counseling</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2862,6 +2981,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Osteopathy clinic</td>
+                <td>inactive</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2870,6 +2990,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>State</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2878,6 +2999,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>General practitioner practice site</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2886,6 +3008,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Substance abuse treatment center</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2894,6 +3017,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Prison based care site</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2902,6 +3026,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Infertility clinic</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2910,6 +3035,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Volunteer helper</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2918,6 +3044,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Hospital</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2926,6 +3053,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Audiology clinic</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2934,6 +3062,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Nursing home</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2942,6 +3071,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Health centre</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2950,6 +3080,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Nurse practitioner clinic</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2958,6 +3089,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Radiology department</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2966,6 +3098,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Intensive care unit</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2974,6 +3107,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Palliative care department</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2982,6 +3116,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Accident and Emergency department</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2990,6 +3125,7 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Additional values</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -2998,29 +3134,18 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Pharmacy</td>
+                <td/>
               </tr>
             </table>
           </div>
         </text>
         <url value="http://hl7.dk/fhir/core/ValueSet/sor-organization-type"/>
-        <version value="2.2.0"/>
+        <version value="3.0.0"/>
         <name value="SorOrganizationType"/>
         <title value="DK SOR Organization Type"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-05-05T01:43:00+02:00"/>
-        <contact>
-          <name value="HL7 Denmark"/>
-          <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.dk"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="jenskristianvilladsen@gmail.com"/>
-          </telecom>
-        </contact>
-        <description value="Value set used for indicating the organization type for organizations from SOR"/>
+        <date value="2023-12-01T14:04:08+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -3028,18 +3153,25 @@
             <display value="Denmark"/>
           </coding>
         </jurisdiction>
-        <copyright value="This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"/>
         <expansion>
-          <identifier value="urn:uuid:3497c010-3736-42fe-b033-ee4f48395f41"/>
-          <timestamp value="2023-05-05T01:44:20+02:00"/>
+          <identifier value="urn:uuid:32870f53-2cf9-4284-819b-356ed863706e"/>
+          <timestamp value="2023-12-01T14:05:32+01:00"/>
           <total value="68"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/554471000005108/version/20210930"/>
           </parameter>
           <parameter>
             <name value="version"/>
@@ -3050,26 +3182,34 @@
             <valueBoolean value="true"/>
           </parameter>
           <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <inactive value="true"/>
             <code value="554221000005108"/>
             <display value="Dwilling place"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <inactive value="true"/>
             <code value="546821000005103"/>
             <display value="Occupational therapy clinic"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <inactive value="true"/>
             <code value="547011000005103"/>
             <display value="Physiotherapy clinic"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <inactive value="true"/>
             <code value="546811000005109"/>
             <display value="Rehabilitation center"/>
           </contains>
@@ -3085,6 +3225,7 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <inactive value="true"/>
             <code value="550641000005106"/>
             <display value="Chiropractic clinic"/>
           </contains>
@@ -3130,8 +3271,9 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <inactive value="true"/>
             <code value="550681000005102"/>
-            <display value="Dental practice"/>
+            <display value="dental practice"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -3145,6 +3287,7 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <inactive value="true"/>
             <code value="554231000005106"/>
             <display value="Vaccination clinic"/>
           </contains>
@@ -3256,7 +3399,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="554031000005103"/>
-            <display value="Dietician clinic"/>
+            <display value="dietician clinic"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -3305,6 +3448,7 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <inactive value="true"/>
             <code value="557671000005101"/>
             <display value="Osteopathy clinic"/>
           </contains>
@@ -3392,115 +3536,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="264372000"/>
             <display value="Pharmacy"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://hl7.dk/fhir/core/ValueSet/TechniqesSCTCodes"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 3 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2023</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-761996005"> </a>  
-                  <a href="http://snomed.info/id/761996005">761996005</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Estimation technique (qualifier value)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-733985002"> </a>  
-                  <a href="http://snomed.info/id/733985002">733985002</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Reported (qualifier value)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-272391002"> </a>  
-                  <a href="http://snomed.info/id/272391002">272391002</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Measurement technique (qualifier value)</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://hl7.dk/fhir/core/ValueSet/TechniqesSCTCodes"/>
-        <version value="2.2.0"/>
-        <name value="TechniqesSCTCodes"/>
-        <title value="TechniqesSCTCodes"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2023-05-05T01:43:00+02:00"/>
-        <contact>
-          <name value="HL7 Denmark"/>
-          <telecom>
-            <system value="url"/>
-            <value value="http://www.hl7.dk"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="jenskristianvilladsen@gmail.com"/>
-          </telecom>
-        </contact>
-        <description value="SNOMED CT Codes for the techniqe used when obtaining an observation"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="DK"/>
-            <display value="Denmark"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:10c67b7f-6c0f-4e3c-b23b-8ca88e1fe513"/>
-          <timestamp value="2023-05-05T01:44:25+02:00"/>
-          <total value="3"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230131"/>
-          </parameter>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="761996005"/>
-            <display value="Estimation technique (qualifier value)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="733985002"/>
-            <display value="Reported (qualifier value)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="272391002"/>
-            <display value="Measurement technique (qualifier value)"/>
           </contains>
         </expansion>
       </ValueSet>

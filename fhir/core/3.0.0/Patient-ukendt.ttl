@@ -1,0 +1,34 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/Patient/ukendt> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ukendt"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Anders Ukendt (TEMP)</b> male, DoB: 1983-06-07 ( id: 0706830VJ9)</p><hr/></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://rn.dk"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "0706830VJ9" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "temp" ] ;
+     fhir:family [ fhir:v "Ukendt" ] ;
+     fhir:given ( [ fhir:v "Anders" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1983-06-07"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+

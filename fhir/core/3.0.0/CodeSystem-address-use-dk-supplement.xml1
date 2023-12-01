@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="address-use-dk-supplement"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/address-use-dk-supplement</code> defines displays on the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-home">home</a><a name="address-use-dk-supplement-home"> </a></td><td>Hjem</td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-work">work</a><a name="address-use-dk-supplement-work"> </a></td><td>Arbejde</td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-temp">temp</a><a name="address-use-dk-supplement-temp"> </a></td><td>Midlertidig</td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-address-use.html#address-use-old">old</a><a name="address-use-dk-supplement-old"> </a></td><td>Gammel / forkert</td></tr></table></div>
+  </text>
+  <url value="http://hl7.dk/fhir/core/CodeSystem/address-use-dk-supplement"/>
+  <version value="3.0.0"/>
+  <name value="AddressUse"/>
+  <title value="DK Address Use"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-12-01T14:00:38+01:00"/>
+  <publisher value="HL7 Denmark"/>
+  <contact>
+    <name value="HL7 Denmark"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="jenskristianvilladsen@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="The use of an address"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <content value="supplement"/>
+  <supplements value="http://hl7.org/fhir/address-use"/>
+  <concept>
+    <code value="home"/>
+    <designation>
+      <language value="da"/>
+      <use>
+        <system value="http://snomed.info/sct"/>
+        <code value="900000000000013009"/>
+      </use>
+      <value value="Hjem"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="work"/>
+    <designation>
+      <language value="da"/>
+      <use>
+        <system value="http://snomed.info/sct"/>
+        <code value="900000000000013009"/>
+      </use>
+      <value value="Arbejde"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="temp"/>
+    <designation>
+      <language value="da"/>
+      <use>
+        <system value="http://snomed.info/sct"/>
+        <code value="900000000000013009"/>
+      </use>
+      <value value="Midlertidig"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="old"/>
+    <designation>
+      <language value="da"/>
+      <use>
+        <system value="http://snomed.info/sct"/>
+        <code value="900000000000013009"/>
+      </use>
+      <value value="Gammel / forkert"/>
+    </designation>
+  </concept>
+</CodeSystem>

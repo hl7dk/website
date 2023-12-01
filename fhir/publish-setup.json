@@ -13,5 +13,12 @@
     "feeds": {
       "package": "package-feed.xml",
       "publication": "publication-feed.xml"
-    }
+    },
+    "layout-rules": [
+      {
+        "npm": "hl7.fhir.dk.*",
+        "canonical": "http://hl7.dk/fhir/{4}",
+        "destination": "/{4}"
+      }
+    ]
   }
