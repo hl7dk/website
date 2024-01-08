@@ -1,0 +1,16 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "95ad79fc-6db2-46d3-aa86-742d9be87f84-96",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/95ad79fc-6db2-46d3-aa86-742d9be87f84-96",
+  "name" : "IntersectionMunicipalityCodesAndMunicipalityCodes",
+  "title" : "Intersection of DK Municipality Codes And DK Municipality Codes",
+  "status" : "active",
+  "date" : "2024-01-08T21:52:41+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }]
+}

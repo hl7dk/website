@@ -13,13 +13,23 @@
       "current" : true
     },
     {
+      "version" : "3.1.0",
+      "path" : "http://hl7.dk/fhir/core/3.1.0",
+      "status" : "release",
+      "sequence" : "Release",
+      "fhirversion" : "4.0.1",
+      "date" : "2024-01-08",
+      "current" : true,
+      "desc" : "DK Core version 3.1.0",
+      "descmd" : "Dk-core version 3.1.0 has been approved by HL7 Denmark. \n\nThe changes between 3.0.0 and 3.1.0 are: \n* Addition of the profile DkCoreBasicObservation, associated documentation and examples.\n* Update of Observation-instances to accommodate update in the FHIR Validator (https://chat.fhir.org/#narrow/stream/179177-conformance/topic/Vitalsigns.20Profiles)\n* Addition of patient replacement identifiers (DK: erstatningsCPR) and inclusion in DkCorePatient. \n* Added description of scenarios where Patient.name is unknown or absent.\n* Addition of link to hl7.dk on the index-page.\n"
+    },
+    {
       "version" : "3.0.0",
       "path" : "http://hl7.dk/fhir/core/3.0.0",
       "status" : "release",
       "sequence" : "Release",
       "fhirversion" : "4.0.1",
       "date" : "2023-12-01",
-      "current" : true,
       "desc" : "DK Core version 3.0.0",
       "descmd" : "Dk-core version 3.0.0 has been approved by HL7 Denmark. This version is the result of external consultation of Dk-core v. 2.2.0. \n\nThe changes between 2.2.0 and 3.0.0 are: \n* Update of the introduction of DkCoreCondition\n* Addition of the DkCoreCondition instance JohnFracture which illustrates the use of SKS tillægskode. \n* Update of the introduction of DkCoreObservation, including information about which CodeSystems are recommended in the standard catalogue from the Danish Health Data Agency.\n* Update of the Observation.code.coding:SNOMEDCT and Observation.component.code.coding:SNOMEDCT to http://snomed.info/sct \n* Update of the Observation.code.coding:MedCom and Observation.component.code.coding: MedCom to http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes \n* Added context on extension ConditionLastAssertedDate and NotFollowedAnymore\n* Bug update of invariants by changing constraint.requirements to requirements and removing of constraint.source where relevant. \n* Bug update of invariants by removing the ‘value.’ and ‘Observation.’ where relevant\n* Bug update of ValueSet TechniquesSCTCodes due to misspelling\n* Update of DkCoreObservations instances with a LOINC code corresponding to the codes in the international VitalSigns profile, due to update of FHIR validator. Missing effective timestamp were included."
     },

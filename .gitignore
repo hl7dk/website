@@ -1,2 +1,3 @@
 *.DS_Store
 fhir/ig-build-zips
+full-ig.zip
