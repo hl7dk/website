@@ -29,6 +29,7 @@ Bed-side application (BSA) for colorectal cancer is developed by Center for Surg
 ### QuestionAid
 QuestionAid is a questionnaire solution provided to support clinical reporting. The solution is a part of the Danish Region's Clinical Quality Development Program, called RKKP (DK: Regionernes Kliniske Kvalitetsudviklingsprogram) and is developed by Trifork. QuestionAid prefills questionnaires with all available information from national and local registers. FHIR is used as a data model to gather the information such as diagnosis, medicine, and generally available and relevant patient information, which makes it easier for the practitioners to fill out the rest.
 
-
+### Sundhedsplatformen
+Epic is the integrated electronic health system used by all hospitals in the Capital Region and Region Sjaelland in Denmark. Epic is a global implementer and contributor to global interoperability standards with production support for a broad range of FHIR functionality such as SMART on FHIR, FHIR's International Patient Access, HL7 CDS Hooks, HL7 FHIRcast. Specifically in Denmark, Epic is working closely with MedCom to support MedCom’s FHIR standards based on DkCore. Details of Epic's support of FHIR, including specifications and a testing sandbox, are publicly available at [OPEN Epic](open.epic.com).
 
 *Consent to share information about the applications is given by the owners.*
