@@ -13,11 +13,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DKCore</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core</pre><div><p>A FHIR Implementation Guide for the Danish common needs across healthcare sectors</p>\n</div></div>"
   ] ; # 
   fhir:url [ fhir:v "http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "3.1.0"] ; # 
+  fhir:version [ fhir:v "3.2.0"] ; # 
   fhir:name [ fhir:v "DKCore"] ; # 
   fhir:title [ fhir:v "HL7 FHIR Implementation Guide: DK Core"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-01-08T21:51:35+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-06T15:28:33+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -51,7 +51,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "5.3.0" ]
+     fhir:version [ fhir:v "5.5.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -63,7 +63,7 @@
        fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
-     fhir:version [ fhir:v "1.0.0" ]
+     fhir:version [ fhir:v "5.1.0" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_uv_phd" ] ;
      fhir:uri [
@@ -364,7 +364,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "hl7.fhir.uv.tools#current" ]
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.1.0" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
@@ -901,6 +901,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person> ;
+         fhir:reference [ fhir:v "StructureDefinition/dk-core-related-person" ]
+       ] ;
+       fhir:name [ fhir:v "Danish Core Related Person Profile" ] ;
+       fhir:description [ fhir:v "HL7 Denmark core profile for a related person" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:complex-type" ]
        ] ) ;
        fhir:reference [
@@ -1027,7 +1039,7 @@
          fhir:link <http://hl7.dk/fhir/core/ValueSet/dk-core-NPUBasicObservation> ;
          fhir:reference [ fhir:v "ValueSet/dk-core-NPUBasicObservation" ]
        ] ;
-       fhir:name [ fhir:v "Dk Core NPU Basic Observation" ] ;
+       fhir:name [ fhir:v "DK Core NPU Basic Observation" ] ;
        fhir:description [ fhir:v "NPU codes for Basic Observations usable in Denmark" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -1039,7 +1051,7 @@
          fhir:link <http://hl7.dk/fhir/core/ValueSet/dk-core-SCTBasicObservation> ;
          fhir:reference [ fhir:v "ValueSet/dk-core-SCTBasicObservation" ]
        ] ;
-       fhir:name [ fhir:v "Dk Core SNOMED CT Basic Observation" ] ;
+       fhir:name [ fhir:v "DK Core SNOMED CT Basic Observation" ] ;
        fhir:description [ fhir:v "SNOMED CT codes for Basic Observations usable in Denmark" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -1063,7 +1075,7 @@
          fhir:link <http://hl7.dk/fhir/core/ValueSet/dk-core-UCUM-BasicUnits> ;
          fhir:reference [ fhir:v "ValueSet/dk-core-UCUM-BasicUnits" ]
        ] ;
-       fhir:name [ fhir:v "Dk Core UCUM Basic Units" ] ;
+       fhir:name [ fhir:v "DK Core UCUM Basic Units" ] ;
        fhir:description [ fhir:v "UCUM codes to represent units for basic Observations usable in Denmark" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -1228,11 +1240,47 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes> ;
+         fhir:reference [ fhir:v "CodeSystem/dk-relatedperson-relationshipcodes" ]
+       ] ;
+       fhir:name [ fhir:v "DK Related Person Relationship Codes" ] ;
+       fhir:description [ fhir:v "DK Related Person Relationship Codes" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/ValueSet/dk-core-RelatedPersonRelationshipTypes> ;
+         fhir:reference [ fhir:v "ValueSet/dk-core-RelatedPersonRelationshipTypes" ]
+       ] ;
+       fhir:name [ fhir:v "DK Related Person Relationship Types" ] ;
+       fhir:description [ fhir:v "DK Related Person Relationship Types" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://hl7.dk/fhir/core/CodeSystem/request-status-dk-supplement> ;
          fhir:reference [ fhir:v "CodeSystem/request-status-dk-supplement" ]
        ] ;
        fhir:name [ fhir:v "DK Request Status" ] ;
        fhir:description [ fhir:v "Codes identifying the stage lifecycle stage of a request" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/CodeSystem/role-code-dk-supplement> ;
+         fhir:reference [ fhir:v "CodeSystem/role-code-dk-supplement" ]
+       ] ;
+       fhir:name [ fhir:v "DK Role Code" ] ;
+       fhir:description [ fhir:v "CodeSystem supplement with danish translations for RoleCode" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1395,11 +1443,26 @@
          fhir:link <http://hl7.dk/fhir/core/Patient/Confidential> ;
          fhir:reference [ fhir:v "Patient/Confidential" ]
        ] ;
-       fhir:name [ fhir:v "Example of a patient with confidential adress and name" ] ;
-       fhir:description [ fhir:v "Example of a patient with confidential adress and name" ] ;
+       fhir:name [ fhir:v "Example of a patient with confidential address and name" ] ;
+       fhir:description [ fhir:v "Example of a patient with confidential address and name" ] ;
        fhir:example [
          fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "RelatedPerson" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/RelatedPerson/TwoRelations> ;
+         fhir:reference [ fhir:v "RelatedPerson/TwoRelations" ]
+       ] ;
+       fhir:name [ fhir:v "Example of a related person with two relations" ] ;
+       fhir:description [ fhir:v "Example of a person that has relations as both neighbor and primary caretaker" ] ;
+       fhir:example [
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
        ]
      ] [
        fhir:extension ( [
@@ -1415,6 +1478,21 @@
        fhir:example [
          fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "RelatedPerson" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/RelatedPerson/Child> ;
+         fhir:reference [ fhir:v "RelatedPerson/Child" ]
+       ] ;
+       fhir:name [ fhir:v "Example of child as related person" ] ;
+       fhir:description [ fhir:v "Example of child as related person" ] ;
+       fhir:example [
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
        ]
      ] [
        fhir:extension ( [
@@ -1687,7 +1765,7 @@
          fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-kombit-org-identifier> ;
          fhir:reference [ fhir:v "StructureDefinition/dk-core-kombit-org-identifier" ]
        ] ;
-       fhir:name [ fhir:v "Kombit Org Identifier" ] ;
+       fhir:name [ fhir:v "Kombit Organsation Identifier" ] ;
        fhir:description [ fhir:v "Identifier holding the organization code issued by KOMBIT" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -1921,6 +1999,33 @@
        fhir:name [ fhir:v "Poul's home blood pressure measurement" ] ;
        fhir:description [ fhir:v "This example demonstrates a DkCoreObservation _and_ Continua-compliant\nbundle containing a home blood pressure measurement uploaded to a Continua-compliant\n_\"FHIR Observation Reporting Server\"._" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:complex-type" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-producent-id> ;
+         fhir:reference [ fhir:v "StructureDefinition/dk-core-producent-id" ]
+       ] ;
+       fhir:name [ fhir:v "Producent Id" ] ;
+       fhir:description [ fhir:v "Offical MedCom code describing the producer of lab results" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://hl7.dk/fhir/core/Organization/154b8c96-a061-45bf-9ce4-1947c7c3c283> ;
+         fhir:reference [ fhir:v "Organization/154b8c96-a061-45bf-9ce4-1947c7c3c283" ]
+       ] ;
+       fhir:name [ fhir:v "Producer Test Organization" ] ;
+       fhir:description [ fhir:v "Producer of Lab Results Test Organization" ] ;
+       fhir:example [
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"^^xsd:anyURI ;
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

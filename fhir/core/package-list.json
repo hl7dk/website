@@ -1,4 +1,4 @@
-﻿{
+{
   "package-id" : "hl7.fhir.dk.core",
   "title" : "HL7 FHIR Implementation Guide: DK Core",
   "canonical" : "http://hl7.dk/fhir/core",
@@ -13,13 +13,23 @@
       "current" : true
     },
     {
+      "version" : "3.2.0",
+      "path" : "http://hl7.dk/fhir/core/3.2.0",
+      "status" : "release",
+      "sequence" : "Release",
+      "fhirversion" : "4.0.1",
+      "date" : "2024-05-06",
+      "current" : true,
+      "desc" : "DK Core version 3.2.0",
+      "descmd" : "Dk-core version 3.2.0 has been approved by HL7 Denmark. \n\nThe changes between 3.1.0 and 3.2.0 are: \n* Addition of the profile DkCoreRelatedPerson which includes\n    * Associated documentation and examples, \n    * ValueSet named DK Related Person Relationship Types,\n    * CodeSystem named DK Related Person Relationship Codes, and\n    * CodeSystem supplement named DK Role Code.\n* Updated references in existing DkCoreCondition, DkCoreObservation, DkCorePatient from RelatedPerson resource to DkCoreRelatedPerson.\n* Updated the ValueSet on Patient.contact.relationship to be DK Related Person Relationship Types.\n* Added description of how to handle CPR registry civilstand and status values in DkCorePatient.\n* Added the identifier ProducentId, and included it as identifier in DkCoreOrganization. An example is included to support the usage.\n* Updated link to dokumentation in SORIdentifier.\n* Added an example for DkCoreCondition concerning regional problem-list-items.\n* Minor linguistic adjustments"
+    },
+    {
       "version" : "3.1.0",
       "path" : "http://hl7.dk/fhir/core/3.1.0",
       "status" : "release",
       "sequence" : "Release",
       "fhirversion" : "4.0.1",
       "date" : "2024-01-08",
-      "current" : true,
       "desc" : "DK Core version 3.1.0",
       "descmd" : "Dk-core version 3.1.0 has been approved by HL7 Denmark. \n\nThe changes between 3.0.0 and 3.1.0 are: \n* Addition of the profile DkCoreBasicObservation, associated documentation and examples.\n* Update of Observation-instances to accommodate update in the FHIR Validator (https://chat.fhir.org/#narrow/stream/179177-conformance/topic/Vitalsigns.20Profiles)\n* Addition of patient replacement identifiers (DK: erstatningsCPR) and inclusion in DkCorePatient. \n* Added description of scenarios where Patient.name is unknown or absent.\n* Addition of link to hl7.dk on the index-page.\n"
     },

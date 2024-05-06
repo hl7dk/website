@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "0896a0d0-569a-4204-b5a4-4e383f0e6b01-2",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/0896a0d0-569a-4204-b5a4-4e383f0e6b01-2",
+  "id" : "31aac9a8-9760-40b9-ab40-a9b5a6d70536-2",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/31aac9a8-9760-40b9-ab40-a9b5a6d70536-2",
   "name" : "UnionIPAObservationAndDkCoreBasicObservation",
   "title" : "Union of IPA-Observation And Danish Core Basic Observation Profile",
   "status" : "active",
-  "date" : "2024-01-08T21:52:43+01:00",
+  "date" : "2024-05-06T15:28:50+02:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",

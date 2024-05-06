@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DKCore</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core</pre><div><p>A FHIR Implementation Guide for the Danish common needs across healthcare sectors</p>\n</div></div>"
   },
   "url" : "http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core",
-  "version" : "3.1.0",
+  "version" : "3.2.0",
   "name" : "DKCore",
   "title" : "HL7 FHIR Implementation Guide: DK Core",
   "status" : "active",
-  "date" : "2024-01-08T21:51:35+01:00",
+  "date" : "2024-05-06T15:28:33+02:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",
@@ -42,7 +42,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "5.3.0"
+    "version" : "5.5.0"
   },
   {
     "id" : "hl7ext",
@@ -52,7 +52,7 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "1.0.0"
+    "version" : "5.1.0"
   },
   {
     "id" : "hl7_fhir_uv_phd",
@@ -415,7 +415,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#current"
+      "valueCode" : "hl7.fhir.uv.tools#0.1.0"
     },
     {
       "extension" : [{
@@ -998,6 +998,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-related-person"
+      },
+      "name" : "Danish Core Related Person Profile",
+      "description" : "HL7 Denmark core profile for a related person",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
@@ -1123,7 +1135,7 @@
       "reference" : {
         "reference" : "ValueSet/dk-core-NPUBasicObservation"
       },
-      "name" : "Dk Core NPU Basic Observation",
+      "name" : "DK Core NPU Basic Observation",
       "description" : "NPU codes for Basic Observations usable in Denmark",
       "exampleBoolean" : false
     },
@@ -1135,7 +1147,7 @@
       "reference" : {
         "reference" : "ValueSet/dk-core-SCTBasicObservation"
       },
-      "name" : "Dk Core SNOMED CT Basic Observation",
+      "name" : "DK Core SNOMED CT Basic Observation",
       "description" : "SNOMED CT codes for Basic Observations usable in Denmark",
       "exampleBoolean" : false
     },
@@ -1159,7 +1171,7 @@
       "reference" : {
         "reference" : "ValueSet/dk-core-UCUM-BasicUnits"
       },
-      "name" : "Dk Core UCUM Basic Units",
+      "name" : "DK Core UCUM Basic Units",
       "description" : "UCUM codes to represent units for basic Observations usable in Denmark",
       "exampleBoolean" : false
     },
@@ -1325,10 +1337,46 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/dk-relatedperson-relationshipcodes"
+      },
+      "name" : "DK Related Person Relationship Codes",
+      "description" : "DK Related Person Relationship Codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-core-RelatedPersonRelationshipTypes"
+      },
+      "name" : "DK Related Person Relationship Types",
+      "description" : "DK Related Person Relationship Types",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/request-status-dk-supplement"
       },
       "name" : "DK Request Status",
       "description" : "Codes identifying the stage lifecycle stage of a request",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/role-code-dk-supplement"
+      },
+      "name" : "DK Role Code",
+      "description" : "CodeSystem supplement with danish translations for RoleCode",
       "exampleBoolean" : false
     },
     {
@@ -1464,9 +1512,21 @@
       "reference" : {
         "reference" : "Patient/Confidential"
       },
-      "name" : "Example of a patient with confidential adress and name",
-      "description" : "Example of a patient with confidential adress and name",
+      "name" : "Example of a patient with confidential address and name",
+      "description" : "Example of a patient with confidential address and name",
       "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/TwoRelations"
+      },
+      "name" : "Example of a related person with two relations",
+      "description" : "Example of a person that has relations as both neighbor and primary caretaker",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
     },
     {
       "extension" : [{
@@ -1479,6 +1539,18 @@
       "name" : "Example of a woman of childbearing age",
       "description" : "Example of a woman of childbearing age. Else is a MedCom test-patient",
       "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/Child"
+      },
+      "name" : "Example of child as related person",
+      "description" : "Example of child as related person",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
     },
     {
       "extension" : [{
@@ -1702,7 +1774,7 @@
       "reference" : {
         "reference" : "StructureDefinition/dk-core-kombit-org-identifier"
       },
-      "name" : "Kombit Org Identifier",
+      "name" : "Kombit Organsation Identifier",
       "description" : "Identifier holding the organization code issued by KOMBIT",
       "exampleBoolean" : false
     },
@@ -1900,6 +1972,30 @@
       "name" : "Poul's home blood pressure measurement",
       "description" : "This example demonstrates a DkCoreObservation _and_ Continua-compliant\nbundle containing a home blood pressure measurement uploaded to a Continua-compliant\n_\"FHIR Observation Reporting Server\"._",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-producent-id"
+      },
+      "name" : "Producent Id",
+      "description" : "Offical MedCom code describing the producer of lab results",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/154b8c96-a061-45bf-9ce4-1947c7c3c283"
+      },
+      "name" : "Producer Test Organization",
+      "description" : "Producer of Lab Results Test Organization",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
     },
     {
       "extension" : [{

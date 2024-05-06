@@ -4,11 +4,22 @@
     <description>New publications by HL7 Denmark&gt;</description>
     <link>http://hl7.dk/fhir/package-feed.xml</link>
     <generator>HL7, Inc FHIR Publication tooling</generator>
-    <lastBuildDate>Mon, 08 Jan 2024 09:45:57 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 06 May 2024 03:20:53 +0200</lastBuildDate>
     <atom:link href="http://hl7.dk/fhir/package-feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 08 Jan 2024 09:45:57 +0100</pubDate>
+    <pubDate>Mon, 06 May 2024 03:20:53 +0200</pubDate>
     <language>en&gt;</language>
     <ttl>600</ttl>
+    <item>
+      <title>HL7 FHIR Implementation Guide: DK Core version 3.2.0</title>
+      <description>DK Core version 3.2.0</description>
+      <link>http://hl7.dk/fhir/core/3.2.0/index.html</link>
+      <guid isPermaLink="true">http://hl7.dk/fhir/core/3.2.0/index.html</guid>
+      <dc:creator>HL7 Denmark</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Mon, 06 May 2024 03:20:53 +0200</pubDate>
+      <fhir:details>Publication run at 06/05/2024 by jkiddo using vVersion 1.6.6 (Git# d1dac76a7c14). Built 2024-04-23T09:27:48.515Z (13 days old) source id Unknown (todo) Run #5</fhir:details>
+    </item>
     <item>
       <title>HL7 FHIR Implementation Guide: DK Core version 3.1.0</title>
       <description>DK Core version 3.1.0</description>

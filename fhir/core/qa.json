@@ -5,12 +5,15 @@
   "description" : "A FHIR Implementation Guide for the Danish common needs across healthcare sectors",
   "status" : "active",
   "package-id" : "hl7.fhir.dk.core",
-  "ig-ver" : "3.1.0",
-  "date" : "Mon, 08 Jan, 2024 21:51:35 +0100",
-  "errs" : 23,
-  "warnings" : 58,
-  "hints" : 34,
+  "ig-ver" : "3.2.0",
+  "date" : "Mon, 06 May, 2024 15:28:33 +0200",
+  "dateISO8601" : "2024-05-06T15:28:33+02:00",
+  "errs" : 0,
+  "warnings" : 67,
+  "hints" : 108,
+  "suppressed-hints" : 66,
+  "suppressed-warnings" : 8,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 2877161456
+  "maxMemory" : 3262821264
 }

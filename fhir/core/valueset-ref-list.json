@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/DkCoreDeCPRValueSet",
-      "version" : "3.1.0",
+      "version" : "3.2.0",
       "status" : "active",
       "name" : "DkCoreDeCPRValueSet",
       "title" : "DK D-eCPR OID values",
@@ -14,7 +14,7 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/DkCoreProfessionGroupValueSet",
-      "version" : "3.1.0",
+      "version" : "3.2.0",
       "status" : "active",
       "name" : "DkCoreProfessionGroupValueSet",
       "title" : "DK Profession Group",
@@ -28,7 +28,7 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-IEEEBasicObservation",
-      "version" : "3.1.0",
+      "version" : "3.2.0",
       "status" : "active",
       "name" : "IEEEBasicObservation",
       "title" : "Dk Core IEEE Basic Observation",
@@ -40,7 +40,7 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-LoincBasicObservation",
-      "version" : "3.1.0",
+      "version" : "3.2.0",
       "status" : "active",
       "name" : "LoincBasicObservation",
       "title" : "DK Core LOINC Basic Observations",
@@ -52,7 +52,7 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes",
-      "version" : "3.1.0",
+      "version" : "3.2.0",
       "status" : "active",
       "name" : "MunicipalityCodes",
       "title" : "DK Municipality Codes",
@@ -63,15 +63,15 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
-      "StructureDefinition-dk-core-municipalityCodes.html" : "Danish Core Municipality codes"
+      "StructureDefinition-dk-core-municipalityCodes.html" : "Danish Core Municipality codes",
+      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile"
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-NPUBasicObservation",
-      "version" : "3.1.0",
+      "version" : "3.2.0",
       "status" : "active",
       "name" : "NPUBasicObservation",
-      "title" : "Dk Core NPU Basic Observation",
+      "title" : "DK Core NPU Basic Observation",
       "description" : "NPU codes for Basic Observations usable in Denmark",
       "systems" : ["urn:oid:1.2.208.176.2.1"],
       "uses" : {
@@ -80,7 +80,7 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes",
-      "version" : "3.1.0",
+      "version" : "3.2.0",
       "status" : "active",
       "name" : "RegionalSubdivisionCodes",
       "title" : "DK Regional Subdivision Codes",
@@ -93,11 +93,27 @@
       "StructureDefinition-dk-core-RegionalSubDivisionCodes.html" : "Danish Core Regional Sub Division Codes Extension"
     },
     {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-RelatedPersonRelationshipTypes",
+      "version" : "3.2.0",
+      "status" : "active",
+      "name" : "RelatedPersonRelationshipTypes",
+      "title" : "DK Related Person Relationship Types",
+      "description" : "DK Related Person Relationship Types",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile",
+      "StructureDefinition-dk-core-related-person.html" : "Danish Core Related Person Profile"
+    },
+    {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-SCTBasicObservation",
-      "version" : "3.1.0",
+      "version" : "3.2.0",
       "status" : "active",
       "name" : "SCTBasicObservation",
-      "title" : "Dk Core SNOMED CT Basic Observation",
+      "title" : "DK Core SNOMED CT Basic Observation",
       "description" : "SNOMED CT codes for Basic Observations usable in Denmark",
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
@@ -106,7 +122,7 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-TechniquesSCTCodes",
-      "version" : "3.1.0",
+      "version" : "3.2.0",
       "status" : "active",
       "name" : "TechniquesSCTCodes",
       "title" : "DK TechniquesSCTCodes",
@@ -118,10 +134,10 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-UCUM-BasicUnits",
-      "version" : "3.1.0",
+      "version" : "3.2.0",
       "status" : "active",
       "name" : "UCUMBasicUnits",
-      "title" : "Dk Core UCUM Basic Units",
+      "title" : "DK Core UCUM Basic Units",
       "description" : "UCUM codes to represent units for basic Observations usable in Denmark",
       "systems" : ["http://unitsofmeasure.org"],
       "uses" : {
@@ -130,7 +146,7 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-marital-status",
-      "version" : "3.1.0",
+      "version" : "3.2.0",
       "status" : "active",
       "name" : null,
       "title" : "DK MaritalStatus",
@@ -146,7 +162,7 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/sor-organization-type",
-      "version" : "3.1.0",
+      "version" : "3.2.0",
       "status" : "active",
       "name" : "SorOrganizationType",
       "title" : "DK SOR Organization Type",

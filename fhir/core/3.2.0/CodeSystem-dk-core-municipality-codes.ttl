@@ -1,0 +1,740 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "dk-core-municipality-codes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td style=\"white-space:nowrap\">0740<a name=\"dk-core-municipality-codes-0740\"> </a></td><td>Silkeborg</td><td>Silkeborg</td></tr><tr><td style=\"white-space:nowrap\">0741<a name=\"dk-core-municipality-codes-0741\"> </a></td><td>Samsø</td><td>Samsø</td></tr><tr><td style=\"white-space:nowrap\">0851<a name=\"dk-core-municipality-codes-0851\"> </a></td><td>Aalborg</td><td>Aalborg</td></tr><tr><td style=\"white-space:nowrap\">0746<a name=\"dk-core-municipality-codes-0746\"> </a></td><td>Skanderborg</td><td>Skanderborg</td></tr><tr><td style=\"white-space:nowrap\">0151<a name=\"dk-core-municipality-codes-0151\"> </a></td><td>Ballerup</td><td>Ballerup</td></tr><tr><td style=\"white-space:nowrap\">0260<a name=\"dk-core-municipality-codes-0260\"> </a></td><td>Halsnæs</td><td>Halsnæs</td></tr><tr><td style=\"white-space:nowrap\">0153<a name=\"dk-core-municipality-codes-0153\"> </a></td><td>Brøndby</td><td>Brøndby</td></tr><tr><td style=\"white-space:nowrap\">0370<a name=\"dk-core-municipality-codes-0370\"> </a></td><td>Næstved</td><td>Næstved</td></tr><tr><td style=\"white-space:nowrap\">0155<a name=\"dk-core-municipality-codes-0155\"> </a></td><td>Dragør</td><td>Dragør</td></tr><tr><td style=\"white-space:nowrap\">0480<a name=\"dk-core-municipality-codes-0480\"> </a></td><td>Nordfyns</td><td>Nordfyns</td></tr><tr><td style=\"white-space:nowrap\">0157<a name=\"dk-core-municipality-codes-0157\"> </a></td><td>Gentofte</td><td>Gentofte</td></tr><tr><td style=\"white-space:nowrap\">0265<a name=\"dk-core-municipality-codes-0265\"> </a></td><td>Roskilde</td><td>Roskilde</td></tr><tr><td style=\"white-space:nowrap\">0159<a name=\"dk-core-municipality-codes-0159\"> </a></td><td>Gladsaxe</td><td>Gladsaxe</td></tr><tr><td style=\"white-space:nowrap\">0376<a name=\"dk-core-municipality-codes-0376\"> </a></td><td>Guldborgsund</td><td>Guldborgsund</td></tr><tr><td style=\"white-space:nowrap\">0269<a name=\"dk-core-municipality-codes-0269\"> </a></td><td>Solrød</td><td>Solrød</td></tr><tr><td style=\"white-space:nowrap\">0482<a name=\"dk-core-municipality-codes-0482\"> </a></td><td>Langeland</td><td>Langeland</td></tr><tr><td style=\"white-space:nowrap\">0201<a name=\"dk-core-municipality-codes-0201\"> </a></td><td>Allerød</td><td>Allerød</td></tr><tr><td style=\"white-space:nowrap\">0420<a name=\"dk-core-municipality-codes-0420\"> </a></td><td>Assens</td><td>Assens</td></tr><tr><td style=\"white-space:nowrap\">0530<a name=\"dk-core-municipality-codes-0530\"> </a></td><td>Billund</td><td>Billund</td></tr><tr><td style=\"white-space:nowrap\">0316<a name=\"dk-core-municipality-codes-0316\"> </a></td><td>Holbæk</td><td>Holbæk</td></tr><tr><td style=\"white-space:nowrap\">0751<a name=\"dk-core-municipality-codes-0751\"> </a></td><td>Aarhus</td><td>Aarhus</td></tr><tr><td style=\"white-space:nowrap\">0860<a name=\"dk-core-municipality-codes-0860\"> </a></td><td>Hjørring</td><td>Hjørring</td></tr><tr><td style=\"white-space:nowrap\">0756<a name=\"dk-core-municipality-codes-0756\"> </a></td><td>Ikast-Brande</td><td>Ikast-Brande</td></tr><tr><td style=\"white-space:nowrap\">0161<a name=\"dk-core-municipality-codes-0161\"> </a></td><td>Glostrup</td><td>Glostrup</td></tr><tr><td style=\"white-space:nowrap\">0270<a name=\"dk-core-municipality-codes-0270\"> </a></td><td>Gribskov</td><td>Gribskov</td></tr><tr><td style=\"white-space:nowrap\">0163<a name=\"dk-core-municipality-codes-0163\"> </a></td><td>Herlev</td><td>Herlev</td></tr><tr><td style=\"white-space:nowrap\">0165<a name=\"dk-core-municipality-codes-0165\"> </a></td><td>Albertslund</td><td>Albertslund</td></tr><tr><td style=\"white-space:nowrap\">0167<a name=\"dk-core-municipality-codes-0167\"> </a></td><td>Hvidovre</td><td>Hvidovre</td></tr><tr><td style=\"white-space:nowrap\">0492<a name=\"dk-core-municipality-codes-0492\"> </a></td><td>Ærø</td><td>Ærø</td></tr><tr><td style=\"white-space:nowrap\">0169<a name=\"dk-core-municipality-codes-0169\"> </a></td><td>Høje-Taastrup</td><td>Høje-Taastrup</td></tr><tr><td style=\"white-space:nowrap\">0101<a name=\"dk-core-municipality-codes-0101\"> </a></td><td>København</td><td>København</td></tr><tr><td style=\"white-space:nowrap\">0210<a name=\"dk-core-municipality-codes-0210\"> </a></td><td>Fredensborg</td><td>Fredensborg</td></tr><tr><td style=\"white-space:nowrap\">0320<a name=\"dk-core-municipality-codes-0320\"> </a></td><td>Faxe</td><td>Faxe</td></tr><tr><td style=\"white-space:nowrap\">0430<a name=\"dk-core-municipality-codes-0430\"> </a></td><td>Faaborg-Midtfyn</td><td>Faaborg-Midtfyn</td></tr><tr><td style=\"white-space:nowrap\">0540<a name=\"dk-core-municipality-codes-0540\"> </a></td><td>Sønderborg</td><td>Sønderborg</td></tr><tr><td style=\"white-space:nowrap\">0217<a name=\"dk-core-municipality-codes-0217\"> </a></td><td>Helsingør</td><td>Helsingør</td></tr><tr><td style=\"white-space:nowrap\">0326<a name=\"dk-core-municipality-codes-0326\"> </a></td><td>Kalundborg</td><td>Kalundborg</td></tr><tr><td style=\"white-space:nowrap\">0219<a name=\"dk-core-municipality-codes-0219\"> </a></td><td>Hillerød</td><td>Hillerød</td></tr><tr><td style=\"white-space:nowrap\">0760<a name=\"dk-core-municipality-codes-0760\"> </a></td><td>Ringkøbing-Skjern</td><td>Ringkøbing-Skjern</td></tr><tr><td style=\"white-space:nowrap\">0329<a name=\"dk-core-municipality-codes-0329\"> </a></td><td>Ringsted</td><td>Ringsted</td></tr><tr><td style=\"white-space:nowrap\">0657<a name=\"dk-core-municipality-codes-0657\"> </a></td><td>Herning</td><td>Herning</td></tr><tr><td style=\"white-space:nowrap\">0766<a name=\"dk-core-municipality-codes-0766\"> </a></td><td>Hedensted</td><td>Hedensted</td></tr><tr><td style=\"white-space:nowrap\">0173<a name=\"dk-core-municipality-codes-0173\"> </a></td><td>Lyngby-Taarbæk</td><td>Lyngby-Taarbæk</td></tr><tr><td style=\"white-space:nowrap\">0390<a name=\"dk-core-municipality-codes-0390\"> </a></td><td>Vordingborg</td><td>Vordingborg</td></tr><tr><td style=\"white-space:nowrap\">0175<a name=\"dk-core-municipality-codes-0175\"> </a></td><td>Rødovre</td><td>Rødovre</td></tr><tr><td style=\"white-space:nowrap\">0810<a name=\"dk-core-municipality-codes-0810\"> </a></td><td>Brønderslev</td><td>Brønderslev</td></tr><tr><td style=\"white-space:nowrap\">0813<a name=\"dk-core-municipality-codes-0813\"> </a></td><td>Frederikshavn</td><td>Frederikshavn</td></tr><tr><td style=\"white-space:nowrap\">0706<a name=\"dk-core-municipality-codes-0706\"> </a></td><td>Syddjurs</td><td>Syddjurs</td></tr><tr><td style=\"white-space:nowrap\">0707<a name=\"dk-core-municipality-codes-0707\"> </a></td><td>Norddjurs</td><td>Norddjurs</td></tr><tr><td style=\"white-space:nowrap\">0330<a name=\"dk-core-municipality-codes-0330\"> </a></td><td>Slagelse</td><td>Slagelse</td></tr><tr><td style=\"white-space:nowrap\">0223<a name=\"dk-core-municipality-codes-0223\"> </a></td><td>Hørsholm</td><td>Hørsholm</td></tr><tr><td style=\"white-space:nowrap\">0440<a name=\"dk-core-municipality-codes-0440\"> </a></td><td>Kerteminde</td><td>Kerteminde</td></tr><tr><td style=\"white-space:nowrap\">0550<a name=\"dk-core-municipality-codes-0550\"> </a></td><td>Tønder</td><td>Tønder</td></tr><tr><td style=\"white-space:nowrap\">0336<a name=\"dk-core-municipality-codes-0336\"> </a></td><td>Stevns</td><td>Stevns</td></tr><tr><td style=\"white-space:nowrap\">0661<a name=\"dk-core-municipality-codes-0661\"> </a></td><td>Holstebro</td><td>Holstebro</td></tr><tr><td style=\"white-space:nowrap\">0665<a name=\"dk-core-municipality-codes-0665\"> </a></td><td>Lemvig</td><td>Lemvig</td></tr><tr><td style=\"white-space:nowrap\">0773<a name=\"dk-core-municipality-codes-0773\"> </a></td><td>Morsø</td><td>Morsø</td></tr><tr><td style=\"white-space:nowrap\">0779<a name=\"dk-core-municipality-codes-0779\"> </a></td><td>Skive</td><td>Skive</td></tr><tr><td style=\"white-space:nowrap\">0183<a name=\"dk-core-municipality-codes-0183\"> </a></td><td>Ishøj</td><td>Ishøj</td></tr><tr><td style=\"white-space:nowrap\">0185<a name=\"dk-core-municipality-codes-0185\"> </a></td><td>Tårnby</td><td>Tårnby</td></tr><tr><td style=\"white-space:nowrap\">0710<a name=\"dk-core-municipality-codes-0710\"> </a></td><td>Favrskov</td><td>Favrskov</td></tr><tr><td style=\"white-space:nowrap\">0187<a name=\"dk-core-municipality-codes-0187\"> </a></td><td>Vallensbæk</td><td>Vallensbæk</td></tr><tr><td style=\"white-space:nowrap\">0820<a name=\"dk-core-municipality-codes-0820\"> </a></td><td>Vesthimmerland</td><td>Vesthimmerland</td></tr><tr><td style=\"white-space:nowrap\">0607<a name=\"dk-core-municipality-codes-0607\"> </a></td><td>Fredericia</td><td>Fredericia</td></tr><tr><td style=\"white-space:nowrap\">0825<a name=\"dk-core-municipality-codes-0825\"> </a></td><td>Læsø</td><td>Læsø</td></tr><tr><td style=\"white-space:nowrap\">0230<a name=\"dk-core-municipality-codes-0230\"> </a></td><td>Rudersdal</td><td>Rudersdal</td></tr><tr><td style=\"white-space:nowrap\">0340<a name=\"dk-core-municipality-codes-0340\"> </a></td><td>Sorø</td><td>Sorø</td></tr><tr><td style=\"white-space:nowrap\">0450<a name=\"dk-core-municipality-codes-0450\"> </a></td><td>Nyborg</td><td>Nyborg</td></tr><tr><td style=\"white-space:nowrap\">0561<a name=\"dk-core-municipality-codes-0561\"> </a></td><td>Esbjerg</td><td>Esbjerg</td></tr><tr><td style=\"white-space:nowrap\">0563<a name=\"dk-core-municipality-codes-0563\"> </a></td><td>Fanø</td><td>Fanø</td></tr><tr><td style=\"white-space:nowrap\">0671<a name=\"dk-core-municipality-codes-0671\"> </a></td><td>Struer</td><td>Struer</td></tr><tr><td style=\"white-space:nowrap\">0190<a name=\"dk-core-municipality-codes-0190\"> </a></td><td>Furesø</td><td>Furesø</td></tr><tr><td style=\"white-space:nowrap\">0787<a name=\"dk-core-municipality-codes-0787\"> </a></td><td>Thisted</td><td>Thisted</td></tr><tr><td style=\"white-space:nowrap\">0615<a name=\"dk-core-municipality-codes-0615\"> </a></td><td>Horsens</td><td>Horsens</td></tr><tr><td style=\"white-space:nowrap\">0727<a name=\"dk-core-municipality-codes-0727\"> </a></td><td>Odder</td><td>Odder</td></tr><tr><td style=\"white-space:nowrap\">0240<a name=\"dk-core-municipality-codes-0240\"> </a></td><td>Egedal</td><td>Egedal</td></tr><tr><td style=\"white-space:nowrap\">0350<a name=\"dk-core-municipality-codes-0350\"> </a></td><td>Lejre</td><td>Lejre</td></tr><tr><td style=\"white-space:nowrap\">0461<a name=\"dk-core-municipality-codes-0461\"> </a></td><td>Odense</td><td>Odense</td></tr><tr><td style=\"white-space:nowrap\">0573<a name=\"dk-core-municipality-codes-0573\"> </a></td><td>Varde</td><td>Varde</td></tr><tr><td style=\"white-space:nowrap\">0575<a name=\"dk-core-municipality-codes-0575\"> </a></td><td>Vejen</td><td>Vejen</td></tr><tr><td style=\"white-space:nowrap\">0791<a name=\"dk-core-municipality-codes-0791\"> </a></td><td>Viborg</td><td>Viborg</td></tr><tr><td style=\"white-space:nowrap\">0400<a name=\"dk-core-municipality-codes-0400\"> </a></td><td>Bornholm</td><td>Bornholm</td></tr><tr><td style=\"white-space:nowrap\">0510<a name=\"dk-core-municipality-codes-0510\"> </a></td><td>Haderslev</td><td>Haderslev</td></tr><tr><td style=\"white-space:nowrap\">0621<a name=\"dk-core-municipality-codes-0621\"> </a></td><td>Kolding</td><td>Kolding</td></tr><tr><td style=\"white-space:nowrap\">0730<a name=\"dk-core-municipality-codes-0730\"> </a></td><td>Randers</td><td>Randers</td></tr><tr><td style=\"white-space:nowrap\">0840<a name=\"dk-core-municipality-codes-0840\"> </a></td><td>Rebild</td><td>Rebild</td></tr><tr><td style=\"white-space:nowrap\">0846<a name=\"dk-core-municipality-codes-0846\"> </a></td><td>Mariagerfjord</td><td>Mariagerfjord</td></tr><tr><td style=\"white-space:nowrap\">0250<a name=\"dk-core-municipality-codes-0250\"> </a></td><td>Frederikssund</td><td>Frederikssund</td></tr><tr><td style=\"white-space:nowrap\">0360<a name=\"dk-core-municipality-codes-0360\"> </a></td><td>Lolland</td><td>Lolland</td></tr><tr><td style=\"white-space:nowrap\">0253<a name=\"dk-core-municipality-codes-0253\"> </a></td><td>Greve</td><td>Greve</td></tr><tr><td style=\"white-space:nowrap\">0849<a name=\"dk-core-municipality-codes-0849\"> </a></td><td>Jammerbugt</td><td>Jammerbugt</td></tr><tr><td style=\"white-space:nowrap\">0147<a name=\"dk-core-municipality-codes-0147\"> </a></td><td>Frederiksberg</td><td>Frederiksberg</td></tr><tr><td style=\"white-space:nowrap\">0580<a name=\"dk-core-municipality-codes-0580\"> </a></td><td>Aabenraa</td><td>Aabenraa</td></tr><tr><td style=\"white-space:nowrap\">0259<a name=\"dk-core-municipality-codes-0259\"> </a></td><td>Køge</td><td>Køge</td></tr><tr><td style=\"white-space:nowrap\">0479<a name=\"dk-core-municipality-codes-0479\"> </a></td><td>Svendborg</td><td>Svendborg</td></tr><tr><td style=\"white-space:nowrap\">0410<a name=\"dk-core-municipality-codes-0410\"> </a></td><td>Middelfart</td><td>Middelfart</td></tr><tr><td style=\"white-space:nowrap\">0411<a name=\"dk-core-municipality-codes-0411\"> </a></td><td>Christiansø</td><td>Christiansø</td></tr><tr><td style=\"white-space:nowrap\">0306<a name=\"dk-core-municipality-codes-0306\"> </a></td><td>Odsherred</td><td>Odsherred</td></tr><tr><td style=\"white-space:nowrap\">0630<a name=\"dk-core-municipality-codes-0630\"> </a></td><td>Vejle</td><td>Vejle</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "3.2.0"] ; # 
+  fhir:name [ fhir:v "MunicipalityCodes"] ; # 
+  fhir:title [ fhir:v "DK Municipality Codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-05-06T15:21:43+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Denmark" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "jenskristianvilladsen@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Municipality codes as defined by https://danmarksadresser.dk/adressedata/kodelister/kommunekodeliste/ and https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/patientregistrering/relaterede/kommuneklassifikation.pdf"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "99"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "0740" ] ;
+     fhir:display [ fhir:v "Silkeborg" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Silkeborg" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0741" ] ;
+     fhir:display [ fhir:v "Samsø" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Samsø" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0851" ] ;
+     fhir:display [ fhir:v "Aalborg" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Aalborg" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0746" ] ;
+     fhir:display [ fhir:v "Skanderborg" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Skanderborg" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0151" ] ;
+     fhir:display [ fhir:v "Ballerup" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Ballerup" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0260" ] ;
+     fhir:display [ fhir:v "Halsnæs" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Halsnæs" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0153" ] ;
+     fhir:display [ fhir:v "Brøndby" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Brøndby" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0370" ] ;
+     fhir:display [ fhir:v "Næstved" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Næstved" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0155" ] ;
+     fhir:display [ fhir:v "Dragør" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Dragør" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0480" ] ;
+     fhir:display [ fhir:v "Nordfyns" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Nordfyns" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0157" ] ;
+     fhir:display [ fhir:v "Gentofte" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Gentofte" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0265" ] ;
+     fhir:display [ fhir:v "Roskilde" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Roskilde" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0159" ] ;
+     fhir:display [ fhir:v "Gladsaxe" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Gladsaxe" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0376" ] ;
+     fhir:display [ fhir:v "Guldborgsund" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Guldborgsund" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0269" ] ;
+     fhir:display [ fhir:v "Solrød" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Solrød" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0482" ] ;
+     fhir:display [ fhir:v "Langeland" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Langeland" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0201" ] ;
+     fhir:display [ fhir:v "Allerød" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Allerød" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0420" ] ;
+     fhir:display [ fhir:v "Assens" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Assens" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0530" ] ;
+     fhir:display [ fhir:v "Billund" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Billund" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0316" ] ;
+     fhir:display [ fhir:v "Holbæk" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Holbæk" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0751" ] ;
+     fhir:display [ fhir:v "Aarhus" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Aarhus" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0860" ] ;
+     fhir:display [ fhir:v "Hjørring" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Hjørring" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0756" ] ;
+     fhir:display [ fhir:v "Ikast-Brande" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Ikast-Brande" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0161" ] ;
+     fhir:display [ fhir:v "Glostrup" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Glostrup" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0270" ] ;
+     fhir:display [ fhir:v "Gribskov" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Gribskov" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0163" ] ;
+     fhir:display [ fhir:v "Herlev" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Herlev" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0165" ] ;
+     fhir:display [ fhir:v "Albertslund" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Albertslund" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0167" ] ;
+     fhir:display [ fhir:v "Hvidovre" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Hvidovre" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0492" ] ;
+     fhir:display [ fhir:v "Ærø" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Ærø" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0169" ] ;
+     fhir:display [ fhir:v "Høje-Taastrup" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Høje-Taastrup" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0101" ] ;
+     fhir:display [ fhir:v "København" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "København" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0210" ] ;
+     fhir:display [ fhir:v "Fredensborg" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Fredensborg" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0320" ] ;
+     fhir:display [ fhir:v "Faxe" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Faxe" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0430" ] ;
+     fhir:display [ fhir:v "Faaborg-Midtfyn" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Faaborg-Midtfyn" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0540" ] ;
+     fhir:display [ fhir:v "Sønderborg" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Sønderborg" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0217" ] ;
+     fhir:display [ fhir:v "Helsingør" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Helsingør" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0326" ] ;
+     fhir:display [ fhir:v "Kalundborg" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Kalundborg" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0219" ] ;
+     fhir:display [ fhir:v "Hillerød" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Hillerød" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0760" ] ;
+     fhir:display [ fhir:v "Ringkøbing-Skjern" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Ringkøbing-Skjern" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0329" ] ;
+     fhir:display [ fhir:v "Ringsted" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Ringsted" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0657" ] ;
+     fhir:display [ fhir:v "Herning" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Herning" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0766" ] ;
+     fhir:display [ fhir:v "Hedensted" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Hedensted" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0173" ] ;
+     fhir:display [ fhir:v "Lyngby-Taarbæk" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Lyngby-Taarbæk" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0390" ] ;
+     fhir:display [ fhir:v "Vordingborg" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Vordingborg" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0175" ] ;
+     fhir:display [ fhir:v "Rødovre" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Rødovre" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0810" ] ;
+     fhir:display [ fhir:v "Brønderslev" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Brønderslev" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0813" ] ;
+     fhir:display [ fhir:v "Frederikshavn" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Frederikshavn" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0706" ] ;
+     fhir:display [ fhir:v "Syddjurs" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Syddjurs" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0707" ] ;
+     fhir:display [ fhir:v "Norddjurs" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Norddjurs" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0330" ] ;
+     fhir:display [ fhir:v "Slagelse" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Slagelse" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0223" ] ;
+     fhir:display [ fhir:v "Hørsholm" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Hørsholm" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0440" ] ;
+     fhir:display [ fhir:v "Kerteminde" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Kerteminde" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0550" ] ;
+     fhir:display [ fhir:v "Tønder" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Tønder" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0336" ] ;
+     fhir:display [ fhir:v "Stevns" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Stevns" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0661" ] ;
+     fhir:display [ fhir:v "Holstebro" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Holstebro" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0665" ] ;
+     fhir:display [ fhir:v "Lemvig" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Lemvig" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0773" ] ;
+     fhir:display [ fhir:v "Morsø" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Morsø" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0779" ] ;
+     fhir:display [ fhir:v "Skive" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Skive" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0183" ] ;
+     fhir:display [ fhir:v "Ishøj" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Ishøj" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0185" ] ;
+     fhir:display [ fhir:v "Tårnby" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Tårnby" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0710" ] ;
+     fhir:display [ fhir:v "Favrskov" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Favrskov" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0187" ] ;
+     fhir:display [ fhir:v "Vallensbæk" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Vallensbæk" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0820" ] ;
+     fhir:display [ fhir:v "Vesthimmerland" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Vesthimmerland" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0607" ] ;
+     fhir:display [ fhir:v "Fredericia" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Fredericia" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0825" ] ;
+     fhir:display [ fhir:v "Læsø" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Læsø" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0230" ] ;
+     fhir:display [ fhir:v "Rudersdal" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Rudersdal" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0340" ] ;
+     fhir:display [ fhir:v "Sorø" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Sorø" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0450" ] ;
+     fhir:display [ fhir:v "Nyborg" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Nyborg" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0561" ] ;
+     fhir:display [ fhir:v "Esbjerg" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Esbjerg" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0563" ] ;
+     fhir:display [ fhir:v "Fanø" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Fanø" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0671" ] ;
+     fhir:display [ fhir:v "Struer" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Struer" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0190" ] ;
+     fhir:display [ fhir:v "Furesø" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Furesø" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0787" ] ;
+     fhir:display [ fhir:v "Thisted" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Thisted" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0615" ] ;
+     fhir:display [ fhir:v "Horsens" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Horsens" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0727" ] ;
+     fhir:display [ fhir:v "Odder" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Odder" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0240" ] ;
+     fhir:display [ fhir:v "Egedal" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Egedal" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0350" ] ;
+     fhir:display [ fhir:v "Lejre" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Lejre" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0461" ] ;
+     fhir:display [ fhir:v "Odense" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Odense" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0573" ] ;
+     fhir:display [ fhir:v "Varde" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Varde" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0575" ] ;
+     fhir:display [ fhir:v "Vejen" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Vejen" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0791" ] ;
+     fhir:display [ fhir:v "Viborg" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Viborg" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0400" ] ;
+     fhir:display [ fhir:v "Bornholm" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Bornholm" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0510" ] ;
+     fhir:display [ fhir:v "Haderslev" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Haderslev" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0621" ] ;
+     fhir:display [ fhir:v "Kolding" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Kolding" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0730" ] ;
+     fhir:display [ fhir:v "Randers" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Randers" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0840" ] ;
+     fhir:display [ fhir:v "Rebild" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Rebild" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0846" ] ;
+     fhir:display [ fhir:v "Mariagerfjord" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Mariagerfjord" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0250" ] ;
+     fhir:display [ fhir:v "Frederikssund" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Frederikssund" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0360" ] ;
+     fhir:display [ fhir:v "Lolland" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Lolland" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0253" ] ;
+     fhir:display [ fhir:v "Greve" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Greve" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0849" ] ;
+     fhir:display [ fhir:v "Jammerbugt" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Jammerbugt" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0147" ] ;
+     fhir:display [ fhir:v "Frederiksberg" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Frederiksberg" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0580" ] ;
+     fhir:display [ fhir:v "Aabenraa" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Aabenraa" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0259" ] ;
+     fhir:display [ fhir:v "Køge" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Køge" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0479" ] ;
+     fhir:display [ fhir:v "Svendborg" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Svendborg" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0410" ] ;
+     fhir:display [ fhir:v "Middelfart" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Middelfart" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0411" ] ;
+     fhir:display [ fhir:v "Christiansø" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Christiansø" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0306" ] ;
+     fhir:display [ fhir:v "Odsherred" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Odsherred" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "0630" ] ;
+     fhir:display [ fhir:v "Vejle" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Vejle" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

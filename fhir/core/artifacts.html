@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - HL7 FHIR Implementation Guide: DK Core v3.1.0</title>
+    <title>Artifacts Summary - HL7 FHIR Implementation Guide: DK Core v3.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -58,7 +58,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">HL7 FHIR Implementation Guide: DK Core</span>
             <br/>
-            <span style="display:inline-block;">3.1.0 - release
+            <span style="display:inline-block;">3.2.0 - release
 
 
 
@@ -145,7 +145,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the HL7 FHIR Implementation Guide: DK Core (v3.1.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://hl7.dk/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the HL7 FHIR Implementation Guide: DK Core (v3.2.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://hl7.dk/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -243,6 +243,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>HL7 Denmark core profile for health professionals and other actors relevant in citizen and patient pathways</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dk-core-related-person.html"
+                  title="StructureDefinition/dk-core-related-person">Danish Core Related Person Profile</a>
+            </td>
+            <td>
+<p>HL7 Denmark core profile for a related person</p>
+</td>
+         </tr>
       </tbody>
    </table>
    <a name="2"> </a>
@@ -299,7 +308,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-dk-core-kombit-org-identifier.html"
-                  title="StructureDefinition/dk-core-kombit-org-identifier">Kombit Org Identifier</a>
+                  title="StructureDefinition/dk-core-kombit-org-identifier">Kombit Organsation Identifier</a>
             </td>
             <td>
 <p>Identifier holding the organization code issued by KOMBIT</p>
@@ -312,6 +321,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>This strucure holds the danish <a href="https://www.nspop.dk/pages/viewpage.action?pageId=226757583#eCPRFormater(XeCPRogDeCPR)-Formatetfornationaleerstatningspersonnumre-X-eCPR">X-eCPR</a> identifier, maintained by the Danish Health Data Authority.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dk-core-producent-id.html"
+                  title="StructureDefinition/dk-core-producent-id">Producent Id</a>
+            </td>
+            <td>
+<p>Offical MedCom code describing the producer of lab results</p>
 </td>
          </tr>
          <tr>
@@ -395,11 +413,38 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-dk-core-NPUBasicObservation.html"
+                  title="ValueSet/dk-core-NPUBasicObservation">DK Core NPU Basic Observation</a>
+            </td>
+            <td>
+<p>NPU codes for Basic Observations usable in Denmark</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-dk-core-SCTBasicObservation.html"
+                  title="ValueSet/dk-core-SCTBasicObservation">DK Core SNOMED CT Basic Observation</a>
+            </td>
+            <td>
+<p>SNOMED CT codes for Basic Observations usable in Denmark</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-sor-organization-type.html"
                   title="ValueSet/sor-organization-type">DK Core SOR Organization Type</a>
             </td>
             <td>
 <p>Value set used for indicating the organization type for organizations from SOR</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-dk-core-UCUM-BasicUnits.html"
+                  title="ValueSet/dk-core-UCUM-BasicUnits">DK Core UCUM Basic Units</a>
+            </td>
+            <td>
+<p>UCUM codes to represent units for basic Observations usable in Denmark</p>
 </td>
          </tr>
          <tr>
@@ -440,6 +485,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-dk-core-RelatedPersonRelationshipTypes.html"
+                  title="ValueSet/dk-core-RelatedPersonRelationshipTypes">DK Related Person Relationship Types</a>
+            </td>
+            <td>
+<p>DK Related Person Relationship Types</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-dk-core-TechniquesSCTCodes.html"
                   title="ValueSet/dk-core-TechniquesSCTCodes">DK TechniquesSCTCodes</a>
             </td>
@@ -454,33 +508,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>IEEE MDC codes for Basic Observations usable in Denmark</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-dk-core-NPUBasicObservation.html"
-                  title="ValueSet/dk-core-NPUBasicObservation">Dk Core NPU Basic Observation</a>
-            </td>
-            <td>
-<p>NPU codes for Basic Observations usable in Denmark</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-dk-core-SCTBasicObservation.html"
-                  title="ValueSet/dk-core-SCTBasicObservation">Dk Core SNOMED CT Basic Observation</a>
-            </td>
-            <td>
-<p>SNOMED CT codes for Basic Observations usable in Denmark</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-dk-core-UCUM-BasicUnits.html"
-                  title="ValueSet/dk-core-UCUM-BasicUnits">Dk Core UCUM Basic Units</a>
-            </td>
-            <td>
-<p>UCUM codes to represent units for basic Observations usable in Denmark</p>
 </td>
          </tr>
       </tbody>
@@ -619,11 +646,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="CodeSystem-dk-relatedperson-relationshipcodes.html"
+                  title="CodeSystem/dk-relatedperson-relationshipcodes">DK Related Person Relationship Codes</a>
+            </td>
+            <td>
+<p>DK Related Person Relationship Codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="CodeSystem-request-status-dk-supplement.html"
                   title="CodeSystem/request-status-dk-supplement">DK Request Status</a>
             </td>
             <td>
 <p>Codes identifying the stage lifecycle stage of a request</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-role-code-dk-supplement.html"
+                  title="CodeSystem/role-code-dk-supplement">DK Role Code</a>
+            </td>
+            <td>
+<p>CodeSystem supplement with danish translations for RoleCode</p>
 </td>
          </tr>
       </tbody>
@@ -807,10 +852,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Patient-Confidential.html" title="Patient/Confidential">Example of a patient with confidential adress and name</a>
+               <a href="Patient-Confidential.html" title="Patient/Confidential">Example of a patient with confidential address and name</a>
             </td>
             <td>
-<p>Example of a patient with confidential adress and name</p>
+<p>Example of a patient with confidential address and name</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-TwoRelations.html"
+                  title="RelatedPerson/TwoRelations">Example of a related person with two relations</a>
+            </td>
+            <td>
+<p>Example of a person that has relations as both neighbor and primary caretaker</p>
 </td>
          </tr>
          <tr>
@@ -819,6 +873,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Example of a woman of childbearing age. Else is a MedCom test-patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-Child.html" title="RelatedPerson/Child">Example of child as related person</a>
+            </td>
+            <td>
+<p>Example of child as related person</p>
 </td>
          </tr>
          <tr>
@@ -1103,6 +1165,15 @@ bundle containing a home blood pressure measurement uploaded to a Continua-compl
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Organization-154b8c96-a061-45bf-9ce4-1947c7c3c283.html"
+                  title="Organization/154b8c96-a061-45bf-9ce4-1947c7c3c283">Producer Test Organization</a>
+            </td>
+            <td>
+<p>Producer of Lab Results Test Organization</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Practitioner-SidselSygeplejerske.html"
                   title="Practitioner/SidselSygeplejerske">SidselSygeplejerske</a>
             </td>
@@ -1132,20 +1203,14 @@ bundle containing a home blood pressure measurement uploaded to a Continua-compl
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 8, 2024 21:51+0100">2024-01-08</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 6, 2024 15:28+0200">2024-05-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -1172,16 +1237,8 @@ bundle containing a home blood pressure measurement uploaded to a Continua-compl
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
-  <script>anchors.options.visible = 'hover'
-anchors.add()</script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   
-<!-- feedback form - Google forms -->
-<!-- v0.1, 2021-01-09 -->
-
-
-
-<!-- / feedback form  -->
-
   <!-- Analytics Below
   ================================================== -->
   </body>
