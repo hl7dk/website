@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="b39c3a03-884f-42ba-b8ca-9b96fa1adac1"/>
+  <id value="c9709407-c192-472e-804f-6223db2cf002"/>
   <meta>
-    <lastUpdated value="2024-12-11T09:51:05.846+01:00"/>
+    <lastUpdated value="2024-12-11T10:16:20.362+01:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -89,7 +89,7 @@
         <title value="DK D-eCPR OID values"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2024-12-11T09:51:05+01:00"/>
+        <date value="2024-12-11T10:16:20+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -98,8 +98,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4d248789-9a21-4764-abf0-7d10748e5c91"/>
-          <timestamp value="2024-12-11T09:53:29+01:00"/>
+          <identifier value="urn:uuid:1c93d734-908f-4cea-805f-506b95932f06"/>
+          <timestamp value="2024-12-11T10:18:53+01:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -355,7 +355,7 @@
         <title value="DK Profession Group"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2024-12-11T09:51:05+01:00"/>
+        <date value="2024-12-11T10:16:20+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -364,8 +364,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:29d11786-ef9b-4ebd-88dc-2048c453cff0"/>
-          <timestamp value="2024-12-11T09:53:29+01:00"/>
+          <identifier value="urn:uuid:c675af71-ad90-4fa0-a9f2-83b9bc0e7aaf"/>
+          <timestamp value="2024-12-11T10:18:53+01:00"/>
           <total value="21"/>
           <offset value="0"/>
           <parameter>
@@ -776,9 +776,9 @@
         <version value="3.3.0"/>
         <name value="IEEEBasicObservation"/>
         <title value="Dk Core IEEE Basic Observation"/>
-        <status value="draft"/>
+        <status value="active"/>
         <experimental value="false"/>
-        <date value="2024-12-11T09:51:05+01:00"/>
+        <date value="2024-12-11T10:16:20+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -787,8 +787,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b07d14a2-7aef-409f-9bc2-140d99618b12"/>
-          <timestamp value="2024-12-11T09:53:30+01:00"/>
+          <identifier value="urn:uuid:5abadf87-63ed-4771-8d91-a41c7cd4309f"/>
+          <timestamp value="2024-12-11T10:18:53+01:00"/>
           <total value="36"/>
           <offset value="0"/>
           <parameter>
@@ -1142,9 +1142,9 @@
         <version value="3.3.0"/>
         <name value="LoincBasicObservation"/>
         <title value="DK Core LOINC Basic Observations"/>
-        <status value="draft"/>
+        <status value="active"/>
         <experimental value="false"/>
-        <date value="2024-12-11T09:51:05+01:00"/>
+        <date value="2024-12-11T10:16:20+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1153,8 +1153,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5004668a-39f9-45e6-8319-5b32a95b203b"/>
-          <timestamp value="2024-12-11T09:53:30+01:00"/>
+          <identifier value="urn:uuid:05ec0881-730f-4835-b9d5-47557579b707"/>
+          <timestamp value="2024-12-11T10:18:54+01:00"/>
           <total value="14"/>
           <offset value="0"/>
           <parameter>
@@ -2128,9 +2128,9 @@
         <version value="3.3.0"/>
         <name value="MunicipalityCodes"/>
         <title value="DK Municipality Codes"/>
-        <status value="draft"/>
+        <status value="active"/>
         <experimental value="false"/>
-        <date value="2024-12-11T09:51:05+01:00"/>
+        <date value="2024-12-11T10:16:20+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -2139,8 +2139,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b57a42e7-0c40-4e73-95b1-32f46dc98364"/>
-          <timestamp value="2024-12-11T09:53:31+01:00"/>
+          <identifier value="urn:uuid:0c7c03db-0ccd-490b-91f6-d851f9a685d5"/>
+          <timestamp value="2024-12-11T10:18:54+01:00"/>
           <total value="104"/>
           <offset value="0"/>
           <parameter>
@@ -2760,9 +2760,9 @@
         <version value="3.3.0"/>
         <name value="RegionalSubdivisionCodes"/>
         <title value="DK Regional Subdivision Codes"/>
-        <status value="draft"/>
+        <status value="active"/>
         <experimental value="false"/>
-        <date value="2024-12-11T09:51:05+01:00"/>
+        <date value="2024-12-11T10:16:20+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -2771,8 +2771,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4368058e-c9a1-469b-ab06-8d31f9341666"/>
-          <timestamp value="2024-12-11T09:53:32+01:00"/>
+          <identifier value="urn:uuid:752a5533-fb80-4409-8635-0de66672c06b"/>
+          <timestamp value="2024-12-11T10:18:56+01:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -3181,7 +3181,7 @@
         <title value="DK Related Person Relationship Types"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2024-12-11T09:51:05+01:00"/>
+        <date value="2024-12-11T10:16:20+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -3190,8 +3190,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:639ec03d-aaa1-4f3e-aa88-e461ffa969b4"/>
-          <timestamp value="2024-12-11T09:53:32+01:00"/>
+          <identifier value="urn:uuid:a04db93a-384b-480f-ba75-966d52b07027"/>
+          <timestamp value="2024-12-11T10:18:56+01:00"/>
           <total value="22"/>
           <offset value="0"/>
           <parameter>
@@ -3691,9 +3691,9 @@
         <version value="3.3.0"/>
         <name value="SCTBasicObservation"/>
         <title value="DK Core SNOMED CT Basic Observation"/>
-        <status value="draft"/>
+        <status value="active"/>
         <experimental value="false"/>
-        <date value="2024-12-11T09:51:05+01:00"/>
+        <date value="2024-12-11T10:16:20+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -3705,8 +3705,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:0ce6d194-05cd-4b73-b244-015528d38fae"/>
-          <timestamp value="2024-12-11T09:53:32+01:00"/>
+          <identifier value="urn:uuid:4d29f25b-7417-46a1-8261-0aa6ac9187ea"/>
+          <timestamp value="2024-12-11T10:18:56+01:00"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -4000,9 +4000,9 @@
         <version value="3.3.0"/>
         <name value="TechniquesSCTCodes"/>
         <title value="DK TechniquesSCTCodes"/>
-        <status value="draft"/>
+        <status value="active"/>
         <experimental value="false"/>
-        <date value="2024-12-11T09:51:05+01:00"/>
+        <date value="2024-12-11T10:16:20+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -4011,8 +4011,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:271212b0-3b9d-4a8f-b732-69c4f49a6720"/>
-          <timestamp value="2024-12-11T09:53:34+01:00"/>
+          <identifier value="urn:uuid:b2d3fc21-925a-48dd-8c0c-a9529a8e8551"/>
+          <timestamp value="2024-12-11T10:18:58+01:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -4180,9 +4180,9 @@
         <version value="3.3.0"/>
         <name value="UCUMBasicUnits"/>
         <title value="DK Core UCUM Basic Units"/>
-        <status value="draft"/>
+        <status value="active"/>
         <experimental value="false"/>
-        <date value="2024-12-11T09:51:05+01:00"/>
+        <date value="2024-12-11T10:16:20+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -4191,8 +4191,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2cc93afd-671f-47c0-ad32-7c32d182cb21"/>
-          <timestamp value="2024-12-11T09:53:35+01:00"/>
+          <identifier value="urn:uuid:8abdaaab-6d5b-4a2d-81c1-fc36eafc2006"/>
+          <timestamp value="2024-12-11T10:18:58+01:00"/>
           <total value="13"/>
           <offset value="0"/>
           <parameter>
@@ -4540,7 +4540,7 @@
         <title value="DK MaritalStatus"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2024-12-11T09:51:05+01:00"/>
+        <date value="2024-12-11T10:16:20+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -4549,8 +4549,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b1a626bb-2ae2-4882-bec3-f35070e904d4"/>
-          <timestamp value="2024-12-11T09:53:35+01:00"/>
+          <identifier value="urn:uuid:9d0f86e9-74c0-4761-a956-abb655057c13"/>
+          <timestamp value="2024-12-11T10:18:59+01:00"/>
           <total value="14"/>
           <offset value="0"/>
           <parameter>
@@ -5309,7 +5309,7 @@
         <title value="DK SOR Organization Type"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2024-12-11T09:51:05+01:00"/>
+        <date value="2024-12-11T10:16:20+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -5318,8 +5318,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:db6ce8f6-94c9-4d7d-ba13-740ceee79aca"/>
-          <timestamp value="2024-12-11T09:53:35+01:00"/>
+          <identifier value="urn:uuid:c8b0d3dc-a070-489f-8038-9693b369c8e9"/>
+          <timestamp value="2024-12-11T10:18:59+01:00"/>
           <total value="68"/>
           <offset value="0"/>
           <parameter>

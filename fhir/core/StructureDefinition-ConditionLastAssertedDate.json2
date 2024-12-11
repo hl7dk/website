@@ -9,8 +9,8 @@
   "version" : "3.3.0",
   "name" : "ConditionLastAssertedDate",
   "title" : "ConditionLastAssertedDate",
-  "status" : "draft",
-  "date" : "2024-12-11T09:54:35+01:00",
+  "status" : "active",
+  "date" : "2024-12-11T10:20:02+01:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",

@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "1a7701ab-6801-4fa0-9503-3478335c83dc",
+  "id" : "ae1f6d36-240b-4ae9-b7f1-2211bc44d4db",
   "meta" : {
-    "lastUpdated" : "2024-12-11T09:54:35.920+01:00"
+    "lastUpdated" : "2024-12-11T10:20:02.822+01:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "title" : "DK D-eCPR OID values",
       "status" : "active",
       "experimental" : false,
-      "date" : "2024-12-11T09:54:35+01:00",
+      "date" : "2024-12-11T10:20:02+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -28,8 +28,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9d229607-bdfc-4d35-9127-3a051c314593",
-        "timestamp" : "2024-12-11T09:55:05+01:00",
+        "identifier" : "urn:uuid:624a0bf7-c25b-4eb2-af72-c963df33afaa",
+        "timestamp" : "2024-12-11T10:20:30+01:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -95,7 +95,7 @@
       "title" : "DK Profession Group",
       "status" : "active",
       "experimental" : false,
-      "date" : "2024-12-11T09:54:35+01:00",
+      "date" : "2024-12-11T10:20:02+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -104,8 +104,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c515fe5a-d7be-4c11-a4b9-bb0f560f6e9e",
-        "timestamp" : "2024-12-11T09:55:05+01:00",
+        "identifier" : "urn:uuid:398aee22-ee1c-4be0-8cbe-97fa184af4cf",
+        "timestamp" : "2024-12-11T10:20:30+01:00",
         "total" : 21,
         "offset" : 0,
         "parameter" : [{
@@ -244,9 +244,9 @@
       "version" : "3.3.0",
       "name" : "IEEEBasicObservation",
       "title" : "Dk Core IEEE Basic Observation",
-      "status" : "draft",
+      "status" : "active",
       "experimental" : false,
-      "date" : "2024-12-11T09:54:35+01:00",
+      "date" : "2024-12-11T10:20:02+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -255,8 +255,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ce0bcaf2-2aab-40b0-8d12-63e6d5be172f",
-        "timestamp" : "2024-12-11T09:55:05+01:00",
+        "identifier" : "urn:uuid:26798056-c4ee-45cf-ac6c-b475c58874a7",
+        "timestamp" : "2024-12-11T10:20:30+01:00",
         "total" : 36,
         "offset" : 0,
         "parameter" : [{
@@ -478,9 +478,9 @@
       "version" : "3.3.0",
       "name" : "LoincBasicObservation",
       "title" : "DK Core LOINC Basic Observations",
-      "status" : "draft",
+      "status" : "active",
       "experimental" : false,
-      "date" : "2024-12-11T09:54:35+01:00",
+      "date" : "2024-12-11T10:20:02+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -489,8 +489,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ae50079c-4c77-489f-b5de-8420de112a8f",
-        "timestamp" : "2024-12-11T09:55:05+01:00",
+        "identifier" : "urn:uuid:e04ebca3-ada2-4ec4-b870-91ae1fad1348",
+        "timestamp" : "2024-12-11T10:20:30+01:00",
         "total" : 14,
         "offset" : 0,
         "parameter" : [{
@@ -602,9 +602,9 @@
       "version" : "3.3.0",
       "name" : "MunicipalityCodes",
       "title" : "DK Municipality Codes",
-      "status" : "draft",
+      "status" : "active",
       "experimental" : false,
-      "date" : "2024-12-11T09:54:35+01:00",
+      "date" : "2024-12-11T10:20:02+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -613,8 +613,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:61a8f43b-d414-43c0-bdf8-e7a7a2a03ad5",
-        "timestamp" : "2024-12-11T09:55:05+01:00",
+        "identifier" : "urn:uuid:2a272d84-2974-4698-a119-e340cc2940cc",
+        "timestamp" : "2024-12-11T10:20:30+01:00",
         "total" : 104,
         "offset" : 0,
         "parameter" : [{
@@ -1172,9 +1172,9 @@
       "version" : "3.3.0",
       "name" : "RegionalSubdivisionCodes",
       "title" : "DK Regional Subdivision Codes",
-      "status" : "draft",
+      "status" : "active",
       "experimental" : false,
-      "date" : "2024-12-11T09:54:35+01:00",
+      "date" : "2024-12-11T10:20:02+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1183,8 +1183,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:5bb80695-5ce9-4469-99bf-0d5605de2ad3",
-        "timestamp" : "2024-12-11T09:55:05+01:00",
+        "identifier" : "urn:uuid:4390df41-1429-4eef-937e-48fa274075fe",
+        "timestamp" : "2024-12-11T10:20:30+01:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -1245,7 +1245,7 @@
       "title" : "DK Related Person Relationship Types",
       "status" : "active",
       "experimental" : false,
-      "date" : "2024-12-11T09:54:35+01:00",
+      "date" : "2024-12-11T10:20:02+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1254,8 +1254,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f47b93f8-7b62-43cf-aea4-245a5d8ee460",
-        "timestamp" : "2024-12-11T09:55:05+01:00",
+        "identifier" : "urn:uuid:ed86dfbc-61ee-4bf1-868a-89037eb263ba",
+        "timestamp" : "2024-12-11T10:20:30+01:00",
         "total" : 22,
         "offset" : 0,
         "parameter" : [{
@@ -1407,9 +1407,9 @@
       "version" : "3.3.0",
       "name" : "SCTBasicObservation",
       "title" : "DK Core SNOMED CT Basic Observation",
-      "status" : "draft",
+      "status" : "active",
       "experimental" : false,
-      "date" : "2024-12-11T09:54:35+01:00",
+      "date" : "2024-12-11T10:20:02+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1422,8 +1422,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:5f63c9bc-de42-4e45-9c44-db630c91e7f4",
-        "timestamp" : "2024-12-11T09:55:05+01:00",
+        "identifier" : "urn:uuid:42db6b89-9c94-4293-ad40-7821d078df0b",
+        "timestamp" : "2024-12-11T10:20:30+01:00",
         "offset" : 0,
         "parameter" : [{
           "name" : "count",
@@ -1673,9 +1673,9 @@
       "version" : "3.3.0",
       "name" : "TechniquesSCTCodes",
       "title" : "DK TechniquesSCTCodes",
-      "status" : "draft",
+      "status" : "active",
       "experimental" : false,
-      "date" : "2024-12-11T09:54:35+01:00",
+      "date" : "2024-12-11T10:20:02+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1684,8 +1684,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:50b076d7-2861-4026-83d8-59a3787807c9",
-        "timestamp" : "2024-12-11T09:55:05+01:00",
+        "identifier" : "urn:uuid:e67adbfe-8948-4ec3-ac38-3b020535bfb8",
+        "timestamp" : "2024-12-11T10:20:30+01:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -1742,9 +1742,9 @@
       "version" : "3.3.0",
       "name" : "UCUMBasicUnits",
       "title" : "DK Core UCUM Basic Units",
-      "status" : "draft",
+      "status" : "active",
       "experimental" : false,
-      "date" : "2024-12-11T09:54:35+01:00",
+      "date" : "2024-12-11T10:20:02+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1753,8 +1753,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:49ce78de-1f28-47eb-9f7c-0875a1f71a18",
-        "timestamp" : "2024-12-11T09:55:05+01:00",
+        "identifier" : "urn:uuid:0553d024-78db-4693-8352-056f4e90f1ee",
+        "timestamp" : "2024-12-11T10:20:30+01:00",
         "total" : 13,
         "offset" : 0,
         "parameter" : [{
@@ -1862,7 +1862,7 @@
       "title" : "DK MaritalStatus",
       "status" : "active",
       "experimental" : false,
-      "date" : "2024-12-11T09:54:35+01:00",
+      "date" : "2024-12-11T10:20:02+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1871,8 +1871,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9ce918da-4a49-4959-9288-22d838cc59ed",
-        "timestamp" : "2024-12-11T09:55:05+01:00",
+        "identifier" : "urn:uuid:c907452c-f903-452f-b76d-c177cdecbac1",
+        "timestamp" : "2024-12-11T10:20:30+01:00",
         "total" : 14,
         "offset" : 0,
         "parameter" : [{
@@ -1990,7 +1990,7 @@
       "title" : "DK SOR Organization Type",
       "status" : "active",
       "experimental" : false,
-      "date" : "2024-12-11T09:54:35+01:00",
+      "date" : "2024-12-11T10:20:02+01:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1999,8 +1999,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b3906b98-47f9-4dec-9944-3cb8fd72e2aa",
-        "timestamp" : "2024-12-11T09:55:05+01:00",
+        "identifier" : "urn:uuid:0e7c6557-3298-4de5-bab4-e4702a11f679",
+        "timestamp" : "2024-12-11T10:20:30+01:00",
         "total" : 68,
         "offset" : 0,
         "parameter" : [{

@@ -4,9 +4,9 @@
     <description>New Packages published by HL7 Denmark&gt;</description>
     <link>http://hl7.dk/fhir/package-feed.xml</link>
     <generator>HL7, Inc FHIR Publication tooling</generator>
-    <lastBuildDate>Wed, 11 Dec 2024 09:50:39 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 11 Dec 2024 10:15:53 +0100</lastBuildDate>
     <atom:link href="http://hl7.dk/fhir/package-feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 11 Dec 2024 09:50:39 +0100</pubDate>
+    <pubDate>Wed, 11 Dec 2024 10:15:53 +0100</pubDate>
     <language>en</language>
     <ttl>600</ttl>
     <item>
@@ -17,8 +17,8 @@
       <dc:creator>HL7 Denmark</dc:creator>
       <fhir:version>4.0.1</fhir:version>
       <fhir:kind>IG</fhir:kind>
-      <pubDate>Wed, 11 Dec 2024 09:50:39 +0100</pubDate>
-      <fhir:details>Publication run at 11/12/2024 by jkiddo using vVersion 1.8.1 (Git# 211ded24f613). Built 2024-12-10T06:06:00.400Z (26 hours old) source id Unknown (todo) Run #6</fhir:details>
+      <pubDate>Wed, 11 Dec 2024 10:15:53 +0100</pubDate>
+      <fhir:details>Publication run at 11/12/2024 by jkiddo using vVersion 1.8.1 (Git# 211ded24f613). Built 2024-12-10T06:06:00.400Z (27 hours old) source id Unknown (todo) Run #7</fhir:details>
     </item>
     <item>
       <title>hl7.fhir.dk.core#3.2.0</title>

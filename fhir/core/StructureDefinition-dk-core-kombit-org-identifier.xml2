@@ -13,8 +13,8 @@
   <version value="3.3.0"/>
   <name value="KombitOrgIdentifier"/>
   <title value="Kombit Organsation Identifier"/>
-  <status value="draft"/>
-  <date value="2024-12-11T09:54:35+01:00"/>
+  <status value="active"/>
+  <date value="2024-12-11T10:20:02+01:00"/>
   <publisher value="HL7 Denmark"/>
   <contact>
     <name value="HL7 Denmark"/>

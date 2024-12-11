@@ -9,8 +9,8 @@
   "version" : "3.3.0",
   "name" : "AuthorizationIdentifier",
   "title" : "Danish Health Professionals Authorization Identifier",
-  "status" : "draft",
-  "date" : "2024-12-11T09:51:05+01:00",
+  "status" : "active",
+  "date" : "2024-12-11T10:16:20+01:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",
