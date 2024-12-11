@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "dk-core-RegionalSubDivisionCodes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet dk-core-RegionalSubDivisionCodes</b></p><a name=\"dk-core-RegionalSubDivisionCodes\"> </a><a name=\"hcdk-core-RegionalSubDivisionCodes\"> </a><a name=\"dk-core-RegionalSubDivisionCodes-da-DK\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-dk-core-regional-subdivision-codes.html\"><code>http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes</code></a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "3.3.0"] ; # 
+  fhir:name [ fhir:v "RegionalSubdivisionCodes"] ; # 
+  fhir:title [ fhir:v "DK Regional Subdivision Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-12-11T09:51:05+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Denmark" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "jenskristianvilladsen@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Subdivision codes (Regional codes) used in Denmark"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

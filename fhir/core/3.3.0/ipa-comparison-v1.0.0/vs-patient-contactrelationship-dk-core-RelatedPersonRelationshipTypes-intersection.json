@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "7dcad553-2315-4d6e-bd38-08a57fee1535-12",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/7dcad553-2315-4d6e-bd38-08a57fee1535-12",
+  "name" : "IntersectionPatientContactRelationshipAndRelatedPersonRelationshipTypes",
+  "title" : "Intersection of Patient Contact Relationship  And DK Related Person Relationship Types",
+  "status" : "active",
+  "date" : "2024-12-11T09:51:55+01:00"
+}

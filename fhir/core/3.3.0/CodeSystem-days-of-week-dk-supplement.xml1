@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="days-of-week-dk-supplement"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem days-of-week-dk-supplement</b></p><a name="days-of-week-dk-supplement"> </a><a name="hcdays-of-week-dk-supplement"> </a><a name="days-of-week-dk-supplement-da-DK"> </a><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/days-of-week-dk-supplement</code> defines displays on the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-days-of-week.html#days-of-week-mon">mon</a><a name="days-of-week-dk-supplement-mon"> </a></td><td>Mandag</td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-days-of-week.html#days-of-week-tue">tue</a><a name="days-of-week-dk-supplement-tue"> </a></td><td>Tirsdag</td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-days-of-week.html#days-of-week-wed">wed</a><a name="days-of-week-dk-supplement-wed"> </a></td><td>Onsdag</td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-days-of-week.html#days-of-week-thu">thu</a><a name="days-of-week-dk-supplement-thu"> </a></td><td>Torsdag</td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-days-of-week.html#days-of-week-fri">fri</a><a name="days-of-week-dk-supplement-fri"> </a></td><td>Fredag</td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-days-of-week.html#days-of-week-sat">sat</a><a name="days-of-week-dk-supplement-sat"> </a></td><td>Lørdag</td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-days-of-week.html#days-of-week-sun">sun</a><a name="days-of-week-dk-supplement-sun"> </a></td><td>Søndag</td></tr></table></div>
+  </text>
+  <url value="http://hl7.dk/fhir/core/CodeSystem/days-of-week-dk-supplement"/>
+  <version value="3.3.0"/>
+  <name value="DaysOfWeek"/>
+  <title value="DK Days Of Week"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-12-11T09:51:05+01:00"/>
+  <publisher value="HL7 Denmark"/>
+  <contact>
+    <name value="HL7 Denmark"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="jenskristianvilladsen@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="The days of the week."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <content value="supplement"/>
+  <supplements value="http://hl7.org/fhir/days-of-week"/>
+  <concept>
+    <code value="mon"/>
+    <designation>
+      <language value="da"/>
+      <use>
+        <system value="http://snomed.info/sct"/>
+        <code value="900000000000013009"/>
+      </use>
+      <value value="Mandag"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="tue"/>
+    <designation>
+      <language value="da"/>
+      <use>
+        <system value="http://snomed.info/sct"/>
+        <code value="900000000000013009"/>
+      </use>
+      <value value="Tirsdag"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="wed"/>
+    <designation>
+      <language value="da"/>
+      <use>
+        <system value="http://snomed.info/sct"/>
+        <code value="900000000000013009"/>
+      </use>
+      <value value="Onsdag"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="thu"/>
+    <designation>
+      <language value="da"/>
+      <use>
+        <system value="http://snomed.info/sct"/>
+        <code value="900000000000013009"/>
+      </use>
+      <value value="Torsdag"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="fri"/>
+    <designation>
+      <language value="da"/>
+      <use>
+        <system value="http://snomed.info/sct"/>
+        <code value="900000000000013009"/>
+      </use>
+      <value value="Fredag"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="sat"/>
+    <designation>
+      <language value="da"/>
+      <use>
+        <system value="http://snomed.info/sct"/>
+        <code value="900000000000013009"/>
+      </use>
+      <value value="Lørdag"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="sun"/>
+    <designation>
+      <language value="da"/>
+      <use>
+        <system value="http://snomed.info/sct"/>
+        <code value="900000000000013009"/>
+      </use>
+      <value value="Søndag"/>
+    </designation>
+  </concept>
+</CodeSystem>

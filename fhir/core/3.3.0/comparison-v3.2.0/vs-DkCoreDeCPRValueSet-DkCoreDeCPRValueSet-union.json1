@@ -1,0 +1,16 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "33aea143-90ca-45f7-8568-fa029cb6a303-116",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/33aea143-90ca-45f7-8568-fa029cb6a303-116",
+  "name" : "UnionDkCoreDeCPRValueSetAndDkCoreDeCPRValueSet",
+  "title" : "Union of DK D-eCPR OID values And DK D-eCPR OID values",
+  "status" : "active",
+  "date" : "2024-12-11T09:51:54+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }]
+}
