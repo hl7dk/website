@@ -1,0 +1,24 @@
+DKSmart : Validation Results
+=========================================
+
+err = 0, warn = 5, info = 2
+IG Publisher Version: 1.8.10
+Generated Sat Feb 01 20:11:00 CET 2025. FHIR version 4.0.1 for hl7.fhir.dk.smart#1.0.0 (canonical = http://hl7.dk/fhir/smart)
+ Build Errors : 0 / 0 / 0
+ /Users/jkiddo/work/temp/hl7.fhir.dk.smart#1.0.0-milestone/fsh-generated/resources/CapabilityStatement-dk-smart-server : 0 / 1 / 1
+ /Users/jkiddo/work/temp/hl7.fhir.dk.smart#1.0.0-milestone/fsh-generated/resources/CapabilityStatement-example-ipa-server : 0 / 0 / 2
+ /Users/jkiddo/work/temp/hl7.fhir.dk.smart#1.0.0-milestone/fsh-generated/resources/ImplementationGuide-hl7.fhir.dk.smart : 0 / 0 / 1
+ /Users/jkiddo/work/temp/hl7.fhir.dk.smart#1.0.0-milestone/fsh-generated/resources/StructureDefinition-dk-smart-server-profile : 0 / 4 / 2
+</table>
+== n/a ==
+== fsh-generated/resources/CapabilityStatement-dk-smart-server.json ==
+WARNING: CapabilityStatement/dk-smart-server: CapabilityStatement.implementationGuide[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '2.2.0', found versions: 2.0.0, 2.2.0
+== fsh-generated/resources/CapabilityStatement-example-ipa-server.json ==
+INFORMATION: Resource: The resource CapabilityStatement/example-ipa-server could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.dk.smart.json ==
+== fsh-generated/resources/StructureDefinition-dk-smart-server-profile.json ==
+WARNING: StructureDefinition/dk-smart-server-profile: StructureDefinition.snapshot.element[0].constraint[6].xpath: value should not start or finish with whitespace ' not(f:kind/@value='instance') or (not(exists(f:implementation)) and exists(f:software))'
+WARNING: StructureDefinition/dk-smart-server-profile: StructureDefinition.snapshot.element[47].pattern.ofType(canonical): There are multiple different potential matches for the url 'http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '2.2.0', found versions: 2.0.0, 2.2.0
+WARNING: StructureDefinition/dk-smart-server-profile: StructureDefinition.differential.element[4].pattern.ofType(canonical): There are multiple different potential matches for the url 'http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '2.2.0', found versions: 2.0.0, 2.2.0
+INFORMATION: StructureDefinition/dk-smart-server-profile: StructureDefinition.snapshot.element[47].pattern.ofType(canonical): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+WARNING: StructureDefinition/dk-smart-server-profile: StructureDefinition.snapshot.element[47].pattern.ofType(canonical): The repeating element has a pattern value for a primitive type. The DotNet validator will not apply this to all the repeats - this is an error

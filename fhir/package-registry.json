@@ -18,6 +18,25 @@
         "date" : "2025-02-01",
         "path" : "http://hl7.dk/fhir/core/3.4.0"
       }
+    },
+    {
+      "path" : "smart/package-list.json",
+      "package-id" : "hl7.fhir.dk.smart",
+      "title" : "HL7 FHIR Implementation Guide: DK SMART",
+      "canonical" : "http://hl7.dk/fhir/smart",
+      "category" : "National Core",
+      "ci-build" : "https://build.fhir.org/ig/hl7dk/dk-smart",
+      "version-count" : 1,
+      "latest" : {
+        "version" : "1.0.0",
+        "date" : "2025-02-01",
+        "path" : "http://hl7.dk/fhir/smart/1.0.0"
+      },
+      "milestone" : {
+        "version" : "1.0.0",
+        "date" : "2025-02-01",
+        "path" : "http://hl7.dk/fhir/smart/1.0.0"
+      }
     }
   ]
 }

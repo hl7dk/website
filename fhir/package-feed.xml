@@ -4,11 +4,22 @@
     <description>New Packages published by HL7 Denmark&gt;</description>
     <link>http://hl7.dk/fhir/package-feed.xml</link>
     <generator>HL7, Inc FHIR Publication tooling</generator>
-    <lastBuildDate>Sat, 01 Feb 2025 07:18:00 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 01 Feb 2025 08:09:18 +0100</lastBuildDate>
     <atom:link href="http://hl7.dk/fhir/package-feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 01 Feb 2025 07:18:00 +0100</pubDate>
+    <pubDate>Sat, 01 Feb 2025 08:09:18 +0100</pubDate>
     <language>en</language>
     <ttl>600</ttl>
+    <item>
+      <title>hl7.fhir.dk.smart#1.0.0</title>
+      <description>DK SMART version 1.0.0</description>
+      <link>http://hl7.dk/fhir/smart/1.0.0/package.tgz</link>
+      <guid isPermaLink="true">http://hl7.dk/fhir/smart/1.0.0/package.tgz</guid>
+      <dc:creator>HL7 Denmark</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Sat, 01 Feb 2025 08:09:18 +0100</pubDate>
+      <fhir:details>Publication run at 01/02/2025 by jkiddo using vVersion 1.8.10 (Git# dc36d776e982). Built 2025-01-30T20:00:09.932Z (47 hours old) source id Unknown (todo) Run #9</fhir:details>
+    </item>
     <item>
       <title>hl7.fhir.dk.core#3.4.0</title>
       <description>DK Core version 3.4.0</description>

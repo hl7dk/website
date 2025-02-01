@@ -1,0 +1,27 @@
+{
+  "list" : [
+    {
+      "version" : "current",
+      "path" : "https://build.fhir.org/ig/hl7dk/dk-smart",
+      "status" : "ci-build",
+      "sequence" : "ci-build",
+      "desc" : "Continuous Integration Build (latest in version control) - Content subject to frequent changes"
+    },
+    {
+      "version" : "1.0.0",
+      "path" : "http://hl7.dk/fhir/smart/1.0.0",
+      "status" : "release",
+      "sequence" : "Release",
+      "fhirversion" : "4.0.1",
+      "date" : "2025-02-01",
+      "current" : true,
+      "desc" : "DK SMART version 1.0.0",
+      "descmd" : "Dk-smart version 1.0.0 has been approved by HL7 Denmark. This version introduces the first version of DK SMART."
+    }
+  ],
+  "package-id" : "hl7.fhir.dk.smart",
+  "canonical" : "http://hl7.dk/fhir/smart",
+  "title" : "HL7 FHIR Implementation Guide: DK SMART",
+  "category" : "National Core",
+  "introduction" : "A SMART Implementation Guide for the Danish common needs across healthcare sectors"
+}

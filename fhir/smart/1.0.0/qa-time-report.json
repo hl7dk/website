@@ -1,0 +1,205 @@
+{
+  "date" : "Sat, 01 Feb, 2025 20:09:38 +0100",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-hl7.fhir.dk.smart.json",
+      "size" : 3339,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 16
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 21,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 21,
+          "length" : 761
+        },
+        {
+          "activity" : "validate",
+          "start" : 37,
+          "length" : 594
+        },
+        {
+          "activity" : "generate1",
+          "start" : 40,
+          "length" : 50
+        },
+        {
+          "activity" : "generate2",
+          "start" : 42,
+          "length" : 32
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 56,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CapabilityStatement-dk-smart-server.json",
+      "size" : 3023,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 14
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 21,
+          "length" : 3
+        },
+        {
+          "activity" : "loadInfo",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 17
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 21,
+          "length" : 28
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 2996
+        },
+        {
+          "activity" : "generate1",
+          "start" : 40,
+          "length" : 23
+        },
+        {
+          "activity" : "generate2",
+          "start" : 42,
+          "length" : 25
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CapabilityStatement-example-ipa-server.json",
+      "size" : 5326,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 21
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 18
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 19
+        },
+        {
+          "activity" : "validate",
+          "start" : 27,
+          "length" : 9583
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 39,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 40,
+          "length" : 42
+        },
+        {
+          "activity" : "generate2",
+          "start" : 42,
+          "length" : 15
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 56,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-dk-smart-server-profile.json",
+      "size" : 1880,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 20,
+          "length" : 13
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 21,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 21,
+          "length" : 25
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 21,
+          "length" : 77
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 22,
+          "length" : 40
+        },
+        {
+          "activity" : "validate",
+          "start" : 22,
+          "length" : 2363
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 39,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 40,
+          "length" : 349
+        },
+        {
+          "activity" : "generate2",
+          "start" : 42,
+          "length" : 1955
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 56,
+          "length" : 8
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 62,
+          "length" : 1
+        }
+      ]
+    }
+  ]
+}

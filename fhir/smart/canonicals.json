@@ -1,0 +1,30 @@
+[
+  {
+    "id" : "dk-smart-server",
+    "type" : "CapabilityStatement",
+    "url" : "http://hl7.dk/fhir/smart/CapabilityStatement/dk-smart-server",
+    "version" : "1.0.0",
+    "name" : "DKSmartServer"
+  },
+  {
+    "id" : "example-ipa-server",
+    "type" : "CapabilityStatement",
+    "url" : "http://hl7.dk/fhir/smart/CapabilityStatement/example-ipa-server",
+    "version" : "1.0.0",
+    "name" : "RestServer"
+  },
+  {
+    "id" : "hl7.fhir.dk.smart",
+    "type" : "ImplementationGuide",
+    "url" : "http://hl7.dk/fhir/smart/ImplementationGuide/hl7.fhir.dk.smart",
+    "version" : "1.0.0",
+    "name" : "DKSmart"
+  },
+  {
+    "id" : "dk-smart-server-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.dk/fhir/smart/StructureDefinition/dk-smart-server-profile",
+    "version" : "1.0.0",
+    "name" : "DKSmartServerProfile"
+  }
+]

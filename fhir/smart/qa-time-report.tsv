@@ -1,0 +1,5 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-hl7.fhir.dk.smart.json	3339	-	0	0	0	0	0	0	1	544	0	0	0	0	0	0	0	0	0	0	46	20	0	0	0	1	0	0
+fsh-generated/resources/CapabilityStatement-dk-smart-server.json	3023	2	1	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	24	10	0	0	0	0	0	0
+fsh-generated/resources/CapabilityStatement-example-ipa-server.json	5326	3	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	43	13	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-dk-smart-server-profile.json	1880	2	0	0	0	0	0	39	0	52	0	0	0	0	0	0	0	2	0	0	366	675	0	0	0	6	0	3
