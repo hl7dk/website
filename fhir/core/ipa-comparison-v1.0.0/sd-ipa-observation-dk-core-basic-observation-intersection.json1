@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "1e276fb1-118b-4acc-b3e9-8439ab833eb3-3",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/1e276fb1-118b-4acc-b3e9-8439ab833eb3-3",
+  "id" : "50333d2b-53e1-4e41-aba4-21abbc314a36-3",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/50333d2b-53e1-4e41-aba4-21abbc314a36-3",
   "name" : "IntersectionIPAObservationAndDkCoreBasicObservation",
   "title" : "Intersection of IPA-Observation And Danish Core Basic Observation Profile",
   "status" : "active",
-  "date" : "2024-12-11T10:20:10+01:00",
+  "date" : "2025-02-01T19:23:24+01:00",
   "snapshot" : {
     "element" : [{
       "path" : "Observation",
@@ -903,7 +903,7 @@
         "targetProfile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner",
         "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization",
         "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient",
-        "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+        "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role",
         "http://hl7.org/fhir/StructureDefinition/CareTeam",
         "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"]
       }],

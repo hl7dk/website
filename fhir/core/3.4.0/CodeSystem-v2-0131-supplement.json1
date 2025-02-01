@@ -1,0 +1,121 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "v2-0131-supplement",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem v2-0131-supplement</b></p><a name=\"v2-0131-supplement\"> </a><a name=\"hcv2-0131-supplement\"> </a><a name=\"v2-0131-supplement-da-DK\"> </a><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/v2-0131-supplement</code> defines displays on the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html#v2-0131-BP\">BP</a><a name=\"v2-0131-supplement-BP\"> </a></td><td>Faktureringskontaktperson</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html#v2-0131-C\">C</a><a name=\"v2-0131-supplement-C\"> </a></td><td>Nødkontakt</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html#v2-0131-CP\">CP</a><a name=\"v2-0131-supplement-CP\"> </a></td><td>Kontaktperson</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html#v2-0131-E\">E</a><a name=\"v2-0131-supplement-E\"> </a></td><td>Arbejdsgiver</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html#v2-0131-EP\">EP</a><a name=\"v2-0131-supplement-EP\"> </a></td><td>Akut kontaktperson</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html#v2-0131-F\">F</a><a name=\"v2-0131-supplement-F\"> </a></td><td>Føderalt agentur</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html#v2-0131-I\">I</a><a name=\"v2-0131-supplement-I\"> </a></td><td>Forsikringsselskab</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html#v2-0131-N\">N</a><a name=\"v2-0131-supplement-N\"> </a></td><td>Pårørende</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html#v2-0131-O\">O</a><a name=\"v2-0131-supplement-O\"> </a></td><td>Andet</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html#v2-0131-PR\">PR</a><a name=\"v2-0131-supplement-PR\"> </a></td><td>Person, der forbereder henvisning</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html#v2-0131-S\">S</a><a name=\"v2-0131-supplement-S\"> </a></td><td>Statsagentur</td></tr><tr><td><a style=\"white-space:nowrap\" href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html#v2-0131-U\">U</a><a name=\"v2-0131-supplement-U\"> </a></td><td>Ukendt</td></tr></table></div>"
+  },
+  "url" : "http://hl7.dk/fhir/core/CodeSystem/v2-0131-supplement",
+  "version" : "3.4.0",
+  "name" : "v2-0131DkSupplement",
+  "title" : "DK v2 Contact Role Supplement",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-02-01T19:18:26+01:00",
+  "publisher" : "HL7 Denmark",
+  "contact" : [{
+    "name" : "HL7 Denmark",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.dk"
+    },
+    {
+      "system" : "email",
+      "value" : "jenskristianvilladsen@gmail.com"
+    }]
+  }],
+  "description" : "CodeSystem supplement with danish translations for Contact Role",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "content" : "supplement",
+  "supplements" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+  "concept" : [{
+    "code" : "BP",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Faktureringskontaktperson"
+    }]
+  },
+  {
+    "code" : "C",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Nødkontakt"
+    }]
+  },
+  {
+    "code" : "CP",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Kontaktperson"
+    }]
+  },
+  {
+    "code" : "E",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Arbejdsgiver"
+    }]
+  },
+  {
+    "code" : "EP",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Akut kontaktperson"
+    }]
+  },
+  {
+    "code" : "F",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Føderalt agentur"
+    }]
+  },
+  {
+    "code" : "I",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Forsikringsselskab"
+    }]
+  },
+  {
+    "code" : "N",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Pårørende"
+    }]
+  },
+  {
+    "code" : "O",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Andet"
+    }]
+  },
+  {
+    "code" : "PR",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Person, der forbereder henvisning"
+    }]
+  },
+  {
+    "code" : "S",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Statsagentur"
+    }]
+  },
+  {
+    "code" : "U",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Ukendt"
+    }]
+  }]
+}

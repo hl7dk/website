@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "f75905c1-ae2c-4b20-8286-20f59a52ecc9-146",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/f75905c1-ae2c-4b20-8286-20f59a52ecc9-146",
+  "name" : "UnionTechniquesSCTCodesAndTechniquesSCTCodes",
+  "title" : "Union of DK TechniquesSCTCodes And DK TechniquesSCTCodes",
+  "status" : "draft",
+  "date" : "2025-02-01T19:23:23+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "761996005",
+        "display" : "Estimation technique (qualifier value)"
+      },
+      {
+        "code" : "733985002",
+        "display" : "Reported (qualifier value)"
+      },
+      {
+        "code" : "272391002",
+        "display" : "Measurement technique (qualifier value)"
+      }]
+    }]
+  }
+}

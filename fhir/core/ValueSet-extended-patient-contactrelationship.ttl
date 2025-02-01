@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/ValueSet/extended-patient-contactrelationship> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "extended-patient-contactrelationship"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet extended-patient-contactrelationship</b></p><a name=\"extended-patient-contactrelationship\"> </a><a name=\"hcextended-patient-contactrelationship\"> </a><a name=\"extended-patient-contactrelationship-da-DK\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html\">Patient Contact Relationship </a></li><li>Import all the codes that are contained in <a href=\"ValueSet-dk-core-RelatedPersonRelationshipTypes.html\">DK Related Person Relationship Types</a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.dk/fhir/core/ValueSet/extended-patient-contactrelationship"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "3.4.0"] ; # 
+  fhir:name [ fhir:v "extended-patient-contactrelationship"] ; # 
+  fhir:title [ fhir:v "DK Extended Patient Contact Relationship"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2025-02-01T19:23:09+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Denmark" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "jenskristianvilladsen@gmail.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "DK Extended Patient Contact Relationship"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:valueSet ( [
+         fhir:v "http://hl7.org/fhir/ValueSet/patient-contactrelationship"^^xsd:anyURI ;
+         fhir:link <http://hl7.org/fhir/ValueSet/patient-contactrelationship>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://hl7.dk/fhir/core/ValueSet/dk-core-RelatedPersonRelationshipTypes"^^xsd:anyURI ;
+         fhir:link <http://hl7.dk/fhir/core/ValueSet/dk-core-RelatedPersonRelationshipTypes>
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

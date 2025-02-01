@@ -1,0 +1,16 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "f75905c1-ae2c-4b20-8286-20f59a52ecc9-156",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/f75905c1-ae2c-4b20-8286-20f59a52ecc9-156",
+  "name" : "IntersectionSorOrganizationTypeAndSorOrganizationType",
+  "title" : "Intersection of DK SOR Organization Type And DK SOR Organization Type",
+  "status" : "active",
+  "date" : "2025-02-01T19:23:23+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }]
+}

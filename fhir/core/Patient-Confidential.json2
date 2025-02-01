@@ -18,6 +18,7 @@
   }],
   "name" : [{
     "use" : "official",
+    "text" : "Ruddi Test Berggren",
     "family" : "Berggren",
     "given" : ["Ruddi",
     "Test"]

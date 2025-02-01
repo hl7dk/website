@@ -18,6 +18,7 @@
   </identifier>
   <name>
     <use value="official"/>
+    <text value="Ruddi Test Berggren"/>
     <family value="Berggren"/>
     <given value="Ruddi"/>
     <given value="Test"/>

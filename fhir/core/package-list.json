@@ -13,13 +13,23 @@
       "current" : true
     },
     {
+      "version" : "3.4.0",
+      "path" : "http://hl7.dk/fhir/core/3.4.0",
+      "status" : "release",
+      "sequence" : "Release",
+      "fhirversion" : "4.0.1",
+      "date" : "2025-02-01",
+      "current" : true,
+      "desc" : "DK Core version 3.4.0",
+      "descmd" : "Dk-core version 3.4.0 has been approved by HL7 Denmark. This version introduces the use of IPA for selected profiles.\n\nThe changes between 3.3.0 and 3.4.0 are: \n* Introduction of IPA for selected profiles\n* Non-breaking Cleanup in ValueSets and CodeSystems fragments\n* Correction of Patient.contact.relationship to also include correct default valueset\n"
+    },
+    {
       "version" : "3.3.0",
       "path" : "http://hl7.dk/fhir/core/3.3.0",
       "status" : "release",
       "sequence" : "Release",
       "fhirversion" : "4.0.1",
       "date" : "2024-12-11",
-      "current" : true,
       "desc" : "DK Core version 3.3.0",
       "descmd" : "Dk-core version 3.3.0 has been approved by HL7 Denmark. This version is the result of external consultation of DK Core v. 3.2.0.\n\nThe changes between 3.2.0 and 3.3.0 are: \n* Addition of codes for 'Primær kontakt', 'Professionel kontakt' and 'emergency contact' to the ValueSet DK Related Person Relationship Types\n* A description of how to link records on the page for DkCorePatient \n* Minor linguistic adjustments\n"
     },

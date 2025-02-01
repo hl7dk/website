@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="ambulance"/>
+  <meta>
+    <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-location"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Location ambulance</b></p><a name="ambulance"> </a><a name="hcambulance"> </a><a name="ambulance-da-DK"> </a><p><b>status</b>: Active</p><p><b>description</b>: Ambulance provided by Acme Corp</p><p><b>mode</b>: Kind</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode AMB}">Ambulance</span></p><p><b>telecom</b>: <a href="tel:+4523292833">+4523292833</a></p><p><b>physicalType</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/location-physical-type ve}">Vehicle</span></p><p><b>managingOrganization</b>: <a href="Organization-b08997bb-4476-4dd0-84dd-2e297f809364.html">Organization: identifier = urn:oid:1.2.208.176.1.1#12345678901,http://cvr.dk#26919991,https://www.gs1.org/gln#5798002472264,https://kombit.dk/sts/organisation#urn:uuid:a107fd1e-9f35-422c-9d1e-add097bbf4a6; type = Pharmacy</a></p></div>
+  </text>
+  <status value="active"/>
+  <description value="Ambulance provided by Acme Corp"/>
+  <mode value="kind"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="AMB"/>
+      <display value="Ambulance"/>
+    </coding>
+  </type>
+  <telecom>
+    <system value="phone"/>
+    <value value="+4523292833"/>
+    <use value="mobile"/>
+  </telecom>
+  <physicalType>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/location-physical-type"/>
+      <code value="ve"/>
+      <display value="Vehicle"/>
+    </coding>
+  </physicalType>
+  <managingOrganization>
+    <reference value="Organization/b08997bb-4476-4dd0-84dd-2e297f809364"/>
+  </managingOrganization>
+</Location>

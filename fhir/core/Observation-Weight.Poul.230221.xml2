@@ -3,17 +3,17 @@
 <Observation xmlns="http://hl7.org/fhir">
   <id value="Weight.Poul.230221"/>
   <meta>
-    <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
+    <profile value="http://hl7.dk/fhir/core/StructureDefinition/ipa-dk-core-observation"/>
     <profile value="http://hl7.org/fhir/uv/phd/StructureDefinition/PhdNumericObservation"/>
     <profile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
     <profile value="http://hl7.org/fhir/StructureDefinition/bodyweight"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation Weight.Poul.230221</b></p><a name="Weight.Poul.230221"> </a><a name="hcWeight.Poul.230221"> </a><a name="Weight.Poul.230221-da-DK"> </a><p><b>Observation Gateway Device</b>: <a href="http://example.org/fhir/Telma.FEEDDADADEADBEEF">http://example.org/fhir/Telma.FEEDDADADEADBEEF</a></p><p><b>identifier</b>: 606405FFFECFC604-3001749995-urn:oid:1.2.208.176.1.2-188736-74.0-kg-20230221T083640.00</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 29463-7}, {urn:iso:std:iso:11073:10101 188736}, {urn:oid:1.2.208.176.2.1 NPU03804}">MDC_MASS_BODY_ACTUAL: Body weight</span></p><p><b>subject</b>: <a href="http://example.org/fhir/Patient/Poul">http://example.org/fhir/Patient/Poul</a></p><p><b>effective</b>: 2023-02-21 08:36:40+0100</p><p><b>performer</b>: <a href="http://example.org/fhir/Patient/Poul">http://example.org/fhir/Patient/Poul</a></p><p><b>value</b>: 74 kg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codekg = 'kg')</span></p><p><b>device</b>: <a href="Device-WeightScale.606405FFFECFC604.html">Device: identifier = IEEE 11073 System Identifier: 60-64-05-FF-FE-CF-C6-04,Bluetooth MAC address: Bluetooth_Address_Identifier#60-64-05-CF-C6-04; manufacturer = A&amp;D Medical ; serialNumber = 5180400664; modelNumber = UC-352BLE ; type = MDC_MOC_VMS_MDS_SIMP</a></p><p><b>derivedFrom</b>: <a href="http://example.org/fhir/CoincidentTimeStamp.0123">http://example.org/fhir/CoincidentTimeStamp.0123</a></p></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation Weight.Poul.230221</b></p><a name="Weight.Poul.230221"> </a><a name="hcWeight.Poul.230221"> </a><a name="Weight.Poul.230221-da-DK"> </a><p><b>Observation Gateway Device</b>: <a href="Device-Telma.FEEDDADADEADBEEF.html">Device: identifier = IEEE 11073 System Identifier: FE-ED-DA-DA-DE-AD-BE-EF; manufacturer = Trifork; modelNumber = Telma (Android); type = MDC_MOC_VMS_MDS_AHD</a></p><p><b>identifier</b>: 606405FFFECFC604-3001749995-urn:oid:1.2.208.176.1.2-188736-74.0-kg-20230221T083640.00</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital signs</span>, <span title="Codes:{http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories phd-observation}">PHD generated Observation</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 29463-7}, {urn:iso:std:iso:11073:10101 188736}, {urn:oid:1.2.208.176.2.1 NPU03804}">MDC_MASS_BODY_ACTUAL: Body weight</span></p><p><b>subject</b>: <a href="Patient-Poul.html">Poul Hansen (no stated gender), DoB Unknown ( National unique individual identifier)</a></p><p><b>effective</b>: 2023-02-21 08:36:40+0100</p><p><b>performer</b>: <a href="Patient-Poul.html">Poul Hansen (no stated gender), DoB Unknown ( National unique individual identifier)</a></p><p><b>value</b>: 74 kg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codekg = 'kg')</span></p><p><b>device</b>: <a href="Device-WeightScale.606405FFFECFC604.html">Device: identifier = IEEE 11073 System Identifier: 60-64-05-FF-FE-CF-C6-04,Bluetooth MAC address: Bluetooth_Address_Identifier#60-64-05-CF-C6-04; manufacturer = A&amp;D Medical ; serialNumber = 5180400664; modelNumber = UC-352BLE ; type = MDC_MOC_VMS_MDS_SIMP</a></p><p><b>derivedFrom</b>: <a href="http://example.org/fhir/CoincidentTimeStamp.0123">http://example.org/fhir/CoincidentTimeStamp.0123</a></p></div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice">
     <valueReference>
-      <reference value="http://example.org/fhir/Telma.FEEDDADADEADBEEF"/>
+      <reference value="Device/Telma.FEEDDADADEADBEEF"/>
     </valueReference>
   </extension>
   <identifier>
@@ -25,6 +25,13 @@
       <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
       <code value="vital-signs"/>
       <display value="Vital signs"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories"/>
+      <code value="phd-observation"/>
+      <display value="PHD generated Observation"/>
     </coding>
   </category>
   <code>
@@ -46,11 +53,11 @@
     <text value="MDC_MASS_BODY_ACTUAL: Body weight"/>
   </code>
   <subject>
-    <reference value="http://example.org/fhir/Patient/Poul"/>
+    <reference value="Patient/Poul"/>
   </subject>
   <effectiveDateTime value="2023-02-21T08:36:40+01:00"/>
   <performer>
-    <reference value="http://example.org/fhir/Patient/Poul"/>
+    <reference value="Patient/Poul"/>
   </performer>
   <valueQuantity>
     <value value="74"/>

@@ -1,0 +1,1444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary - HL7 FHIR Implementation Guide: DK Core v3.4.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7-dk.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"7"}
+    h3,h4,h5,h6{--heading-prefix:"7.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://www.hl7.dk">
+            <img height="50" alt="Visit the HL7 Danish website" src="assets/images/HL7_Denmark.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>        
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 FHIR Implementation Guide: DK Core</span>
+            <br/>
+            <span style="display:inline-block;">3.4.0 - release
+
+
+
+  <img alt="Denmark flag" src="assets/images/dnk.svg" height="16" title="Denmark"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="guidance.html">Guidance</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="extensions.html">Extensions</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the HL7 FHIR Implementation Guide: DK Core (v3.4.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a no-external="true" href="http://hl7.dk/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Data Type Profiles</a>
+      </li>
+      <li>
+         <a href="#3">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#5">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#6">Terminology: Naming Systems</a>
+      </li>
+      <li>
+         <a href="#7">Example: Example Instances</a>
+      </li>
+      <li>
+         <a href="#8">Other</a>
+      </li>
+   </ul>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dk-core-basic-observation.html"
+                  title="StructureDefinition/dk-core-basic-observation">Danish Core Basic Observation Profile</a>
+            </td>
+            <td>
+<p>HL7 Denmark core profile for basic observations, which is a profiling of DkCoreObservation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dk-core-condition.html"
+                  title="StructureDefinition/dk-core-condition">Danish Core Condition Profile</a>
+            </td>
+            <td>
+<p>HL7 Denmark core profile for professionally asserted conditions, as specified by danish health and social care organizations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dk-core-location.html"
+                  title="StructureDefinition/dk-core-location">Danish Core Location Profile</a>
+            </td>
+            <td>
+<p>HL7 Denmark core profile for locations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dk-core-observation.html"
+                  title="StructureDefinition/dk-core-observation">Danish Core Observation Profile</a>
+            </td>
+            <td>
+<p>HL7 Denmark core profile for observations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dk-core-organization.html"
+                  title="StructureDefinition/dk-core-organization">Danish Core Organization Profile</a>
+            </td>
+            <td>
+<p>HL7 Denmark core profile for a danish health organization</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dk-core-patient.html"
+                  title="StructureDefinition/dk-core-patient">Danish Core Patient Profile</a>
+            </td>
+            <td>
+<p>HL7 Denmark core profile for a patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dk-core-person-servicerequest.html"
+                  title="StructureDefinition/dk-core-person-servicerequest">Danish Core Person ServiceRequest Profile</a>
+            </td>
+            <td>
+<p>HL7 Denmark core profile for requesting a service, such as diagnostic investigations, nursing services, treatments, and more for a Patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dk-core-practitioner.html"
+                  title="StructureDefinition/dk-core-practitioner">Danish Core Practitioner Profile</a>
+            </td>
+            <td>
+<p>HL7 Denmark core profile for health professionals and other actors relevant in citizen and patient pathways</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dk-core-practitioner-role.html"
+                  title="StructureDefinition/dk-core-practitioner-role">Danish Core PractitionerRole Profile</a>
+            </td>
+            <td>
+<p>HL7 Denmark core profile for health professional roles</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dk-core-related-person.html"
+                  title="StructureDefinition/dk-core-related-person">Danish Core Related Person Profile</a>
+            </td>
+            <td>
+<p>HL7 Denmark core profile for a related person</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ipa-dk-core-condition.html"
+                  title="StructureDefinition/ipa-dk-core-condition">Danish IPA Core Condition Profile</a>
+            </td>
+            <td>
+<p>HL7 Denmark core profile for IPA and DK Core compliant conditions</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ipa-dk-core-observation.html"
+                  title="StructureDefinition/ipa-dk-core-observation">Danish IPA Core Observation Profile</a>
+            </td>
+            <td>
+<p>HL7 Denmark core profile for IPA and DK Core compliant observations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ipa-dk-core-patient.html"
+                  title="StructureDefinition/ipa-dk-core-patient">Danish IPA Core Patient Profile</a>
+            </td>
+            <td>
+<p>HL7 Denmark core profile for IPA and DK Core compliant patients</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ipa-dk-core-practitioner.html"
+                  title="StructureDefinition/ipa-dk-core-practitioner">Danish IPA Core Practitioner Profile</a>
+            </td>
+            <td>
+<p>HL7 Denmark core profile for IPA and DK Core compliant practitioners</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ipa-dk-core-practitionerrole.html"
+                  title="StructureDefinition/ipa-dk-core-practitionerrole">Danish IPA Core PractitionerRole Profile</a>
+            </td>
+            <td>
+<p>HL7 Denmark core profile for IPA and DK Core compliant practitionerroles</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Structures: Data Type Profiles </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dk-core-cvr-identifier.html"
+                  title="StructureDefinition/dk-core-cvr-identifier">Danish Central Business Register (CVR) Identifier</a>
+            </td>
+            <td>
+<p>Identifier holding a danish <a href="https://datacvr.virk.dk/data/">CVR</a> number.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dk-core-cpr-identifier.html"
+                  title="StructureDefinition/dk-core-cpr-identifier">Danish Central Person Register (CPR) Identifier</a>
+            </td>
+            <td>
+<p>This structure holds the danish <a href="https://cpr.dk/">CPR</a> identifier</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dk-core-authorization-identifier.html"
+                  title="StructureDefinition/dk-core-authorization-identifier">Danish Health Professionals Authorization Identifier</a>
+            </td>
+            <td>
+<p>Identifier holding the official <a href="https://en.stps.dk/en/health-professionals-and-authorities/online-register-registered-health-professionals/">authorization identifier</a> for a practitioner.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dk-core-d-ecpr-identifier.html"
+                  title="StructureDefinition/dk-core-d-ecpr-identifier">Decentralised eCPR, called D-eCPR</a>
+            </td>
+            <td>
+<p>This strucure holds the danish <a href="https://www.nspop.dk/pages/viewpage.action?pageId=226757583#eCPRFormater(XeCPRogDeCPR)-Formatetfordecentraleerstatningspersonnumre-D-eCPR">D-eCPR</a> identifier, which is often used by the Danish regions.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dk-core-gln-identifier.html"
+                  title="StructureDefinition/dk-core-gln-identifier">GLN Identifier</a>
+            </td>
+            <td>
+<p>Identifier holding a 13 digit GLN</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dk-core-kombit-org-identifier.html"
+                  title="StructureDefinition/dk-core-kombit-org-identifier">Kombit Organsation Identifier</a>
+            </td>
+            <td>
+<p>Identifier holding the organization code issued by KOMBIT</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dk-core-x-ecpr-identifier.html"
+                  title="StructureDefinition/dk-core-x-ecpr-identifier">National eCPR service, called X-eCPR</a>
+            </td>
+            <td>
+<p>This strucure holds the danish <a href="https://www.nspop.dk/pages/viewpage.action?pageId=226757583#eCPRFormater(XeCPRogDeCPR)-Formatetfornationaleerstatningspersonnumre-X-eCPR">X-eCPR</a> identifier, maintained by the Danish Health Data Authority.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dk-core-producent-id.html"
+                  title="StructureDefinition/dk-core-producent-id">Producent Id</a>
+            </td>
+            <td>
+<p>Offical MedCom code describing the producer of lab results</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dk-core-sor-identifier.html"
+                  title="StructureDefinition/dk-core-sor-identifier">SOR Identifier</a>
+            </td>
+            <td>
+<p>Identifier holding the official SOR identifier for a danish healthcare organization</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ConditionLastAssertedDate.html"
+                  title="StructureDefinition/ConditionLastAssertedDate">ConditionLastAssertedDate</a>
+            </td>
+            <td>
+<p>Extension for the last date a Condition-instance was confirmed valid in its current state. E.g. with its current clinical- and verification status, stage and severity. Typically the last performed follow-up</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dk-core-municipalityCodes.html"
+                  title="StructureDefinition/dk-core-municipalityCodes">Danish Core Municipality codes</a>
+            </td>
+            <td>
+<p>Identifier holding the official identifier for a danish municipality</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dk-core-RegionalSubDivisionCodes.html"
+                  title="StructureDefinition/dk-core-RegionalSubDivisionCodes">Danish Core Regional Sub Division Codes Extension</a>
+            </td>
+            <td>
+<p>Identifier holding the official organization identifier for a danish region</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NotFollowedAnymore.html"
+                  title="StructureDefinition/NotFollowedAnymore">NotFollowedAnymore</a>
+            </td>
+            <td>
+<p>Extension for the date where a condition lost focus in a specific clinical context</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-dk-core-LoincBasicObservation.html"
+                  title="ValueSet/dk-core-LoincBasicObservation">DK Core LOINC Basic Observations</a>
+            </td>
+            <td>
+<p>LOINC codes describing Basic Observations usable in Denmark.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-dk-marital-status.html"
+                  title="ValueSet/dk-marital-status">DK Core Marital Status</a>
+            </td>
+            <td>
+<p>This value set defines the set of codes that can be used to indicate the marital status of a person in Denmark.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-dk-core-NPUBasicObservation.html"
+                  title="ValueSet/dk-core-NPUBasicObservation">DK Core NPU Basic Observation</a>
+            </td>
+            <td>
+<p>NPU codes for Basic Observations usable in Denmark</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-dk-core-SCTBasicObservation.html"
+                  title="ValueSet/dk-core-SCTBasicObservation">DK Core SNOMED CT Basic Observation</a>
+            </td>
+            <td>
+<p>SNOMED CT codes for Basic Observations usable in Denmark</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-dk-core-UCUM-BasicUnits.html"
+                  title="ValueSet/dk-core-UCUM-BasicUnits">DK Core UCUM Basic Units</a>
+            </td>
+            <td>
+<p>UCUM codes to represent units for basic Observations usable in Denmark</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-DkCoreDeCPRValueSet.html"
+                  title="ValueSet/DkCoreDeCPRValueSet">DK D-eCPR OID values</a>
+            </td>
+            <td>
+<p>DK D-eCPR OID values</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-extended-patient-contactrelationship.html"
+                  title="ValueSet/extended-patient-contactrelationship">DK Extended Patient Contact Relationship</a>
+            </td>
+            <td>
+<p>DK Extended Patient Contact Relationship</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-dk-core-MunicipalityCodes.html"
+                  title="ValueSet/dk-core-MunicipalityCodes">DK Municipality Codes</a>
+            </td>
+            <td>
+<p>Municipality codes used in Denmark</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-DkCoreProfessionGroupValueSet.html"
+                  title="ValueSet/DkCoreProfessionGroupValueSet">DK Profession Group</a>
+            </td>
+            <td>
+<p>DK Profession Group codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-dk-core-RegionalSubDivisionCodes.html"
+                  title="ValueSet/dk-core-RegionalSubDivisionCodes">DK Regional Subdivision Codes</a>
+            </td>
+            <td>
+<p>Subdivision codes (Regional codes) used in Denmark</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-dk-core-RelatedPersonRelationshipTypes.html"
+                  title="ValueSet/dk-core-RelatedPersonRelationshipTypes">DK Related Person Relationship Types</a>
+            </td>
+            <td>
+<p>DK Related Person Relationship Types</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-sor-organization-type.html"
+                  title="ValueSet/sor-organization-type">DK SOR Organization Type</a>
+            </td>
+            <td>
+<p>Value set used for indicating the organization type for organizations from SOR</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-dk-core-TechniquesSCTCodes.html"
+                  title="ValueSet/dk-core-TechniquesSCTCodes">DK TechniquesSCTCodes</a>
+            </td>
+            <td>
+<p>SNOMED CT Codes for the technique used when obtaining an observation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-dk-core-servicerequest-codes.html"
+                  title="ValueSet/dk-core-servicerequest-codes">DK codes for ServiceRequest</a>
+            </td>
+            <td>
+<p>Value set used to describe Danish healthcare services</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-dk-core-priority-codes.html"
+                  title="ValueSet/dk-core-priority-codes">DK priority codes</a>
+            </td>
+            <td>
+<p>DK Codes for priority</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-dk-core-IEEEBasicObservation.html"
+                  title="ValueSet/dk-core-IEEEBasicObservation">Dk Core IEEE Basic Observation</a>
+            </td>
+            <td>
+<p>IEEE MDC codes for Basic Observations usable in Denmark</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-address-type-dk-supplement.html"
+                  title="CodeSystem/address-type-dk-supplement">DK Address Type</a>
+            </td>
+            <td>
+<p>The type of an address (physical / postal)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-address-use-dk-supplement.html"
+                  title="CodeSystem/address-use-dk-supplement">DK Address Use</a>
+            </td>
+            <td>
+<p>The use of an address</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-administrative-gender-supplement.html"
+                  title="CodeSystem/administrative-gender-supplement">DK Administrative Gender Supplement</a>
+            </td>
+            <td>
+<p>CodeSystem supplement with danish translations for administrative gender</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-care-team-status-dk-supplement.html"
+                  title="CodeSystem/care-team-status-dk-supplement">DK CareTeam Status</a>
+            </td>
+            <td>
+<p>Indicates the status of the care team.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-consent-state-codes-dk-supplement.html"
+                  title="CodeSystem/consent-state-codes-dk-supplement">DK Consent State</a>
+            </td>
+            <td>
+<p>Indicates the state of the consent</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-days-of-week-dk-supplement.html"
+                  title="CodeSystem/days-of-week-dk-supplement">DK Days Of Week</a>
+            </td>
+            <td>
+<p>The days of the week.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-dk-core-d-ecpr-codes.html"
+                  title="CodeSystem/dk-core-d-ecpr-codes">DK Decentralised eCPR Systems</a>
+            </td>
+            <td>
+<p>DK</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-episode-of-care-status-dk-supplement.html"
+                  title="CodeSystem/episode-of-care-status-dk-supplement">DK Episode Of Care Status</a>
+            </td>
+            <td>
+<p>The status of the episode of care.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-dk-core-municipality-codes-greenland.html"
+                  title="CodeSystem/dk-core-municipality-codes-greenland">DK Greenland Municipality Codes</a>
+            </td>
+            <td>
+<p>Greenland municipality codes as defined by https://www.iso.org/obp/ui/#iso:code:3166:GL and https://cpr.dk/cpr-systemet/kommunesammenlaegninger-opdeling/groenland-2018/</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-dk-marital-status.html"
+                  title="CodeSystem/dk-marital-status">DK Marital Statuses</a>
+            </td>
+            <td>
+<p>DK marital statuses</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-dk-core-municipality-codes.html"
+                  title="CodeSystem/dk-core-municipality-codes">DK Municipality Codes</a>
+            </td>
+            <td>
+<p>Municipality codes as defined by https://danmarksadresser.dk/adressedata/kodelister/kommunekodeliste/ and https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/patientregistrering/relaterede/kommuneklassifikation.pdf</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-dk-npu-fragment.html"
+                  title="CodeSystem/dk-npu-fragment">DK NPU Subset</a>
+            </td>
+            <td>
+<p>DK NPU Subsetted code system used in DK Core. The full version of NPU can be found at http://labterm.dk</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-DkCoreProfessionGroupCodes.html"
+                  title="CodeSystem/DkCoreProfessionGroupCodes">DK Profession Group Codes</a>
+            </td>
+            <td>
+<p>DK health ProfessionGroup codes as defined by https://www.retsinformation.dk/eli/lta/2019/731, and derived from http://autregwebservice.sst.dk/autregservice.asmx/GetAllProfessionGroups. Code (5176) was not uniqe, and have been converted to 5176a and 5176b</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-publication-status-dk-supplement.html"
+                  title="CodeSystem/publication-status-dk-supplement">DK Publication Status</a>
+            </td>
+            <td>
+<p>The lifecycle status of a Value Set or Concept Map.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-dk-core-regional-subdivision-codes.html"
+                  title="CodeSystem/dk-core-regional-subdivision-codes">DK Regional Subdivision Codes</a>
+            </td>
+            <td>
+<p>Subdivision codes (Regional codes) used in Denmark as found on https://www.iso.org/obp/ui/#iso:code:3166:DK</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-dk-relatedperson-relationshipcodes.html"
+                  title="CodeSystem/dk-relatedperson-relationshipcodes">DK Related Person Relationship Codes</a>
+            </td>
+            <td>
+<p>DK Related Person Relationship Codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-request-status-dk-supplement.html"
+                  title="CodeSystem/request-status-dk-supplement">DK Request Status</a>
+            </td>
+            <td>
+<p>Codes identifying the stage lifecycle stage of a request</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-role-code-dk-supplement.html"
+                  title="CodeSystem/role-code-dk-supplement">DK Role Code</a>
+            </td>
+            <td>
+<p>CodeSystem supplement with danish translations for RoleCode</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-v2-0131-supplement.html"
+                  title="CodeSystem/v2-0131-supplement">DK v2 Contact Role Supplement</a>
+            </td>
+            <td>
+<p>CodeSystem supplement with danish translations for Contact Role</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="6"> </a>
+   <h3>Terminology: Naming Systems </h3>
+    <p>These define identifier and/or code system identities used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-cpr.html" title="NamingSystem/cpr">cpr</a>
+            </td>
+            <td>
+<p>The Danish civil registration system ("CPR") encompasses basic personal data about anyone with a civil registration number. A civil registration number shall be allocated to anyone who: 1) is registered in the national register in Denmark on the grounds of birth or relocation from abroad; 2) is included under Arbejdsmarkedets TillægsPension (ATP); 3) according to the tax authorities, is required to have a civil registration number for the purpose of tax processing in Denmark.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-sor.html" title="NamingSystem/sor">sor</a>
+            </td>
+            <td>
+<p>SOR is provided by the Danish Health Data Authority under the Danish Ministry of Health. The register holds organizations within the Danish health sector, their geographical and virtual addresses as well as codes for their identification and for EDI-communication. Danish Health Data Authority is responsible for issuing and publishing codes to identify organizations across health care sectors and related public and private services. SOR includes organizational data on hospitals, the primary care sector (physiotherapists, general practitioners, dentists etc.) and municipal health service organizations as well as non-health care organizations that need to be able to receive data from the former.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="7"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-AbrahamLaege.html" title="Practitioner/AbrahamLaege">AbrahamLæge</a>
+            </td>
+            <td>
+<p>Eksempel på lægen Abraham fra akutsygeplejen</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-CenterForDiabetes.html"
+                  title="Organization/CenterForDiabetes">Center for Diabetes</a>
+            </td>
+            <td>
+<p>Center for Diabetes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-CenterForDiabetesTeamDiabetes.html"
+                  title="Organization/CenterForDiabetesTeamDiabetes">Center for Diabetes Team Diabetes</a>
+            </td>
+            <td>
+<p>Center for Diabetes Team Diabetes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-CenterForDiabetesTeamHjerte.html"
+                  title="Organization/CenterForDiabetesTeamHjerte">Center for Diabetes Team Hjerte</a>
+            </td>
+            <td>
+<p>Center for Diabetes Team Hjerte</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-CenterForDiabetesTeamKvalitet.html"
+                  title="Organization/CenterForDiabetesTeamKvalitet">Center for Diabetes Team Kvalitet</a>
+            </td>
+            <td>
+<p>Center for Diabetes Team Kvalitet</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CoincidentTimeStamp.0222.html"
+                  title="Observation/CoincidentTimeStamp.0222">Coincident time stamp from Poul's home blood pressure measurement</a>
+            </td>
+            <td>
+<p>A coincident time stamp observation is used to ensure and inspect the consistency
+of timelines when using battery-operated health devices having their own clock that may
+or may not be synchronized to local time - and may even travel with their owner across
+time zones.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-ElseGraviditet.html" title="Condition/ElseGraviditet">Else Graviditet</a>
+            </td>
+            <td>
+<p>Else Graviditet, tilstandskode som indberettes ifm Elses ambulante forløb (fx jordemoder), og ved eventuel indlæggelse i graviditeten</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-ElsesTOBS.html" title="Bundle/ElsesTOBS">Else's TOBS measurements</a>
+            </td>
+            <td>
+<p>An example of TOBS (Danish: Tidlig opsporing af begyndende sygdom), which includes level of consciousness, heart rate, respiration rate, blood pressure and temperature.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ElseBloodPressure.html"
+                  title="Observation/ElseBloodPressure">ElseBloodPressure</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ElseBodyTemperature.html"
+                  title="Observation/ElseBodyTemperature">ElseBodyTemperature</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ElseConsciousness.html"
+                  title="Observation/ElseConsciousness">ElseConsciousness</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ElseHeartRate.html" title="Observation/ElseHeartRate">ElseHeartRate</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ElsePainVRS.html" title="Observation/ElsePainVRS">ElsePainVRS</a>
+            </td>
+            <td>
+<p>Elses smerte målt med VRS</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ElseRespirationRate.html"
+                  title="Observation/ElseRespirationRate">ElseRespirationRate</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ElseUrinStix.html" title="Observation/ElseUrinStix">ElseUrinStix</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ElsesTOBSscore.html"
+                  title="Observation/ElsesTOBSscore">ElsesTOBSscore</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-Confidential.html" title="Patient/Confidential">Example of a patient with confidential address and name</a>
+            </td>
+            <td>
+<p>Example of a patient with confidential address and name</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-TwoRelations.html"
+                  title="RelatedPerson/TwoRelations">Example of a related person with two relations</a>
+            </td>
+            <td>
+<p>Example of a person that has relations as both neighbor and primary caretaker</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-else.html" title="Patient/else">Example of a woman of childbearing age</a>
+            </td>
+            <td>
+<p>Example of a woman of childbearing age. Else is a MedCom test-patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-Child.html" title="RelatedPerson/Child">Example of child as related person</a>
+            </td>
+            <td>
+<p>Example of child as related person</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-ukendt.html" title="Patient/ukendt">Example of valid patient unknown identifier registry</a>
+            </td>
+            <td>
+<p>Example of valid patient unknown identifier registry. The patient is a 'John Doe' with an Identifier from an unofficial register</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-ukendt-D-eCPR.html" title="Patient/ukendt-D-eCPR">Example of valid patient with a D-eCPR as identifier</a>
+            </td>
+            <td>
+<p>Example of valid patient with a D-eCPR as identifier.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-ukendt-X-eCPR.html" title="Patient/ukendt-X-eCPR">Example of valid patient with a X-eCPR as identifier</a>
+            </td>
+            <td>
+<p>Example of valid patient with a X-eCPR as identifier.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-Max.html" title="Patient/Max">Example of valid patient with danish marital status</a>
+            </td>
+            <td>
+<p>Example of valid patient with danish marital status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-283.html" title="Patient/283">Example of valid patient with full address</a>
+            </td>
+            <td>
+<p>Example of valid patient with full address</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-john.html" title="Patient/john">Example of valid patient with multiple names</a>
+            </td>
+            <td>
+<p>Example of valid patient with multiple names</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-HanneSocialraadgiver.html"
+                  title="Practitioner/HanneSocialraadgiver">HanneSocialrådgiver</a>
+            </td>
+            <td>
+<p>Eksempel på socialrådgiveren Hanne</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-HenvisningFraLageTilSygehus.html"
+                  title="ServiceRequest/HenvisningFraLageTilSygehus">Henvisning vedr. modermærkekræft</a>
+            </td>
+            <td>
+<p>Henvisning fra læge til sygehus vedr. mistanke om at John har modermærkekræft</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-JohnDiabetes.html" title="Condition/JohnDiabetes">John diabetes</a>
+            </td>
+            <td>
+<p>Johns diabetes-diagnose, udskrivningsdiagnose fra hospitalet fx til brug i indberetning og epikrise</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-JohnFracture.html" title="Condition/JohnFracture">John fraktur</a>
+            </td>
+            <td>
+<p>Johns fraktur-diagnose, udskrivningsdiagnose fra hospitalet med tillægskode</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-JohnMelanoma.html" title="Condition/JohnMelanoma">John mistanke om Modermærkekræft</a>
+            </td>
+            <td>
+<p>Johns mistanke om modermærkekræft i huden, kan fx bruges som henvisningsdiagnosese</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-JohnPacemaker.html" title="Condition/JohnPacemaker">John pacemaker</a>
+            </td>
+            <td>
+<p>Johns status efter pacemakeroperation, udtrykt semantisk korrekt med fund frem for operationskode</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-ConditionPressureUlcer.html"
+                  title="Condition/ConditionPressureUlcer">John tryksår</a>
+            </td>
+            <td>
+<p>John, tryksår, kommunal tilstand</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ObservationRespiratoryBasicObservation.html"
+                  title="Observation/ObservationRespiratoryBasicObservation">John's Respiratory rate measurement (Basic observation)</a>
+            </td>
+            <td>
+<p>A simple basic observation of a hyperventilating patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ObservationOxySatBasicObservationOrg.html"
+                  title="Observation/ObservationOxySatBasicObservationOrg">John's oxygen saturation measurement (Basic observation)</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ObservationOxySatObservation.html"
+                  title="Observation/ObservationOxySatObservation">John's oxygen saturation measurement (Observation)</a>
+            </td>
+            <td>
+<p>This example suggests a way to handle the oxygen saturation case, where the original measurement
+was reported in '%' by a device or typed in manually, and then 'translated' to the NPU system,
+which requires the value to be unitless.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-LaegerneHasserisBymidte.html"
+                  title="Organization/LaegerneHasserisBymidte">LaegerneHasserisBymidte</a>
+            </td>
+            <td>
+<p>Praktisernede læge i Hasseris, som defineret af SOR</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-AbrahamPractitionerRole.html"
+                  title="PractitionerRole/AbrahamPractitionerRole">Licensed physician in primary care</a>
+            </td>
+            <td>
+<p>This is an example of PractitionerRole profile. The example describes the service which practitioner is performing in a specific location in a specific role.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-MaxTOKS.html" title="Bundle/MaxTOKS">Max TOKS measurements, including Glasgow Coma Scale assesment</a>
+            </td>
+            <td>
+<p>An example of TOBS (Danish: Tidlig opsporing af begyndende sygdom), which includes level of consciousness, heart rate, respiration rate, blood pressure and temperature.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-MaxBloodPressure.html"
+                  title="Observation/MaxBloodPressure">MaxBloodPressure</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-MaxBodyTemperature.html"
+                  title="Observation/MaxBodyTemperature">MaxBodyTemperature</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-MaxConsciousness.html"
+                  title="Observation/MaxConsciousness">MaxConsciousness</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-MaxGlasgowComaScale.html"
+                  title="Observation/MaxGlasgowComaScale">MaxGlasgowComaScale</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-MaxHeartRate.html" title="Observation/MaxHeartRate">MaxHeartRate</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-MaxRespirationRate.html"
+                  title="Observation/MaxRespirationRate">MaxRespirationRate</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-MaxSaturation.html" title="Observation/MaxSaturation">MaxSaturation</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-MaxVitalSignsPanel.html"
+                  title="Observation/MaxVitalSignsPanel">MaxVitalSignsPanel</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-b08997bb-4476-4dd0-84dd-2e297f809364.html"
+                  title="Organization/b08997bb-4476-4dd0-84dd-2e297f809364">MedCom Test Organization</a>
+            </td>
+            <td>
+<p>MedCom Test Organization with SOR id</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-PlaceholderPractitionerRole.html"
+                  title="PractitionerRole/PlaceholderPractitionerRole">Placeholder for a physician</a>
+            </td>
+            <td>
+<p>This is an example of PractitionerRole where it acts as a placeholder for an unknown person. This may be useful in several scenarios.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-Poul.html" title="Patient/Poul">Poul Hansen</a>
+            </td>
+            <td>
+<p>A patient admitted to a remote monitoring programme, performing measurements
+at home.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-BPMonitor.C4F312FFFE53F2C9.html"
+                  title="Device/BPMonitor.C4F312FFFE53F2C9">Poul's A&amp;D blood pressure monitor</a>
+            </td>
+            <td>
+<p>This device is Poul's personal blood pressure monitor, which he keeps in the bedroom
+of his home, and uses for daily monitoring due to his CHF condition.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-WeightScale.606405FFFECFC604.html"
+                  title="Device/WeightScale.606405FFFECFC604">Poul's A&amp;D weight scale</a>
+            </td>
+            <td>
+<p>This device is Poul's personal weighing scale, which he keeps in the bathroom
+of his home, and uses for daily monitoring due to his CHF condition.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Weight.Poul.230221.html"
+                  title="Observation/Weight.Poul.230221">Poul's daily weighing on Feb. 21st</a>
+            </td>
+            <td>
+<p>Poul has been instructed to perform a daily weighing in the morning. This is his
+daily weighing from Feb. 21st 2023.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-HeartRate.Poul.1974654.html"
+                  title="Observation/HeartRate.Poul.1974654">Poul's heart rate measurement</a>
+            </td>
+            <td>
+<p>Poul has been instructed to measure his blood pressure due to his CHF condition. This heart rate
+measurement was produced by his blood pressure monitor during one of these measurements.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-ContinuaBundleWithDevice.html"
+                  title="Bundle/ContinuaBundleWithDevice">Poul's home blood pressure measurement</a>
+            </td>
+            <td>
+<p>This example demonstrates a DkCoreObservation <em>and</em> Continua-compliant
+bundle containing a home blood pressure measurement uploaded to a Continua-compliant
+<em>"FHIR Observation Reporting Server".</em></p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-Telma.FEEDDADADEADBEEF.html"
+                  title="Device/Telma.FEEDDADADEADBEEF">Poul's remote patient monitoring app</a>
+            </td>
+            <td>
+<p>Poul has been enrolled in a Remote Patient Monitoring programme in order to monitor the
+state of his CHF condition. This is the app he uses to report the data to his doctor.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-154b8c96-a061-45bf-9ce4-1947c7c3c283.html"
+                  title="Organization/154b8c96-a061-45bf-9ce4-1947c7c3c283">Producer Test Organization</a>
+            </td>
+            <td>
+<p>Producer of Lab Results Test Organization</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-JohnsServiceRequest.html"
+                  title="ServiceRequest/JohnsServiceRequest">Request for nursing care of John.</a>
+            </td>
+            <td>
+<p>Request for nursing care of John.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-MaxServiceRequest.html"
+                  title="ServiceRequest/MaxServiceRequest">Request for nursing care of John.</a>
+            </td>
+            <td>
+<p>Request for nursing care of John.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-SidselSygeplejerske.html"
+                  title="Practitioner/SidselSygeplejerske">SidselSygeplejerske</a>
+            </td>
+            <td>
+<p>Eksempel på en sygeplejerske</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-ambulance.html" title="Location/ambulance">ambulance</a>
+            </td>
+            <td>
+<p>Ambulance provided by Acme Corp</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-neuroradiologyUnit.html"
+                  title="Location/neuroradiologyUnit">neuroradiologyUnit</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="8"> </a>
+   <h3>Other </h3>
+    <p>These are resources that are used within this implementation guide that do not fit into one of the other categories.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Parameters-expParam.html" title="Parameters/expParam">expParam</a>
+            </td>
+            <td>
+<p>SNOMED CT expansion parameter</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Feb 1, 2025 19:18+0100">2025-02-01</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

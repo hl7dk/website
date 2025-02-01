@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core"/>
-  <version value="3.3.0"/>
+  <version value="3.4.0"/>
   <name value="DKCore"/>
   <title value="HL7 FHIR Implementation Guide: DK Core"/>
   <status value="active"/>
-  <date value="2024-12-11T10:20:02+01:00"/>
+  <date value="2025-02-01T19:23:09+01:00"/>
   <publisher value="HL7 Denmark"/>
   <contact>
     <name value="HL7 Denmark"/>
@@ -41,7 +41,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.1.0"/>
+    <version value="6.2.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -54,6 +54,11 @@
   <dependsOn id="hl7_fhir_uv_phd">
     <uri value="http://hl7.org/fhir/uv/phd/ImplementationGuide/hl7.fhir.uv.phd"/>
     <packageId value="hl7.fhir.uv.phd"/>
+    <version value="1.1.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_ipa">
+    <uri value="http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa"/>
+    <packageId value="hl7.fhir.uv.ipa"/>
     <version value="1.0.0"/>
   </dependsOn>
   <definition>
@@ -127,6 +132,14 @@
       </extension>
       <extension url="value">
         <valueString value="urn:oid:1.2.208.176.2.4.12"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-expansion-params"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Parameters-expParam.json"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -390,6 +403,14 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueCode value="path-expansion-params"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Parameters-expParam.json"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueCode value="autoload-resources"/>
       </extension>
       <extension url="value">
@@ -585,13 +606,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Device"/>
+        <valueString value="Location"/>
       </extension>
       <reference>
-        <reference value="Device/BPMonitor.C4F312FFFE53F2C9"/>
+        <reference value="Location/ambulance"/>
       </reference>
-      <name value="BPMonitor.C4F312FFFE53F2C9"/>
-      <exampleBoolean value="true"/>
+      <name value="ambulance"/>
+      <description value="Ambulance provided by Acme Corp"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-location"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -644,7 +666,8 @@
       <reference>
         <reference value="Observation/CoincidentTimeStamp.0222"/>
       </reference>
-      <name value="CoincidentTimeStamp.0222"/>
+      <name value="Coincident time stamp from Poul's home blood pressure measurement"/>
+      <description value="A coincident time stamp observation is used to ensure and inspect the consistency&#xA;of timelines when using battery-operated health devices having their own clock that may&#xA;or may not be synchronized to local time - and may even travel with their owner across&#xA;time zones."/>
       <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
     </resource>
     <resource>
@@ -715,6 +738,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/dk-core-location"/>
+      </reference>
+      <name value="Danish Core Location Profile"/>
+      <description value="HL7 Denmark core profile for locations"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -731,7 +765,7 @@
       <reference>
         <reference value="StructureDefinition/dk-core-observation"/>
       </reference>
-      <name value="Danish Core Observation Profiles"/>
+      <name value="Danish Core Observation Profile"/>
       <description value="HL7 Denmark core profile for observations"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -762,10 +796,32 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/dk-core-person-servicerequest"/>
+      </reference>
+      <name value="Danish Core Person ServiceRequest Profile"/>
+      <description value="HL7 Denmark core profile for requesting a service, such as diagnostic investigations, nursing services, treatments, and more for a Patient."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/dk-core-practitioner"/>
       </reference>
       <name value="Danish Core Practitioner Profile"/>
       <description value="HL7 Denmark core profile for health professionals and other actors relevant in citizen and patient pathways"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/dk-core-practitioner-role"/>
+      </reference>
+      <name value="Danish Core PractitionerRole Profile"/>
+      <description value="HL7 Denmark core profile for health professional roles"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -799,6 +855,61 @@
       </reference>
       <name value="Danish Health Professionals Authorization Identifier"/>
       <description value="Identifier holding the official [authorization identifier](https://en.stps.dk/en/health-professionals-and-authorities/online-register-registered-health-professionals/) for a practitioner."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ipa-dk-core-condition"/>
+      </reference>
+      <name value="Danish IPA Core Condition Profile"/>
+      <description value="HL7 Denmark core profile for IPA and DK Core compliant conditions"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ipa-dk-core-observation"/>
+      </reference>
+      <name value="Danish IPA Core Observation Profile"/>
+      <description value="HL7 Denmark core profile for IPA and DK Core compliant observations"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ipa-dk-core-patient"/>
+      </reference>
+      <name value="Danish IPA Core Patient Profile"/>
+      <description value="HL7 Denmark core profile for IPA and DK Core compliant patients"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ipa-dk-core-practitioner"/>
+      </reference>
+      <name value="Danish IPA Core Practitioner Profile"/>
+      <description value="HL7 Denmark core profile for IPA and DK Core compliant practitioners"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ipa-dk-core-practitionerrole"/>
+      </reference>
+      <name value="Danish IPA Core PractitionerRole Profile"/>
+      <description value="HL7 Denmark core profile for IPA and DK Core compliant practitionerroles"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -854,6 +965,17 @@
       </reference>
       <name value="DK CareTeam Status"/>
       <description value="Indicates the status of the care team."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/dk-core-servicerequest-codes"/>
+      </reference>
+      <name value="DK codes for ServiceRequest"/>
+      <description value="Value set used to describe Danish healthcare services"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -927,17 +1049,6 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/sor-organization-type"/>
-      </reference>
-      <name value="DK Core SOR Organization Type"/>
-      <description value="Value set used for indicating the organization type for organizations from SOR"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/dk-core-UCUM-BasicUnits"/>
       </reference>
       <name value="DK Core UCUM Basic Units"/>
@@ -990,6 +1101,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/extended-patient-contactrelationship"/>
+      </reference>
+      <name value="DK Extended Patient Contact Relationship"/>
+      <description value="DK Extended Patient Contact Relationship"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -1030,6 +1152,28 @@
       </reference>
       <name value="DK Municipality Codes"/>
       <description value="Municipality codes as defined by https://danmarksadresser.dk/adressedata/kodelister/kommunekodeliste/ and https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/patientregistrering/relaterede/kommuneklassifikation.pdf"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/dk-npu-fragment"/>
+      </reference>
+      <name value="DK NPU Subset"/>
+      <description value="DK NPU Subsetted code system used in DK Core. The full version of NPU can be found at http://labterm.dk"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/dk-core-priority-codes"/>
+      </reference>
+      <name value="DK priority codes"/>
+      <description value="DK Codes for priority"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1136,10 +1280,32 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/sor-organization-type"/>
+      </reference>
+      <name value="DK SOR Organization Type"/>
+      <description value="Value set used for indicating the organization type for organizations from SOR"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/dk-core-TechniquesSCTCodes"/>
       </reference>
       <name value="DK TechniquesSCTCodes"/>
       <description value="SNOMED CT Codes for the technique used when obtaining an observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/v2-0131-supplement"/>
+      </reference>
+      <name value="DK v2 Contact Role Supplement"/>
+      <description value="CodeSystem supplement with danish translations for Contact Role"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1357,6 +1523,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/expParam"/>
+      </reference>
+      <name value="expParam"/>
+      <description value="SNOMED CT expansion parameter"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
@@ -1376,16 +1553,6 @@
       <name value="HanneSocialrådgiver"/>
       <description value="Eksempel på socialrådgiveren Hanne"/>
       <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/HeartRate.Poul.1974654"/>
-      </reference>
-      <name value="HeartRate.Poul.1974654"/>
-      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1509,6 +1676,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/AbrahamPractitionerRole"/>
+      </reference>
+      <name value="Licensed physician in primary care"/>
+      <description value="This is an example of PractitionerRole profile. The example describes the service which practitioner is performing in a specific location in a specific role."/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
@@ -1622,6 +1800,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/neuroradiologyUnit"/>
+      </reference>
+      <name value="neuroradiologyUnit"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -1633,13 +1821,36 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/PlaceholderPractitionerRole"/>
+      </reference>
+      <name value="Placeholder for a physician"/>
+      <description value="This is an example of PractitionerRole where it acts as a placeholder for an unknown person. This may be useful in several scenarios."/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
         <reference value="Patient/Poul"/>
       </reference>
-      <name value="Poul"/>
+      <name value="Poul Hansen"/>
+      <description value="A patient admitted to a remote monitoring programme, performing measurements&#xA;at home."/>
       <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/BPMonitor.C4F312FFFE53F2C9"/>
+      </reference>
+      <name value="Poul's A&amp;D blood pressure monitor"/>
+      <description value="This device is Poul's personal blood pressure monitor, which he keeps in the bedroom&#xA;of his home, and uses for daily monitoring due to his CHF condition."/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1661,7 +1872,18 @@
       </reference>
       <name value="Poul's daily weighing on Feb. 21st"/>
       <description value="Poul has been instructed to perform a daily weighing in the morning. This is his&#xA;daily weighing from Feb. 21st 2023."/>
-      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/ipa-dk-core-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/HeartRate.Poul.1974654"/>
+      </reference>
+      <name value="Poul's heart rate measurement"/>
+      <description value="Poul has been instructed to measure his blood pressure due to his CHF condition. This heart rate&#xA;measurement was produced by his blood pressure monitor during one of these measurements."/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/ipa-dk-core-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1672,6 +1894,17 @@
       </reference>
       <name value="Poul's home blood pressure measurement"/>
       <description value="This example demonstrates a DkCoreObservation _and_ Continua-compliant&#xA;bundle containing a home blood pressure measurement uploaded to a Continua-compliant&#xA;_&quot;FHIR Observation Reporting Server&quot;._"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/Telma.FEEDDADADEADBEEF"/>
+      </reference>
+      <name value="Poul's remote patient monitoring app"/>
+      <description value="Poul has been enrolled in a Remote Patient Monitoring programme in order to monitor the&#xA;state of his CHF condition. This is the app he uses to report the data to his doctor."/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -1695,6 +1928,28 @@
       <name value="Producer Test Organization"/>
       <description value="Producer of Lab Results Test Organization"/>
       <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/JohnsServiceRequest"/>
+      </reference>
+      <name value="Request for nursing care of John."/>
+      <description value="Request for nursing care of John."/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-person-servicerequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/MaxServiceRequest"/>
+      </reference>
+      <name value="Request for nursing care of John."/>
+      <description value="Request for nursing care of John."/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-person-servicerequest"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1728,16 +1983,6 @@
       <name value="SOR Identifier"/>
       <description value="Identifier holding the official SOR identifier for a danish healthcare organization"/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Device"/>
-      </extension>
-      <reference>
-        <reference value="Device/Telma.FEEDDADADEADBEEF"/>
-      </reference>
-      <name value="Telma.FEEDDADADEADBEEF"/>
-      <exampleBoolean value="true"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

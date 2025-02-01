@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="v2-0131-supplement"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem v2-0131-supplement</b></p><a name="v2-0131-supplement"> </a><a name="hcv2-0131-supplement"> </a><a name="v2-0131-supplement-da-DK"> </a><p>This code system <code>http://hl7.dk/fhir/core/CodeSystem/v2-0131-supplement</code> defines displays on the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td><a style="white-space:nowrap" href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html#v2-0131-BP">BP</a><a name="v2-0131-supplement-BP"> </a></td><td>Faktureringskontaktperson</td></tr><tr><td><a style="white-space:nowrap" href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html#v2-0131-C">C</a><a name="v2-0131-supplement-C"> </a></td><td>Nødkontakt</td></tr><tr><td><a style="white-space:nowrap" href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html#v2-0131-CP">CP</a><a name="v2-0131-supplement-CP"> </a></td><td>Kontaktperson</td></tr><tr><td><a style="white-space:nowrap" href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html#v2-0131-E">E</a><a name="v2-0131-supplement-E"> </a></td><td>Arbejdsgiver</td></tr><tr><td><a style="white-space:nowrap" href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html#v2-0131-EP">EP</a><a name="v2-0131-supplement-EP"> </a></td><td>Akut kontaktperson</td></tr><tr><td><a style="white-space:nowrap" href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html#v2-0131-F">F</a><a name="v2-0131-supplement-F"> </a></td><td>Føderalt agentur</td></tr><tr><td><a style="white-space:nowrap" href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html#v2-0131-I">I</a><a name="v2-0131-supplement-I"> </a></td><td>Forsikringsselskab</td></tr><tr><td><a style="white-space:nowrap" href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html#v2-0131-N">N</a><a name="v2-0131-supplement-N"> </a></td><td>Pårørende</td></tr><tr><td><a style="white-space:nowrap" href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html#v2-0131-O">O</a><a name="v2-0131-supplement-O"> </a></td><td>Andet</td></tr><tr><td><a style="white-space:nowrap" href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html#v2-0131-PR">PR</a><a name="v2-0131-supplement-PR"> </a></td><td>Person, der forbereder henvisning</td></tr><tr><td><a style="white-space:nowrap" href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html#v2-0131-S">S</a><a name="v2-0131-supplement-S"> </a></td><td>Statsagentur</td></tr><tr><td><a style="white-space:nowrap" href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html#v2-0131-U">U</a><a name="v2-0131-supplement-U"> </a></td><td>Ukendt</td></tr></table></div>
+  </text>
+  <url value="http://hl7.dk/fhir/core/CodeSystem/v2-0131-supplement"/>
+  <version value="3.4.0"/>
+  <name value="v2-0131DkSupplement"/>
+  <title value="DK v2 Contact Role Supplement"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-02-01T19:18:26+01:00"/>
+  <publisher value="HL7 Denmark"/>
+  <contact>
+    <name value="HL7 Denmark"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="jenskristianvilladsen@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem supplement with danish translations for Contact Role"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <content value="supplement"/>
+  <supplements value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
+  <concept>
+    <code value="BP"/>
+    <designation>
+      <language value="da"/>
+      <value value="Faktureringskontaktperson"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="C"/>
+    <designation>
+      <language value="da"/>
+      <value value="Nødkontakt"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="CP"/>
+    <designation>
+      <language value="da"/>
+      <value value="Kontaktperson"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="E"/>
+    <designation>
+      <language value="da"/>
+      <value value="Arbejdsgiver"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="EP"/>
+    <designation>
+      <language value="da"/>
+      <value value="Akut kontaktperson"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="F"/>
+    <designation>
+      <language value="da"/>
+      <value value="Føderalt agentur"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="I"/>
+    <designation>
+      <language value="da"/>
+      <value value="Forsikringsselskab"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="N"/>
+    <designation>
+      <language value="da"/>
+      <value value="Pårørende"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="O"/>
+    <designation>
+      <language value="da"/>
+      <value value="Andet"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="PR"/>
+    <designation>
+      <language value="da"/>
+      <value value="Person, der forbereder henvisning"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="S"/>
+    <designation>
+      <language value="da"/>
+      <value value="Statsagentur"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="U"/>
+    <designation>
+      <language value="da"/>
+      <value value="Ukendt"/>
+    </designation>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,43 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "extended-patient-contactrelationship",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet extended-patient-contactrelationship</b></p><a name=\"extended-patient-contactrelationship\"> </a><a name=\"hcextended-patient-contactrelationship\"> </a><a name=\"extended-patient-contactrelationship-da-DK\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html\">Patient Contact Relationship </a></li><li>Import all the codes that are contained in <a href=\"ValueSet-dk-core-RelatedPersonRelationshipTypes.html\">DK Related Person Relationship Types</a></li></ul></div>"
+  },
+  "url" : "http://hl7.dk/fhir/core/ValueSet/extended-patient-contactrelationship",
+  "version" : "3.4.0",
+  "name" : "extended-patient-contactrelationship",
+  "title" : "DK Extended Patient Contact Relationship",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-02-01T19:18:26+01:00",
+  "publisher" : "HL7 Denmark",
+  "contact" : [{
+    "name" : "HL7 Denmark",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.dk"
+    },
+    {
+      "system" : "email",
+      "value" : "jenskristianvilladsen@gmail.com"
+    }]
+  }],
+  "description" : "DK Extended Patient Contact Relationship",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://hl7.org/fhir/ValueSet/patient-contactrelationship"]
+    },
+    {
+      "valueSet" : ["http://hl7.dk/fhir/core/ValueSet/dk-core-RelatedPersonRelationshipTypes"]
+    }]
+  }
+}
