@@ -8,7 +8,8 @@
       "layout": {
         "id": "hl7.fhir.dk.[code]",
         "canonical": "http://hl7.dk/fhir/[code]"
-      }
+      },
+      "clone-xml-json": false
     },
     "feeds": {
       "package": "package-feed.xml",
