@@ -1,0 +1,78 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "dk-relatedperson-relationshipcodes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem dk-relatedperson-relationshipcodes</b></p><a name=\"dk-relatedperson-relationshipcodes\"> </a><a name=\"hcdk-relatedperson-relationshipcodes\"> </a><p>This case-insensitive code system <code>http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td style=\"white-space:nowrap\">PARAUTH<a name=\"dk-relatedperson-relationshipcodes-PARAUTH\"> </a></td><td>Parental authority</td><td>The player of the role holds parental authority over the scoping person.</td><td>Forældremyndighedsindehaver</td></tr><tr><td style=\"white-space:nowrap\">PRICARE<a name=\"dk-relatedperson-relationshipcodes-PRICARE\"> </a></td><td>Primary caretaker</td><td>The player of the role is the primary caretaker of the scoping person.</td><td>Primær omsorgsperson</td></tr><tr><td style=\"white-space:nowrap\">PROCON<a name=\"dk-relatedperson-relationshipcodes-PROCON\"> </a></td><td>Professional contact</td><td>A professional acting as a contact of the scoping person.</td><td>Professionel kontakt</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes"^^xsd:anyURI ;
+     fhir:l <http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes>
+  ] ; # 
+  fhir:version [ fhir:v "3.5.0"] ; # 
+  fhir:name [ fhir:v "DkRelatedPersonRelationshipCodes"] ; # 
+  fhir:title [ fhir:v "DK Related Person Relationship Codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-12-19T17:20:16+01:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Denmark" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "dk-affiliate@hl7.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "DK Related Person Relationship Codes"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "DK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "PARAUTH" ] ;
+     fhir:display [ fhir:v "Parental authority" ] ;
+     fhir:definition [ fhir:v "The player of the role holds parental authority over the scoping person." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Forældremyndighedsindehaver" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "PRICARE" ] ;
+     fhir:display [ fhir:v "Primary caretaker" ] ;
+     fhir:definition [ fhir:v "The player of the role is the primary caretaker of the scoping person." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Primær omsorgsperson" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "PROCON" ] ;
+     fhir:display [ fhir:v "Professional contact" ] ;
+     fhir:definition [ fhir:v "A professional acting as a contact of the scoping person." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "da" ] ;
+       fhir:value [ fhir:v "Professionel kontakt" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

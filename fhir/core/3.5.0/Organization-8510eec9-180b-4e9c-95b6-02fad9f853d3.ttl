@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/Organization/8510eec9-180b-4e9c-95b6-02fad9f853d3> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "8510eec9-180b-4e9c-95b6-02fad9f853d3"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"^^xsd:anyURI ;
+       fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization 8510eec9-180b-4e9c-95b6-02fad9f853d3</b></p><a name=\"8510eec9-180b-4e9c-95b6-02fad9f853d3\"> </a><a name=\"hc8510eec9-180b-4e9c-95b6-02fad9f853d3\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-organization.html\">Danish Core Organization Profile</a></p></div><p><b>identifier</b>: <code>urn:oid:1.2.208.176.1.1</code>/12345678901, <code>https://www.gs1.org/gln</code>/5798002472264</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 551611000005102}\">operationsgang</span></p><p><b>name</b>: Ortopædkirurgisk sengeafdeling</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "urn:oid:1.2.208.176.1.1"^^xsd:anyURI ;
+       fhir:l <urn:oid:1.2.208.176.1.1>
+     ] ;
+     fhir:value [ fhir:v "12345678901" ]
+  ] [
+     fhir:system [
+       fhir:v "https://www.gs1.org/gln"^^xsd:anyURI ;
+       fhir:l <https://www.gs1.org/gln>
+     ] ;
+     fhir:value [ fhir:v "5798002472264" ]
+  ] ) ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       a sct:551611000005102 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
+       fhir:code [ fhir:v "551611000005102" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "Ortopædkirurgisk sengeafdeling"] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,184 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/DkCoreDeCPRValueSet",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "DkCoreDeCPRValueSet",
+      "title" : "DK D-eCPR OID values",
+      "description" : "DK D-eCPR OID values",
+      "systems" : ["http://hl7.dk/fhir/core/CodeSystem/dk-core-d-ecpr-codes"]
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/DkCoreProfessionGroupValueSet",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "DkCoreProfessionGroupValueSet",
+      "title" : "DK Profession Group",
+      "description" : "DK Profession Group codes",
+      "systems" : [
+        "http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes"
+      ]
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-IEEEBasicObservation",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "IEEEBasicObservation",
+      "title" : "Dk Core IEEE Basic Observation",
+      "description" : "IEEE MDC codes for Basic Observations usable in Denmark",
+      "systems" : ["urn:iso:std:iso:11073:10101"]
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-LoincBasicObservation",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "LoincBasicObservation",
+      "title" : "DK Core LOINC Basic Observations",
+      "description" : "LOINC codes describing Basic Observations usable in Denmark.",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "MunicipalityCodes",
+      "title" : "DK Municipality Codes",
+      "description" : "Municipality codes used in Denmark",
+      "systems" : [
+        "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+        "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland"
+      ]
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-NPUBasicObservation",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "NPUBasicObservation",
+      "title" : "DK Core NPU Basic Observation",
+      "description" : "NPU codes for Basic Observations usable in Denmark",
+      "systems" : ["http://npu-terminology.org"]
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "RegionalSubdivisionCodes",
+      "title" : "DK Regional Subdivision Codes",
+      "description" : "Subdivision codes (Regional codes) used in Denmark",
+      "systems" : [
+        "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"
+      ]
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-RelatedPersonRelationshipTypes",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "RelatedPersonRelationshipTypes",
+      "title" : "DK Related Person Relationship Types",
+      "description" : "DK Related Person Relationship Types",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes"
+      ]
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-SCTBasicObservation",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "SCTBasicObservation",
+      "title" : "DK Core SNOMED CT Basic Observation",
+      "description" : "SNOMED CT codes for Basic Observations usable in Denmark",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-TechniquesSCTCodes",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "TechniquesSCTCodes",
+      "title" : "DK TechniquesSCTCodes",
+      "description" : "SNOMED CT Codes for the technique used when obtaining an observation",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-UCUM-BasicUnits",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "UCUMBasicUnits",
+      "title" : "DK Core UCUM Basic Units",
+      "description" : "UCUM codes to represent units for basic Observations usable in Denmark",
+      "systems" : ["http://unitsofmeasure.org"]
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-encounter-priority",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "DkCoreEncounterPriority",
+      "title" : "DK priority codes for encounters",
+      "description" : "Value set used for indicating priority of an encounter",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActPriority"]
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-practice-setting-code",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "SorPracticeSettingCode",
+      "title" : "DK SOR Practice Setting Code",
+      "description" : "Values used for the document metadata attribute practiceSettingCode, which is an attribute specifying the clinical specialty where the act that resulted in the document was performed (e.g., Family Practice, Laboratory, Radiology). The value set is based on a subset of the code list from the SOR lookup table 'SOR-Kliniske specialer' (https://sor.sum.dsdn.dk/lookupdata/#clinical_speciality, accessable on Sundhedsdatanettet (SDN)), which is based on SNOMED CT codes.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-priority-codes",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "DkCorePriorityCodes",
+      "title" : "DK priority codes",
+      "description" : "DK Codes for priority",
+      "systems" : ["http://hl7.org/fhir/request-priority"]
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-servicerequest-codes",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "DkCoreServiceRequestCodes",
+      "title" : "DK codes for ServiceRequest",
+      "description" : "Value set used to describe Danish healthcare services",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-marital-status",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : null,
+      "title" : "DK MaritalStatus",
+      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person in Denmark.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://hl7.dk/fhir/core/CodeSystem/dk-marital-status",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ]
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/extended-patient-contactrelationship",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "extended-patient-contactrelationship",
+      "title" : "DK Extended Patient Contact Relationship",
+      "description" : "DK Extended Patient Contact Relationship",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes",
+        "http://terminology.hl7.org/CodeSystem/v2-0131"
+      ]
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/sor-organization-type",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "SorOrganizationType",
+      "title" : "DK SOR Organization Type",
+      "description" : "Value set used for indicating the organization type for organizations from SOR",
+      "systems" : ["http://snomed.info/sct"]
+    }
+  ]
+}

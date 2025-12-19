@@ -1,0 +1,52 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "3a26c7fb-0f95-4619-9dfe-e6f6c20fa8fc-5",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/3a26c7fb-0f95-4619-9dfe-e6f6c20fa8fc-5",
+  "name" : "UnionAddressTypeAndAddressType",
+  "title" : "Union of DK Address Type And DK Address Type",
+  "status" : "active",
+  "date" : "2025-12-19T17:22:39+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "concept" : [{
+    "code" : "postal",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/554471000005108",
+        "code" : "900000000000013009"
+      },
+      "value" : "Post"
+    }]
+  },
+  {
+    "code" : "physical",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/554471000005108",
+        "code" : "900000000000013009"
+      },
+      "value" : "Fysisk"
+    }]
+  },
+  {
+    "code" : "both",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/554471000005108",
+        "code" : "900000000000013009"
+      },
+      "value" : "Post & fysisk"
+    }]
+  }]
+}

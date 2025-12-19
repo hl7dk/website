@@ -1,0 +1,21 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "98272859-9c1e-444f-9bed-31508d8107b1-75",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/98272859-9c1e-444f-9bed-31508d8107b1-75",
+  "name" : "IntersectionFacilityTypeCodeValueSetAndSorOrganizationType",
+  "title" : "Intersection of Facility Type Code Value Set And DK SOR Organization Type",
+  "status" : "active",
+  "date" : "2025-12-19T17:22:42+01:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "42665001",
+        "display" : "Nursing home"
+      },
+      {
+        "code" : "20078004",
+        "display" : "Substance abuse treatment center"
+      }]
+    }]
+  }
+}

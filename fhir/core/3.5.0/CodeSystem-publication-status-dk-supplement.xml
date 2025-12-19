@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="publication-status-dk-supplement"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem publication-status-dk-supplement</b></p><a name="publication-status-dk-supplement"> </a><a name="hcpublication-status-dk-supplement"> </a><p>This code system supplement <code>http://hl7.dk/fhir/core/CodeSystem/publication-status-dk-supplement</code> defines displays on the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-draft">draft</a><a name="publication-status-dk-supplement-draft"> </a></td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-active">active</a><a name="publication-status-dk-supplement-active"> </a></td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-retired">retired</a><a name="publication-status-dk-supplement-retired"> </a></td></tr><tr><td><a style="white-space:nowrap" href="http://hl7.org/fhir/R4/codesystem-publication-status.html#publication-status-unknown">unknown</a><a name="publication-status-dk-supplement-unknown"> </a></td></tr></table><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td><td><b>Nederlands (Dutch, nl)</b></td><td><b>Русский (Russian, ru)</b></td></tr><tr><td>draft</td><td>Udkast</td><td>ontwerp</td><td>черновик</td></tr><tr><td>active</td><td>Aktiv</td><td>actief</td><td>активный</td></tr><tr><td>retired</td><td>Udgået</td><td>verouderd</td><td>удалён</td></tr><tr><td>unknown</td><td>Ukendt</td><td/><td/></tr></table></div>
+  </text>
+  <url value="http://hl7.dk/fhir/core/CodeSystem/publication-status-dk-supplement"/>
+  <version value="3.5.0"/>
+  <name value="PublicationStatus"/>
+  <title value="DK Publication Status"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-12-19T17:20:16+01:00"/>
+  <publisher value="HL7 Denmark"/>
+  <contact>
+    <name value="HL7 Denmark"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="dk-affiliate@hl7.dk"/>
+    </telecom>
+  </contact>
+  <description value="The lifecycle status of a Value Set or Concept Map."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <content value="supplement"/>
+  <supplements value="http://hl7.org/fhir/publication-status"/>
+  <concept>
+    <code value="draft"/>
+    <designation>
+      <language value="ru"/>
+      <value value="черновик"/>
+    </designation>
+    <designation>
+      <language value="nl"/>
+      <value value="ontwerp"/>
+    </designation>
+    <designation>
+      <language value="da"/>
+      <use>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/554471000005108"/>
+        <code value="900000000000013009"/>
+      </use>
+      <value value="Udkast"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="active"/>
+    <designation>
+      <language value="ru"/>
+      <value value="активный"/>
+    </designation>
+    <designation>
+      <language value="nl"/>
+      <value value="actief"/>
+    </designation>
+    <designation>
+      <language value="da"/>
+      <use>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/554471000005108"/>
+        <code value="900000000000013009"/>
+      </use>
+      <value value="Aktiv"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="retired"/>
+    <designation>
+      <language value="ru"/>
+      <value value="удалён"/>
+    </designation>
+    <designation>
+      <language value="nl"/>
+      <value value="verouderd"/>
+    </designation>
+    <designation>
+      <language value="da"/>
+      <use>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/554471000005108"/>
+        <code value="900000000000013009"/>
+      </use>
+      <value value="Udgået"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="unknown"/>
+    <designation>
+      <language value="da"/>
+      <use>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/554471000005108"/>
+        <code value="900000000000013009"/>
+      </use>
+      <value value="Ukendt"/>
+    </designation>
+  </concept>
+</CodeSystem>

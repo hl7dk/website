@@ -1,0 +1,76 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "3a26c7fb-0f95-4619-9dfe-e6f6c20fa8fc-15",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/3a26c7fb-0f95-4619-9dfe-e6f6c20fa8fc-15",
+  "name" : "IntersectionCareTeamStatusAndCareTeamStatus",
+  "title" : "Intersection of DK CareTeam Status And DK CareTeam Status",
+  "status" : "active",
+  "date" : "2025-12-19T17:22:39+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "concept" : [{
+    "code" : "proposed",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/554471000005108",
+        "code" : "900000000000013009"
+      },
+      "value" : "Forslag"
+    }]
+  },
+  {
+    "code" : "active",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/554471000005108",
+        "code" : "900000000000013009"
+      },
+      "value" : "Aktiv"
+    }]
+  },
+  {
+    "code" : "suspended",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/554471000005108",
+        "code" : "900000000000013009"
+      },
+      "value" : "Suspenderet"
+    }]
+  },
+  {
+    "code" : "inactive",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/554471000005108",
+        "code" : "900000000000013009"
+      },
+      "value" : "Inaktiv"
+    }]
+  },
+  {
+    "code" : "entered-in-error",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/554471000005108",
+        "code" : "900000000000013009"
+      },
+      "value" : "Fejlindtastning"
+    }]
+  }]
+}

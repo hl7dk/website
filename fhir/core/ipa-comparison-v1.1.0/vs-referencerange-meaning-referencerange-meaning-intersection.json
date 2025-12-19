@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-33",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-33",
+  "name" : "IntersectionObservationReferenceRangeMeaningCodesAndObservationReferenceRangeMeaningCodes",
+  "title" : "Intersection of Observation Reference Range Meaning Codes And Observation Reference Range Meaning Codes",
+  "status" : "draft",
+  "date" : "2025-12-19T17:28:19+01:00"
+}

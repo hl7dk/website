@@ -1,0 +1,438 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "dk-core-IEEEBasicObservation",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet dk-core-IEEEBasicObservation</b></p><a name=\"dk-core-IEEEBasicObservation\"> </a><a name=\"hcdk-core-IEEEBasicObservation\"> </a><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.5.0/CodeSystem-v3-mdc.html\"><code>urn:iso:std:iso:11073:10101</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Fully specified name</b></td></tr><tr><td>151562</td><td/><td>Rate of breathing; method not specified.</td></tr><tr><td>151570</td><td/><td>Rate of breathing; method: direct airway flow measurement.</td></tr><tr><td>151578</td><td/><td>Rate of breathing; method: transthoracic impedance variations.</td></tr><tr><td>151594</td><td/><td>Rate of breathing; method: carbon dioxide measurement.</td></tr><tr><td>151602</td><td/><td>Rate of breathing; method: non-airway pressure measurement, e.g. central venous blood pressure (CVP).</td></tr><tr><td>151650</td><td/><td>Rate of breathing; method: acoustic.</td></tr><tr><td>151658</td><td/><td>Rate of breathing; method: SpO2 plethysmography.</td></tr><tr><td>8410992</td><td/><td>Value of respiration rate. [measured by sleep apnoea breathing therapy equipment]</td></tr><tr><td>149514</td><td/><td>Rate of blood pulse in an artery.</td></tr><tr><td>149522</td><td/><td>Rate of blood pulse in an artery, measured invasively.</td></tr><tr><td>149546</td><td/><td>Rate of blood pulse in an artery, measured non-invasively.</td></tr><tr><td>149530</td><td/><td>Rate of blood pulse as obtained by pulse oximetry.</td></tr><tr><td>147842</td><td/><td>Rate of cardiac beats (ECG).</td></tr><tr><td>8410590</td><td/><td>Instantaneous heart rate.</td></tr><tr><td>149554</td><td/><td>Heart rate obtained from the variation of transthoracic impedance.</td></tr><tr><td>149562</td><td/><td>Heart rate obtained from an artery that is close to the surface and a pulse can be felt.</td></tr><tr><td>8454258</td><td/><td>This is an object representing the heart rate over a period of time. [Exercise / fitness equipment]</td></tr><tr><td>150324</td><td/><td>Arterial oxygen saturation. [no method]</td></tr><tr><td>150456</td><td/><td>Oxygen saturation. [using pulse oximetry]</td></tr><tr><td>150364</td><td/><td>Body temperature. [unspecified]</td></tr><tr><td>150368</td><td/><td>Core temperature.</td></tr><tr><td>150388</td><td/><td>Skin temperature.</td></tr><tr><td>150392</td><td/><td>Tympanic temperature.</td></tr><tr><td>188420</td><td/><td>Rectal temperature.</td></tr><tr><td>188424</td><td/><td>Oral temperature.</td></tr><tr><td>188428</td><td/><td>Ear temperature.</td></tr><tr><td>188452</td><td/><td>Axillary (armpit) temperature.</td></tr><tr><td>188456</td><td/><td>Gastro-intestinal tract temperature.</td></tr><tr><td>188740</td><td/><td>The actual height of the patient.</td></tr><tr><td>153856</td><td/><td>Circumference of the head.</td></tr><tr><td>188736</td><td/><td>The measurement of the mass of patient.</td></tr><tr><td>188752</td><td/><td>The individual's body weight, in kilograms, divided by the square of height, in meters (BMI).</td></tr><tr><td>150020</td><td/><td>Pressure of the blood, obtained noninvasively.</td></tr><tr><td>150021</td><td/><td>Pressure of the blood, obtained noninvasively, at the systolic phase.</td></tr><tr><td>150022</td><td/><td>Pressure of the blood, obtained noninvasively, at the diastolic phase.</td></tr><tr><td>150023</td><td/><td>Pressure of the blood, obtained noninvasively, as computed by averaging on one cycle.</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-IEEEBasicObservation",
+  "version" : "3.5.0",
+  "name" : "IEEEBasicObservation",
+  "title" : "Dk Core IEEE Basic Observation",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-12-19T17:20:16+01:00",
+  "publisher" : "HL7 Denmark",
+  "contact" : [{
+    "name" : "HL7 Denmark",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.dk"
+    },
+    {
+      "system" : "email",
+      "value" : "dk-affiliate@hl7.dk"
+    }]
+  }],
+  "description" : "IEEE MDC codes for Basic Observations usable in Denmark",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "purpose" : "### Purpose of this ValueSet\nThis ValueSet comprises the most common IEEE MDC codes used to represent observations\nthat are considered \"basic\" by this profile. This ValueSet is **not** meant to be exhaustive!\n\nThe origin of an MDC code is usually the equipment used to perform the measurement,\nand often the code carries supplemental information about how (or where on the body)\nthe observation was performed.",
+  "copyright" : "This material contains content from IEEE-SA (https://standards.ieee.org/), copyright © the Insitute of Electrical and Electronics Engineers, Inc.",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:iso:std:iso:11073:10101",
+      "concept" : [{
+        "code" : "151562",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Rate of breathing; method not specified."
+        }]
+      },
+      {
+        "code" : "151570",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Rate of breathing; method: direct airway flow measurement."
+        }]
+      },
+      {
+        "code" : "151578",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Rate of breathing; method: transthoracic impedance variations."
+        }]
+      },
+      {
+        "code" : "151594",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Rate of breathing; method: carbon dioxide measurement."
+        }]
+      },
+      {
+        "code" : "151602",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Rate of breathing; method: non-airway pressure measurement, e.g. central venous blood pressure (CVP)."
+        }]
+      },
+      {
+        "code" : "151650",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Rate of breathing; method: acoustic."
+        }]
+      },
+      {
+        "code" : "151658",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Rate of breathing; method: SpO2 plethysmography."
+        }]
+      },
+      {
+        "code" : "8410992",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Value of respiration rate. [measured by sleep apnoea breathing therapy equipment]"
+        }]
+      },
+      {
+        "code" : "149514",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Rate of blood pulse in an artery."
+        }]
+      },
+      {
+        "code" : "149522",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Rate of blood pulse in an artery, measured invasively."
+        }]
+      },
+      {
+        "code" : "149546",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Rate of blood pulse in an artery, measured non-invasively."
+        }]
+      },
+      {
+        "code" : "149530",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Rate of blood pulse as obtained by pulse oximetry."
+        }]
+      },
+      {
+        "code" : "147842",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Rate of cardiac beats (ECG)."
+        }]
+      },
+      {
+        "code" : "8410590",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Instantaneous heart rate."
+        }]
+      },
+      {
+        "code" : "149554",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Heart rate obtained from the variation of transthoracic impedance."
+        }]
+      },
+      {
+        "code" : "149562",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Heart rate obtained from an artery that is close to the surface and a pulse can be felt."
+        }]
+      },
+      {
+        "code" : "8454258",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "This is an object representing the heart rate over a period of time. [Exercise / fitness equipment]"
+        }]
+      },
+      {
+        "code" : "150324",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Arterial oxygen saturation. [no method]"
+        }]
+      },
+      {
+        "code" : "150456",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Oxygen saturation. [using pulse oximetry]"
+        }]
+      },
+      {
+        "code" : "150364",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Body temperature. [unspecified]"
+        }]
+      },
+      {
+        "code" : "150368",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Core temperature."
+        }]
+      },
+      {
+        "code" : "150388",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Skin temperature."
+        }]
+      },
+      {
+        "code" : "150392",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Tympanic temperature."
+        }]
+      },
+      {
+        "code" : "188420",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Rectal temperature."
+        }]
+      },
+      {
+        "code" : "188424",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Oral temperature."
+        }]
+      },
+      {
+        "code" : "188428",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Ear temperature."
+        }]
+      },
+      {
+        "code" : "188452",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Axillary (armpit) temperature."
+        }]
+      },
+      {
+        "code" : "188456",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Gastro-intestinal tract temperature."
+        }]
+      },
+      {
+        "code" : "188740",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "The actual height of the patient."
+        }]
+      },
+      {
+        "code" : "153856",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Circumference of the head."
+        }]
+      },
+      {
+        "code" : "188736",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "The measurement of the mass of patient."
+        }]
+      },
+      {
+        "code" : "188752",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "The individual's body weight, in kilograms, divided by the square of height, in meters (BMI)."
+        }]
+      },
+      {
+        "code" : "150020",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Pressure of the blood, obtained noninvasively."
+        }]
+      },
+      {
+        "code" : "150021",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Pressure of the blood, obtained noninvasively, at the systolic phase."
+        }]
+      },
+      {
+        "code" : "150022",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Pressure of the blood, obtained noninvasively, at the diastolic phase."
+        }]
+      },
+      {
+        "code" : "150023",
+        "designation" : [{
+          "use" : {
+            "system" : "http://snomed.info/sct",
+            "version" : "http://snomed.info/sct/554471000005108",
+            "code" : "900000000000003001"
+          },
+          "value" : "Pressure of the blood, obtained noninvasively, as computed by averaging on one cycle."
+        }]
+      }]
+    }]
+  }
+}

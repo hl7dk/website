@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-69",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-69",
+  "name" : "IntersectionDocumentReferenceFormatCodeSetAndIHE_FormatCode_vs",
+  "title" : "Intersection of DocumentReference Format Code Set And IHE ValueSet of Format Codes for use with Document Sharing",
+  "status" : "active",
+  "date" : "2025-12-19T17:28:19+01:00"
+}

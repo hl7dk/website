@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>DK Core UCUM Basic Units - HL7 FHIR Implementation Guide: DK Core v3.5.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7-dk.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"7.41"}
+    h3,h4,h5,h6{--heading-prefix:"7.41"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://www.hl7.dk">
+            <img height="50" alt="Visit the HL7 Danish website" src="assets/images/HL7_Denmark.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>        
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 FHIR Implementation Guide: DK Core</span>
+            <br/>
+            <span style="display:inline-block;">3.5.0 - release
+
+
+
+  <img alt="Denmark flag" src="assets/images/dnk.svg" height="16" title="Denmark"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="guidance.html">Guidance</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="extensions.html">Extensions</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>DK Core UCUM Basic Units</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the HL7 FHIR Implementation Guide: DK Core (v3.5.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="http://hl7.dk/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-dk-core-UCUM-BasicUnits.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-dk-core-UCUM-BasicUnits.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-dk-core-UCUM-BasicUnits.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: DK Core UCUM Basic Units
+
+  </h2>
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.dk/fhir/core/ValueSet/dk-core-UCUM-BasicUnits<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.dk/fhir/core/ValueSet/dk-core-UCUM-BasicUnits"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">3.5.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.dk/fhir/core/ValueSet/dk-core-UCUM-BasicUnits|3.5.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2025-12-19
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">UCUMBasicUnits</span></td>
+    </tr>
+
+
+
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: This material contains content from UCUM (http://ucum.org). UCUM is copyright © 1999-2024, Regenstrief Institute, Inc. and is available under the license at http://ucum.org/license.</p>
+</td>
+    </tr>
+
+  </table>
+
+<p>
+<p>UCUM codes to represent units for basic Observations usable in Denmark</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<ul>
+ <li><a href="StructureDefinition-dk-core-basic-observation.html">Danish Core Basic Observation Profile</a></li>
+</ul>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="dk-core-UCUM-BasicUnits"> </a><a name="hcdk-core-UCUM-BasicUnits"> </a>
+<ul><li>Include these codes as defined in <a href="http://unitsofmeasure.org"><code>http://unitsofmeasure.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>%</td><td></td></tr><tr><td>cm</td><td></td></tr><tr><td>[in_i]</td><td></td></tr><tr><td>kg</td><td></td></tr><tr><td>g</td><td></td></tr><tr><td>[lb_av]</td><td></td></tr><tr><td>Cel</td><td></td></tr><tr><td>[degF]</td><td></td></tr><tr><td>mm[Hg]</td><td></td></tr><tr><td>/min</td><td></td></tr><tr><td>kg/m2</td><td></td></tr><tr><td>m2</td><td></td></tr><tr><td>{fraction}</td><td></td></tr></table></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"/><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on codesystem UCUM version 2.2<span class="copy-text-inline"><button data-clipboard-text="http://unitsofmeasure.org|2.2" title="Click to Copy URL" class="btn-copy"> </button></span></p><p>This value set contains 13 concepts</p><table class="codes" data-fhir="generated"><tr><td><b>System</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display (da)</b></td><td><b>Other Display (null)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name="x-http://unitsofmeasure.org-|25"> </a><code>http://unitsofmeasure.org</code></td><td style="white-space:nowrap">  %</td><td/><td>%</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://unitsofmeasure.org&quot;, &quot;version&quot;: &quot;2.2&quot;, &quot;code&quot;: &quot;%&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://unitsofmeasure.org&quot;&gt;&lt;version value=&quot;2.2&quot;&gt;&lt;code value=&quot;%&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://unitsofmeasure.org-cm"> </a><code>http://unitsofmeasure.org</code></td><td style="white-space:nowrap">  cm</td><td/><td>cm</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://unitsofmeasure.org&quot;, &quot;version&quot;: &quot;2.2&quot;, &quot;code&quot;: &quot;cm&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://unitsofmeasure.org&quot;&gt;&lt;version value=&quot;2.2&quot;&gt;&lt;code value=&quot;cm&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://unitsofmeasure.org-|5bin_i|5d"> </a><code>http://unitsofmeasure.org</code></td><td style="white-space:nowrap">  [in_i]</td><td/><td>[in_i]</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://unitsofmeasure.org&quot;, &quot;version&quot;: &quot;2.2&quot;, &quot;code&quot;: &quot;[in_i]&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://unitsofmeasure.org&quot;&gt;&lt;version value=&quot;2.2&quot;&gt;&lt;code value=&quot;[in_i]&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://unitsofmeasure.org-kg"> </a><code>http://unitsofmeasure.org</code></td><td style="white-space:nowrap">  kg</td><td/><td>kg</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://unitsofmeasure.org&quot;, &quot;version&quot;: &quot;2.2&quot;, &quot;code&quot;: &quot;kg&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://unitsofmeasure.org&quot;&gt;&lt;version value=&quot;2.2&quot;&gt;&lt;code value=&quot;kg&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://unitsofmeasure.org-g"> </a><code>http://unitsofmeasure.org</code></td><td style="white-space:nowrap">  g</td><td/><td>g</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://unitsofmeasure.org&quot;, &quot;version&quot;: &quot;2.2&quot;, &quot;code&quot;: &quot;g&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://unitsofmeasure.org&quot;&gt;&lt;version value=&quot;2.2&quot;&gt;&lt;code value=&quot;g&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://unitsofmeasure.org-|5blb_av|5d"> </a><code>http://unitsofmeasure.org</code></td><td style="white-space:nowrap">  [lb_av]</td><td/><td>[lb_av]</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://unitsofmeasure.org&quot;, &quot;version&quot;: &quot;2.2&quot;, &quot;code&quot;: &quot;[lb_av]&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://unitsofmeasure.org&quot;&gt;&lt;version value=&quot;2.2&quot;&gt;&lt;code value=&quot;[lb_av]&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://unitsofmeasure.org-Cel"> </a><code>http://unitsofmeasure.org</code></td><td style="white-space:nowrap">  Cel</td><td/><td>Cel</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://unitsofmeasure.org&quot;, &quot;version&quot;: &quot;2.2&quot;, &quot;code&quot;: &quot;Cel&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://unitsofmeasure.org&quot;&gt;&lt;version value=&quot;2.2&quot;&gt;&lt;code value=&quot;Cel&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://unitsofmeasure.org-|5bdegF|5d"> </a><code>http://unitsofmeasure.org</code></td><td style="white-space:nowrap">  [degF]</td><td/><td>[degF]</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://unitsofmeasure.org&quot;, &quot;version&quot;: &quot;2.2&quot;, &quot;code&quot;: &quot;[degF]&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://unitsofmeasure.org&quot;&gt;&lt;version value=&quot;2.2&quot;&gt;&lt;code value=&quot;[degF]&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://unitsofmeasure.org-mm|5bHg|5d"> </a><code>http://unitsofmeasure.org</code></td><td style="white-space:nowrap">  mm[Hg]</td><td/><td>mm[Hg]</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://unitsofmeasure.org&quot;, &quot;version&quot;: &quot;2.2&quot;, &quot;code&quot;: &quot;mm[Hg]&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://unitsofmeasure.org&quot;&gt;&lt;version value=&quot;2.2&quot;&gt;&lt;code value=&quot;mm[Hg]&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://unitsofmeasure.org-/min"> </a><code>http://unitsofmeasure.org</code></td><td style="white-space:nowrap">  /min</td><td/><td>/min</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://unitsofmeasure.org&quot;, &quot;version&quot;: &quot;2.2&quot;, &quot;code&quot;: &quot;/min&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://unitsofmeasure.org&quot;&gt;&lt;version value=&quot;2.2&quot;&gt;&lt;code value=&quot;/min&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://unitsofmeasure.org-kg/m2"> </a><code>http://unitsofmeasure.org</code></td><td style="white-space:nowrap">  kg/m2</td><td/><td>kg/m2</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://unitsofmeasure.org&quot;, &quot;version&quot;: &quot;2.2&quot;, &quot;code&quot;: &quot;kg/m2&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://unitsofmeasure.org&quot;&gt;&lt;version value=&quot;2.2&quot;&gt;&lt;code value=&quot;kg/m2&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://unitsofmeasure.org-m2"> </a><code>http://unitsofmeasure.org</code></td><td style="white-space:nowrap">  m2</td><td/><td>m2</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://unitsofmeasure.org&quot;, &quot;version&quot;: &quot;2.2&quot;, &quot;code&quot;: &quot;m2&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://unitsofmeasure.org&quot;&gt;&lt;version value=&quot;2.2&quot;&gt;&lt;code value=&quot;m2&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://unitsofmeasure.org-|7bfraction|7d"> </a><code>http://unitsofmeasure.org</code></td><td style="white-space:nowrap">  {fraction}</td><td/><td>{fraction}</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://unitsofmeasure.org&quot;, &quot;version&quot;: &quot;2.2&quot;, &quot;code&quot;: &quot;{fraction}&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://unitsofmeasure.org&quot;&gt;&lt;version value=&quot;2.2&quot;&gt;&lt;code value=&quot;{fraction}&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 19, 2025 17:20+0100">2025-12-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

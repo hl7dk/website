@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="283"/>
+  <meta>
+    <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Patient 283</b></p><a name="283"> </a><a name="hc283"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Schwendlund Test Mosebryggersen(official) Mand, DoB: 1958-08-01 ( urn:oid:1.2.208.176.1.2#0108589995 (use: official, ))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Known Marital status of Patient">Marital Status:</td><td colspan="3"><span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-MaritalStatus U}">unmarried</span></td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3">Nordre Ringgade 3 Aarhus 8000 DK (home)</td></tr><tr><td style="background-color: #f3f5da" title="Patient Links">Links:</td><td colspan="3"><ul><li>General Practitioner: Peter Sønderby (Identifier: <code>urn:oid:1.2.208.176.1.1</code>/79641000016006)</li></ul></td></tr></table></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="urn:oid:1.2.208.176.1.2"/>
+    <value value="0108589995"/>
+  </identifier>
+  <name>
+    <use value="official"/>
+    <text value="Schwendlund Test Mosebryggersen"/>
+    <family value="Mosebryggersen"/>
+    <given value="Schwendlund"/>
+    <given value="Test"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1958-08-01"/>
+  <address>
+    <extension url="http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes"/>
+          <code value="0330"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"/>
+          <code value="DK-85"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/address-official">
+      <valueCodeableConcept>
+        <coding>
+          <system value="urn:iso:std:iso:3166"/>
+          <code value="DK"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <use value="home"/>
+    <type value="postal"/>
+    <line value="Nordre Ringgade 3"/>
+    <city value="Aarhus"/>
+    <postalCode value="8000"/>
+    <country value="DK"/>
+  </address>
+  <maritalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+      <code value="U"/>
+      <display value="unmarried"/>
+    </coding>
+  </maritalStatus>
+  <generalPractitioner>
+    <identifier>
+      <system value="urn:oid:1.2.208.176.1.1"/>
+      <value value="79641000016006"/>
+    </identifier>
+    <display value="Peter Sønderby"/>
+  </generalPractitioner>
+</Patient>

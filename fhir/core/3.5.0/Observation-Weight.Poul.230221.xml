@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Weight.Poul.230221"/>
+  <meta>
+    <profile value="http://hl7.dk/fhir/core/StructureDefinition/ipa-dk-core-observation"/>
+    <profile value="http://hl7.org/fhir/uv/phd/StructureDefinition/PhdNumericObservation"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/bodyweight"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation Weight.Poul.230221</b></p><a name="Weight.Poul.230221"> </a><a name="hcWeight.Poul.230221"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-ipa-dk-core-observation.html">Danish IPA Core Observation Profile</a>, <a href="http://hl7.org/fhir/uv/phd/STU1.1/StructureDefinition-PhdNumericObservation.html">PhdNumericObservation</a>, <a href="http://hl7.org/fhir/R4/vitalsigns.html">Vital Signs Profile</a>, <a href="http://hl7.org/fhir/R4/bodyweight.html">Observation Body Weight Profile</a></p></div><p><b>Observation Gateway Device</b>: <a href="Device-Telma.FEEDDADADEADBEEF.html">Device: identifier = IEEE 11073 System Identifier: FE-ED-DA-DA-DE-AD-BE-EF; manufacturer = Trifork; modelNumber = Telma (Android); type = MDC_MOC_VMS_MDS_AHD</a></p><p><b>identifier</b>: 606405FFFECFC604-3001749995-urn:oid:1.2.208.176.1.2-188736-74.0-kg-20230221T083640.00</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital signs</span>, <span title="Codes:{http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories phd-observation}">PHD generated Observation</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 29463-7}, {urn:iso:std:iso:11073:10101 188736}, {http://npu-terminology.org NPU03804}">MDC_MASS_BODY_ACTUAL: Body weight</span></p><p><b>subject</b>: <a href="Patient-Poul.html">Poul Hansen (no stated gender), DoB Unknown ( National unique individual identifier)</a></p><p><b>effective</b>: 2023-02-21 08:36:40+0100</p><p><b>performer</b>: <a href="Patient-Poul.html">Poul Hansen (no stated gender), DoB Unknown ( National unique individual identifier)</a></p><p><b>value</b>: 74 kg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codekg = 'kg')</span></p><p><b>device</b>: <a href="Device-WeightScale.606405FFFECFC604.html">Device: identifier = IEEE 11073 System Identifier: 60-64-05-FF-FE-CF-C6-04,Bluetooth MAC address: Bluetooth Address as a device identifier#60-64-05-CF-C6-04; manufacturer = A&amp;D Medical ; serialNumber = 5180400664; modelNumber = UC-352BLE ; type = MDC_MOC_VMS_MDS_SIMP</a></p><p><b>derivedFrom</b>: <a href="http://example.org/fhir/CoincidentTimeStamp.0123">http://example.org/fhir/CoincidentTimeStamp.0123</a></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice">
+    <valueReference>
+      <reference value="Device/Telma.FEEDDADADEADBEEF"/>
+    </valueReference>
+  </extension>
+  <identifier>
+    <value value="606405FFFECFC604-3001749995-urn:oid:1.2.208.176.1.2-188736-74.0-kg-20230221T083640.00"/>
+  </identifier>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+      <display value="Vital signs"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories"/>
+      <code value="phd-observation"/>
+      <display value="PHD generated Observation"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="29463-7"/>
+      <display value="Body weight"/>
+    </coding>
+    <coding>
+      <system value="urn:iso:std:iso:11073:10101"/>
+      <code value="188736"/>
+      <display value="MDC_MASS_BODY_ACTUAL"/>
+    </coding>
+    <coding>
+      <system value="http://npu-terminology.org"/>
+      <code value="NPU03804"/>
+      <display value="Pt—Body; mass = ? kg"/>
+    </coding>
+    <text value="MDC_MASS_BODY_ACTUAL: Body weight"/>
+  </code>
+  <subject>
+    <reference value="Patient/Poul"/>
+  </subject>
+  <effectiveDateTime value="2023-02-21T08:36:40+01:00"/>
+  <performer>
+    <reference value="Patient/Poul"/>
+  </performer>
+  <valueQuantity>
+    <value value="74"/>
+    <unit value="kg"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="kg"/>
+  </valueQuantity>
+  <device>
+    <reference value="Device/WeightScale.606405FFFECFC604"/>
+  </device>
+  <derivedFrom>
+    <reference value="http://example.org/fhir/CoincidentTimeStamp.0123"/>
+  </derivedFrom>
+</Observation>

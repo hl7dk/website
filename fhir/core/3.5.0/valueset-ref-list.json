@@ -1,0 +1,312 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/DkCoreDeCPRValueSet",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "DkCoreDeCPRValueSet",
+      "title" : "DK D-eCPR OID values",
+      "description" : "DK D-eCPR OID values",
+      "systems" : ["http://hl7.dk/fhir/core/CodeSystem/dk-core-d-ecpr-codes"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-d-ecpr-identifier.html" : "Decentralised eCPR, called D-eCPR"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/DkCoreProfessionGroupValueSet",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "DkCoreProfessionGroupValueSet",
+      "title" : "DK Profession Group",
+      "description" : "DK Profession Group codes",
+      "systems" : [
+        "http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-practitioner.html" : "Danish Core Practitioner Profile"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-IEEEBasicObservation",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "IEEEBasicObservation",
+      "title" : "Dk Core IEEE Basic Observation",
+      "description" : "IEEE MDC codes for Basic Observations usable in Denmark",
+      "systems" : ["urn:iso:std:iso:11073:10101"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-LoincBasicObservation",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "LoincBasicObservation",
+      "title" : "DK Core LOINC Basic Observations",
+      "description" : "LOINC codes describing Basic Observations usable in Denmark.",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "MunicipalityCodes",
+      "title" : "DK Municipality Codes",
+      "description" : "Municipality codes used in Denmark",
+      "systems" : [
+        "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+        "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile",
+      "StructureDefinition-dk-core-municipalityCodes.html" : "Danish Core Municipality codes"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-NPUBasicObservation",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "NPUBasicObservation",
+      "title" : "DK Core NPU Basic Observation",
+      "description" : "NPU codes for Basic Observations usable in Denmark",
+      "systems" : ["http://npu-terminology.org"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "RegionalSubdivisionCodes",
+      "title" : "DK Regional Subdivision Codes",
+      "description" : "Subdivision codes (Regional codes) used in Denmark",
+      "systems" : [
+        "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-RegionalSubDivisionCodes.html" : "Danish Core Regional Sub Division Codes Extension"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-RelatedPersonRelationshipTypes",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "RelatedPersonRelationshipTypes",
+      "title" : "DK Related Person Relationship Types",
+      "description" : "DK Related Person Relationship Types",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-related-person.html" : "Danish Core Related Person Profile",
+      "ValueSet-extended-patient-contactrelationship.html" : "DK Extended Patient Contact Relationship"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-SCTBasicObservation",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "SCTBasicObservation",
+      "title" : "DK Core SNOMED CT Basic Observation",
+      "description" : "SNOMED CT codes for Basic Observations usable in Denmark",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-TechniquesSCTCodes",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "TechniquesSCTCodes",
+      "title" : "DK TechniquesSCTCodes",
+      "description" : "SNOMED CT Codes for the technique used when obtaining an observation",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-observation.html" : "Danish Core Observation Profile"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-UCUM-BasicUnits",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "UCUMBasicUnits",
+      "title" : "DK Core UCUM Basic Units",
+      "description" : "UCUM codes to represent units for basic Observations usable in Denmark",
+      "systems" : ["http://unitsofmeasure.org"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-encounter-priority",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "DkCoreEncounterPriority",
+      "title" : "DK priority codes for encounters",
+      "description" : "Value set used for indicating priority of an encounter",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActPriority"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-encounter.html" : "Danish Core Encounter Profile"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-practice-setting-code",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "SorPracticeSettingCode",
+      "title" : "DK SOR Practice Setting Code",
+      "description" : "Values used for the document metadata attribute practiceSettingCode, which is an attribute specifying the clinical specialty where the act that resulted in the document was performed (e.g., Family Practice, Laboratory, Radiology). The value set is based on a subset of the code list from the SOR lookup table 'SOR-Kliniske specialer' (https://sor.sum.dsdn.dk/lookupdata/#clinical_speciality, accessable on Sundhedsdatanettet (SDN)), which is based on SNOMED CT codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-minimaldocumentreference.html" : "Danish Core Minimal DocumentReference Profile"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-priority-codes",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "DkCorePriorityCodes",
+      "title" : "DK priority codes",
+      "description" : "DK Codes for priority",
+      "systems" : ["http://hl7.org/fhir/request-priority"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-person-servicerequest.html" : "Danish Core Person ServiceRequest Profile"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-servicerequest-codes",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "DkCoreServiceRequestCodes",
+      "title" : "DK codes for ServiceRequest",
+      "description" : "Value set used to describe Danish healthcare services",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-person-servicerequest.html" : "Danish Core Person ServiceRequest Profile"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-marital-status",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : null,
+      "title" : "DK MaritalStatus",
+      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person in Denmark.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://hl7.dk/fhir/core/CodeSystem/dk-marital-status",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/extended-patient-contactrelationship",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "extended-patient-contactrelationship",
+      "title" : "DK Extended Patient Contact Relationship",
+      "description" : "DK Extended Patient Contact Relationship",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes",
+        "http://terminology.hl7.org/CodeSystem/v2-0131"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-patient.html" : "Danish Core Patient Profile"
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/sor-organization-type",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "SorOrganizationType",
+      "title" : "DK SOR Organization Type",
+      "description" : "Value set used for indicating the organization type for organizations from SOR",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-minimaldocumentreference.html" : "Danish Core Minimal DocumentReference Profile",
+      "StructureDefinition-dk-core-organization.html" : "Danish Core Organization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/Problem/DiagnosisCodes",
+      "title" : "Condition/Problem/Diagnosis Codes",
+      "description" : "Example value set for Condition/Problem/Diagnosis codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.161"],
+      "sources" : ["2.16.840.1.113883.4.642.3.161"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-condition.html" : "Danish Core Condition Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/marital-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Marital Status Codes",
+      "title" : "MaritalStatus",
+      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.29"],
+      "sources" : ["2.16.840.1.113883.4.642.3.29"],
+      "uses" : {
+      },
+      "ValueSet-dk-marital-status.html" : "DK MaritalStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PatientContactRelationship",
+      "title" : "Patient Contact Relationship ",
+      "description" : "The nature of the relationship between the patient and the contact person.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0131"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1130"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1130"],
+      "uses" : {
+      },
+      "ValueSet-extended-patient-contactrelationship.html" : "DK Extended Patient Contact Relationship"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "Request priority",
+      "description" : "The clinical priority of a diagnostic order.",
+      "systems" : ["http://hl7.org/fhir/request-priority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.115"],
+      "sources" : ["2.16.840.1.113883.4.642.3.115"],
+      "uses" : {
+      },
+      "ValueSet-dk-core-priority-codes.html" : "DK priority codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActCode",
+      "title" : "v3 Code System ActCode",
+      "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.  Constraints:\r\nThe kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems.  The coding system will depend on the class of Act, such as LOINC for observations, etc. Conceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure. Act.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "uses" : {
+      },
+      "StructureDefinition-dk-core-minimaldocumentreference.html" : "Danish Core Minimal DocumentReference Profile"
+    }
+  ]
+}

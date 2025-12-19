@@ -1,0 +1,22 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-42",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-42",
+  "name" : "IntersectionCondition/DiagnosisSeverityAndCondition/DiagnosisSeverity",
+  "title" : "Intersection of Condition/Diagnosis Severity And Condition/Diagnosis Severity",
+  "status" : "draft",
+  "date" : "2025-12-19T17:28:19+01:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "24484000"
+      },
+      {
+        "code" : "6736007"
+      },
+      {
+        "code" : "255604002"
+      }]
+    }]
+  }
+}

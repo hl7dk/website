@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>DK Extended Patient Contact Relationship - HL7 FHIR Implementation Guide: DK Core v3.5.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7-dk.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"7.43"}
+    h3,h4,h5,h6{--heading-prefix:"7.43"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://www.hl7.dk">
+            <img height="50" alt="Visit the HL7 Danish website" src="assets/images/HL7_Denmark.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>        
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 FHIR Implementation Guide: DK Core</span>
+            <br/>
+            <span style="display:inline-block;">3.5.0 - release
+
+
+
+  <img alt="Denmark flag" src="assets/images/dnk.svg" height="16" title="Denmark"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="guidance.html">Guidance</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="extensions.html">Extensions</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>DK Extended Patient Contact Relationship</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the HL7 FHIR Implementation Guide: DK Core (v3.5.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a data-no-external="true" href="http://hl7.dk/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-extended-patient-contactrelationship.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-extended-patient-contactrelationship.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-extended-patient-contactrelationship.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: DK Extended Patient Contact Relationship
+
+  </h2>
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.dk/fhir/core/ValueSet/extended-patient-contactrelationship<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.dk/fhir/core/ValueSet/extended-patient-contactrelationship"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">3.5.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.dk/fhir/core/ValueSet/extended-patient-contactrelationship|3.5.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2025-12-19
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">extended-patient-contactrelationship</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>DK Extended Patient Contact Relationship</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<ul>
+ <li><a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a></li>
+</ul>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="extended-patient-contactrelationship"> </a><a name="hcextended-patient-contactrelationship"> </a><p>This value set includes codes based on the following rules:</p>
+<ul><li>Import all the codes that are contained in <a href="http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html">Patient Contact Relationship </a></li>
+<li>Import all the codes that are contained in <a href="ValueSet-dk-core-RelatedPersonRelationshipTypes.html">DK Related Person Relationship Types</a></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"/><div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px"><p>Expansion performed internally based on:</p><ul><li><a href="CodeSystem-dk-relatedperson-relationshipcodes.html">codesystem DK Related Person Relationship Codes v3.5.0 (CodeSystem)</a><span class="copy-text-inline"><button data-clipboard-text="http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes|3.5.0" title="Click to Copy URL" class="btn-copy"> </button></span></li><li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-v2-0131.html">codesystem contactRole2 v3.0.0 (CodeSystem)</a><span class="copy-text-inline"><button data-clipboard-text="http://terminology.hl7.org/CodeSystem/v2-0131|3.0.0" title="Click to Copy URL" class="btn-copy"> </button></span></li><li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-RoleCode.html">codesystem RoleCode v3.0.0 (CodeSystem)</a><span class="copy-text-inline"><button data-clipboard-text="http://terminology.hl7.org/CodeSystem/v3-RoleCode|3.0.0" title="Click to Copy URL" class="btn-copy"> </button></span></li><li><a href="CodeSystem-role-code-dk-supplement.html">supplement DK Role Code v3.5.0 (CodeSystem)</a><span class="copy-text-inline"><button data-clipboard-text="http://hl7.dk/fhir/core/CodeSystem/role-code-dk-supplement|3.5.0" title="Click to Copy URL" class="btn-copy"> </button></span></li><li><a href="CodeSystem-v2-0131-supplement.html">supplement DK v2 Contact Role Supplement v3.5.0 (CodeSystem)</a><span class="copy-text-inline"><button data-clipboard-text="http://hl7.dk/fhir/core/CodeSystem/v2-0131-supplement|3.5.0" title="Click to Copy URL" class="btn-copy"> </button></span></li><li><a href="ValueSet-dk-core-RelatedPersonRelationshipTypes.html">valueset DK Related Person Relationship Types v3.5.0 (ValueSet)</a><span class="copy-text-inline"><button data-clipboard-text="http://hl7.dk/fhir/core/ValueSet/dk-core-RelatedPersonRelationshipTypes|3.5.0" title="Click to Copy URL" class="btn-copy"> </button></span></li><li><a href="http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html">valueset Patient Contact Relationship  v4.0.1 (ValueSet)</a><span class="copy-text-inline"><button data-clipboard-text="http://hl7.org/fhir/ValueSet/patient-contactrelationship|4.0.1" title="Click to Copy URL" class="btn-copy"> </button></span></li></ul></div><p>This value set contains 33 concepts</p><table class="codes" data-fhir="generated"><tr><td><b>System</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display (da)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v2-0131-BP"> </a><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></td><td style="white-space:nowrap">  <code>BP</code></td><td>Faktureringskontaktperson</td><td>Billing contact person</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;BP&quot;, &quot;display&quot;: &quot;Faktureringskontaktperson&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;BP&quot;&gt;&lt;display value=&quot;Faktureringskontaktperson&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v2-0131-CP"> </a><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></td><td style="white-space:nowrap">  <code>CP</code></td><td>Kontaktperson</td><td>Contact person</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;CP&quot;, &quot;display&quot;: &quot;Kontaktperson&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;CP&quot;&gt;&lt;display value=&quot;Kontaktperson&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v2-0131-EP"> </a><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></td><td style="white-space:nowrap">  <code>EP</code></td><td>Akut kontaktperson</td><td>Emergency contact person</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;EP&quot;, &quot;display&quot;: &quot;Akut kontaktperson&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;EP&quot;&gt;&lt;display value=&quot;Akut kontaktperson&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v2-0131-PR"> </a><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></td><td style="white-space:nowrap">  <code>PR</code></td><td>Person, der forbereder henvisning</td><td>Person preparing referral</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;PR&quot;, &quot;display&quot;: &quot;Person, der forbereder henvisning&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;PR&quot;&gt;&lt;display value=&quot;Person, der forbereder henvisning&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v2-0131-E"> </a><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></td><td style="white-space:nowrap">  <code>E</code></td><td>Arbejdsgiver</td><td>Employer</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;E&quot;, &quot;display&quot;: &quot;Arbejdsgiver&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;E&quot;&gt;&lt;display value=&quot;Arbejdsgiver&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v2-0131-C"> </a><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></td><td style="white-space:nowrap">  <code>C</code></td><td>Nødkontakt</td><td>Emergency Contact</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;C&quot;, &quot;display&quot;: &quot;Nødkontakt&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;C&quot;&gt;&lt;display value=&quot;Nødkontakt&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v2-0131-F"> </a><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></td><td style="white-space:nowrap">  <code>F</code></td><td>Føderalt agentur</td><td>Federal Agency</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;F&quot;, &quot;display&quot;: &quot;Føderalt agentur&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;F&quot;&gt;&lt;display value=&quot;Føderalt agentur&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v2-0131-I"> </a><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></td><td style="white-space:nowrap">  <code>I</code></td><td>Forsikringsselskab</td><td>Insurance Company</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;I&quot;, &quot;display&quot;: &quot;Forsikringsselskab&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;I&quot;&gt;&lt;display value=&quot;Forsikringsselskab&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v2-0131-N"> </a><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></td><td style="white-space:nowrap">  <code>N</code></td><td>Pårørende</td><td>Next-of-Kin</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;N&quot;, &quot;display&quot;: &quot;Pårørende&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;N&quot;&gt;&lt;display value=&quot;Pårørende&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v2-0131-S"> </a><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></td><td style="white-space:nowrap">  <code>S</code></td><td>Statsagentur</td><td>State Agency</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;S&quot;, &quot;display&quot;: &quot;Statsagentur&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;S&quot;&gt;&lt;display value=&quot;Statsagentur&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v2-0131-U"> </a><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></td><td style="white-space:nowrap">  <code>U</code></td><td>Ukendt</td><td>Unknown</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;U&quot;, &quot;display&quot;: &quot;Ukendt&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v2-0131&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;U&quot;&gt;&lt;display value=&quot;Ukendt&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-FAMMEMB"> </a><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></td><td style="white-space:nowrap">  <code>FAMMEMB</code></td><td>Familiemedlem</td><td><div><p>A relationship between two people characterizing their &quot;familial&quot; relationship</p>
+</div></td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;FAMMEMB&quot;, &quot;display&quot;: &quot;Familiemedlem&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;FAMMEMB&quot;&gt;&lt;display value=&quot;Familiemedlem&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-CHILD"> </a><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></td><td style="white-space:nowrap">  <code>CHILD</code></td><td>Barn</td><td><div><p>The player of the role is a child of the scoping entity.</p>
+</div></td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;CHILD&quot;, &quot;display&quot;: &quot;Barn&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;CHILD&quot;&gt;&lt;display value=&quot;Barn&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-DAUC"> </a><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></td><td style="white-space:nowrap">  <code>DAUC</code></td><td>Datter</td><td><div><p><strong>Description:</strong> The player of the role is a female child (of any type) of scoping entity (parent)</p>
+</div></td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;DAUC&quot;, &quot;display&quot;: &quot;Datter&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;DAUC&quot;&gt;&lt;display value=&quot;Datter&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-SONC"> </a><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></td><td style="white-space:nowrap">  <code>SONC</code></td><td>Søn</td><td><div><p><strong>Description:</strong> The player of the role is a male child (of any type) of scoping entity (parent)</p>
+</div></td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;SONC&quot;, &quot;display&quot;: &quot;Søn&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;SONC&quot;&gt;&lt;display value=&quot;Søn&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-GRNDCHILD"> </a><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></td><td style="white-space:nowrap">  <code>GRNDCHILD</code></td><td>Barnebarn</td><td><div><p>The player of the role is a child of the scoping person's son or daughter.</p>
+</div></td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;GRNDCHILD&quot;, &quot;display&quot;: &quot;Barnebarn&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;GRNDCHILD&quot;&gt;&lt;display value=&quot;Barnebarn&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-CHLDINLAW"> </a><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></td><td style="white-space:nowrap">  <code>CHLDINLAW</code></td><td>Svigerbarn</td><td><div><p>The player of the role is the spouse of scoping person's child.</p>
+</div></td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;CHLDINLAW&quot;, &quot;display&quot;: &quot;Svigerbarn&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;CHLDINLAW&quot;&gt;&lt;display value=&quot;Svigerbarn&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-PRN"> </a><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></td><td style="white-space:nowrap">  <code>PRN</code></td><td>Forælder</td><td><div><p>The player of the role is one who begets, gives birth to, or nurtures and raises the scoping entity (child).</p>
+</div></td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;PRN&quot;, &quot;display&quot;: &quot;Forælder&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;PRN&quot;&gt;&lt;display value=&quot;Forælder&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-FTH"> </a><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></td><td style="white-space:nowrap">  <code>FTH</code></td><td>Far</td><td><div><p>The player of the role is a male who begets or raises or nurtures the scoping entity (child).</p>
+</div></td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;FTH&quot;, &quot;display&quot;: &quot;Far&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;FTH&quot;&gt;&lt;display value=&quot;Far&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-MTH"> </a><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></td><td style="white-space:nowrap">  <code>MTH</code></td><td>Mor</td><td><div><p>The player of the role is a female who conceives, gives birth to, or raises and nurtures the scoping entity (child).</p>
+</div></td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;MTH&quot;, &quot;display&quot;: &quot;Mor&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;MTH&quot;&gt;&lt;display value=&quot;Mor&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-SIB"> </a><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></td><td style="white-space:nowrap">  <code>SIB</code></td><td>Søskende</td><td><div><p>The player of the role shares one or both parents in common with the scoping entity.</p>
+</div></td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;SIB&quot;, &quot;display&quot;: &quot;Søskende&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;SIB&quot;&gt;&lt;display value=&quot;Søskende&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-DOMPART"> </a><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></td><td style="white-space:nowrap">  <code>DOMPART</code></td><td>Registreret partner</td><td><div><p>The player of the role cohabits with the scoping person but is not the scoping person's spouse.</p>
+</div></td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;DOMPART&quot;, &quot;display&quot;: &quot;Registreret partner&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;DOMPART&quot;&gt;&lt;display value=&quot;Registreret partner&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-SPS"> </a><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></td><td style="white-space:nowrap">  <code>SPS</code></td><td>Ægtefælle</td><td><div><p>The player of the role is a marriage partner of the scoping person.</p>
+</div></td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;SPS&quot;, &quot;display&quot;: &quot;Ægtefælle&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;SPS&quot;&gt;&lt;display value=&quot;Ægtefælle&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-FRND"> </a><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></td><td style="white-space:nowrap">  <code>FRND</code></td><td>Ven (ikke-beslægtet)</td><td><div><p>The player of the role is a person who is known, liked, and trusted by the scoping person.</p>
+</div></td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;FRND&quot;, &quot;display&quot;: &quot;Ven (ikke-beslægtet)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;FRND&quot;&gt;&lt;display value=&quot;Ven (ikke-beslægtet)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-NBOR"> </a><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></td><td style="white-space:nowrap">  <code>NBOR</code></td><td>Nabo</td><td><div><p>The player of the role lives near or next to the scoping person.</p>
+</div></td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;NBOR&quot;, &quot;display&quot;: &quot;Nabo&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;NBOR&quot;&gt;&lt;display value=&quot;Nabo&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-ROOM"> </a><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></td><td style="white-space:nowrap">  <code>ROOM</code></td><td>Samboende</td><td><div><p>One who shares living quarters with the subject.</p>
+</div></td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;ROOM&quot;, &quot;display&quot;: &quot;Samboende&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;ROOM&quot;&gt;&lt;display value=&quot;Samboende&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-GUARD"> </a><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></td><td style="white-space:nowrap">  <code>GUARD</code></td><td>Værge</td><td><div><p>The role played by a person or institution legally empowered with responsibility for the care of a ward.</p>
+</div></td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;GUARD&quot;, &quot;display&quot;: &quot;Værge&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;GUARD&quot;&gt;&lt;display value=&quot;Værge&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-NOK"> </a><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></td><td style="white-space:nowrap">  <code>NOK</code></td><td>Pårørende</td><td><div><p>Played by an individual who is designated as the next of kin for another individual which scopes the role.</p>
+</div></td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;NOK&quot;, &quot;display&quot;: &quot;Pårørende&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;NOK&quot;&gt;&lt;display value=&quot;Pårørende&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-POWATT"> </a><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></td><td style="white-space:nowrap">  <code>POWATT</code></td><td>Fuldmagtshaver</td><td><div><p>A relationship between two people in which one person authorizes another to act for him in a manner which is a legally binding upon the person giving such authority as if he or she personally were to do the acts.</p>
+</div></td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;POWATT&quot;, &quot;display&quot;: &quot;Fuldmagtshaver&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;POWATT&quot;&gt;&lt;display value=&quot;Fuldmagtshaver&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://terminology.hl7.org/CodeSystem/v3-RoleCode-ECON"> </a><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></td><td style="white-space:nowrap">  <code>ECON</code></td><td>Primær kontakt</td><td><div><p>A contact designated for contact in emergent situations.</p>
+</div></td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;, &quot;version&quot;: &quot;3.0.0&quot;, &quot;code&quot;: &quot;ECON&quot;, &quot;display&quot;: &quot;Primær kontakt&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/v3-RoleCode&quot;&gt;&lt;version value=&quot;3.0.0&quot;&gt;&lt;code value=&quot;ECON&quot;&gt;&lt;display value=&quot;Primær kontakt&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes-PARAUTH"> </a><code>http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes</code></td><td style="white-space:nowrap">  <a href="CodeSystem-dk-relatedperson-relationshipcodes.html#dk-relatedperson-relationshipcodes-PARAUTH">PARAUTH</a></td><td>Forældremyndighedsindehaver</td><td>The player of the role holds parental authority over the scoping person.</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes&quot;, &quot;version&quot;: &quot;3.5.0&quot;, &quot;code&quot;: &quot;PARAUTH&quot;, &quot;display&quot;: &quot;Forældremyndighedsindehaver&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes&quot;&gt;&lt;version value=&quot;3.5.0&quot;&gt;&lt;code value=&quot;PARAUTH&quot;&gt;&lt;display value=&quot;Forældremyndighedsindehaver&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes-PRICARE"> </a><code>http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes</code></td><td style="white-space:nowrap">  <a href="CodeSystem-dk-relatedperson-relationshipcodes.html#dk-relatedperson-relationshipcodes-PRICARE">PRICARE</a></td><td>Primær omsorgsperson</td><td>The player of the role is the primary caretaker of the scoping person.</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes&quot;, &quot;version&quot;: &quot;3.5.0&quot;, &quot;code&quot;: &quot;PRICARE&quot;, &quot;display&quot;: &quot;Primær omsorgsperson&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes&quot;&gt;&lt;version value=&quot;3.5.0&quot;&gt;&lt;code value=&quot;PRICARE&quot;&gt;&lt;display value=&quot;Primær omsorgsperson&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes-PROCON"> </a><code>http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes</code></td><td style="white-space:nowrap">  <a href="CodeSystem-dk-relatedperson-relationshipcodes.html#dk-relatedperson-relationshipcodes-PROCON">PROCON</a></td><td>Professionel kontakt</td><td>A professional acting as a contact of the scoping person.</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes&quot;, &quot;version&quot;: &quot;3.5.0&quot;, &quot;code&quot;: &quot;PROCON&quot;, &quot;display&quot;: &quot;Professionel kontakt&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes&quot;&gt;&lt;version value=&quot;3.5.0&quot;&gt;&lt;code value=&quot;PROCON&quot;&gt;&lt;display value=&quot;Professionel kontakt&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr></table><p><b>Additional Designations and Language Displays</b></p><table class="codes" data-fhir="generated"><tr><td><b>Code</b></td><td><b>Other Display (null)</b></td><td><b>Deutsch (German, de)</b></td><td><b>English (English, en)</b></td></tr><tr><td>BP</td><td>Billing contact person</td><td>Kontaktperson für Abrechnung</td><td></td></tr><tr><td>CP</td><td>Contact person</td><td>Kontaktperson</td><td></td></tr><tr><td>EP</td><td>Emergency contact person</td><td>Kontaktperson für Notfälle</td><td></td></tr><tr><td>PR</td><td>Person preparing referral</td><td>Person, die die Überweisung vorbereitet</td><td></td></tr><tr><td>E</td><td>Employer</td><td>Arbeitgeber</td><td></td></tr><tr><td>C</td><td>Emergency Contact</td><td>Ansprechpartner in Notfällen</td><td></td></tr><tr><td>F</td><td>Federal Agency</td><td>Bundesbehörde</td><td></td></tr><tr><td>I</td><td>Insurance Company</td><td>Versicherung</td><td></td></tr><tr><td>N</td><td>Next-of-Kin</td><td>Kontaktperson</td><td></td></tr><tr><td>S</td><td>State Agency</td><td>Landesbehörde</td><td></td></tr><tr><td>U</td><td>Unknown</td><td>unbekannt</td><td></td></tr><tr><td>FAMMEMB</td><td>family member</td><td></td><td>family member</td></tr><tr><td>CHILD</td><td>child</td><td></td><td>child</td></tr><tr><td>DAUC</td><td>daughter</td><td></td><td>daughter</td></tr><tr><td>SONC</td><td>son</td><td></td><td>son</td></tr><tr><td>GRNDCHILD</td><td>grandchild</td><td></td><td>grandchild</td></tr><tr><td>CHLDINLAW</td><td>child-in-law</td><td></td><td>child-in-law</td></tr><tr><td>PRN</td><td>parent</td><td></td><td>parent</td></tr><tr><td>FTH</td><td>father</td><td></td><td>father</td></tr><tr><td>MTH</td><td>mother</td><td></td><td>mother</td></tr><tr><td>SIB</td><td>sibling</td><td></td><td>sibling</td></tr><tr><td>DOMPART</td><td>domestic partner</td><td></td><td>domestic partner</td></tr><tr><td>SPS</td><td>spouse</td><td></td><td>spouse</td></tr><tr><td>FRND</td><td>unrelated friend</td><td></td><td>unrelated friend</td></tr><tr><td>NBOR</td><td>neighbor</td><td></td><td>neighbor</td></tr><tr><td>ROOM</td><td>Roommate</td><td></td><td>Roommate</td></tr><tr><td>GUARD</td><td>guardian</td><td></td><td>guardian</td></tr><tr><td>NOK</td><td>next of kin</td><td></td><td>next of kin</td></tr><tr><td>POWATT</td><td>power of attorney</td><td></td><td>power of attorney</td></tr><tr><td>ECON</td><td>emergency contact</td><td></td><td>emergency contact</td></tr><tr><td>PARAUTH</td><td>Parental authority</td><td></td><td></td></tr><tr><td>PRICARE</td><td>Primary caretaker</td><td></td><td></td></tr><tr><td>PROCON</td><td>Professional contact</td><td></td><td></td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 19, 2025 17:20+0100">2025-12-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

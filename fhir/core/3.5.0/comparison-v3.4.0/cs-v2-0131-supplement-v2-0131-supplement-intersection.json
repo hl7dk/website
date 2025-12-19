@@ -1,0 +1,100 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "3a26c7fb-0f95-4619-9dfe-e6f6c20fa8fc-54",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/3a26c7fb-0f95-4619-9dfe-e6f6c20fa8fc-54",
+  "name" : "Intersectionv2-0131DkSupplementAndv2-0131DkSupplement",
+  "title" : "Intersection of DK v2 Contact Role Supplement And DK v2 Contact Role Supplement",
+  "status" : "active",
+  "date" : "2025-12-19T17:22:39+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "concept" : [{
+    "code" : "BP",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Faktureringskontaktperson"
+    }]
+  },
+  {
+    "code" : "C",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Nødkontakt"
+    }]
+  },
+  {
+    "code" : "CP",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Kontaktperson"
+    }]
+  },
+  {
+    "code" : "E",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Arbejdsgiver"
+    }]
+  },
+  {
+    "code" : "EP",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Akut kontaktperson"
+    }]
+  },
+  {
+    "code" : "F",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Føderalt agentur"
+    }]
+  },
+  {
+    "code" : "I",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Forsikringsselskab"
+    }]
+  },
+  {
+    "code" : "N",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Pårørende"
+    }]
+  },
+  {
+    "code" : "O",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Andet"
+    }]
+  },
+  {
+    "code" : "PR",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Person, der forbereder henvisning"
+    }]
+  },
+  {
+    "code" : "S",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Statsagentur"
+    }]
+  },
+  {
+    "code" : "U",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Ukendt"
+    }]
+  }]
+}

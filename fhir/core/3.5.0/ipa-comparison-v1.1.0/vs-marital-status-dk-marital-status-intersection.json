@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "98272859-9c1e-444f-9bed-31508d8107b1-18",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/98272859-9c1e-444f-9bed-31508d8107b1-18",
+  "name" : "IntersectionMarital Status CodesAndnull",
+  "title" : "Intersection of MaritalStatus And DK MaritalStatus",
+  "status" : "active",
+  "date" : "2025-12-19T17:22:41+01:00"
+}

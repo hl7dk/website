@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "3a26c7fb-0f95-4619-9dfe-e6f6c20fa8fc-140",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/3a26c7fb-0f95-4619-9dfe-e6f6c20fa8fc-140",
+  "name" : "UnionLocationTypeAndLocationType",
+  "title" : "Union of Location type And Location type",
+  "status" : "draft",
+  "date" : "2025-12-19T17:22:40+01:00"
+}

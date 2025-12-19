@@ -1,0 +1,181 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-78",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-78",
+  "name" : "IntersectionPracticeSettingCodeValueSetAndSorPracticeSettingCode",
+  "title" : "Intersection of Practice Setting Code Value Set And DK SOR Practice Setting Code",
+  "status" : "active",
+  "date" : "2025-12-19T17:28:19+01:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "394577000",
+        "display" : "Anesthetics"
+      },
+      {
+        "code" : "421661004",
+        "display" : "Blood banking and transfusion medicine"
+      },
+      {
+        "code" : "394579002",
+        "display" : "Cardiology"
+      },
+      {
+        "code" : "394580004",
+        "display" : "Clinical genetics"
+      },
+      {
+        "code" : "394803006",
+        "display" : "Clinical hematology"
+      },
+      {
+        "code" : "408454008",
+        "display" : "Clinical microbiology"
+      },
+      {
+        "code" : "394809005",
+        "display" : "Clinical neuro-physiology"
+      },
+      {
+        "code" : "394592004",
+        "display" : "Clinical oncology"
+      },
+      {
+        "code" : "394600006",
+        "display" : "Clinical pharmacology"
+      },
+      {
+        "code" : "394601005",
+        "display" : "Clinical physiology"
+      },
+      {
+        "code" : "394581000",
+        "display" : "Community medicine"
+      },
+      {
+        "code" : "394812008",
+        "display" : "Dental medicine specialties"
+      },
+      {
+        "code" : "394582007",
+        "display" : "Dermatology"
+      },
+      {
+        "code" : "394583002",
+        "display" : "Endocrinology"
+      },
+      {
+        "code" : "394584008",
+        "display" : "Gastroenterology"
+      },
+      {
+        "code" : "408443003",
+        "display" : "General medical practice"
+      },
+      {
+        "code" : "394915009",
+        "display" : "General pathology"
+      },
+      {
+        "code" : "394811001",
+        "display" : "Geriatric medicine"
+      },
+      {
+        "code" : "408472002",
+        "display" : "Hepatology"
+      },
+      {
+        "code" : "394807007",
+        "display" : "Infectious diseases"
+      },
+      {
+        "code" : "419192003",
+        "display" : "Internal medicine"
+      },
+      {
+        "code" : "394589003",
+        "display" : "Nephrology"
+      },
+      {
+        "code" : "394591006",
+        "display" : "Neurology"
+      },
+      {
+        "code" : "394585009",
+        "display" : "Obstetrics and gynecology"
+      },
+      {
+        "code" : "394821009",
+        "display" : "Occupational medicine"
+      },
+      {
+        "code" : "394594003",
+        "display" : "Ophthalmology"
+      },
+      {
+        "code" : "394588006",
+        "display" : "Pediatric (Child and adolescent) psychiatry"
+      },
+      {
+        "code" : "394587001",
+        "display" : "Psychiatry"
+      },
+      {
+        "code" : "418112009",
+        "display" : "Pulmonary medicine"
+      },
+      {
+        "code" : "394914008",
+        "display" : "Radiology"
+      },
+      {
+        "code" : "394810000",
+        "display" : "Rheumatology"
+      },
+      {
+        "code" : "394605001",
+        "display" : "Surgery-Dental-Oral surgery"
+      },
+      {
+        "code" : "394608004",
+        "display" : "Surgery-Dental-Orthodontics"
+      },
+      {
+        "code" : "394608004",
+        "display" : "Surgery-Dentistry-surgical-Orthodontics"
+      },
+      {
+        "code" : "394604002",
+        "display" : "Surgery-Ear, nose and throat surgery"
+      },
+      {
+        "code" : "394609007",
+        "display" : "Surgery-general"
+      },
+      {
+        "code" : "394610002",
+        "display" : "Surgery-Neurosurgery"
+      },
+      {
+        "code" : "394611003",
+        "display" : "Surgery-Plastic surgery"
+      },
+      {
+        "code" : "394801008",
+        "display" : "Surgery-Trauma and orthopedics"
+      },
+      {
+        "code" : "408463005",
+        "display" : "Surgery-Vascular"
+      },
+      {
+        "code" : "408448007",
+        "display" : "Tropical medicine"
+      },
+      {
+        "code" : "394612005",
+        "display" : "Urology"
+      }]
+    }]
+  }
+}

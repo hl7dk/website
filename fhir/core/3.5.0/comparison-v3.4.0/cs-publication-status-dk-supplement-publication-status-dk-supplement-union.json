@@ -1,0 +1,136 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "3a26c7fb-0f95-4619-9dfe-e6f6c20fa8fc-44",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/3a26c7fb-0f95-4619-9dfe-e6f6c20fa8fc-44",
+  "name" : "UnionPublicationStatusAndPublicationStatus",
+  "title" : "Union of DK Publication Status And DK Publication Status",
+  "status" : "active",
+  "date" : "2025-12-19T17:22:39+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "concept" : [{
+    "code" : "draft",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "черновик"
+    },
+    {
+      "language" : "nl",
+      "value" : "ontwerp"
+    },
+    {
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/554471000005108",
+        "code" : "900000000000013009"
+      },
+      "value" : "Udkast"
+    },
+    {
+      "language" : "ru",
+      "value" : "черновик"
+    },
+    {
+      "language" : "nl",
+      "value" : "ontwerp"
+    },
+    {
+      "language" : "ru",
+      "value" : "черновик"
+    },
+    {
+      "language" : "nl",
+      "value" : "ontwerp"
+    }]
+  },
+  {
+    "code" : "active",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "активный"
+    },
+    {
+      "language" : "nl",
+      "value" : "actief"
+    },
+    {
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/554471000005108",
+        "code" : "900000000000013009"
+      },
+      "value" : "Aktiv"
+    },
+    {
+      "language" : "ru",
+      "value" : "активный"
+    },
+    {
+      "language" : "nl",
+      "value" : "actief"
+    },
+    {
+      "language" : "ru",
+      "value" : "активный"
+    },
+    {
+      "language" : "nl",
+      "value" : "actief"
+    }]
+  },
+  {
+    "code" : "retired",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "удалён"
+    },
+    {
+      "language" : "nl",
+      "value" : "verouderd"
+    },
+    {
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/554471000005108",
+        "code" : "900000000000013009"
+      },
+      "value" : "Udgået"
+    },
+    {
+      "language" : "ru",
+      "value" : "удалён"
+    },
+    {
+      "language" : "nl",
+      "value" : "verouderd"
+    },
+    {
+      "language" : "ru",
+      "value" : "удалён"
+    },
+    {
+      "language" : "nl",
+      "value" : "verouderd"
+    }]
+  },
+  {
+    "code" : "unknown",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/554471000005108",
+        "code" : "900000000000013009"
+      },
+      "value" : "Ukendt"
+    }]
+  }]
+}

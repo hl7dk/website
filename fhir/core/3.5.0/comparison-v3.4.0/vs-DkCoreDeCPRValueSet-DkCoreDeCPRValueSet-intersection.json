@@ -1,0 +1,16 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "3a26c7fb-0f95-4619-9dfe-e6f6c20fa8fc-204",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/3a26c7fb-0f95-4619-9dfe-e6f6c20fa8fc-204",
+  "name" : "IntersectionDkCoreDeCPRValueSetAndDkCoreDeCPRValueSet",
+  "title" : "Intersection of DK D-eCPR OID values And DK D-eCPR OID values",
+  "status" : "active",
+  "date" : "2025-12-19T17:22:40+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }]
+}

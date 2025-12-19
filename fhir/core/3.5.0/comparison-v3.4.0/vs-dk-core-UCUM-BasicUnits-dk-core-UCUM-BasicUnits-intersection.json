@@ -1,0 +1,59 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "3a26c7fb-0f95-4619-9dfe-e6f6c20fa8fc-234",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/3a26c7fb-0f95-4619-9dfe-e6f6c20fa8fc-234",
+  "name" : "IntersectionUCUMBasicUnitsAndUCUMBasicUnits",
+  "title" : "Intersection of DK Core UCUM Basic Units And DK Core UCUM Basic Units",
+  "status" : "active",
+  "date" : "2025-12-19T17:22:40+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "%"
+      },
+      {
+        "code" : "cm"
+      },
+      {
+        "code" : "[in_i]"
+      },
+      {
+        "code" : "kg"
+      },
+      {
+        "code" : "g"
+      },
+      {
+        "code" : "[lb_av]"
+      },
+      {
+        "code" : "Cel"
+      },
+      {
+        "code" : "[degF]"
+      },
+      {
+        "code" : "mm[Hg]"
+      },
+      {
+        "code" : "/min"
+      },
+      {
+        "code" : "kg/m2"
+      },
+      {
+        "code" : "m2"
+      },
+      {
+        "code" : "{fraction}"
+      }]
+    }]
+  }
+}

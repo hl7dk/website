@@ -1,0 +1,534 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-74",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-74",
+  "name" : "UnionFacilityTypeCodeValueSetAndSorOrganizationType",
+  "title" : "Union of Facility Type Code Value Set And DK SOR Organization Type",
+  "status" : "active",
+  "date" : "2025-12-19T17:28:19+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "82242000",
+        "display" : "Hospital-children's"
+      },
+      {
+        "code" : "225732001",
+        "display" : "Hospital-community"
+      },
+      {
+        "code" : "79993009",
+        "display" : "Hospital-government"
+      },
+      {
+        "code" : "32074000",
+        "display" : "Hospital-long term care"
+      },
+      {
+        "code" : "4322002",
+        "display" : "Hospital-military field"
+      },
+      {
+        "code" : "224687002",
+        "display" : "Hospital-prison"
+      },
+      {
+        "code" : "62480006",
+        "display" : "Hospital-psychiatric"
+      },
+      {
+        "code" : "80522000",
+        "display" : "Hospital-rehabilitation"
+      },
+      {
+        "code" : "36125001",
+        "display" : "Hospital-trauma center"
+      },
+      {
+        "code" : "48311003",
+        "display" : "Hospital-Veterans' Administration"
+      },
+      {
+        "code" : "284546000",
+        "display" : "Hospice facility"
+      },
+      {
+        "code" : "42665001",
+        "display" : "Nursing home"
+      },
+      {
+        "code" : "45618002",
+        "display" : "Skilled nursing facility"
+      },
+      {
+        "code" : "418518002",
+        "display" : "Dialysis unit--hospital"
+      },
+      {
+        "code" : "73770003",
+        "display" : "Emergency department--hospital"
+      },
+      {
+        "code" : "69362002",
+        "display" : "Hospital ambulatory surgery facility"
+      },
+      {
+        "code" : "52668009",
+        "display" : "Hospital birthing center"
+      },
+      {
+        "code" : "360957003",
+        "display" : "Hospital outpatient allergy clinic"
+      },
+      {
+        "code" : "10206005",
+        "display" : "Hospital outpatient dental clinic"
+      },
+      {
+        "code" : "37550003",
+        "display" : "Hospital outpatient dermatology clinic"
+      },
+      {
+        "code" : "73644007",
+        "display" : "Hospital outpatient endocrinology clinic"
+      },
+      {
+        "code" : "31628002",
+        "display" : "Hospital outpatient family medicine clinic"
+      },
+      {
+        "code" : "58482006",
+        "display" : "Hospital outpatient gastroenterology clinic"
+      },
+      {
+        "code" : "90484001",
+        "display" : "Hospital outpatient general surgery clinic"
+      },
+      {
+        "code" : "1814000",
+        "display" : "Hospital outpatient geriatric health center"
+      },
+      {
+        "code" : "22549003",
+        "display" : "Hospital outpatient gynecology clinic"
+      },
+      {
+        "code" : "56293002",
+        "display" : "Hospital outpatient hematology clinic"
+      },
+      {
+        "code" : "360966004",
+        "display" : "Hospital outpatient immunology clinic"
+      },
+      {
+        "code" : "2849009",
+        "display" : "Hospital outpatient infectious disease clinic"
+      },
+      {
+        "code" : "14866005",
+        "display" : "Hospital outpatient mental health center"
+      },
+      {
+        "code" : "38238005",
+        "display" : "Hospital outpatient neurology clinic"
+      },
+      {
+        "code" : "56189001",
+        "display" : "Hospital outpatient obstetrical clinic"
+      },
+      {
+        "code" : "89972002",
+        "display" : "Hospital outpatient oncology clinic"
+      },
+      {
+        "code" : "78088001",
+        "display" : "Hospital outpatient ophthalmology clinic"
+      },
+      {
+        "code" : "78001009",
+        "display" : "Hospital outpatient orthopedics clinic"
+      },
+      {
+        "code" : "23392004",
+        "display" : "Hospital outpatient otorhinolaryngology clinic"
+      },
+      {
+        "code" : "36293008",
+        "display" : "Hospital outpatient pain clinic"
+      },
+      {
+        "code" : "3729002",
+        "display" : "Hospital outpatient pediatric clinic"
+      },
+      {
+        "code" : "5584006",
+        "display" : "Hospital outpatient peripheral vascular clinic"
+      },
+      {
+        "code" : "37546005",
+        "display" : "Hospital outpatient rehabilitation clinic"
+      },
+      {
+        "code" : "57159002",
+        "display" : "Hospital outpatient respiratory disease clinic"
+      },
+      {
+        "code" : "331006",
+        "display" : "Hospital outpatient rheumatology clinic"
+      },
+      {
+        "code" : "50569004",
+        "display" : "Hospital outpatient urology clinic"
+      },
+      {
+        "code" : "79491001",
+        "display" : "Hospital radiology facility"
+      },
+      {
+        "code" : "33022008",
+        "display" : "Hospital-based outpatient clinic or department--OTHER-NOT LISTED"
+      },
+      {
+        "code" : "19602009",
+        "display" : "Fee-for-service private physicians' group office"
+      },
+      {
+        "code" : "39350007",
+        "display" : "Private physicians' group office"
+      },
+      {
+        "code" : "83891005",
+        "display" : "Solo practice private office"
+      },
+      {
+        "code" : "394759007",
+        "display" : "Independent ambulatory care provider site--OTHER--NOT LISTED"
+      },
+      {
+        "code" : "405607001",
+        "display" : "Ambulatory surgery center"
+      },
+      {
+        "code" : "309900005",
+        "display" : "Care of the elderly day hospital"
+      },
+      {
+        "code" : "275576008",
+        "display" : "Elderly assessment clinic"
+      },
+      {
+        "code" : "10531005",
+        "display" : "Free-standing ambulatory surgery facility"
+      },
+      {
+        "code" : "91154008",
+        "display" : "Free-standing birthing center"
+      },
+      {
+        "code" : "41844007",
+        "display" : "Free-standing geriatric health center"
+      },
+      {
+        "code" : "45899008",
+        "display" : "Free-standing laboratory facility"
+      },
+      {
+        "code" : "51563005",
+        "display" : "Free-standing mental health center"
+      },
+      {
+        "code" : "1773006",
+        "display" : "Free-standing radiology facility"
+      },
+      {
+        "code" : "72311000",
+        "display" : "Health maintenance organization"
+      },
+      {
+        "code" : "6827000",
+        "display" : "Local community health center"
+      },
+      {
+        "code" : "309898008",
+        "display" : "Psychogeriatric day hospital"
+      },
+      {
+        "code" : "39913001",
+        "display" : "Residential school infirmary"
+      },
+      {
+        "code" : "77931003",
+        "display" : "Rural health center"
+      },
+      {
+        "code" : "25681007",
+        "display" : "Sexually transmitted disease health center"
+      },
+      {
+        "code" : "20078004",
+        "display" : "Substance abuse treatment center"
+      },
+      {
+        "code" : "46224007",
+        "display" : "Vaccination clinic"
+      },
+      {
+        "code" : "81234003",
+        "display" : "Walk-in clinic"
+      },
+      {
+        "code" : "35971002",
+        "display" : "Ambulatory care site--OTHER--NOT LISTED"
+      },
+      {
+        "code" : "11424001",
+        "display" : "Ambulance-based care"
+      },
+      {
+        "code" : "409519008",
+        "display" : "Contained casualty setting"
+      },
+      {
+        "code" : "901005",
+        "display" : "Helicopter-based care"
+      },
+      {
+        "code" : "2081004",
+        "display" : "Hospital ship"
+      },
+      {
+        "code" : "59374000",
+        "display" : "Traveler's aid clinic"
+      },
+      {
+        "code" : "413456002",
+        "display" : "Adult day care center"
+      },
+      {
+        "code" : "413817003",
+        "display" : "Child day care center"
+      },
+      {
+        "code" : "310205006",
+        "display" : "Private residential home"
+      },
+      {
+        "code" : "419955002",
+        "display" : "Residential institution"
+      },
+      {
+        "code" : "272501009",
+        "display" : "Sports facility"
+      },
+      {
+        "code" : "394777002",
+        "display" : "Health encounter site--NOT LISTED"
+      },
+      {
+        "code" : "554221000005108"
+      },
+      {
+        "code" : "546821000005103"
+      },
+      {
+        "code" : "547011000005103"
+      },
+      {
+        "code" : "546811000005109"
+      },
+      {
+        "code" : "550621000005101"
+      },
+      {
+        "code" : "550631000005103"
+      },
+      {
+        "code" : "550641000005106"
+      },
+      {
+        "code" : "550651000005108"
+      },
+      {
+        "code" : "550661000005105"
+      },
+      {
+        "code" : "554211000005102"
+      },
+      {
+        "code" : "550711000005101"
+      },
+      {
+        "code" : "550671000005100"
+      },
+      {
+        "code" : "554061000005105"
+      },
+      {
+        "code" : "554041000005106"
+      },
+      {
+        "code" : "554021000005101"
+      },
+      {
+        "code" : "550681000005102"
+      },
+      {
+        "code" : "550691000005104"
+      },
+      {
+        "code" : "550701000005104"
+      },
+      {
+        "code" : "554231000005106"
+      },
+      {
+        "code" : "554051000005108"
+      },
+      {
+        "code" : "550811000005108"
+      },
+      {
+        "code" : "547211000005108"
+      },
+      {
+        "code" : "550891000005100"
+      },
+      {
+        "code" : "550881000005103"
+      },
+      {
+        "code" : "550411000005105"
+      },
+      {
+        "code" : "554851000005102"
+      },
+      {
+        "code" : "550861000005106"
+      },
+      {
+        "code" : "554881000005108"
+      },
+      {
+        "code" : "554861000005100"
+      },
+      {
+        "code" : "554821000005109"
+      },
+      {
+        "code" : "554411000005101"
+      },
+      {
+        "code" : "554871000005105"
+      },
+      {
+        "code" : "550821000005102"
+      },
+      {
+        "code" : "550871000005101"
+      },
+      {
+        "code" : "554241000005103"
+      },
+      {
+        "code" : "550841000005107"
+      },
+      {
+        "code" : "550851000005109"
+      },
+      {
+        "code" : "551611000005102"
+      },
+      {
+        "code" : "554071000005100"
+      },
+      {
+        "code" : "550831000005104"
+      },
+      {
+        "code" : "554031000005103"
+      },
+      {
+        "code" : "557511000005107"
+      },
+      {
+        "code" : "557501000005109"
+      },
+      {
+        "code" : "557531000005103"
+      },
+      {
+        "code" : "557591000005104"
+      },
+      {
+        "code" : "557521000005101"
+      },
+      {
+        "code" : "557561000005105"
+      },
+      {
+        "code" : "557541000005106"
+      },
+      {
+        "code" : "557581000005102"
+      },
+      {
+        "code" : "556841000005105"
+      },
+      {
+        "code" : "557671000005101"
+      },
+      {
+        "code" : "398070004"
+      },
+      {
+        "code" : "394761003"
+      },
+      {
+        "code" : "722173008"
+      },
+      {
+        "code" : "702871004"
+      },
+      {
+        "code" : "276037005"
+      },
+      {
+        "code" : "22232009"
+      },
+      {
+        "code" : "702824005"
+      },
+      {
+        "code" : "264361005"
+      },
+      {
+        "code" : "703069008"
+      },
+      {
+        "code" : "309964003"
+      },
+      {
+        "code" : "309904001"
+      },
+      {
+        "code" : "309939001"
+      },
+      {
+        "code" : "225728007"
+      },
+      {
+        "code" : "255203001"
+      },
+      {
+        "code" : "264372000"
+      }]
+    }]
+  }
+}
