@@ -1,0 +1,16 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "3f9a7e3e-bddb-452d-a452-52c62ea2eb32-215",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/3f9a7e3e-bddb-452d-a452-52c62ea2eb32-215",
+  "name" : "UnionMunicipalityCodesAndMunicipalityCodes",
+  "title" : "Union of DK Municipality Codes And DK Municipality Codes",
+  "status" : "active",
+  "date" : "2025-12-19T17:28:17+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }]
+}

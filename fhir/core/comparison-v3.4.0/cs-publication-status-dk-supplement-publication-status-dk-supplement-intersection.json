@@ -1,0 +1,88 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "3f9a7e3e-bddb-452d-a452-52c62ea2eb32-45",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/3f9a7e3e-bddb-452d-a452-52c62ea2eb32-45",
+  "name" : "IntersectionPublicationStatusAndPublicationStatus",
+  "title" : "Intersection of DK Publication Status And DK Publication Status",
+  "status" : "active",
+  "date" : "2025-12-19T17:28:17+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "concept" : [{
+    "code" : "draft",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "черновик"
+    },
+    {
+      "language" : "nl",
+      "value" : "ontwerp"
+    },
+    {
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/554471000005108",
+        "code" : "900000000000013009"
+      },
+      "value" : "Udkast"
+    }]
+  },
+  {
+    "code" : "active",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "активный"
+    },
+    {
+      "language" : "nl",
+      "value" : "actief"
+    },
+    {
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/554471000005108",
+        "code" : "900000000000013009"
+      },
+      "value" : "Aktiv"
+    }]
+  },
+  {
+    "code" : "retired",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "удалён"
+    },
+    {
+      "language" : "nl",
+      "value" : "verouderd"
+    },
+    {
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/554471000005108",
+        "code" : "900000000000013009"
+      },
+      "value" : "Udgået"
+    }]
+  },
+  {
+    "code" : "unknown",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/554471000005108",
+        "code" : "900000000000013009"
+      },
+      "value" : "Ukendt"
+    }]
+  }]
+}

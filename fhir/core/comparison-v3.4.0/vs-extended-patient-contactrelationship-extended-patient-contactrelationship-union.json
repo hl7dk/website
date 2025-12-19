@@ -1,0 +1,24 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "3f9a7e3e-bddb-452d-a452-52c62ea2eb32-245",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/3f9a7e3e-bddb-452d-a452-52c62ea2eb32-245",
+  "name" : "Unionextended-patient-contactrelationshipAndextended-patient-contactrelationship",
+  "title" : "Union of DK Extended Patient Contact Relationship And DK Extended Patient Contact Relationship",
+  "status" : "active",
+  "date" : "2025-12-19T17:28:17+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://hl7.org/fhir/ValueSet/patient-contactrelationship"]
+    },
+    {
+      "valueSet" : ["http://hl7.dk/fhir/core/ValueSet/dk-core-RelatedPersonRelationshipTypes"]
+    }]
+  }
+}

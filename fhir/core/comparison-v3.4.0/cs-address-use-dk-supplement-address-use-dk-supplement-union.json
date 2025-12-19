@@ -1,0 +1,64 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "3f9a7e3e-bddb-452d-a452-52c62ea2eb32-8",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/3f9a7e3e-bddb-452d-a452-52c62ea2eb32-8",
+  "name" : "UnionAddressUseAndAddressUse",
+  "title" : "Union of DK Address Use And DK Address Use",
+  "status" : "active",
+  "date" : "2025-12-19T17:28:17+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "concept" : [{
+    "code" : "home",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/554471000005108",
+        "code" : "900000000000013009"
+      },
+      "value" : "Hjem"
+    }]
+  },
+  {
+    "code" : "work",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/554471000005108",
+        "code" : "900000000000013009"
+      },
+      "value" : "Arbejde"
+    }]
+  },
+  {
+    "code" : "temp",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/554471000005108",
+        "code" : "900000000000013009"
+      },
+      "value" : "Midlertidig"
+    }]
+  },
+  {
+    "code" : "old",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/554471000005108",
+        "code" : "900000000000013009"
+      },
+      "value" : "Gammel / forkert"
+    }]
+  }]
+}

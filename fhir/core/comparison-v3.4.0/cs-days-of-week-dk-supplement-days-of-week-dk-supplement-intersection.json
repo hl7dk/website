@@ -1,0 +1,100 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "3f9a7e3e-bddb-452d-a452-52c62ea2eb32-21",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/3f9a7e3e-bddb-452d-a452-52c62ea2eb32-21",
+  "name" : "IntersectionDaysOfWeekAndDaysOfWeek",
+  "title" : "Intersection of DK Days Of Week And DK Days Of Week",
+  "status" : "active",
+  "date" : "2025-12-19T17:28:17+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "concept" : [{
+    "code" : "mon",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/554471000005108",
+        "code" : "900000000000013009"
+      },
+      "value" : "Mandag"
+    }]
+  },
+  {
+    "code" : "tue",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/554471000005108",
+        "code" : "900000000000013009"
+      },
+      "value" : "Tirsdag"
+    }]
+  },
+  {
+    "code" : "wed",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/554471000005108",
+        "code" : "900000000000013009"
+      },
+      "value" : "Onsdag"
+    }]
+  },
+  {
+    "code" : "thu",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/554471000005108",
+        "code" : "900000000000013009"
+      },
+      "value" : "Torsdag"
+    }]
+  },
+  {
+    "code" : "fri",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/554471000005108",
+        "code" : "900000000000013009"
+      },
+      "value" : "Fredag"
+    }]
+  },
+  {
+    "code" : "sat",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/554471000005108",
+        "code" : "900000000000013009"
+      },
+      "value" : "Lørdag"
+    }]
+  },
+  {
+    "code" : "sun",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "version" : "http://snomed.info/sct/554471000005108",
+        "code" : "900000000000013009"
+      },
+      "value" : "Søndag"
+    }]
+  }]
+}
