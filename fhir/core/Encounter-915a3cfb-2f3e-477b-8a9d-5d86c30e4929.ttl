@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/Encounter/915a3cfb-2f3e-477b-8a9d-5d86c30e4929> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "915a3cfb-2f3e-477b-8a9d-5d86c30e4929"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-encounter"^^xsd:anyURI ;
+       fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter 915a3cfb-2f3e-477b-8a9d-5d86c30e4929</b></p><a name=\"915a3cfb-2f3e-477b-8a9d-5d86c30e4929\"> </a><a name=\"hc915a3cfb-2f3e-477b-8a9d-5d86c30e4929\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-encounter.html\">Danish Core Encounter Profile</a></p></div><p><b>CareProvider</b>: <a href=\"Organization-19f9ee18-7677-4caf-88fe-8f6df2f2906e.html\">Organization Ortopædkirurgisk sengeafsnit</a></p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.0.1/CodeSystem-v3-ActCode.html#v3-ActCode-IMP\">ActCode: IMP</a> (inpatient encounter)</p><p><b>subject</b>: <a href=\"Patient-john.html\">Johnny Mand, DoB: 1960-01-02 ( urn:oid:1.2.208.176.1.2#0201609995)</a></p><p><b>period</b>: 2022-04-27 08:50:00+0100 --&gt; 2022-04-28 14:00:00+0100</p><blockquote><p><b>diagnosis</b></p><p><b>condition</b>: <a href=\"Condition-JohnFracture.html\">Condition Pertrokantær femurfraktur, højresidig</a></p><p><b>rank</b>: 1</p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>condition</b>: <a href=\"Condition-JohnDiabetes.html\">Condition Type 2-diabetes</a></p><p><b>rank</b>: 2</p></blockquote><p><b>serviceProvider</b>: <a href=\"Organization-8510eec9-180b-4e9c-95b6-02fad9f853d3.html\">Organization Ortopædkirurgisk sengeafdeling</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-care-provider"^^xsd:anyURI ;
+       fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-care-provider>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <http://hl7.dk/fhir/core/Organization/19f9ee18-7677-4caf-88fe-8f6df2f2906e> ;
+       fhir:reference [ fhir:v "Organization/19f9ee18-7677-4caf-88fe-8f6df2f2906e" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [
+       fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ;
+       fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActCode>
+     ] ;
+     fhir:code [ fhir:v "IMP" ]
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://hl7.dk/fhir/core/Patient/john> ;
+     fhir:reference [ fhir:v "Patient/john" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2022-04-27T08:50:00.0000+01:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2022-04-28T14:00:00.0000+01:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:diagnosis ( [
+     fhir:condition [
+       fhir:l <http://hl7.dk/fhir/core/Condition/JohnFracture> ;
+       fhir:reference [ fhir:v "Condition/JohnFracture" ]
+     ] ;
+     fhir:rank [ fhir:v "1"^^xsd:positiveInteger ]
+  ] [
+     fhir:condition [
+       fhir:l <http://hl7.dk/fhir/core/Condition/JohnDiabetes> ;
+       fhir:reference [ fhir:v "Condition/JohnDiabetes" ]
+     ] ;
+     fhir:rank [ fhir:v "2"^^xsd:positiveInteger ]
+  ] ) ; # 
+  fhir:serviceProvider [
+     fhir:l <http://hl7.dk/fhir/core/Organization/8510eec9-180b-4e9c-95b6-02fad9f853d3> ;
+     fhir:reference [ fhir:v "Organization/8510eec9-180b-4e9c-95b6-02fad9f853d3" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

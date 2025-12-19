@@ -1,0 +1,46 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "dk-core-encounter-priority",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet dk-core-encounter-priority</b></p><a name=\"dk-core-encounter-priority\"> </a><a name=\"hcdk-core-encounter-priority\"> </a><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/7.0.1/CodeSystem-v3-ActPriority.html\"><code>http://terminology.hl7.org/CodeSystem/v3-ActPriority</code></a><span title=\"Version is not explicitly stated, which means it is fixed to 3.0.0, the version found through the package references\"> version &#x1F4E6;3.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/7.0.1/CodeSystem-v3-ActPriority.html#v3-ActPriority-A\">A</a></td><td style=\"color: #cccccc\">ASAP</td><td>As soon as possible, next highest priority after stat.</td></tr><tr><td><a href=\"http://terminology.hl7.org/7.0.1/CodeSystem-v3-ActPriority.html#v3-ActPriority-EL\">EL</a></td><td style=\"color: #cccccc\">elective</td><td>Beneficial to the patient but not essential for survival.</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-encounter-priority",
+  "version" : "3.5.0",
+  "name" : "DkCoreEncounterPriority",
+  "title" : "DK priority codes for encounters",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-12-19T17:27:08+01:00",
+  "publisher" : "HL7 Denmark",
+  "contact" : [{
+    "name" : "HL7 Denmark",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.dk"
+    },
+    {
+      "system" : "email",
+      "value" : "dk-affiliate@hl7.dk"
+    }]
+  }],
+  "description" : "Value set used for indicating priority of an encounter",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
+      "concept" : [{
+        "code" : "A"
+      },
+      {
+        "code" : "EL"
+      }]
+    }]
+  }
+}
