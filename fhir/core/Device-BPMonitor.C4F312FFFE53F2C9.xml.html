@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Poul&#39;s A&amp;D blood pressure monitor - XML Representation - HL7 FHIR Implementation Guide: DK Core v3.4.0</title>
+    <title>Poul&#39;s A&amp;D blood pressure monitor - XML Representation - HL7 FHIR Implementation Guide: DK Core v3.5.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -33,10 +33,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -44,8 +44,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.118"}
-    h3,h4,h5,h6{--heading-prefix:"7.118"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.132"}
+    h3,h4,h5,h6{--heading-prefix:"7.132"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -63,7 +63,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">HL7 FHIR Implementation Guide: DK Core</span>
             <br/>
-            <span style="display:inline-block;">3.4.0 - release
+            <span style="display:inline-block;">3.5.0 - release
 
 
 
@@ -143,7 +143,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the HL7 FHIR Implementation Guide: DK Core (v3.4.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://hl7.dk/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the HL7 FHIR Implementation Guide: DK Core (v3.5.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://hl7.dk/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -199,17 +199,17 @@
 
 
 
-  <pre class="xml" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
+  <pre class="xml" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
 &lt;<a href="http://hl7.org/fhir/R4/device.html#Device">Device</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;BPMonitor.C4F312FFFE53F2C9&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.meta">meta</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/resource.html#Device.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;BPMonitor.C4F312FFFE53F2C9&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/resource.html#Device.meta">meta</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
              <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/uv/phd/StructureDefinition/PhdDevice&quot;/&gt;
-  &lt;/meta&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.text">text</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/resource.html#Device.meta">meta</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Device.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Device BPMonitor.C4F312FFFE53F2C9&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;BPMonitor.C4F312FFFE53F2C9&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcBPMonitor.C4F312FFFE53F2C9&quot;&gt; &lt;/a&gt;&lt;a name=&quot;BPMonitor.C4F312FFFE53F2C9-da-DK&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Ieee 11073 System Identifier/C4-F3-12-FF-FE-53-F2-C9, Bluetooth MAC address/C4-F3-12-53-F2-C9&lt;/p&gt;&lt;p&gt;&lt;b&gt;manufacturer&lt;/b&gt;: A&amp;amp;D Medical &lt;/p&gt;&lt;p&gt;&lt;b&gt;serialNumber&lt;/b&gt;: 5181000124&lt;/p&gt;&lt;p&gt;&lt;b&gt;modelNumber&lt;/b&gt;: UA-651BLE &lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{urn:iso:std:iso:11073:10101 65573}&quot;&gt;MDC_MOC_VMS_MDS_SIMP: Personal health device&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Specializations&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;SystemType&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Version&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:{urn:iso:std:iso:11073:10101 528391}&quot;&gt;MDC_DEV_SPEC_PROFILE_BP: Blood Pressure meter&lt;/span&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{urn:iso:std:iso:11073:10101 532352}&quot;&gt;MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 4.1&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{urn:iso:std:iso:11073:10101 531974}&quot;&gt;MDC_ID_PROD_SPEC_HW: Hardware version&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 0.00&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{urn:iso:std:iso:11073:10101 531975}&quot;&gt;MDC_ID_PROD_SPEC_SW: Software version&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 0.00&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{urn:iso:std:iso:11073:10101 531976}&quot;&gt;MDC_ID_PROD_SPEC_FW: Firmware version&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: BLP009_02_005 &lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{urn:iso:std:iso:11073:10101 532353}&quot;&gt;MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: Continua certified device list&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;valueCode&lt;/b&gt;: &lt;span title=&quot;Codes:{http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaPHD 32775}&quot;&gt;BluetoothLE: Blood pressure monitor&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{urn:iso:std:iso:11073:10101 68220}&quot;&gt;MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;valueCode&lt;/b&gt;: &lt;span title=&quot;Codes:{urn:iso:std:iso:11073:10101 532224}&quot;&gt;MDC_TIME_SYNC_NONE: No time synchronization&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7 532354.0}&quot;&gt;regulation-status&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;valueCode&lt;/b&gt;: &lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/v2-0136 N}&quot;&gt;Device is regulated&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7 68219.0}&quot;&gt;mds-time-capab-real-time-clock&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;valueCode&lt;/b&gt;: &lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/v2-0136 Y}&quot;&gt;Real time clock is supported&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7 68219.1}&quot;&gt;mds-time-capab-set-clock&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;valueCode&lt;/b&gt;: &lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/v2-0136 Y}&quot;&gt;Setting the real time clock is supported&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;<a name="end-xhtml"></a>
-  &lt;/text&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Device BPMonitor.C4F312FFFE53F2C9&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;BPMonitor.C4F312FFFE53F2C9&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcBPMonitor.C4F312FFFE53F2C9&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;http://hl7.org/fhir/uv/phd/STU1.1/StructureDefinition-PhdDevice.html&quot;&gt;PhdDevice&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Ieee 11073 System Identifier/C4-F3-12-FF-FE-53-F2-C9, Bluetooth MAC address/C4-F3-12-53-F2-C9&lt;/p&gt;&lt;p&gt;&lt;b&gt;manufacturer&lt;/b&gt;: A&amp;amp;D Medical &lt;/p&gt;&lt;p&gt;&lt;b&gt;serialNumber&lt;/b&gt;: 5181000124&lt;/p&gt;&lt;p&gt;&lt;b&gt;modelNumber&lt;/b&gt;: UA-651BLE &lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{urn:iso:std:iso:11073:10101 65573}&quot;&gt;MDC_MOC_VMS_MDS_SIMP: Personal health device&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Specializations&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;SystemType&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Version&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:{urn:iso:std:iso:11073:10101 528391}&quot;&gt;MDC_DEV_SPEC_PROFILE_BP: Blood Pressure meter&lt;/span&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{urn:iso:std:iso:11073:10101 532352}&quot;&gt;MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 4.1&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{urn:iso:std:iso:11073:10101 531974}&quot;&gt;MDC_ID_PROD_SPEC_HW: Hardware version&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 0.00&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{urn:iso:std:iso:11073:10101 531975}&quot;&gt;MDC_ID_PROD_SPEC_SW: Software version&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 0.00&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{urn:iso:std:iso:11073:10101 531976}&quot;&gt;MDC_ID_PROD_SPEC_FW: Firmware version&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: BLP009_02_005 &lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{urn:iso:std:iso:11073:10101 532353}&quot;&gt;MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: Continua certified device list&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;valueCode&lt;/b&gt;: &lt;span title=&quot;Codes:{http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaPHD 32775}&quot;&gt;BluetoothLE: Blood pressure monitor&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{urn:iso:std:iso:11073:10101 68220}&quot;&gt;MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;valueCode&lt;/b&gt;: &lt;span title=&quot;Codes:{urn:iso:std:iso:11073:10101 532224}&quot;&gt;MDC_TIME_SYNC_NONE: No time synchronization&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7 532354.0}&quot;&gt;regulation-status&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;valueCode&lt;/b&gt;: &lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/v2-0136 N}&quot;&gt;Device is regulated&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7 68219.0}&quot;&gt;mds-time-capab-real-time-clock&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;valueCode&lt;/b&gt;: &lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/v2-0136 Y}&quot;&gt;Real time clock is supported&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;property&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: &lt;span title=&quot;Codes:{http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7 68219.1}&quot;&gt;mds-time-capab-set-clock&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;valueCode&lt;/b&gt;: &lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/v2-0136 Y}&quot;&gt;Setting the real time clock is supported&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Device.text">text</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.identifier">identifier</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
@@ -217,11 +217,11 @@
                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SYSID&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Ieee 11073 System Identifier&quot;/&gt;
-      &lt;/coding&gt;
-    &lt;/type&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:oid:1.2.840.10004.1.1.1.0.0.1.0.0.1.2680&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;C4-F3-12-FF-FE-53-F2-C9&quot;/&gt;
-  &lt;/identifier&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/device.html#Device.identifier">identifier</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.identifier">identifier</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
@@ -229,11 +229,11 @@
                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaDeviceIdentifiers&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;BTMAC&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Bluetooth MAC address&quot;/&gt;
-      &lt;/coding&gt;
-    &lt;/type&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/sid/eui-48/bluetooth&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;C4-F3-12-53-F2-C9&quot;/&gt;
-  &lt;/identifier&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/device.html#Device.identifier">identifier</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.manufacturer">manufacturer</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;A&amp;amp;D Medical &quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.serialNumber">serialNumber</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;5181000124&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.modelNumber">modelNumber</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;UA-651BLE &quot;/&gt;
@@ -242,149 +242,149 @@
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:iso:std:iso:11073:10101&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;65573&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MDC_MOC_VMS_MDS_SIMP&quot;/&gt;
-    &lt;/coding&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MDC_MOC_VMS_MDS_SIMP: Personal health device&quot;/&gt;
-  &lt;/type&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/device.html#Device.type">type</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.specialization">specialization</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.specialization.systemType">systemType</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:iso:std:iso:11073:10101&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;528391&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MDC_DEV_SPEC_PROFILE_BP&quot;/&gt;
-      &lt;/coding&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MDC_DEV_SPEC_PROFILE_BP: Blood Pressure meter&quot;/&gt;
-    &lt;/systemType&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/device.html#Device.specialization.systemType">systemType</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.specialization.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
-  &lt;/specialization&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/device.html#Device.specialization">specialization</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.version">version</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.version.type">type</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:iso:std:iso:11073:10101&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;532352&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MDC_REG_CERT_DATA_CONTINUA_VERSION&quot;/&gt;
-      &lt;/coding&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MDC_REG_CERT_DATA_CONTINUA_VERSION: Continua version&quot;/&gt;
-    &lt;/type&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/device.html#Device.version.type">type</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.version.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;4.1&quot;/&gt;
-  &lt;/version&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/device.html#Device.version">version</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.version">version</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.version.type">type</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:iso:std:iso:11073:10101&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;531974&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MDC_ID_PROD_SPEC_HW&quot;/&gt;
-      &lt;/coding&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MDC_ID_PROD_SPEC_HW: Hardware version&quot;/&gt;
-    &lt;/type&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/device.html#Device.version.type">type</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.version.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.00&quot;/&gt;
-  &lt;/version&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/device.html#Device.version">version</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.version">version</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.version.type">type</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:iso:std:iso:11073:10101&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;531975&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MDC_ID_PROD_SPEC_SW&quot;/&gt;
-      &lt;/coding&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MDC_ID_PROD_SPEC_SW: Software version&quot;/&gt;
-    &lt;/type&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/device.html#Device.version.type">type</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.version.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.00&quot;/&gt;
-  &lt;/version&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/device.html#Device.version">version</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.version">version</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.version.type">type</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:iso:std:iso:11073:10101&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;531976&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MDC_ID_PROD_SPEC_FW&quot;/&gt;
-      &lt;/coding&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MDC_ID_PROD_SPEC_FW: Firmware version&quot;/&gt;
-    &lt;/type&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/device.html#Device.version.type">type</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.version.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;BLP009_02_005 &quot;/&gt;
-  &lt;/version&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/device.html#Device.version">version</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.property">property</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.property.type">type</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:iso:std:iso:11073:10101&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;532353&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST&quot;/&gt;
-      &lt;/coding&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>
             <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MDC_REG_CERT_DATA_CONTINUA_CERT_DEV_LIST: Continua certified device list&quot;/&gt;
-    &lt;/type&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/device.html#Device.property.type">type</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.property.valueCode">valueCode</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/uv/phd/CodeSystem/ContinuaPHD&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;32775&quot;/&gt;
-      &lt;/coding&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;BluetoothLE: Blood pressure monitor&quot;/&gt;
-    &lt;/valueCode&gt;
-  &lt;/property&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/device.html#Device.property.valueCode">valueCode</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/device.html#Device.property">property</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.property">property</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.property.type">type</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:iso:std:iso:11073:10101&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;68220&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MDC_TIME_SYNC_PROTOCOL&quot;/&gt;
-      &lt;/coding&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MDC_TIME_SYNC_PROTOCOL: Time synchronization protocol&quot;/&gt;
-    &lt;/type&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/device.html#Device.property.type">type</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.property.valueCode">valueCode</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:iso:std:iso:11073:10101&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;532224&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MDC_TIME_SYNC_NONE&quot;/&gt;
-      &lt;/coding&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MDC_TIME_SYNC_NONE: No time synchronization&quot;/&gt;
-    &lt;/valueCode&gt;
-  &lt;/property&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/device.html#Device.property.valueCode">valueCode</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/device.html#Device.property">property</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.property">property</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.property.type">type</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;532354.0&quot;/&gt;
-      &lt;/coding&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;regulation-status&quot;/&gt;
-    &lt;/type&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/device.html#Device.property.type">type</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.property.valueCode">valueCode</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v2-0136&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;N&quot;/&gt;
-      &lt;/coding&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Device is regulated&quot;/&gt;
-    &lt;/valueCode&gt;
-  &lt;/property&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/device.html#Device.property.valueCode">valueCode</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/device.html#Device.property">property</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.property">property</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.property.type">type</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;68219.0&quot;/&gt;
-      &lt;/coding&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;mds-time-capab-real-time-clock&quot;/&gt;
-    &lt;/type&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/device.html#Device.property.type">type</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.property.valueCode">valueCode</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v2-0136&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Y&quot;/&gt;
-      &lt;/coding&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Real time clock is supported&quot;/&gt;
-    &lt;/valueCode&gt;
-  &lt;/property&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/device.html#Device.property.valueCode">valueCode</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/device.html#Device.property">property</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.property">property</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.property.type">type</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/uv/phd/CodeSystem/ASN1ToHL7&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;68219.1&quot;/&gt;
-      &lt;/coding&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;mds-time-capab-set-clock&quot;/&gt;
-    &lt;/type&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/device.html#Device.property.type">type</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/device.html#Device.property.valueCode">valueCode</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v2-0136&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Y&quot;/&gt;
-      &lt;/coding&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Setting the real time clock is supported&quot;/&gt;
-    &lt;/valueCode&gt;
-  &lt;/property&gt;
-&lt;/Device&gt;</code></pre>
+    &lt;/<a href="http://hl7.org/fhir/R4/device.html#Device.property.valueCode">valueCode</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/device.html#Device.property">property</a>&gt;
+&lt;/<a href="http://hl7.org/fhir/R4/device.html#Device">Device</a>&gt;</code></pre>
 
 
   <!-- insert notes if present -->
@@ -408,7 +408,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Feb 1, 2025 19:23+0100">2025-02-01</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 19, 2025 17:27+0100">2025-12-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

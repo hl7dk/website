@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>DK NPU Subset - TTL Representation - HL7 FHIR Implementation Guide: DK Core v3.4.0</title>
+    <title>Nomenclature for Properties and Units (NPU) - Fragment for DK Core - TTL Representation - HL7 FHIR Implementation Guide: DK Core v3.5.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -33,10 +33,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -44,8 +44,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.56"}
-    h3,h4,h5,h6{--heading-prefix:"7.56"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.71"}
+    h3,h4,h5,h6{--heading-prefix:"7.71"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -63,7 +63,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">HL7 FHIR Implementation Guide: DK Core</span>
             <br/>
-            <span style="display:inline-block;">3.4.0 - release
+            <span style="display:inline-block;">3.5.0 - release
 
 
 
@@ -130,7 +130,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>DK NPU Subset</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Nomenclature for Properties and Units (NPU) - Fragment for DK Core</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -143,7 +143,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the HL7 FHIR Implementation Guide: DK Core (v3.4.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://hl7.dk/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the HL7 FHIR Implementation Guide: DK Core (v3.5.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://hl7.dk/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -189,7 +189,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: DK NPU Subset - TTL Representation</h2>
+<h2 id="root">: Nomenclature for Properties and Units (NPU) - Fragment for DK Core - TTL Representation</h2>
 
   <table class="colsi">
     <tr>
@@ -198,7 +198,7 @@
         
           Active
           
-            as of 2025-02-01
+            as of 2025-12-19
           
         
       </td>
@@ -214,9 +214,10 @@
 
 
 
-  <pre class="rdf" style="white-space: pre; overflow: hidden">
+  <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden">
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
@@ -224,18 +225,27 @@
 
  a fhir:CodeSystem ;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;dk-npu-fragment&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">fhir:text</a> [
+  <a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;dk-npu-fragment&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/domainresource.html#CodeSystem.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem dk-npu-fragment&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;dk-npu-fragment\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcdk-npu-fragment\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;dk-npu-fragment-da-DK\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Properties&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;This code system defines the following properties for its concepts&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;URI&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;comment&lt;/td&gt;&lt;td&gt;comment&lt;/td&gt;&lt;td&gt;http://hl7.org/fhir/concept-properties#comment&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td&gt;A string that provides additional detail pertinent to the use or understanding of the concept&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;effectiveDate&lt;/td&gt;&lt;td&gt;effectiveDate&lt;/td&gt;&lt;td&gt;http://hl7.org/fhir/concept-properties#effectiveDate&lt;/td&gt;&lt;td&gt;dateTime&lt;/td&gt;&lt;td&gt;The date at which the concept status was last changed&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;status&lt;/td&gt;&lt;td&gt;status&lt;/td&gt;&lt;td&gt;http://hl7.org/fhir/concept-properties#status&lt;/td&gt;&lt;td&gt;code&lt;/td&gt;&lt;td&gt;A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Inactive&lt;/td&gt;&lt;td&gt;inactive&lt;/td&gt;&lt;td&gt;http://hl7.org/fhir/concept-properties#inactive&lt;/td&gt;&lt;td&gt;boolean&lt;/td&gt;&lt;td&gt;True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ChangeDate&lt;/td&gt;&lt;td&gt;ChangeDate&lt;/td&gt;&lt;td&gt;https://iupac.org/fhir/npu/concept-properties#ChangeDate&lt;/td&gt;&lt;td&gt;dateTime&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;CreatedDate&lt;/td&gt;&lt;td&gt;CreatedDate&lt;/td&gt;&lt;td&gt;https://iupac.org/fhir/npu/concept-properties#CreatedDate&lt;/td&gt;&lt;td&gt;dateTime&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;System&lt;/td&gt;&lt;td&gt;System&lt;/td&gt;&lt;td&gt;https://iupac.org/fhir/npu/concept-properties#System&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SysSpec&lt;/td&gt;&lt;td&gt;SysSpec&lt;/td&gt;&lt;td&gt;https://iupac.org/fhir/npu/concept-properties#SysSpec&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Component&lt;/td&gt;&lt;td&gt;Component&lt;/td&gt;&lt;td&gt;https://iupac.org/fhir/npu/concept-properties#Component&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;CompSpec&lt;/td&gt;&lt;td&gt;CompSpec&lt;/td&gt;&lt;td&gt;https://iupac.org/fhir/npu/concept-properties#CompSpec&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Kind-of-property&lt;/td&gt;&lt;td&gt;Kind-of-property&lt;/td&gt;&lt;td&gt;https://iupac.org/fhir/npu/concept-properties#Kind-of-property&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Speciality&lt;/td&gt;&lt;td&gt;Speciality&lt;/td&gt;&lt;td&gt;https://iupac.org/fhir/npu/concept-properties#Speciality&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Code value&lt;/td&gt;&lt;td&gt;Code value&lt;/td&gt;&lt;td&gt;https://iupac.org/fhir/npu/concept-properties#Code-value&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Scale type&lt;/td&gt;&lt;td&gt;Scale type&lt;/td&gt;&lt;td&gt;https://iupac.org/fhir/npu/concept-properties#Scale-type&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Proc&lt;/td&gt;&lt;td&gt;Proc&lt;/td&gt;&lt;td&gt;https://iupac.org/fhir/npu/concept-properties#Proc&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Unit&lt;/td&gt;&lt;td&gt;Unit&lt;/td&gt;&lt;td&gt;https://iupac.org/fhir/npu/concept-properties#Unit&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;STATUS&lt;/td&gt;&lt;td&gt;STATUS&lt;/td&gt;&lt;td&gt;https://iupac.org/fhir/npu/concept-properties#STATUS&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Concepts&lt;/b&gt;&lt;/p&gt;&lt;p&gt;This case-insensitive code system &lt;code&gt;urn:oid:1.2.208.176.2.1&lt;/code&gt; provides &lt;b&gt;a fragment&lt;/b&gt; that includes following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;comment&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;effectiveDate&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;status&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Inactive&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Dansk (Danish, da)&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NPU03011&lt;a name=\&quot;dk-npu-fragment-NPU03011\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hb(Fe; O₂-bind.; aB)—Oxygen(O₂); sat. = ?&lt;/td&gt;&lt;td&gt;Unit defined&lt;/td&gt;&lt;td&gt;2000-12-20T00:00:00+01:00&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); mætn. = ?&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NPU27280&lt;a name=\&quot;dk-npu-fragment-NPU27280\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hb(Fe; O₂-bind.; aB)—Oxygen(O₂); sat.(Pulse oximetry) = ?&lt;/td&gt;&lt;td&gt;Unit defined&lt;/td&gt;&lt;td&gt;2007-11-23T00:00:00+01:00&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); mætn.(pulsoximetri) = ?&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NPU04034&lt;a name=\&quot;dk-npu-fragment-NPU04034\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pt(spec.)—Blood; temp. = ? °C&lt;/td&gt;&lt;td&gt;Unit defined&lt;/td&gt;&lt;td&gt;1996-05-08T00:00:00+02:00&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Pt(spec.)—Blod; temp. = ? °C&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NPU08676&lt;a name=\&quot;dk-npu-fragment-NPU08676\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pt—Body; temp. = ? °C&lt;/td&gt;&lt;td&gt;Unit defined&lt;/td&gt;&lt;td&gt;1997-04-15T00:00:00+02:00&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Pt—Legeme; temp. = ? °C&lt;/td&gt;&lt;/tr&gt;&lt;tr style=\&quot;background-color: #ffeeee\&quot;&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NPU58033&lt;a name=\&quot;dk-npu-fragment-NPU58033\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Artery(spec.)—Blood pressure(systolic); pr.(proc.) = ? mmHg&lt;/td&gt;&lt;td&gt;Specification changed&lt;/td&gt;&lt;td&gt;2021-03-19T00:00:00+01:00&lt;/td&gt;&lt;td&gt;deprecated&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;td&gt;Arterie(spec.)—Blodtryk(systolisk); tryk(proc.) = ? mmHg&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NPU57947&lt;a name=\&quot;dk-npu-fragment-NPU57947\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Artery(spec.)—Blood; pr.(systolic; proc.) = ? mmHg&lt;/td&gt;&lt;td&gt;Unit defined&lt;/td&gt;&lt;td&gt;2017-12-05T00:00:00+01:00&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Arterie(spec.)—Blod; tryk(systolisk;proc.) = ? mmHg&lt;/td&gt;&lt;/tr&gt;&lt;tr style=\&quot;background-color: #ffeeee\&quot;&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NPU58034&lt;a name=\&quot;dk-npu-fragment-NPU58034\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Artery(spec.)—Blood pressure(diastolic); pr.(proc.) = ? mmHg&lt;/td&gt;&lt;td&gt;Specification changed&lt;/td&gt;&lt;td&gt;2017-12-18T00:00:00+01:00&lt;/td&gt;&lt;td&gt;deprecated&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;td&gt;Arterie(spec.)—Blodtryk(diastolisk); tryk(proc.) = ? mmHg&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NPU57948&lt;a name=\&quot;dk-npu-fragment-NPU57948\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Artery(spec.)—Blood; pr.(diastolic; proc.) = ? mmHg&lt;/td&gt;&lt;td&gt;Unit defined&lt;/td&gt;&lt;td&gt;2017-12-05T00:00:00+01:00&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Arterie(spec.)—Blod; tryk(diastolisk;proc.) = ? mmHg&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NPU21692&lt;a name=\&quot;dk-npu-fragment-NPU21692\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Heart—Systole; frequency = ? × 1/min&lt;/td&gt;&lt;td&gt;Unit defined&lt;/td&gt;&lt;td&gt;2004-09-29T00:00:00+02:00&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Hjerte—Systole; frekv. = ? × 1/min&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NPU03794&lt;a name=\&quot;dk-npu-fragment-NPU03794\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pt—Body; height = ? m&lt;/td&gt;&lt;td&gt;Unit defined&lt;/td&gt;&lt;td&gt;1997-04-15T00:00:00+02:00&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Pt—Legeme; højde = ? m&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NPU03804&lt;a name=\&quot;dk-npu-fragment-NPU03804\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pt—Body; mass = ? kg&lt;/td&gt;&lt;td&gt;Unit defined&lt;/td&gt;&lt;td&gt;1996-01-01T00:00:00+01:00&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Pt—Legeme; masse = ? kg&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NPU27281&lt;a name=\&quot;dk-npu-fragment-NPU27281\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pt—Body; mass coefficient(mass/squared height) = ? kg/m²&lt;/td&gt;&lt;td&gt;Unit defined&lt;/td&gt;&lt;td&gt;2007-12-06T00:00:00+01:00&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem dk-npu-fragment&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;dk-npu-fragment\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcdk-npu-fragment\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Properties&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;This code system defines the following properties for its concepts&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;URI&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;comment&lt;/td&gt;&lt;td&gt;comment&lt;/td&gt;&lt;td&gt;http://hl7.org/fhir/concept-properties#comment&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td&gt;A string that provides additional detail pertinent to the use or understanding of the concept&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;effectiveDate&lt;/td&gt;&lt;td&gt;effectiveDate&lt;/td&gt;&lt;td&gt;http://hl7.org/fhir/concept-properties#effectiveDate&lt;/td&gt;&lt;td&gt;dateTime&lt;/td&gt;&lt;td&gt;The date at which the concept status was last changed&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;status&lt;/td&gt;&lt;td&gt;status&lt;/td&gt;&lt;td&gt;http://hl7.org/fhir/concept-properties#status&lt;/td&gt;&lt;td&gt;code&lt;/td&gt;&lt;td&gt;A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Inactive&lt;/td&gt;&lt;td&gt;inactive&lt;/td&gt;&lt;td&gt;http://hl7.org/fhir/concept-properties#inactive&lt;/td&gt;&lt;td&gt;boolean&lt;/td&gt;&lt;td&gt;True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;ChangeDate&lt;/td&gt;&lt;td&gt;ChangeDate&lt;/td&gt;&lt;td&gt;https://iupac.org/fhir/npu/concept-properties#ChangeDate&lt;/td&gt;&lt;td&gt;dateTime&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;CreatedDate&lt;/td&gt;&lt;td&gt;CreatedDate&lt;/td&gt;&lt;td&gt;https://iupac.org/fhir/npu/concept-properties#CreatedDate&lt;/td&gt;&lt;td&gt;dateTime&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;System&lt;/td&gt;&lt;td&gt;System&lt;/td&gt;&lt;td&gt;https://iupac.org/fhir/npu/concept-properties#System&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;SysSpec&lt;/td&gt;&lt;td&gt;SysSpec&lt;/td&gt;&lt;td&gt;https://iupac.org/fhir/npu/concept-properties#SysSpec&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Component&lt;/td&gt;&lt;td&gt;Component&lt;/td&gt;&lt;td&gt;https://iupac.org/fhir/npu/concept-properties#Component&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;CompSpec&lt;/td&gt;&lt;td&gt;CompSpec&lt;/td&gt;&lt;td&gt;https://iupac.org/fhir/npu/concept-properties#CompSpec&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Kind-of-property&lt;/td&gt;&lt;td&gt;Kind-of-property&lt;/td&gt;&lt;td&gt;https://iupac.org/fhir/npu/concept-properties#Kind-of-property&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Speciality&lt;/td&gt;&lt;td&gt;Speciality&lt;/td&gt;&lt;td&gt;https://iupac.org/fhir/npu/concept-properties#Speciality&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Code value&lt;/td&gt;&lt;td&gt;Code value&lt;/td&gt;&lt;td&gt;https://iupac.org/fhir/npu/concept-properties#Code-value&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Scale type&lt;/td&gt;&lt;td&gt;Scale type&lt;/td&gt;&lt;td&gt;https://iupac.org/fhir/npu/concept-properties#Scale-type&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Proc&lt;/td&gt;&lt;td&gt;Proc&lt;/td&gt;&lt;td&gt;https://iupac.org/fhir/npu/concept-properties#Proc&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Unit&lt;/td&gt;&lt;td&gt;Unit&lt;/td&gt;&lt;td&gt;https://iupac.org/fhir/npu/concept-properties#Unit&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;STATUS&lt;/td&gt;&lt;td&gt;STATUS&lt;/td&gt;&lt;td&gt;https://iupac.org/fhir/npu/concept-properties#STATUS&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Concepts&lt;/b&gt;&lt;/p&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;http://npu-terminology.org&lt;/code&gt; provides &lt;b&gt;a fragment&lt;/b&gt; that includes following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;comment&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;effectiveDate&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;status&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Inactive&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;ChangeDate&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;CreatedDate&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;System&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;SysSpec&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Component&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;CompSpec&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Kind-of-property&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Speciality&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code value&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Scale type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Proc&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Unit&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;STATUS&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Dansk (Danish, da)&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NPU03011&lt;a name=\&quot;dk-npu-fragment-NPU03011\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hb(Fe; O₂-bind.; aB)—Oxygen(O₂); sat. = ?&lt;/td&gt;&lt;td&gt;Unit defined&lt;/td&gt;&lt;td&gt;2000-12-20T00:00:00+01:00&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;td&gt;2000-12-20T00:00:00+01:00&lt;/td&gt;&lt;td&gt;1996-12-24T00:00:00+01:00&lt;/td&gt;&lt;td&gt;Hb&lt;/td&gt;&lt;td&gt;Fe; O₂-bind.;aB&lt;/td&gt;&lt;td&gt;Oxygen&lt;/td&gt;&lt;td&gt;O₂&lt;/td&gt;&lt;td&gt;sat.&lt;/td&gt;&lt;td&gt;CLC&lt;/td&gt;&lt;td&gt;3011&lt;/td&gt;&lt;td&gt;Ratio&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td&gt;ACTIVE&lt;/td&gt;&lt;td&gt;Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); mætn. = ?&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NPU27280&lt;a name=\&quot;dk-npu-fragment-NPU27280\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Hb(Fe; O₂-bind.; aB)—Oxygen(O₂); sat.(Pulse oximetry) = ?&lt;/td&gt;&lt;td&gt;Unit defined&lt;/td&gt;&lt;td&gt;2007-11-23T00:00:00+01:00&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td&gt;2007-11-23T00:00:00+01:00&lt;/td&gt;&lt;td&gt;Hb&lt;/td&gt;&lt;td&gt;Fe; O₂-bind.;aB&lt;/td&gt;&lt;td&gt;Oxygen&lt;/td&gt;&lt;td&gt;O₂&lt;/td&gt;&lt;td&gt;sat.&lt;/td&gt;&lt;td&gt;CLC&lt;/td&gt;&lt;td&gt;27280&lt;/td&gt;&lt;td&gt;Ratio&lt;/td&gt;&lt;td&gt;Pulse oximetry&lt;/td&gt;&lt;td/&gt;&lt;td&gt;ACTIVE&lt;/td&gt;&lt;td&gt;Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); mætn.(pulsoximetri) = ?&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NPU04034&lt;a name=\&quot;dk-npu-fragment-NPU04034\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pt(spec.)—Blood; temp. = ? °C&lt;/td&gt;&lt;td&gt;Unit defined&lt;/td&gt;&lt;td&gt;1996-05-08T00:00:00+02:00&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td&gt;1996-05-08T00:00:00+02:00&lt;/td&gt;&lt;td&gt;Pt&lt;/td&gt;&lt;td&gt;spec.&lt;/td&gt;&lt;td&gt;Blood&lt;/td&gt;&lt;td/&gt;&lt;td&gt;temp.&lt;/td&gt;&lt;td&gt;CLC&lt;/td&gt;&lt;td&gt;4034&lt;/td&gt;&lt;td&gt;Differential&lt;/td&gt;&lt;td/&gt;&lt;td&gt;°C&lt;/td&gt;&lt;td&gt;ACTIVE&lt;/td&gt;&lt;td&gt;Pt(spec.)—Blod; temp. = ? °C&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NPU08676&lt;a name=\&quot;dk-npu-fragment-NPU08676\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pt—Body; temp. = ? °C&lt;/td&gt;&lt;td&gt;Unit defined&lt;/td&gt;&lt;td&gt;1997-04-15T00:00:00+02:00&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td&gt;1997-04-15T00:00:00+02:00&lt;/td&gt;&lt;td&gt;Pt&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Body&lt;/td&gt;&lt;td/&gt;&lt;td&gt;temp.&lt;/td&gt;&lt;td&gt;CLC&lt;/td&gt;&lt;td&gt;8676&lt;/td&gt;&lt;td&gt;Differential&lt;/td&gt;&lt;td/&gt;&lt;td&gt;°C&lt;/td&gt;&lt;td&gt;ACTIVE&lt;/td&gt;&lt;td&gt;Pt—Legeme; temp. = ? °C&lt;/td&gt;&lt;/tr&gt;&lt;tr style=\&quot;background-color: #ffeeee\&quot;&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NPU58033&lt;a name=\&quot;dk-npu-fragment-NPU58033\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Artery(spec.)—Blood pressure(systolic); pr.(proc.) = ? mmHg&lt;/td&gt;&lt;td&gt;Specification changed&lt;/td&gt;&lt;td&gt;2021-03-19T00:00:00+01:00&lt;/td&gt;&lt;td&gt;deprecated&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;td&gt;2021-03-19T00:00:00+01:00&lt;/td&gt;&lt;td&gt;2017-12-18T00:00:00+01:00&lt;/td&gt;&lt;td&gt;Artery&lt;/td&gt;&lt;td&gt;spec.&lt;/td&gt;&lt;td&gt;Blood pressure&lt;/td&gt;&lt;td&gt;systolic&lt;/td&gt;&lt;td&gt;pr.&lt;/td&gt;&lt;td&gt;CLC&lt;/td&gt;&lt;td&gt;58033&lt;/td&gt;&lt;td&gt;Ratio&lt;/td&gt;&lt;td&gt;proc.&lt;/td&gt;&lt;td&gt;mmHg&lt;/td&gt;&lt;td&gt;ACTIVE&lt;/td&gt;&lt;td&gt;Arterie(spec.)—Blodtryk(systolisk); tryk(proc.) = ? mmHg&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NPU57947&lt;a name=\&quot;dk-npu-fragment-NPU57947\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Artery(spec.)—Blood; pr.(systolic; proc.) = ? mmHg&lt;/td&gt;&lt;td&gt;Unit defined&lt;/td&gt;&lt;td&gt;2017-12-05T00:00:00+01:00&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td&gt;2017-12-05T00:00:00+01:00&lt;/td&gt;&lt;td&gt;Artery&lt;/td&gt;&lt;td&gt;spec.&lt;/td&gt;&lt;td&gt;Blood&lt;/td&gt;&lt;td/&gt;&lt;td&gt;pr.&lt;/td&gt;&lt;td&gt;CLC&lt;/td&gt;&lt;td&gt;57947&lt;/td&gt;&lt;td&gt;Ratio&lt;/td&gt;&lt;td&gt;systolic;proc.&lt;/td&gt;&lt;td&gt;mmHg&lt;/td&gt;&lt;td&gt;ACTIVE&lt;/td&gt;&lt;td&gt;Arterie(spec.)—Blod; tryk(systolisk;proc.) = ? mmHg&lt;/td&gt;&lt;/tr&gt;&lt;tr style=\&quot;background-color: #ffeeee\&quot;&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NPU58034&lt;a name=\&quot;dk-npu-fragment-NPU58034\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Artery(spec.)—Blood pressure(diastolic); pr.(proc.) = ? mmHg&lt;/td&gt;&lt;td&gt;Specification changed&lt;/td&gt;&lt;td&gt;2017-12-18T00:00:00+01:00&lt;/td&gt;&lt;td&gt;deprecated&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;td/&gt;&lt;td&gt;2017-12-18T00:00:00+01:00&lt;/td&gt;&lt;td&gt;Artery&lt;/td&gt;&lt;td&gt;spec.&lt;/td&gt;&lt;td&gt;Blood pressure&lt;/td&gt;&lt;td&gt;diastolic&lt;/td&gt;&lt;td&gt;pr.&lt;/td&gt;&lt;td&gt;CLC&lt;/td&gt;&lt;td&gt;58034&lt;/td&gt;&lt;td&gt;Ratio&lt;/td&gt;&lt;td&gt;proc.&lt;/td&gt;&lt;td&gt;mmHg&lt;/td&gt;&lt;td&gt;ACTIVE&lt;/td&gt;&lt;td&gt;Arterie(spec.)—Blodtryk(diastolisk); tryk(proc.) = ? mmHg&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NPU57948&lt;a name=\&quot;dk-npu-fragment-NPU57948\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Artery(spec.)—Blood; pr.(diastolic; proc.) = ? mmHg&lt;/td&gt;&lt;td&gt;Unit defined&lt;/td&gt;&lt;td&gt;2017-12-05T00:00:00+01:00&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td&gt;2017-12-05T00:00:00+01:00&lt;/td&gt;&lt;td&gt;Artery&lt;/td&gt;&lt;td&gt;spec.&lt;/td&gt;&lt;td&gt;Blood&lt;/td&gt;&lt;td/&gt;&lt;td&gt;pr.&lt;/td&gt;&lt;td&gt;CLC&lt;/td&gt;&lt;td&gt;57948&lt;/td&gt;&lt;td&gt;Ratio&lt;/td&gt;&lt;td&gt;diastolic;proc.&lt;/td&gt;&lt;td&gt;mmHg&lt;/td&gt;&lt;td&gt;ACTIVE&lt;/td&gt;&lt;td&gt;Arterie(spec.)—Blod; tryk(diastolisk;proc.) = ? mmHg&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NPU21692&lt;a name=\&quot;dk-npu-fragment-NPU21692\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Heart—Systole; frequency = ? × 1/min&lt;/td&gt;&lt;td&gt;Unit defined&lt;/td&gt;&lt;td&gt;2004-09-29T00:00:00+02:00&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td&gt;2004-09-29T00:00:00+02:00&lt;/td&gt;&lt;td&gt;Heart&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Systole&lt;/td&gt;&lt;td/&gt;&lt;td&gt;frequency&lt;/td&gt;&lt;td&gt;FUN&lt;/td&gt;&lt;td&gt;21692&lt;/td&gt;&lt;td&gt;Ratio&lt;/td&gt;&lt;td/&gt;&lt;td&gt;× 1/min&lt;/td&gt;&lt;td&gt;ACTIVE&lt;/td&gt;&lt;td&gt;Hjerte—Systole; frekv. = ? × 1/min&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NPU03794&lt;a name=\&quot;dk-npu-fragment-NPU03794\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pt—Body; height = ? m&lt;/td&gt;&lt;td&gt;Unit defined&lt;/td&gt;&lt;td&gt;1997-04-15T00:00:00+02:00&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td&gt;1997-04-15T00:00:00+02:00&lt;/td&gt;&lt;td&gt;Pt&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Body&lt;/td&gt;&lt;td/&gt;&lt;td&gt;height&lt;/td&gt;&lt;td&gt;CLC&lt;/td&gt;&lt;td&gt;3794&lt;/td&gt;&lt;td&gt;Ratio&lt;/td&gt;&lt;td/&gt;&lt;td&gt;m&lt;/td&gt;&lt;td&gt;ACTIVE&lt;/td&gt;&lt;td&gt;Pt—Legeme; højde = ? m&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NPU03804&lt;a name=\&quot;dk-npu-fragment-NPU03804\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pt—Body; mass = ? kg&lt;/td&gt;&lt;td&gt;Unit defined&lt;/td&gt;&lt;td&gt;1996-01-01T00:00:00+01:00&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;td/&gt;&lt;td&gt;1996-01-01T00:00:00+01:00&lt;/td&gt;&lt;td&gt;Pt&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Body&lt;/td&gt;&lt;td/&gt;&lt;td&gt;mass&lt;/td&gt;&lt;td&gt;CLC&lt;/td&gt;&lt;td&gt;3804&lt;/td&gt;&lt;td&gt;Ratio&lt;/td&gt;&lt;td/&gt;&lt;td&gt;kg&lt;/td&gt;&lt;td&gt;ACTIVE&lt;/td&gt;&lt;td&gt;Pt—Legeme; masse = ? kg&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;NPU27281&lt;a name=\&quot;dk-npu-fragment-NPU27281\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pt—Body; mass coefficient(mass/squared height) = ? kg/m²&lt;/td&gt;&lt;td&gt;Unit defined&lt;/td&gt;&lt;td&gt;2007-12-06T00:00:00+01:00&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;td&gt;2007-12-06T00:00:00+01:00&lt;/td&gt;&lt;td&gt;2007-11-23T00:00:00+01:00&lt;/td&gt;&lt;td&gt;Pt&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Body&lt;/td&gt;&lt;td/&gt;&lt;td&gt;mass coefficient&lt;/td&gt;&lt;td&gt;CLC&lt;/td&gt;&lt;td&gt;27281&lt;/td&gt;&lt;td&gt;Ratio&lt;/td&gt;&lt;td&gt;mass/squared height&lt;/td&gt;&lt;td&gt;kg/m²&lt;/td&gt;&lt;td&gt;ACTIVE&lt;/td&gt;&lt;td&gt;Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
   ] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:oid:1.2.208.176.2.1&quot;^^xsd:anyURI] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;3.4.0&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">fhir:url</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://npu-terminology.org&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://npu-terminology.org&gt;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.identifier">fhir:identifier</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:ietf:rfc:3986&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;urn:ietf:rfc:3986&gt;     ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;urn:oid:1.2.208.176.9.1&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;3.5.0&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;NPU&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DK NPU Subset&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Nomenclature for Properties and Units (NPU) - Fragment for DK Core&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-02-01T19:23:09+01:00&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-12-19T17:27:08+01:00&quot;^^xsd:dateTime] ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;HL7 Denmark&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">fhir:contact</a> ( [
 <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;HL7 Denmark&quot; ] ;
@@ -243,89 +253,125 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://www.hl7.dk&quot; ]     ] [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;email&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;jenskristianvilladsen@gmail.com&quot; ]     ] )
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;dk-affiliate@hl7.dk&quot; ]     ] )
   ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;DK NPU Subsetted code system used in DK Core. The full version of NPU can be found at http://labterm.dk&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Fragment of the NPU code system used in DK Core. The full version of NPU can be found at http://labterm.dk&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.jurisdiction">fhir:jurisdiction</a> ( [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:iso:std:iso:3166&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:iso:std:iso:3166&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;urn:iso:std:iso:3166&gt;       ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;DK&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Denmark&quot; ]     ] )
   ] ) ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.copyright">fhir:copyright</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;The International Union of Pure and Applied Chemistry (IUPAC) and the International Federation of Clinical Chemistry and laboratory medicine (IFCC)&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">fhir:caseSensitive</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.copyright">fhir:copyright</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;https://cms.npu-terminology.org/wp-content/uploads/2024/06/NPU-License-Terms-of-Use.pdf&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">fhir:caseSensitive</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true] ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">fhir:content</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;fragment&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property">fhir:property</a> ( [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;comment&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/concept-properties#comment&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/concept-properties#comment&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://hl7.org/fhir/concept-properties#comment&gt;     ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;A string that provides additional detail pertinent to the use or understanding of the concept&quot; ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;string&quot; ]
   ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;effectiveDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/concept-properties#effectiveDate&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/concept-properties#effectiveDate&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://hl7.org/fhir/concept-properties#effectiveDate&gt;     ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;The date at which the concept status was last changed&quot; ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;dateTime&quot; ]
   ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;status&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/concept-properties#status&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/concept-properties#status&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://hl7.org/fhir/concept-properties#status&gt;     ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired&quot; ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;code&quot; ]
   ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;inactive&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/concept-properties#inactive&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/concept-properties#inactive&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;http://hl7.org/fhir/concept-properties#inactive&gt;     ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;True if the concept is not considered active - e.g. not a valid concept any more. Property type is boolean, default value is false. Note that the status property may also be used to indicate that a concept is inactive&quot; ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;boolean&quot; ]
   ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ChangeDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://iupac.org/fhir/npu/concept-properties#ChangeDate&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://iupac.org/fhir/npu/concept-properties#ChangeDate&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://iupac.org/fhir/npu/concept-properties#ChangeDate&gt;     ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;dateTime&quot; ]
   ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;CreatedDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://iupac.org/fhir/npu/concept-properties#CreatedDate&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://iupac.org/fhir/npu/concept-properties#CreatedDate&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://iupac.org/fhir/npu/concept-properties#CreatedDate&gt;     ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;dateTime&quot; ]
   ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;System&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://iupac.org/fhir/npu/concept-properties#System&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://iupac.org/fhir/npu/concept-properties#System&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://iupac.org/fhir/npu/concept-properties#System&gt;     ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;string&quot; ]
   ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;SysSpec&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://iupac.org/fhir/npu/concept-properties#SysSpec&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://iupac.org/fhir/npu/concept-properties#SysSpec&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://iupac.org/fhir/npu/concept-properties#SysSpec&gt;     ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;string&quot; ]
   ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Component&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://iupac.org/fhir/npu/concept-properties#Component&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://iupac.org/fhir/npu/concept-properties#Component&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://iupac.org/fhir/npu/concept-properties#Component&gt;     ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;string&quot; ]
   ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;CompSpec&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://iupac.org/fhir/npu/concept-properties#CompSpec&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://iupac.org/fhir/npu/concept-properties#CompSpec&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://iupac.org/fhir/npu/concept-properties#CompSpec&gt;     ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;string&quot; ]
   ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Kind-of-property&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://iupac.org/fhir/npu/concept-properties#Kind-of-property&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://iupac.org/fhir/npu/concept-properties#Kind-of-property&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://iupac.org/fhir/npu/concept-properties#Kind-of-property&gt;     ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;string&quot; ]
   ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Speciality&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://iupac.org/fhir/npu/concept-properties#Speciality&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://iupac.org/fhir/npu/concept-properties#Speciality&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://iupac.org/fhir/npu/concept-properties#Speciality&gt;     ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;string&quot; ]
   ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Code value&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://iupac.org/fhir/npu/concept-properties#Code-value&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://iupac.org/fhir/npu/concept-properties#Code-value&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://iupac.org/fhir/npu/concept-properties#Code-value&gt;     ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;string&quot; ]
   ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Scale type&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://iupac.org/fhir/npu/concept-properties#Scale-type&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://iupac.org/fhir/npu/concept-properties#Scale-type&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://iupac.org/fhir/npu/concept-properties#Scale-type&gt;     ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;string&quot; ]
   ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Proc&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://iupac.org/fhir/npu/concept-properties#Proc&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://iupac.org/fhir/npu/concept-properties#Proc&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://iupac.org/fhir/npu/concept-properties#Proc&gt;     ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;string&quot; ]
   ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Unit&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://iupac.org/fhir/npu/concept-properties#Unit&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://iupac.org/fhir/npu/concept-properties#Unit&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://iupac.org/fhir/npu/concept-properties#Unit&gt;     ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;string&quot; ]
   ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;STATUS&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://iupac.org/fhir/npu/concept-properties#STATUS&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">fhir:uri</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://iupac.org/fhir/npu/concept-properties#STATUS&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://iupac.org/fhir/npu/concept-properties#STATUS&gt;     ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;string&quot; ]
   ] ) ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">fhir:concept</a> ( [
@@ -336,33 +382,61 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); mætn. = ?&quot; ]     ] ) ;
     ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ChangeDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2000-12-20T00:00:00+01:00&quot;^^xsd:dateTime ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2000-12-20T00:00:00+01:00&quot;^^xsd:dateTime       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;CreatedDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;1996-12-24T00:00:00+01:00&quot;^^xsd:dateTime ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;1996-12-24T00:00:00+01:00&quot;^^xsd:dateTime       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;System&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Hb&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Hb&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;SysSpec&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Fe; O₂-bind.;aB&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Fe; O₂-bind.;aB&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Component&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Oxygen&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Oxygen&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;CompSpec&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;O₂&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;O₂&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Kind-of-property&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;sat.&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;sat.&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Speciality&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CLC&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CLC&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Code value&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;3011&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;3011&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Scale type&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ratio&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ratio&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;STATUS&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ACTIVE&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ACTIVE&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;effectiveDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2000-12-20T00:00:00+01:00&quot;^^xsd:dateTime ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2000-12-20T00:00:00+01:00&quot;^^xsd:dateTime       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;status&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#code">a</a> fhir:Code ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;comment&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Unit defined&quot; ]     ] )
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Unit defined&quot;       ]     ] )
   ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;NPU27280&quot; ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Hb(Fe; O₂-bind.; aB)—Oxygen(O₂); sat.(Pulse oximetry) = ?&quot; ] ;
@@ -371,33 +445,61 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); mætn.(pulsoximetri) = ?&quot; ]     ] ) ;
     ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;CreatedDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2007-11-23T00:00:00+01:00&quot;^^xsd:dateTime ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2007-11-23T00:00:00+01:00&quot;^^xsd:dateTime       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;System&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Hb&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Hb&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;SysSpec&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Fe; O₂-bind.;aB&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Fe; O₂-bind.;aB&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Component&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Oxygen&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Oxygen&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;CompSpec&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;O₂&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;O₂&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Kind-of-property&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;sat.&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;sat.&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Proc&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Pulse oximetry&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Pulse oximetry&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Speciality&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CLC&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CLC&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Code value&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;27280&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;27280&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Scale type&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ratio&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ratio&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;STATUS&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ACTIVE&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ACTIVE&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;effectiveDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2007-11-23T00:00:00+01:00&quot;^^xsd:dateTime ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2007-11-23T00:00:00+01:00&quot;^^xsd:dateTime       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;status&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#code">a</a> fhir:Code ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;comment&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Unit defined&quot; ]     ] )
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Unit defined&quot;       ]     ] )
   ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;NPU04034&quot; ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Pt(spec.)—Blood; temp. = ? °C&quot; ] ;
@@ -406,31 +508,57 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Pt(spec.)—Blod; temp. = ? °C&quot; ]     ] ) ;
     ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;CreatedDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;1996-05-08T00:00:00+02:00&quot;^^xsd:dateTime ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;1996-05-08T00:00:00+02:00&quot;^^xsd:dateTime       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;System&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Pt&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Pt&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;SysSpec&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;spec.&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;spec.&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Component&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Blood&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Blood&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Kind-of-property&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;temp.&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;temp.&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Unit&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;°C&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;°C&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Speciality&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CLC&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CLC&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Code value&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;4034&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;4034&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Scale type&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Differential&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Differential&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;STATUS&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ACTIVE&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ACTIVE&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;effectiveDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;1996-05-08T00:00:00+02:00&quot;^^xsd:dateTime ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;1996-05-08T00:00:00+02:00&quot;^^xsd:dateTime       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;status&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#code">a</a> fhir:Code ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;comment&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Unit defined&quot; ]     ] )
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Unit defined&quot;       ]     ] )
   ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;NPU08676&quot; ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Pt—Body; temp. = ? °C&quot; ] ;
@@ -439,29 +567,53 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Pt—Legeme; temp. = ? °C&quot; ]     ] ) ;
     ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;CreatedDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;1997-04-15T00:00:00+02:00&quot;^^xsd:dateTime ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;1997-04-15T00:00:00+02:00&quot;^^xsd:dateTime       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;System&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Pt&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Pt&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Component&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Body&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Body&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Kind-of-property&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;temp.&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;temp.&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Unit&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;°C&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;°C&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Speciality&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CLC&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CLC&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Code value&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;8676&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;8676&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Scale type&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Differential&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Differential&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;STATUS&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ACTIVE&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ACTIVE&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;effectiveDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;1997-04-15T00:00:00+02:00&quot;^^xsd:dateTime ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;1997-04-15T00:00:00+02:00&quot;^^xsd:dateTime       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;status&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#code">a</a> fhir:Code ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;comment&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Unit defined&quot; ]     ] )
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Unit defined&quot;       ]     ] )
   ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;NPU58033&quot; ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Artery(spec.)—Blood pressure(systolic); pr.(proc.) = ? mmHg&quot; ] ;
@@ -470,39 +622,73 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Arterie(spec.)—Blodtryk(systolisk); tryk(proc.) = ? mmHg&quot; ]     ] ) ;
     ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ChangeDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2021-03-19T00:00:00+01:00&quot;^^xsd:dateTime ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2021-03-19T00:00:00+01:00&quot;^^xsd:dateTime       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;CreatedDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2017-12-18T00:00:00+01:00&quot;^^xsd:dateTime ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2017-12-18T00:00:00+01:00&quot;^^xsd:dateTime       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;System&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Artery&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Artery&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;SysSpec&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;spec.&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;spec.&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Component&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Blood pressure&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Blood pressure&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;CompSpec&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;systolic&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;systolic&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Kind-of-property&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;pr.&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;pr.&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Proc&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;proc.&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;proc.&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Unit&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;mmHg&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;mmHg&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Speciality&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CLC&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CLC&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Code value&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;58033&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;58033&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Scale type&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ratio&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ratio&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;STATUS&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ACTIVE&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ACTIVE&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;effectiveDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2021-03-19T00:00:00+01:00&quot;^^xsd:dateTime ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2021-03-19T00:00:00+01:00&quot;^^xsd:dateTime       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;status&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;deprecated&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#code">a</a> fhir:Code ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;deprecated&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;comment&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Specification changed&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Specification changed&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;inactive&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ]     ] )
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#boolean">a</a> fhir:Boolean ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true       ]     ] )
   ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;NPU57947&quot; ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Artery(spec.)—Blood; pr.(systolic; proc.) = ? mmHg&quot; ] ;
@@ -511,33 +697,61 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Arterie(spec.)—Blod; tryk(systolisk;proc.) = ? mmHg&quot; ]     ] ) ;
     ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;CreatedDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2017-12-05T00:00:00+01:00&quot;^^xsd:dateTime ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2017-12-05T00:00:00+01:00&quot;^^xsd:dateTime       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;System&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Artery&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Artery&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;SysSpec&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;spec.&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;spec.&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Component&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Blood&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Blood&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Kind-of-property&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;pr.&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;pr.&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Proc&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;systolic;proc.&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;systolic;proc.&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Unit&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;mmHg&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;mmHg&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Speciality&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CLC&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CLC&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Code value&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;57947&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;57947&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Scale type&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ratio&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ratio&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;STATUS&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ACTIVE&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ACTIVE&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;effectiveDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2017-12-05T00:00:00+01:00&quot;^^xsd:dateTime ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2017-12-05T00:00:00+01:00&quot;^^xsd:dateTime       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;status&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#code">a</a> fhir:Code ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;comment&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Unit defined&quot; ]     ] )
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Unit defined&quot;       ]     ] )
   ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;NPU58034&quot; ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Artery(spec.)—Blood pressure(diastolic); pr.(proc.) = ? mmHg&quot; ] ;
@@ -546,37 +760,69 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Arterie(spec.)—Blodtryk(diastolisk); tryk(proc.) = ? mmHg&quot; ]     ] ) ;
     ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;CreatedDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2017-12-18T00:00:00+01:00&quot;^^xsd:dateTime ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2017-12-18T00:00:00+01:00&quot;^^xsd:dateTime       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;System&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Artery&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Artery&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;SysSpec&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;spec.&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;spec.&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Component&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Blood pressure&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Blood pressure&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;CompSpec&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;diastolic&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;diastolic&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Kind-of-property&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;pr.&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;pr.&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Proc&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;proc.&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;proc.&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Unit&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;mmHg&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;mmHg&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Speciality&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CLC&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CLC&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Code value&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;58034&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;58034&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Scale type&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ratio&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ratio&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;STATUS&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ACTIVE&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ACTIVE&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;effectiveDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2017-12-18T00:00:00+01:00&quot;^^xsd:dateTime ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2017-12-18T00:00:00+01:00&quot;^^xsd:dateTime       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;status&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;deprecated&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#code">a</a> fhir:Code ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;deprecated&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;comment&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Specification changed&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Specification changed&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;inactive&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ]     ] )
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#boolean">a</a> fhir:Boolean ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true       ]     ] )
   ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;NPU57948&quot; ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Artery(spec.)—Blood; pr.(diastolic; proc.) = ? mmHg&quot; ] ;
@@ -585,33 +831,61 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Arterie(spec.)—Blod; tryk(diastolisk;proc.) = ? mmHg&quot; ]     ] ) ;
     ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;CreatedDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2017-12-05T00:00:00+01:00&quot;^^xsd:dateTime ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2017-12-05T00:00:00+01:00&quot;^^xsd:dateTime       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;System&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Artery&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Artery&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;SysSpec&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;spec.&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;spec.&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Component&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Blood&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Blood&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Kind-of-property&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;pr.&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;pr.&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Proc&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;diastolic;proc.&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;diastolic;proc.&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Unit&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;mmHg&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;mmHg&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Speciality&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CLC&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CLC&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Code value&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;57948&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;57948&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Scale type&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ratio&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ratio&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;STATUS&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ACTIVE&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ACTIVE&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;effectiveDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2017-12-05T00:00:00+01:00&quot;^^xsd:dateTime ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2017-12-05T00:00:00+01:00&quot;^^xsd:dateTime       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;status&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#code">a</a> fhir:Code ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;comment&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Unit defined&quot; ]     ] )
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Unit defined&quot;       ]     ] )
   ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;NPU21692&quot; ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Heart—Systole; frequency = ? × 1/min&quot; ] ;
@@ -620,29 +894,53 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Hjerte—Systole; frekv. = ? × 1/min&quot; ]     ] ) ;
     ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;CreatedDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2004-09-29T00:00:00+02:00&quot;^^xsd:dateTime ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2004-09-29T00:00:00+02:00&quot;^^xsd:dateTime       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;System&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Heart&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Heart&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Component&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Systole&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Systole&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Kind-of-property&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;frequency&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;frequency&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Unit&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;× 1/min&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;× 1/min&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Speciality&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;FUN&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;FUN&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Code value&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;21692&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;21692&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Scale type&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ratio&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ratio&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;STATUS&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ACTIVE&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ACTIVE&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;effectiveDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2004-09-29T00:00:00+02:00&quot;^^xsd:dateTime ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2004-09-29T00:00:00+02:00&quot;^^xsd:dateTime       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;status&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#code">a</a> fhir:Code ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;comment&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Unit defined&quot; ]     ] )
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Unit defined&quot;       ]     ] )
   ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;NPU03794&quot; ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Pt—Body; height = ? m&quot; ] ;
@@ -651,29 +949,53 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Pt—Legeme; højde = ? m&quot; ]     ] ) ;
     ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;CreatedDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;1997-04-15T00:00:00+02:00&quot;^^xsd:dateTime ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;1997-04-15T00:00:00+02:00&quot;^^xsd:dateTime       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;System&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Pt&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Pt&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Component&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Body&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Body&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Kind-of-property&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;height&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;height&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Unit&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;m&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;m&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Speciality&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CLC&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CLC&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Code value&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;3794&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;3794&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Scale type&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ratio&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ratio&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;STATUS&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ACTIVE&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ACTIVE&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;effectiveDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;1997-04-15T00:00:00+02:00&quot;^^xsd:dateTime ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;1997-04-15T00:00:00+02:00&quot;^^xsd:dateTime       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;status&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#code">a</a> fhir:Code ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;comment&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Unit defined&quot; ]     ] )
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Unit defined&quot;       ]     ] )
   ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;NPU03804&quot; ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Pt—Body; mass = ? kg&quot; ] ;
@@ -682,29 +1004,53 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Pt—Legeme; masse = ? kg&quot; ]     ] ) ;
     ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;CreatedDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;1996-01-01T00:00:00+01:00&quot;^^xsd:dateTime ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;1996-01-01T00:00:00+01:00&quot;^^xsd:dateTime       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;System&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Pt&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Pt&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Component&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Body&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Body&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Kind-of-property&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;mass&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;mass&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Unit&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;kg&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;kg&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Speciality&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CLC&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CLC&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Code value&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;3804&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;3804&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Scale type&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ratio&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ratio&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;STATUS&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ACTIVE&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ACTIVE&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;effectiveDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;1996-01-01T00:00:00+01:00&quot;^^xsd:dateTime ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;1996-01-01T00:00:00+01:00&quot;^^xsd:dateTime       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;status&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#code">a</a> fhir:Code ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;comment&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Unit defined&quot; ]     ] )
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Unit defined&quot;       ]     ] )
   ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;NPU27281&quot; ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Pt—Body; mass coefficient(mass/squared height) = ? kg/m²&quot; ] ;
@@ -713,33 +1059,61 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²&quot; ]     ] ) ;
     ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;ChangeDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2007-12-06T00:00:00+01:00&quot;^^xsd:dateTime ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2007-12-06T00:00:00+01:00&quot;^^xsd:dateTime       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;CreatedDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2007-11-23T00:00:00+01:00&quot;^^xsd:dateTime ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2007-11-23T00:00:00+01:00&quot;^^xsd:dateTime       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;System&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Pt&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Pt&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Component&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Body&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Body&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Kind-of-property&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;mass coefficient&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;mass coefficient&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Proc&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;mass/squared height&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;mass/squared height&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Unit&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;kg/m²&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;kg/m²&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Speciality&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CLC&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CLC&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Code value&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;27281&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;27281&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Scale type&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ratio&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ratio&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;STATUS&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ACTIVE&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ACTIVE&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;effectiveDate&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2007-12-06T00:00:00+01:00&quot;^^xsd:dateTime ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">a</a> fhir:DateTime ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2007-12-06T00:00:00+01:00&quot;^^xsd:dateTime       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;status&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot; ]     ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#code">a</a> fhir:Code ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;       ]     ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;comment&quot; ] ;
-<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Unit defined&quot; ]     ] )
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:String ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Unit defined&quot;       ]     ] )
   ] ) . # 
 
 </pre>
@@ -767,7 +1141,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Feb 1, 2025 19:23+0100">2025-02-01</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 19, 2025 17:27+0100">2025-12-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

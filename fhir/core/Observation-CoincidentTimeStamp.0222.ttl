@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -11,45 +12,57 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
-       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
+       fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
      ] [
        fhir:v "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdCoincidentTimeStampObservation"^^xsd:anyURI ;
-       fhir:link <http://hl7.org/fhir/uv/phd/StructureDefinition/PhdCoincidentTimeStampObservation>
+       fhir:l <http://hl7.org/fhir/uv/phd/StructureDefinition/PhdCoincidentTimeStampObservation>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation CoincidentTimeStamp.0222</b></p><a name=\"CoincidentTimeStamp.0222\"> </a><a name=\"hcCoincidentTimeStamp.0222\"> </a><a name=\"CoincidentTimeStamp.0222-da-DK\"> </a><p><b>Observation Gateway Device</b>: <a href=\"Device-Telma.FEEDDADADEADBEEF.html\">Device: identifier = IEEE 11073 System Identifier: FE-ED-DA-DA-DE-AD-BE-EF; manufacturer = Trifork; modelNumber = Telma (Android); type = MDC_MOC_VMS_MDS_AHD</a></p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 67975}\">MDC_ATTR_TIME_ABS: Uses Absolute time clock</span></p><p><b>subject</b>: <a href=\"Patient-Poul.html\">Poul Hansen (no stated gender), DoB Unknown ( National unique individual identifier)</a></p><p><b>effective</b>: 2023-02-23 10:24:34+0100</p><p><b>performer</b>: <a href=\"Patient-Poul.html\">Poul Hansen (no stated gender), DoB Unknown ( National unique individual identifier)</a></p><p><b>value</b>: 2023-02-23 10:24:25+0100</p><p><b>device</b>: <a href=\"Device-BPMonitor.C4F312FFFE53F2C9.html\">Device: identifier = Ieee 11073 System Identifier: C4-F3-12-FF-FE-53-F2-C9,Bluetooth MAC address: Bluetooth_Address_Identifier#C4-F3-12-53-F2-C9; manufacturer = A&amp;D Medical ; serialNumber = 5181000124; modelNumber = UA-651BLE ; type = MDC_MOC_VMS_MDS_SIMP</a></p></div>"
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation CoincidentTimeStamp.0222</b></p><a name=\"CoincidentTimeStamp.0222\"> </a><a name=\"hcCoincidentTimeStamp.0222\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-dk-core-observation.html\">Danish Core Observation Profile</a>, <a href=\"http://hl7.org/fhir/uv/phd/STU1.1/StructureDefinition-PhdCoincidentTimeStampObservation.html\">PhdCoincidentTimeStampObservation</a></p></div><p><b>Observation Gateway Device</b>: <a href=\"Device-Telma.FEEDDADADEADBEEF.html\">Device: identifier = IEEE 11073 System Identifier: FE-ED-DA-DA-DE-AD-BE-EF; manufacturer = Trifork; modelNumber = Telma (Android); type = MDC_MOC_VMS_MDS_AHD</a></p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{urn:iso:std:iso:11073:10101 67975}\">MDC_ATTR_TIME_ABS: Uses Absolute time clock</span></p><p><b>subject</b>: <a href=\"Patient-Poul.html\">Poul Hansen (no stated gender), DoB Unknown ( National unique individual identifier)</a></p><p><b>effective</b>: 2023-02-23 10:24:34+0100</p><p><b>performer</b>: <a href=\"Patient-Poul.html\">Poul Hansen (no stated gender), DoB Unknown ( National unique individual identifier)</a></p><p><b>value</b>: 2023-02-23 10:24:25+0100</p><p><b>device</b>: <a href=\"Device-BPMonitor.C4F312FFFE53F2C9.html\">Device: identifier = Ieee 11073 System Identifier: C4-F3-12-FF-FE-53-F2-C9,Bluetooth MAC address: Bluetooth Address as a device identifier#C4-F3-12-53-F2-C9; manufacturer = A&amp;D Medical ; serialNumber = 5181000124; modelNumber = UA-651BLE ; type = MDC_MOC_VMS_MDS_SIMP</a></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
-     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice>
+     ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:link <http://hl7.dk/fhir/core/Device/Telma.FEEDDADADEADBEEF> ;
+       fhir:l <http://hl7.dk/fhir/core/Device/Telma.FEEDDADADEADBEEF> ;
        fhir:reference [ fhir:v "Device/Telma.FEEDDADADEADBEEF" ]
      ]
   ] ) ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:11073:10101>
+       ] ;
        fhir:code [ fhir:v "67975" ] ;
        fhir:display [ fhir:v "MDC_ATTR_TIME_ABS" ]
      ] ) ;
      fhir:text [ fhir:v "MDC_ATTR_TIME_ABS: Uses Absolute time clock" ]
   ] ; # 
   fhir:subject [
-     fhir:link <http://hl7.dk/fhir/core/Patient/Poul> ;
+     fhir:l <http://hl7.dk/fhir/core/Patient/Poul> ;
      fhir:reference [ fhir:v "Patient/Poul" ]
   ] ; # 
-  fhir:effective [ fhir:v "2023-02-23T10:24:34.467+01:00"^^xsd:dateTime] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2023-02-23T10:24:34.467+01:00"^^xsd:dateTime
+  ] ; # 
   fhir:performer ( [
-     fhir:link <http://hl7.dk/fhir/core/Patient/Poul> ;
+     fhir:l <http://hl7.dk/fhir/core/Patient/Poul> ;
      fhir:reference [ fhir:v "Patient/Poul" ]
   ] ) ; # 
-  fhir:value [ fhir:v "2023-02-23T10:24:25+01:00"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:DateTime ;
+     fhir:v "2023-02-23T10:24:25+01:00"^^xsd:dateTime
+  ] ; # 
   fhir:device [
-     fhir:link <http://hl7.dk/fhir/core/Device/BPMonitor.C4F312FFFE53F2C9> ;
+     fhir:l <http://hl7.dk/fhir/core/Device/BPMonitor.C4F312FFFE53F2C9> ;
      fhir:reference [ fhir:v "Device/BPMonitor.C4F312FFFE53F2C9" ]
   ] . # 
 

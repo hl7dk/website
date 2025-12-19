@@ -3,6 +3,7 @@
 <head>
   <title>DKCore : Terminology Server Report</title>
   <link href="fhir.css" rel="stylesheet"/>
+  <meta charset="utf-8"/>
   <style>
     span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
     span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
@@ -11,7 +12,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for DKCore</h1>
- <p>Generated Sat Feb 01 19:24:29 CET 2025, FHIR version 4.0.1 for hl7.fhir.dk.core#3.4.0 (canonical = <a href="http://hl7.dk/fhir/core">http://hl7.dk/fhir/core</a> (<a href="http://hl7.dk/fhir/core/history.html">history</a>))</p>
+ <p>Generated Fri Dec 19 17:29:57 CET 2025, FHIR version 4.0.1 for hl7.fhir.dk.core#3.5.0 (canonical = <a href="http://hl7.dk/fhir/core">http://hl7.dk/fhir/core</a> (<a href="http://hl7.dk/fhir/core/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -19,8 +20,16 @@
     <b>system-version</b>
 :     <code>http://snomed.info/sct|http://snomed.info/sct/554471000005108/version/20240331</code>
   </li>
+  <li>
+    <b>includeDesignations</b>
+:     <code>true</code>
+  </li>
+  <li>
+    <b>defaultDisplayLanguage</b>
+:     <code>da-DK</code>
+  </li>
 </ul>
-<h2>Tx Manager report for 'http://tx.fhir.org/tx-reg'</h2>
+<h2>Tx Manager report for 'https://tx.fhir.org/tx-reg'</h2>
 <p>
   <b>Decisions</b>
 </p>
@@ -44,218 +53,393 @@
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://hl7.org/fhir/fhir-types</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>Fallback: primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>http://hl7.org/fhir/fhir-types</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>http://tx.fhir.org/r4</td>
+    <td>https://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://snomed.info/sct/554471000005108/version/20240331</td>
     <td>auth = , candidates=</td>
   </tr>
   <tr>
     <td>Fallback: primary server</td>
-    <td>http://tx.fhir.org/r4</td>
+    <td>https://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://snomed.info/sct/554471000005108/version/20240331</td>
     <td>auth = , candidates=</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
-    <td>http://tx.fhir.org/r4</td>
+    <td>https://tx.fhir.org/r4</td>
     <td>null</td>
-    <td>urn:oid:1.2.208.176.2.4</td>
+    <td>http://snomed.info/sct/554471000005108/version/20240331</td>
     <td>auth = , candidates=</td>
   </tr>
   <tr>
     <td>Fallback: primary server</td>
-    <td>http://tx.fhir.org/r4</td>
+    <td>https://tx.fhir.org/r4</td>
     <td>null</td>
-    <td>urn:oid:1.2.208.176.2.4</td>
+    <td>http://snomed.info/sct/554471000005108/version/20240331</td>
     <td>auth = , candidates=</td>
   </tr>
   <tr>
-    <td>System not handled by any servers. Using primary server</td>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
-    <td>urn:oid:1.2.208.176.2.1</td>
+    <td>urn:iso:std:iso:3166</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>urn:iso:std:iso:11073:10101|20250520</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>urn:iso:std:iso:11073:10101|2.0.1</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>urn:iso:std:iso:11073:10101</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://loinc.org|3.1.0</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://npu-terminology.org|1.0.0</td>
     <td>auth = , candidates=</td>
   </tr>
   <tr>
     <td>Fallback: primary server</td>
-    <td>http://tx.fhir.org/r4</td>
+    <td>https://tx.fhir.org/r4</td>
     <td>null</td>
-    <td>urn:oid:1.2.208.176.2.1</td>
+    <td>http://npu-terminology.org|1.0.0</td>
     <td>auth = , candidates=</td>
   </tr>
   <tr>
-    <td>System not handled by any servers. Using primary server</td>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
-    <td>urn:oid:1.2.208.176.2.1</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|https://smt.esante.gouv.fr/fhir|https://apps.health.belgium.be/ontoserver/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/554471000005108</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|https://smt.esante.gouv.fr/fhir|https://apps.health.belgium.be/ontoserver/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://unitsofmeasure.org|3.0.1</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://unitsofmeasure.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1</td>
+    <td>[urn:iso:std:iso:11073:10101, http://loinc.org, urn:oid:1.2.208.176.2.4]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4, auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>[urn:iso:std:iso:11073:10101, http://loinc.org, urn:oid:1.2.208.176.2.4]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4, auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>[urn:iso:std:iso:11073:10101, http://loinc.org, urn:oid:1.2.208.176.2.4]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4, auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>[urn:iso:std:iso:11073:10101, http://loinc.org, urn:oid:1.2.208.176.2.4]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4, auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://npu-terminology.org</td>
     <td>auth = , candidates=</td>
   </tr>
   <tr>
     <td>Fallback: primary server</td>
-    <td>http://tx.fhir.org/r4</td>
+    <td>https://tx.fhir.org/r4</td>
     <td>null</td>
-    <td>urn:oid:1.2.208.176.2.1</td>
+    <td>http://npu-terminology.org</td>
     <td>auth = , candidates=</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
-    <td>http://tx.fhir.org/r4</td>
+    <td>https://tx.fhir.org/r4</td>
     <td>null</td>
-    <td>urn:oid:1.2.208.176.2.1</td>
+    <td>http://npu-terminology.org</td>
     <td>auth = , candidates=</td>
   </tr>
   <tr>
     <td>Fallback: primary server</td>
-    <td>http://tx.fhir.org/r4</td>
+    <td>https://tx.fhir.org/r4</td>
     <td>null</td>
-    <td>urn:oid:1.2.208.176.2.1</td>
+    <td>http://npu-terminology.org</td>
     <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>[urn:iso:std:iso:11073:10101, http://loinc.org, urn:oid:1.2.208.176.2.4]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4, auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1</td>
+    <td>[urn:iso:std:iso:11073:10101, http://loinc.org, urn:oid:1.2.208.176.2.4]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4, auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = , candidates=]</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>urn:oid:1.2.208.176.2.1</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>Fallback: primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>urn:oid:1.2.208.176.2.1</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>urn:oid:1.2.208.176.2.1</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>Fallback: primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>urn:oid:1.2.208.176.2.1</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>http://tx.fhir.org/r4</td>
+    <td>https://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes</td>
     <td>auth = , candidates=</td>
   </tr>
   <tr>
     <td>Fallback: primary server</td>
-    <td>http://tx.fhir.org/r4</td>
+    <td>https://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes</td>
     <td>auth = , candidates=</td>
   </tr>
   <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>http://tx.fhir.org/r4</td>
-    <td>null</td>
-    <td>urn:oid:1.2.208.176.2.21</td>
-    <td>auth = , candidates=</td>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1</td>
+    <td>[http://loinc.org, urn:oid:1.2.208.176.2.4]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = , candidates=]</td>
   </tr>
   <tr>
-    <td>Fallback: primary server</td>
-    <td>http://tx.fhir.org/r4</td>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.fhir.org/r4</td>
     <td>null</td>
-    <td>urn:oid:1.2.208.176.2.21</td>
-    <td>auth = , candidates=</td>
+    <td>[http://loinc.org, urn:oid:1.2.208.176.2.4]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>[http://loinc.org, urn:oid:1.2.208.176.2.4]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1</td>
+    <td>[http://loinc.org, urn:oid:1.2.208.176.2.4]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>[http://loinc.org, urn:oid:1.2.208.176.2.4]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>[http://loinc.org, urn:oid:1.2.208.176.2.4]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1</td>
+    <td>[http://loinc.org, urn:oid:1.2.208.176.2.4]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>[http://loinc.org, urn:oid:1.2.208.176.2.4]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>[http://loinc.org, urn:oid:1.2.208.176.2.4]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = , candidates=]</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
-    <td>http://tx.fhir.org/r4</td>
+    <td>https://tx.fhir.org/r4</td>
     <td>null</td>
     <td>urn:oid:1.2.208.176.2.4.12</td>
     <td>auth = , candidates=</td>
   </tr>
   <tr>
     <td>Fallback: primary server</td>
-    <td>http://tx.fhir.org/r4</td>
+    <td>https://tx.fhir.org/r4</td>
     <td>null</td>
     <td>urn:oid:1.2.208.176.2.4.12</td>
     <td>auth = , candidates=</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
-    <td>http://tx.fhir.org/r4</td>
+    <td>https://tx.fhir.org/r4</td>
     <td>null</td>
-    <td>http://localSystem.dk</td>
+    <td>urn:oid:1.2.208.184.100.9</td>
     <td>auth = , candidates=</td>
   </tr>
   <tr>
     <td>Fallback: primary server</td>
-    <td>http://tx.fhir.org/r4</td>
+    <td>https://tx.fhir.org/r4</td>
     <td>null</td>
-    <td>http://localSystem.dk</td>
+    <td>urn:oid:1.2.208.184.100.9</td>
     <td>auth = , candidates=</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
-    <td>http://tx.fhir.org/r4</td>
+    <td>https://tx.fhir.org/r4</td>
     <td>null</td>
-    <td>urn:oid:1.2.208.176.2.1</td>
+    <td>urn:oid:1.2.208.176.2.4</td>
     <td>auth = , candidates=</td>
   </tr>
   <tr>
     <td>Fallback: primary server</td>
-    <td>http://tx.fhir.org/r4</td>
+    <td>https://tx.fhir.org/r4</td>
     <td>null</td>
-    <td>urn:oid:1.2.208.176.2.1</td>
+    <td>urn:oid:1.2.208.176.2.4</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>[http://loinc.org, urn:oid:1.2.208.176.2.4]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1</td>
+    <td>[http://loinc.org, urn:oid:1.2.208.176.2.4]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>[http://loinc.org, urn:oid:1.2.208.176.2.4]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1</td>
+    <td>[http://loinc.org, urn:oid:1.2.208.176.2.4]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>[http://loinc.org, urn:oid:1.2.208.176.2.4]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1</td>
+    <td>[http://loinc.org, urn:oid:1.2.208.176.2.4]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://npu-terminology.org</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Fallback: primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>http://npu-terminology.org</td>
     <td>auth = , candidates=</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
-    <td>http://tx.fhir.org/r4</td>
+    <td>https://tx.fhir.org/r4</td>
     <td>null</td>
-    <td>urn:oid:1.2.208.176.2.1</td>
+    <td>http://snomed.info/sct/554471000005108/version/20240331</td>
     <td>auth = , candidates=</td>
   </tr>
   <tr>
     <td>Fallback: primary server</td>
-    <td>http://tx.fhir.org/r4</td>
+    <td>https://tx.fhir.org/r4</td>
     <td>null</td>
-    <td>urn:oid:1.2.208.176.2.1</td>
+    <td>http://snomed.info/sct/554471000005108/version/20240331</td>
     <td>auth = , candidates=</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
-    <td>http://tx.fhir.org/r4</td>
+    <td>https://tx.fhir.org/r4</td>
     <td>null</td>
-    <td>urn:oid:1.2.208.176.2.1</td>
+    <td>http://snomed.info/sct/554471000005108/version/20240331</td>
     <td>auth = , candidates=</td>
   </tr>
   <tr>
     <td>Fallback: primary server</td>
-    <td>http://tx.fhir.org/r4</td>
+    <td>https://tx.fhir.org/r4</td>
     <td>null</td>
-    <td>urn:oid:1.2.208.176.2.1</td>
+    <td>http://snomed.info/sct/554471000005108/version/20240331</td>
     <td>auth = , candidates=</td>
   </tr>
 </table>
-<h2>Primary Server: http://tx.fhir.org/r4</h2>
-<a href="http://tx.fhir.org/r4"></a>
-<p>Use Count: 15. Code Systems used: </p>
+<h2>Primary Server: https://tx.fhir.org/r4</h2>
+<a href="https://tx.fhir.org/r4"></a>
+<p>Use Count: 31. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -272,16 +456,20 @@
     </th>
   </tr>
   <tr>
-    <td>http://hl7.org/fhir/fhir-types</td>
+    <td>http://loinc.org</td>
     <td>0</td>
     <td>1</td>
-    <td></td>
+    <td>
+      <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
+    </td>
   </tr>
   <tr>
-    <td>http://localSystem.dk</td>
+    <td>http://loinc.org|3.1.0</td>
     <td>0</td>
     <td>1</td>
-    <td></td>
+    <td>
+      <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
+    </td>
   </tr>
   <tr>
     <td>http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes</td>
@@ -290,24 +478,88 @@
     <td></td>
   </tr>
   <tr>
-    <td>http://snomed.info/sct/554471000005108/version/20240331</td>
+    <td>http://npu-terminology.org</td>
     <td>0</td>
-    <td>1</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>urn:oid:1.2.208.176.2.1</td>
-    <td>0</td>
-    <td>8</td>
+    <td>3</td>
     <td>
-      <a href="CodeSystem-dk-npu-fragment.html">DK NPU Subset</a>
+      <a href="CodeSystem-dk-npu-fragment.html">Nomenclature for Properties and Units (NPU) - Fragment for DK Core</a>
     </td>
   </tr>
   <tr>
-    <td>urn:oid:1.2.208.176.2.21</td>
+    <td>http://npu-terminology.org|1.0.0</td>
+    <td>0</td>
+    <td>1</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.5.0/CodeSystem-NPU.html">Nomenclature for Properties and Units (NPU)</a>
+    </td>
+  </tr>
+  <tr>
+    <td>http://snomed.info/sct</td>
+    <td>0</td>
+    <td>1</td>
+    <td>
+      <a href="http://tx.fhir.org/r4/ValueSet/snomedct">SNOMED CT (all versions)</a>
+    </td>
+  </tr>
+  <tr>
+    <td>http://snomed.info/sct/554471000005108/version/20240331</td>
+    <td>0</td>
+    <td>4</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>http://snomed.info/sct|http://snomed.info/sct/554471000005108</td>
     <td>0</td>
     <td>1</td>
     <td></td>
+  </tr>
+  <tr>
+    <td>http://unitsofmeasure.org</td>
+    <td>0</td>
+    <td>1</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ucum.html">Unified Code for Units of Measure (UCUM)</a>
+    </td>
+  </tr>
+  <tr>
+    <td>http://unitsofmeasure.org|3.0.1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ucum.html">Unified Code for Units of Measure (UCUM)</a>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:iso:std:iso:11073:10101</td>
+    <td>0</td>
+    <td>1</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-mdc.html">ISO/IEEE 11073 Medical Device Communication Nomenclature</a>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:iso:std:iso:11073:10101|2.0.1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.3.0/CodeSystem-v3-mdc.html">ISO 11073-10101 Health informatics - Point-of-care</a>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:iso:std:iso:11073:10101|20250520</td>
+    <td>0</td>
+    <td>1</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-mdc.html">ISO/IEEE 11073 Medical Device Communication Nomenclature</a>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:iso:std:iso:3166</td>
+    <td>0</td>
+    <td>1</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>
+    </td>
   </tr>
   <tr>
     <td>urn:oid:1.2.208.176.2.4</td>
@@ -317,6 +569,12 @@
   </tr>
   <tr>
     <td>urn:oid:1.2.208.176.2.4.12</td>
+    <td>0</td>
+    <td>1</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>urn:oid:1.2.208.184.100.9</td>
     <td>0</td>
     <td>1</td>
     <td></td>

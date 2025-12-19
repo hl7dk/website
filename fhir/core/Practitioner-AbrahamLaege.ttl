@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -11,12 +12,12 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"^^xsd:anyURI ;
-       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner>
+       fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner AbrahamLaege</b></p><a name=\"AbrahamLaege\"> </a><a name=\"hcAbrahamLaege\"> </a><a name=\"AbrahamLaege-da-DK\"> </a><p><b>name</b>: Abraham Murakami</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><code>https://autregweb.sst.dk</code>/005ML</td><td><span title=\"Codes:{http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes 7170}\">Læge</span></td></tr></table></div>"
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner AbrahamLaege</b></p><a name=\"AbrahamLaege\"> </a><a name=\"hcAbrahamLaege\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-practitioner.html\">Danish Core Practitioner Profile</a></p></div><p><b>name</b>: Abraham Murakami</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: <code>https://autregweb.sst.dk</code>/005ML</p><p><b>code</b>: <span title=\"Codes:{http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes 7170}\">Læge</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: <code>https://autregweb.sst.dk</code>/005M6</p><p><b>code</b>: <span title=\"Codes:{http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes 5166}\">Sygeplejerske</span></p></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:name ( [
      fhir:text [ fhir:v "Abraham Murakami" ] ;
@@ -25,14 +26,36 @@
   ] ) ; # 
   fhir:qualification ( [
      fhir:identifier ( [
-       fhir:system [ fhir:v "https://autregweb.sst.dk"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "https://autregweb.sst.dk"^^xsd:anyURI ;
+         fhir:l <https://autregweb.sst.dk>
+       ] ;
        fhir:value [ fhir:v "005ML" ]
      ] ) ;
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "7170" ] ;
-         fhir:display [ fhir:v "Læge" ]
+         fhir:system [
+           fhir:v "http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes"^^xsd:anyURI ;
+           fhir:l <http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes>
+         ] ;
+         fhir:code [ fhir:v "7170" ]
+       ] )
+     ]
+  ] [
+     fhir:identifier ( [
+       fhir:system [
+         fhir:v "https://autregweb.sst.dk"^^xsd:anyURI ;
+         fhir:l <https://autregweb.sst.dk>
+       ] ;
+       fhir:value [ fhir:v "005M6" ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes"^^xsd:anyURI ;
+           fhir:l <http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes>
+         ] ;
+         fhir:code [ fhir:v "5166" ]
        ] )
      ]
   ] ) . # 

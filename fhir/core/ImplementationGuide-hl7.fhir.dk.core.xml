@@ -3,15 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.dk.core"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.dk.core</b></p><a name="hl7.fhir.dk.core"> </a><a name="hchl7.fhir.dk.core"> </a><a name="hl7.fhir.dk.core-da-DK"> </a><h2>DKCore</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core</pre><div><p>A FHIR Implementation Guide for the Danish common needs across healthcare sectors</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.dk.core</b></p><a name="hl7.fhir.dk.core"> </a><a name="hchl7.fhir.dk.core"> </a><h2>DKCore</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core</pre><div><p>A FHIR Implementation Guide for the Danish common needs across healthcare sectors</p>
 </div></div>
   </text>
   <url value="http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core"/>
-  <version value="3.4.0"/>
+  <version value="3.5.0"/>
   <name value="DKCore"/>
   <title value="HL7 FHIR Implementation Guide: DK Core"/>
   <status value="active"/>
-  <date value="2025-02-01T19:23:09+01:00"/>
+  <date value="2025-12-19T17:27:08+01:00"/>
   <publisher value="HL7 Denmark"/>
   <contact>
     <name value="HL7 Denmark"/>
@@ -21,7 +21,7 @@
     </telecom>
     <telecom>
       <system value="email"/>
-      <value value="jenskristianvilladsen@gmail.com"/>
+      <value value="dk-affiliate@hl7.dk"/>
     </telecom>
   </contact>
   <description value="A FHIR Implementation Guide for the Danish common needs across healthcare sectors"/>
@@ -41,15 +41,12 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.2.0"/>
+    <version value="7.0.1"/>
   </dependsOn>
-  <dependsOn id="hl7ext">
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
-      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
-    </extension>
-    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+  <dependsOn id="hl7_fhir_uv_extensions_r4">
+    <uri value="http://hl7.org/fhir/extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="5.1.0"/>
+    <version value="5.3.0-ballot-tc1"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_uv_phd">
     <uri value="http://hl7.org/fhir/uv/phd/ImplementationGuide/hl7.fhir.uv.phd"/>
@@ -59,7 +56,12 @@
   <dependsOn id="hl7_fhir_uv_ipa">
     <uri value="http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa"/>
     <packageId value="hl7.fhir.uv.ipa"/>
-    <version value="1.0.0"/>
+    <version value="1.1.0"/>
+  </dependsOn>
+  <dependsOn id="ihe_iti_mhd">
+    <uri value="https://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.iti.mhd"/>
+    <packageId value="ihe.iti.mhd"/>
+    <version value="4.2.3"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -99,14 +101,6 @@
         <valueString value="special-url"/>
       </extension>
       <extension url="value">
-        <valueString value="urn:oid:1.2.208.176.2.1"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
         <valueString value="urn:iso:std:iso:11073:10101"/>
       </extension>
     </extension>
@@ -132,6 +126,14 @@
       </extension>
       <extension url="value">
         <valueString value="urn:oid:1.2.208.176.2.4.12"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://npu-terminology.org"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -326,8 +328,13 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters">
+      <valueReference>
+        <reference value="Parameters/expansion-parameters"/>
+      </valueReference>
+    </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r4#0.3.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.9.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -366,14 +373,6 @@
         <valueCode value="special-url"/>
       </extension>
       <extension url="value">
-        <valueString value="urn:oid:1.2.208.176.2.1"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueCode value="special-url"/>
-      </extension>
-      <extension url="value">
         <valueString value="urn:iso:std:iso:11073:10101"/>
       </extension>
     </extension>
@@ -399,6 +398,14 @@
       </extension>
       <extension url="value">
         <valueString value="urn:oid:1.2.208.176.2.4.12"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://npu-terminology.org"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -595,6 +602,17 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/915a3cfb-2f3e-477b-8a9d-5d86c30e4929"/>
+      </reference>
+      <name value="A closed inpatient encounter"/>
+      <description value="Encounter happened on a surgery department on a hospital"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Practitioner"/>
       </extension>
       <reference>
@@ -614,6 +632,39 @@
       <name value="ambulance"/>
       <description value="Ambulance provided by Acme Corp"/>
       <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/0c5e4905-5c2e-4254-8837-770c3724cd13"/>
+      </reference>
+      <name value="An open-ended (ongoing) inpatient encounter"/>
+      <description value="Encounter is happening on a surgery department on a hospital"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a12"/>
+      </reference>
+      <name value="APD-DK DocumentReference instance of DkCoreMinimalDocumentReference."/>
+      <description value="APD-DK DocumentReference instance of DkCoreMinimalDocumentReference, containing relevant metadata"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-minimaldocumentreference"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/dk-core-care-provider"/>
+      </reference>
+      <name value="CareProvider"/>
+      <description value="The organization (facility) responsible for the care of the patient during this encounter"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -741,10 +792,32 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/dk-core-encounter"/>
+      </reference>
+      <name value="Danish Core Encounter Profile"/>
+      <description value="HL7 Denmark core profile for an encounter"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/dk-core-location"/>
       </reference>
       <name value="Danish Core Location Profile"/>
       <description value="HL7 Denmark core profile for locations"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/dk-core-minimaldocumentreference"/>
+      </reference>
+      <name value="Danish Core Minimal DocumentReference Profile"/>
+      <description value="HL7 Denmark core profile for a Minimal DocumentReference inherited from IHE MHD Minimal DocumentReference"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1156,17 +1229,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/dk-npu-fragment"/>
-      </reference>
-      <name value="DK NPU Subset"/>
-      <description value="DK NPU Subsetted code system used in DK Core. The full version of NPU can be found at http://labterm.dk"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1174,6 +1236,17 @@
       </reference>
       <name value="DK priority codes"/>
       <description value="DK Codes for priority"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/dk-core-encounter-priority"/>
+      </reference>
+      <name value="DK priority codes for encounters"/>
+      <description value="Value set used for indicating priority of an encounter"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1284,6 +1357,17 @@
       </reference>
       <name value="DK SOR Organization Type"/>
       <description value="Value set used for indicating the organization type for organizations from SOR"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/dk-core-practice-setting-code"/>
+      </reference>
+      <name value="DK SOR Practice Setting Code"/>
+      <description value="Values used for the document metadata attribute practiceSettingCode, which is an attribute specifying the clinical specialty where the act that resulted in the document was performed (e.g., Family Practice, Laboratory, Radiology). The value set is based on a subset of the code list from the SOR lookup table 'SOR-Kliniske specialer' (https://sor.sum.dsdn.dk/lookupdata/#clinical_speciality, accessable on Sundhedsdatanettet (SDN)), which is based on SNOMED CT codes."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1410,6 +1494,28 @@
       </reference>
       <name value="ElseUrinStix"/>
       <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/8510eec9-180b-4e9c-95b6-02fad9f853d3"/>
+      </reference>
+      <name value="Example hospital department"/>
+      <description value="Example hospital department with the orthopedic surgery specialty"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/19f9ee18-7677-4caf-88fe-8f6df2f2906e"/>
+      </reference>
+      <name value="Example hospital sub-department"/>
+      <description value="Example hospital sub-department with the orthopedic surgery specialty"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1564,6 +1670,17 @@
       <name value="Henvisning vedr. modermærkekræft"/>
       <description value="Henvisning fra læge til sygehus vedr. mistanke om at John har modermærkekræft"/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/dk-core-documentreference-version-id-extension"/>
+      </reference>
+      <name value="HL7 Denmark core DocumentReference Version ID extension"/>
+      <description value="Extension containing information about the version of the DocumentReference for a specific standard. The version is included in the R5 version of the resource."/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1810,6 +1927,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/dk-npu-fragment"/>
+      </reference>
+      <name value="Nomenclature for Properties and Units (NPU) - Fragment for DK Core"/>
+      <description value="Fragment of the NPU code system used in DK Core. The full version of NPU can be found at http://labterm.dk"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -1829,6 +1957,39 @@
       <name value="Placeholder for a physician"/>
       <description value="This is an example of PractitionerRole where it acts as a placeholder for an unknown person. This may be useful in several scenarios."/>
       <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/dk-core-planned-end-date"/>
+      </reference>
+      <name value="PlannedEndDate"/>
+      <description value="The planned end date/time (or discharge date) of the encounter"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/dk-core-planned-start-date"/>
+      </reference>
+      <name value="PlannedStartDate"/>
+      <description value="The planned start date/time (or admission date) of the encounter"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a13"/>
+      </reference>
+      <name value="PLR-DK DocumentReference instance of DkCoreMinimalDocumentReference."/>
+      <description value="PLR-DK DocumentReference instance of DkCoreMinimalDocumentReference, containing relevant metadata"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-minimaldocumentreference"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1983,6 +2144,39 @@
       <name value="SOR Identifier"/>
       <description value="Identifier holding the official SOR identifier for a danish healthcare organization"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/8fa7df76-bec2-4fe2-9a44-750030a0eda0"/>
+      </reference>
+      <name value="XDS document bundled Author Organization"/>
+      <description value="Instance of a XDS document bundled  author organization"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/42cb9200-f421-4d08-8391-7d51a2503cb4"/>
+      </reference>
+      <name value="XDS document bundled Author Person"/>
+      <description value="Instance of a XDS document bundled  author person"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/37628912-7816-47a3-acd8-396b610be142"/>
+      </reference>
+      <name value="XDS document bundled Source Patient"/>
+      <description value="Instance of a XDS document bundled  source patient"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

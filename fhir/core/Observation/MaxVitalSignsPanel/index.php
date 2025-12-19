@@ -7,19 +7,19 @@ function Redirect($url)
 
 $accept = $_SERVER['HTTP_ACCEPT'];
 if (strpos($accept, 'application/json+fhir') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/Observation-MaxVitalSignsPanel.json2');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/Observation-MaxVitalSignsPanel.json2');
 elseif (strpos($accept, 'application/fhir+json') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/Observation-MaxVitalSignsPanel.json1');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/Observation-MaxVitalSignsPanel.json1');
 elseif (strpos($accept, 'json') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/Observation-MaxVitalSignsPanel.json');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/Observation-MaxVitalSignsPanel.json');
 elseif (strpos($accept, 'application/xml+fhir') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/Observation-MaxVitalSignsPanel.xml2');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/Observation-MaxVitalSignsPanel.xml2');
 elseif (strpos($accept, 'application/fhir+xml') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/Observation-MaxVitalSignsPanel.xml1');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/Observation-MaxVitalSignsPanel.xml1');
 elseif (strpos($accept, 'html') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/Observation-MaxVitalSignsPanel.html');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/Observation-MaxVitalSignsPanel.html');
 else 
-  Redirect('http://hl7.dk/fhir/core/3.4.0/Observation-MaxVitalSignsPanel.xml');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/Observation-MaxVitalSignsPanel.xml');
 ?>
     
 You should not be seeing this page. If you do, PHP has failed badly.

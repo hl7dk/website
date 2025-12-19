@@ -3,14 +3,14 @@
   "id" : "hl7.fhir.dk.core",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.dk.core</b></p><a name=\"hl7.fhir.dk.core\"> </a><a name=\"hchl7.fhir.dk.core\"> </a><a name=\"hl7.fhir.dk.core-da-DK\"> </a><h2>DKCore</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core</pre><div><p>A FHIR Implementation Guide for the Danish common needs across healthcare sectors</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.dk.core</b></p><a name=\"hl7.fhir.dk.core\"> </a><a name=\"hchl7.fhir.dk.core\"> </a><h2>DKCore</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core</pre><div><p>A FHIR Implementation Guide for the Danish common needs across healthcare sectors</p>\n</div></div>"
   },
   "url" : "http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core",
-  "version" : "3.4.0",
+  "version" : "3.5.0",
   "name" : "DKCore",
   "title" : "HL7 FHIR Implementation Guide: DK Core",
   "status" : "active",
-  "date" : "2025-02-01T19:23:09+01:00",
+  "date" : "2025-12-19T17:27:08+01:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",
@@ -20,7 +20,7 @@
     },
     {
       "system" : "email",
-      "value" : "jenskristianvilladsen@gmail.com"
+      "value" : "dk-affiliate@hl7.dk"
     }]
   }],
   "description" : "A FHIR Implementation Guide for the Danish common needs across healthcare sectors",
@@ -42,17 +42,13 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.2.0"
+    "version" : "7.0.1"
   },
   {
-    "id" : "hl7ext",
-    "extension" : [{
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
-      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
-    }],
-    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "id" : "hl7_fhir_uv_extensions_r4",
+    "uri" : "http://hl7.org/fhir/extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.1.0"
+    "version" : "5.3.0-ballot-tc1"
   },
   {
     "id" : "hl7_fhir_uv_phd",
@@ -64,7 +60,13 @@
     "id" : "hl7_fhir_uv_ipa",
     "uri" : "http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa",
     "packageId" : "hl7.fhir.uv.ipa",
-    "version" : "1.0.0"
+    "version" : "1.1.0"
+  },
+  {
+    "id" : "ihe_iti_mhd",
+    "uri" : "https://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.iti.mhd",
+    "packageId" : "ihe.iti.mhd",
+    "version" : "4.2.3"
   }],
   "definition" : {
     "extension" : [{
@@ -118,17 +120,6 @@
       },
       {
         "url" : "value",
-        "valueString" : "urn:oid:1.2.208.176.2.1"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
         "valueString" : "urn:iso:std:iso:11073:10101"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -163,6 +154,17 @@
       {
         "url" : "value",
         "valueString" : "urn:oid:1.2.208.176.2.4.12"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://npu-terminology.org"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -431,8 +433,14 @@
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
     {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters",
+      "valueReference" : {
+        "reference" : "Parameters/expansion-parameters"
+      }
+    },
+    {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.3.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.9.0"
     },
     {
       "extension" : [{
@@ -485,17 +493,6 @@
       },
       {
         "url" : "value",
-        "valueString" : "urn:oid:1.2.208.176.2.1"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "special-url"
-      },
-      {
-        "url" : "value",
         "valueString" : "urn:iso:std:iso:11073:10101"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -530,6 +527,17 @@
       {
         "url" : "value",
         "valueString" : "urn:oid:1.2.208.176.2.4.12"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://npu-terminology.org"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -800,6 +808,18 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/915a3cfb-2f3e-477b-8a9d-5d86c30e4929"
+      },
+      "name" : "A closed inpatient encounter",
+      "description" : "Encounter happened on a surgery department on a hospital",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Practitioner"
       }],
       "reference" : {
@@ -820,6 +840,42 @@
       "name" : "ambulance",
       "description" : "Ambulance provided by Acme Corp",
       "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-location"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/0c5e4905-5c2e-4254-8837-770c3724cd13"
+      },
+      "name" : "An open-ended (ongoing) inpatient encounter",
+      "description" : "Encounter is happening on a surgery department on a hospital",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a12"
+      },
+      "name" : "APD-DK DocumentReference instance of DkCoreMinimalDocumentReference.",
+      "description" : "APD-DK DocumentReference instance of DkCoreMinimalDocumentReference, containing relevant metadata",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-minimaldocumentreference"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-care-provider"
+      },
+      "name" : "CareProvider",
+      "description" : "The organization (facility) responsible for the care of the patient during this encounter",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -959,10 +1015,34 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/dk-core-encounter"
+      },
+      "name" : "Danish Core Encounter Profile",
+      "description" : "HL7 Denmark core profile for an encounter",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/dk-core-location"
       },
       "name" : "Danish Core Location Profile",
       "description" : "HL7 Denmark core profile for locations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-minimaldocumentreference"
+      },
+      "name" : "Danish Core Minimal DocumentReference Profile",
+      "description" : "HL7 Denmark core profile for a Minimal DocumentReference inherited from IHE MHD Minimal DocumentReference",
       "exampleBoolean" : false
     },
     {
@@ -1412,13 +1492,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
+        "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "CodeSystem/dk-npu-fragment"
+        "reference" : "ValueSet/dk-core-priority-codes"
       },
-      "name" : "DK NPU Subset",
-      "description" : "DK NPU Subsetted code system used in DK Core. The full version of NPU can be found at http://labterm.dk",
+      "name" : "DK priority codes",
+      "description" : "DK Codes for priority",
       "exampleBoolean" : false
     },
     {
@@ -1427,10 +1507,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/dk-core-priority-codes"
+        "reference" : "ValueSet/dk-core-encounter-priority"
       },
-      "name" : "DK priority codes",
-      "description" : "DK Codes for priority",
+      "name" : "DK priority codes for encounters",
+      "description" : "Value set used for indicating priority of an encounter",
       "exampleBoolean" : false
     },
     {
@@ -1551,6 +1631,18 @@
       },
       "name" : "DK SOR Organization Type",
       "description" : "Value set used for indicating the organization type for organizations from SOR",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-core-practice-setting-code"
+      },
+      "name" : "DK SOR Practice Setting Code",
+      "description" : "Values used for the document metadata attribute practiceSettingCode, which is an attribute specifying the clinical specialty where the act that resulted in the document was performed (e.g., Family Practice, Laboratory, Radiology). The value set is based on a subset of the code list from the SOR lookup table 'SOR-Kliniske specialer' (https://sor.sum.dsdn.dk/lookupdata/#clinical_speciality, accessable on Sundhedsdatanettet (SDN)), which is based on SNOMED CT codes.",
       "exampleBoolean" : false
     },
     {
@@ -1689,6 +1781,30 @@
       },
       "name" : "ElseUrinStix",
       "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/8510eec9-180b-4e9c-95b6-02fad9f853d3"
+      },
+      "name" : "Example hospital department",
+      "description" : "Example hospital department with the orthopedic surgery specialty",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/19f9ee18-7677-4caf-88fe-8f6df2f2906e"
+      },
+      "name" : "Example hospital sub-department",
+      "description" : "Example hospital sub-department with the orthopedic surgery specialty",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
     },
     {
       "extension" : [{
@@ -1857,6 +1973,18 @@
       "name" : "Henvisning vedr. modermærkekræft",
       "description" : "Henvisning fra læge til sygehus vedr. mistanke om at John har modermærkekræft",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-documentreference-version-id-extension"
+      },
+      "name" : "HL7 Denmark core DocumentReference Version ID extension",
+      "description" : "Extension containing information about the version of the DocumentReference for a specific standard. The version is included in the R5 version of the resource.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -2127,6 +2255,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/dk-npu-fragment"
+      },
+      "name" : "Nomenclature for Properties and Units (NPU) - Fragment for DK Core",
+      "description" : "Fragment of the NPU code system used in DK Core. The full version of NPU can be found at http://labterm.dk",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -2147,6 +2287,42 @@
       "name" : "Placeholder for a physician",
       "description" : "This is an example of PractitionerRole where it acts as a placeholder for an unknown person. This may be useful in several scenarios.",
       "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-planned-end-date"
+      },
+      "name" : "PlannedEndDate",
+      "description" : "The planned end date/time (or discharge date) of the encounter",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-planned-start-date"
+      },
+      "name" : "PlannedStartDate",
+      "description" : "The planned start date/time (or admission date) of the encounter",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a13"
+      },
+      "name" : "PLR-DK DocumentReference instance of DkCoreMinimalDocumentReference.",
+      "description" : "PLR-DK DocumentReference instance of DkCoreMinimalDocumentReference, containing relevant metadata",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-minimaldocumentreference"
     },
     {
       "extension" : [{
@@ -2315,6 +2491,42 @@
       "name" : "SOR Identifier",
       "description" : "Identifier holding the official SOR identifier for a danish healthcare organization",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/8fa7df76-bec2-4fe2-9a44-750030a0eda0"
+      },
+      "name" : "XDS document bundled Author Organization",
+      "description" : "Instance of a XDS document bundled  author organization",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/42cb9200-f421-4d08-8391-7d51a2503cb4"
+      },
+      "name" : "XDS document bundled Author Person",
+      "description" : "Instance of a XDS document bundled  author person",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/37628912-7816-47a3-acd8-396b610be142"
+      },
+      "name" : "XDS document bundled Source Patient",
+      "description" : "Instance of a XDS document bundled  source patient",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
     }],
     "page" : {
       "extension" : [{

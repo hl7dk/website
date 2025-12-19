@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -11,15 +12,18 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
-       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient ukendt-D-eCPR</b></p><a name=\"ukendt-D-eCPR\"> </a><a name=\"hcukendt-D-eCPR\"> </a><a name=\"ukendt-D-eCPR-da-DK\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Peter(temp) Male, DoB Unknown ( urn:oid:1.2.208.176.1.6.1.3.177#1206550VK9)</p><hr/></div>"
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient ukendt-D-eCPR</b></p><a name=\"ukendt-D-eCPR\"> </a><a name=\"hcukendt-D-eCPR\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-patient.html\">Danish Core Patient Profile</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Peter(temp) Mand, DoB Unknown ( urn:oid:1.2.208.176.1.6.1.3.177#1206550VK9)</p><hr/></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "urn:oid:1.2.208.176.1.6.1.3.177"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:oid:1.2.208.176.1.6.1.3.177"^^xsd:anyURI ;
+       fhir:l <urn:oid:1.2.208.176.1.6.1.3.177>
+     ] ;
      fhir:value [ fhir:v "1206550VK9" ]
   ] ) ; # 
   fhir:name ( [
@@ -27,8 +31,14 @@
      fhir:text [ fhir:v "Peter" ] ;
      fhir:family [
        fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "unknown" ]
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/data-absent-reason>
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "unknown"
+         ]
        ] )
      ] ;
      fhir:given ( [ fhir:v "Peter" ] )

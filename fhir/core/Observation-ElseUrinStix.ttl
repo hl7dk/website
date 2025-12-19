@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -12,37 +13,52 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
-       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
+       fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ElseUrinStix</b></p><a name=\"ElseUrinStix\"> </a><a name=\"hcElseUrinStix\"> </a><a name=\"ElseUrinStix-da-DK\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.1 NPU03987}, {http://snomed.info/sct 252385000}\">U—Leukocytter; arb.k.(proc.) = ?</span></p><p><b>subject</b>: <a href=\"Patient-else.html\">Else Test Lauridsen(official) Female, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)</a></p><p><b>effective</b>: 2023-09-12 17:45:00+0000</p><p><b>value</b>: Påviselige leukocytter</p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 272391002}\">Measurement technique (qualifier value)</span></p></div>"
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ElseUrinStix</b></p><a name=\"ElseUrinStix\"> </a><a name=\"hcElseUrinStix\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-observation.html\">Danish Core Observation Profile</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://npu-terminology.org NPU03987}, {http://snomed.info/sct 252385000}\">U—Leukocytter; arb.k.(proc.) = ?</span></p><p><b>subject</b>: <a href=\"Patient-else.html\">Else Test Lauridsen(official) Kvinde, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)</a></p><p><b>effective</b>: 2023-09-12 17:45:00+0000</p><p><b>value</b>: Påviselige leukocytter</p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 272391002}\">Measurement technique (qualifier value)</span></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.1"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://npu-terminology.org"^^xsd:anyURI ;
+         fhir:l <http://npu-terminology.org>
+       ] ;
        fhir:code [ fhir:v "NPU03987" ] ;
        fhir:display [ fhir:v "U—Leukocytter; arb.k.(proc.) = ?" ]
      ] [
        a sct:252385000 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
        fhir:code [ fhir:v "252385000" ] ;
        fhir:display [ fhir:v "Urine dipstick for leukocyte esterase (procedure)" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://hl7.dk/fhir/core/Patient/else> ;
+     fhir:l <http://hl7.dk/fhir/core/Patient/else> ;
      fhir:reference [ fhir:v "Patient/else" ]
   ] ; # 
-  fhir:effective [ fhir:v "2023-09-12T17:45:00.000Z"^^xsd:dateTime] ; # 
-  fhir:value [ fhir:v "Påviselige leukocytter"] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2023-09-12T17:45:00.000Z"^^xsd:dateTime
+  ] ; # 
+  fhir:value [
+     a fhir:String ;
+     fhir:v "Påviselige leukocytter"
+  ] ; # 
   fhir:method [
      fhir:coding ( [
        a sct:272391002 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
        fhir:code [ fhir:v "272391002" ] ;
        fhir:display [ fhir:v "Measurement technique (qualifier value)" ]

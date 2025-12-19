@@ -7,19 +7,19 @@ function Redirect($url)
 
 $accept = $_SERVER['HTTP_ACCEPT'];
 if (strpos($accept, 'application/json+fhir') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/Observation-ElsesTOBSscore.json2');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/Observation-ElsesTOBSscore.json2');
 elseif (strpos($accept, 'application/fhir+json') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/Observation-ElsesTOBSscore.json1');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/Observation-ElsesTOBSscore.json1');
 elseif (strpos($accept, 'json') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/Observation-ElsesTOBSscore.json');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/Observation-ElsesTOBSscore.json');
 elseif (strpos($accept, 'application/xml+fhir') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/Observation-ElsesTOBSscore.xml2');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/Observation-ElsesTOBSscore.xml2');
 elseif (strpos($accept, 'application/fhir+xml') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/Observation-ElsesTOBSscore.xml1');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/Observation-ElsesTOBSscore.xml1');
 elseif (strpos($accept, 'html') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/Observation-ElsesTOBSscore.html');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/Observation-ElsesTOBSscore.html');
 else 
-  Redirect('http://hl7.dk/fhir/core/3.4.0/Observation-ElsesTOBSscore.xml');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/Observation-ElsesTOBSscore.xml');
 ?>
     
 You should not be seeing this page. If you do, PHP has failed badly.

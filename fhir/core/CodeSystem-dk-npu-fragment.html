@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>DK NPU Subset - HL7 FHIR Implementation Guide: DK Core v3.4.0</title>
+    <title>Nomenclature for Properties and Units (NPU) - Fragment for DK Core - HL7 FHIR Implementation Guide: DK Core v3.5.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -31,10 +31,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -42,8 +42,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.56"}
-    h3,h4,h5,h6{--heading-prefix:"7.56"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.71"}
+    h3,h4,h5,h6{--heading-prefix:"7.71"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -61,7 +61,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">HL7 FHIR Implementation Guide: DK Core</span>
             <br/>
-            <span style="display:inline-block;">3.4.0 - release
+            <span style="display:inline-block;">3.5.0 - release
 
 
 
@@ -128,7 +128,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>DK NPU Subset</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Nomenclature for Properties and Units (NPU) - Fragment for DK Core</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -141,7 +141,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the HL7 FHIR Implementation Guide: DK Core (v3.4.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://hl7.dk/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the HL7 FHIR Implementation Guide: DK Core (v3.5.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://hl7.dk/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -184,17 +184,17 @@
 </ul>
 
   <a name="root"> </a>
-  <h2 id="root">CodeSystem: DK NPU Subset
+  <h2 id="root">CodeSystem: Nomenclature for Properties and Units (NPU) - Fragment for DK Core
 
   </h2>
 
   <table class="colsi">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">urn:oid:1.2.208.176.2.1<button title="Click to copy URL" class="btn-copy" data-clipboard-text="urn:oid:1.2.208.176.2.1"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://npu-terminology.org<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://npu-terminology.org"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">3.4.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="urn:oid:1.2.208.176.2.1|3.4.0"/></span>
+      <span class="copy-text">3.5.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://npu-terminology.org|3.5.0"/></span>
       </td>
     </tr>
 
@@ -210,7 +210,7 @@
         
           Active
           
-            as of 2025-02-01
+            as of 2025-12-19
           
         
       </td>
@@ -220,18 +220,24 @@
       <td><i>Computable Name</i>: <span style="font-family: monospace;">NPU</span></td>
     </tr>
 
+    <tr>
+      <td colspan="5">
+        <i>Other Identifiers:</i> OID:1.2.208.176.9.1
+      </td>
+    </tr>
+
 
 
 
     <tr>
-      <td colspan="5"><p><em>Copyright/Legal</em>: The International Union of Pure and Applied Chemistry (IUPAC) and the International Federation of Clinical Chemistry and laboratory medicine (IFCC)</p>
+      <td colspan="5"><p><em>Copyright/Legal</em>: https://cms.npu-terminology.org/wp-content/uploads/2024/06/NPU-License-Terms-of-Use.pdf</p>
 </td>
     </tr>
 
   </table>
 
 <p>
-<p>DK NPU Subsetted code system used in DK Core. The full version of NPU can be found at http://labterm.dk</p>
+<p>Fragment of the NPU code system used in DK Core. The full version of NPU can be found at http://labterm.dk</p>
 
 </p>
 
@@ -250,8 +256,8 @@
 </ul>
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem dk-npu-fragment</b></p><a name="dk-npu-fragment"> </a><a name="hcdk-npu-fragment"> </a><a name="dk-npu-fragment-da-DK"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p>
-<table class="grid"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr>
+  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="dk-npu-fragment"> </a><a name="hcdk-npu-fragment"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p>
+<table class="grid" data-fhir="generated"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr>
 <tr><td>comment</td>
 <td>comment</td>
 <td>http://hl7.org/fhir/concept-properties#comment</td>
@@ -336,14 +342,27 @@
 <td>STATUS</td>
 <td>https://iupac.org/fhir/npu/concept-properties#STATUS</td>
 <td>string</td>
-<td></td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>urn:oid:1.2.208.176.2.1</code> provides <b>a fragment</b> that includes following codes:</p>
-<table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>comment</b></td><td><b>effectiveDate</b></td><td><b>status</b></td><td><b>Inactive</b></td><td><b>Dansk (Danish, da)</b></td></tr>
+<td></td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://npu-terminology.org</code> provides <b>a fragment</b> that includes following codes:</p>
+<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>comment</b></td><td><b>effectiveDate</b></td><td><b>status</b></td><td><b>Inactive</b></td><td><b>ChangeDate</b></td><td><b>CreatedDate</b></td><td><b>System</b></td><td><b>SysSpec</b></td><td><b>Component</b></td><td><b>CompSpec</b></td><td><b>Kind-of-property</b></td><td><b>Speciality</b></td><td><b>Code value</b></td><td><b>Scale type</b></td><td><b>Proc</b></td><td><b>Unit</b></td><td><b>STATUS</b></td><td><b>Dansk (Danish, da)</b></td></tr>
 <tr><td style="white-space:nowrap">NPU03011<a name="dk-npu-fragment-NPU03011"> </a></td>
 <td>Hb(Fe; O₂-bind.; aB)—Oxygen(O₂); sat. = ?</td>
 <td>Unit defined</td>
 <td>2000-12-20T00:00:00+01:00</td>
 <td>active</td>
 <td></td>
+<td>2000-12-20T00:00:00+01:00</td>
+<td>1996-12-24T00:00:00+01:00</td>
+<td>Hb</td>
+<td>Fe; O₂-bind.;aB</td>
+<td>Oxygen</td>
+<td>O₂</td>
+<td>sat.</td>
+<td>CLC</td>
+<td>3011</td>
+<td>Ratio</td>
+<td></td>
+<td></td>
+<td>ACTIVE</td>
 <td>Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); mætn. = ?</td></tr>
 <tr><td style="white-space:nowrap">NPU27280<a name="dk-npu-fragment-NPU27280"> </a></td>
 <td>Hb(Fe; O₂-bind.; aB)—Oxygen(O₂); sat.(Pulse oximetry) = ?</td>
@@ -351,6 +370,19 @@
 <td>2007-11-23T00:00:00+01:00</td>
 <td>active</td>
 <td></td>
+<td></td>
+<td>2007-11-23T00:00:00+01:00</td>
+<td>Hb</td>
+<td>Fe; O₂-bind.;aB</td>
+<td>Oxygen</td>
+<td>O₂</td>
+<td>sat.</td>
+<td>CLC</td>
+<td>27280</td>
+<td>Ratio</td>
+<td>Pulse oximetry</td>
+<td></td>
+<td>ACTIVE</td>
 <td>Hb(Fe; O₂-bind.;aB)—Oxygen(O₂); mætn.(pulsoximetri) = ?</td></tr>
 <tr><td style="white-space:nowrap">NPU04034<a name="dk-npu-fragment-NPU04034"> </a></td>
 <td>Pt(spec.)—Blood; temp. = ? °C</td>
@@ -358,6 +390,19 @@
 <td>1996-05-08T00:00:00+02:00</td>
 <td>active</td>
 <td></td>
+<td></td>
+<td>1996-05-08T00:00:00+02:00</td>
+<td>Pt</td>
+<td>spec.</td>
+<td>Blood</td>
+<td></td>
+<td>temp.</td>
+<td>CLC</td>
+<td>4034</td>
+<td>Differential</td>
+<td></td>
+<td>°C</td>
+<td>ACTIVE</td>
 <td>Pt(spec.)—Blod; temp. = ? °C</td></tr>
 <tr><td style="white-space:nowrap">NPU08676<a name="dk-npu-fragment-NPU08676"> </a></td>
 <td>Pt—Body; temp. = ? °C</td>
@@ -365,6 +410,19 @@
 <td>1997-04-15T00:00:00+02:00</td>
 <td>active</td>
 <td></td>
+<td></td>
+<td>1997-04-15T00:00:00+02:00</td>
+<td>Pt</td>
+<td></td>
+<td>Body</td>
+<td></td>
+<td>temp.</td>
+<td>CLC</td>
+<td>8676</td>
+<td>Differential</td>
+<td></td>
+<td>°C</td>
+<td>ACTIVE</td>
 <td>Pt—Legeme; temp. = ? °C</td></tr>
 <tr style="background-color: #ffeeee"><td style="white-space:nowrap">NPU58033<a name="dk-npu-fragment-NPU58033"> </a></td>
 <td>Artery(spec.)—Blood pressure(systolic); pr.(proc.) = ? mmHg</td>
@@ -372,6 +430,19 @@
 <td>2021-03-19T00:00:00+01:00</td>
 <td>deprecated</td>
 <td>true</td>
+<td>2021-03-19T00:00:00+01:00</td>
+<td>2017-12-18T00:00:00+01:00</td>
+<td>Artery</td>
+<td>spec.</td>
+<td>Blood pressure</td>
+<td>systolic</td>
+<td>pr.</td>
+<td>CLC</td>
+<td>58033</td>
+<td>Ratio</td>
+<td>proc.</td>
+<td>mmHg</td>
+<td>ACTIVE</td>
 <td>Arterie(spec.)—Blodtryk(systolisk); tryk(proc.) = ? mmHg</td></tr>
 <tr><td style="white-space:nowrap">NPU57947<a name="dk-npu-fragment-NPU57947"> </a></td>
 <td>Artery(spec.)—Blood; pr.(systolic; proc.) = ? mmHg</td>
@@ -379,6 +450,19 @@
 <td>2017-12-05T00:00:00+01:00</td>
 <td>active</td>
 <td></td>
+<td></td>
+<td>2017-12-05T00:00:00+01:00</td>
+<td>Artery</td>
+<td>spec.</td>
+<td>Blood</td>
+<td></td>
+<td>pr.</td>
+<td>CLC</td>
+<td>57947</td>
+<td>Ratio</td>
+<td>systolic;proc.</td>
+<td>mmHg</td>
+<td>ACTIVE</td>
 <td>Arterie(spec.)—Blod; tryk(systolisk;proc.) = ? mmHg</td></tr>
 <tr style="background-color: #ffeeee"><td style="white-space:nowrap">NPU58034<a name="dk-npu-fragment-NPU58034"> </a></td>
 <td>Artery(spec.)—Blood pressure(diastolic); pr.(proc.) = ? mmHg</td>
@@ -386,6 +470,19 @@
 <td>2017-12-18T00:00:00+01:00</td>
 <td>deprecated</td>
 <td>true</td>
+<td></td>
+<td>2017-12-18T00:00:00+01:00</td>
+<td>Artery</td>
+<td>spec.</td>
+<td>Blood pressure</td>
+<td>diastolic</td>
+<td>pr.</td>
+<td>CLC</td>
+<td>58034</td>
+<td>Ratio</td>
+<td>proc.</td>
+<td>mmHg</td>
+<td>ACTIVE</td>
 <td>Arterie(spec.)—Blodtryk(diastolisk); tryk(proc.) = ? mmHg</td></tr>
 <tr><td style="white-space:nowrap">NPU57948<a name="dk-npu-fragment-NPU57948"> </a></td>
 <td>Artery(spec.)—Blood; pr.(diastolic; proc.) = ? mmHg</td>
@@ -393,6 +490,19 @@
 <td>2017-12-05T00:00:00+01:00</td>
 <td>active</td>
 <td></td>
+<td></td>
+<td>2017-12-05T00:00:00+01:00</td>
+<td>Artery</td>
+<td>spec.</td>
+<td>Blood</td>
+<td></td>
+<td>pr.</td>
+<td>CLC</td>
+<td>57948</td>
+<td>Ratio</td>
+<td>diastolic;proc.</td>
+<td>mmHg</td>
+<td>ACTIVE</td>
 <td>Arterie(spec.)—Blod; tryk(diastolisk;proc.) = ? mmHg</td></tr>
 <tr><td style="white-space:nowrap">NPU21692<a name="dk-npu-fragment-NPU21692"> </a></td>
 <td>Heart—Systole; frequency = ? × 1/min</td>
@@ -400,6 +510,19 @@
 <td>2004-09-29T00:00:00+02:00</td>
 <td>active</td>
 <td></td>
+<td></td>
+<td>2004-09-29T00:00:00+02:00</td>
+<td>Heart</td>
+<td></td>
+<td>Systole</td>
+<td></td>
+<td>frequency</td>
+<td>FUN</td>
+<td>21692</td>
+<td>Ratio</td>
+<td></td>
+<td>× 1/min</td>
+<td>ACTIVE</td>
 <td>Hjerte—Systole; frekv. = ? × 1/min</td></tr>
 <tr><td style="white-space:nowrap">NPU03794<a name="dk-npu-fragment-NPU03794"> </a></td>
 <td>Pt—Body; height = ? m</td>
@@ -407,6 +530,19 @@
 <td>1997-04-15T00:00:00+02:00</td>
 <td>active</td>
 <td></td>
+<td></td>
+<td>1997-04-15T00:00:00+02:00</td>
+<td>Pt</td>
+<td></td>
+<td>Body</td>
+<td></td>
+<td>height</td>
+<td>CLC</td>
+<td>3794</td>
+<td>Ratio</td>
+<td></td>
+<td>m</td>
+<td>ACTIVE</td>
 <td>Pt—Legeme; højde = ? m</td></tr>
 <tr><td style="white-space:nowrap">NPU03804<a name="dk-npu-fragment-NPU03804"> </a></td>
 <td>Pt—Body; mass = ? kg</td>
@@ -414,6 +550,19 @@
 <td>1996-01-01T00:00:00+01:00</td>
 <td>active</td>
 <td></td>
+<td></td>
+<td>1996-01-01T00:00:00+01:00</td>
+<td>Pt</td>
+<td></td>
+<td>Body</td>
+<td></td>
+<td>mass</td>
+<td>CLC</td>
+<td>3804</td>
+<td>Ratio</td>
+<td></td>
+<td>kg</td>
+<td>ACTIVE</td>
 <td>Pt—Legeme; masse = ? kg</td></tr>
 <tr><td style="white-space:nowrap">NPU27281<a name="dk-npu-fragment-NPU27281"> </a></td>
 <td>Pt—Body; mass coefficient(mass/squared height) = ? kg/m²</td>
@@ -421,6 +570,19 @@
 <td>2007-12-06T00:00:00+01:00</td>
 <td>active</td>
 <td></td>
+<td>2007-12-06T00:00:00+01:00</td>
+<td>2007-11-23T00:00:00+01:00</td>
+<td>Pt</td>
+<td></td>
+<td>Body</td>
+<td></td>
+<td>mass coefficient</td>
+<td>CLC</td>
+<td>27281</td>
+<td>Ratio</td>
+<td>mass/squared height</td>
+<td>kg/m²</td>
+<td>ACTIVE</td>
 <td>Pt—Legeme; massekoefficient(masse/kvadreret højde) = ? kg/m²</td></tr></table></div>
 
   
@@ -448,7 +610,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Feb 1, 2025 19:23+0100">2025-02-01</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 19, 2025 17:27+0100">2025-12-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

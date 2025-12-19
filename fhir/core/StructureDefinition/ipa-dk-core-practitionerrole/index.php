@@ -7,19 +7,19 @@ function Redirect($url)
 
 $accept = $_SERVER['HTTP_ACCEPT'];
 if (strpos($accept, 'application/json+fhir') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/StructureDefinition-ipa-dk-core-practitionerrole.json2');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/StructureDefinition-ipa-dk-core-practitionerrole.json2');
 elseif (strpos($accept, 'application/fhir+json') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/StructureDefinition-ipa-dk-core-practitionerrole.json1');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/StructureDefinition-ipa-dk-core-practitionerrole.json1');
 elseif (strpos($accept, 'json') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/StructureDefinition-ipa-dk-core-practitionerrole.json');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/StructureDefinition-ipa-dk-core-practitionerrole.json');
 elseif (strpos($accept, 'application/xml+fhir') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/StructureDefinition-ipa-dk-core-practitionerrole.xml2');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/StructureDefinition-ipa-dk-core-practitionerrole.xml2');
 elseif (strpos($accept, 'application/fhir+xml') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/StructureDefinition-ipa-dk-core-practitionerrole.xml1');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/StructureDefinition-ipa-dk-core-practitionerrole.xml1');
 elseif (strpos($accept, 'html') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/StructureDefinition-ipa-dk-core-practitionerrole.html');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/StructureDefinition-ipa-dk-core-practitionerrole.html');
 else 
-  Redirect('http://hl7.dk/fhir/core/3.4.0/StructureDefinition-ipa-dk-core-practitionerrole.xml');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/StructureDefinition-ipa-dk-core-practitionerrole.xml');
 ?>
     
 You should not be seeing this page. If you do, PHP has failed badly.

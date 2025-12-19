@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -11,8 +12,15 @@
   fhir:parameter ( [
      fhir:name [ fhir:v "system-version" ] ;
      fhir:value [
+       a fhir:Canonical ;
        fhir:v "http://snomed.info/sct|http://snomed.info/sct/554471000005108/version/20240331"^^xsd:anyURI ;
-       fhir:link <http://snomed.info/sct|http://snomed.info/sct/554471000005108/version/20240331>
+       fhir:l <http://snomed.info/sct?version=http://snomed.info/sct/554471000005108/version/20240331>
+     ]
+  ] [
+     fhir:name [ fhir:v "includeDesignations" ] ;
+     fhir:value [
+       a fhir:Boolean ;
+       fhir:v true
      ]
   ] ) . # 
 

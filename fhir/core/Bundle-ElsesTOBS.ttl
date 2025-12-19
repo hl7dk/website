@@ -1,6 +1,7 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -13,28 +14,52 @@
   fhir:type [ fhir:v "collection"] ; # 
   fhir:timestamp [ fhir:v "2023-09-12T17:45:00.000Z"^^xsd:dateTime] ; # 
   fhir:entry ( [
-     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/Patient/else"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "http://hl7.dk/fhir/core/Patient/else"^^xsd:anyURI ;
+       fhir:l <http://hl7.dk/fhir/core/Patient/else>
+     ] ;
      fhir:resource ( <http://hl7.dk/fhir/core/Patient/else> )
   ] [
-     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/Observation/ElseConsciousness"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "http://hl7.dk/fhir/core/Observation/ElseConsciousness"^^xsd:anyURI ;
+       fhir:l <http://hl7.dk/fhir/core/Observation/ElseConsciousness>
+     ] ;
      fhir:resource ( <http://hl7.dk/fhir/core/Observation/ElseConsciousness> )
   ] [
-     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/Observation/ElseBloodPressure"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "http://hl7.dk/fhir/core/Observation/ElseBloodPressure"^^xsd:anyURI ;
+       fhir:l <http://hl7.dk/fhir/core/Observation/ElseBloodPressure>
+     ] ;
      fhir:resource ( <http://hl7.dk/fhir/core/Observation/ElseBloodPressure> )
   ] [
-     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/Observation/ElseBodyTemperature"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "http://hl7.dk/fhir/core/Observation/ElseBodyTemperature"^^xsd:anyURI ;
+       fhir:l <http://hl7.dk/fhir/core/Observation/ElseBodyTemperature>
+     ] ;
      fhir:resource ( <http://hl7.dk/fhir/core/Observation/ElseBodyTemperature> )
   ] [
-     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/Observation/ElseHeartRate"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "http://hl7.dk/fhir/core/Observation/ElseHeartRate"^^xsd:anyURI ;
+       fhir:l <http://hl7.dk/fhir/core/Observation/ElseHeartRate>
+     ] ;
      fhir:resource ( <http://hl7.dk/fhir/core/Observation/ElseHeartRate> )
   ] [
-     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/Observation/ElseRespirationRate"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "http://hl7.dk/fhir/core/Observation/ElseRespirationRate"^^xsd:anyURI ;
+       fhir:l <http://hl7.dk/fhir/core/Observation/ElseRespirationRate>
+     ] ;
      fhir:resource ( <http://hl7.dk/fhir/core/Observation/ElseRespirationRate> )
   ] [
-     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/Observation/ElsesTOBSscore"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "http://hl7.dk/fhir/core/Observation/ElsesTOBSscore"^^xsd:anyURI ;
+       fhir:l <http://hl7.dk/fhir/core/Observation/ElsesTOBSscore>
+     ] ;
      fhir:resource ( <http://hl7.dk/fhir/core/Observation/ElsesTOBSscore> )
   ] [
-     fhir:fullUrl [ fhir:v "http://hl7.dk/fhir/core/Practitioner/SidselSygeplejerske"^^xsd:anyURI ] ;
+     fhir:fullUrl [
+       fhir:v "http://hl7.dk/fhir/core/Practitioner/SidselSygeplejerske"^^xsd:anyURI ;
+       fhir:l <http://hl7.dk/fhir/core/Practitioner/SidselSygeplejerske>
+     ] ;
      fhir:resource ( <http://hl7.dk/fhir/core/Practitioner/SidselSygeplejerske> )
   ] ) . # 
 
@@ -43,15 +68,18 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
-       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_else\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient else</b></p><a name=\"else\"> </a><a name=\"hcelse\"> </a><a name=\"else-da-DK\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Else Test Lauridsen(official) Female, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td colspan=\"3\"><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></td></tr></table></div>"
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_else\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient else</b></p><a name=\"else\"> </a><a name=\"hcelse\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-patient.html\">Danish Core Patient Profile</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Else Test Lauridsen(official) Kvinde, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td colspan=\"3\"><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "urn:oid:1.2.208.176.1.2"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "urn:oid:1.2.208.176.1.2"^^xsd:anyURI ;
+       fhir:l <urn:oid:1.2.208.176.1.2>
+     ] ;
      fhir:value [ fhir:v "0201919990" ]
   ] ) ; # 
   fhir:name ( [
@@ -64,7 +92,10 @@
   fhir:birthDate [ fhir:v "1991-02-02"^^xsd:date] ; # 
   fhir:maritalStatus [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-MaritalStatus>
+       ] ;
        fhir:code [ fhir:v "M" ] ;
        fhir:display [ fhir:v "Married" ]
      ] )
@@ -75,36 +106,45 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
-       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
+       fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ElseConsciousness\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ElseConsciousness</b></p><a name=\"ElseConsciousness\"> </a><a name=\"hcElseConsciousness\"> </a><a name=\"ElseConsciousness-da-DK\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 6942003}\">Level of consciousness</span></p><p><b>subject</b>: <a href=\"Patient-else.html\">Else Test Lauridsen(official) Female, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)</a></p><p><b>effective</b>: 2023-09-12 17:45:00+0000</p><p><b>performer</b>: <a href=\"Practitioner-SidselSygeplejerske.html\">Practitioner Sidsel Andersen</a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 450847001}\">Responds to pain (finding)</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 733985002}\">Reported (qualifier value)</span></p></div>"
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ElseConsciousness\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ElseConsciousness</b></p><a name=\"ElseConsciousness\"> </a><a name=\"hcElseConsciousness\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-observation.html\">Danish Core Observation Profile</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 6942003}\">Bevidsthedsniveau</span></p><p><b>subject</b>: <a href=\"Patient-else.html\">Else Test Lauridsen(official) Kvinde, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)</a></p><p><b>effective</b>: 2023-09-12 17:45:00+0000</p><p><b>performer</b>: <a href=\"Practitioner-SidselSygeplejerske.html\">Practitioner Sidsel Andersen</a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 450847001}\">reagerer på smerte</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 733985002}\">Reported (qualifier value)</span></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
      fhir:coding ( [
        a sct:6942003 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
        fhir:code [ fhir:v "6942003" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://hl7.dk/fhir/core/Patient/else> ;
+     fhir:l <http://hl7.dk/fhir/core/Patient/else> ;
      fhir:reference [ fhir:v "Patient/else" ]
   ] ; # 
-  fhir:effective [ fhir:v "2023-09-12T17:45:00.000Z"^^xsd:dateTime] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2023-09-12T17:45:00.000Z"^^xsd:dateTime
+  ] ; # 
   fhir:performer ( [
-     fhir:link <http://hl7.dk/fhir/core/Practitioner/SidselSygeplejerske> ;
+     fhir:l <http://hl7.dk/fhir/core/Practitioner/SidselSygeplejerske> ;
      fhir:reference [ fhir:v "Practitioner/SidselSygeplejerske" ]
   ] ) ; # 
   fhir:value [
      a fhir:CodeableConcept ;
      fhir:coding ( [
        a sct:450847001 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
        fhir:code [ fhir:v "450847001" ]
      ] )
@@ -112,7 +152,10 @@
   fhir:method [
      fhir:coding ( [
        a sct:733985002 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
        fhir:code [ fhir:v "733985002" ] ;
        fhir:display [ fhir:v "Reported (qualifier value)" ]
@@ -124,45 +167,60 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"^^xsd:anyURI ;
-       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation>
+       fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ElseBloodPressure\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ElseBloodPressure</b></p><a name=\"ElseBloodPressure\"> </a><a name=\"hcElseBloodPressure\"> </a><a name=\"ElseBloodPressure-da-DK\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 85354-9}, {http://snomed.info/sct 75367002}\">Blood pressure panel with all children optional</span></p><p><b>subject</b>: <a href=\"Patient-else.html\">Else Test Lauridsen(official) Female, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)</a></p><p><b>effective</b>: 2023-09-12 17:45:00+0000</p><p><b>performer</b>: <a href=\"Practitioner-SidselSygeplejerske.html\">Practitioner Sidsel Andersen</a></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 272391002}\">Measurement technique (qualifier value)</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8480-6}, {http://snomed.info/sct 407554009}\">Systolic blood pressure</span></p><p><b>value</b>: 147 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8462-4}, {http://snomed.info/sct 407555005}\">Diastolic blood pressure</span></p><p><b>value</b>: 95 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ElseBloodPressure\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ElseBloodPressure</b></p><a name=\"ElseBloodPressure\"> </a><a name=\"hcElseBloodPressure\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-basic-observation.html\">Danish Core Basic Observation Profile</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 85354-9}, {http://snomed.info/sct 75367002}\">Blood pressure panel with all children optional</span></p><p><b>subject</b>: <a href=\"Patient-else.html\">Else Test Lauridsen(official) Kvinde, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)</a></p><p><b>effective</b>: 2023-09-12 17:45:00+0000</p><p><b>performer</b>: <a href=\"Practitioner-SidselSygeplejerske.html\">Practitioner Sidsel Andersen</a></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 272391002}\">Measurement technique (qualifier value)</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8480-6}, {http://snomed.info/sct 407554009}\">Systolic blood pressure</span></p><p><b>value</b>: 147 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8462-4}, {http://snomed.info/sct 407555005}\">Diastolic blood pressure</span></p><p><b>value</b>: 95 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:category ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
        fhir:code [ fhir:v "vital-signs" ]
      ] )
   ] ) ; # 
   fhir:code [
      fhir:coding ( [
        a loinc:85354-9 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
        fhir:code [ fhir:v "85354-9" ]
      ] [
        a sct:75367002 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
        fhir:code [ fhir:v "75367002" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://hl7.dk/fhir/core/Patient/else> ;
+     fhir:l <http://hl7.dk/fhir/core/Patient/else> ;
      fhir:reference [ fhir:v "Patient/else" ]
   ] ; # 
-  fhir:effective [ fhir:v "2023-09-12T17:45:00.000Z"^^xsd:dateTime] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2023-09-12T17:45:00.000Z"^^xsd:dateTime
+  ] ; # 
   fhir:performer ( [
-     fhir:link <http://hl7.dk/fhir/core/Practitioner/SidselSygeplejerske> ;
+     fhir:l <http://hl7.dk/fhir/core/Practitioner/SidselSygeplejerske> ;
      fhir:reference [ fhir:v "Practitioner/SidselSygeplejerske" ]
   ] ) ; # 
   fhir:method [
      fhir:coding ( [
        a sct:272391002 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
        fhir:code [ fhir:v "272391002" ] ;
        fhir:display [ fhir:v "Measurement technique (qualifier value)" ]
@@ -172,11 +230,17 @@
      fhir:code [
        fhir:coding ( [
          a loinc:8480-6 ;
-         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
          fhir:code [ fhir:v "8480-6" ]
        ] [
          a sct:407554009 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
          fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
          fhir:code [ fhir:v "407554009" ]
        ] )
@@ -185,18 +249,27 @@
        a fhir:Quantity ;
        fhir:value [ fhir:v "147"^^xsd:decimal ] ;
        fhir:unit [ fhir:v "mmHg" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
        fhir:code [ fhir:v "mm[Hg]" ]
      ]
   ] [
      fhir:code [
        fhir:coding ( [
          a loinc:8462-4 ;
-         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
          fhir:code [ fhir:v "8462-4" ]
        ] [
          a sct:407555005 ;
-         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
          fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
          fhir:code [ fhir:v "407555005" ]
        ] )
@@ -205,7 +278,10 @@
        a fhir:Quantity ;
        fhir:value [ fhir:v "95"^^xsd:decimal ] ;
        fhir:unit [ fhir:v "mmHg" ] ;
-       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
        fhir:code [ fhir:v "mm[Hg]" ]
      ]
   ] ) . # 
@@ -215,52 +291,70 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"^^xsd:anyURI ;
-       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation>
+       fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ElseBodyTemperature\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ElseBodyTemperature</b></p><a name=\"ElseBodyTemperature\"> </a><a name=\"hcElseBodyTemperature\"> </a><a name=\"ElseBodyTemperature-da-DK\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8310-5}, {http://snomed.info/sct 276885007}\">Body temperature</span></p><p><b>subject</b>: <a href=\"Patient-else.html\">Else Test Lauridsen(official) Female, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)</a></p><p><b>effective</b>: 2023-09-12 17:45:00+0000</p><p><b>performer</b>: <a href=\"Practitioner-SidselSygeplejerske.html\">Practitioner Sidsel Andersen</a></p><p><b>value</b>: 38.7 grader celcius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 272391002}\">Measurement technique (qualifier value)</span></p></div>"
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ElseBodyTemperature\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ElseBodyTemperature</b></p><a name=\"ElseBodyTemperature\"> </a><a name=\"hcElseBodyTemperature\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-basic-observation.html\">Danish Core Basic Observation Profile</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8310-5}, {http://snomed.info/sct 276885007}\">Body temperature</span></p><p><b>subject</b>: <a href=\"Patient-else.html\">Else Test Lauridsen(official) Kvinde, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)</a></p><p><b>effective</b>: 2023-09-12 17:45:00+0000</p><p><b>performer</b>: <a href=\"Practitioner-SidselSygeplejerske.html\">Practitioner Sidsel Andersen</a></p><p><b>value</b>: 38.7 grader celcius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 272391002}\">Measurement technique (qualifier value)</span></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:category ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
        fhir:code [ fhir:v "vital-signs" ]
      ] )
   ] ) ; # 
   fhir:code [
      fhir:coding ( [
        a loinc:8310-5 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
        fhir:code [ fhir:v "8310-5" ]
      ] [
        a sct:276885007 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
        fhir:code [ fhir:v "276885007" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://hl7.dk/fhir/core/Patient/else> ;
+     fhir:l <http://hl7.dk/fhir/core/Patient/else> ;
      fhir:reference [ fhir:v "Patient/else" ]
   ] ; # 
-  fhir:effective [ fhir:v "2023-09-12T17:45:00.000Z"^^xsd:dateTime] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2023-09-12T17:45:00.000Z"^^xsd:dateTime
+  ] ; # 
   fhir:performer ( [
-     fhir:link <http://hl7.dk/fhir/core/Practitioner/SidselSygeplejerske> ;
+     fhir:l <http://hl7.dk/fhir/core/Practitioner/SidselSygeplejerske> ;
      fhir:reference [ fhir:v "Practitioner/SidselSygeplejerske" ]
   ] ) ; # 
   fhir:value [
      a fhir:Quantity ;
-     fhir:value [ fhir:v "38.7"^^xsd:decimal ] ;
+     fhir:value [ fhir:v 38.7 ] ;
      fhir:unit [ fhir:v "grader celcius" ] ;
-     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:l <http://unitsofmeasure.org>
+     ] ;
      fhir:code [ fhir:v "Cel" ]
   ] ; # 
   fhir:method [
      fhir:coding ( [
        a sct:272391002 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
        fhir:code [ fhir:v "272391002" ] ;
        fhir:display [ fhir:v "Measurement technique (qualifier value)" ]
@@ -272,52 +366,70 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"^^xsd:anyURI ;
-       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation>
+       fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ElseHeartRate\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ElseHeartRate</b></p><a name=\"ElseHeartRate\"> </a><a name=\"hcElseHeartRate\"> </a><a name=\"ElseHeartRate-da-DK\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8867-4}, {http://snomed.info/sct 364075005}\">Heart rate</span></p><p><b>subject</b>: <a href=\"Patient-else.html\">Else Test Lauridsen(official) Female, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)</a></p><p><b>effective</b>: 2023-09-12 17:45:00+0000</p><p><b>performer</b>: <a href=\"Practitioner-SidselSygeplejerske.html\">Practitioner Sidsel Andersen</a></p><p><b>value</b>: 92 slag/minut<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/min = '/min')</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 272391002}\">Measurement technique (qualifier value)</span></p></div>"
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ElseHeartRate\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ElseHeartRate</b></p><a name=\"ElseHeartRate\"> </a><a name=\"hcElseHeartRate\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-basic-observation.html\">Danish Core Basic Observation Profile</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8867-4}, {http://snomed.info/sct 364075005}\">Heart rate</span></p><p><b>subject</b>: <a href=\"Patient-else.html\">Else Test Lauridsen(official) Kvinde, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)</a></p><p><b>effective</b>: 2023-09-12 17:45:00+0000</p><p><b>performer</b>: <a href=\"Practitioner-SidselSygeplejerske.html\">Practitioner Sidsel Andersen</a></p><p><b>value</b>: 92 slag/minut<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/min = '/min')</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 272391002}\">Measurement technique (qualifier value)</span></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:category ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
        fhir:code [ fhir:v "vital-signs" ]
      ] )
   ] ) ; # 
   fhir:code [
      fhir:coding ( [
        a loinc:8867-4 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
        fhir:code [ fhir:v "8867-4" ]
      ] [
        a sct:364075005 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
        fhir:code [ fhir:v "364075005" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://hl7.dk/fhir/core/Patient/else> ;
+     fhir:l <http://hl7.dk/fhir/core/Patient/else> ;
      fhir:reference [ fhir:v "Patient/else" ]
   ] ; # 
-  fhir:effective [ fhir:v "2023-09-12T17:45:00.000Z"^^xsd:dateTime] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2023-09-12T17:45:00.000Z"^^xsd:dateTime
+  ] ; # 
   fhir:performer ( [
-     fhir:link <http://hl7.dk/fhir/core/Practitioner/SidselSygeplejerske> ;
+     fhir:l <http://hl7.dk/fhir/core/Practitioner/SidselSygeplejerske> ;
      fhir:reference [ fhir:v "Practitioner/SidselSygeplejerske" ]
   ] ) ; # 
   fhir:value [
      a fhir:Quantity ;
      fhir:value [ fhir:v "92"^^xsd:decimal ] ;
      fhir:unit [ fhir:v "slag/minut" ] ;
-     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:l <http://unitsofmeasure.org>
+     ] ;
      fhir:code [ fhir:v "/min" ]
   ] ; # 
   fhir:method [
      fhir:coding ( [
        a sct:272391002 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
        fhir:code [ fhir:v "272391002" ] ;
        fhir:display [ fhir:v "Measurement technique (qualifier value)" ]
@@ -329,52 +441,70 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"^^xsd:anyURI ;
-       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation>
+       fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ElseRespirationRate\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ElseRespirationRate</b></p><a name=\"ElseRespirationRate\"> </a><a name=\"hcElseRespirationRate\"> </a><a name=\"ElseRespirationRate-da-DK\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 9279-1}, {http://snomed.info/sct 86290005}\">Respiratory rate</span></p><p><b>subject</b>: <a href=\"Patient-else.html\">Else Test Lauridsen(official) Female, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)</a></p><p><b>effective</b>: 2023-09-12 17:45:00+0000</p><p><b>performer</b>: <a href=\"Practitioner-SidselSygeplejerske.html\">Practitioner Sidsel Andersen</a></p><p><b>value</b>: 19 /min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/min = '/min')</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 272391002}\">Measurement technique (qualifier value)</span></p></div>"
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ElseRespirationRate\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ElseRespirationRate</b></p><a name=\"ElseRespirationRate\"> </a><a name=\"hcElseRespirationRate\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-basic-observation.html\">Danish Core Basic Observation Profile</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 9279-1}, {http://snomed.info/sct 86290005}\">Respiratory rate</span></p><p><b>subject</b>: <a href=\"Patient-else.html\">Else Test Lauridsen(official) Kvinde, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)</a></p><p><b>effective</b>: 2023-09-12 17:45:00+0000</p><p><b>performer</b>: <a href=\"Practitioner-SidselSygeplejerske.html\">Practitioner Sidsel Andersen</a></p><p><b>value</b>: 19 /min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/min = '/min')</span></p><p><b>method</b>: <span title=\"Codes:{http://snomed.info/sct 272391002}\">Measurement technique (qualifier value)</span></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:category ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
        fhir:code [ fhir:v "vital-signs" ]
      ] )
   ] ) ; # 
   fhir:code [
      fhir:coding ( [
        a loinc:9279-1 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
        fhir:code [ fhir:v "9279-1" ]
      ] [
        a sct:86290005 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
        fhir:code [ fhir:v "86290005" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://hl7.dk/fhir/core/Patient/else> ;
+     fhir:l <http://hl7.dk/fhir/core/Patient/else> ;
      fhir:reference [ fhir:v "Patient/else" ]
   ] ; # 
-  fhir:effective [ fhir:v "2023-09-12T17:45:00.000Z"^^xsd:dateTime] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2023-09-12T17:45:00.000Z"^^xsd:dateTime
+  ] ; # 
   fhir:performer ( [
-     fhir:link <http://hl7.dk/fhir/core/Practitioner/SidselSygeplejerske> ;
+     fhir:l <http://hl7.dk/fhir/core/Practitioner/SidselSygeplejerske> ;
      fhir:reference [ fhir:v "Practitioner/SidselSygeplejerske" ]
   ] ) ; # 
   fhir:value [
      a fhir:Quantity ;
      fhir:value [ fhir:v "19"^^xsd:decimal ] ;
      fhir:unit [ fhir:v "/min" ] ;
-     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:l <http://unitsofmeasure.org>
+     ] ;
      fhir:code [ fhir:v "/min" ]
   ] ; # 
   fhir:method [
      fhir:coding ( [
        a sct:272391002 ;
-       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
        fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
        fhir:code [ fhir:v "272391002" ] ;
        fhir:display [ fhir:v "Measurement technique (qualifier value)" ]
@@ -386,34 +516,43 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
-       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
+       fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ElsesTOBSscore\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ElsesTOBSscore</b></p><a name=\"ElsesTOBSscore\"> </a><a name=\"hcElsesTOBSscore\"> </a><a name=\"ElsesTOBSscore-da-DK\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes MCS88125}\">Pt—Tidlig Opsporing af Begyndende Sygdom (TOBS) score; antal (værdi 0-15) = ?</span></p><p><b>subject</b>: <a href=\"Patient-else.html\">Else Test Lauridsen(official) Female, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)</a></p><p><b>effective</b>: 2023-09-12 17:45:00+0000</p><p><b>performer</b>: <a href=\"Practitioner-SidselSygeplejerske.html\">Practitioner Sidsel Andersen</a></p><p><b>value</b>: 3 1<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p></div>"
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ElsesTOBSscore\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ElsesTOBSscore</b></p><a name=\"ElsesTOBSscore\"> </a><a name=\"hcElsesTOBSscore\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-observation.html\">Danish Core Observation Profile</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes MCS88125}\">Pt—Tidlig Opsporing af Begyndende Sygdom (TOBS) score; antal (værdi 0-15) = ?</span></p><p><b>subject</b>: <a href=\"Patient-else.html\">Else Test Lauridsen(official) Kvinde, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)</a></p><p><b>effective</b>: 2023-09-12 17:45:00+0000</p><p><b>performer</b>: <a href=\"Practitioner-SidselSygeplejerske.html\">Practitioner Sidsel Andersen</a></p><p><b>value</b>: 3 1<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes"^^xsd:anyURI ;
+         fhir:l <http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes>
+       ] ;
        fhir:code [ fhir:v "MCS88125" ] ;
        fhir:display [ fhir:v "Pt—Tidlig Opsporing af Begyndende Sygdom (TOBS) score; antal (værdi 0-15) = ?" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://hl7.dk/fhir/core/Patient/else> ;
+     fhir:l <http://hl7.dk/fhir/core/Patient/else> ;
      fhir:reference [ fhir:v "Patient/else" ]
   ] ; # 
-  fhir:effective [ fhir:v "2023-09-12T17:45:00.000Z"^^xsd:dateTime] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2023-09-12T17:45:00.000Z"^^xsd:dateTime
+  ] ; # 
   fhir:performer ( [
-     fhir:link <http://hl7.dk/fhir/core/Practitioner/SidselSygeplejerske> ;
+     fhir:l <http://hl7.dk/fhir/core/Practitioner/SidselSygeplejerske> ;
      fhir:reference [ fhir:v "Practitioner/SidselSygeplejerske" ]
   ] ) ; # 
   fhir:value [
      a fhir:Quantity ;
      fhir:value [ fhir:v "3"^^xsd:decimal ] ;
-     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:l <http://unitsofmeasure.org>
+     ] ;
      fhir:code [ fhir:v "1" ]
   ] . # 
 
@@ -422,12 +561,12 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"^^xsd:anyURI ;
-       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner>
+       fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_SidselSygeplejerske\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner SidselSygeplejerske</b></p><a name=\"SidselSygeplejerske\"> </a><a name=\"hcSidselSygeplejerske\"> </a><a name=\"SidselSygeplejerske-da-DK\"> </a><p><b>name</b>: Sidsel Andersen</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes 5166}\">Sygeplejerske</span></td></tr></table></div>"
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_SidselSygeplejerske\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner SidselSygeplejerske</b></p><a name=\"SidselSygeplejerske\"> </a><a name=\"hcSidselSygeplejerske\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-practitioner.html\">Danish Core Practitioner Profile</a></p></div><p><b>name</b>: Sidsel Andersen</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes 5166}\">Sygeplejerske</span></td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:name ( [
      fhir:text [ fhir:v "Sidsel Andersen" ] ;
@@ -437,7 +576,10 @@
   fhir:qualification ( [
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes"^^xsd:anyURI ;
+           fhir:l <http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes>
+         ] ;
          fhir:code [ fhir:v "5166" ] ;
          fhir:display [ fhir:v "Sygeplejerske" ]
        ] )

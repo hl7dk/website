@@ -1,6 +1,7 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -12,27 +13,30 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://hl7.dk/fhir/core/StructureDefinition/ipa-dk-core-observation"^^xsd:anyURI ;
-       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/ipa-dk-core-observation>
+       fhir:l <http://hl7.dk/fhir/core/StructureDefinition/ipa-dk-core-observation>
      ] [
        fhir:v "http://hl7.org/fhir/uv/phd/StructureDefinition/PhdNumericObservation"^^xsd:anyURI ;
-       fhir:link <http://hl7.org/fhir/uv/phd/StructureDefinition/PhdNumericObservation>
+       fhir:l <http://hl7.org/fhir/uv/phd/StructureDefinition/PhdNumericObservation>
      ] [
        fhir:v "http://hl7.org/fhir/StructureDefinition/vitalsigns"^^xsd:anyURI ;
-       fhir:link <http://hl7.org/fhir/StructureDefinition/vitalsigns>
+       fhir:l <http://hl7.org/fhir/StructureDefinition/vitalsigns>
      ] [
        fhir:v "http://hl7.org/fhir/StructureDefinition/bodyweight"^^xsd:anyURI ;
-       fhir:link <http://hl7.org/fhir/StructureDefinition/bodyweight>
+       fhir:l <http://hl7.org/fhir/StructureDefinition/bodyweight>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Weight.Poul.230221</b></p><a name=\"Weight.Poul.230221\"> </a><a name=\"hcWeight.Poul.230221\"> </a><a name=\"Weight.Poul.230221-da-DK\"> </a><p><b>Observation Gateway Device</b>: <a href=\"Device-Telma.FEEDDADADEADBEEF.html\">Device: identifier = IEEE 11073 System Identifier: FE-ED-DA-DA-DE-AD-BE-EF; manufacturer = Trifork; modelNumber = Telma (Android); type = MDC_MOC_VMS_MDS_AHD</a></p><p><b>identifier</b>: 606405FFFECFC604-3001749995-urn:oid:1.2.208.176.1.2-188736-74.0-kg-20230221T083640.00</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital signs</span>, <span title=\"Codes:{http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories phd-observation}\">PHD generated Observation</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 29463-7}, {urn:iso:std:iso:11073:10101 188736}, {urn:oid:1.2.208.176.2.1 NPU03804}\">MDC_MASS_BODY_ACTUAL: Body weight</span></p><p><b>subject</b>: <a href=\"Patient-Poul.html\">Poul Hansen (no stated gender), DoB Unknown ( National unique individual identifier)</a></p><p><b>effective</b>: 2023-02-21 08:36:40+0100</p><p><b>performer</b>: <a href=\"Patient-Poul.html\">Poul Hansen (no stated gender), DoB Unknown ( National unique individual identifier)</a></p><p><b>value</b>: 74 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg = 'kg')</span></p><p><b>device</b>: <a href=\"Device-WeightScale.606405FFFECFC604.html\">Device: identifier = IEEE 11073 System Identifier: 60-64-05-FF-FE-CF-C6-04,Bluetooth MAC address: Bluetooth_Address_Identifier#60-64-05-CF-C6-04; manufacturer = A&amp;D Medical ; serialNumber = 5180400664; modelNumber = UC-352BLE ; type = MDC_MOC_VMS_MDS_SIMP</a></p><p><b>derivedFrom</b>: <a href=\"http://example.org/fhir/CoincidentTimeStamp.0123\">http://example.org/fhir/CoincidentTimeStamp.0123</a></p></div>"
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Weight.Poul.230221</b></p><a name=\"Weight.Poul.230221\"> </a><a name=\"hcWeight.Poul.230221\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-ipa-dk-core-observation.html\">Danish IPA Core Observation Profile</a>, <a href=\"http://hl7.org/fhir/uv/phd/STU1.1/StructureDefinition-PhdNumericObservation.html\">PhdNumericObservation</a>, <a href=\"http://hl7.org/fhir/R4/vitalsigns.html\">Vital Signs Profile</a>, <a href=\"http://hl7.org/fhir/R4/bodyweight.html\">Observation Body Weight Profile</a></p></div><p><b>Observation Gateway Device</b>: <a href=\"Device-Telma.FEEDDADADEADBEEF.html\">Device: identifier = IEEE 11073 System Identifier: FE-ED-DA-DA-DE-AD-BE-EF; manufacturer = Trifork; modelNumber = Telma (Android); type = MDC_MOC_VMS_MDS_AHD</a></p><p><b>identifier</b>: 606405FFFECFC604-3001749995-urn:oid:1.2.208.176.1.2-188736-74.0-kg-20230221T083640.00</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital signs</span>, <span title=\"Codes:{http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories phd-observation}\">PHD generated Observation</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 29463-7}, {urn:iso:std:iso:11073:10101 188736}, {http://npu-terminology.org NPU03804}\">MDC_MASS_BODY_ACTUAL: Body weight</span></p><p><b>subject</b>: <a href=\"Patient-Poul.html\">Poul Hansen (no stated gender), DoB Unknown ( National unique individual identifier)</a></p><p><b>effective</b>: 2023-02-21 08:36:40+0100</p><p><b>performer</b>: <a href=\"Patient-Poul.html\">Poul Hansen (no stated gender), DoB Unknown ( National unique individual identifier)</a></p><p><b>value</b>: 74 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg = 'kg')</span></p><p><b>device</b>: <a href=\"Device-WeightScale.606405FFFECFC604.html\">Device: identifier = IEEE 11073 System Identifier: 60-64-05-FF-FE-CF-C6-04,Bluetooth MAC address: Bluetooth Address as a device identifier#60-64-05-CF-C6-04; manufacturer = A&amp;D Medical ; serialNumber = 5180400664; modelNumber = UC-352BLE ; type = MDC_MOC_VMS_MDS_SIMP</a></p><p><b>derivedFrom</b>: <a href=\"http://example.org/fhir/CoincidentTimeStamp.0123\">http://example.org/fhir/CoincidentTimeStamp.0123</a></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
-     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/observation-gatewayDevice>
+     ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:link <http://hl7.dk/fhir/core/Device/Telma.FEEDDADADEADBEEF> ;
+       fhir:l <http://hl7.dk/fhir/core/Device/Telma.FEEDDADADEADBEEF> ;
        fhir:reference [ fhir:v "Device/Telma.FEEDDADADEADBEEF" ]
      ]
   ] ) ; # 
@@ -42,13 +46,19 @@
   fhir:status [ fhir:v "final"] ; # 
   fhir:category ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
        fhir:code [ fhir:v "vital-signs" ] ;
        fhir:display [ fhir:v "Vital signs" ]
      ] )
   ] [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/phd/CodeSystem/PhdObservationCategories>
+       ] ;
        fhir:code [ fhir:v "phd-observation" ] ;
        fhir:display [ fhir:v "PHD generated Observation" ]
      ] )
@@ -56,42 +66,57 @@
   fhir:code [
      fhir:coding ( [
        a loinc:29463-7 ;
-       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
        fhir:code [ fhir:v "29463-7" ] ;
        fhir:display [ fhir:v "Body weight" ]
      ] [
-       fhir:system [ fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:iso:std:iso:11073:10101"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:11073:10101>
+       ] ;
        fhir:code [ fhir:v "188736" ] ;
        fhir:display [ fhir:v "MDC_MASS_BODY_ACTUAL" ]
      ] [
-       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.1"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://npu-terminology.org"^^xsd:anyURI ;
+         fhir:l <http://npu-terminology.org>
+       ] ;
        fhir:code [ fhir:v "NPU03804" ] ;
        fhir:display [ fhir:v "Pt—Body; mass = ? kg" ]
      ] ) ;
      fhir:text [ fhir:v "MDC_MASS_BODY_ACTUAL: Body weight" ]
   ] ; # 
   fhir:subject [
-     fhir:link <http://hl7.dk/fhir/core/Patient/Poul> ;
+     fhir:l <http://hl7.dk/fhir/core/Patient/Poul> ;
      fhir:reference [ fhir:v "Patient/Poul" ]
   ] ; # 
-  fhir:effective [ fhir:v "2023-02-21T08:36:40+01:00"^^xsd:dateTime] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2023-02-21T08:36:40+01:00"^^xsd:dateTime
+  ] ; # 
   fhir:performer ( [
-     fhir:link <http://hl7.dk/fhir/core/Patient/Poul> ;
+     fhir:l <http://hl7.dk/fhir/core/Patient/Poul> ;
      fhir:reference [ fhir:v "Patient/Poul" ]
   ] ) ; # 
   fhir:value [
      a fhir:Quantity ;
      fhir:value [ fhir:v "74"^^xsd:decimal ] ;
      fhir:unit [ fhir:v "kg" ] ;
-     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:l <http://unitsofmeasure.org>
+     ] ;
      fhir:code [ fhir:v "kg" ]
   ] ; # 
   fhir:device [
-     fhir:link <http://hl7.dk/fhir/core/Device/WeightScale.606405FFFECFC604> ;
+     fhir:l <http://hl7.dk/fhir/core/Device/WeightScale.606405FFFECFC604> ;
      fhir:reference [ fhir:v "Device/WeightScale.606405FFFECFC604" ]
   ] ; # 
   fhir:derivedFrom ( [
-     fhir:link <http://example.org/fhir/CoincidentTimeStamp.0123> ;
+     fhir:l <http://example.org/fhir/CoincidentTimeStamp.0123> ;
      fhir:reference [ fhir:v "http://example.org/fhir/CoincidentTimeStamp.0123" ]
   ] ) . # 
 

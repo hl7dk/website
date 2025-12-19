@@ -7,19 +7,19 @@ function Redirect($url)
 
 $accept = $_SERVER['HTTP_ACCEPT'];
 if (strpos($accept, 'application/json+fhir') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/Condition-JohnFracture.json2');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/Condition-JohnFracture.json2');
 elseif (strpos($accept, 'application/fhir+json') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/Condition-JohnFracture.json1');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/Condition-JohnFracture.json1');
 elseif (strpos($accept, 'json') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/Condition-JohnFracture.json');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/Condition-JohnFracture.json');
 elseif (strpos($accept, 'application/xml+fhir') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/Condition-JohnFracture.xml2');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/Condition-JohnFracture.xml2');
 elseif (strpos($accept, 'application/fhir+xml') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/Condition-JohnFracture.xml1');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/Condition-JohnFracture.xml1');
 elseif (strpos($accept, 'html') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/Condition-JohnFracture.html');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/Condition-JohnFracture.html');
 else 
-  Redirect('http://hl7.dk/fhir/core/3.4.0/Condition-JohnFracture.xml');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/Condition-JohnFracture.xml');
 ?>
     
 You should not be seeing this page. If you do, PHP has failed badly.

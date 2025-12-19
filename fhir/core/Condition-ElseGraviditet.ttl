@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -11,40 +12,52 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition"^^xsd:anyURI ;
-       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition>
+       fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition ElseGraviditet</b></p><a name=\"ElseGraviditet\"> </a><a name=\"hcElseGraviditet\"> </a><a name=\"ElseGraviditet-da-DK\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.4.12 DZ340}\">Graviditet, førstegangsfødende</span></p><p><b>subject</b>: <a href=\"Patient-else.html\">Else Test Lauridsen(official) Female, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)</a></p><p><b>recordedDate</b>: 2021-07-03</p></div>"
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition ElseGraviditet</b></p><a name=\"ElseGraviditet\"> </a><a name=\"hcElseGraviditet\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-condition.html\">Danish Core Condition Profile</a></p></div><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.208.176.2.4.12 DZ340}\">Graviditet, førstegangsfødende</span></p><p><b>subject</b>: <a href=\"Patient-else.html\">Else Test Lauridsen(official) Kvinde, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)</a></p><p><b>recordedDate</b>: 2021-07-03</p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:clinicalStatus [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/condition-clinical>
+       ] ;
        fhir:code [ fhir:v "active" ]
      ] )
   ] ; # 
   fhir:verificationStatus [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/condition-ver-status>
+       ] ;
        fhir:code [ fhir:v "confirmed" ]
      ] )
   ] ; # 
   fhir:category ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/condition-category>
+       ] ;
        fhir:code [ fhir:v "encounter-diagnosis" ]
      ] )
   ] ) ; # 
   fhir:code [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:oid:1.2.208.176.2.4.12"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:oid:1.2.208.176.2.4.12"^^xsd:anyURI ;
+         fhir:l <urn:oid:1.2.208.176.2.4.12>
+       ] ;
        fhir:code [ fhir:v "DZ340" ] ;
        fhir:display [ fhir:v "Graviditet, førstegangsfødende" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://hl7.dk/fhir/core/Patient/else> ;
+     fhir:l <http://hl7.dk/fhir/core/Patient/else> ;
      fhir:reference [ fhir:v "Patient/else" ]
   ] ; # 
   fhir:recordedDate [ fhir:v "2021-07-03"^^xsd:date] . # 

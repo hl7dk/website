@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/DkCoreDeCPRValueSet",
-      "version" : "3.4.0",
+      "version" : "3.5.0",
       "status" : "active",
       "name" : "DkCoreDeCPRValueSet",
       "title" : "DK D-eCPR OID values",
@@ -11,7 +11,7 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/DkCoreProfessionGroupValueSet",
-      "version" : "3.4.0",
+      "version" : "3.5.0",
       "status" : "active",
       "name" : "DkCoreProfessionGroupValueSet",
       "title" : "DK Profession Group",
@@ -22,7 +22,7 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-IEEEBasicObservation",
-      "version" : "3.4.0",
+      "version" : "3.5.0",
       "status" : "active",
       "name" : "IEEEBasicObservation",
       "title" : "Dk Core IEEE Basic Observation",
@@ -31,7 +31,7 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-LoincBasicObservation",
-      "version" : "3.4.0",
+      "version" : "3.5.0",
       "status" : "active",
       "name" : "LoincBasicObservation",
       "title" : "DK Core LOINC Basic Observations",
@@ -40,7 +40,7 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes",
-      "version" : "3.4.0",
+      "version" : "3.5.0",
       "status" : "active",
       "name" : "MunicipalityCodes",
       "title" : "DK Municipality Codes",
@@ -52,16 +52,16 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-NPUBasicObservation",
-      "version" : "3.4.0",
+      "version" : "3.5.0",
       "status" : "active",
       "name" : "NPUBasicObservation",
       "title" : "DK Core NPU Basic Observation",
       "description" : "NPU codes for Basic Observations usable in Denmark",
-      "systems" : ["urn:oid:1.2.208.176.2.1"]
+      "systems" : ["http://npu-terminology.org"]
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes",
-      "version" : "3.4.0",
+      "version" : "3.5.0",
       "status" : "active",
       "name" : "RegionalSubdivisionCodes",
       "title" : "DK Regional Subdivision Codes",
@@ -72,7 +72,7 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-RelatedPersonRelationshipTypes",
-      "version" : "3.4.0",
+      "version" : "3.5.0",
       "status" : "active",
       "name" : "RelatedPersonRelationshipTypes",
       "title" : "DK Related Person Relationship Types",
@@ -84,7 +84,7 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-SCTBasicObservation",
-      "version" : "3.4.0",
+      "version" : "3.5.0",
       "status" : "active",
       "name" : "SCTBasicObservation",
       "title" : "DK Core SNOMED CT Basic Observation",
@@ -93,7 +93,7 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-TechniquesSCTCodes",
-      "version" : "3.4.0",
+      "version" : "3.5.0",
       "status" : "active",
       "name" : "TechniquesSCTCodes",
       "title" : "DK TechniquesSCTCodes",
@@ -102,7 +102,7 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-UCUM-BasicUnits",
-      "version" : "3.4.0",
+      "version" : "3.5.0",
       "status" : "active",
       "name" : "UCUMBasicUnits",
       "title" : "DK Core UCUM Basic Units",
@@ -110,8 +110,26 @@
       "systems" : ["http://unitsofmeasure.org"]
     },
     {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-encounter-priority",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "DkCoreEncounterPriority",
+      "title" : "DK priority codes for encounters",
+      "description" : "Value set used for indicating priority of an encounter",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActPriority"]
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-practice-setting-code",
+      "version" : "3.5.0",
+      "status" : "active",
+      "name" : "SorPracticeSettingCode",
+      "title" : "DK SOR Practice Setting Code",
+      "description" : "Values used for the document metadata attribute practiceSettingCode, which is an attribute specifying the clinical specialty where the act that resulted in the document was performed (e.g., Family Practice, Laboratory, Radiology). The value set is based on a subset of the code list from the SOR lookup table 'SOR-Kliniske specialer' (https://sor.sum.dsdn.dk/lookupdata/#clinical_speciality, accessable on Sundhedsdatanettet (SDN)), which is based on SNOMED CT codes.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-priority-codes",
-      "version" : "3.4.0",
+      "version" : "3.5.0",
       "status" : "active",
       "name" : "DkCorePriorityCodes",
       "title" : "DK priority codes",
@@ -120,7 +138,7 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-servicerequest-codes",
-      "version" : "3.4.0",
+      "version" : "3.5.0",
       "status" : "active",
       "name" : "DkCoreServiceRequestCodes",
       "title" : "DK codes for ServiceRequest",
@@ -129,7 +147,7 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/dk-marital-status",
-      "version" : "3.4.0",
+      "version" : "3.5.0",
       "status" : "active",
       "name" : null,
       "title" : "DK MaritalStatus",
@@ -142,7 +160,7 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/extended-patient-contactrelationship",
-      "version" : "3.4.0",
+      "version" : "3.5.0",
       "status" : "active",
       "name" : "extended-patient-contactrelationship",
       "title" : "DK Extended Patient Contact Relationship",
@@ -155,7 +173,7 @@
     },
     {
       "url" : "http://hl7.dk/fhir/core/ValueSet/sor-organization-type",
-      "version" : "3.4.0",
+      "version" : "3.5.0",
       "status" : "active",
       "name" : "SorOrganizationType",
       "title" : "DK SOR Organization Type",

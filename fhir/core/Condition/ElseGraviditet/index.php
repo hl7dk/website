@@ -7,19 +7,19 @@ function Redirect($url)
 
 $accept = $_SERVER['HTTP_ACCEPT'];
 if (strpos($accept, 'application/json+fhir') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/Condition-ElseGraviditet.json2');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/Condition-ElseGraviditet.json2');
 elseif (strpos($accept, 'application/fhir+json') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/Condition-ElseGraviditet.json1');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/Condition-ElseGraviditet.json1');
 elseif (strpos($accept, 'json') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/Condition-ElseGraviditet.json');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/Condition-ElseGraviditet.json');
 elseif (strpos($accept, 'application/xml+fhir') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/Condition-ElseGraviditet.xml2');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/Condition-ElseGraviditet.xml2');
 elseif (strpos($accept, 'application/fhir+xml') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/Condition-ElseGraviditet.xml1');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/Condition-ElseGraviditet.xml1');
 elseif (strpos($accept, 'html') !== false)
-  Redirect('http://hl7.dk/fhir/core/3.4.0/Condition-ElseGraviditet.html');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/Condition-ElseGraviditet.html');
 else 
-  Redirect('http://hl7.dk/fhir/core/3.4.0/Condition-ElseGraviditet.xml');
+  Redirect('http://hl7.dk/fhir/core/3.5.0/Condition-ElseGraviditet.xml');
 ?>
     
 You should not be seeing this page. If you do, PHP has failed badly.

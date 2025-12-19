@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Else&#39;s TOBS measurements - JSON Representation - HL7 FHIR Implementation Guide: DK Core v3.4.0</title>
+    <title>Else&#39;s TOBS measurements - JSON Representation - HL7 FHIR Implementation Guide: DK Core v3.5.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -33,10 +33,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -44,8 +44,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.74"}
-    h3,h4,h5,h6{--heading-prefix:"7.74"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.85"}
+    h3,h4,h5,h6{--heading-prefix:"7.85"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -63,7 +63,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">HL7 FHIR Implementation Guide: DK Core</span>
             <br/>
-            <span style="display:inline-block;">3.4.0 - release
+            <span style="display:inline-block;">3.5.0 - release
 
 
 
@@ -143,7 +143,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the HL7 FHIR Implementation Guide: DK Core (v3.4.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://hl7.dk/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the HL7 FHIR Implementation Guide: DK Core (v3.5.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://hl7.dk/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -199,9 +199,9 @@
 
 
 
-  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
   "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">resourceType</a>" : "Bundle",
-  "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">id</a>" : "ElsesTOBS",
+  "<a href="http://hl7.org/fhir/R4/resource.html#Bundle.id">id</a>" : "ElsesTOBS",
   "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">type</a>" : "collection",
   "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.timestamp">timestamp</a>" : "2023-09-12T17:45:00.000Z",
   "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>" : [
@@ -209,15 +209,15 @@
       "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://hl7.dk/fhir/core/Patient/else",
       "<a href="http://hl7.org/fhir/R4/patient.html#Patient">resource</a>" : {
         "<a href="http://hl7.org/fhir/R4/patient.html">resourceType</a>" : "Patient",
-        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.id">id</a>" : "else",
-        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/resource.html#Patient.id">id</a>" : "else",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Patient.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
             <a href="StructureDefinition-dk-core-patient.html" style="color: Maroon">&#x1F517;</a> "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
           ]
         },
-        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Patient.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Patient_else\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Patient else&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;else\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcelse\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;else-da-DK\&quot;&gt; &lt;/a&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;Else Test Lauridsen(official) Female, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)&lt;/p&gt;&lt;hr/&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Known Marital status of Patient\&quot;&gt;Marital Status:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\&quot;&gt;Married&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Patient_else\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Patient else&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;else\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcelse\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-dk-core-patient.html\&quot;&gt;Danish Core Patient Profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;Else Test Lauridsen(official) Kvinde, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)&lt;/p&gt;&lt;hr/&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Known Marital status of Patient\&quot;&gt;Marital Status:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\&quot;&gt;Married&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
         },
         "<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>" : [
           {
@@ -253,15 +253,15 @@
       "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://hl7.dk/fhir/core/Observation/ElseConsciousness",
       "<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>" : {
         "<a href="http://hl7.org/fhir/R4/observation.html">resourceType</a>" : "Observation",
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "ElseConsciousness",
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/resource.html#Observation.id">id</a>" : "ElseConsciousness",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
             <a href="StructureDefinition-dk-core-observation.html" style="color: Maroon">&#x1F517;</a> "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
           ]
         },
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Observation.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_ElseConsciousness\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation ElseConsciousness&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ElseConsciousness\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcElseConsciousness\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;ElseConsciousness-da-DK\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 6942003}\&quot;&gt;Level of consciousness&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-else.html\&quot;&gt;Else Test Lauridsen(official) Female, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2023-09-12 17:45:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner-SidselSygeplejerske.html\&quot;&gt;Practitioner Sidsel Andersen&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 450847001}\&quot;&gt;Responds to pain (finding)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 733985002}\&quot;&gt;Reported (qualifier value)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_ElseConsciousness\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation ElseConsciousness&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ElseConsciousness\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcElseConsciousness\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-dk-core-observation.html\&quot;&gt;Danish Core Observation Profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 6942003}\&quot;&gt;Bevidsthedsniveau&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-else.html\&quot;&gt;Else Test Lauridsen(official) Kvinde, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2023-09-12 17:45:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner-SidselSygeplejerske.html\&quot;&gt;Practitioner Sidsel Andersen&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 450847001}\&quot;&gt;reagerer på smerte&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 733985002}\&quot;&gt;Reported (qualifier value)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>" : {
@@ -276,13 +276,13 @@
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">subject</a>" : {
           <a href="Patient-else.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/else"
         },
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">effectiveDateTime</a>" : "2023-09-12T17:45:00.000Z",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective_x_">effectiveDateTime</a>" : "2023-09-12T17:45:00.000Z",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.performer">performer</a>" : [
           {
             <a href="Practitioner-SidselSygeplejerske.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Practitioner/SidselSygeplejerske"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">valueCodeableConcept</a>" : {
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.value_x_">valueCodeableConcept</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
             {
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
@@ -307,15 +307,15 @@
       "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://hl7.dk/fhir/core/Observation/ElseBloodPressure",
       "<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>" : {
         "<a href="http://hl7.org/fhir/R4/observation.html">resourceType</a>" : "Observation",
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "ElseBloodPressure",
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/resource.html#Observation.id">id</a>" : "ElseBloodPressure",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
             <a href="StructureDefinition-dk-core-basic-observation.html" style="color: Maroon">&#x1F517;</a> "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
           ]
         },
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Observation.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_ElseBloodPressure\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation ElseBloodPressure&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ElseBloodPressure\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcElseBloodPressure\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;ElseBloodPressure-da-DK\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\&quot;&gt;Vital Signs&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 85354-9}, {http://snomed.info/sct 75367002}\&quot;&gt;Blood pressure panel with all children optional&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-else.html\&quot;&gt;Else Test Lauridsen(official) Female, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2023-09-12 17:45:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner-SidselSygeplejerske.html\&quot;&gt;Practitioner Sidsel Andersen&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 272391002}\&quot;&gt;Measurement technique (qualifier value)&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 8480-6}, {http://snomed.info/sct 407554009}\&quot;&gt;Systolic blood pressure&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 147 mmHg&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemm[Hg] = 'mm[Hg]')&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 8462-4}, {http://snomed.info/sct 407555005}\&quot;&gt;Diastolic blood pressure&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 95 mmHg&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemm[Hg] = 'mm[Hg]')&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_ElseBloodPressure\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation ElseBloodPressure&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ElseBloodPressure\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcElseBloodPressure\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-dk-core-basic-observation.html\&quot;&gt;Danish Core Basic Observation Profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\&quot;&gt;Vital Signs&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 85354-9}, {http://snomed.info/sct 75367002}\&quot;&gt;Blood pressure panel with all children optional&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-else.html\&quot;&gt;Else Test Lauridsen(official) Kvinde, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2023-09-12 17:45:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner-SidselSygeplejerske.html\&quot;&gt;Practitioner Sidsel Andersen&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 272391002}\&quot;&gt;Measurement technique (qualifier value)&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 8480-6}, {http://snomed.info/sct 407554009}\&quot;&gt;Systolic blood pressure&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 147 mmHg&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemm[Hg] = 'mm[Hg]')&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;component&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 8462-4}, {http://snomed.info/sct 407555005}\&quot;&gt;Diastolic blood pressure&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 95 mmHg&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codemm[Hg] = 'mm[Hg]')&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;"
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.category">category</a>" : [
@@ -344,7 +344,7 @@
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">subject</a>" : {
           <a href="Patient-else.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/else"
         },
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">effectiveDateTime</a>" : "2023-09-12T17:45:00.000Z",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective_x_">effectiveDateTime</a>" : "2023-09-12T17:45:00.000Z",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.performer">performer</a>" : [
           {
             <a href="Practitioner-SidselSygeplejerske.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Practitioner/SidselSygeplejerske"
@@ -375,7 +375,7 @@
                 }
               ]
             },
-            "<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.value[x]">valueQuantity</a>" : {
+            "<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.value_x_">valueQuantity</a>" : {
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 147,
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "mmHg",
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
@@ -396,7 +396,7 @@
                 }
               ]
             },
-            "<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.value[x]">valueQuantity</a>" : {
+            "<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.value_x_">valueQuantity</a>" : {
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 95,
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "mmHg",
               "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
@@ -410,15 +410,15 @@
       "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://hl7.dk/fhir/core/Observation/ElseBodyTemperature",
       "<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>" : {
         "<a href="http://hl7.org/fhir/R4/observation.html">resourceType</a>" : "Observation",
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "ElseBodyTemperature",
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/resource.html#Observation.id">id</a>" : "ElseBodyTemperature",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
             <a href="StructureDefinition-dk-core-basic-observation.html" style="color: Maroon">&#x1F517;</a> "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
           ]
         },
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Observation.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_ElseBodyTemperature\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation ElseBodyTemperature&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ElseBodyTemperature\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcElseBodyTemperature\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;ElseBodyTemperature-da-DK\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\&quot;&gt;Vital Signs&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 8310-5}, {http://snomed.info/sct 276885007}\&quot;&gt;Body temperature&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-else.html\&quot;&gt;Else Test Lauridsen(official) Female, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2023-09-12 17:45:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner-SidselSygeplejerske.html\&quot;&gt;Practitioner Sidsel Andersen&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 38.7 grader celcius&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codeCel = 'Cel')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 272391002}\&quot;&gt;Measurement technique (qualifier value)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_ElseBodyTemperature\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation ElseBodyTemperature&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ElseBodyTemperature\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcElseBodyTemperature\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-dk-core-basic-observation.html\&quot;&gt;Danish Core Basic Observation Profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\&quot;&gt;Vital Signs&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 8310-5}, {http://snomed.info/sct 276885007}\&quot;&gt;Body temperature&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-else.html\&quot;&gt;Else Test Lauridsen(official) Kvinde, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2023-09-12 17:45:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner-SidselSygeplejerske.html\&quot;&gt;Practitioner Sidsel Andersen&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 38.7 grader celcius&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codeCel = 'Cel')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 272391002}\&quot;&gt;Measurement technique (qualifier value)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.category">category</a>" : [
@@ -447,13 +447,13 @@
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">subject</a>" : {
           <a href="Patient-else.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/else"
         },
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">effectiveDateTime</a>" : "2023-09-12T17:45:00.000Z",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective_x_">effectiveDateTime</a>" : "2023-09-12T17:45:00.000Z",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.performer">performer</a>" : [
           {
             <a href="Practitioner-SidselSygeplejerske.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Practitioner/SidselSygeplejerske"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">valueQuantity</a>" : {
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.value_x_">valueQuantity</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 38.7,
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "grader celcius",
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
@@ -475,15 +475,15 @@
       "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://hl7.dk/fhir/core/Observation/ElseHeartRate",
       "<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>" : {
         "<a href="http://hl7.org/fhir/R4/observation.html">resourceType</a>" : "Observation",
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "ElseHeartRate",
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/resource.html#Observation.id">id</a>" : "ElseHeartRate",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
             <a href="StructureDefinition-dk-core-basic-observation.html" style="color: Maroon">&#x1F517;</a> "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
           ]
         },
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Observation.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_ElseHeartRate\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation ElseHeartRate&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ElseHeartRate\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcElseHeartRate\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;ElseHeartRate-da-DK\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\&quot;&gt;Vital Signs&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 8867-4}, {http://snomed.info/sct 364075005}\&quot;&gt;Heart rate&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-else.html\&quot;&gt;Else Test Lauridsen(official) Female, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2023-09-12 17:45:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner-SidselSygeplejerske.html\&quot;&gt;Practitioner Sidsel Andersen&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 92 slag/minut&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  code/min = '/min')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 272391002}\&quot;&gt;Measurement technique (qualifier value)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_ElseHeartRate\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation ElseHeartRate&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ElseHeartRate\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcElseHeartRate\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-dk-core-basic-observation.html\&quot;&gt;Danish Core Basic Observation Profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\&quot;&gt;Vital Signs&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 8867-4}, {http://snomed.info/sct 364075005}\&quot;&gt;Heart rate&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-else.html\&quot;&gt;Else Test Lauridsen(official) Kvinde, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2023-09-12 17:45:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner-SidselSygeplejerske.html\&quot;&gt;Practitioner Sidsel Andersen&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 92 slag/minut&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  code/min = '/min')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 272391002}\&quot;&gt;Measurement technique (qualifier value)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.category">category</a>" : [
@@ -512,13 +512,13 @@
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">subject</a>" : {
           <a href="Patient-else.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/else"
         },
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">effectiveDateTime</a>" : "2023-09-12T17:45:00.000Z",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective_x_">effectiveDateTime</a>" : "2023-09-12T17:45:00.000Z",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.performer">performer</a>" : [
           {
             <a href="Practitioner-SidselSygeplejerske.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Practitioner/SidselSygeplejerske"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">valueQuantity</a>" : {
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.value_x_">valueQuantity</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 92,
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "slag/minut",
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
@@ -540,15 +540,15 @@
       "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://hl7.dk/fhir/core/Observation/ElseRespirationRate",
       "<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>" : {
         "<a href="http://hl7.org/fhir/R4/observation.html">resourceType</a>" : "Observation",
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "ElseRespirationRate",
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/resource.html#Observation.id">id</a>" : "ElseRespirationRate",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
             <a href="StructureDefinition-dk-core-basic-observation.html" style="color: Maroon">&#x1F517;</a> "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
           ]
         },
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Observation.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_ElseRespirationRate\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation ElseRespirationRate&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ElseRespirationRate\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcElseRespirationRate\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;ElseRespirationRate-da-DK\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\&quot;&gt;Vital Signs&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 9279-1}, {http://snomed.info/sct 86290005}\&quot;&gt;Respiratory rate&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-else.html\&quot;&gt;Else Test Lauridsen(official) Female, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2023-09-12 17:45:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner-SidselSygeplejerske.html\&quot;&gt;Practitioner Sidsel Andersen&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 19 /min&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  code/min = '/min')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 272391002}\&quot;&gt;Measurement technique (qualifier value)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_ElseRespirationRate\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation ElseRespirationRate&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ElseRespirationRate\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcElseRespirationRate\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-dk-core-basic-observation.html\&quot;&gt;Danish Core Basic Observation Profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\&quot;&gt;Vital Signs&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 9279-1}, {http://snomed.info/sct 86290005}\&quot;&gt;Respiratory rate&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-else.html\&quot;&gt;Else Test Lauridsen(official) Kvinde, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2023-09-12 17:45:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner-SidselSygeplejerske.html\&quot;&gt;Practitioner Sidsel Andersen&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 19 /min&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  code/min = '/min')&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;method&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://snomed.info/sct 272391002}\&quot;&gt;Measurement technique (qualifier value)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.category">category</a>" : [
@@ -577,13 +577,13 @@
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">subject</a>" : {
           <a href="Patient-else.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/else"
         },
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">effectiveDateTime</a>" : "2023-09-12T17:45:00.000Z",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective_x_">effectiveDateTime</a>" : "2023-09-12T17:45:00.000Z",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.performer">performer</a>" : [
           {
             <a href="Practitioner-SidselSygeplejerske.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Practitioner/SidselSygeplejerske"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">valueQuantity</a>" : {
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.value_x_">valueQuantity</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 19,
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "/min",
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
@@ -605,15 +605,15 @@
       "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://hl7.dk/fhir/core/Observation/ElsesTOBSscore",
       "<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>" : {
         "<a href="http://hl7.org/fhir/R4/observation.html">resourceType</a>" : "Observation",
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "ElsesTOBSscore",
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/resource.html#Observation.id">id</a>" : "ElsesTOBSscore",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
             <a href="StructureDefinition-dk-core-observation.html" style="color: Maroon">&#x1F517;</a> "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
           ]
         },
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Observation.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_ElsesTOBSscore\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation ElsesTOBSscore&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ElsesTOBSscore\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcElsesTOBSscore\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;ElsesTOBSscore-da-DK\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes MCS88125}\&quot;&gt;Pt—Tidlig Opsporing af Begyndende Sygdom (TOBS) score; antal (værdi 0-15) = ?&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-else.html\&quot;&gt;Else Test Lauridsen(official) Female, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2023-09-12 17:45:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner-SidselSygeplejerske.html\&quot;&gt;Practitioner Sidsel Andersen&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 3 1&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  code1 = '1')&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_ElsesTOBSscore\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation ElsesTOBSscore&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ElsesTOBSscore\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcElsesTOBSscore\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-dk-core-observation.html\&quot;&gt;Danish Core Observation Profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes MCS88125}\&quot;&gt;Pt—Tidlig Opsporing af Begyndende Sygdom (TOBS) score; antal (værdi 0-15) = ?&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-else.html\&quot;&gt;Else Test Lauridsen(official) Kvinde, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#0201919990)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2023-09-12 17:45:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner-SidselSygeplejerske.html\&quot;&gt;Practitioner Sidsel Andersen&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 3 1&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  code1 = '1')&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
         },
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>" : {
@@ -628,13 +628,13 @@
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">subject</a>" : {
           <a href="Patient-else.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/else"
         },
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">effectiveDateTime</a>" : "2023-09-12T17:45:00.000Z",
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective_x_">effectiveDateTime</a>" : "2023-09-12T17:45:00.000Z",
         "<a href="http://hl7.org/fhir/R4/observation.html#Observation.performer">performer</a>" : [
           {
             <a href="Practitioner-SidselSygeplejerske.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Practitioner/SidselSygeplejerske"
           }
         ],
-        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">valueQuantity</a>" : {
+        "<a href="http://hl7.org/fhir/R4/observation.html#Observation.value_x_">valueQuantity</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 3,
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a>" : "1"
@@ -645,15 +645,15 @@
       "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://hl7.dk/fhir/core/Practitioner/SidselSygeplejerske",
       "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner">resource</a>" : {
         "<a href="http://hl7.org/fhir/R4/practitioner.html">resourceType</a>" : "Practitioner",
-        "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.id">id</a>" : "SidselSygeplejerske",
-        "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.meta">meta</a>" : {
+        "<a href="http://hl7.org/fhir/R4/resource.html#Practitioner.id">id</a>" : "SidselSygeplejerske",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Practitioner.meta">meta</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
             <a href="StructureDefinition-dk-core-practitioner.html" style="color: Maroon">&#x1F517;</a> "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"
           ]
         },
-        "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.text">text</a>" : {
+        "<a href="http://hl7.org/fhir/R4/domainresource.html#Practitioner.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Practitioner_SidselSygeplejerske\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Practitioner SidselSygeplejerske&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;SidselSygeplejerske\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcSidselSygeplejerske\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;SidselSygeplejerske-da-DK\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Sidsel Andersen&lt;/p&gt;&lt;h3&gt;Qualifications&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes 5166}\&quot;&gt;Sygeplejerske&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Practitioner_SidselSygeplejerske\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Practitioner SidselSygeplejerske&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;SidselSygeplejerske\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcSidselSygeplejerske\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-dk-core-practitioner.html\&quot;&gt;Danish Core Practitioner Profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Sidsel Andersen&lt;/p&gt;&lt;h3&gt;Qualifications&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=\&quot;Codes:{http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes 5166}\&quot;&gt;Sygeplejerske&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
         },
         "<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.name">name</a>" : [
           {
@@ -704,7 +704,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Feb 1, 2025 19:23+0100">2025-02-01</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 19, 2025 17:27+0100">2025-12-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

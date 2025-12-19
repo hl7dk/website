@@ -7,16 +7,16 @@
       "canonical" : "http://hl7.dk/fhir/core",
       "category" : "National Core",
       "ci-build" : "http://build.fhir.org/ig/hl7dk/dk-core",
-      "version-count" : 9,
+      "version-count" : 10,
       "latest" : {
-        "version" : "3.4.0",
-        "date" : "2025-02-01",
-        "path" : "http://hl7.dk/fhir/core/3.4.0"
+        "version" : "3.5.0",
+        "date" : "2025-12-19",
+        "path" : "http://hl7.dk/fhir/core/3.5.0"
       },
       "milestone" : {
-        "version" : "3.4.0",
-        "date" : "2025-02-01",
-        "path" : "http://hl7.dk/fhir/core/3.4.0"
+        "version" : "3.5.0",
+        "date" : "2025-12-19",
+        "path" : "http://hl7.dk/fhir/core/3.5.0"
       }
     },
     {

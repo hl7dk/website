@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -10,25 +11,25 @@
   fhir:id [ fhir:v "HenvisningFraLageTilSygehus"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest HenvisningFraLageTilSygehus</b></p><a name=\"HenvisningFraLageTilSygehus\"> </a><a name=\"hcHenvisningFraLageTilSygehus\"> </a><a name=\"HenvisningFraLageTilSygehus-da-DK\"> </a><p><b>status</b>: Active</p><p><b>intent</b>: Proposal</p><p><b>priority</b>: ASAP</p><p><b>subject</b>: <a href=\"Patient-john.html\">Johnny Male, DoB: 1960-01-02 ( urn:oid:1.2.208.176.1.2#0201609995)</a></p><p><b>authoredOn</b>: 2021-05-01</p><p><b>requester</b>: <a href=\"Organization-LaegerneHasserisBymidte.html\">Organization Lægerne Hasseris Bymidte</a></p><p><b>reasonCode</b>: <span title=\"Codes:\">John henvises til onkologisk specialundersøgelse hurtigts muligt pga mistanke om modermærkekræft</span></p><p><b>reasonReference</b>: <a href=\"Condition-JohnMelanoma.html\">Condition Modermærkekræft i huden</a></p></div>"
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest HenvisningFraLageTilSygehus</b></p><a name=\"HenvisningFraLageTilSygehus\"> </a><a name=\"hcHenvisningFraLageTilSygehus\"> </a><p><b>status</b>: Aktiv</p><p><b>intent</b>: Proposal</p><p><b>priority</b>: ASAP</p><p><b>subject</b>: <a href=\"Patient-john.html\">Johnny Mand, DoB: 1960-01-02 ( urn:oid:1.2.208.176.1.2#0201609995)</a></p><p><b>authoredOn</b>: 2021-05-01</p><p><b>requester</b>: <a href=\"Organization-LaegerneHasserisBymidte.html\">Organization Lægerne Hasseris Bymidte</a></p><p><b>reasonCode</b>: <span title=\"Codes:\">John henvises til onkologisk specialundersøgelse hurtigts muligt pga mistanke om modermærkekræft</span></p><p><b>reasonReference</b>: <a href=\"Condition-JohnMelanoma.html\">Condition Modermærkekræft i huden</a></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:intent [ fhir:v "proposal"] ; # 
   fhir:priority [ fhir:v "asap"] ; # 
   fhir:subject [
-     fhir:link <http://hl7.dk/fhir/core/Patient/john> ;
+     fhir:l <http://hl7.dk/fhir/core/Patient/john> ;
      fhir:reference [ fhir:v "Patient/john" ]
   ] ; # 
   fhir:authoredOn [ fhir:v "2021-05-01"^^xsd:date] ; # 
   fhir:requester [
-     fhir:link <http://hl7.dk/fhir/core/Organization/LaegerneHasserisBymidte> ;
+     fhir:l <http://hl7.dk/fhir/core/Organization/LaegerneHasserisBymidte> ;
      fhir:reference [ fhir:v "Organization/LaegerneHasserisBymidte" ]
   ] ; # 
   fhir:reasonCode ( [
      fhir:text [ fhir:v "John henvises til onkologisk specialundersøgelse hurtigts muligt pga mistanke om modermærkekræft" ]
   ] ) ; # 
   fhir:reasonReference ( [
-     fhir:link <http://hl7.dk/fhir/core/Condition/JohnMelanoma> ;
+     fhir:l <http://hl7.dk/fhir/core/Condition/JohnMelanoma> ;
      fhir:reference [ fhir:v "Condition/JohnMelanoma" ]
   ] ) . # 
 

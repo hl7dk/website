@@ -1,5 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -11,31 +12,37 @@
   fhir:meta [
      fhir:profile ( [
        fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"^^xsd:anyURI ;
-       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role>
+       fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole AbrahamPractitionerRole</b></p><a name=\"AbrahamPractitionerRole\"> </a><a name=\"hcAbrahamPractitionerRole\"> </a><a name=\"AbrahamPractitionerRole-da-DK\"> </a><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"Practitioner-AbrahamLaege.html\">Practitioner Abraham Murakami</a></p><p><b>organization</b>: <a href=\"Organization-CenterForDiabetes.html\">Organization: identifier = urn:oid:1.2.208.176.1.1#633271000016006,http://cvr.dk#64942212; type = HC - Health centre</a></p><p><b>code</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0286 PP}\">Primary Care Provider</span></p><p><b>specialty</b>: <span title=\"Codes:{http://snomed.info/sct/554471000005108/version/20240331 408443003}\">408443003</span></p><blockquote><p><b>availableTime</b></p><p><b>daysOfWeek</b>: Monday, Tuesday, Wednesday</p><p><b>availableStartTime</b>: 09:00:00</p><p><b>availableEndTime</b>: 15:30:00</p></blockquote><blockquote><p><b>availableTime</b></p><p><b>daysOfWeek</b>: Thursday, Friday</p><p><b>availableStartTime</b>: 09:00:00</p><p><b>availableEndTime</b>: 12:00:00</p></blockquote></div>"
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole AbrahamPractitionerRole</b></p><a name=\"AbrahamPractitionerRole\"> </a><a name=\"hcAbrahamPractitionerRole\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-practitioner-role.html\">Danish Core PractitionerRole Profile</a></p></div><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"Practitioner-AbrahamLaege.html\">Practitioner Abraham Murakami</a></p><p><b>organization</b>: <a href=\"Organization-CenterForDiabetes.html\">Organization: identifier = urn:oid:1.2.208.176.1.1#633271000016006,http://cvr.dk#64942212; type = sundhedscenter</a></p><p><b>code</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0286 PP}\">Primary Care Provider</span></p><p><b>specialty</b>: <span title=\"Codes:{http://snomed.info/sct/554471000005108/version/20240331 408443003}\">408443003</span></p><blockquote><p><b>availableTime</b></p><p><b>daysOfWeek</b>: Mandag, Tirsdag, Onsdag</p><p><b>availableStartTime</b>: 09:00:00</p><p><b>availableEndTime</b>: 15:30:00</p></blockquote><blockquote><p><b>availableTime</b></p><p><b>daysOfWeek</b>: Torsdag, Fredag</p><p><b>availableStartTime</b>: 09:00:00</p><p><b>availableEndTime</b>: 12:00:00</p></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
-  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:active [ fhir:v true] ; # 
   fhir:practitioner [
-     fhir:link <http://hl7.dk/fhir/core/Practitioner/AbrahamLaege> ;
+     fhir:l <http://hl7.dk/fhir/core/Practitioner/AbrahamLaege> ;
      fhir:reference [ fhir:v "Practitioner/AbrahamLaege" ]
   ] ; # 
   fhir:organization [
-     fhir:link <http://hl7.dk/fhir/core/Organization/CenterForDiabetes> ;
+     fhir:l <http://hl7.dk/fhir/core/Organization/CenterForDiabetes> ;
      fhir:reference [ fhir:v "Organization/CenterForDiabetes" ]
   ] ; # 
   fhir:code ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0286"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v2-0286"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v2-0286>
+       ] ;
        fhir:code [ fhir:v "PP" ]
      ] )
   ] ) ; # 
   fhir:specialty ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "http://snomed.info/sct/554471000005108/version/20240331"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct/554471000005108/version/20240331"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct/554471000005108/version/20240331>
+       ] ;
        fhir:code [ fhir:v "408443003" ]
      ] )
   ] ) ; # 

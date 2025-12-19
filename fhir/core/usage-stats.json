@@ -1,6 +1,6 @@
 {
   "package": "hl7.fhir.dk.core",
-  "version": "3.4.0",
+  "version": "3.5.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "DK",
   "extensions": [
@@ -30,6 +30,21 @@
       ]
     },
     {
+      "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-care-provider",
+      "title": "CareProvider",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-documentreference-version-id-extension",
+      "title": "HL7 Denmark core DocumentReference Version ID extension",
+      "types": [
+        "string",
+        "string"
+      ]
+    },
+    {
       "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes",
       "title": "Danish Core Municipality codes",
       "types": [
@@ -38,6 +53,20 @@
         "Extension",
         "Coding",
         "string"
+      ]
+    },
+    {
+      "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-planned-end-date",
+      "title": "PlannedEndDate",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-planned-start-date",
+      "title": "PlannedStartDate",
+      "types": [
+        "dateTime"
       ]
     }
   ],
@@ -54,10 +83,22 @@
         "title": "Danish IPA Core Condition Profile"
       }
     ],
+    "Encounter": [
+      {
+        "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-encounter",
+        "title": "Danish Core Encounter Profile"
+      }
+    ],
     "Location": [
       {
         "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-location",
         "title": "Danish Core Location Profile"
+      }
+    ],
+    "DocumentReference": [
+      {
+        "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-minimaldocumentreference",
+        "title": "Danish Core Minimal DocumentReference Profile"
       }
     ],
     "Organization": [
@@ -107,8 +148,20 @@
     "http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes": [
       "Patient.address"
     ],
+    "http://hl7.dk/fhir/core/StructureDefinition/dk-core-care-provider": [
+      "Encounter"
+    ],
     "http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes": [
       "Patient.address"
+    ],
+    "http://hl7.dk/fhir/core/StructureDefinition/dk-core-planned-end-date": [
+      "Encounter"
+    ],
+    "http://hl7.dk/fhir/core/StructureDefinition/dk-core-planned-start-date": [
+      "Encounter"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.version": [
+      "DocumentReference"
     ],
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url": [
       "NamingSystem"
@@ -157,6 +210,9 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile": [
       "StructureDefinition"
     ],
+    "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters": [
+      "ImplementationGuide.definition"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
     ],
@@ -172,6 +228,9 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
     ]
   }
 }
