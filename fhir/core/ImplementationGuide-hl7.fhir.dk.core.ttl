@@ -17,11 +17,11 @@
      fhir:v "http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core"^^xsd:anyURI ;
      fhir:l <http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core>
   ] ; # 
-  fhir:version [ fhir:v "3.5.0"] ; # 
+  fhir:version [ fhir:v "3.6.0"] ; # 
   fhir:name [ fhir:v "DKCore"] ; # 
   fhir:title [ fhir:v "HL7 FHIR Implementation Guide: DK Core"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-12-19T17:27:08+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-03-11T23:16:27+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -64,12 +64,12 @@
        fhir:l <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "7.0.1" ]
+     fhir:version [ fhir:v "7.1.0" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_uv_extensions_r4" ] ;
      fhir:uri [
-       fhir:v "http://hl7.org/fhir/extensions"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/extensions>
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
      fhir:version [ fhir:v "5.3.0-ballot-tc1" ]
@@ -285,30 +285,6 @@
          fhir:value [
            a fhir:String ;
            fhir:v "urn:oid:1.2.208.176.2.4.12"
-         ]
-       ] ) ;
-       fhir:url [
-         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "code"^^xsd:anyURI ;
-           fhir:l fhir:code
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "special-url"
-         ]
-       ] [
-         fhir:url [
-           fhir:v "value"^^xsd:anyURI ;
-           fhir:l fhir:value
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "http://npu-terminology.org"
          ]
        ] ) ;
        fhir:url [
@@ -1110,30 +1086,6 @@
          ] ;
          fhir:value [
            a fhir:Code ;
-           fhir:v "special-url"
-         ]
-       ] [
-         fhir:url [
-           fhir:v "value"^^xsd:anyURI ;
-           fhir:l fhir:value
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "http://npu-terminology.org"
-         ]
-       ] ) ;
-       fhir:url [
-         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "code"^^xsd:anyURI ;
-           fhir:l fhir:code
-         ] ;
-         fhir:value [
-           a fhir:Code ;
            fhir:v "path-expansion-params"
          ]
        ] [
@@ -1755,6 +1707,28 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/AliJensen> ;
+         fhir:reference [ fhir:v "Patient/AliJensen" ]
+       ] ;
+       fhir:name [ fhir:v "Ali Test Jensen - søn af Anders" ] ;
+       fhir:description [ fhir:v "Ali Test Jensen - Søn af Anders Jensen" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Location"
          ]
        ] ) ;
@@ -1799,6 +1773,50 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/AndersRelatedToAli> ;
+         fhir:reference [ fhir:v "RelatedPerson/AndersRelatedToAli" ]
+       ] ;
+       fhir:name [ fhir:v "Anders som far til Ali" ] ;
+       fhir:description [ fhir:v "Anders er far til Ali" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/AndersJensen> ;
+         fhir:reference [ fhir:v "Patient/AndersJensen" ]
+       ] ;
+       fhir:name [ fhir:v "Anders Test Jensen - far til Ali" ] ;
+       fhir:description [ fhir:v "Anders Test Jensen - Far til Ali Jensen" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "DocumentReference"
          ]
        ] ) ;
@@ -1812,6 +1830,137 @@
          a fhir:Canonical ;
          fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-minimaldocumentreference"^^xsd:anyURI ;
          fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-minimaldocumentreference>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/AyaBerggren> ;
+         fhir:reference [ fhir:v "Patient/AyaBerggren" ]
+       ] ;
+       fhir:name [ fhir:v "Aya Test Berggren - datter af Kirsten" ] ;
+       fhir:description [ fhir:v "Aya Test Berggren - Datter af Kirsten Berggren" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Group"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Group/BerggrenFamily> ;
+         fhir:reference [ fhir:v "Group/BerggrenFamily" ]
+       ] ;
+       fhir:name [ fhir:v "Berggren familien" ] ;
+       fhir:description [ fhir:v "Familiegruppe: Nancy Ann Berggren med far Åge, bror Bruno, børn Max, Ruddi, Kirsten, Brita og børnebørn Pia, Gitte, Lars, Rikke, Aya" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/BoVestergaard> ;
+         fhir:reference [ fhir:v "Patient/BoVestergaard" ]
+       ] ;
+       fhir:name [ fhir:v "Bo Test Vestergaard" ] ;
+       fhir:description [ fhir:v "Bo Test Vestergaard - testpatient" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/BritaBerggren> ;
+         fhir:reference [ fhir:v "Patient/BritaBerggren" ]
+       ] ;
+       fhir:name [ fhir:v "Brita Test Berggren - datter af Nancy" ] ;
+       fhir:description [ fhir:v "Brita Test Berggren - Datter af Nancy. Værge: Nancy" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/BrunoRelatedToNancy> ;
+         fhir:reference [ fhir:v "RelatedPerson/BrunoRelatedToNancy" ]
+       ] ;
+       fhir:name [ fhir:v "Bruno som bror til Nancy" ] ;
+       fhir:description [ fhir:v "Bruno er bror til Nancy" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/Bruno> ;
+         fhir:reference [ fhir:v "Patient/Bruno" ]
+       ] ;
+       fhir:name [ fhir:v "Bruno Test Elmer - bror til Nancy" ] ;
+       fhir:description [ fhir:v "Bruno Test Elmer - Bror til Nancy" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
        ]
      ] [
        fhir:extension ( [
@@ -1985,6 +2134,28 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/CaesarOestergaard> ;
+         fhir:reference [ fhir:v "Patient/CaesarOestergaard" ]
+       ] ;
+       fhir:name [ fhir:v "Cæsar Test Østergård - markeret som afdød" ] ;
+       fhir:description [ fhir:v "Cæsar Test Østergård - Markeret som 'Afdød' på nspop DTG service" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
        ]
      ] [
        fhir:extension ( [
@@ -2484,7 +2655,7 @@
          fhir:l <http://hl7.dk/fhir/core/CodeSystem/address-type-dk-supplement> ;
          fhir:reference [ fhir:v "CodeSystem/address-type-dk-supplement" ]
        ] ;
-       fhir:name [ fhir:v "DK Address Type" ] ;
+       fhir:name [ fhir:v "DK Address Type Supplement" ] ;
        fhir:description [ fhir:v "The type of an address (physical / postal)" ] ;
        fhir:example [
          a fhir:Boolean ;
@@ -2505,7 +2676,7 @@
          fhir:l <http://hl7.dk/fhir/core/CodeSystem/address-use-dk-supplement> ;
          fhir:reference [ fhir:v "CodeSystem/address-use-dk-supplement" ]
        ] ;
-       fhir:name [ fhir:v "DK Address Use" ] ;
+       fhir:name [ fhir:v "DK Address Use Supplement" ] ;
        fhir:description [ fhir:v "The use of an address" ] ;
        fhir:example [
          a fhir:Boolean ;
@@ -2547,7 +2718,7 @@
          fhir:l <http://hl7.dk/fhir/core/CodeSystem/care-team-status-dk-supplement> ;
          fhir:reference [ fhir:v "CodeSystem/care-team-status-dk-supplement" ]
        ] ;
-       fhir:name [ fhir:v "DK CareTeam Status" ] ;
+       fhir:name [ fhir:v "DK CareTeam Status Supplement" ] ;
        fhir:description [ fhir:v "Indicates the status of the care team." ] ;
        fhir:example [
          a fhir:Boolean ;
@@ -2589,7 +2760,7 @@
          fhir:l <http://hl7.dk/fhir/core/CodeSystem/consent-state-codes-dk-supplement> ;
          fhir:reference [ fhir:v "CodeSystem/consent-state-codes-dk-supplement" ]
        ] ;
-       fhir:name [ fhir:v "DK Consent State" ] ;
+       fhir:name [ fhir:v "DK Consent State Supplement" ] ;
        fhir:description [ fhir:v "Indicates the state of the consent" ] ;
        fhir:example [
          a fhir:Boolean ;
@@ -2729,6 +2900,28 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Organization/dk-core-organization-1> ;
+         fhir:reference [ fhir:v "Organization/dk-core-organization-1" ]
+       ] ;
+       fhir:name [ fhir:v "DK CVR Organization instance of DkCoreOrganization" ] ;
+       fhir:description [ fhir:v "Sample of DK organization" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "ValueSet"
          ]
        ] ) ;
@@ -2757,7 +2950,7 @@
          fhir:l <http://hl7.dk/fhir/core/CodeSystem/days-of-week-dk-supplement> ;
          fhir:reference [ fhir:v "CodeSystem/days-of-week-dk-supplement" ]
        ] ;
-       fhir:name [ fhir:v "DK Days Of Week" ] ;
+       fhir:name [ fhir:v "DK Days Of Week Supplement" ] ;
        fhir:description [ fhir:v "The days of the week." ] ;
        fhir:example [
          a fhir:Boolean ;
@@ -2799,7 +2992,7 @@
          fhir:l <http://hl7.dk/fhir/core/CodeSystem/episode-of-care-status-dk-supplement> ;
          fhir:reference [ fhir:v "CodeSystem/episode-of-care-status-dk-supplement" ]
        ] ;
-       fhir:name [ fhir:v "DK Episode Of Care Status" ] ;
+       fhir:name [ fhir:v "DK Episode Of Care Status Supplement" ] ;
        fhir:description [ fhir:v "The status of the episode of care." ] ;
        fhir:example [
          a fhir:Boolean ;
@@ -3009,7 +3202,7 @@
          fhir:l <http://hl7.dk/fhir/core/CodeSystem/publication-status-dk-supplement> ;
          fhir:reference [ fhir:v "CodeSystem/publication-status-dk-supplement" ]
        ] ;
-       fhir:name [ fhir:v "DK Publication Status" ] ;
+       fhir:name [ fhir:v "DK Publication Status Supplement" ] ;
        fhir:description [ fhir:v "The lifecycle status of a Value Set or Concept Map." ] ;
        fhir:example [
          a fhir:Boolean ;
@@ -3114,7 +3307,7 @@
          fhir:l <http://hl7.dk/fhir/core/CodeSystem/request-status-dk-supplement> ;
          fhir:reference [ fhir:v "CodeSystem/request-status-dk-supplement" ]
        ] ;
-       fhir:name [ fhir:v "DK Request Status" ] ;
+       fhir:name [ fhir:v "DK Request Status Supplement" ] ;
        fhir:description [ fhir:v "Codes identifying the stage lifecycle stage of a request" ] ;
        fhir:example [
          a fhir:Boolean ;
@@ -3135,7 +3328,7 @@
          fhir:l <http://hl7.dk/fhir/core/CodeSystem/role-code-dk-supplement> ;
          fhir:reference [ fhir:v "CodeSystem/role-code-dk-supplement" ]
        ] ;
-       fhir:name [ fhir:v "DK Role Code" ] ;
+       fhir:name [ fhir:v "DK Role Code Supplement" ] ;
        fhir:description [ fhir:v "CodeSystem supplement with danish translations for RoleCode" ] ;
        fhir:example [
          a fhir:Boolean ;
@@ -3233,6 +3426,226 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/DrengLevendefodt2016> ;
+         fhir:reference [ fhir:v "Patient/DrengLevendefodt2016" ]
+       ] ;
+       fhir:name [ fhir:v "Dreng Test Levendefødt (2016) - tvilling" ] ;
+       fhir:description [ fhir:v "Dreng Test Levendefødt født 2016 - Tvilling" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/DrengLevendefodt2024> ;
+         fhir:reference [ fhir:v "Patient/DrengLevendefodt2024" ]
+       ] ;
+       fhir:name [ fhir:v "Dreng Test Levendefødt (2024) - tvilling" ] ;
+       fhir:description [ fhir:v "Dreng Test Levendefødt født 2024 - Tvilling" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/EinerRelatedToEK> ;
+         fhir:reference [ fhir:v "RelatedPerson/EinerRelatedToEK" ]
+       ] ;
+       fhir:name [ fhir:v "Einer som far til EK" ] ;
+       fhir:description [ fhir:v "Einer er far til EK" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/EinerRelatedToEllen> ;
+         fhir:reference [ fhir:v "RelatedPerson/EinerRelatedToEllen" ]
+       ] ;
+       fhir:name [ fhir:v "Einer som far til Ellen" ] ;
+       fhir:description [ fhir:v "Einer er far til Ellen Louise" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/EinerRelatedToElse> ;
+         fhir:reference [ fhir:v "RelatedPerson/EinerRelatedToElse" ]
+       ] ;
+       fhir:name [ fhir:v "Einer som far til Else" ] ;
+       fhir:description [ fhir:v "Einer er far til Else" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/EinerRelatedToMagnus> ;
+         fhir:reference [ fhir:v "RelatedPerson/EinerRelatedToMagnus" ]
+       ] ;
+       fhir:name [ fhir:v "Einer som far til Magnus" ] ;
+       fhir:description [ fhir:v "Einer er far til Magnus" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/EinerRelatedToRasmus> ;
+         fhir:reference [ fhir:v "RelatedPerson/EinerRelatedToRasmus" ]
+       ] ;
+       fhir:name [ fhir:v "Einer som far til Rasmus" ] ;
+       fhir:description [ fhir:v "Einer er far til Rasmus" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/Einer> ;
+         fhir:reference [ fhir:v "Patient/Einer" ]
+       ] ;
+       fhir:name [ fhir:v "Einer Test Lauridsen - far i Lauridsen familien" ] ;
+       fhir:description [ fhir:v "Einer Test Lauridsen - Gift med Lonni. Tvillinger Magnus & Rasmus, Trillinger Else & Ellen & EK" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/EK> ;
+         fhir:reference [ fhir:v "Patient/EK" ]
+       ] ;
+       fhir:name [ fhir:v "EK Test Lauridsen - trilling med Ellen & Else" ] ;
+       fhir:description [ fhir:v "EK Test Lauridsen - Søn af Lonni & Einer Lauridsen. Trilling med Ellen & Else" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/EllenLouise> ;
+         fhir:reference [ fhir:v "Patient/EllenLouise" ]
+       ] ;
+       fhir:name [ fhir:v "Ellen Louise Test Lauridsen - trilling med EK & Else" ] ;
+       fhir:description [ fhir:v "Ellen Louise Test Lauridsen - Datter af Lonni & Einer Lauridsen. Trilling med EK & Else" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Condition"
          ]
        ] ) ;
@@ -3246,6 +3659,28 @@
          a fhir:Canonical ;
          fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition"^^xsd:anyURI ;
          fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/ElseLauridsen> ;
+         fhir:reference [ fhir:v "Patient/ElseLauridsen" ]
+       ] ;
+       fhir:name [ fhir:v "Else Test Lauridsen - trilling med EK & Ellen" ] ;
+       fhir:description [ fhir:v "Else Test Lauridsen - Datter af Lonni & Einer Lauridsen. Trilling med EK & Ellen" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
        ]
      ] [
        fhir:extension ( [
@@ -3730,6 +4165,28 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/GitteNancy> ;
+         fhir:reference [ fhir:v "Patient/GitteNancy" ]
+       ] ;
+       fhir:name [ fhir:v "Gitte Nancy Test Berggren - datter af Kirsten" ] ;
+       fhir:description [ fhir:v "Gitte Nancy Test Berggren - Datter af Kirsten Berggren, Nancys yndlingsbarnebarn" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:complex-type"
          ]
        ] ) ;
@@ -3794,18 +4251,18 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "StructureDefinition:extension"
+           fhir:v "Group"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-documentreference-version-id-extension> ;
-         fhir:reference [ fhir:v "StructureDefinition/dk-core-documentreference-version-id-extension" ]
+         fhir:l <http://hl7.dk/fhir/core/Group/JensenFamily> ;
+         fhir:reference [ fhir:v "Group/JensenFamily" ]
        ] ;
-       fhir:name [ fhir:v "HL7 Denmark core DocumentReference Version ID extension" ] ;
-       fhir:description [ fhir:v "Extension containing information about the version of the DocumentReference for a specific standard. The version is included in the R5 version of the resource." ] ;
+       fhir:name [ fhir:v "Jensen familien" ] ;
+       fhir:description [ fhir:v "Familiegruppe: Anders Jensen og hans søn Ali" ] ;
        fhir:example [
          a fhir:Boolean ;
-         fhir:v false
+         fhir:v true
        ]
      ] [
        fhir:extension ( [
@@ -3990,6 +4447,204 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/JulianeJoergensen> ;
+         fhir:reference [ fhir:v "Patient/JulianeJoergensen" ]
+       ] ;
+       fhir:name [ fhir:v "Juliane Test Jørgensen" ] ;
+       fhir:description [ fhir:v "Juliane Test Jørgensen - testpatient" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/KajaHansen> ;
+         fhir:reference [ fhir:v "Patient/KajaHansen" ]
+       ] ;
+       fhir:name [ fhir:v "Kaja Test Hansen" ] ;
+       fhir:description [ fhir:v "Kaja Test Hansen - testpatient" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/KirstenRelatedToAya> ;
+         fhir:reference [ fhir:v "RelatedPerson/KirstenRelatedToAya" ]
+       ] ;
+       fhir:name [ fhir:v "Kirsten som mor til Aya" ] ;
+       fhir:description [ fhir:v "Kirsten er mor til Aya" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/KirstenRelatedToGitte> ;
+         fhir:reference [ fhir:v "RelatedPerson/KirstenRelatedToGitte" ]
+       ] ;
+       fhir:name [ fhir:v "Kirsten som mor til Gitte" ] ;
+       fhir:description [ fhir:v "Kirsten er mor til Gitte Nancy" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/KirstenRelatedToLars> ;
+         fhir:reference [ fhir:v "RelatedPerson/KirstenRelatedToLars" ]
+       ] ;
+       fhir:name [ fhir:v "Kirsten som mor til Lars" ] ;
+       fhir:description [ fhir:v "Kirsten er mor til Lars" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/KirstenRelatedToPia> ;
+         fhir:reference [ fhir:v "RelatedPerson/KirstenRelatedToPia" ]
+       ] ;
+       fhir:name [ fhir:v "Kirsten som mor til Pia" ] ;
+       fhir:description [ fhir:v "Kirsten er mor til Pia" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/KirstenRelatedToRikke> ;
+         fhir:reference [ fhir:v "RelatedPerson/KirstenRelatedToRikke" ]
+       ] ;
+       fhir:name [ fhir:v "Kirsten som mor til Rikke" ] ;
+       fhir:description [ fhir:v "Kirsten er mor til Rikke" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/KirstenBerggren> ;
+         fhir:reference [ fhir:v "Patient/KirstenBerggren" ]
+       ] ;
+       fhir:name [ fhir:v "Kirsten Test Berggren - datter af Nancy" ] ;
+       fhir:description [ fhir:v "Kirsten Test Berggren - Datter af Nancy. Datter Aya." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/KnutOdvar> ;
+         fhir:reference [ fhir:v "Patient/KnutOdvar" ]
+       ] ;
+       fhir:name [ fhir:v "Knut Odvar Test Mosebryggersen" ] ;
+       fhir:description [ fhir:v "Knut Odvar Test Mosebryggersen - Søn af May June Moberg & Schwendlund Mosebryggersen" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:complex-type"
          ]
        ] ) ;
@@ -4033,6 +4688,91 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/LarsBerggren> ;
+         fhir:reference [ fhir:v "Patient/LarsBerggren" ]
+       ] ;
+       fhir:name [ fhir:v "Lars Test Berggren - søn af Kirsten" ] ;
+       fhir:description [ fhir:v "Lars Test Berggren - Søn af Kirsten Berggren" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Group"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Group/LauridsenFamily> ;
+         fhir:reference [ fhir:v "Group/LauridsenFamily" ]
+       ] ;
+       fhir:name [ fhir:v "Lauridsen familien" ] ;
+       fhir:description [ fhir:v "Familiegruppe: Einer og Lonni Lauridsen med deres børn - tvillingerne Magnus & Rasmus og trillingerne Else, Ellen & EK" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Group"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Group/LevendefodtTwins2016> ;
+         fhir:reference [ fhir:v "Group/LevendefodtTwins2016" ]
+       ] ;
+       fhir:name [ fhir:v "Levendefødt tvillinger 2016" ] ;
+       fhir:description [ fhir:v "Familiegruppe: Tvillinger født 2016" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Group"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Group/LevendefodtTwins2024> ;
+         fhir:reference [ fhir:v "Group/LevendefodtTwins2024" ]
+       ] ;
+       fhir:name [ fhir:v "Levendefødt tvillinger 2024" ] ;
+       fhir:description [ fhir:v "Familiegruppe: Tvillinger født 2024" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "PractitionerRole"
          ]
        ] ) ;
@@ -4046,6 +4786,204 @@
          a fhir:Canonical ;
          fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"^^xsd:anyURI ;
          fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/LonniRelatedToEK> ;
+         fhir:reference [ fhir:v "RelatedPerson/LonniRelatedToEK" ]
+       ] ;
+       fhir:name [ fhir:v "Lonni som mor til EK" ] ;
+       fhir:description [ fhir:v "Lonni er mor til EK" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/LonniRelatedToEllen> ;
+         fhir:reference [ fhir:v "RelatedPerson/LonniRelatedToEllen" ]
+       ] ;
+       fhir:name [ fhir:v "Lonni som mor til Ellen" ] ;
+       fhir:description [ fhir:v "Lonni er mor til Ellen Louise" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/LonniRelatedToElse> ;
+         fhir:reference [ fhir:v "RelatedPerson/LonniRelatedToElse" ]
+       ] ;
+       fhir:name [ fhir:v "Lonni som mor til Else" ] ;
+       fhir:description [ fhir:v "Lonni er mor til Else" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/LonniRelatedToMagnus> ;
+         fhir:reference [ fhir:v "RelatedPerson/LonniRelatedToMagnus" ]
+       ] ;
+       fhir:name [ fhir:v "Lonni som mor til Magnus" ] ;
+       fhir:description [ fhir:v "Lonni er mor til Magnus" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/LonniRelatedToRasmus> ;
+         fhir:reference [ fhir:v "RelatedPerson/LonniRelatedToRasmus" ]
+       ] ;
+       fhir:name [ fhir:v "Lonni som mor til Rasmus" ] ;
+       fhir:description [ fhir:v "Lonni er mor til Rasmus" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/LonniRelatedToEiner> ;
+         fhir:reference [ fhir:v "RelatedPerson/LonniRelatedToEiner" ]
+       ] ;
+       fhir:name [ fhir:v "Lonni som ægtefælle til Einer" ] ;
+       fhir:description [ fhir:v "Lonni er gift med Einer" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/Lonni> ;
+         fhir:reference [ fhir:v "Patient/Lonni" ]
+       ] ;
+       fhir:name [ fhir:v "Lonni Test Lauridsen - mor i Lauridsen familien" ] ;
+       fhir:description [ fhir:v "Lonni Test Lauridsen - Gift med Einer. Tvillinger Magnus & Rasmus, Trillinger Else & Ellen & EK" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/Magnus> ;
+         fhir:reference [ fhir:v "Patient/Magnus" ]
+       ] ;
+       fhir:name [ fhir:v "Magnus Test Lauridsen - tvilling med Rasmus" ] ;
+       fhir:description [ fhir:v "Magnus Test Lauridsen - Søn af Lonni & Einer Lauridsen. Tvilling med Rasmus" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/MaxBerggren> ;
+         fhir:reference [ fhir:v "Patient/MaxBerggren" ]
+       ] ;
+       fhir:name [ fhir:v "Max Test Berggren - søn af Nancy" ] ;
+       fhir:description [ fhir:v "Max Test Berggren - Søn af Nancy" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
        ]
      ] [
        fhir:extension ( [
@@ -4244,6 +5182,204 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/MayJuneRelatedToKnut> ;
+         fhir:reference [ fhir:v "RelatedPerson/MayJuneRelatedToKnut" ]
+       ] ;
+       fhir:name [ fhir:v "May June som mor til Knut" ] ;
+       fhir:description [ fhir:v "May June er mor til Knut Odvar" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/MayJuneRelatedToOdd> ;
+         fhir:reference [ fhir:v "RelatedPerson/MayJuneRelatedToOdd" ]
+       ] ;
+       fhir:name [ fhir:v "May June som mor til Odd" ] ;
+       fhir:description [ fhir:v "May June er mor til Odd Haugen" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/MayJuneRelatedToSille> ;
+         fhir:reference [ fhir:v "RelatedPerson/MayJuneRelatedToSille" ]
+       ] ;
+       fhir:name [ fhir:v "May June som mor til Sille" ] ;
+       fhir:description [ fhir:v "May June er mor til Sille June" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/MayJuneRelatedToSverre> ;
+         fhir:reference [ fhir:v "RelatedPerson/MayJuneRelatedToSverre" ]
+       ] ;
+       fhir:name [ fhir:v "May June som mor til Sverre" ] ;
+       fhir:description [ fhir:v "May June er mor til Sverre" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/MayJuneRelatedToTorre> ;
+         fhir:reference [ fhir:v "RelatedPerson/MayJuneRelatedToTorre" ]
+       ] ;
+       fhir:name [ fhir:v "May June som mor til Torre" ] ;
+       fhir:description [ fhir:v "May June er mor til Torre" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/MayJuneGuardianOfSverre> ;
+         fhir:reference [ fhir:v "RelatedPerson/MayJuneGuardianOfSverre" ]
+       ] ;
+       fhir:name [ fhir:v "May June som værge for Sverre" ] ;
+       fhir:description [ fhir:v "May June er værge for Sverre" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/MayJuneGuardianOfTorre> ;
+         fhir:reference [ fhir:v "RelatedPerson/MayJuneGuardianOfTorre" ]
+       ] ;
+       fhir:name [ fhir:v "May June som værge for Torre" ] ;
+       fhir:description [ fhir:v "May June er værge for Torre" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/MayJuneRelatedToSchwendlund> ;
+         fhir:reference [ fhir:v "RelatedPerson/MayJuneRelatedToSchwendlund" ]
+       ] ;
+       fhir:name [ fhir:v "May June som ægtefælle til Schwendlund" ] ;
+       fhir:description [ fhir:v "May June er gift med Schwendlund" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/MayJune> ;
+         fhir:reference [ fhir:v "Patient/MayJune" ]
+       ] ;
+       fhir:name [ fhir:v "May June Test Moberg - mor i Mosebryggersen familien" ] ;
+       fhir:description [ fhir:v "May June Test Moberg - Gift med Schwendlund Mosebryggersen. Sønnerne Odd & Knut, Datteren Sille, Tvillingerne Sverre & Torre" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Organization"
          ]
        ] ) ;
@@ -4257,6 +5393,225 @@
          a fhir:Canonical ;
          fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"^^xsd:anyURI ;
          fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Group"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Group/MosebryggerssenFamily> ;
+         fhir:reference [ fhir:v "Group/MosebryggerssenFamily" ]
+       ] ;
+       fhir:name [ fhir:v "Mosebryggersen familien" ] ;
+       fhir:description [ fhir:v "Familiegruppe: Schwendlund og May June med deres børn - Odd, Knut, Sille og tvillingerne Sverre & Torre" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/MuhammedAbdul> ;
+         fhir:reference [ fhir:v "Patient/MuhammedAbdul" ]
+       ] ;
+       fhir:name [ fhir:v "Muhammed Test Abdul" ] ;
+       fhir:description [ fhir:v "Muhammed Test Abdul - testpatient" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/NancyAnn> ;
+         fhir:reference [ fhir:v "Patient/NancyAnn" ]
+       ] ;
+       fhir:name [ fhir:v "Nancy Ann Test Berggren - bedstemor i Berggren familien" ] ;
+       fhir:description [ fhir:v "Nancy Ann Test Berggren - Sønnerne Max og Ruddi. Døtrene Kirsten og Britta." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/NancyRelatedToGitte> ;
+         fhir:reference [ fhir:v "RelatedPerson/NancyRelatedToGitte" ]
+       ] ;
+       fhir:name [ fhir:v "Nancy som bedstemor til Gitte" ] ;
+       fhir:description [ fhir:v "Nancy er bedstemor til Gitte (Nancys yndlingsbarnebarn)" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/NancyRelatedToBrita> ;
+         fhir:reference [ fhir:v "RelatedPerson/NancyRelatedToBrita" ]
+       ] ;
+       fhir:name [ fhir:v "Nancy som mor til Brita" ] ;
+       fhir:description [ fhir:v "Nancy er mor til Brita" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/NancyRelatedToKirsten> ;
+         fhir:reference [ fhir:v "RelatedPerson/NancyRelatedToKirsten" ]
+       ] ;
+       fhir:name [ fhir:v "Nancy som mor til Kirsten" ] ;
+       fhir:description [ fhir:v "Nancy er mor til Kirsten" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/NancyRelatedToMax> ;
+         fhir:reference [ fhir:v "RelatedPerson/NancyRelatedToMax" ]
+       ] ;
+       fhir:name [ fhir:v "Nancy som mor til Max" ] ;
+       fhir:description [ fhir:v "Nancy er mor til Max" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/NancyRelatedToRuddi> ;
+         fhir:reference [ fhir:v "RelatedPerson/NancyRelatedToRuddi" ]
+       ] ;
+       fhir:name [ fhir:v "Nancy som mor til Ruddi" ] ;
+       fhir:description [ fhir:v "Nancy er mor til Ruddi" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/NancyGuardianOfBrita> ;
+         fhir:reference [ fhir:v "RelatedPerson/NancyGuardianOfBrita" ]
+       ] ;
+       fhir:name [ fhir:v "Nancy som værge for Brita" ] ;
+       fhir:description [ fhir:v "Nancy er værge for Brita" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/NancyGuardianOfAage> ;
+         fhir:reference [ fhir:v "RelatedPerson/NancyGuardianOfAage" ]
+       ] ;
+       fhir:name [ fhir:v "Nancy som værge for Åge" ] ;
+       fhir:description [ fhir:v "Nancy er værge for Åge" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
        ]
      ] [
        fhir:extension ( [
@@ -4308,18 +5663,19 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "CodeSystem"
+           fhir:v "Patient"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://hl7.dk/fhir/core/CodeSystem/dk-npu-fragment> ;
-         fhir:reference [ fhir:v "CodeSystem/dk-npu-fragment" ]
+         fhir:l <http://hl7.dk/fhir/core/Patient/NielsVendelboe> ;
+         fhir:reference [ fhir:v "Patient/NielsVendelboe" ]
        ] ;
-       fhir:name [ fhir:v "Nomenclature for Properties and Units (NPU) - Fragment for DK Core" ] ;
-       fhir:description [ fhir:v "Fragment of the NPU code system used in DK Core. The full version of NPU can be found at http://labterm.dk" ] ;
+       fhir:name [ fhir:v "Niels Test Vendelboe" ] ;
+       fhir:description [ fhir:v "Niels Test Vendelboe - testpatient" ] ;
        fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
        ]
      ] [
        fhir:extension ( [
@@ -4341,6 +5697,94 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/OddHaugen> ;
+         fhir:reference [ fhir:v "Patient/OddHaugen" ]
+       ] ;
+       fhir:name [ fhir:v "Odd Haugen Test Mosebryggersen" ] ;
+       fhir:description [ fhir:v "Odd Haugen Test Mosebryggersen - Søn af May June Moberg & Schwendlund Mosebryggersen" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/PiaBerggren> ;
+         fhir:reference [ fhir:v "Patient/PiaBerggren" ]
+       ] ;
+       fhir:name [ fhir:v "Pia Test Berggren - datter af Kirsten" ] ;
+       fhir:description [ fhir:v "Pia Test Berggren - Datter af Kirsten Berggren" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/PigeLevendefodt2016> ;
+         fhir:reference [ fhir:v "Patient/PigeLevendefodt2016" ]
+       ] ;
+       fhir:name [ fhir:v "Pige Test Levendefødt (2016) - tvilling" ] ;
+       fhir:description [ fhir:v "Pige Test Levendefødt født 2016 - Tvilling" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/PigeLevendefodt2024> ;
+         fhir:reference [ fhir:v "Patient/PigeLevendefodt2024" ]
+       ] ;
+       fhir:name [ fhir:v "Pige Test Levendefødt (2024) - tvilling" ] ;
+       fhir:description [ fhir:v "Pige Test Levendefødt født 2024 - Tvilling" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
        ]
      ] [
        fhir:extension ( [
@@ -4629,6 +6073,28 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/Rasmus> ;
+         fhir:reference [ fhir:v "Patient/Rasmus" ]
+       ] ;
+       fhir:name [ fhir:v "Rasmus Test Lauridsen - tvilling med Magnus" ] ;
+       fhir:description [ fhir:v "Rasmus Test Lauridsen - Søn af Lonni & Einer Lauridsen. Tvilling med Magnus" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "ServiceRequest"
          ]
        ] ) ;
@@ -4673,6 +6139,204 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/RikkeBerggren> ;
+         fhir:reference [ fhir:v "Patient/RikkeBerggren" ]
+       ] ;
+       fhir:name [ fhir:v "Rikke Test Berggren - datter af Kirsten" ] ;
+       fhir:description [ fhir:v "Rikke Test Berggren - Datter af Kirsten Berggren, Ruddi er værge for Rikke" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/RuddiGuardianOfRikke> ;
+         fhir:reference [ fhir:v "RelatedPerson/RuddiGuardianOfRikke" ]
+       ] ;
+       fhir:name [ fhir:v "Ruddi som værge for Rikke" ] ;
+       fhir:description [ fhir:v "Ruddi er værge for Rikke" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/RuddiBerggren> ;
+         fhir:reference [ fhir:v "Patient/RuddiBerggren" ]
+       ] ;
+       fhir:name [ fhir:v "Ruddi Test Berggren - søn af Nancy" ] ;
+       fhir:description [ fhir:v "Ruddi Test Berggren - Søn af Nancy" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/SchwendlundRelatedToKnut> ;
+         fhir:reference [ fhir:v "RelatedPerson/SchwendlundRelatedToKnut" ]
+       ] ;
+       fhir:name [ fhir:v "Schwendlund som far til Knut" ] ;
+       fhir:description [ fhir:v "Schwendlund er far til Knut Odvar" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/SchwendlundRelatedToOdd> ;
+         fhir:reference [ fhir:v "RelatedPerson/SchwendlundRelatedToOdd" ]
+       ] ;
+       fhir:name [ fhir:v "Schwendlund som far til Odd" ] ;
+       fhir:description [ fhir:v "Schwendlund er far til Odd Haugen" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/SchwendlundRelatedToSille> ;
+         fhir:reference [ fhir:v "RelatedPerson/SchwendlundRelatedToSille" ]
+       ] ;
+       fhir:name [ fhir:v "Schwendlund som far til Sille" ] ;
+       fhir:description [ fhir:v "Schwendlund er far til Sille June" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/SchwendlundRelatedToSverre> ;
+         fhir:reference [ fhir:v "RelatedPerson/SchwendlundRelatedToSverre" ]
+       ] ;
+       fhir:name [ fhir:v "Schwendlund som far til Sverre" ] ;
+       fhir:description [ fhir:v "Schwendlund er far til Sverre" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/SchwendlundRelatedToTorre> ;
+         fhir:reference [ fhir:v "RelatedPerson/SchwendlundRelatedToTorre" ]
+       ] ;
+       fhir:name [ fhir:v "Schwendlund som far til Torre" ] ;
+       fhir:description [ fhir:v "Schwendlund er far til Torre" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/Schwendlund> ;
+         fhir:reference [ fhir:v "Patient/Schwendlund" ]
+       ] ;
+       fhir:name [ fhir:v "Schwendlund Test Mosebryggersen - far i Mosebryggersen familien" ] ;
+       fhir:description [ fhir:v "Schwendlund Test Mosebryggersen - Gift med May June Moberg. Sønnerne Odd & Knut, Datteren Sille, Tvillingerne Sverre & Torre" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Practitioner"
          ]
        ] ) ;
@@ -4686,6 +6350,28 @@
          a fhir:Canonical ;
          fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"^^xsd:anyURI ;
          fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/SilleJune> ;
+         fhir:reference [ fhir:v "Patient/SilleJune" ]
+       ] ;
+       fhir:name [ fhir:v "Sille June Test Mosebrygersen" ] ;
+       fhir:description [ fhir:v "Sille June Test Mosebrygersen - Datter af May June Moberg & Schwendlund Mosebryggersen" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
        ]
      ] [
        fhir:extension ( [
@@ -4728,6 +6414,50 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/Sverre> ;
+         fhir:reference [ fhir:v "Patient/Sverre" ]
+       ] ;
+       fhir:name [ fhir:v "Sverre Test Mosebryggersen - tvilling med Torre" ] ;
+       fhir:description [ fhir:v "Sverre Test Mosebryggersen - Søn af May June Moberg & Schwendlund Mosebryggersen. Tvilling med Torre. Værge: May June" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/Torre> ;
+         fhir:reference [ fhir:v "Patient/Torre" ]
+       ] ;
+       fhir:name [ fhir:v "Torre Test Mosebryggersen - tvilling med Sverre" ] ;
+       fhir:description [ fhir:v "Torre Test Mosebryggersen - Søn af May June Moberg & Schwendlund Mosebryggersen. Tvilling med Sverre. Værge: May June" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
        ]
      ] [
        fhir:extension ( [
@@ -4790,6 +6520,50 @@
        ] ;
        fhir:name [ fhir:v "XDS document bundled Source Patient" ] ;
        fhir:description [ fhir:v "Instance of a XDS document bundled  source patient" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RelatedPerson"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/RelatedPerson/AageRelatedToNancy> ;
+         fhir:reference [ fhir:v "RelatedPerson/AageRelatedToNancy" ]
+       ] ;
+       fhir:name [ fhir:v "Åge som far til Nancy" ] ;
+       fhir:description [ fhir:v "Åge er far til Nancy" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Patient/Aage> ;
+         fhir:reference [ fhir:v "Patient/Aage" ]
+       ] ;
+       fhir:name [ fhir:v "Åge Test Berggren - far til Nancy" ] ;
+       fhir:description [ fhir:v "Åge Test Berggren - Far til Nancy. Værge: Nancy" ] ;
        fhir:example [
          a fhir:Canonical ;
          fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;

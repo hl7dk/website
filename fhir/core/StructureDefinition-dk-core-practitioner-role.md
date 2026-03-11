@@ -1,4 +1,4 @@
-# Danish Core PractitionerRole Profile - HL7 FHIR Implementation Guide: DK Core v3.5.0
+# Danish Core PractitionerRole Profile - HL7 FHIR Implementation Guide: DK Core v3.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role | *Version*:3.5.0 |
-| Active as of 2025-12-19 | *Computable Name*:DkCorePractitionerRole |
+| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role | *Version*:3.6.0 |
+| Active as of 2026-03-11 | *Computable Name*:DkCorePractitionerRole |
 
  
 HL7 Denmark core profile for health professional roles 
@@ -43,110 +43,86 @@ Other representations of profile: [CSV](StructureDefinition-dk-core-practitioner
   "resourceType" : "StructureDefinition",
   "id" : "dk-core-practitioner-role",
   "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role",
-  "version" : "3.5.0",
+  "version" : "3.6.0",
   "name" : "DkCorePractitionerRole",
   "title" : "Danish Core PractitionerRole Profile",
   "status" : "active",
-  "date" : "2025-12-19T17:27:08+01:00",
+  "date" : "2026-03-11T23:16:27+01:00",
   "publisher" : "HL7 Denmark",
-  "contact" : [
+  "contact" : [{
+    "name" : "HL7 Denmark",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.dk"
+    },
     {
-      "name" : "HL7 Denmark",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.hl7.dk"
-        },
-        {
-          "system" : "email",
-          "value" : "dk-affiliate@hl7.dk"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "dk-affiliate@hl7.dk"
+    }]
+  }],
   "description" : "HL7 Denmark core profile for health professional roles",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "DK",
-          "display" : "Denmark"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "servd",
-      "uri" : "http://www.omg.org/spec/ServD/1.0/",
-      "name" : "ServD"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "servd",
+    "uri" : "http://www.omg.org/spec/ServD/1.0/",
+    "name" : "ServD"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "PractitionerRole",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "PractitionerRole",
-        "path" : "PractitionerRole"
-      },
-      {
-        "id" : "PractitionerRole.practitioner",
-        "path" : "PractitionerRole.practitioner",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "PractitionerRole.organization",
-        "path" : "PractitionerRole.organization",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "PractitionerRole.location",
-        "path" : "PractitionerRole.location",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-location"
-            ]
-          }
-        ]
-      }
-    ]
+    "element" : [{
+      "id" : "PractitionerRole",
+      "path" : "PractitionerRole"
+    },
+    {
+      "id" : "PractitionerRole.practitioner",
+      "path" : "PractitionerRole.practitioner",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"]
+      }]
+    },
+    {
+      "id" : "PractitionerRole.organization",
+      "path" : "PractitionerRole.organization",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"]
+      }]
+    },
+    {
+      "id" : "PractitionerRole.location",
+      "path" : "PractitionerRole.location",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-location"]
+      }]
+    }]
   }
 }
 

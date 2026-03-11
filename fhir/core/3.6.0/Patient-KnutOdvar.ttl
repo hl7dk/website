@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/Patient/KnutOdvar> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KnutOdvar"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
+       fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient KnutOdvar</b></p><a name=\"KnutOdvar\"> </a><a name=\"hcKnutOdvar\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-patient.html\">Danish Core Patient Profile</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Knut Odvar Test Mosebryggersen (official) Male, DoB: 1982-02-15 ( urn:oid:1.2.208.176.1.2#1502829995)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">Testgrusgraven 3, 3.tv 3400 </td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "urn:oid:1.2.208.176.1.2"^^xsd:anyURI ;
+       fhir:l <urn:oid:1.2.208.176.1.2>
+     ] ;
+     fhir:value [ fhir:v "1502829995" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Mosebryggersen" ] ;
+     fhir:given ( [ fhir:v "Knut" ] [ fhir:v "Odvar" ] [ fhir:v "Test" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1982-02-15"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes>
+       ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes"^^xsd:anyURI ;
+             fhir:l <http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes>
+           ] ;
+           fhir:code [ fhir:v "0219" ]
+         ] )
+       ]
+     ] [
+       fhir:url [
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes>
+       ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "urn:iso:std:iso:3166:-2"^^xsd:anyURI ;
+             fhir:l <urn:iso:std:iso:3166:-2>
+           ] ;
+           fhir:code [ fhir:v "DK-84" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:line ( [ fhir:v "Testgrusgraven 3, 3.tv" ] ) ;
+     fhir:postalCode [ fhir:v "3400" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

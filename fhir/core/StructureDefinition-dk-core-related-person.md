@@ -1,4 +1,4 @@
-# Danish Core Related Person Profile - HL7 FHIR Implementation Guide: DK Core v3.5.0
+# Danish Core Related Person Profile - HL7 FHIR Implementation Guide: DK Core v3.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person | *Version*:3.5.0 |
-| Active as of 2025-12-19 | *Computable Name*:DkCoreRelatedPerson |
+| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person | *Version*:3.6.0 |
+| Active as of 2026-03-11 | *Computable Name*:DkCoreRelatedPerson |
 
  
 HL7 Denmark core profile for a related person 
@@ -66,7 +66,7 @@ Use of this label should be interpreted according to the law, roughly meaning th
 **Usages:**
 
 * Refer to this Profile: [Danish Core Condition Profile](StructureDefinition-dk-core-condition.md), [Danish Core Minimal DocumentReference Profile](StructureDefinition-dk-core-minimaldocumentreference.md), [Danish Core Observation Profile](StructureDefinition-dk-core-observation.md), [Danish Core Patient Profile](StructureDefinition-dk-core-patient.md) and [Danish Core Person ServiceRequest Profile](StructureDefinition-dk-core-person-servicerequest.md)
-* Examples for this Profile: [RelatedPerson/Child](RelatedPerson-Child.md) and [RelatedPerson/TwoRelations](RelatedPerson-TwoRelations.md)
+* Examples for this Profile: [RelatedPerson/AageRelatedToNancy](RelatedPerson-AageRelatedToNancy.md), [RelatedPerson/AndersRelatedToAli](RelatedPerson-AndersRelatedToAli.md), [RelatedPerson/BrunoRelatedToNancy](RelatedPerson-BrunoRelatedToNancy.md), [RelatedPerson/Child](RelatedPerson-Child.md)... Show 38 more, [RelatedPerson/EinerRelatedToEK](RelatedPerson-EinerRelatedToEK.md), [RelatedPerson/EinerRelatedToEllen](RelatedPerson-EinerRelatedToEllen.md), [RelatedPerson/EinerRelatedToElse](RelatedPerson-EinerRelatedToElse.md), [RelatedPerson/EinerRelatedToMagnus](RelatedPerson-EinerRelatedToMagnus.md), [RelatedPerson/EinerRelatedToRasmus](RelatedPerson-EinerRelatedToRasmus.md), [RelatedPerson/KirstenRelatedToAya](RelatedPerson-KirstenRelatedToAya.md), [RelatedPerson/KirstenRelatedToGitte](RelatedPerson-KirstenRelatedToGitte.md), [RelatedPerson/KirstenRelatedToLars](RelatedPerson-KirstenRelatedToLars.md), [RelatedPerson/KirstenRelatedToPia](RelatedPerson-KirstenRelatedToPia.md), [RelatedPerson/KirstenRelatedToRikke](RelatedPerson-KirstenRelatedToRikke.md), [RelatedPerson/LonniRelatedToEK](RelatedPerson-LonniRelatedToEK.md), [RelatedPerson/LonniRelatedToEiner](RelatedPerson-LonniRelatedToEiner.md), [RelatedPerson/LonniRelatedToEllen](RelatedPerson-LonniRelatedToEllen.md), [RelatedPerson/LonniRelatedToElse](RelatedPerson-LonniRelatedToElse.md), [RelatedPerson/LonniRelatedToMagnus](RelatedPerson-LonniRelatedToMagnus.md), [RelatedPerson/LonniRelatedToRasmus](RelatedPerson-LonniRelatedToRasmus.md), [RelatedPerson/MayJuneGuardianOfSverre](RelatedPerson-MayJuneGuardianOfSverre.md), [RelatedPerson/MayJuneGuardianOfTorre](RelatedPerson-MayJuneGuardianOfTorre.md), [RelatedPerson/MayJuneRelatedToKnut](RelatedPerson-MayJuneRelatedToKnut.md), [RelatedPerson/MayJuneRelatedToOdd](RelatedPerson-MayJuneRelatedToOdd.md), [RelatedPerson/MayJuneRelatedToSchwendlund](RelatedPerson-MayJuneRelatedToSchwendlund.md), [RelatedPerson/MayJuneRelatedToSille](RelatedPerson-MayJuneRelatedToSille.md), [RelatedPerson/MayJuneRelatedToSverre](RelatedPerson-MayJuneRelatedToSverre.md), [RelatedPerson/MayJuneRelatedToTorre](RelatedPerson-MayJuneRelatedToTorre.md), [RelatedPerson/NancyGuardianOfAage](RelatedPerson-NancyGuardianOfAage.md), [RelatedPerson/NancyGuardianOfBrita](RelatedPerson-NancyGuardianOfBrita.md), [RelatedPerson/NancyRelatedToBrita](RelatedPerson-NancyRelatedToBrita.md), [RelatedPerson/NancyRelatedToGitte](RelatedPerson-NancyRelatedToGitte.md), [RelatedPerson/NancyRelatedToKirsten](RelatedPerson-NancyRelatedToKirsten.md), [RelatedPerson/NancyRelatedToMax](RelatedPerson-NancyRelatedToMax.md), [RelatedPerson/NancyRelatedToRuddi](RelatedPerson-NancyRelatedToRuddi.md), [RelatedPerson/RuddiGuardianOfRikke](RelatedPerson-RuddiGuardianOfRikke.md), [RelatedPerson/SchwendlundRelatedToKnut](RelatedPerson-SchwendlundRelatedToKnut.md), [RelatedPerson/SchwendlundRelatedToOdd](RelatedPerson-SchwendlundRelatedToOdd.md), [RelatedPerson/SchwendlundRelatedToSille](RelatedPerson-SchwendlundRelatedToSille.md), [RelatedPerson/SchwendlundRelatedToSverre](RelatedPerson-SchwendlundRelatedToSverre.md), [RelatedPerson/SchwendlundRelatedToTorre](RelatedPerson-SchwendlundRelatedToTorre.md) and [RelatedPerson/TwoRelations](RelatedPerson-TwoRelations.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.dk.core|current/StructureDefinition/dk-core-related-person)
 
@@ -87,182 +87,150 @@ Other representations of profile: [CSV](StructureDefinition-dk-core-related-pers
   "resourceType" : "StructureDefinition",
   "id" : "dk-core-related-person",
   "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person",
-  "version" : "3.5.0",
+  "version" : "3.6.0",
   "name" : "DkCoreRelatedPerson",
   "title" : "Danish Core Related Person Profile",
   "status" : "active",
-  "date" : "2025-12-19T17:27:08+01:00",
+  "date" : "2026-03-11T23:16:27+01:00",
   "publisher" : "HL7 Denmark",
-  "contact" : [
+  "contact" : [{
+    "name" : "HL7 Denmark",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.dk"
+    },
     {
-      "name" : "HL7 Denmark",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.hl7.dk"
-        },
-        {
-          "system" : "email",
-          "value" : "dk-affiliate@hl7.dk"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "dk-affiliate@hl7.dk"
+    }]
+  }],
   "description" : "HL7 Denmark core profile for a related person",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "DK",
-          "display" : "Denmark"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "RelatedPerson",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "RelatedPerson",
-        "path" : "RelatedPerson"
-      },
-      {
-        "id" : "RelatedPerson.identifier",
-        "path" : "RelatedPerson.identifier",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "system"
-            }
-          ],
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "RelatedPerson.identifier:cpr",
-        "path" : "RelatedPerson.identifier",
-        "sliceName" : "cpr",
-        "short" : "[DA] cpr-nummer, som det fremgår af CPR registeret",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Identifier",
-            "profile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-cpr-identifier"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "RelatedPerson.identifier:x-ecpr",
-        "path" : "RelatedPerson.identifier",
-        "sliceName" : "x-ecpr",
-        "short" : "[DA] X-eCPR, tildelt fra den nationale eCPR service",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Identifier",
-            "profile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-x-ecpr-identifier"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "RelatedPerson.identifier:d-ecpr",
-        "path" : "RelatedPerson.identifier",
-        "sliceName" : "d-ecpr",
-        "short" : "[DA] D-eCPR, decentral eCPR",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Identifier",
-            "profile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-d-ecpr-identifier"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "RelatedPerson.patient",
-        "path" : "RelatedPerson.patient",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "RelatedPerson.relationship",
-        "path" : "RelatedPerson.relationship",
-        "binding" : {
-          "strength" : "extensible",
-          "valueSet" : "http://hl7.dk/fhir/core/ValueSet/dk-core-RelatedPersonRelationshipTypes"
-        }
-      },
-      {
-        "id" : "RelatedPerson.name",
-        "path" : "RelatedPerson.name",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "use"
-            }
-          ],
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "RelatedPerson.name:official",
-        "path" : "RelatedPerson.name",
-        "sliceName" : "official",
-        "short" : "[DA] Officielt navn, som det fremgår af CPR registeret",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "RelatedPerson.name:official.use",
-        "path" : "RelatedPerson.name.use",
-        "min" : 1,
-        "fixedCode" : "official"
-      },
-      {
-        "id" : "RelatedPerson.name:official.family",
-        "path" : "RelatedPerson.name.family",
-        "min" : 1
+    "element" : [{
+      "id" : "RelatedPerson",
+      "path" : "RelatedPerson"
+    },
+    {
+      "id" : "RelatedPerson.identifier",
+      "path" : "RelatedPerson.identifier",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "system"
+        }],
+        "rules" : "open"
       }
-    ]
+    },
+    {
+      "id" : "RelatedPerson.identifier:cpr",
+      "path" : "RelatedPerson.identifier",
+      "sliceName" : "cpr",
+      "short" : "[DA] cpr-nummer, som det fremgår af CPR registeret",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier",
+        "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-cpr-identifier"]
+      }]
+    },
+    {
+      "id" : "RelatedPerson.identifier:x-ecpr",
+      "path" : "RelatedPerson.identifier",
+      "sliceName" : "x-ecpr",
+      "short" : "[DA] X-eCPR, tildelt fra den nationale eCPR service",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier",
+        "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-x-ecpr-identifier"]
+      }]
+    },
+    {
+      "id" : "RelatedPerson.identifier:d-ecpr",
+      "path" : "RelatedPerson.identifier",
+      "sliceName" : "d-ecpr",
+      "short" : "[DA] D-eCPR, decentral eCPR",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier",
+        "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-d-ecpr-identifier"]
+      }]
+    },
+    {
+      "id" : "RelatedPerson.patient",
+      "path" : "RelatedPerson.patient",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"]
+      }]
+    },
+    {
+      "id" : "RelatedPerson.relationship",
+      "path" : "RelatedPerson.relationship",
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://hl7.dk/fhir/core/ValueSet/dk-core-RelatedPersonRelationshipTypes"
+      }
+    },
+    {
+      "id" : "RelatedPerson.name",
+      "path" : "RelatedPerson.name",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "use"
+        }],
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "RelatedPerson.name:official",
+      "path" : "RelatedPerson.name",
+      "sliceName" : "official",
+      "short" : "[DA] Officielt navn, som det fremgår af CPR registeret",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "RelatedPerson.name:official.use",
+      "path" : "RelatedPerson.name.use",
+      "min" : 1,
+      "fixedCode" : "official"
+    },
+    {
+      "id" : "RelatedPerson.name:official.family",
+      "path" : "RelatedPerson.name.family",
+      "min" : 1
+    }]
   }
 }
 

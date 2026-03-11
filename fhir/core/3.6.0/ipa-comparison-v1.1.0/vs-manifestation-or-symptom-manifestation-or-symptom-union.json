@@ -1,0 +1,18 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "39291927-f05b-4991-af90-a2d018809edf-53",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/39291927-f05b-4991-af90-a2d018809edf-53",
+  "name" : "UnionManifestationAndSymptomCodesAndManifestationAndSymptomCodes",
+  "title" : "Union of Manifestation and Symptom Codes And Manifestation and Symptom Codes",
+  "status" : "draft",
+  "date" : "2026-03-11T23:13:12+01:00",
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "404684003"
+      }]
+    }]
+  }
+}

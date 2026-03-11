@@ -1,4 +1,4 @@
-# DK Regional Subdivision Codes - HL7 FHIR Implementation Guide: DK Core v3.5.0
+# DK Regional Subdivision Codes - HL7 FHIR Implementation Guide: DK Core v3.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes | *Version*:3.5.0 |
-| Active as of 2025-12-19 | *Computable Name*:RegionalSubdivisionCodes |
+| *Official URL*:http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes | *Version*:3.6.0 |
+| Active as of 2026-03-11 | *Computable Name*:RegionalSubdivisionCodes |
 
  
 Subdivision codes (Regional codes) used in Denmark 
@@ -46,46 +46,51 @@ Subdivision codes (Regional codes) used in Denmark
   "resourceType" : "ValueSet",
   "id" : "dk-core-RegionalSubDivisionCodes",
   "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes",
-  "version" : "3.5.0",
+  "version" : "3.6.0",
   "name" : "RegionalSubdivisionCodes",
   "title" : "DK Regional Subdivision Codes",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-19T17:27:08+01:00",
+  "date" : "2026-03-11T23:16:27+01:00",
   "publisher" : "HL7 Denmark",
-  "contact" : [
+  "contact" : [{
+    "name" : "HL7 Denmark",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.dk"
+    },
     {
-      "name" : "HL7 Denmark",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.hl7.dk"
-        },
-        {
-          "system" : "email",
-          "value" : "dk-affiliate@hl7.dk"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "dk-affiliate@hl7.dk"
+    }]
+  }],
   "description" : "Subdivision codes (Regional codes) used in Denmark",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "DK",
-          "display" : "Denmark"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "urn:iso:std:iso:3166:-2",
+      "concept" : [{
+        "code" : "DK-84"
+      },
       {
-        "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"
-      }
-    ]
+        "code" : "DK-82"
+      },
+      {
+        "code" : "DK-81"
+      },
+      {
+        "code" : "DK-85"
+      },
+      {
+        "code" : "DK-83"
+      }]
+    }]
   }
 }
 

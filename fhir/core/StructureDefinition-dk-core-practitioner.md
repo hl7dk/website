@@ -1,4 +1,4 @@
-# Danish Core Practitioner Profile - HL7 FHIR Implementation Guide: DK Core v3.5.0
+# Danish Core Practitioner Profile - HL7 FHIR Implementation Guide: DK Core v3.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner | *Version*:3.5.0 |
-| Active as of 2025-12-19 | *Computable Name*:DkCorePractitioner |
+| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner | *Version*:3.6.0 |
+| Active as of 2026-03-11 | *Computable Name*:DkCorePractitioner |
 
  
 HL7 Denmark core profile for health professionals and other actors relevant in citizen and patient pathways 
@@ -25,7 +25,7 @@ The qualification.code has an extendable ValueSet that includes all official aut
 **Usages:**
 
 * Derived from this Profile: [Danish IPA Core Practitioner Profile](StructureDefinition-ipa-dk-core-practitioner.md)
-* Refer to this Profile: [Danish Core Condition Profile](StructureDefinition-dk-core-condition.md), [Danish Core Minimal DocumentReference Profile](StructureDefinition-dk-core-minimaldocumentreference.md), [Danish Core Observation Profile](StructureDefinition-dk-core-observation.md), [Danish Core Patient Profile](StructureDefinition-dk-core-patient.md)...Show 2 more,[Danish Core Person ServiceRequest Profile](StructureDefinition-dk-core-person-servicerequest.md)and[Danish Core PractitionerRole Profile](StructureDefinition-dk-core-practitioner-role.md)
+* Refer to this Profile: [Danish Core Condition Profile](StructureDefinition-dk-core-condition.md), [Danish Core Minimal DocumentReference Profile](StructureDefinition-dk-core-minimaldocumentreference.md), [Danish Core Observation Profile](StructureDefinition-dk-core-observation.md), [Danish Core Patient Profile](StructureDefinition-dk-core-patient.md)... Show 2 more, [Danish Core Person ServiceRequest Profile](StructureDefinition-dk-core-person-servicerequest.md) and [Danish Core PractitionerRole Profile](StructureDefinition-dk-core-practitioner-role.md)
 * Examples for this Profile: [Practitioner/42cb9200-f421-4d08-8391-7d51a2503cb4](Practitioner-42cb9200-f421-4d08-8391-7d51a2503cb4.md), [Practitioner/AbrahamLaege](Practitioner-AbrahamLaege.md), [Practitioner/HanneSocialraadgiver](Practitioner-HanneSocialraadgiver.md) and [Practitioner/SidselSygeplejerske](Practitioner-SidselSygeplejerske.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.dk.core|current/StructureDefinition/dk-core-practitioner)
@@ -47,118 +47,100 @@ Other representations of profile: [CSV](StructureDefinition-dk-core-practitioner
   "resourceType" : "StructureDefinition",
   "id" : "dk-core-practitioner",
   "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner",
-  "version" : "3.5.0",
+  "version" : "3.6.0",
   "name" : "DkCorePractitioner",
   "title" : "Danish Core Practitioner Profile",
   "status" : "active",
-  "date" : "2025-12-19T17:27:08+01:00",
+  "date" : "2026-03-11T23:16:27+01:00",
   "publisher" : "HL7 Denmark",
-  "contact" : [
+  "contact" : [{
+    "name" : "HL7 Denmark",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.dk"
+    },
     {
-      "name" : "HL7 Denmark",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.hl7.dk"
-        },
-        {
-          "system" : "email",
-          "value" : "dk-affiliate@hl7.dk"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "dk-affiliate@hl7.dk"
+    }]
+  }],
   "description" : "HL7 Denmark core profile for health professionals and other actors relevant in citizen and patient pathways",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "DK",
-          "display" : "Denmark"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "servd",
-      "uri" : "http://www.omg.org/spec/ServD/1.0/",
-      "name" : "ServD"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "servd",
+    "uri" : "http://www.omg.org/spec/ServD/1.0/",
+    "name" : "ServD"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Practitioner",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Practitioner",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Practitioner",
-        "path" : "Practitioner"
-      },
-      {
-        "id" : "Practitioner.qualification",
-        "path" : "Practitioner.qualification",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "identifier.system"
-            }
-          ],
-          "description" : "Slice based on the identifier.system value which allows for official qualifications to\nDeclaring the slices, and their cardinalities, to allow a KL-code and a SNOMED CT code",
-          "ordered" : false,
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "Practitioner.qualification:officialHealthAuthorization",
-        "path" : "Practitioner.qualification",
-        "sliceName" : "officialHealthAuthorization",
-        "min" : 0,
-        "max" : "*"
-      },
-      {
-        "id" : "Practitioner.qualification:officialHealthAuthorization.identifier",
-        "path" : "Practitioner.qualification.identifier",
-        "short" : "[DA] Autorisationskode, som specificeret af autorisationsregisteret",
-        "type" : [
-          {
-            "code" : "Identifier",
-            "profile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-authorization-identifier"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Practitioner.qualification:officialHealthAuthorization.code",
-        "path" : "Practitioner.qualification.code",
-        "short" : "[DA] Kode for kvalifikation, som specificeret af autorisationsregisteret",
-        "binding" : {
-          "strength" : "extensible",
-          "valueSet" : "http://hl7.dk/fhir/core/ValueSet/DkCoreProfessionGroupValueSet"
-        }
+    "element" : [{
+      "id" : "Practitioner",
+      "path" : "Practitioner"
+    },
+    {
+      "id" : "Practitioner.qualification",
+      "path" : "Practitioner.qualification",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "identifier.system"
+        }],
+        "description" : "Slice based on the identifier.system value which allows for official qualifications to\nDeclaring the slices, and their cardinalities, to allow a KL-code and a SNOMED CT code",
+        "ordered" : false,
+        "rules" : "open"
       }
-    ]
+    },
+    {
+      "id" : "Practitioner.qualification:officialHealthAuthorization",
+      "path" : "Practitioner.qualification",
+      "sliceName" : "officialHealthAuthorization",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Practitioner.qualification:officialHealthAuthorization.identifier",
+      "path" : "Practitioner.qualification.identifier",
+      "short" : "[DA] Autorisationskode, som specificeret af autorisationsregisteret",
+      "type" : [{
+        "code" : "Identifier",
+        "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-authorization-identifier"]
+      }]
+    },
+    {
+      "id" : "Practitioner.qualification:officialHealthAuthorization.code",
+      "path" : "Practitioner.qualification.code",
+      "short" : "[DA] Kode for kvalifikation, som specificeret af autorisationsregisteret",
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://hl7.dk/fhir/core/ValueSet/DkCoreProfessionGroupValueSet"
+      }
+    }]
   }
 }
 

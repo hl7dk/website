@@ -1,0 +1,56 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "6a74e714-c9a7-4226-8cc2-b29badab828c-27",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/6a74e714-c9a7-4226-8cc2-b29badab828c-27",
+  "name" : "IntersectionGreenlandMunicipalityCodesAndGreenlandMunicipalityCodes",
+  "title" : "Intersection of DK Greenland Municipality Codes And DK Greenland Municipality Codes",
+  "status" : "active",
+  "date" : "2026-03-11T23:17:47+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "concept" : [{
+    "code" : "0955",
+    "display" : "Kujalleq",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Kujalleq"
+    }]
+  },
+  {
+    "code" : "0956",
+    "display" : "Sermersooq",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Sermersooq"
+    }]
+  },
+  {
+    "code" : "0957",
+    "display" : "Qeqqata",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Qeqqata"
+    }]
+  },
+  {
+    "code" : "0959",
+    "display" : "Qeqertalik",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Qeqertalik"
+    }]
+  },
+  {
+    "code" : "0960",
+    "display" : "Avannaata",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Avannaata"
+    }]
+  }]
+}

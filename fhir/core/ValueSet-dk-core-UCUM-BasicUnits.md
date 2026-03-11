@@ -1,4 +1,4 @@
-# DK Core UCUM Basic Units - HL7 FHIR Implementation Guide: DK Core v3.5.0
+# DK Core UCUM Basic Units - HL7 FHIR Implementation Guide: DK Core v3.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/ValueSet/dk-core-UCUM-BasicUnits | *Version*:3.5.0 |
-| Active as of 2025-12-19 | *Computable Name*:UCUMBasicUnits |
+| *Official URL*:http://hl7.dk/fhir/core/ValueSet/dk-core-UCUM-BasicUnits | *Version*:3.6.0 |
+| Active as of 2026-03-11 | *Computable Name*:UCUMBasicUnits |
 | **Copyright/Legal**: This material contains content from UCUM (http://ucum.org). UCUM is copyright © 1999-2024, Regenstrief Institute, Inc. and is available under the license at http://ucum.org/license. | |
 
  
@@ -47,88 +47,76 @@ UCUM codes to represent units for basic Observations usable in Denmark
   "resourceType" : "ValueSet",
   "id" : "dk-core-UCUM-BasicUnits",
   "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-UCUM-BasicUnits",
-  "version" : "3.5.0",
+  "version" : "3.6.0",
   "name" : "UCUMBasicUnits",
   "title" : "DK Core UCUM Basic Units",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-19T17:27:08+01:00",
+  "date" : "2026-03-11T23:16:27+01:00",
   "publisher" : "HL7 Denmark",
-  "contact" : [
+  "contact" : [{
+    "name" : "HL7 Denmark",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.dk"
+    },
     {
-      "name" : "HL7 Denmark",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.hl7.dk"
-        },
-        {
-          "system" : "email",
-          "value" : "dk-affiliate@hl7.dk"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "dk-affiliate@hl7.dk"
+    }]
+  }],
   "description" : "UCUM codes to represent units for basic Observations usable in Denmark",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "DK",
-          "display" : "Denmark"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
   "copyright" : "This material contains content from UCUM (http://ucum.org). UCUM is copyright © 1999-2024, Regenstrief Institute, Inc. and is available under the license at http://ucum.org/license.",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "%"
+      },
       {
-        "system" : "http://unitsofmeasure.org",
-        "concept" : [
-          {
-            "code" : "%"
-          },
-          {
-            "code" : "cm"
-          },
-          {
-            "code" : "[in_i]"
-          },
-          {
-            "code" : "kg"
-          },
-          {
-            "code" : "g"
-          },
-          {
-            "code" : "[lb_av]"
-          },
-          {
-            "code" : "Cel"
-          },
-          {
-            "code" : "[degF]"
-          },
-          {
-            "code" : "mm[Hg]"
-          },
-          {
-            "code" : "/min"
-          },
-          {
-            "code" : "kg/m2"
-          },
-          {
-            "code" : "m2"
-          },
-          {
-            "code" : "{fraction}"
-          }
-        ]
-      }
-    ]
+        "code" : "cm"
+      },
+      {
+        "code" : "[in_i]"
+      },
+      {
+        "code" : "kg"
+      },
+      {
+        "code" : "g"
+      },
+      {
+        "code" : "[lb_av]"
+      },
+      {
+        "code" : "Cel"
+      },
+      {
+        "code" : "[degF]"
+      },
+      {
+        "code" : "mm[Hg]"
+      },
+      {
+        "code" : "/min"
+      },
+      {
+        "code" : "kg/m2"
+      },
+      {
+        "code" : "m2"
+      },
+      {
+        "code" : "{fraction}"
+      }]
+    }]
   }
 }
 

@@ -1,4 +1,4 @@
-# Danish Core Observation Profile - HL7 FHIR Implementation Guide: DK Core v3.5.0
+# Danish Core Observation Profile - HL7 FHIR Implementation Guide: DK Core v3.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation | *Version*:3.5.0 |
-| Active as of 2025-12-19 | *Computable Name*:DkCoreObservation |
+| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation | *Version*:3.6.0 |
+| Active as of 2026-03-11 | *Computable Name*:DkCoreObservation |
 
  
 HL7 Denmark core profile for observations 
@@ -24,9 +24,9 @@ The Danish Core Observation profile is intended to represent observations for a 
 * general health status such as pregnancy
 * social history and anamnesis (Please be aware, an Observation must only include more than one code, if each code is true for the observation that actually happened, and not several observation as a result of an investigation. In this case, the ClinicalImpression resource should be used.)
 
-> Note: The profile[DkCoreBasicObservation](./StructureDefinition-dk-core-basic-observation.md)is made to ensure a common structure of measurable and often used observations, such as vital signs, height and weight. When sharing these basic observations, DkCoreBasicObservation profile is recommended to use.
+> Note: The profile [DkCoreBasicObservation](./StructureDefinition-dk-core-basic-observation.md) is made to ensure a common structure of measurable and often used observations, such as vital signs, height and weight. When sharing these basic observations, DkCoreBasicObservation profile is recommended to use.
 
-> Note: The profile[IPADkCoreObservation](./StructureDefinition-ipa-dk-core-observation.md)is enables implementers to serve DkCoreObservation's that also conforms to IPA through its RESTful IPA interfaces.
+> Note: The profile [IPADkCoreObservation](./StructureDefinition-ipa-dk-core-observation.md) is enables implementers to serve DkCoreObservation's that also conforms to IPA through its RESTful IPA interfaces.
 
 #### Codes
 
@@ -73,7 +73,7 @@ An example is an oxygen saturation measured as a fraction in, say, the NPU code 
 
 * Derived from this Profile: [Danish Core Basic Observation Profile](StructureDefinition-dk-core-basic-observation.md) and [Danish IPA Core Observation Profile](StructureDefinition-ipa-dk-core-observation.md)
 * Refer to this Profile: [Danish Core Person ServiceRequest Profile](StructureDefinition-dk-core-person-servicerequest.md)
-* Examples for this Profile: [Observation/CoincidentTimeStamp.0222](Observation-CoincidentTimeStamp.0222.md), [Observation/ElseConsciousness](Observation-ElseConsciousness.md), [Observation/ElsePainVRS](Observation-ElsePainVRS.md), [Observation/ElseUrinStix](Observation-ElseUrinStix.md)...Show 4 more,[Observation/ElsesTOBSscore](Observation-ElsesTOBSscore.md),[Observation/MaxConsciousness](Observation-MaxConsciousness.md),[Observation/MaxGlasgowComaScale](Observation-MaxGlasgowComaScale.md)and[Observation/ObservationOxySatObservation](Observation-ObservationOxySatObservation.md)
+* Examples for this Profile: [Observation/CoincidentTimeStamp.0222](Observation-CoincidentTimeStamp.0222.md), [Observation/ElseConsciousness](Observation-ElseConsciousness.md), [Observation/ElsePainVRS](Observation-ElsePainVRS.md), [Observation/ElseUrinStix](Observation-ElseUrinStix.md)... Show 4 more, [Observation/ElsesTOBSscore](Observation-ElsesTOBSscore.md), [Observation/MaxConsciousness](Observation-MaxConsciousness.md), [Observation/MaxGlasgowComaScale](Observation-MaxGlasgowComaScale.md) and [Observation/ObservationOxySatObservation](Observation-ObservationOxySatObservation.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.dk.core|current/StructureDefinition/dk-core-observation)
 
@@ -94,477 +94,441 @@ Other representations of profile: [CSV](StructureDefinition-dk-core-observation.
   "resourceType" : "StructureDefinition",
   "id" : "dk-core-observation",
   "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation",
-  "version" : "3.5.0",
+  "version" : "3.6.0",
   "name" : "DkCoreObservation",
   "title" : "Danish Core Observation Profile",
   "status" : "active",
-  "date" : "2025-12-19T17:27:08+01:00",
+  "date" : "2026-03-11T23:16:27+01:00",
   "publisher" : "HL7 Denmark",
-  "contact" : [
+  "contact" : [{
+    "name" : "HL7 Denmark",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.dk"
+    },
     {
-      "name" : "HL7 Denmark",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.hl7.dk"
-        },
-        {
-          "system" : "email",
-          "value" : "dk-affiliate@hl7.dk"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "dk-affiliate@hl7.dk"
+    }]
+  }],
   "description" : "HL7 Denmark core profile for observations",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "DK",
-          "display" : "Denmark"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "sct-concept",
-      "uri" : "http://snomed.info/conceptdomain",
-      "name" : "SNOMED CT Concept Domain Binding"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "sct-attr",
-      "uri" : "http://snomed.org/attributebinding",
-      "name" : "SNOMED CT Attribute Binding"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "sct-concept",
+    "uri" : "http://snomed.info/conceptdomain",
+    "name" : "SNOMED CT Concept Domain Binding"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "sct-attr",
+    "uri" : "http://snomed.org/attributebinding",
+    "name" : "SNOMED CT Attribute Binding"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Observation",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Observation",
-        "path" : "Observation",
-        "constraint" : [
-          {
-            "key" : "dk-core-observation-mandatory-units",
-            "severity" : "error",
-            "human" : "If value is specified then unit and/or code must be specified",
-            "expression" : "value.ofType(Quantity).value.exists() implies value.ofType(Quantity).unit.exists() or value.ofType(Quantity).code.exists()",
-            "source" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.code.coding",
-        "path" : "Observation.code.coding",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "system"
-            }
-          ],
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "Observation.code.coding:LOINC",
-        "path" : "Observation.code.coding",
-        "sliceName" : "LOINC",
-        "short" : "LOINC code for the observation",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.code.coding:LOINC.system",
-        "path" : "Observation.code.coding.system",
-        "min" : 1,
-        "fixedUri" : "http://loinc.org"
-      },
-      {
-        "id" : "Observation.code.coding:LOINC.code",
-        "path" : "Observation.code.coding.code",
-        "min" : 1
-      },
-      {
-        "id" : "Observation.code.coding:SNOMEDCT",
-        "path" : "Observation.code.coding",
-        "sliceName" : "SNOMEDCT",
-        "short" : "SNOMED CT code for the observation",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.code.coding:SNOMEDCT.system",
-        "path" : "Observation.code.coding.system",
-        "min" : 1,
-        "fixedUri" : "http://snomed.info/sct"
-      },
-      {
-        "id" : "Observation.code.coding:SNOMEDCT.code",
-        "path" : "Observation.code.coding.code",
-        "min" : 1
-      },
-      {
-        "id" : "Observation.code.coding:NPU",
-        "path" : "Observation.code.coding",
-        "sliceName" : "NPU",
-        "short" : "NPU code for the observation. NPU codes are administred by the Danish Health Data Authority.",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.code.coding:NPU.system",
-        "path" : "Observation.code.coding.system",
-        "min" : 1,
-        "fixedUri" : "http://npu-terminology.org"
-      },
-      {
-        "id" : "Observation.code.coding:NPU.code",
-        "path" : "Observation.code.coding.code",
-        "min" : 1
-      },
-      {
-        "id" : "Observation.code.coding:IEEE",
-        "path" : "Observation.code.coding",
-        "sliceName" : "IEEE",
-        "short" : "IEEE code for the observation",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.code.coding:IEEE.system",
-        "path" : "Observation.code.coding.system",
-        "min" : 1,
-        "fixedUri" : "urn:iso:std:iso:11073:10101"
-      },
-      {
-        "id" : "Observation.code.coding:IEEE.code",
-        "path" : "Observation.code.coding.code",
-        "min" : 1
-      },
-      {
-        "id" : "Observation.code.coding:MedCom",
-        "path" : "Observation.code.coding",
-        "sliceName" : "MedCom",
-        "short" : "MedCom code for the observation. MedCom codes are administred by the MedCom.",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.code.coding:MedCom.system",
-        "path" : "Observation.code.coding.system",
-        "min" : 1,
-        "fixedUri" : "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes"
-      },
-      {
-        "id" : "Observation.code.coding:MedCom.code",
-        "path" : "Observation.code.coding.code",
-        "min" : 1
-      },
-      {
-        "id" : "Observation.code.coding:SKS",
-        "path" : "Observation.code.coding",
-        "sliceName" : "SKS",
-        "short" : "SKS code for the observation",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.code.coding:SKS.system",
-        "path" : "Observation.code.coding.system",
-        "min" : 1,
-        "fixedUri" : "urn:oid:1.2.208.176.2.4"
-      },
-      {
-        "id" : "Observation.code.coding:SKS.code",
-        "path" : "Observation.code.coding.code",
-        "min" : 1
-      },
-      {
-        "id" : "Observation.subject",
-        "path" : "Observation.subject",
-        "min" : 1,
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient",
-              "http://hl7.org/fhir/StructureDefinition/Group",
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-location",
-              "http://hl7.org/fhir/StructureDefinition/Device"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Observation.performer",
-        "path" : "Observation.performer",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner",
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization",
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient",
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role",
-              "http://hl7.org/fhir/StructureDefinition/CareTeam",
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Observation.value[x]",
-        "path" : "Observation.value[x]",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "type",
-              "path" : "$this"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "Observation.value[x]:valueQuantity",
-        "path" : "Observation.value[x]",
-        "sliceName" : "valueQuantity",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Quantity"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.value[x]:valueQuantity.system",
-        "path" : "Observation.value[x].system",
-        "patternUri" : "http://unitsofmeasure.org"
-      },
-      {
-        "id" : "Observation.method.coding",
-        "path" : "Observation.method.coding",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "system"
-            }
-          ],
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "Observation.method.coding:SCTCode",
-        "path" : "Observation.method.coding",
-        "sliceName" : "SCTCode",
-        "min" : 0,
-        "max" : "1",
-        "binding" : {
-          "strength" : "example",
-          "valueSet" : "http://hl7.dk/fhir/core/ValueSet/dk-core-TechniquesSCTCodes"
-        }
-      },
-      {
-        "id" : "Observation.method.coding:SCTCode.system",
-        "path" : "Observation.method.coding.system",
-        "min" : 1,
-        "patternUri" : "http://snomed.info/sct|http://snomed.info/sct/554471000005108"
-      },
-      {
-        "id" : "Observation.device",
-        "path" : "Observation.device",
-        "short" : "The device used for the measurement. It is recommended that when information about the device is sent, it is contained in the same Bundle as the Observation the device measured."
-      },
-      {
-        "id" : "Observation.component.code.coding",
-        "path" : "Observation.component.code.coding",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "system"
-            }
-          ],
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "Observation.component.code.coding:LOINC",
-        "path" : "Observation.component.code.coding",
-        "sliceName" : "LOINC",
-        "short" : "LOINC code for the observation",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.component.code.coding:LOINC.system",
-        "path" : "Observation.component.code.coding.system",
-        "min" : 1,
-        "fixedUri" : "http://loinc.org"
-      },
-      {
-        "id" : "Observation.component.code.coding:LOINC.code",
-        "path" : "Observation.component.code.coding.code",
-        "min" : 1
-      },
-      {
-        "id" : "Observation.component.code.coding:SNOMEDCT",
-        "path" : "Observation.component.code.coding",
-        "sliceName" : "SNOMEDCT",
-        "short" : "SNOMED CT code for the observation",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.component.code.coding:SNOMEDCT.system",
-        "path" : "Observation.component.code.coding.system",
-        "min" : 1,
-        "fixedUri" : "http://snomed.info/sct"
-      },
-      {
-        "id" : "Observation.component.code.coding:SNOMEDCT.code",
-        "path" : "Observation.component.code.coding.code",
-        "min" : 1
-      },
-      {
-        "id" : "Observation.component.code.coding:NPU",
-        "path" : "Observation.component.code.coding",
-        "sliceName" : "NPU",
-        "short" : "NPU code for the observation. NPU codes are administred by the Danish Health Data Authority.",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.component.code.coding:NPU.system",
-        "path" : "Observation.component.code.coding.system",
-        "min" : 1,
-        "fixedUri" : "http://npu-terminology.org"
-      },
-      {
-        "id" : "Observation.component.code.coding:NPU.code",
-        "path" : "Observation.component.code.coding.code",
-        "min" : 1
-      },
-      {
-        "id" : "Observation.component.code.coding:IEEE",
-        "path" : "Observation.component.code.coding",
-        "sliceName" : "IEEE",
-        "short" : "IEEE code for the observation",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.component.code.coding:IEEE.system",
-        "path" : "Observation.component.code.coding.system",
-        "min" : 1,
-        "fixedUri" : "urn:iso:std:iso:11073:10101"
-      },
-      {
-        "id" : "Observation.component.code.coding:IEEE.code",
-        "path" : "Observation.component.code.coding.code",
-        "min" : 1
-      },
-      {
-        "id" : "Observation.component.code.coding:MedCom",
-        "path" : "Observation.component.code.coding",
-        "sliceName" : "MedCom",
-        "short" : "MedCom code for the observation. MedCom codes are administred by the MedCom.",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.component.code.coding:MedCom.system",
-        "path" : "Observation.component.code.coding.system",
-        "min" : 1,
-        "fixedUri" : "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes"
-      },
-      {
-        "id" : "Observation.component.code.coding:MedCom.code",
-        "path" : "Observation.component.code.coding.code",
-        "min" : 1
-      },
-      {
-        "id" : "Observation.component.code.coding:SKS",
-        "path" : "Observation.component.code.coding",
-        "sliceName" : "SKS",
-        "short" : "SKS code for the observation.",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Observation.component.code.coding:SKS.system",
-        "path" : "Observation.component.code.coding.system",
-        "min" : 1,
-        "fixedUri" : "urn:oid:1.2.208.176.2.4"
-      },
-      {
-        "id" : "Observation.component.code.coding:SKS.code",
-        "path" : "Observation.component.code.coding.code",
-        "min" : 1
-      },
-      {
-        "id" : "Observation.component.value[x]",
-        "path" : "Observation.component.value[x]",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "type",
-              "path" : "$this"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "Observation.component.value[x]:valueQuantity",
-        "path" : "Observation.component.value[x]",
-        "sliceName" : "valueQuantity",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Quantity"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.component.value[x]:valueQuantity.system",
-        "path" : "Observation.component.value[x].system",
-        "patternUri" : "http://unitsofmeasure.org"
+    "element" : [{
+      "id" : "Observation",
+      "path" : "Observation",
+      "constraint" : [{
+        "key" : "dk-core-observation-mandatory-units",
+        "severity" : "error",
+        "human" : "If value is specified then unit and/or code must be specified",
+        "expression" : "value.ofType(Quantity).value.exists() implies value.ofType(Quantity).unit.exists() or value.ofType(Quantity).code.exists()",
+        "source" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
+      }]
+    },
+    {
+      "id" : "Observation.code.coding",
+      "path" : "Observation.code.coding",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "system"
+        }],
+        "rules" : "open"
       }
-    ]
+    },
+    {
+      "id" : "Observation.code.coding:LOINC",
+      "path" : "Observation.code.coding",
+      "sliceName" : "LOINC",
+      "short" : "LOINC code for the observation",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Observation.code.coding:LOINC.system",
+      "path" : "Observation.code.coding.system",
+      "min" : 1,
+      "fixedUri" : "http://loinc.org"
+    },
+    {
+      "id" : "Observation.code.coding:LOINC.code",
+      "path" : "Observation.code.coding.code",
+      "min" : 1
+    },
+    {
+      "id" : "Observation.code.coding:SNOMEDCT",
+      "path" : "Observation.code.coding",
+      "sliceName" : "SNOMEDCT",
+      "short" : "SNOMED CT code for the observation",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Observation.code.coding:SNOMEDCT.system",
+      "path" : "Observation.code.coding.system",
+      "min" : 1,
+      "fixedUri" : "http://snomed.info/sct"
+    },
+    {
+      "id" : "Observation.code.coding:SNOMEDCT.code",
+      "path" : "Observation.code.coding.code",
+      "min" : 1
+    },
+    {
+      "id" : "Observation.code.coding:NPU",
+      "path" : "Observation.code.coding",
+      "sliceName" : "NPU",
+      "short" : "NPU code for the observation. NPU codes are administred by the Danish Health Data Authority.",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Observation.code.coding:NPU.system",
+      "path" : "Observation.code.coding.system",
+      "min" : 1,
+      "fixedUri" : "http://npu-terminology.org"
+    },
+    {
+      "id" : "Observation.code.coding:NPU.code",
+      "path" : "Observation.code.coding.code",
+      "min" : 1
+    },
+    {
+      "id" : "Observation.code.coding:IEEE",
+      "path" : "Observation.code.coding",
+      "sliceName" : "IEEE",
+      "short" : "IEEE code for the observation",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Observation.code.coding:IEEE.system",
+      "path" : "Observation.code.coding.system",
+      "min" : 1,
+      "fixedUri" : "urn:iso:std:iso:11073:10101"
+    },
+    {
+      "id" : "Observation.code.coding:IEEE.code",
+      "path" : "Observation.code.coding.code",
+      "min" : 1
+    },
+    {
+      "id" : "Observation.code.coding:MedCom",
+      "path" : "Observation.code.coding",
+      "sliceName" : "MedCom",
+      "short" : "MedCom code for the observation. MedCom codes are administred by the MedCom.",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Observation.code.coding:MedCom.system",
+      "path" : "Observation.code.coding.system",
+      "min" : 1,
+      "fixedUri" : "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes"
+    },
+    {
+      "id" : "Observation.code.coding:MedCom.code",
+      "path" : "Observation.code.coding.code",
+      "min" : 1
+    },
+    {
+      "id" : "Observation.code.coding:SKS",
+      "path" : "Observation.code.coding",
+      "sliceName" : "SKS",
+      "short" : "SKS code for the observation",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Observation.code.coding:SKS.system",
+      "path" : "Observation.code.coding.system",
+      "min" : 1,
+      "fixedUri" : "urn:oid:1.2.208.176.2.4"
+    },
+    {
+      "id" : "Observation.code.coding:SKS.code",
+      "path" : "Observation.code.coding.code",
+      "min" : 1
+    },
+    {
+      "id" : "Observation.subject",
+      "path" : "Observation.subject",
+      "min" : 1,
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient",
+        "http://hl7.org/fhir/StructureDefinition/Group",
+        "http://hl7.dk/fhir/core/StructureDefinition/dk-core-location",
+        "http://hl7.org/fhir/StructureDefinition/Device"]
+      }]
+    },
+    {
+      "id" : "Observation.performer",
+      "path" : "Observation.performer",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner",
+        "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization",
+        "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient",
+        "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role",
+        "http://hl7.org/fhir/StructureDefinition/CareTeam",
+        "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"]
+      }]
+    },
+    {
+      "id" : "Observation.value[x]",
+      "path" : "Observation.value[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Observation.value[x]:valueQuantity",
+      "path" : "Observation.value[x]",
+      "sliceName" : "valueQuantity",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "Observation.value[x]:valueQuantity.system",
+      "path" : "Observation.value[x].system",
+      "patternUri" : "http://unitsofmeasure.org"
+    },
+    {
+      "id" : "Observation.method.coding",
+      "path" : "Observation.method.coding",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "system"
+        }],
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Observation.method.coding:SCTCode",
+      "path" : "Observation.method.coding",
+      "sliceName" : "SCTCode",
+      "min" : 0,
+      "max" : "1",
+      "binding" : {
+        "strength" : "example",
+        "valueSet" : "http://hl7.dk/fhir/core/ValueSet/dk-core-TechniquesSCTCodes"
+      }
+    },
+    {
+      "id" : "Observation.method.coding:SCTCode.system",
+      "path" : "Observation.method.coding.system",
+      "min" : 1,
+      "patternUri" : "http://snomed.info/sct|http://snomed.info/sct/554471000005108"
+    },
+    {
+      "id" : "Observation.device",
+      "path" : "Observation.device",
+      "short" : "The device used for the measurement. It is recommended that when information about the device is sent, it is contained in the same Bundle as the Observation the device measured."
+    },
+    {
+      "id" : "Observation.component.code.coding",
+      "path" : "Observation.component.code.coding",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "system"
+        }],
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Observation.component.code.coding:LOINC",
+      "path" : "Observation.component.code.coding",
+      "sliceName" : "LOINC",
+      "short" : "LOINC code for the observation",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Observation.component.code.coding:LOINC.system",
+      "path" : "Observation.component.code.coding.system",
+      "min" : 1,
+      "fixedUri" : "http://loinc.org"
+    },
+    {
+      "id" : "Observation.component.code.coding:LOINC.code",
+      "path" : "Observation.component.code.coding.code",
+      "min" : 1
+    },
+    {
+      "id" : "Observation.component.code.coding:SNOMEDCT",
+      "path" : "Observation.component.code.coding",
+      "sliceName" : "SNOMEDCT",
+      "short" : "SNOMED CT code for the observation",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Observation.component.code.coding:SNOMEDCT.system",
+      "path" : "Observation.component.code.coding.system",
+      "min" : 1,
+      "fixedUri" : "http://snomed.info/sct"
+    },
+    {
+      "id" : "Observation.component.code.coding:SNOMEDCT.code",
+      "path" : "Observation.component.code.coding.code",
+      "min" : 1
+    },
+    {
+      "id" : "Observation.component.code.coding:NPU",
+      "path" : "Observation.component.code.coding",
+      "sliceName" : "NPU",
+      "short" : "NPU code for the observation. NPU codes are administred by the Danish Health Data Authority.",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Observation.component.code.coding:NPU.system",
+      "path" : "Observation.component.code.coding.system",
+      "min" : 1,
+      "fixedUri" : "http://npu-terminology.org"
+    },
+    {
+      "id" : "Observation.component.code.coding:NPU.code",
+      "path" : "Observation.component.code.coding.code",
+      "min" : 1
+    },
+    {
+      "id" : "Observation.component.code.coding:IEEE",
+      "path" : "Observation.component.code.coding",
+      "sliceName" : "IEEE",
+      "short" : "IEEE code for the observation",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Observation.component.code.coding:IEEE.system",
+      "path" : "Observation.component.code.coding.system",
+      "min" : 1,
+      "fixedUri" : "urn:iso:std:iso:11073:10101"
+    },
+    {
+      "id" : "Observation.component.code.coding:IEEE.code",
+      "path" : "Observation.component.code.coding.code",
+      "min" : 1
+    },
+    {
+      "id" : "Observation.component.code.coding:MedCom",
+      "path" : "Observation.component.code.coding",
+      "sliceName" : "MedCom",
+      "short" : "MedCom code for the observation. MedCom codes are administred by the MedCom.",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Observation.component.code.coding:MedCom.system",
+      "path" : "Observation.component.code.coding.system",
+      "min" : 1,
+      "fixedUri" : "http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes"
+    },
+    {
+      "id" : "Observation.component.code.coding:MedCom.code",
+      "path" : "Observation.component.code.coding.code",
+      "min" : 1
+    },
+    {
+      "id" : "Observation.component.code.coding:SKS",
+      "path" : "Observation.component.code.coding",
+      "sliceName" : "SKS",
+      "short" : "SKS code for the observation.",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Observation.component.code.coding:SKS.system",
+      "path" : "Observation.component.code.coding.system",
+      "min" : 1,
+      "fixedUri" : "urn:oid:1.2.208.176.2.4"
+    },
+    {
+      "id" : "Observation.component.code.coding:SKS.code",
+      "path" : "Observation.component.code.coding.code",
+      "min" : 1
+    },
+    {
+      "id" : "Observation.component.value[x]",
+      "path" : "Observation.component.value[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "ordered" : false,
+        "rules" : "open"
+      }
+    },
+    {
+      "id" : "Observation.component.value[x]:valueQuantity",
+      "path" : "Observation.component.value[x]",
+      "sliceName" : "valueQuantity",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "Observation.component.value[x]:valueQuantity.system",
+      "path" : "Observation.component.value[x].system",
+      "patternUri" : "http://unitsofmeasure.org"
+    }]
   }
 }
 

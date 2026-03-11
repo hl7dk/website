@@ -1,4 +1,4 @@
-# Danish Core Basic Observation Profile - HL7 FHIR Implementation Guide: DK Core v3.5.0
+# Danish Core Basic Observation Profile - HL7 FHIR Implementation Guide: DK Core v3.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation | *Version*:3.5.0 |
-| Active as of 2025-12-19 | *Computable Name*:DkCoreBasicObservation |
+| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation | *Version*:3.6.0 |
+| Active as of 2026-03-11 | *Computable Name*:DkCoreBasicObservation |
 
  
 HL7 Denmark core profile for basic observations, which is a profiling of DkCoreObservation. 
@@ -50,7 +50,7 @@ The DK Core UCUM Basic Units ValueSet is added to the elements Observation.value
 
 The table below includes instances of the DkCoreBasicObservation used to represent observations used to evaluate the patient based on different procedures used in Denmark.
 
-> Note: The current FHIR validator (per Nowember 2023) validates Observation instances with LOINC-codes from the[international Vital Signs profile](http://hl7.org/fhir/R4/vitalsigns.html)against the requirements in this profile. This have influenced instances in DkCore by 1) removal of the LOINC-code`"2708-6 "Oxygen saturation in Arterial blood"`in[John's oxygen saturation measurement (Observation)](./Observation-ObservationOxySatObservation.md)which means it cannot be an instance of DkCoreBasicObservation but has to obey from DkCoreObservation, and 2) addition of effective timestamps in[ObservationOxySatBasicObservationOrg](./Observation-ObservationOxySatBasicObservationOrg.md)and[ObservationRespiratoryBasicObservation](./Observation-ObservationRespiratoryBasicObservation.md).
+> Note: The current FHIR validator (per Nowember 2023) validates Observation instances with LOINC-codes from the [international Vital Signs profile](http://hl7.org/fhir/R4/vitalsigns.html) against the requirements in this profile. This have influenced instances in DkCore by 1) removal of the LOINC-code `"2708-6 "Oxygen saturation in Arterial blood"` in [John's oxygen saturation measurement (Observation)](./Observation-ObservationOxySatObservation.md) which means it cannot be an instance of DkCoreBasicObservation but has to obey from DkCoreObservation, and 2) addition of effective timestamps in [ObservationOxySatBasicObservationOrg](./Observation-ObservationOxySatBasicObservationOrg.md) and [ObservationRespiratoryBasicObservation](./Observation-ObservationRespiratoryBasicObservation.md).
 
 | | |
 | :--- | :--- |
@@ -62,7 +62,7 @@ The table below includes instances of the DkCoreBasicObservation used to represe
 
 **Usages:**
 
-* Examples for this Profile: [Observation/ElseBloodPressure](Observation-ElseBloodPressure.md), [Observation/ElseBodyTemperature](Observation-ElseBodyTemperature.md), [Observation/ElseHeartRate](Observation-ElseHeartRate.md), [Observation/ElseRespirationRate](Observation-ElseRespirationRate.md)...Show 8 more,[Observation/MaxBloodPressure](Observation-MaxBloodPressure.md),[Observation/MaxBodyTemperature](Observation-MaxBodyTemperature.md),[Observation/MaxHeartRate](Observation-MaxHeartRate.md),[Observation/MaxRespirationRate](Observation-MaxRespirationRate.md),[Observation/MaxSaturation](Observation-MaxSaturation.md),[Observation/MaxVitalSignsPanel](Observation-MaxVitalSignsPanel.md),[Observation/ObservationOxySatBasicObservationOrg](Observation-ObservationOxySatBasicObservationOrg.md)and[Observation/ObservationRespiratoryBasicObservation](Observation-ObservationRespiratoryBasicObservation.md)
+* Examples for this Profile: [Observation/ElseBloodPressure](Observation-ElseBloodPressure.md), [Observation/ElseBodyTemperature](Observation-ElseBodyTemperature.md), [Observation/ElseHeartRate](Observation-ElseHeartRate.md), [Observation/ElseRespirationRate](Observation-ElseRespirationRate.md)... Show 8 more, [Observation/MaxBloodPressure](Observation-MaxBloodPressure.md), [Observation/MaxBodyTemperature](Observation-MaxBodyTemperature.md), [Observation/MaxHeartRate](Observation-MaxHeartRate.md), [Observation/MaxRespirationRate](Observation-MaxRespirationRate.md), [Observation/MaxSaturation](Observation-MaxSaturation.md), [Observation/MaxVitalSignsPanel](Observation-MaxVitalSignsPanel.md), [Observation/ObservationOxySatBasicObservationOrg](Observation-ObservationOxySatBasicObservationOrg.md) and [Observation/ObservationRespiratoryBasicObservation](Observation-ObservationRespiratoryBasicObservation.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.dk.core|current/StructureDefinition/dk-core-basic-observation)
 
@@ -83,176 +83,158 @@ Other representations of profile: [CSV](StructureDefinition-dk-core-basic-observ
   "resourceType" : "StructureDefinition",
   "id" : "dk-core-basic-observation",
   "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation",
-  "version" : "3.5.0",
+  "version" : "3.6.0",
   "name" : "DkCoreBasicObservation",
   "title" : "Danish Core Basic Observation Profile",
   "status" : "active",
-  "date" : "2025-12-19T17:27:08+01:00",
+  "date" : "2026-03-11T23:16:27+01:00",
   "publisher" : "HL7 Denmark",
-  "contact" : [
+  "contact" : [{
+    "name" : "HL7 Denmark",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.dk"
+    },
     {
-      "name" : "HL7 Denmark",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.hl7.dk"
-        },
-        {
-          "system" : "email",
-          "value" : "dk-affiliate@hl7.dk"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "dk-affiliate@hl7.dk"
+    }]
+  }],
   "description" : "HL7 Denmark core profile for basic observations, which is a profiling of DkCoreObservation.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "DK",
-          "display" : "Denmark"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "sct-concept",
-      "uri" : "http://snomed.info/conceptdomain",
-      "name" : "SNOMED CT Concept Domain Binding"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "sct-attr",
-      "uri" : "http://snomed.org/attributebinding",
-      "name" : "SNOMED CT Attribute Binding"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "sct-concept",
+    "uri" : "http://snomed.info/conceptdomain",
+    "name" : "SNOMED CT Concept Domain Binding"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "sct-attr",
+    "uri" : "http://snomed.org/attributebinding",
+    "name" : "SNOMED CT Attribute Binding"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
   "baseDefinition" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Observation",
-        "path" : "Observation"
-      },
-      {
-        "id" : "Observation.category",
-        "path" : "Observation.category",
-        "min" : 1,
-        "max" : "1",
-        "patternCodeableConcept" : {
-          "coding" : [
-            {
-              "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-              "code" : "vital-signs"
-            }
-          ]
-        }
-      },
-      {
-        "id" : "Observation.code.coding",
-        "path" : "Observation.code.coding",
-        "min" : 1
-      },
-      {
-        "id" : "Observation.code.coding:LOINC",
-        "path" : "Observation.code.coding",
-        "sliceName" : "LOINC",
-        "min" : 1,
-        "binding" : {
-          "strength" : "extensible",
-          "valueSet" : "http://hl7.dk/fhir/core/ValueSet/dk-core-LoincBasicObservation"
-        }
-      },
-      {
-        "id" : "Observation.code.coding:SNOMEDCT",
-        "path" : "Observation.code.coding",
-        "sliceName" : "SNOMEDCT",
-        "binding" : {
-          "strength" : "extensible",
-          "valueSet" : "http://hl7.dk/fhir/core/ValueSet/dk-core-SCTBasicObservation"
-        }
-      },
-      {
-        "id" : "Observation.code.coding:NPU",
-        "path" : "Observation.code.coding",
-        "sliceName" : "NPU",
-        "binding" : {
-          "strength" : "extensible",
-          "valueSet" : "http://hl7.dk/fhir/core/ValueSet/dk-core-NPUBasicObservation"
-        }
-      },
-      {
-        "id" : "Observation.code.coding:IEEE",
-        "path" : "Observation.code.coding",
-        "sliceName" : "IEEE",
-        "binding" : {
-          "strength" : "extensible",
-          "valueSet" : "http://hl7.dk/fhir/core/ValueSet/dk-core-IEEEBasicObservation"
-        }
-      },
-      {
-        "id" : "Observation.value[x]:valueQuantity",
-        "path" : "Observation.value[x]",
-        "sliceName" : "valueQuantity",
-        "type" : [
-          {
-            "code" : "Quantity"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.value[x]:valueQuantity.code",
-        "path" : "Observation.value[x].code",
-        "binding" : {
-          "strength" : "extensible",
-          "valueSet" : "http://hl7.dk/fhir/core/ValueSet/dk-core-UCUM-BasicUnits"
-        }
-      },
-      {
-        "id" : "Observation.component.value[x]:valueQuantity",
-        "path" : "Observation.component.value[x]",
-        "sliceName" : "valueQuantity",
-        "type" : [
-          {
-            "code" : "Quantity"
-          }
-        ]
-      },
-      {
-        "id" : "Observation.component.value[x]:valueQuantity.code",
-        "path" : "Observation.component.value[x].code",
-        "binding" : {
-          "strength" : "extensible",
-          "valueSet" : "http://hl7.dk/fhir/core/ValueSet/dk-core-UCUM-BasicUnits"
-        }
+    "element" : [{
+      "id" : "Observation",
+      "path" : "Observation"
+    },
+    {
+      "id" : "Observation.category",
+      "path" : "Observation.category",
+      "min" : 1,
+      "max" : "1",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "vital-signs"
+        }]
       }
-    ]
+    },
+    {
+      "id" : "Observation.code.coding",
+      "path" : "Observation.code.coding",
+      "min" : 1
+    },
+    {
+      "id" : "Observation.code.coding:LOINC",
+      "path" : "Observation.code.coding",
+      "sliceName" : "LOINC",
+      "min" : 1,
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://hl7.dk/fhir/core/ValueSet/dk-core-LoincBasicObservation"
+      }
+    },
+    {
+      "id" : "Observation.code.coding:SNOMEDCT",
+      "path" : "Observation.code.coding",
+      "sliceName" : "SNOMEDCT",
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://hl7.dk/fhir/core/ValueSet/dk-core-SCTBasicObservation"
+      }
+    },
+    {
+      "id" : "Observation.code.coding:NPU",
+      "path" : "Observation.code.coding",
+      "sliceName" : "NPU",
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://hl7.dk/fhir/core/ValueSet/dk-core-NPUBasicObservation"
+      }
+    },
+    {
+      "id" : "Observation.code.coding:IEEE",
+      "path" : "Observation.code.coding",
+      "sliceName" : "IEEE",
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://hl7.dk/fhir/core/ValueSet/dk-core-IEEEBasicObservation"
+      }
+    },
+    {
+      "id" : "Observation.value[x]:valueQuantity",
+      "path" : "Observation.value[x]",
+      "sliceName" : "valueQuantity",
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "Observation.value[x]:valueQuantity.code",
+      "path" : "Observation.value[x].code",
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://hl7.dk/fhir/core/ValueSet/dk-core-UCUM-BasicUnits"
+      }
+    },
+    {
+      "id" : "Observation.component.value[x]:valueQuantity",
+      "path" : "Observation.component.value[x]",
+      "sliceName" : "valueQuantity",
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "Observation.component.value[x]:valueQuantity.code",
+      "path" : "Observation.component.value[x].code",
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://hl7.dk/fhir/core/ValueSet/dk-core-UCUM-BasicUnits"
+      }
+    }]
   }
 }
 

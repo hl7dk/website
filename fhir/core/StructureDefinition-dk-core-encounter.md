@@ -1,4 +1,4 @@
-# Danish Core Encounter Profile - HL7 FHIR Implementation Guide: DK Core v3.5.0
+# Danish Core Encounter Profile - HL7 FHIR Implementation Guide: DK Core v3.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-encounter | *Version*:3.5.0 |
-| Active as of 2025-12-19 | *Computable Name*:DkCoreEncounter |
+| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-encounter | *Version*:3.6.0 |
+| Active as of 2026-03-11 | *Computable Name*:DkCoreEncounter |
 
  
 HL7 Denmark core profile for an encounter 
@@ -83,168 +83,134 @@ Other representations of profile: [CSV](StructureDefinition-dk-core-encounter.cs
   "resourceType" : "StructureDefinition",
   "id" : "dk-core-encounter",
   "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-encounter",
-  "version" : "3.5.0",
+  "version" : "3.6.0",
   "name" : "DkCoreEncounter",
   "title" : "Danish Core Encounter Profile",
   "status" : "active",
-  "date" : "2025-12-19T17:27:08+01:00",
+  "date" : "2026-03-11T23:16:27+01:00",
   "publisher" : "HL7 Denmark",
-  "contact" : [
+  "contact" : [{
+    "name" : "HL7 Denmark",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.dk"
+    },
     {
-      "name" : "HL7 Denmark",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.hl7.dk"
-        },
-        {
-          "system" : "email",
-          "value" : "dk-affiliate@hl7.dk"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "dk-affiliate@hl7.dk"
+    }]
+  }],
   "description" : "HL7 Denmark core profile for an encounter",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "DK",
-          "display" : "Denmark"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Encounter",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Encounter",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Encounter",
-        "path" : "Encounter"
-      },
-      {
-        "id" : "Encounter.extension",
-        "path" : "Encounter.extension",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "url"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "Encounter.extension:plannedStartDate",
-        "path" : "Encounter.extension",
-        "sliceName" : "plannedStartDate",
-        "short" : "The planned start date/time (or admission date) of the encounter",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-planned-start-date"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Encounter.extension:plannedEndDate",
-        "path" : "Encounter.extension",
-        "sliceName" : "plannedEndDate",
-        "short" : "The planned end date/time (or discharge date) of the encounter",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-planned-end-date"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Encounter.extension:careProvider",
-        "path" : "Encounter.extension",
-        "sliceName" : "careProvider",
-        "short" : "The organization (facility) responsible for the care of the patient during this encounter",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-care-provider"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Encounter.priority",
-        "path" : "Encounter.priority",
-        "binding" : {
-          "strength" : "extensible",
-          "valueSet" : "http://hl7.dk/fhir/core/ValueSet/dk-core-encounter-priority"
-        }
-      },
-      {
-        "id" : "Encounter.subject",
-        "path" : "Encounter.subject",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Encounter.serviceProvider",
-        "path" : "Encounter.serviceProvider",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
-            ]
-          }
-        ]
+    "element" : [{
+      "id" : "Encounter",
+      "path" : "Encounter"
+    },
+    {
+      "id" : "Encounter.extension",
+      "path" : "Encounter.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
       }
-    ]
+    },
+    {
+      "id" : "Encounter.extension:plannedStartDate",
+      "path" : "Encounter.extension",
+      "sliceName" : "plannedStartDate",
+      "short" : "The planned start date/time (or admission date) of the encounter",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-planned-start-date"]
+      }]
+    },
+    {
+      "id" : "Encounter.extension:plannedEndDate",
+      "path" : "Encounter.extension",
+      "sliceName" : "plannedEndDate",
+      "short" : "The planned end date/time (or discharge date) of the encounter",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-planned-end-date"]
+      }]
+    },
+    {
+      "id" : "Encounter.extension:careProvider",
+      "path" : "Encounter.extension",
+      "sliceName" : "careProvider",
+      "short" : "The organization (facility) responsible for the care of the patient during this encounter",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-care-provider"]
+      }]
+    },
+    {
+      "id" : "Encounter.priority",
+      "path" : "Encounter.priority",
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://hl7.dk/fhir/core/ValueSet/dk-core-encounter-priority"
+      }
+    },
+    {
+      "id" : "Encounter.subject",
+      "path" : "Encounter.subject",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"]
+      }]
+    },
+    {
+      "id" : "Encounter.serviceProvider",
+      "path" : "Encounter.serviceProvider",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"]
+      }]
+    }]
   }
 }
 

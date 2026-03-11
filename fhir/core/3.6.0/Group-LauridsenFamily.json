@@ -1,0 +1,54 @@
+{
+  "resourceType" : "Group",
+  "id" : "LauridsenFamily",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Group LauridsenFamily</b></p><a name=\"LauridsenFamily\"> </a><a name=\"hcLauridsenFamily\"> </a><p><b>type</b>: Person</p><p><b>actual</b>: true</p><p><b>name</b>: Lauridsen familien</p><p><b>quantity</b>: 7</p><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-Einer.html\">Einer Test Lauridsen (far)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-Lonni.html\">Lonni Test Lauridsen (mor)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-Magnus.html\">Magnus Test Lauridsen (søn, tvilling)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-Rasmus.html\">Rasmus Test Lauridsen (søn, tvilling)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-ElseLauridsen.html\">Else Test Lauridsen (datter, trilling)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-EllenLouise.html\">Ellen Louise Test Lauridsen (datter, trilling)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-EK.html\">EK Test Lauridsen (søn, trilling)</a></p></blockquote></div>"
+  },
+  "type" : "person",
+  "actual" : true,
+  "name" : "Lauridsen familien",
+  "quantity" : 7,
+  "member" : [{
+    "entity" : {
+      "reference" : "Patient/Einer",
+      "display" : "Einer Test Lauridsen (far)"
+    }
+  },
+  {
+    "entity" : {
+      "reference" : "Patient/Lonni",
+      "display" : "Lonni Test Lauridsen (mor)"
+    }
+  },
+  {
+    "entity" : {
+      "reference" : "Patient/Magnus",
+      "display" : "Magnus Test Lauridsen (søn, tvilling)"
+    }
+  },
+  {
+    "entity" : {
+      "reference" : "Patient/Rasmus",
+      "display" : "Rasmus Test Lauridsen (søn, tvilling)"
+    }
+  },
+  {
+    "entity" : {
+      "reference" : "Patient/ElseLauridsen",
+      "display" : "Else Test Lauridsen (datter, trilling)"
+    }
+  },
+  {
+    "entity" : {
+      "reference" : "Patient/EllenLouise",
+      "display" : "Ellen Louise Test Lauridsen (datter, trilling)"
+    }
+  },
+  {
+    "entity" : {
+      "reference" : "Patient/EK",
+      "display" : "EK Test Lauridsen (søn, trilling)"
+    }
+  }]
+}

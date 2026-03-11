@@ -1,4 +1,4 @@
-# Home - HL7 FHIR Implementation Guide: DK Core v3.5.0
+# Home - HL7 FHIR Implementation Guide: DK Core v3.6.0
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core | *Version*:3.5.0 |
-| Active as of 2025-12-19 | *Computable Name*:DKCore |
+| *Official URL*:http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core | *Version*:3.6.0 |
+| Active as of 2026-03-11 | *Computable Name*:DKCore |
 
 ### Introduction
 
@@ -121,48 +121,49 @@ This publication includes IP covered under the following statements.
 
 * [https://cms.npu-terminology.org/wp-content/uploads/2024/06/NPU-License-Terms-of-Use.pdf](https://cms.npu-terminology.org/wp-content/uploads/2024/06/NPU-License-Terms-of-Use.pdf)
 
-* [Nomenclature for Properties and Units (NPU) - Fragment for DK Core](CodeSystem-dk-npu-fragment.md): [Bundle/ContinuaBundleWithDevice](Bundle-ContinuaBundleWithDevice.md), [DkCoreBasicObservation](StructureDefinition-dk-core-basic-observation.md)...Show 5 more,[NPUBasicObservation](ValueSet-dk-core-NPUBasicObservation.md),[Observation/ElseUrinStix](Observation-ElseUrinStix.md),[Observation/HeartRate.Poul.1974654](Observation-HeartRate.Poul.1974654.md),[Observation/ObservationOxySatObservation](Observation-ObservationOxySatObservation.md)and[Observation/Weight.Poul.230221](Observation-Weight.Poul.230221.md)
+* [Nomenclature for Properties and Units (NPU)](http://terminology.hl7.org/6.5.0/CodeSystem-NPU.html): [Bundle/ContinuaBundleWithDevice](Bundle-ContinuaBundleWithDevice.md), [DkCoreBasicObservation](StructureDefinition-dk-core-basic-observation.md)... Show 5 more, [NPUBasicObservation](ValueSet-dk-core-NPUBasicObservation.md), [Observation/ElseUrinStix](Observation-ElseUrinStix.md), [Observation/HeartRate.Poul.1974654](Observation-HeartRate.Poul.1974654.md), [Observation/ObservationOxySatObservation](Observation-ObservationOxySatObservation.md) and [Observation/Weight.Poul.230221](Observation-Weight.Poul.230221.md)
 
 
 * IEEE maintains copyright on all content from IEEE 11073 standards. All rights reserved. Implementers should obtain official copies of all applicable standards documents directly from IEEE. The inclusion of IEEE 11073 terminology codes and definitions in HL7 messages and related implementation guides is permitted under existing agreements. For permission regarding any other usage, please contact IEEE at copyrights@ieee.org.
 
-* [ISO/IEEE 11073 Medical Device Communication Nomenclature](http://terminology.hl7.org/6.5.0/CodeSystem-v3-mdc.html): [Bundle/ContinuaBundleWithDevice](Bundle-ContinuaBundleWithDevice.md), [Device/BPMonitor.C4F312FFFE53F2C9](Device-BPMonitor.C4F312FFFE53F2C9.md)...Show 9 more,[Device/Telma.FEEDDADADEADBEEF](Device-Telma.FEEDDADADEADBEEF.md),[Device/WeightScale.606405FFFECFC604](Device-WeightScale.606405FFFECFC604.md),[DkCoreBasicObservation](StructureDefinition-dk-core-basic-observation.md),[IEEEBasicObservation](ValueSet-dk-core-IEEEBasicObservation.md),[Observation/CoincidentTimeStamp.0222](Observation-CoincidentTimeStamp.0222.md),[Observation/HeartRate.Poul.1974654](Observation-HeartRate.Poul.1974654.md),[Observation/ObservationOxySatBasicObservationOrg](Observation-ObservationOxySatBasicObservationOrg.md),[Observation/ObservationOxySatObservation](Observation-ObservationOxySatObservation.md)and[Observation/Weight.Poul.230221](Observation-Weight.Poul.230221.md)
+* [ISO/IEEE 11073 Medical Device Communication Nomenclature](http://terminology.hl7.org/6.5.0/CodeSystem-v3-mdc.html): [Bundle/ContinuaBundleWithDevice](Bundle-ContinuaBundleWithDevice.md), [Device/BPMonitor.C4F312FFFE53F2C9](Device-BPMonitor.C4F312FFFE53F2C9.md)... Show 9 more, [Device/Telma.FEEDDADADEADBEEF](Device-Telma.FEEDDADADEADBEEF.md), [Device/WeightScale.606405FFFECFC604](Device-WeightScale.606405FFFECFC604.md), [DkCoreBasicObservation](StructureDefinition-dk-core-basic-observation.md), [IEEEBasicObservation](ValueSet-dk-core-IEEEBasicObservation.md), [Observation/CoincidentTimeStamp.0222](Observation-CoincidentTimeStamp.0222.md), [Observation/HeartRate.Poul.1974654](Observation-HeartRate.Poul.1974654.md), [Observation/ObservationOxySatBasicObservationOrg](Observation-ObservationOxySatBasicObservationOrg.md), [Observation/ObservationOxySatObservation](Observation-ObservationOxySatObservation.md) and [Observation/Weight.Poul.230221](Observation-Weight.Poul.230221.md)
 
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
 
-* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [AddressType](CodeSystem-address-type-dk-supplement.md), [AddressUse](CodeSystem-address-use-dk-supplement.md)...Show 71 more,[AdministrativeGenderDkSupplement](CodeSystem-administrative-gender-supplement.md),[AuthorizationIdentifier](StructureDefinition-dk-core-authorization-identifier.md),[CVRIdentifier](StructureDefinition-dk-core-cvr-identifier.md),[CareProvider](StructureDefinition-dk-core-care-provider.md),[CareTeamStatus](CodeSystem-care-team-status-dk-supplement.md),[ConditionLastAssertedDate](StructureDefinition-ConditionLastAssertedDate.md),[ConsentState](CodeSystem-consent-state-codes-dk-supplement.md),[DK Central Healthcare Organization Registry (SOR)](NamingSystem-sor.md),[DK Central Person Registry (CPR)](NamingSystem-cpr.md),[DKCore](index.md),[DKCoreRegionalSubdivisionCodes](CodeSystem-dk-core-regional-subdivision-codes.md),[DaysOfWeek](CodeSystem-days-of-week-dk-supplement.md),[DkCoreBasicObservation](StructureDefinition-dk-core-basic-observation.md),[DkCoreCondition](StructureDefinition-dk-core-condition.md),[DkCoreCprIdentifier](StructureDefinition-dk-core-cpr-identifier.md),[DkCoreDeCPRCodes](CodeSystem-dk-core-d-ecpr-codes.md),[DkCoreDeCPRValueSet](ValueSet-DkCoreDeCPRValueSet.md),[DkCoreDeCprIdentifier](StructureDefinition-dk-core-d-ecpr-identifier.md),[DkCoreDocumentReferenceVersionID](StructureDefinition-dk-core-documentreference-version-id-extension.md),[DkCoreEncounter](StructureDefinition-dk-core-encounter.md),[DkCoreEncounterPriority](ValueSet-dk-core-encounter-priority.md),[DkCoreLocation](StructureDefinition-dk-core-location.md),[DkCoreMinimalDocumentReference](StructureDefinition-dk-core-minimaldocumentreference.md),[DkCoreObservation](StructureDefinition-dk-core-observation.md),[DkCoreOrganization](StructureDefinition-dk-core-organization.md),[DkCorePatient](StructureDefinition-dk-core-patient.md),[DkCorePersonServiceRequest](StructureDefinition-dk-core-person-servicerequest.md),[DkCorePractitioner](StructureDefinition-dk-core-practitioner.md),[DkCorePractitionerRole](StructureDefinition-dk-core-practitioner-role.md),[DkCorePriorityCodes](ValueSet-dk-core-priority-codes.md),[DkCoreProfessionGroupCodes](CodeSystem-DkCoreProfessionGroupCodes.md),[DkCoreProfessionGroupValueSet](ValueSet-DkCoreProfessionGroupValueSet.md),[DkCoreRelatedPerson](StructureDefinition-dk-core-related-person.md),[DkCoreServiceRequestCodes](ValueSet-dk-core-servicerequest-codes.md),[DkCoreXeCprIdentifier](StructureDefinition-dk-core-x-ecpr-identifier.md),[DkMaritalStatus](CodeSystem-dk-marital-status.md),[DkRelatedPersonRelationshipCodes](CodeSystem-dk-relatedperson-relationshipcodes.md),[EpisodeOfCareStatus](CodeSystem-episode-of-care-status-dk-supplement.md),[GLNIdentifier](StructureDefinition-dk-core-gln-identifier.md),[GreenlandMunicipalityCodes](CodeSystem-dk-core-municipality-codes-greenland.md),[IEEEBasicObservation](ValueSet-dk-core-IEEEBasicObservation.md),[IpaDkCoreCondition](StructureDefinition-ipa-dk-core-condition.md),[IpaDkCoreObservation](StructureDefinition-ipa-dk-core-observation.md),[IpaDkCorePatient](StructureDefinition-ipa-dk-core-patient.md),[IpaDkCorePractitioner](StructureDefinition-ipa-dk-core-practitioner.md),[IpaDkCorePractitionerRole](StructureDefinition-ipa-dk-core-practitionerrole.md),[KombitOrgIdentifier](StructureDefinition-dk-core-kombit-org-identifier.md),[LoincBasicObservation](ValueSet-dk-core-LoincBasicObservation.md),[MunicipalityCodes](ValueSet-dk-core-MunicipalityCodes.md),[NPU](CodeSystem-dk-npu-fragment.md),[NPUBasicObservation](ValueSet-dk-core-NPUBasicObservation.md),[NotFollowedAnymore](StructureDefinition-NotFollowedAnymore.md),[Patient/283](Patient-283.md),[PlannedEndDate](StructureDefinition-dk-core-planned-end-date.md),[PlannedStartDate](StructureDefinition-dk-core-planned-start-date.md),[ProducentId](StructureDefinition-dk-core-producent-id.md),[PublicationStatus](CodeSystem-publication-status-dk-supplement.md),[RegionalSubDivisionCodes](StructureDefinition-dk-core-RegionalSubDivisionCodes.md),[RegionalSubdivisionCodes](ValueSet-dk-core-RegionalSubDivisionCodes.md),[RelatedPersonRelationshipTypes](ValueSet-dk-core-RelatedPersonRelationshipTypes.md),[RequestStatus](CodeSystem-request-status-dk-supplement.md),[RoleCodeDkSupplement](CodeSystem-role-code-dk-supplement.md),[SCTBasicObservation](ValueSet-dk-core-SCTBasicObservation.md),[SORIdentifier](StructureDefinition-dk-core-sor-identifier.md),[SorOrganizationType](ValueSet-sor-organization-type.md),[SorPracticeSettingCode](ValueSet-dk-core-practice-setting-code.md),[TechniquesSCTCodes](ValueSet-dk-core-TechniquesSCTCodes.md),[UCUMBasicUnits](ValueSet-dk-core-UCUM-BasicUnits.md),[ValueSet/dk-marital-status](ValueSet-dk-marital-status.md),[extended-patient-contactrelationship](ValueSet-extended-patient-contactrelationship.md)and[v2-0131DkSupplement](CodeSystem-v2-0131-supplement.md)
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [AddressType](CodeSystem-address-type-dk-supplement.md), [AddressUse](CodeSystem-address-use-dk-supplement.md)... Show 69 more, [AdministrativeGenderDkSupplement](CodeSystem-administrative-gender-supplement.md), [AuthorizationIdentifier](StructureDefinition-dk-core-authorization-identifier.md), [CVRIdentifier](StructureDefinition-dk-core-cvr-identifier.md), [CareProvider](StructureDefinition-dk-core-care-provider.md), [CareTeamStatus](CodeSystem-care-team-status-dk-supplement.md), [ConditionLastAssertedDate](StructureDefinition-ConditionLastAssertedDate.md), [ConsentState](CodeSystem-consent-state-codes-dk-supplement.md), [DK Central Healthcare Organization Registry (SOR)](NamingSystem-sor.md), [DK Central Person Registry (CPR)](NamingSystem-cpr.md), [DKCore](index.md), [DKCoreRegionalSubdivisionCodes](CodeSystem-dk-core-regional-subdivision-codes.md), [DaysOfWeek](CodeSystem-days-of-week-dk-supplement.md), [DkCoreBasicObservation](StructureDefinition-dk-core-basic-observation.md), [DkCoreCondition](StructureDefinition-dk-core-condition.md), [DkCoreCprIdentifier](StructureDefinition-dk-core-cpr-identifier.md), [DkCoreDeCPRCodes](CodeSystem-dk-core-d-ecpr-codes.md), [DkCoreDeCPRValueSet](ValueSet-DkCoreDeCPRValueSet.md), [DkCoreDeCprIdentifier](StructureDefinition-dk-core-d-ecpr-identifier.md), [DkCoreEncounter](StructureDefinition-dk-core-encounter.md), [DkCoreEncounterPriority](ValueSet-dk-core-encounter-priority.md), [DkCoreLocation](StructureDefinition-dk-core-location.md), [DkCoreMinimalDocumentReference](StructureDefinition-dk-core-minimaldocumentreference.md), [DkCoreObservation](StructureDefinition-dk-core-observation.md), [DkCoreOrganization](StructureDefinition-dk-core-organization.md), [DkCorePatient](StructureDefinition-dk-core-patient.md), [DkCorePersonServiceRequest](StructureDefinition-dk-core-person-servicerequest.md), [DkCorePractitioner](StructureDefinition-dk-core-practitioner.md), [DkCorePractitionerRole](StructureDefinition-dk-core-practitioner-role.md), [DkCorePriorityCodes](ValueSet-dk-core-priority-codes.md), [DkCoreProfessionGroupCodes](CodeSystem-DkCoreProfessionGroupCodes.md), [DkCoreProfessionGroupValueSet](ValueSet-DkCoreProfessionGroupValueSet.md), [DkCoreRelatedPerson](StructureDefinition-dk-core-related-person.md), [DkCoreServiceRequestCodes](ValueSet-dk-core-servicerequest-codes.md), [DkCoreXeCprIdentifier](StructureDefinition-dk-core-x-ecpr-identifier.md), [DkMaritalStatus](CodeSystem-dk-marital-status.md), [DkRelatedPersonRelationshipCodes](CodeSystem-dk-relatedperson-relationshipcodes.md), [EpisodeOfCareStatus](CodeSystem-episode-of-care-status-dk-supplement.md), [GLNIdentifier](StructureDefinition-dk-core-gln-identifier.md), [GreenlandMunicipalityCodes](CodeSystem-dk-core-municipality-codes-greenland.md), [IEEEBasicObservation](ValueSet-dk-core-IEEEBasicObservation.md), [IpaDkCoreCondition](StructureDefinition-ipa-dk-core-condition.md), [IpaDkCoreObservation](StructureDefinition-ipa-dk-core-observation.md), [IpaDkCorePatient](StructureDefinition-ipa-dk-core-patient.md), [IpaDkCorePractitioner](StructureDefinition-ipa-dk-core-practitioner.md), [IpaDkCorePractitionerRole](StructureDefinition-ipa-dk-core-practitionerrole.md), [KombitOrgIdentifier](StructureDefinition-dk-core-kombit-org-identifier.md), [LoincBasicObservation](ValueSet-dk-core-LoincBasicObservation.md), [MunicipalityCodes](ValueSet-dk-core-MunicipalityCodes.md), [NPUBasicObservation](ValueSet-dk-core-NPUBasicObservation.md), [NotFollowedAnymore](StructureDefinition-NotFollowedAnymore.md), [Patient/283](Patient-283.md), [PlannedEndDate](StructureDefinition-dk-core-planned-end-date.md), [PlannedStartDate](StructureDefinition-dk-core-planned-start-date.md), [ProducentId](StructureDefinition-dk-core-producent-id.md), [PublicationStatus](CodeSystem-publication-status-dk-supplement.md), [RegionalSubDivisionCodes](StructureDefinition-dk-core-RegionalSubDivisionCodes.md), [RegionalSubdivisionCodes](ValueSet-dk-core-RegionalSubDivisionCodes.md), [RelatedPersonRelationshipTypes](ValueSet-dk-core-RelatedPersonRelationshipTypes.md), [RequestStatus](CodeSystem-request-status-dk-supplement.md), [RoleCodeDkSupplement](CodeSystem-role-code-dk-supplement.md), [SCTBasicObservation](ValueSet-dk-core-SCTBasicObservation.md), [SORIdentifier](StructureDefinition-dk-core-sor-identifier.md), [SorOrganizationType](ValueSet-sor-organization-type.md), [SorPracticeSettingCode](ValueSet-dk-core-practice-setting-code.md), [TechniquesSCTCodes](ValueSet-dk-core-TechniquesSCTCodes.md), [UCUMBasicUnits](ValueSet-dk-core-UCUM-BasicUnits.md), [ValueSet/dk-marital-status](ValueSet-dk-marital-status.md), [extended-patient-contactrelationship](ValueSet-extended-patient-contactrelationship.md) and [v2-0131DkSupplement](CodeSystem-v2-0131-supplement.md)
+* [ISO 3166-2 Codes for the representation of names of countries and their subdivisions — Part 2: Country subdivision code](http://terminology.hl7.org/6.5.0/CodeSystem-v3-iso3166-2.html): [Patient/283](Patient-283.md), [Patient/Aage](Patient-Aage.md)... Show 35 more, [Patient/AliJensen](Patient-AliJensen.md), [Patient/AndersJensen](Patient-AndersJensen.md), [Patient/AyaBerggren](Patient-AyaBerggren.md), [Patient/BoVestergaard](Patient-BoVestergaard.md), [Patient/BritaBerggren](Patient-BritaBerggren.md), [Patient/Bruno](Patient-Bruno.md), [Patient/CaesarOestergaard](Patient-CaesarOestergaard.md), [Patient/EK](Patient-EK.md), [Patient/Einer](Patient-Einer.md), [Patient/EllenLouise](Patient-EllenLouise.md), [Patient/ElseLauridsen](Patient-ElseLauridsen.md), [Patient/GitteNancy](Patient-GitteNancy.md), [Patient/JulianeJoergensen](Patient-JulianeJoergensen.md), [Patient/KajaHansen](Patient-KajaHansen.md), [Patient/KirstenBerggren](Patient-KirstenBerggren.md), [Patient/KnutOdvar](Patient-KnutOdvar.md), [Patient/LarsBerggren](Patient-LarsBerggren.md), [Patient/Lonni](Patient-Lonni.md), [Patient/Magnus](Patient-Magnus.md), [Patient/MaxBerggren](Patient-MaxBerggren.md), [Patient/MayJune](Patient-MayJune.md), [Patient/MuhammedAbdul](Patient-MuhammedAbdul.md), [Patient/NancyAnn](Patient-NancyAnn.md), [Patient/NielsVendelboe](Patient-NielsVendelboe.md), [Patient/OddHaugen](Patient-OddHaugen.md), [Patient/PiaBerggren](Patient-PiaBerggren.md), [Patient/Rasmus](Patient-Rasmus.md), [Patient/RikkeBerggren](Patient-RikkeBerggren.md), [Patient/RuddiBerggren](Patient-RuddiBerggren.md), [Patient/Schwendlund](Patient-Schwendlund.md), [Patient/SilleJune](Patient-SilleJune.md), [Patient/Sverre](Patient-Sverre.md), [Patient/Torre](Patient-Torre.md), [RegionalSubDivisionCodes](StructureDefinition-dk-core-RegionalSubDivisionCodes.md) and [RegionalSubdivisionCodes](ValueSet-dk-core-RegionalSubDivisionCodes.md)
 
 
 * The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. [https://ucum.org/trac/wiki/TermsOfUse](https://ucum.org/trac/wiki/TermsOfUse)
 
-* [Unified Code for Units of Measure (UCUM)](http://terminology.hl7.org/6.5.0/CodeSystem-v3-ucum.html): [Bundle/ContinuaBundleWithDevice](Bundle-ContinuaBundleWithDevice.md), [Bundle/ElsesTOBS](Bundle-ElsesTOBS.md)...Show 19 more,[Bundle/MaxTOKS](Bundle-MaxTOKS.md),[DkCoreBasicObservation](StructureDefinition-dk-core-basic-observation.md),[Observation/ElseBloodPressure](Observation-ElseBloodPressure.md),[Observation/ElseBodyTemperature](Observation-ElseBodyTemperature.md),[Observation/ElseHeartRate](Observation-ElseHeartRate.md),[Observation/ElseRespirationRate](Observation-ElseRespirationRate.md),[Observation/ElsesTOBSscore](Observation-ElsesTOBSscore.md),[Observation/HeartRate.Poul.1974654](Observation-HeartRate.Poul.1974654.md),[Observation/MaxBloodPressure](Observation-MaxBloodPressure.md),[Observation/MaxBodyTemperature](Observation-MaxBodyTemperature.md),[Observation/MaxGlasgowComaScale](Observation-MaxGlasgowComaScale.md),[Observation/MaxHeartRate](Observation-MaxHeartRate.md),[Observation/MaxRespirationRate](Observation-MaxRespirationRate.md),[Observation/MaxSaturation](Observation-MaxSaturation.md),[Observation/ObservationOxySatBasicObservationOrg](Observation-ObservationOxySatBasicObservationOrg.md),[Observation/ObservationOxySatObservation](Observation-ObservationOxySatObservation.md),[Observation/ObservationRespiratoryBasicObservation](Observation-ObservationRespiratoryBasicObservation.md),[Observation/Weight.Poul.230221](Observation-Weight.Poul.230221.md)and[UCUMBasicUnits](ValueSet-dk-core-UCUM-BasicUnits.md)
+* [Unified Code for Units of Measure (UCUM)](http://terminology.hl7.org/6.5.0/CodeSystem-v3-ucum.html): [Bundle/ContinuaBundleWithDevice](Bundle-ContinuaBundleWithDevice.md), [Bundle/ElsesTOBS](Bundle-ElsesTOBS.md)... Show 19 more, [Bundle/MaxTOKS](Bundle-MaxTOKS.md), [DkCoreBasicObservation](StructureDefinition-dk-core-basic-observation.md), [Observation/ElseBloodPressure](Observation-ElseBloodPressure.md), [Observation/ElseBodyTemperature](Observation-ElseBodyTemperature.md), [Observation/ElseHeartRate](Observation-ElseHeartRate.md), [Observation/ElseRespirationRate](Observation-ElseRespirationRate.md), [Observation/ElsesTOBSscore](Observation-ElsesTOBSscore.md), [Observation/HeartRate.Poul.1974654](Observation-HeartRate.Poul.1974654.md), [Observation/MaxBloodPressure](Observation-MaxBloodPressure.md), [Observation/MaxBodyTemperature](Observation-MaxBodyTemperature.md), [Observation/MaxGlasgowComaScale](Observation-MaxGlasgowComaScale.md), [Observation/MaxHeartRate](Observation-MaxHeartRate.md), [Observation/MaxRespirationRate](Observation-MaxRespirationRate.md), [Observation/MaxSaturation](Observation-MaxSaturation.md), [Observation/ObservationOxySatBasicObservationOrg](Observation-ObservationOxySatBasicObservationOrg.md), [Observation/ObservationOxySatObservation](Observation-ObservationOxySatObservation.md), [Observation/ObservationRespiratoryBasicObservation](Observation-ObservationRespiratoryBasicObservation.md), [Observation/Weight.Poul.230221](Observation-Weight.Poul.230221.md) and [UCUMBasicUnits](ValueSet-dk-core-UCUM-BasicUnits.md)
 
 
 * This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
 
-* [LOINC](http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html): [Bundle/ContinuaBundleWithDevice](Bundle-ContinuaBundleWithDevice.md), [Bundle/ElsesTOBS](Bundle-ElsesTOBS.md)...Show 22 more,[Bundle/MaxTOKS](Bundle-MaxTOKS.md),[DkCoreBasicObservation](StructureDefinition-dk-core-basic-observation.md),[DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a12](DocumentReference-94e65db8-2f0c-4a2c-a7c9-06a160d59a12.md),[DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a13](DocumentReference-94e65db8-2f0c-4a2c-a7c9-06a160d59a13.md),[LoincBasicObservation](ValueSet-dk-core-LoincBasicObservation.md),[Observation/ElseBloodPressure](Observation-ElseBloodPressure.md),[Observation/ElseBodyTemperature](Observation-ElseBodyTemperature.md),[Observation/ElseHeartRate](Observation-ElseHeartRate.md),[Observation/ElseRespirationRate](Observation-ElseRespirationRate.md),[Observation/HeartRate.Poul.1974654](Observation-HeartRate.Poul.1974654.md),[Observation/MaxBloodPressure](Observation-MaxBloodPressure.md),[Observation/MaxBodyTemperature](Observation-MaxBodyTemperature.md),[Observation/MaxConsciousness](Observation-MaxConsciousness.md),[Observation/MaxGlasgowComaScale](Observation-MaxGlasgowComaScale.md),[Observation/MaxHeartRate](Observation-MaxHeartRate.md),[Observation/MaxRespirationRate](Observation-MaxRespirationRate.md),[Observation/MaxSaturation](Observation-MaxSaturation.md),[Observation/MaxVitalSignsPanel](Observation-MaxVitalSignsPanel.md),[Observation/ObservationOxySatBasicObservationOrg](Observation-ObservationOxySatBasicObservationOrg.md),[Observation/ObservationOxySatObservation](Observation-ObservationOxySatObservation.md),[Observation/ObservationRespiratoryBasicObservation](Observation-ObservationRespiratoryBasicObservation.md)and[Observation/Weight.Poul.230221](Observation-Weight.Poul.230221.md)
+* [LOINC](http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html): [Bundle/ContinuaBundleWithDevice](Bundle-ContinuaBundleWithDevice.md), [Bundle/ElsesTOBS](Bundle-ElsesTOBS.md)... Show 22 more, [Bundle/MaxTOKS](Bundle-MaxTOKS.md), [DkCoreBasicObservation](StructureDefinition-dk-core-basic-observation.md), [DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a12](DocumentReference-94e65db8-2f0c-4a2c-a7c9-06a160d59a12.md), [DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a13](DocumentReference-94e65db8-2f0c-4a2c-a7c9-06a160d59a13.md), [LoincBasicObservation](ValueSet-dk-core-LoincBasicObservation.md), [Observation/ElseBloodPressure](Observation-ElseBloodPressure.md), [Observation/ElseBodyTemperature](Observation-ElseBodyTemperature.md), [Observation/ElseHeartRate](Observation-ElseHeartRate.md), [Observation/ElseRespirationRate](Observation-ElseRespirationRate.md), [Observation/HeartRate.Poul.1974654](Observation-HeartRate.Poul.1974654.md), [Observation/MaxBloodPressure](Observation-MaxBloodPressure.md), [Observation/MaxBodyTemperature](Observation-MaxBodyTemperature.md), [Observation/MaxConsciousness](Observation-MaxConsciousness.md), [Observation/MaxGlasgowComaScale](Observation-MaxGlasgowComaScale.md), [Observation/MaxHeartRate](Observation-MaxHeartRate.md), [Observation/MaxRespirationRate](Observation-MaxRespirationRate.md), [Observation/MaxSaturation](Observation-MaxSaturation.md), [Observation/MaxVitalSignsPanel](Observation-MaxVitalSignsPanel.md), [Observation/ObservationOxySatBasicObservationOrg](Observation-ObservationOxySatBasicObservationOrg.md), [Observation/ObservationOxySatObservation](Observation-ObservationOxySatObservation.md), [Observation/ObservationRespiratoryBasicObservation](Observation-ObservationRespiratoryBasicObservation.md) and [Observation/Weight.Poul.230221](Observation-Weight.Poul.230221.md)
 
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
 
-* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://tx.fhir.org/r4/ValueSet/snomedct): [AddressType](CodeSystem-address-type-dk-supplement.md), [AddressUse](CodeSystem-address-use-dk-supplement.md)...Show 49 more,[Bundle/ElsesTOBS](Bundle-ElsesTOBS.md),[Bundle/MaxTOKS](Bundle-MaxTOKS.md),[CareTeamStatus](CodeSystem-care-team-status-dk-supplement.md),[Condition/ConditionPressureUlcer](Condition-ConditionPressureUlcer.md),[Condition/JohnPacemaker](Condition-JohnPacemaker.md),[ConsentState](CodeSystem-consent-state-codes-dk-supplement.md),[DaysOfWeek](CodeSystem-days-of-week-dk-supplement.md),[DkCoreBasicObservation](StructureDefinition-dk-core-basic-observation.md),[DkCoreCondition](StructureDefinition-dk-core-condition.md),[DkCoreMinimalDocumentReference](StructureDefinition-dk-core-minimaldocumentreference.md),[DkCoreObservation](StructureDefinition-dk-core-observation.md),[DkCoreOrganization](StructureDefinition-dk-core-organization.md),[DkCorePersonServiceRequest](StructureDefinition-dk-core-person-servicerequest.md),[DkCoreServiceRequestCodes](ValueSet-dk-core-servicerequest-codes.md),[DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a12](DocumentReference-94e65db8-2f0c-4a2c-a7c9-06a160d59a12.md),[DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a13](DocumentReference-94e65db8-2f0c-4a2c-a7c9-06a160d59a13.md),[EpisodeOfCareStatus](CodeSystem-episode-of-care-status-dk-supplement.md),[IEEEBasicObservation](ValueSet-dk-core-IEEEBasicObservation.md),[Lægerne Hasseris Bymidte](Organization-LaegerneHasserisBymidte.md),[Observation/ElseBloodPressure](Observation-ElseBloodPressure.md),[Observation/ElseBodyTemperature](Observation-ElseBodyTemperature.md),[Observation/ElseConsciousness](Observation-ElseConsciousness.md),[Observation/ElseHeartRate](Observation-ElseHeartRate.md),[Observation/ElsePainVRS](Observation-ElsePainVRS.md),[Observation/ElseRespirationRate](Observation-ElseRespirationRate.md),[Observation/ElseUrinStix](Observation-ElseUrinStix.md),[Observation/MaxBloodPressure](Observation-MaxBloodPressure.md),[Observation/MaxBodyTemperature](Observation-MaxBodyTemperature.md),[Observation/MaxConsciousness](Observation-MaxConsciousness.md),[Observation/MaxGlasgowComaScale](Observation-MaxGlasgowComaScale.md),[Observation/MaxHeartRate](Observation-MaxHeartRate.md),[Observation/MaxRespirationRate](Observation-MaxRespirationRate.md),[Observation/MaxSaturation](Observation-MaxSaturation.md),[Organization/154b8c96-a061-45bf-9ce4-1947c7c3c283](Organization-154b8c96-a061-45bf-9ce4-1947c7c3c283.md),[Organization/CenterForDiabetes](Organization-CenterForDiabetes.md),[Organization/CenterForDiabetesTeamDiabetes](Organization-CenterForDiabetesTeamDiabetes.md),[Organization/CenterForDiabetesTeamHjerte](Organization-CenterForDiabetesTeamHjerte.md),[Organization/CenterForDiabetesTeamKvalitet](Organization-CenterForDiabetesTeamKvalitet.md),[Organization/b08997bb-4476-4dd0-84dd-2e297f809364](Organization-b08997bb-4476-4dd0-84dd-2e297f809364.md),[Ortopædkirurgisk sengeafdeling](Organization-8510eec9-180b-4e9c-95b6-02fad9f853d3.md),[Ortopædkirurgisk sengeafsnit](Organization-19f9ee18-7677-4caf-88fe-8f6df2f2906e.md),[PublicationStatus](CodeSystem-publication-status-dk-supplement.md),[RequestStatus](CodeSystem-request-status-dk-supplement.md),[SCTBasicObservation](ValueSet-dk-core-SCTBasicObservation.md),[ServiceRequest/JohnsServiceRequest](ServiceRequest-JohnsServiceRequest.md),[ServiceRequest/MaxServiceRequest](ServiceRequest-MaxServiceRequest.md),[SorOrganizationType](ValueSet-sor-organization-type.md),[SorPracticeSettingCode](ValueSet-dk-core-practice-setting-code.md)and[TechniquesSCTCodes](ValueSet-dk-core-TechniquesSCTCodes.md)
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://tx.fhir.org/r4/ValueSet/snomedct): [AddressType](CodeSystem-address-type-dk-supplement.md), [AddressUse](CodeSystem-address-use-dk-supplement.md)... Show 49 more, [Bundle/ElsesTOBS](Bundle-ElsesTOBS.md), [Bundle/MaxTOKS](Bundle-MaxTOKS.md), [CareTeamStatus](CodeSystem-care-team-status-dk-supplement.md), [Condition/ConditionPressureUlcer](Condition-ConditionPressureUlcer.md), [Condition/JohnPacemaker](Condition-JohnPacemaker.md), [ConsentState](CodeSystem-consent-state-codes-dk-supplement.md), [DaysOfWeek](CodeSystem-days-of-week-dk-supplement.md), [DkCoreBasicObservation](StructureDefinition-dk-core-basic-observation.md), [DkCoreCondition](StructureDefinition-dk-core-condition.md), [DkCoreMinimalDocumentReference](StructureDefinition-dk-core-minimaldocumentreference.md), [DkCoreObservation](StructureDefinition-dk-core-observation.md), [DkCoreOrganization](StructureDefinition-dk-core-organization.md), [DkCorePersonServiceRequest](StructureDefinition-dk-core-person-servicerequest.md), [DkCoreServiceRequestCodes](ValueSet-dk-core-servicerequest-codes.md), [DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a12](DocumentReference-94e65db8-2f0c-4a2c-a7c9-06a160d59a12.md), [DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a13](DocumentReference-94e65db8-2f0c-4a2c-a7c9-06a160d59a13.md), [EpisodeOfCareStatus](CodeSystem-episode-of-care-status-dk-supplement.md), [IEEEBasicObservation](ValueSet-dk-core-IEEEBasicObservation.md), [Lægerne Hasseris Bymidte](Organization-LaegerneHasserisBymidte.md), [Observation/ElseBloodPressure](Observation-ElseBloodPressure.md), [Observation/ElseBodyTemperature](Observation-ElseBodyTemperature.md), [Observation/ElseConsciousness](Observation-ElseConsciousness.md), [Observation/ElseHeartRate](Observation-ElseHeartRate.md), [Observation/ElsePainVRS](Observation-ElsePainVRS.md), [Observation/ElseRespirationRate](Observation-ElseRespirationRate.md), [Observation/ElseUrinStix](Observation-ElseUrinStix.md), [Observation/MaxBloodPressure](Observation-MaxBloodPressure.md), [Observation/MaxBodyTemperature](Observation-MaxBodyTemperature.md), [Observation/MaxConsciousness](Observation-MaxConsciousness.md), [Observation/MaxGlasgowComaScale](Observation-MaxGlasgowComaScale.md), [Observation/MaxHeartRate](Observation-MaxHeartRate.md), [Observation/MaxRespirationRate](Observation-MaxRespirationRate.md), [Observation/MaxSaturation](Observation-MaxSaturation.md), [Organization/154b8c96-a061-45bf-9ce4-1947c7c3c283](Organization-154b8c96-a061-45bf-9ce4-1947c7c3c283.md), [Organization/CenterForDiabetes](Organization-CenterForDiabetes.md), [Organization/CenterForDiabetesTeamDiabetes](Organization-CenterForDiabetesTeamDiabetes.md), [Organization/CenterForDiabetesTeamHjerte](Organization-CenterForDiabetesTeamHjerte.md), [Organization/CenterForDiabetesTeamKvalitet](Organization-CenterForDiabetesTeamKvalitet.md), [Organization/b08997bb-4476-4dd0-84dd-2e297f809364](Organization-b08997bb-4476-4dd0-84dd-2e297f809364.md), [Ortopædkirurgisk sengeafdeling](Organization-8510eec9-180b-4e9c-95b6-02fad9f853d3.md), [Ortopædkirurgisk sengeafsnit](Organization-19f9ee18-7677-4caf-88fe-8f6df2f2906e.md), [PublicationStatus](CodeSystem-publication-status-dk-supplement.md), [RequestStatus](CodeSystem-request-status-dk-supplement.md), [SCTBasicObservation](ValueSet-dk-core-SCTBasicObservation.md), [ServiceRequest/JohnsServiceRequest](ServiceRequest-JohnsServiceRequest.md), [ServiceRequest/MaxServiceRequest](ServiceRequest-MaxServiceRequest.md), [SorOrganizationType](ValueSet-sor-organization-type.md), [SorPracticeSettingCode](ValueSet-dk-core-practice-setting-code.md) and [TechniquesSCTCodes](ValueSet-dk-core-TechniquesSCTCodes.md)
 
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
 
-* [Condition Category Codes](http://terminology.hl7.org/7.0.1/CodeSystem-condition-category.html): [Condition/ConditionPressureUlcer](Condition-ConditionPressureUlcer.md), [Condition/ElseGraviditet](Condition-ElseGraviditet.md)...Show 4 more,[Condition/JohnDiabetes](Condition-JohnDiabetes.md),[Condition/JohnFracture](Condition-JohnFracture.md),[Condition/JohnMelanoma](Condition-JohnMelanoma.md)and[Condition/JohnPacemaker](Condition-JohnPacemaker.md)
-* [Condition Clinical Status Codes](http://terminology.hl7.org/7.0.1/CodeSystem-condition-clinical.html): [Condition/ConditionPressureUlcer](Condition-ConditionPressureUlcer.md), [Condition/ElseGraviditet](Condition-ElseGraviditet.md)...Show 4 more,[Condition/JohnDiabetes](Condition-JohnDiabetes.md),[Condition/JohnFracture](Condition-JohnFracture.md),[Condition/JohnMelanoma](Condition-JohnMelanoma.md)and[Condition/JohnPacemaker](Condition-JohnPacemaker.md)
-* [ConditionVerificationStatus](http://terminology.hl7.org/7.0.1/CodeSystem-condition-ver-status.html): [Condition/ElseGraviditet](Condition-ElseGraviditet.md), [Condition/JohnDiabetes](Condition-JohnDiabetes.md), [Condition/JohnFracture](Condition-JohnFracture.md), [Condition/JohnMelanoma](Condition-JohnMelanoma.md) and [Condition/JohnPacemaker](Condition-JohnPacemaker.md)
-* [Location type](http://terminology.hl7.org/7.0.1/CodeSystem-location-physical-type.html): [Location/ambulance](Location-ambulance.md) and [Neuro unit](Location-neuroradiologyUnit.md)
-* [Observation Category Codes](http://terminology.hl7.org/7.0.1/CodeSystem-observation-category.html): [Bundle/ContinuaBundleWithDevice](Bundle-ContinuaBundleWithDevice.md), [Bundle/ElsesTOBS](Bundle-ElsesTOBS.md)...Show 18 more,[Bundle/MaxTOKS](Bundle-MaxTOKS.md),[DkCoreBasicObservation](StructureDefinition-dk-core-basic-observation.md),[Observation/ElseBloodPressure](Observation-ElseBloodPressure.md),[Observation/ElseBodyTemperature](Observation-ElseBodyTemperature.md),[Observation/ElseHeartRate](Observation-ElseHeartRate.md),[Observation/ElseRespirationRate](Observation-ElseRespirationRate.md),[Observation/HeartRate.Poul.1974654](Observation-HeartRate.Poul.1974654.md),[Observation/MaxBloodPressure](Observation-MaxBloodPressure.md),[Observation/MaxBodyTemperature](Observation-MaxBodyTemperature.md),[Observation/MaxConsciousness](Observation-MaxConsciousness.md),[Observation/MaxHeartRate](Observation-MaxHeartRate.md),[Observation/MaxRespirationRate](Observation-MaxRespirationRate.md),[Observation/MaxSaturation](Observation-MaxSaturation.md),[Observation/MaxVitalSignsPanel](Observation-MaxVitalSignsPanel.md),[Observation/ObservationOxySatBasicObservationOrg](Observation-ObservationOxySatBasicObservationOrg.md),[Observation/ObservationOxySatObservation](Observation-ObservationOxySatObservation.md),[Observation/ObservationRespiratoryBasicObservation](Observation-ObservationRespiratoryBasicObservation.md)and[Observation/Weight.Poul.230221](Observation-Weight.Poul.230221.md)
-* [contactRole2](http://terminology.hl7.org/7.0.1/CodeSystem-v2-0131.html): [v2-0131DkSupplement](CodeSystem-v2-0131-supplement.md)
-* [identifierType](http://terminology.hl7.org/7.0.1/CodeSystem-v2-0203.html): [Bundle/ContinuaBundleWithDevice](Bundle-ContinuaBundleWithDevice.md), [DK Central Healthcare Organization Registry (SOR)](NamingSystem-sor.md) and [Patient/Poul](Patient-Poul.md)
-* [providerRole](http://terminology.hl7.org/7.0.1/CodeSystem-v2-0286.html): [PractitionerRole/AbrahamPractitionerRole](PractitionerRole-AbrahamPractitionerRole.md) and [PractitionerRole/PlaceholderPractitionerRole](PractitionerRole-PlaceholderPractitionerRole.md)
-* [ActCode](http://terminology.hl7.org/7.0.1/CodeSystem-v3-ActCode.html): [DkCoreMinimalDocumentReference](StructureDefinition-dk-core-minimaldocumentreference.md), [Encounter/0c5e4905-5c2e-4254-8837-770c3724cd13](Encounter-0c5e4905-5c2e-4254-8837-770c3724cd13.md) and [Encounter/915a3cfb-2f3e-477b-8a9d-5d86c30e4929](Encounter-915a3cfb-2f3e-477b-8a9d-5d86c30e4929.md)
-* [ActPriority](http://terminology.hl7.org/7.0.1/CodeSystem-v3-ActPriority.html): [DkCoreEncounter](StructureDefinition-dk-core-encounter.md) and [DkCoreEncounterPriority](ValueSet-dk-core-encounter-priority.md)
-* [MaritalStatus](http://terminology.hl7.org/7.0.1/CodeSystem-v3-MaritalStatus.html): [Bundle/ElsesTOBS](Bundle-ElsesTOBS.md), [Patient/283](Patient-283.md) and [Patient/else](Patient-else.md)
-* [RoleCode](http://terminology.hl7.org/7.0.1/CodeSystem-v3-RoleCode.html): [DkCoreRelatedPerson](StructureDefinition-dk-core-related-person.md), [Location/ambulance](Location-ambulance.md)...Show 5 more,[Neuro unit](Location-neuroradiologyUnit.md),[RelatedPerson/Child](RelatedPerson-Child.md),[RelatedPerson/TwoRelations](RelatedPerson-TwoRelations.md),[RelatedPersonRelationshipTypes](ValueSet-dk-core-RelatedPersonRelationshipTypes.md)and[RoleCodeDkSupplement](CodeSystem-role-code-dk-supplement.md)
+* [Condition Category Codes](http://terminology.hl7.org/7.1.0/CodeSystem-condition-category.html): [Condition/ConditionPressureUlcer](Condition-ConditionPressureUlcer.md), [Condition/ElseGraviditet](Condition-ElseGraviditet.md)... Show 4 more, [Condition/JohnDiabetes](Condition-JohnDiabetes.md), [Condition/JohnFracture](Condition-JohnFracture.md), [Condition/JohnMelanoma](Condition-JohnMelanoma.md) and [Condition/JohnPacemaker](Condition-JohnPacemaker.md)
+* [Condition Clinical Status Codes](http://terminology.hl7.org/7.1.0/CodeSystem-condition-clinical.html): [Condition/ConditionPressureUlcer](Condition-ConditionPressureUlcer.md), [Condition/ElseGraviditet](Condition-ElseGraviditet.md)... Show 4 more, [Condition/JohnDiabetes](Condition-JohnDiabetes.md), [Condition/JohnFracture](Condition-JohnFracture.md), [Condition/JohnMelanoma](Condition-JohnMelanoma.md) and [Condition/JohnPacemaker](Condition-JohnPacemaker.md)
+* [ConditionVerificationStatus](http://terminology.hl7.org/7.1.0/CodeSystem-condition-ver-status.html): [Condition/ElseGraviditet](Condition-ElseGraviditet.md), [Condition/JohnDiabetes](Condition-JohnDiabetes.md), [Condition/JohnFracture](Condition-JohnFracture.md), [Condition/JohnMelanoma](Condition-JohnMelanoma.md) and [Condition/JohnPacemaker](Condition-JohnPacemaker.md)
+* [Location type](http://terminology.hl7.org/7.1.0/CodeSystem-location-physical-type.html): [Location/ambulance](Location-ambulance.md) and [Neuro unit](Location-neuroradiologyUnit.md)
+* [Observation Category Codes](http://terminology.hl7.org/7.1.0/CodeSystem-observation-category.html): [Bundle/ContinuaBundleWithDevice](Bundle-ContinuaBundleWithDevice.md), [Bundle/ElsesTOBS](Bundle-ElsesTOBS.md)... Show 18 more, [Bundle/MaxTOKS](Bundle-MaxTOKS.md), [DkCoreBasicObservation](StructureDefinition-dk-core-basic-observation.md), [Observation/ElseBloodPressure](Observation-ElseBloodPressure.md), [Observation/ElseBodyTemperature](Observation-ElseBodyTemperature.md), [Observation/ElseHeartRate](Observation-ElseHeartRate.md), [Observation/ElseRespirationRate](Observation-ElseRespirationRate.md), [Observation/HeartRate.Poul.1974654](Observation-HeartRate.Poul.1974654.md), [Observation/MaxBloodPressure](Observation-MaxBloodPressure.md), [Observation/MaxBodyTemperature](Observation-MaxBodyTemperature.md), [Observation/MaxConsciousness](Observation-MaxConsciousness.md), [Observation/MaxHeartRate](Observation-MaxHeartRate.md), [Observation/MaxRespirationRate](Observation-MaxRespirationRate.md), [Observation/MaxSaturation](Observation-MaxSaturation.md), [Observation/MaxVitalSignsPanel](Observation-MaxVitalSignsPanel.md), [Observation/ObservationOxySatBasicObservationOrg](Observation-ObservationOxySatBasicObservationOrg.md), [Observation/ObservationOxySatObservation](Observation-ObservationOxySatObservation.md), [Observation/ObservationRespiratoryBasicObservation](Observation-ObservationRespiratoryBasicObservation.md) and [Observation/Weight.Poul.230221](Observation-Weight.Poul.230221.md)
+* [contactRole2](http://terminology.hl7.org/7.1.0/CodeSystem-v2-0131.html): [v2-0131DkSupplement](CodeSystem-v2-0131-supplement.md)
+* [identifierType](http://terminology.hl7.org/7.1.0/CodeSystem-v2-0203.html): [Bundle/ContinuaBundleWithDevice](Bundle-ContinuaBundleWithDevice.md), [DK Central Healthcare Organization Registry (SOR)](NamingSystem-sor.md) and [Patient/Poul](Patient-Poul.md)
+* [providerRole](http://terminology.hl7.org/7.1.0/CodeSystem-v2-0286.html): [PractitionerRole/AbrahamPractitionerRole](PractitionerRole-AbrahamPractitionerRole.md) and [PractitionerRole/PlaceholderPractitionerRole](PractitionerRole-PlaceholderPractitionerRole.md)
+* [ActCode](http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html): [DkCoreMinimalDocumentReference](StructureDefinition-dk-core-minimaldocumentreference.md), [Encounter/0c5e4905-5c2e-4254-8837-770c3724cd13](Encounter-0c5e4905-5c2e-4254-8837-770c3724cd13.md) and [Encounter/915a3cfb-2f3e-477b-8a9d-5d86c30e4929](Encounter-915a3cfb-2f3e-477b-8a9d-5d86c30e4929.md)
+* [ActPriority](http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActPriority.html): [DkCoreEncounter](StructureDefinition-dk-core-encounter.md) and [DkCoreEncounterPriority](ValueSet-dk-core-encounter-priority.md)
+* [MaritalStatus](http://terminology.hl7.org/7.1.0/CodeSystem-v3-MaritalStatus.html): [Bundle/ElsesTOBS](Bundle-ElsesTOBS.md), [Patient/283](Patient-283.md)... Show 5 more, [Patient/Einer](Patient-Einer.md), [Patient/Lonni](Patient-Lonni.md), [Patient/MayJune](Patient-MayJune.md), [Patient/Schwendlund](Patient-Schwendlund.md) and [Patient/else](Patient-else.md)
+* [RoleCode](http://terminology.hl7.org/7.1.0/CodeSystem-v3-RoleCode.html): [DkCoreRelatedPerson](StructureDefinition-dk-core-related-person.md), [Location/ambulance](Location-ambulance.md)... Show 45 more, [Neuro unit](Location-neuroradiologyUnit.md), [RelatedPerson/AageRelatedToNancy](RelatedPerson-AageRelatedToNancy.md), [RelatedPerson/AndersRelatedToAli](RelatedPerson-AndersRelatedToAli.md), [RelatedPerson/BrunoRelatedToNancy](RelatedPerson-BrunoRelatedToNancy.md), [RelatedPerson/Child](RelatedPerson-Child.md), [RelatedPerson/EinerRelatedToEK](RelatedPerson-EinerRelatedToEK.md), [RelatedPerson/EinerRelatedToEllen](RelatedPerson-EinerRelatedToEllen.md), [RelatedPerson/EinerRelatedToElse](RelatedPerson-EinerRelatedToElse.md), [RelatedPerson/EinerRelatedToMagnus](RelatedPerson-EinerRelatedToMagnus.md), [RelatedPerson/EinerRelatedToRasmus](RelatedPerson-EinerRelatedToRasmus.md), [RelatedPerson/KirstenRelatedToAya](RelatedPerson-KirstenRelatedToAya.md), [RelatedPerson/KirstenRelatedToGitte](RelatedPerson-KirstenRelatedToGitte.md), [RelatedPerson/KirstenRelatedToLars](RelatedPerson-KirstenRelatedToLars.md), [RelatedPerson/KirstenRelatedToPia](RelatedPerson-KirstenRelatedToPia.md), [RelatedPerson/KirstenRelatedToRikke](RelatedPerson-KirstenRelatedToRikke.md), [RelatedPerson/LonniRelatedToEK](RelatedPerson-LonniRelatedToEK.md), [RelatedPerson/LonniRelatedToEiner](RelatedPerson-LonniRelatedToEiner.md), [RelatedPerson/LonniRelatedToEllen](RelatedPerson-LonniRelatedToEllen.md), [RelatedPerson/LonniRelatedToElse](RelatedPerson-LonniRelatedToElse.md), [RelatedPerson/LonniRelatedToMagnus](RelatedPerson-LonniRelatedToMagnus.md), [RelatedPerson/LonniRelatedToRasmus](RelatedPerson-LonniRelatedToRasmus.md), [RelatedPerson/MayJuneGuardianOfSverre](RelatedPerson-MayJuneGuardianOfSverre.md), [RelatedPerson/MayJuneGuardianOfTorre](RelatedPerson-MayJuneGuardianOfTorre.md), [RelatedPerson/MayJuneRelatedToKnut](RelatedPerson-MayJuneRelatedToKnut.md), [RelatedPerson/MayJuneRelatedToOdd](RelatedPerson-MayJuneRelatedToOdd.md), [RelatedPerson/MayJuneRelatedToSchwendlund](RelatedPerson-MayJuneRelatedToSchwendlund.md), [RelatedPerson/MayJuneRelatedToSille](RelatedPerson-MayJuneRelatedToSille.md), [RelatedPerson/MayJuneRelatedToSverre](RelatedPerson-MayJuneRelatedToSverre.md), [RelatedPerson/MayJuneRelatedToTorre](RelatedPerson-MayJuneRelatedToTorre.md), [RelatedPerson/NancyGuardianOfAage](RelatedPerson-NancyGuardianOfAage.md), [RelatedPerson/NancyGuardianOfBrita](RelatedPerson-NancyGuardianOfBrita.md), [RelatedPerson/NancyRelatedToBrita](RelatedPerson-NancyRelatedToBrita.md), [RelatedPerson/NancyRelatedToGitte](RelatedPerson-NancyRelatedToGitte.md), [RelatedPerson/NancyRelatedToKirsten](RelatedPerson-NancyRelatedToKirsten.md), [RelatedPerson/NancyRelatedToMax](RelatedPerson-NancyRelatedToMax.md), [RelatedPerson/NancyRelatedToRuddi](RelatedPerson-NancyRelatedToRuddi.md), [RelatedPerson/RuddiGuardianOfRikke](RelatedPerson-RuddiGuardianOfRikke.md), [RelatedPerson/SchwendlundRelatedToKnut](RelatedPerson-SchwendlundRelatedToKnut.md), [RelatedPerson/SchwendlundRelatedToOdd](RelatedPerson-SchwendlundRelatedToOdd.md), [RelatedPerson/SchwendlundRelatedToSille](RelatedPerson-SchwendlundRelatedToSille.md), [RelatedPerson/SchwendlundRelatedToSverre](RelatedPerson-SchwendlundRelatedToSverre.md), [RelatedPerson/SchwendlundRelatedToTorre](RelatedPerson-SchwendlundRelatedToTorre.md), [RelatedPerson/TwoRelations](RelatedPerson-TwoRelations.md), [RelatedPersonRelationshipTypes](ValueSet-dk-core-RelatedPersonRelationshipTypes.md) and [RoleCodeDkSupplement](CodeSystem-role-code-dk-supplement.md)
 
 
 ### Cross Version Analysis
@@ -193,3107 +194,3625 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
   "resourceType" : "ImplementationGuide",
   "id" : "hl7.fhir.dk.core",
   "url" : "http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core",
-  "version" : "3.5.0",
+  "version" : "3.6.0",
   "name" : "DKCore",
   "title" : "HL7 FHIR Implementation Guide: DK Core",
   "status" : "active",
-  "date" : "2025-12-19T17:27:08+01:00",
+  "date" : "2026-03-11T23:16:27+01:00",
   "publisher" : "HL7 Denmark",
-  "contact" : [
+  "contact" : [{
+    "name" : "HL7 Denmark",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.dk"
+    },
     {
-      "name" : "HL7 Denmark",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.hl7.dk"
-        },
-        {
-          "system" : "email",
-          "value" : "dk-affiliate@hl7.dk"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "dk-affiliate@hl7.dk"
+    }]
+  }],
   "description" : "A FHIR Implementation Guide for the Danish common needs across healthcare sectors",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "DK",
-          "display" : "Denmark"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
   "packageId" : "hl7.fhir.dk.core",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],
-  "dependsOn" : [
-    {
-      "id" : "hl7tx",
-      "extension" : [
-        {
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
-          "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
-        }
-      ],
-      "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
-      "packageId" : "hl7.terminology.r4",
-      "version" : "7.0.1"
-    },
-    {
-      "id" : "hl7_fhir_uv_extensions_r4",
-      "uri" : "http://hl7.org/fhir/extensions",
-      "packageId" : "hl7.fhir.uv.extensions.r4",
-      "version" : "5.3.0-ballot-tc1"
-    },
-    {
-      "id" : "hl7_fhir_uv_phd",
-      "uri" : "http://hl7.org/fhir/uv/phd/ImplementationGuide/hl7.fhir.uv.phd",
-      "packageId" : "hl7.fhir.uv.phd",
-      "version" : "1.1.0"
-    },
-    {
-      "id" : "hl7_fhir_uv_ipa",
-      "uri" : "http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa",
-      "packageId" : "hl7.fhir.uv.ipa",
-      "version" : "1.1.0"
-    },
-    {
-      "id" : "ihe_iti_mhd",
-      "uri" : "https://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.iti.mhd",
-      "packageId" : "ihe.iti.mhd",
-      "version" : "4.2.3"
-    }
-  ],
+  "dependsOn" : [{
+    "id" : "hl7tx",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+    }],
+    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+    "packageId" : "hl7.terminology.r4",
+    "version" : "7.1.0"
+  },
+  {
+    "id" : "hl7_fhir_uv_extensions_r4",
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r4",
+    "version" : "5.3.0-ballot-tc1"
+  },
+  {
+    "id" : "hl7_fhir_uv_phd",
+    "uri" : "http://hl7.org/fhir/uv/phd/ImplementationGuide/hl7.fhir.uv.phd",
+    "packageId" : "hl7.fhir.uv.phd",
+    "version" : "1.1.0"
+  },
+  {
+    "id" : "hl7_fhir_uv_ipa",
+    "uri" : "http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa",
+    "packageId" : "hl7.fhir.uv.ipa",
+    "version" : "1.1.0"
+  },
+  {
+    "id" : "ihe_iti_mhd",
+    "uri" : "https://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.iti.mhd",
+    "packageId" : "ihe.iti.mhd",
+    "version" : "4.2.3"
+  }],
   "definition" : {
-    "extension" : [
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "copyrightyear"
-          },
-          {
-            "url" : "value",
-            "valueString" : "2021+"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "releaselabel"
-          },
-          {
-            "url" : "value",
-            "valueString" : "release"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "show-inherited-invariants"
-          },
-          {
-            "url" : "value",
-            "valueString" : "false"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "ipa-comparison"
-          },
-          {
-            "url" : "value",
-            "valueString" : "{last}"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "special-url"
-          },
-          {
-            "url" : "value",
-            "valueString" : "urn:iso:std:iso:11073:10101"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "special-url"
-          },
-          {
-            "url" : "value",
-            "valueString" : "urn:oid:1.2.208.176.2.4"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "special-url"
-          },
-          {
-            "url" : "value",
-            "valueString" : "urn:oid:1.2.208.176.2.21"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "special-url"
-          },
-          {
-            "url" : "value",
-            "valueString" : "urn:oid:1.2.208.176.2.4.12"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "special-url"
-          },
-          {
-            "url" : "value",
-            "valueString" : "http://npu-terminology.org"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "path-expansion-params"
-          },
-          {
-            "url" : "value",
-            "valueString" : "Parameters-expParam.json"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "autoload-resources"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "path-liquid"
-          },
-          {
-            "url" : "value",
-            "valueString" : "template/liquid"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "path-liquid"
-          },
-          {
-            "url" : "value",
-            "valueString" : "input/liquid"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "path-qa"
-          },
-          {
-            "url" : "value",
-            "valueString" : "temp/qa"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "path-temp"
-          },
-          {
-            "url" : "value",
-            "valueString" : "temp/pages"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "path-output"
-          },
-          {
-            "url" : "value",
-            "valueString" : "output"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "path-suppressed-warnings"
-          },
-          {
-            "url" : "value",
-            "valueString" : "input/ignoreWarnings.txt"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "path-history"
-          },
-          {
-            "url" : "value",
-            "valueString" : "http://hl7.dk/fhir/core/history.html"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "template-html"
-          },
-          {
-            "url" : "value",
-            "valueString" : "template-page.html"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "template-md"
-          },
-          {
-            "url" : "value",
-            "valueString" : "template-page-md.html"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "apply-contact"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "apply-context"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "apply-copyright"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "apply-jurisdiction"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "apply-license"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "apply-publisher"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "apply-version"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "apply-wg"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "active-tables"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "fmm-definition"
-          },
-          {
-            "url" : "value",
-            "valueString" : "http://hl7.org/fhir/versions.html#maturity"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "propagate-status"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "excludelogbinaryformat"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "tabbed-snapshots"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters",
-        "valueReference" : {
-          "reference" : "Parameters/expansion-parameters"
-        }
-      },
-      {
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-        "valueCode" : "hl7.fhir.uv.tools.r4#0.9.0"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "copyrightyear"
-          },
-          {
-            "url" : "value",
-            "valueString" : "2021+"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "releaselabel"
-          },
-          {
-            "url" : "value",
-            "valueString" : "release"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "show-inherited-invariants"
-          },
-          {
-            "url" : "value",
-            "valueString" : "false"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "ipa-comparison"
-          },
-          {
-            "url" : "value",
-            "valueString" : "{last}"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "special-url"
-          },
-          {
-            "url" : "value",
-            "valueString" : "urn:iso:std:iso:11073:10101"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "special-url"
-          },
-          {
-            "url" : "value",
-            "valueString" : "urn:oid:1.2.208.176.2.4"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "special-url"
-          },
-          {
-            "url" : "value",
-            "valueString" : "urn:oid:1.2.208.176.2.21"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "special-url"
-          },
-          {
-            "url" : "value",
-            "valueString" : "urn:oid:1.2.208.176.2.4.12"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "special-url"
-          },
-          {
-            "url" : "value",
-            "valueString" : "http://npu-terminology.org"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "path-expansion-params"
-          },
-          {
-            "url" : "value",
-            "valueString" : "Parameters-expParam.json"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "autoload-resources"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "path-liquid"
-          },
-          {
-            "url" : "value",
-            "valueString" : "template/liquid"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "path-liquid"
-          },
-          {
-            "url" : "value",
-            "valueString" : "input/liquid"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "path-qa"
-          },
-          {
-            "url" : "value",
-            "valueString" : "temp/qa"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "path-temp"
-          },
-          {
-            "url" : "value",
-            "valueString" : "temp/pages"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "path-output"
-          },
-          {
-            "url" : "value",
-            "valueString" : "output"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "path-suppressed-warnings"
-          },
-          {
-            "url" : "value",
-            "valueString" : "input/ignoreWarnings.txt"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "path-history"
-          },
-          {
-            "url" : "value",
-            "valueString" : "http://hl7.dk/fhir/core/history.html"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "template-html"
-          },
-          {
-            "url" : "value",
-            "valueString" : "template-page.html"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "template-md"
-          },
-          {
-            "url" : "value",
-            "valueString" : "template-page-md.html"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "apply-contact"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "apply-context"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "apply-copyright"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "apply-jurisdiction"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "apply-license"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "apply-publisher"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "apply-version"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "apply-wg"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "active-tables"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "fmm-definition"
-          },
-          {
-            "url" : "value",
-            "valueString" : "http://hl7.org/fhir/versions.html#maturity"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "propagate-status"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "excludelogbinaryformat"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueCode" : "tabbed-snapshots"
-          },
-          {
-            "url" : "value",
-            "valueString" : "true"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    "extension" : [{
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2021+"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "release"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "show-inherited-invariants"
+      },
+      {
+        "url" : "value",
+        "valueString" : "false"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "ipa-comparison"
+      },
+      {
+        "url" : "value",
+        "valueString" : "{last}"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "urn:iso:std:iso:11073:10101"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "urn:oid:1.2.208.176.2.4"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "urn:oid:1.2.208.176.2.21"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "urn:oid:1.2.208.176.2.4.12"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-expansion-params"
+      },
+      {
+        "url" : "value",
+        "valueString" : "Parameters-expParam.json"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.dk/fhir/core/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "fmm-definition"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "propagate-status"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "excludelogbinaryformat"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "tabbed-snapshots"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters",
+      "valueReference" : {
+        "reference" : "Parameters/expansion-parameters"
       }
-    ],
-    "resource" : [
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Encounter"
-          }
-        ],
-        "reference" : {
-          "reference" : "Encounter/915a3cfb-2f3e-477b-8a9d-5d86c30e4929"
-        },
-        "name" : "A closed inpatient encounter",
-        "description" : "Encounter happened on a surgery department on a hospital",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-encounter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Practitioner"
-          }
-        ],
-        "reference" : {
-          "reference" : "Practitioner/AbrahamLaege"
-        },
-        "name" : "AbrahamLæge",
-        "description" : "Eksempel på lægen Abraham fra akutsygeplejen",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Location"
-          }
-        ],
-        "reference" : {
-          "reference" : "Location/ambulance"
-        },
-        "name" : "ambulance",
-        "description" : "Ambulance provided by Acme Corp",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-location"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Encounter"
-          }
-        ],
-        "reference" : {
-          "reference" : "Encounter/0c5e4905-5c2e-4254-8837-770c3724cd13"
-        },
-        "name" : "An open-ended (ongoing) inpatient encounter",
-        "description" : "Encounter is happening on a surgery department on a hospital",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-encounter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "DocumentReference"
-          }
-        ],
-        "reference" : {
-          "reference" : "DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a12"
-        },
-        "name" : "APD-DK DocumentReference instance of DkCoreMinimalDocumentReference.",
-        "description" : "APD-DK DocumentReference instance of DkCoreMinimalDocumentReference, containing relevant metadata",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-minimaldocumentreference"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/dk-core-care-provider"
-        },
-        "name" : "CareProvider",
-        "description" : "The organization (facility) responsible for the care of the patient during this encounter",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Organization"
-          }
-        ],
-        "reference" : {
-          "reference" : "Organization/CenterForDiabetes"
-        },
-        "name" : "Center for Diabetes",
-        "description" : "Center for Diabetes",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Organization"
-          }
-        ],
-        "reference" : {
-          "reference" : "Organization/CenterForDiabetesTeamDiabetes"
-        },
-        "name" : "Center for Diabetes Team Diabetes",
-        "description" : "Center for Diabetes Team Diabetes",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Organization"
-          }
-        ],
-        "reference" : {
-          "reference" : "Organization/CenterForDiabetesTeamHjerte"
-        },
-        "name" : "Center for Diabetes Team Hjerte",
-        "description" : "Center for Diabetes Team Hjerte",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Organization"
-          }
-        ],
-        "reference" : {
-          "reference" : "Organization/CenterForDiabetesTeamKvalitet"
-        },
-        "name" : "Center for Diabetes Team Kvalitet",
-        "description" : "Center for Diabetes Team Kvalitet",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/CoincidentTimeStamp.0222"
-        },
-        "name" : "Coincident time stamp from Poul's home blood pressure measurement",
-        "description" : "A coincident time stamp observation is used to ensure and inspect the consistency\nof timelines when using battery-operated health devices having their own clock that may\nor may not be synchronized to local time - and may even travel with their owner across\ntime zones.",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/ConditionLastAssertedDate"
-        },
-        "name" : "ConditionLastAssertedDate",
-        "description" : "Extension for the last date a Condition-instance was confirmed valid in its current state. E.g. with its current clinical- and verification status, stage and severity. Typically the last performed follow-up",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "NamingSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "NamingSystem/cpr"
-        },
-        "name" : "cpr",
-        "description" : "The Danish civil registration system (\"CPR\") encompasses basic personal data about anyone with a civil registration number. A civil registration number shall be allocated to anyone who: 1) is registered in the national register in Denmark on the grounds of birth or relocation from abroad; 2) is included under Arbejdsmarkedets TillægsPension (ATP); 3) according to the tax authorities, is required to have a civil registration number for the purpose of tax processing in Denmark.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:complex-type"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/dk-core-cvr-identifier"
-        },
-        "name" : "Danish Central Business Register (CVR) Identifier",
-        "description" : "Identifier holding a danish [CVR](https://datacvr.virk.dk/data/) number.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:complex-type"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/dk-core-cpr-identifier"
-        },
-        "name" : "Danish Central Person Register (CPR) Identifier",
-        "description" : "This structure holds the danish [CPR](https://cpr.dk/) identifier",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/dk-core-basic-observation"
-        },
-        "name" : "Danish Core Basic Observation Profile",
-        "description" : "HL7 Denmark core profile for basic observations, which is a profiling of DkCoreObservation.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/dk-core-condition"
-        },
-        "name" : "Danish Core Condition Profile",
-        "description" : "HL7 Denmark core profile for professionally asserted conditions, as specified by danish health and social care organizations",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/dk-core-encounter"
-        },
-        "name" : "Danish Core Encounter Profile",
-        "description" : "HL7 Denmark core profile for an encounter",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/dk-core-location"
-        },
-        "name" : "Danish Core Location Profile",
-        "description" : "HL7 Denmark core profile for locations",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/dk-core-minimaldocumentreference"
-        },
-        "name" : "Danish Core Minimal DocumentReference Profile",
-        "description" : "HL7 Denmark core profile for a Minimal DocumentReference inherited from IHE MHD Minimal DocumentReference",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/dk-core-municipalityCodes"
-        },
-        "name" : "Danish Core Municipality codes",
-        "description" : "Identifier holding the official identifier for a danish municipality",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/dk-core-observation"
-        },
-        "name" : "Danish Core Observation Profile",
-        "description" : "HL7 Denmark core profile for observations",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/dk-core-organization"
-        },
-        "name" : "Danish Core Organization Profile",
-        "description" : "HL7 Denmark core profile for a danish health organization",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/dk-core-patient"
-        },
-        "name" : "Danish Core Patient Profile",
-        "description" : "HL7 Denmark core profile for a patient",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/dk-core-person-servicerequest"
-        },
-        "name" : "Danish Core Person ServiceRequest Profile",
-        "description" : "HL7 Denmark core profile for requesting a service, such as diagnostic investigations, nursing services, treatments, and more for a Patient.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/dk-core-practitioner"
-        },
-        "name" : "Danish Core Practitioner Profile",
-        "description" : "HL7 Denmark core profile for health professionals and other actors relevant in citizen and patient pathways",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/dk-core-practitioner-role"
-        },
-        "name" : "Danish Core PractitionerRole Profile",
-        "description" : "HL7 Denmark core profile for health professional roles",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/dk-core-RegionalSubDivisionCodes"
-        },
-        "name" : "Danish Core Regional Sub Division Codes Extension",
-        "description" : "Identifier holding the official organization identifier for a danish region",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/dk-core-related-person"
-        },
-        "name" : "Danish Core Related Person Profile",
-        "description" : "HL7 Denmark core profile for a related person",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:complex-type"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/dk-core-authorization-identifier"
-        },
-        "name" : "Danish Health Professionals Authorization Identifier",
-        "description" : "Identifier holding the official [authorization identifier](https://en.stps.dk/en/health-professionals-and-authorities/online-register-registered-health-professionals/) for a practitioner.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/ipa-dk-core-condition"
-        },
-        "name" : "Danish IPA Core Condition Profile",
-        "description" : "HL7 Denmark core profile for IPA and DK Core compliant conditions",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/ipa-dk-core-observation"
-        },
-        "name" : "Danish IPA Core Observation Profile",
-        "description" : "HL7 Denmark core profile for IPA and DK Core compliant observations",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/ipa-dk-core-patient"
-        },
-        "name" : "Danish IPA Core Patient Profile",
-        "description" : "HL7 Denmark core profile for IPA and DK Core compliant patients",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/ipa-dk-core-practitioner"
-        },
-        "name" : "Danish IPA Core Practitioner Profile",
-        "description" : "HL7 Denmark core profile for IPA and DK Core compliant practitioners",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/ipa-dk-core-practitionerrole"
-        },
-        "name" : "Danish IPA Core PractitionerRole Profile",
-        "description" : "HL7 Denmark core profile for IPA and DK Core compliant practitionerroles",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:complex-type"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/dk-core-d-ecpr-identifier"
-        },
-        "name" : "Decentralised eCPR, called D-eCPR",
-        "description" : "This strucure holds the danish [D-eCPR](https://www.nspop.dk/pages/viewpage.action?pageId=226757583#eCPRFormater(XeCPRogDeCPR)-Formatetfordecentraleerstatningspersonnumre-D-eCPR) identifier, which is often used by the Danish regions.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CodeSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "CodeSystem/address-type-dk-supplement"
-        },
-        "name" : "DK Address Type",
-        "description" : "The type of an address (physical / postal)",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CodeSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "CodeSystem/address-use-dk-supplement"
-        },
-        "name" : "DK Address Use",
-        "description" : "The use of an address",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CodeSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "CodeSystem/administrative-gender-supplement"
-        },
-        "name" : "DK Administrative Gender Supplement",
-        "description" : "CodeSystem supplement with danish translations for administrative gender",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CodeSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "CodeSystem/care-team-status-dk-supplement"
-        },
-        "name" : "DK CareTeam Status",
-        "description" : "Indicates the status of the care team.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/dk-core-servicerequest-codes"
-        },
-        "name" : "DK codes for ServiceRequest",
-        "description" : "Value set used to describe Danish healthcare services",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CodeSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "CodeSystem/consent-state-codes-dk-supplement"
-        },
-        "name" : "DK Consent State",
-        "description" : "Indicates the state of the consent",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/dk-core-IEEEBasicObservation"
-        },
-        "name" : "Dk Core IEEE Basic Observation",
-        "description" : "IEEE MDC codes for Basic Observations usable in Denmark",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/dk-core-LoincBasicObservation"
-        },
-        "name" : "DK Core LOINC Basic Observations",
-        "description" : "LOINC codes describing Basic Observations usable in Denmark.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/dk-marital-status"
-        },
-        "name" : "DK Core Marital Status",
-        "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person in Denmark.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/dk-core-NPUBasicObservation"
-        },
-        "name" : "DK Core NPU Basic Observation",
-        "description" : "NPU codes for Basic Observations usable in Denmark",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/dk-core-SCTBasicObservation"
-        },
-        "name" : "DK Core SNOMED CT Basic Observation",
-        "description" : "SNOMED CT codes for Basic Observations usable in Denmark",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/dk-core-UCUM-BasicUnits"
-        },
-        "name" : "DK Core UCUM Basic Units",
-        "description" : "UCUM codes to represent units for basic Observations usable in Denmark",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/DkCoreDeCPRValueSet"
-        },
-        "name" : "DK D-eCPR OID values",
-        "description" : "DK D-eCPR OID values",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CodeSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "CodeSystem/days-of-week-dk-supplement"
-        },
-        "name" : "DK Days Of Week",
-        "description" : "The days of the week.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CodeSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "CodeSystem/dk-core-d-ecpr-codes"
-        },
-        "name" : "DK Decentralised eCPR Systems",
-        "description" : "DK",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CodeSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "CodeSystem/episode-of-care-status-dk-supplement"
-        },
-        "name" : "DK Episode Of Care Status",
-        "description" : "The status of the episode of care.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/extended-patient-contactrelationship"
-        },
-        "name" : "DK Extended Patient Contact Relationship",
-        "description" : "DK Extended Patient Contact Relationship",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CodeSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "CodeSystem/dk-core-municipality-codes-greenland"
-        },
-        "name" : "DK Greenland Municipality Codes",
-        "description" : "Greenland municipality codes as defined by https://www.iso.org/obp/ui/#iso:code:3166:GL and https://cpr.dk/cpr-systemet/kommunesammenlaegninger-opdeling/groenland-2018/",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CodeSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "CodeSystem/dk-marital-status"
-        },
-        "name" : "DK Marital Statuses",
-        "description" : "DK marital statuses",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/dk-core-MunicipalityCodes"
-        },
-        "name" : "DK Municipality Codes",
-        "description" : "Municipality codes used in Denmark",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CodeSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "CodeSystem/dk-core-municipality-codes"
-        },
-        "name" : "DK Municipality Codes",
-        "description" : "Municipality codes as defined by https://danmarksadresser.dk/adressedata/kodelister/kommunekodeliste/ and https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/patientregistrering/relaterede/kommuneklassifikation.pdf",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/dk-core-priority-codes"
-        },
-        "name" : "DK priority codes",
-        "description" : "DK Codes for priority",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/dk-core-encounter-priority"
-        },
-        "name" : "DK priority codes for encounters",
-        "description" : "Value set used for indicating priority of an encounter",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/DkCoreProfessionGroupValueSet"
-        },
-        "name" : "DK Profession Group",
-        "description" : "DK Profession Group codes",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CodeSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "CodeSystem/DkCoreProfessionGroupCodes"
-        },
-        "name" : "DK Profession Group Codes",
-        "description" : "DK health ProfessionGroup codes as defined by https://www.retsinformation.dk/eli/lta/2019/731, and derived from http://autregwebservice.sst.dk/autregservice.asmx/GetAllProfessionGroups. Code (5176) was not uniqe, and have been converted to 5176a and 5176b",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CodeSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "CodeSystem/publication-status-dk-supplement"
-        },
-        "name" : "DK Publication Status",
-        "description" : "The lifecycle status of a Value Set or Concept Map.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/dk-core-RegionalSubDivisionCodes"
-        },
-        "name" : "DK Regional Subdivision Codes",
-        "description" : "Subdivision codes (Regional codes) used in Denmark",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CodeSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "CodeSystem/dk-core-regional-subdivision-codes"
-        },
-        "name" : "DK Regional Subdivision Codes",
-        "description" : "Subdivision codes (Regional codes) used in Denmark as found on https://www.iso.org/obp/ui/#iso:code:3166:DK",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CodeSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "CodeSystem/dk-relatedperson-relationshipcodes"
-        },
-        "name" : "DK Related Person Relationship Codes",
-        "description" : "DK Related Person Relationship Codes",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/dk-core-RelatedPersonRelationshipTypes"
-        },
-        "name" : "DK Related Person Relationship Types",
-        "description" : "DK Related Person Relationship Types",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CodeSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "CodeSystem/request-status-dk-supplement"
-        },
-        "name" : "DK Request Status",
-        "description" : "Codes identifying the stage lifecycle stage of a request",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CodeSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "CodeSystem/role-code-dk-supplement"
-        },
-        "name" : "DK Role Code",
-        "description" : "CodeSystem supplement with danish translations for RoleCode",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/sor-organization-type"
-        },
-        "name" : "DK SOR Organization Type",
-        "description" : "Value set used for indicating the organization type for organizations from SOR",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/dk-core-practice-setting-code"
-        },
-        "name" : "DK SOR Practice Setting Code",
-        "description" : "Values used for the document metadata attribute practiceSettingCode, which is an attribute specifying the clinical specialty where the act that resulted in the document was performed (e.g., Family Practice, Laboratory, Radiology). The value set is based on a subset of the code list from the SOR lookup table 'SOR-Kliniske specialer' (https://sor.sum.dsdn.dk/lookupdata/#clinical_speciality, accessable on Sundhedsdatanettet (SDN)), which is based on SNOMED CT codes.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ValueSet"
-          }
-        ],
-        "reference" : {
-          "reference" : "ValueSet/dk-core-TechniquesSCTCodes"
-        },
-        "name" : "DK TechniquesSCTCodes",
-        "description" : "SNOMED CT Codes for the technique used when obtaining an observation",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CodeSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "CodeSystem/v2-0131-supplement"
-        },
-        "name" : "DK v2 Contact Role Supplement",
-        "description" : "CodeSystem supplement with danish translations for Contact Role",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Condition"
-          }
-        ],
-        "reference" : {
-          "reference" : "Condition/ElseGraviditet"
-        },
-        "name" : "Else Graviditet",
-        "description" : "Else Graviditet, tilstandskode som indberettes ifm Elses ambulante forløb (fx jordemoder), og ved eventuel indlæggelse i graviditeten",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Bundle"
-          }
-        ],
-        "reference" : {
-          "reference" : "Bundle/ElsesTOBS"
-        },
-        "name" : "Else's TOBS measurements",
-        "description" : "An example of TOBS (Danish: Tidlig opsporing af begyndende sygdom), which includes level of consciousness, heart rate, respiration rate, blood pressure and temperature.",
-        "exampleBoolean" : true
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/ElseBloodPressure"
-        },
-        "name" : "ElseBloodPressure",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/ElseBodyTemperature"
-        },
-        "name" : "ElseBodyTemperature",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/ElseConsciousness"
-        },
-        "name" : "ElseConsciousness",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/ElseHeartRate"
-        },
-        "name" : "ElseHeartRate",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/ElsePainVRS"
-        },
-        "name" : "ElsePainVRS",
-        "description" : "Elses smerte målt med VRS",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/ElseRespirationRate"
-        },
-        "name" : "ElseRespirationRate",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/ElsesTOBSscore"
-        },
-        "name" : "ElsesTOBSscore",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/ElseUrinStix"
-        },
-        "name" : "ElseUrinStix",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Organization"
-          }
-        ],
-        "reference" : {
-          "reference" : "Organization/8510eec9-180b-4e9c-95b6-02fad9f853d3"
-        },
-        "name" : "Example hospital department",
-        "description" : "Example hospital department with the orthopedic surgery specialty",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Organization"
-          }
-        ],
-        "reference" : {
-          "reference" : "Organization/19f9ee18-7677-4caf-88fe-8f6df2f2906e"
-        },
-        "name" : "Example hospital sub-department",
-        "description" : "Example hospital sub-department with the orthopedic surgery specialty",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Patient"
-          }
-        ],
-        "reference" : {
-          "reference" : "Patient/Confidential"
-        },
-        "name" : "Example of a patient with confidential address and name",
-        "description" : "Example of a patient with confidential address and name",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "RelatedPerson"
-          }
-        ],
-        "reference" : {
-          "reference" : "RelatedPerson/TwoRelations"
-        },
-        "name" : "Example of a related person with two relations",
-        "description" : "Example of a person that has relations as both neighbor and primary caretaker",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Patient"
-          }
-        ],
-        "reference" : {
-          "reference" : "Patient/else"
-        },
-        "name" : "Example of a woman of childbearing age",
-        "description" : "Example of a woman of childbearing age. Else is a MedCom test-patient",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "RelatedPerson"
-          }
-        ],
-        "reference" : {
-          "reference" : "RelatedPerson/Child"
-        },
-        "name" : "Example of child as related person",
-        "description" : "Example of child as related person",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Patient"
-          }
-        ],
-        "reference" : {
-          "reference" : "Patient/ukendt"
-        },
-        "name" : "Example of valid patient unknown identifier registry",
-        "description" : "Example of valid patient unknown identifier registry. The patient is a 'John Doe' with an Identifier from an unofficial register",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Patient"
-          }
-        ],
-        "reference" : {
-          "reference" : "Patient/ukendt-D-eCPR"
-        },
-        "name" : "Example of valid patient with a D-eCPR as identifier",
-        "description" : "Example of valid patient with a D-eCPR as identifier.",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Patient"
-          }
-        ],
-        "reference" : {
-          "reference" : "Patient/ukendt-X-eCPR"
-        },
-        "name" : "Example of valid patient with a X-eCPR as identifier",
-        "description" : "Example of valid patient with a X-eCPR as identifier.",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Patient"
-          }
-        ],
-        "reference" : {
-          "reference" : "Patient/Max"
-        },
-        "name" : "Example of valid patient with danish marital status",
-        "description" : "Example of valid patient with danish marital status",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Patient"
-          }
-        ],
-        "reference" : {
-          "reference" : "Patient/283"
-        },
-        "name" : "Example of valid patient with full address",
-        "description" : "Example of valid patient with full address",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Patient"
-          }
-        ],
-        "reference" : {
-          "reference" : "Patient/john"
-        },
-        "name" : "Example of valid patient with multiple names",
-        "description" : "Example of valid patient with multiple names",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Parameters"
-          }
-        ],
-        "reference" : {
-          "reference" : "Parameters/expParam"
-        },
-        "name" : "expParam",
-        "description" : "SNOMED CT expansion parameter",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:complex-type"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/dk-core-gln-identifier"
-        },
-        "name" : "GLN Identifier",
-        "description" : "Identifier holding a 13 digit GLN",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Practitioner"
-          }
-        ],
-        "reference" : {
-          "reference" : "Practitioner/HanneSocialraadgiver"
-        },
-        "name" : "HanneSocialrådgiver",
-        "description" : "Eksempel på socialrådgiveren Hanne",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ServiceRequest"
-          }
-        ],
-        "reference" : {
-          "reference" : "ServiceRequest/HenvisningFraLageTilSygehus"
-        },
-        "name" : "Henvisning vedr. modermærkekræft",
-        "description" : "Henvisning fra læge til sygehus vedr. mistanke om at John har modermærkekræft",
-        "exampleBoolean" : true
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/dk-core-documentreference-version-id-extension"
-        },
-        "name" : "HL7 Denmark core DocumentReference Version ID extension",
-        "description" : "Extension containing information about the version of the DocumentReference for a specific standard. The version is included in the R5 version of the resource.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Condition"
-          }
-        ],
-        "reference" : {
-          "reference" : "Condition/JohnDiabetes"
-        },
-        "name" : "John diabetes",
-        "description" : "Johns diabetes-diagnose, udskrivningsdiagnose fra hospitalet fx til brug i indberetning og epikrise",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Condition"
-          }
-        ],
-        "reference" : {
-          "reference" : "Condition/JohnFracture"
-        },
-        "name" : "John fraktur",
-        "description" : "Johns fraktur-diagnose, udskrivningsdiagnose fra hospitalet med tillægskode",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Condition"
-          }
-        ],
-        "reference" : {
-          "reference" : "Condition/JohnMelanoma"
-        },
-        "name" : "John mistanke om Modermærkekræft",
-        "description" : "Johns mistanke om modermærkekræft i huden, kan fx bruges som henvisningsdiagnosese",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Condition"
-          }
-        ],
-        "reference" : {
-          "reference" : "Condition/JohnPacemaker"
-        },
-        "name" : "John pacemaker",
-        "description" : "Johns status efter pacemakeroperation, udtrykt semantisk korrekt med fund frem for operationskode",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Condition"
-          }
-        ],
-        "reference" : {
-          "reference" : "Condition/ConditionPressureUlcer"
-        },
-        "name" : "John tryksår",
-        "description" : "John, tryksår, kommunal tilstand",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/ObservationOxySatBasicObservationOrg"
-        },
-        "name" : "John's oxygen saturation measurement (Basic observation)",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/ObservationOxySatObservation"
-        },
-        "name" : "John's oxygen saturation measurement (Observation)",
-        "description" : "This example suggests a way to handle the oxygen saturation case, where the original measurement\nwas reported in '%' by a device or typed in manually, and then 'translated' to the NPU system,\nwhich requires the value to be unitless.",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/ObservationRespiratoryBasicObservation"
-        },
-        "name" : "John's Respiratory rate measurement (Basic observation)",
-        "description" : "A simple basic observation of a hyperventilating patient",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:complex-type"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/dk-core-kombit-org-identifier"
-        },
-        "name" : "Kombit Organsation Identifier",
-        "description" : "Identifier holding the organization code issued by KOMBIT",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Organization"
-          }
-        ],
-        "reference" : {
-          "reference" : "Organization/LaegerneHasserisBymidte"
-        },
-        "name" : "LaegerneHasserisBymidte",
-        "description" : "Praktisernede læge i Hasseris, som defineret af SOR",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "PractitionerRole"
-          }
-        ],
-        "reference" : {
-          "reference" : "PractitionerRole/AbrahamPractitionerRole"
-        },
-        "name" : "Licensed physician in primary care",
-        "description" : "This is an example of PractitionerRole profile. The example describes the service which practitioner is performing in a specific location in a specific role.",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Bundle"
-          }
-        ],
-        "reference" : {
-          "reference" : "Bundle/MaxTOKS"
-        },
-        "name" : "Max TOKS measurements, including Glasgow Coma Scale assesment",
-        "description" : "An example of TOBS (Danish: Tidlig opsporing af begyndende sygdom), which includes level of consciousness, heart rate, respiration rate, blood pressure and temperature.",
-        "exampleBoolean" : true
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/MaxBloodPressure"
-        },
-        "name" : "MaxBloodPressure",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/MaxBodyTemperature"
-        },
-        "name" : "MaxBodyTemperature",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/MaxConsciousness"
-        },
-        "name" : "MaxConsciousness",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/MaxGlasgowComaScale"
-        },
-        "name" : "MaxGlasgowComaScale",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/MaxHeartRate"
-        },
-        "name" : "MaxHeartRate",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/MaxRespirationRate"
-        },
-        "name" : "MaxRespirationRate",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/MaxSaturation"
-        },
-        "name" : "MaxSaturation",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/MaxVitalSignsPanel"
-        },
-        "name" : "MaxVitalSignsPanel",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Organization"
-          }
-        ],
-        "reference" : {
-          "reference" : "Organization/b08997bb-4476-4dd0-84dd-2e297f809364"
-        },
-        "name" : "MedCom Test Organization",
-        "description" : "MedCom Test Organization with SOR id",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:complex-type"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/dk-core-x-ecpr-identifier"
-        },
-        "name" : "National eCPR service, called X-eCPR",
-        "description" : "This strucure holds the danish [X-eCPR](https://www.nspop.dk/pages/viewpage.action?pageId=226757583#eCPRFormater(XeCPRogDeCPR)-Formatetfornationaleerstatningspersonnumre-X-eCPR) identifier, maintained by the Danish Health Data Authority.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Location"
-          }
-        ],
-        "reference" : {
-          "reference" : "Location/neuroradiologyUnit"
-        },
-        "name" : "neuroradiologyUnit",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-location"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "CodeSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "CodeSystem/dk-npu-fragment"
-        },
-        "name" : "Nomenclature for Properties and Units (NPU) - Fragment for DK Core",
-        "description" : "Fragment of the NPU code system used in DK Core. The full version of NPU can be found at http://labterm.dk",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/NotFollowedAnymore"
-        },
-        "name" : "NotFollowedAnymore",
-        "description" : "Extension for the date where a condition lost focus in a specific clinical context",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "PractitionerRole"
-          }
-        ],
-        "reference" : {
-          "reference" : "PractitionerRole/PlaceholderPractitionerRole"
-        },
-        "name" : "Placeholder for a physician",
-        "description" : "This is an example of PractitionerRole where it acts as a placeholder for an unknown person. This may be useful in several scenarios.",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/dk-core-planned-end-date"
-        },
-        "name" : "PlannedEndDate",
-        "description" : "The planned end date/time (or discharge date) of the encounter",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:extension"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/dk-core-planned-start-date"
-        },
-        "name" : "PlannedStartDate",
-        "description" : "The planned start date/time (or admission date) of the encounter",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "DocumentReference"
-          }
-        ],
-        "reference" : {
-          "reference" : "DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a13"
-        },
-        "name" : "PLR-DK DocumentReference instance of DkCoreMinimalDocumentReference.",
-        "description" : "PLR-DK DocumentReference instance of DkCoreMinimalDocumentReference, containing relevant metadata",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-minimaldocumentreference"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Patient"
-          }
-        ],
-        "reference" : {
-          "reference" : "Patient/Poul"
-        },
-        "name" : "Poul Hansen",
-        "description" : "A patient admitted to a remote monitoring programme, performing measurements\nat home.",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Device"
-          }
-        ],
-        "reference" : {
-          "reference" : "Device/BPMonitor.C4F312FFFE53F2C9"
-        },
-        "name" : "Poul's A&D blood pressure monitor",
-        "description" : "This device is Poul's personal blood pressure monitor, which he keeps in the bedroom\nof his home, and uses for daily monitoring due to his CHF condition.",
-        "exampleBoolean" : true
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Device"
-          }
-        ],
-        "reference" : {
-          "reference" : "Device/WeightScale.606405FFFECFC604"
-        },
-        "name" : "Poul's A&D weight scale",
-        "description" : "This device is Poul's personal weighing scale, which he keeps in the bathroom\nof his home, and uses for daily monitoring due to his CHF condition.",
-        "exampleBoolean" : true
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/Weight.Poul.230221"
-        },
-        "name" : "Poul's daily weighing on Feb. 21st",
-        "description" : "Poul has been instructed to perform a daily weighing in the morning. This is his\ndaily weighing from Feb. 21st 2023.",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/ipa-dk-core-observation"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Observation"
-          }
-        ],
-        "reference" : {
-          "reference" : "Observation/HeartRate.Poul.1974654"
-        },
-        "name" : "Poul's heart rate measurement",
-        "description" : "Poul has been instructed to measure his blood pressure due to his CHF condition. This heart rate\nmeasurement was produced by his blood pressure monitor during one of these measurements.",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/ipa-dk-core-observation"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Bundle"
-          }
-        ],
-        "reference" : {
-          "reference" : "Bundle/ContinuaBundleWithDevice"
-        },
-        "name" : "Poul's home blood pressure measurement",
-        "description" : "This example demonstrates a DkCoreObservation _and_ Continua-compliant\nbundle containing a home blood pressure measurement uploaded to a Continua-compliant\n_\"FHIR Observation Reporting Server\"._",
-        "exampleBoolean" : true
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Device"
-          }
-        ],
-        "reference" : {
-          "reference" : "Device/Telma.FEEDDADADEADBEEF"
-        },
-        "name" : "Poul's remote patient monitoring app",
-        "description" : "Poul has been enrolled in a Remote Patient Monitoring programme in order to monitor the\nstate of his CHF condition. This is the app he uses to report the data to his doctor.",
-        "exampleBoolean" : true
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:complex-type"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/dk-core-producent-id"
-        },
-        "name" : "Producent Id",
-        "description" : "Offical MedCom code describing the producer of lab results",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Organization"
-          }
-        ],
-        "reference" : {
-          "reference" : "Organization/154b8c96-a061-45bf-9ce4-1947c7c3c283"
-        },
-        "name" : "Producer Test Organization",
-        "description" : "Producer of Lab Results Test Organization",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ServiceRequest"
-          }
-        ],
-        "reference" : {
-          "reference" : "ServiceRequest/JohnsServiceRequest"
-        },
-        "name" : "Request for nursing care of John.",
-        "description" : "Request for nursing care of John.",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-person-servicerequest"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ServiceRequest"
-          }
-        ],
-        "reference" : {
-          "reference" : "ServiceRequest/MaxServiceRequest"
-        },
-        "name" : "Request for nursing care of John.",
-        "description" : "Request for nursing care of John.",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-person-servicerequest"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Practitioner"
-          }
-        ],
-        "reference" : {
-          "reference" : "Practitioner/SidselSygeplejerske"
-        },
-        "name" : "SidselSygeplejerske",
-        "description" : "Eksempel på en sygeplejerske",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "NamingSystem"
-          }
-        ],
-        "reference" : {
-          "reference" : "NamingSystem/sor"
-        },
-        "name" : "sor",
-        "description" : "SOR is provided by the Danish Health Data Authority under the Danish Ministry of Health. The register holds organizations within the Danish health sector, their geographical and virtual addresses as well as codes for their identification and for EDI-communication. Danish Health Data Authority is responsible for issuing and publishing codes to identify organizations across health care sectors and related public and private services. SOR includes organizational data on hospitals, the primary care sector (physiotherapists, general practitioners, dentists etc.) and municipal health service organizations as well as non-health care organizations that need to be able to receive data from the former.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:complex-type"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/dk-core-sor-identifier"
-        },
-        "name" : "SOR Identifier",
-        "description" : "Identifier holding the official SOR identifier for a danish healthcare organization",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Organization"
-          }
-        ],
-        "reference" : {
-          "reference" : "Organization/8fa7df76-bec2-4fe2-9a44-750030a0eda0"
-        },
-        "name" : "XDS document bundled Author Organization",
-        "description" : "Instance of a XDS document bundled  author organization",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Practitioner"
-          }
-        ],
-        "reference" : {
-          "reference" : "Practitioner/42cb9200-f421-4d08-8391-7d51a2503cb4"
-        },
-        "name" : "XDS document bundled Author Person",
-        "description" : "Instance of a XDS document bundled  author person",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "Patient"
-          }
-        ],
-        "reference" : {
-          "reference" : "Patient/37628912-7816-47a3-acd8-396b610be142"
-        },
-        "name" : "XDS document bundled Source Patient",
-        "description" : "Instance of a XDS document bundled  source patient",
-        "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
-      }
-    ],
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.9.0"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2021+"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "release"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "show-inherited-invariants"
+      },
+      {
+        "url" : "value",
+        "valueString" : "false"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "ipa-comparison"
+      },
+      {
+        "url" : "value",
+        "valueString" : "{last}"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "urn:iso:std:iso:11073:10101"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "urn:oid:1.2.208.176.2.4"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "urn:oid:1.2.208.176.2.21"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "urn:oid:1.2.208.176.2.4.12"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-expansion-params"
+      },
+      {
+        "url" : "value",
+        "valueString" : "Parameters-expParam.json"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.dk/fhir/core/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "fmm-definition"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "propagate-status"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "excludelogbinaryformat"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "tabbed-snapshots"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    }],
+    "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/915a3cfb-2f3e-477b-8a9d-5d86c30e4929"
+      },
+      "name" : "A closed inpatient encounter",
+      "description" : "Encounter happened on a surgery department on a hospital",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/AbrahamLaege"
+      },
+      "name" : "AbrahamLæge",
+      "description" : "Eksempel på lægen Abraham fra akutsygeplejen",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/AliJensen"
+      },
+      "name" : "Ali Test Jensen - søn af Anders",
+      "description" : "Ali Test Jensen - Søn af Anders Jensen",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/ambulance"
+      },
+      "name" : "ambulance",
+      "description" : "Ambulance provided by Acme Corp",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-location"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/0c5e4905-5c2e-4254-8837-770c3724cd13"
+      },
+      "name" : "An open-ended (ongoing) inpatient encounter",
+      "description" : "Encounter is happening on a surgery department on a hospital",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/AndersRelatedToAli"
+      },
+      "name" : "Anders som far til Ali",
+      "description" : "Anders er far til Ali",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/AndersJensen"
+      },
+      "name" : "Anders Test Jensen - far til Ali",
+      "description" : "Anders Test Jensen - Far til Ali Jensen",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a12"
+      },
+      "name" : "APD-DK DocumentReference instance of DkCoreMinimalDocumentReference.",
+      "description" : "APD-DK DocumentReference instance of DkCoreMinimalDocumentReference, containing relevant metadata",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-minimaldocumentreference"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/AyaBerggren"
+      },
+      "name" : "Aya Test Berggren - datter af Kirsten",
+      "description" : "Aya Test Berggren - Datter af Kirsten Berggren",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Group"
+      }],
+      "reference" : {
+        "reference" : "Group/BerggrenFamily"
+      },
+      "name" : "Berggren familien",
+      "description" : "Familiegruppe: Nancy Ann Berggren med far Åge, bror Bruno, børn Max, Ruddi, Kirsten, Brita og børnebørn Pia, Gitte, Lars, Rikke, Aya",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/BoVestergaard"
+      },
+      "name" : "Bo Test Vestergaard",
+      "description" : "Bo Test Vestergaard - testpatient",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/BritaBerggren"
+      },
+      "name" : "Brita Test Berggren - datter af Nancy",
+      "description" : "Brita Test Berggren - Datter af Nancy. Værge: Nancy",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/BrunoRelatedToNancy"
+      },
+      "name" : "Bruno som bror til Nancy",
+      "description" : "Bruno er bror til Nancy",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Bruno"
+      },
+      "name" : "Bruno Test Elmer - bror til Nancy",
+      "description" : "Bruno Test Elmer - Bror til Nancy",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-care-provider"
+      },
+      "name" : "CareProvider",
+      "description" : "The organization (facility) responsible for the care of the patient during this encounter",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/CenterForDiabetes"
+      },
+      "name" : "Center for Diabetes",
+      "description" : "Center for Diabetes",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/CenterForDiabetesTeamDiabetes"
+      },
+      "name" : "Center for Diabetes Team Diabetes",
+      "description" : "Center for Diabetes Team Diabetes",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/CenterForDiabetesTeamHjerte"
+      },
+      "name" : "Center for Diabetes Team Hjerte",
+      "description" : "Center for Diabetes Team Hjerte",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/CenterForDiabetesTeamKvalitet"
+      },
+      "name" : "Center for Diabetes Team Kvalitet",
+      "description" : "Center for Diabetes Team Kvalitet",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/CoincidentTimeStamp.0222"
+      },
+      "name" : "Coincident time stamp from Poul's home blood pressure measurement",
+      "description" : "A coincident time stamp observation is used to ensure and inspect the consistency\nof timelines when using battery-operated health devices having their own clock that may\nor may not be synchronized to local time - and may even travel with their owner across\ntime zones.",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ConditionLastAssertedDate"
+      },
+      "name" : "ConditionLastAssertedDate",
+      "description" : "Extension for the last date a Condition-instance was confirmed valid in its current state. E.g. with its current clinical- and verification status, stage and severity. Typically the last performed follow-up",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/cpr"
+      },
+      "name" : "cpr",
+      "description" : "The Danish civil registration system (\"CPR\") encompasses basic personal data about anyone with a civil registration number. A civil registration number shall be allocated to anyone who: 1) is registered in the national register in Denmark on the grounds of birth or relocation from abroad; 2) is included under Arbejdsmarkedets TillægsPension (ATP); 3) according to the tax authorities, is required to have a civil registration number for the purpose of tax processing in Denmark.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/CaesarOestergaard"
+      },
+      "name" : "Cæsar Test Østergård - markeret som afdød",
+      "description" : "Cæsar Test Østergård - Markeret som 'Afdød' på nspop DTG service",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-cvr-identifier"
+      },
+      "name" : "Danish Central Business Register (CVR) Identifier",
+      "description" : "Identifier holding a danish [CVR](https://datacvr.virk.dk/data/) number.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-cpr-identifier"
+      },
+      "name" : "Danish Central Person Register (CPR) Identifier",
+      "description" : "This structure holds the danish [CPR](https://cpr.dk/) identifier",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-basic-observation"
+      },
+      "name" : "Danish Core Basic Observation Profile",
+      "description" : "HL7 Denmark core profile for basic observations, which is a profiling of DkCoreObservation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-condition"
+      },
+      "name" : "Danish Core Condition Profile",
+      "description" : "HL7 Denmark core profile for professionally asserted conditions, as specified by danish health and social care organizations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-encounter"
+      },
+      "name" : "Danish Core Encounter Profile",
+      "description" : "HL7 Denmark core profile for an encounter",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-location"
+      },
+      "name" : "Danish Core Location Profile",
+      "description" : "HL7 Denmark core profile for locations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-minimaldocumentreference"
+      },
+      "name" : "Danish Core Minimal DocumentReference Profile",
+      "description" : "HL7 Denmark core profile for a Minimal DocumentReference inherited from IHE MHD Minimal DocumentReference",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-municipalityCodes"
+      },
+      "name" : "Danish Core Municipality codes",
+      "description" : "Identifier holding the official identifier for a danish municipality",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-observation"
+      },
+      "name" : "Danish Core Observation Profile",
+      "description" : "HL7 Denmark core profile for observations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-organization"
+      },
+      "name" : "Danish Core Organization Profile",
+      "description" : "HL7 Denmark core profile for a danish health organization",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-patient"
+      },
+      "name" : "Danish Core Patient Profile",
+      "description" : "HL7 Denmark core profile for a patient",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-person-servicerequest"
+      },
+      "name" : "Danish Core Person ServiceRequest Profile",
+      "description" : "HL7 Denmark core profile for requesting a service, such as diagnostic investigations, nursing services, treatments, and more for a Patient.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-practitioner"
+      },
+      "name" : "Danish Core Practitioner Profile",
+      "description" : "HL7 Denmark core profile for health professionals and other actors relevant in citizen and patient pathways",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-practitioner-role"
+      },
+      "name" : "Danish Core PractitionerRole Profile",
+      "description" : "HL7 Denmark core profile for health professional roles",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-RegionalSubDivisionCodes"
+      },
+      "name" : "Danish Core Regional Sub Division Codes Extension",
+      "description" : "Identifier holding the official organization identifier for a danish region",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-related-person"
+      },
+      "name" : "Danish Core Related Person Profile",
+      "description" : "HL7 Denmark core profile for a related person",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-authorization-identifier"
+      },
+      "name" : "Danish Health Professionals Authorization Identifier",
+      "description" : "Identifier holding the official [authorization identifier](https://en.stps.dk/en/health-professionals-and-authorities/online-register-registered-health-professionals/) for a practitioner.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ipa-dk-core-condition"
+      },
+      "name" : "Danish IPA Core Condition Profile",
+      "description" : "HL7 Denmark core profile for IPA and DK Core compliant conditions",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ipa-dk-core-observation"
+      },
+      "name" : "Danish IPA Core Observation Profile",
+      "description" : "HL7 Denmark core profile for IPA and DK Core compliant observations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ipa-dk-core-patient"
+      },
+      "name" : "Danish IPA Core Patient Profile",
+      "description" : "HL7 Denmark core profile for IPA and DK Core compliant patients",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ipa-dk-core-practitioner"
+      },
+      "name" : "Danish IPA Core Practitioner Profile",
+      "description" : "HL7 Denmark core profile for IPA and DK Core compliant practitioners",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ipa-dk-core-practitionerrole"
+      },
+      "name" : "Danish IPA Core PractitionerRole Profile",
+      "description" : "HL7 Denmark core profile for IPA and DK Core compliant practitionerroles",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-d-ecpr-identifier"
+      },
+      "name" : "Decentralised eCPR, called D-eCPR",
+      "description" : "This strucure holds the danish [D-eCPR](https://www.nspop.dk/pages/viewpage.action?pageId=226757583#eCPRFormater(XeCPRogDeCPR)-Formatetfordecentraleerstatningspersonnumre-D-eCPR) identifier, which is often used by the Danish regions.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/address-type-dk-supplement"
+      },
+      "name" : "DK Address Type Supplement",
+      "description" : "The type of an address (physical / postal)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/address-use-dk-supplement"
+      },
+      "name" : "DK Address Use Supplement",
+      "description" : "The use of an address",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/administrative-gender-supplement"
+      },
+      "name" : "DK Administrative Gender Supplement",
+      "description" : "CodeSystem supplement with danish translations for administrative gender",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/care-team-status-dk-supplement"
+      },
+      "name" : "DK CareTeam Status Supplement",
+      "description" : "Indicates the status of the care team.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-core-servicerequest-codes"
+      },
+      "name" : "DK codes for ServiceRequest",
+      "description" : "Value set used to describe Danish healthcare services",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/consent-state-codes-dk-supplement"
+      },
+      "name" : "DK Consent State Supplement",
+      "description" : "Indicates the state of the consent",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-core-IEEEBasicObservation"
+      },
+      "name" : "Dk Core IEEE Basic Observation",
+      "description" : "IEEE MDC codes for Basic Observations usable in Denmark",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-core-LoincBasicObservation"
+      },
+      "name" : "DK Core LOINC Basic Observations",
+      "description" : "LOINC codes describing Basic Observations usable in Denmark.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-marital-status"
+      },
+      "name" : "DK Core Marital Status",
+      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person in Denmark.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-core-NPUBasicObservation"
+      },
+      "name" : "DK Core NPU Basic Observation",
+      "description" : "NPU codes for Basic Observations usable in Denmark",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-core-SCTBasicObservation"
+      },
+      "name" : "DK Core SNOMED CT Basic Observation",
+      "description" : "SNOMED CT codes for Basic Observations usable in Denmark",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-core-UCUM-BasicUnits"
+      },
+      "name" : "DK Core UCUM Basic Units",
+      "description" : "UCUM codes to represent units for basic Observations usable in Denmark",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/dk-core-organization-1"
+      },
+      "name" : "DK CVR Organization instance of DkCoreOrganization",
+      "description" : "Sample of DK organization",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DkCoreDeCPRValueSet"
+      },
+      "name" : "DK D-eCPR OID values",
+      "description" : "DK D-eCPR OID values",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/days-of-week-dk-supplement"
+      },
+      "name" : "DK Days Of Week Supplement",
+      "description" : "The days of the week.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/dk-core-d-ecpr-codes"
+      },
+      "name" : "DK Decentralised eCPR Systems",
+      "description" : "DK",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/episode-of-care-status-dk-supplement"
+      },
+      "name" : "DK Episode Of Care Status Supplement",
+      "description" : "The status of the episode of care.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/extended-patient-contactrelationship"
+      },
+      "name" : "DK Extended Patient Contact Relationship",
+      "description" : "DK Extended Patient Contact Relationship",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/dk-core-municipality-codes-greenland"
+      },
+      "name" : "DK Greenland Municipality Codes",
+      "description" : "Greenland municipality codes as defined by https://www.iso.org/obp/ui/#iso:code:3166:GL and https://cpr.dk/cpr-systemet/kommunesammenlaegninger-opdeling/groenland-2018/",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/dk-marital-status"
+      },
+      "name" : "DK Marital Statuses",
+      "description" : "DK marital statuses",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-core-MunicipalityCodes"
+      },
+      "name" : "DK Municipality Codes",
+      "description" : "Municipality codes used in Denmark",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/dk-core-municipality-codes"
+      },
+      "name" : "DK Municipality Codes",
+      "description" : "Municipality codes as defined by https://danmarksadresser.dk/adressedata/kodelister/kommunekodeliste/ and https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/patientregistrering/relaterede/kommuneklassifikation.pdf",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-core-priority-codes"
+      },
+      "name" : "DK priority codes",
+      "description" : "DK Codes for priority",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-core-encounter-priority"
+      },
+      "name" : "DK priority codes for encounters",
+      "description" : "Value set used for indicating priority of an encounter",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/DkCoreProfessionGroupValueSet"
+      },
+      "name" : "DK Profession Group",
+      "description" : "DK Profession Group codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/DkCoreProfessionGroupCodes"
+      },
+      "name" : "DK Profession Group Codes",
+      "description" : "DK health ProfessionGroup codes as defined by https://www.retsinformation.dk/eli/lta/2019/731, and derived from http://autregwebservice.sst.dk/autregservice.asmx/GetAllProfessionGroups. Code (5176) was not uniqe, and have been converted to 5176a and 5176b",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/publication-status-dk-supplement"
+      },
+      "name" : "DK Publication Status Supplement",
+      "description" : "The lifecycle status of a Value Set or Concept Map.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-core-RegionalSubDivisionCodes"
+      },
+      "name" : "DK Regional Subdivision Codes",
+      "description" : "Subdivision codes (Regional codes) used in Denmark",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/dk-core-regional-subdivision-codes"
+      },
+      "name" : "DK Regional Subdivision Codes",
+      "description" : "Subdivision codes (Regional codes) used in Denmark as found on https://www.iso.org/obp/ui/#iso:code:3166:DK",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/dk-relatedperson-relationshipcodes"
+      },
+      "name" : "DK Related Person Relationship Codes",
+      "description" : "DK Related Person Relationship Codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-core-RelatedPersonRelationshipTypes"
+      },
+      "name" : "DK Related Person Relationship Types",
+      "description" : "DK Related Person Relationship Types",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/request-status-dk-supplement"
+      },
+      "name" : "DK Request Status Supplement",
+      "description" : "Codes identifying the stage lifecycle stage of a request",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/role-code-dk-supplement"
+      },
+      "name" : "DK Role Code Supplement",
+      "description" : "CodeSystem supplement with danish translations for RoleCode",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/sor-organization-type"
+      },
+      "name" : "DK SOR Organization Type",
+      "description" : "Value set used for indicating the organization type for organizations from SOR",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-core-practice-setting-code"
+      },
+      "name" : "DK SOR Practice Setting Code",
+      "description" : "Values used for the document metadata attribute practiceSettingCode, which is an attribute specifying the clinical specialty where the act that resulted in the document was performed (e.g., Family Practice, Laboratory, Radiology). The value set is based on a subset of the code list from the SOR lookup table 'SOR-Kliniske specialer' (https://sor.sum.dsdn.dk/lookupdata/#clinical_speciality, accessable on Sundhedsdatanettet (SDN)), which is based on SNOMED CT codes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-core-TechniquesSCTCodes"
+      },
+      "name" : "DK TechniquesSCTCodes",
+      "description" : "SNOMED CT Codes for the technique used when obtaining an observation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/v2-0131-supplement"
+      },
+      "name" : "DK v2 Contact Role Supplement",
+      "description" : "CodeSystem supplement with danish translations for Contact Role",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/DrengLevendefodt2016"
+      },
+      "name" : "Dreng Test Levendefødt (2016) - tvilling",
+      "description" : "Dreng Test Levendefødt født 2016 - Tvilling",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/DrengLevendefodt2024"
+      },
+      "name" : "Dreng Test Levendefødt (2024) - tvilling",
+      "description" : "Dreng Test Levendefødt født 2024 - Tvilling",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/EinerRelatedToEK"
+      },
+      "name" : "Einer som far til EK",
+      "description" : "Einer er far til EK",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/EinerRelatedToEllen"
+      },
+      "name" : "Einer som far til Ellen",
+      "description" : "Einer er far til Ellen Louise",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/EinerRelatedToElse"
+      },
+      "name" : "Einer som far til Else",
+      "description" : "Einer er far til Else",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/EinerRelatedToMagnus"
+      },
+      "name" : "Einer som far til Magnus",
+      "description" : "Einer er far til Magnus",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/EinerRelatedToRasmus"
+      },
+      "name" : "Einer som far til Rasmus",
+      "description" : "Einer er far til Rasmus",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Einer"
+      },
+      "name" : "Einer Test Lauridsen - far i Lauridsen familien",
+      "description" : "Einer Test Lauridsen - Gift med Lonni. Tvillinger Magnus & Rasmus, Trillinger Else & Ellen & EK",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/EK"
+      },
+      "name" : "EK Test Lauridsen - trilling med Ellen & Else",
+      "description" : "EK Test Lauridsen - Søn af Lonni & Einer Lauridsen. Trilling med Ellen & Else",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/EllenLouise"
+      },
+      "name" : "Ellen Louise Test Lauridsen - trilling med EK & Else",
+      "description" : "Ellen Louise Test Lauridsen - Datter af Lonni & Einer Lauridsen. Trilling med EK & Else",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/ElseGraviditet"
+      },
+      "name" : "Else Graviditet",
+      "description" : "Else Graviditet, tilstandskode som indberettes ifm Elses ambulante forløb (fx jordemoder), og ved eventuel indlæggelse i graviditeten",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/ElseLauridsen"
+      },
+      "name" : "Else Test Lauridsen - trilling med EK & Ellen",
+      "description" : "Else Test Lauridsen - Datter af Lonni & Einer Lauridsen. Trilling med EK & Ellen",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/ElsesTOBS"
+      },
+      "name" : "Else's TOBS measurements",
+      "description" : "An example of TOBS (Danish: Tidlig opsporing af begyndende sygdom), which includes level of consciousness, heart rate, respiration rate, blood pressure and temperature.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ElseBloodPressure"
+      },
+      "name" : "ElseBloodPressure",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ElseBodyTemperature"
+      },
+      "name" : "ElseBodyTemperature",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ElseConsciousness"
+      },
+      "name" : "ElseConsciousness",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ElseHeartRate"
+      },
+      "name" : "ElseHeartRate",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ElsePainVRS"
+      },
+      "name" : "ElsePainVRS",
+      "description" : "Elses smerte målt med VRS",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ElseRespirationRate"
+      },
+      "name" : "ElseRespirationRate",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ElsesTOBSscore"
+      },
+      "name" : "ElsesTOBSscore",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ElseUrinStix"
+      },
+      "name" : "ElseUrinStix",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/8510eec9-180b-4e9c-95b6-02fad9f853d3"
+      },
+      "name" : "Example hospital department",
+      "description" : "Example hospital department with the orthopedic surgery specialty",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/19f9ee18-7677-4caf-88fe-8f6df2f2906e"
+      },
+      "name" : "Example hospital sub-department",
+      "description" : "Example hospital sub-department with the orthopedic surgery specialty",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Confidential"
+      },
+      "name" : "Example of a patient with confidential address and name",
+      "description" : "Example of a patient with confidential address and name",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/TwoRelations"
+      },
+      "name" : "Example of a related person with two relations",
+      "description" : "Example of a person that has relations as both neighbor and primary caretaker",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/else"
+      },
+      "name" : "Example of a woman of childbearing age",
+      "description" : "Example of a woman of childbearing age. Else is a MedCom test-patient",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/Child"
+      },
+      "name" : "Example of child as related person",
+      "description" : "Example of child as related person",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/ukendt"
+      },
+      "name" : "Example of valid patient unknown identifier registry",
+      "description" : "Example of valid patient unknown identifier registry. The patient is a 'John Doe' with an Identifier from an unofficial register",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/ukendt-D-eCPR"
+      },
+      "name" : "Example of valid patient with a D-eCPR as identifier",
+      "description" : "Example of valid patient with a D-eCPR as identifier.",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/ukendt-X-eCPR"
+      },
+      "name" : "Example of valid patient with a X-eCPR as identifier",
+      "description" : "Example of valid patient with a X-eCPR as identifier.",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Max"
+      },
+      "name" : "Example of valid patient with danish marital status",
+      "description" : "Example of valid patient with danish marital status",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/283"
+      },
+      "name" : "Example of valid patient with full address",
+      "description" : "Example of valid patient with full address",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/john"
+      },
+      "name" : "Example of valid patient with multiple names",
+      "description" : "Example of valid patient with multiple names",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Parameters"
+      }],
+      "reference" : {
+        "reference" : "Parameters/expParam"
+      },
+      "name" : "expParam",
+      "description" : "SNOMED CT expansion parameter",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/GitteNancy"
+      },
+      "name" : "Gitte Nancy Test Berggren - datter af Kirsten",
+      "description" : "Gitte Nancy Test Berggren - Datter af Kirsten Berggren, Nancys yndlingsbarnebarn",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-gln-identifier"
+      },
+      "name" : "GLN Identifier",
+      "description" : "Identifier holding a 13 digit GLN",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/HanneSocialraadgiver"
+      },
+      "name" : "HanneSocialrådgiver",
+      "description" : "Eksempel på socialrådgiveren Hanne",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/HenvisningFraLageTilSygehus"
+      },
+      "name" : "Henvisning vedr. modermærkekræft",
+      "description" : "Henvisning fra læge til sygehus vedr. mistanke om at John har modermærkekræft",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Group"
+      }],
+      "reference" : {
+        "reference" : "Group/JensenFamily"
+      },
+      "name" : "Jensen familien",
+      "description" : "Familiegruppe: Anders Jensen og hans søn Ali",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/JohnDiabetes"
+      },
+      "name" : "John diabetes",
+      "description" : "Johns diabetes-diagnose, udskrivningsdiagnose fra hospitalet fx til brug i indberetning og epikrise",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/JohnFracture"
+      },
+      "name" : "John fraktur",
+      "description" : "Johns fraktur-diagnose, udskrivningsdiagnose fra hospitalet med tillægskode",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/JohnMelanoma"
+      },
+      "name" : "John mistanke om Modermærkekræft",
+      "description" : "Johns mistanke om modermærkekræft i huden, kan fx bruges som henvisningsdiagnosese",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/JohnPacemaker"
+      },
+      "name" : "John pacemaker",
+      "description" : "Johns status efter pacemakeroperation, udtrykt semantisk korrekt med fund frem for operationskode",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/ConditionPressureUlcer"
+      },
+      "name" : "John tryksår",
+      "description" : "John, tryksår, kommunal tilstand",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ObservationOxySatBasicObservationOrg"
+      },
+      "name" : "John's oxygen saturation measurement (Basic observation)",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ObservationOxySatObservation"
+      },
+      "name" : "John's oxygen saturation measurement (Observation)",
+      "description" : "This example suggests a way to handle the oxygen saturation case, where the original measurement\nwas reported in '%' by a device or typed in manually, and then 'translated' to the NPU system,\nwhich requires the value to be unitless.",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ObservationRespiratoryBasicObservation"
+      },
+      "name" : "John's Respiratory rate measurement (Basic observation)",
+      "description" : "A simple basic observation of a hyperventilating patient",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/JulianeJoergensen"
+      },
+      "name" : "Juliane Test Jørgensen",
+      "description" : "Juliane Test Jørgensen - testpatient",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/KajaHansen"
+      },
+      "name" : "Kaja Test Hansen",
+      "description" : "Kaja Test Hansen - testpatient",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/KirstenRelatedToAya"
+      },
+      "name" : "Kirsten som mor til Aya",
+      "description" : "Kirsten er mor til Aya",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/KirstenRelatedToGitte"
+      },
+      "name" : "Kirsten som mor til Gitte",
+      "description" : "Kirsten er mor til Gitte Nancy",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/KirstenRelatedToLars"
+      },
+      "name" : "Kirsten som mor til Lars",
+      "description" : "Kirsten er mor til Lars",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/KirstenRelatedToPia"
+      },
+      "name" : "Kirsten som mor til Pia",
+      "description" : "Kirsten er mor til Pia",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/KirstenRelatedToRikke"
+      },
+      "name" : "Kirsten som mor til Rikke",
+      "description" : "Kirsten er mor til Rikke",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/KirstenBerggren"
+      },
+      "name" : "Kirsten Test Berggren - datter af Nancy",
+      "description" : "Kirsten Test Berggren - Datter af Nancy. Datter Aya.",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/KnutOdvar"
+      },
+      "name" : "Knut Odvar Test Mosebryggersen",
+      "description" : "Knut Odvar Test Mosebryggersen - Søn af May June Moberg & Schwendlund Mosebryggersen",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-kombit-org-identifier"
+      },
+      "name" : "Kombit Organsation Identifier",
+      "description" : "Identifier holding the organization code issued by KOMBIT",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/LaegerneHasserisBymidte"
+      },
+      "name" : "LaegerneHasserisBymidte",
+      "description" : "Praktisernede læge i Hasseris, som defineret af SOR",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/LarsBerggren"
+      },
+      "name" : "Lars Test Berggren - søn af Kirsten",
+      "description" : "Lars Test Berggren - Søn af Kirsten Berggren",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Group"
+      }],
+      "reference" : {
+        "reference" : "Group/LauridsenFamily"
+      },
+      "name" : "Lauridsen familien",
+      "description" : "Familiegruppe: Einer og Lonni Lauridsen med deres børn - tvillingerne Magnus & Rasmus og trillingerne Else, Ellen & EK",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Group"
+      }],
+      "reference" : {
+        "reference" : "Group/LevendefodtTwins2016"
+      },
+      "name" : "Levendefødt tvillinger 2016",
+      "description" : "Familiegruppe: Tvillinger født 2016",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Group"
+      }],
+      "reference" : {
+        "reference" : "Group/LevendefodtTwins2024"
+      },
+      "name" : "Levendefødt tvillinger 2024",
+      "description" : "Familiegruppe: Tvillinger født 2024",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/AbrahamPractitionerRole"
+      },
+      "name" : "Licensed physician in primary care",
+      "description" : "This is an example of PractitionerRole profile. The example describes the service which practitioner is performing in a specific location in a specific role.",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/LonniRelatedToEK"
+      },
+      "name" : "Lonni som mor til EK",
+      "description" : "Lonni er mor til EK",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/LonniRelatedToEllen"
+      },
+      "name" : "Lonni som mor til Ellen",
+      "description" : "Lonni er mor til Ellen Louise",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/LonniRelatedToElse"
+      },
+      "name" : "Lonni som mor til Else",
+      "description" : "Lonni er mor til Else",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/LonniRelatedToMagnus"
+      },
+      "name" : "Lonni som mor til Magnus",
+      "description" : "Lonni er mor til Magnus",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/LonniRelatedToRasmus"
+      },
+      "name" : "Lonni som mor til Rasmus",
+      "description" : "Lonni er mor til Rasmus",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/LonniRelatedToEiner"
+      },
+      "name" : "Lonni som ægtefælle til Einer",
+      "description" : "Lonni er gift med Einer",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Lonni"
+      },
+      "name" : "Lonni Test Lauridsen - mor i Lauridsen familien",
+      "description" : "Lonni Test Lauridsen - Gift med Einer. Tvillinger Magnus & Rasmus, Trillinger Else & Ellen & EK",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Magnus"
+      },
+      "name" : "Magnus Test Lauridsen - tvilling med Rasmus",
+      "description" : "Magnus Test Lauridsen - Søn af Lonni & Einer Lauridsen. Tvilling med Rasmus",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/MaxBerggren"
+      },
+      "name" : "Max Test Berggren - søn af Nancy",
+      "description" : "Max Test Berggren - Søn af Nancy",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/MaxTOKS"
+      },
+      "name" : "Max TOKS measurements, including Glasgow Coma Scale assesment",
+      "description" : "An example of TOBS (Danish: Tidlig opsporing af begyndende sygdom), which includes level of consciousness, heart rate, respiration rate, blood pressure and temperature.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/MaxBloodPressure"
+      },
+      "name" : "MaxBloodPressure",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/MaxBodyTemperature"
+      },
+      "name" : "MaxBodyTemperature",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/MaxConsciousness"
+      },
+      "name" : "MaxConsciousness",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/MaxGlasgowComaScale"
+      },
+      "name" : "MaxGlasgowComaScale",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/MaxHeartRate"
+      },
+      "name" : "MaxHeartRate",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/MaxRespirationRate"
+      },
+      "name" : "MaxRespirationRate",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/MaxSaturation"
+      },
+      "name" : "MaxSaturation",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/MaxVitalSignsPanel"
+      },
+      "name" : "MaxVitalSignsPanel",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/MayJuneRelatedToKnut"
+      },
+      "name" : "May June som mor til Knut",
+      "description" : "May June er mor til Knut Odvar",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/MayJuneRelatedToOdd"
+      },
+      "name" : "May June som mor til Odd",
+      "description" : "May June er mor til Odd Haugen",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/MayJuneRelatedToSille"
+      },
+      "name" : "May June som mor til Sille",
+      "description" : "May June er mor til Sille June",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/MayJuneRelatedToSverre"
+      },
+      "name" : "May June som mor til Sverre",
+      "description" : "May June er mor til Sverre",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/MayJuneRelatedToTorre"
+      },
+      "name" : "May June som mor til Torre",
+      "description" : "May June er mor til Torre",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/MayJuneGuardianOfSverre"
+      },
+      "name" : "May June som værge for Sverre",
+      "description" : "May June er værge for Sverre",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/MayJuneGuardianOfTorre"
+      },
+      "name" : "May June som værge for Torre",
+      "description" : "May June er værge for Torre",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/MayJuneRelatedToSchwendlund"
+      },
+      "name" : "May June som ægtefælle til Schwendlund",
+      "description" : "May June er gift med Schwendlund",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/MayJune"
+      },
+      "name" : "May June Test Moberg - mor i Mosebryggersen familien",
+      "description" : "May June Test Moberg - Gift med Schwendlund Mosebryggersen. Sønnerne Odd & Knut, Datteren Sille, Tvillingerne Sverre & Torre",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/b08997bb-4476-4dd0-84dd-2e297f809364"
+      },
+      "name" : "MedCom Test Organization",
+      "description" : "MedCom Test Organization with SOR id",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Group"
+      }],
+      "reference" : {
+        "reference" : "Group/MosebryggerssenFamily"
+      },
+      "name" : "Mosebryggersen familien",
+      "description" : "Familiegruppe: Schwendlund og May June med deres børn - Odd, Knut, Sille og tvillingerne Sverre & Torre",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/MuhammedAbdul"
+      },
+      "name" : "Muhammed Test Abdul",
+      "description" : "Muhammed Test Abdul - testpatient",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/NancyAnn"
+      },
+      "name" : "Nancy Ann Test Berggren - bedstemor i Berggren familien",
+      "description" : "Nancy Ann Test Berggren - Sønnerne Max og Ruddi. Døtrene Kirsten og Britta.",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/NancyRelatedToGitte"
+      },
+      "name" : "Nancy som bedstemor til Gitte",
+      "description" : "Nancy er bedstemor til Gitte (Nancys yndlingsbarnebarn)",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/NancyRelatedToBrita"
+      },
+      "name" : "Nancy som mor til Brita",
+      "description" : "Nancy er mor til Brita",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/NancyRelatedToKirsten"
+      },
+      "name" : "Nancy som mor til Kirsten",
+      "description" : "Nancy er mor til Kirsten",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/NancyRelatedToMax"
+      },
+      "name" : "Nancy som mor til Max",
+      "description" : "Nancy er mor til Max",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/NancyRelatedToRuddi"
+      },
+      "name" : "Nancy som mor til Ruddi",
+      "description" : "Nancy er mor til Ruddi",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/NancyGuardianOfBrita"
+      },
+      "name" : "Nancy som værge for Brita",
+      "description" : "Nancy er værge for Brita",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/NancyGuardianOfAage"
+      },
+      "name" : "Nancy som værge for Åge",
+      "description" : "Nancy er værge for Åge",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-x-ecpr-identifier"
+      },
+      "name" : "National eCPR service, called X-eCPR",
+      "description" : "This strucure holds the danish [X-eCPR](https://www.nspop.dk/pages/viewpage.action?pageId=226757583#eCPRFormater(XeCPRogDeCPR)-Formatetfornationaleerstatningspersonnumre-X-eCPR) identifier, maintained by the Danish Health Data Authority.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/neuroradiologyUnit"
+      },
+      "name" : "neuroradiologyUnit",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-location"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/NielsVendelboe"
+      },
+      "name" : "Niels Test Vendelboe",
+      "description" : "Niels Test Vendelboe - testpatient",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/NotFollowedAnymore"
+      },
+      "name" : "NotFollowedAnymore",
+      "description" : "Extension for the date where a condition lost focus in a specific clinical context",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/OddHaugen"
+      },
+      "name" : "Odd Haugen Test Mosebryggersen",
+      "description" : "Odd Haugen Test Mosebryggersen - Søn af May June Moberg & Schwendlund Mosebryggersen",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/PiaBerggren"
+      },
+      "name" : "Pia Test Berggren - datter af Kirsten",
+      "description" : "Pia Test Berggren - Datter af Kirsten Berggren",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/PigeLevendefodt2016"
+      },
+      "name" : "Pige Test Levendefødt (2016) - tvilling",
+      "description" : "Pige Test Levendefødt født 2016 - Tvilling",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/PigeLevendefodt2024"
+      },
+      "name" : "Pige Test Levendefødt (2024) - tvilling",
+      "description" : "Pige Test Levendefødt født 2024 - Tvilling",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/PlaceholderPractitionerRole"
+      },
+      "name" : "Placeholder for a physician",
+      "description" : "This is an example of PractitionerRole where it acts as a placeholder for an unknown person. This may be useful in several scenarios.",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-planned-end-date"
+      },
+      "name" : "PlannedEndDate",
+      "description" : "The planned end date/time (or discharge date) of the encounter",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-planned-start-date"
+      },
+      "name" : "PlannedStartDate",
+      "description" : "The planned start date/time (or admission date) of the encounter",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a13"
+      },
+      "name" : "PLR-DK DocumentReference instance of DkCoreMinimalDocumentReference.",
+      "description" : "PLR-DK DocumentReference instance of DkCoreMinimalDocumentReference, containing relevant metadata",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-minimaldocumentreference"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Poul"
+      },
+      "name" : "Poul Hansen",
+      "description" : "A patient admitted to a remote monitoring programme, performing measurements\nat home.",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Device"
+      }],
+      "reference" : {
+        "reference" : "Device/BPMonitor.C4F312FFFE53F2C9"
+      },
+      "name" : "Poul's A&D blood pressure monitor",
+      "description" : "This device is Poul's personal blood pressure monitor, which he keeps in the bedroom\nof his home, and uses for daily monitoring due to his CHF condition.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Device"
+      }],
+      "reference" : {
+        "reference" : "Device/WeightScale.606405FFFECFC604"
+      },
+      "name" : "Poul's A&D weight scale",
+      "description" : "This device is Poul's personal weighing scale, which he keeps in the bathroom\nof his home, and uses for daily monitoring due to his CHF condition.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/Weight.Poul.230221"
+      },
+      "name" : "Poul's daily weighing on Feb. 21st",
+      "description" : "Poul has been instructed to perform a daily weighing in the morning. This is his\ndaily weighing from Feb. 21st 2023.",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/ipa-dk-core-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/HeartRate.Poul.1974654"
+      },
+      "name" : "Poul's heart rate measurement",
+      "description" : "Poul has been instructed to measure his blood pressure due to his CHF condition. This heart rate\nmeasurement was produced by his blood pressure monitor during one of these measurements.",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/ipa-dk-core-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/ContinuaBundleWithDevice"
+      },
+      "name" : "Poul's home blood pressure measurement",
+      "description" : "This example demonstrates a DkCoreObservation _and_ Continua-compliant\nbundle containing a home blood pressure measurement uploaded to a Continua-compliant\n_\"FHIR Observation Reporting Server\"._",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Device"
+      }],
+      "reference" : {
+        "reference" : "Device/Telma.FEEDDADADEADBEEF"
+      },
+      "name" : "Poul's remote patient monitoring app",
+      "description" : "Poul has been enrolled in a Remote Patient Monitoring programme in order to monitor the\nstate of his CHF condition. This is the app he uses to report the data to his doctor.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-producent-id"
+      },
+      "name" : "Producent Id",
+      "description" : "Offical MedCom code describing the producer of lab results",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/154b8c96-a061-45bf-9ce4-1947c7c3c283"
+      },
+      "name" : "Producer Test Organization",
+      "description" : "Producer of Lab Results Test Organization",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Rasmus"
+      },
+      "name" : "Rasmus Test Lauridsen - tvilling med Magnus",
+      "description" : "Rasmus Test Lauridsen - Søn af Lonni & Einer Lauridsen. Tvilling med Magnus",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/JohnsServiceRequest"
+      },
+      "name" : "Request for nursing care of John.",
+      "description" : "Request for nursing care of John.",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-person-servicerequest"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/MaxServiceRequest"
+      },
+      "name" : "Request for nursing care of John.",
+      "description" : "Request for nursing care of John.",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-person-servicerequest"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/RikkeBerggren"
+      },
+      "name" : "Rikke Test Berggren - datter af Kirsten",
+      "description" : "Rikke Test Berggren - Datter af Kirsten Berggren, Ruddi er værge for Rikke",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/RuddiGuardianOfRikke"
+      },
+      "name" : "Ruddi som værge for Rikke",
+      "description" : "Ruddi er værge for Rikke",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/RuddiBerggren"
+      },
+      "name" : "Ruddi Test Berggren - søn af Nancy",
+      "description" : "Ruddi Test Berggren - Søn af Nancy",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/SchwendlundRelatedToKnut"
+      },
+      "name" : "Schwendlund som far til Knut",
+      "description" : "Schwendlund er far til Knut Odvar",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/SchwendlundRelatedToOdd"
+      },
+      "name" : "Schwendlund som far til Odd",
+      "description" : "Schwendlund er far til Odd Haugen",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/SchwendlundRelatedToSille"
+      },
+      "name" : "Schwendlund som far til Sille",
+      "description" : "Schwendlund er far til Sille June",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/SchwendlundRelatedToSverre"
+      },
+      "name" : "Schwendlund som far til Sverre",
+      "description" : "Schwendlund er far til Sverre",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/SchwendlundRelatedToTorre"
+      },
+      "name" : "Schwendlund som far til Torre",
+      "description" : "Schwendlund er far til Torre",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Schwendlund"
+      },
+      "name" : "Schwendlund Test Mosebryggersen - far i Mosebryggersen familien",
+      "description" : "Schwendlund Test Mosebryggersen - Gift med May June Moberg. Sønnerne Odd & Knut, Datteren Sille, Tvillingerne Sverre & Torre",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/SidselSygeplejerske"
+      },
+      "name" : "SidselSygeplejerske",
+      "description" : "Eksempel på en sygeplejerske",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/SilleJune"
+      },
+      "name" : "Sille June Test Mosebrygersen",
+      "description" : "Sille June Test Mosebrygersen - Datter af May June Moberg & Schwendlund Mosebryggersen",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/sor"
+      },
+      "name" : "sor",
+      "description" : "SOR is provided by the Danish Health Data Authority under the Danish Ministry of Health. The register holds organizations within the Danish health sector, their geographical and virtual addresses as well as codes for their identification and for EDI-communication. Danish Health Data Authority is responsible for issuing and publishing codes to identify organizations across health care sectors and related public and private services. SOR includes organizational data on hospitals, the primary care sector (physiotherapists, general practitioners, dentists etc.) and municipal health service organizations as well as non-health care organizations that need to be able to receive data from the former.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-sor-identifier"
+      },
+      "name" : "SOR Identifier",
+      "description" : "Identifier holding the official SOR identifier for a danish healthcare organization",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Sverre"
+      },
+      "name" : "Sverre Test Mosebryggersen - tvilling med Torre",
+      "description" : "Sverre Test Mosebryggersen - Søn af May June Moberg & Schwendlund Mosebryggersen. Tvilling med Torre. Værge: May June",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Torre"
+      },
+      "name" : "Torre Test Mosebryggersen - tvilling med Sverre",
+      "description" : "Torre Test Mosebryggersen - Søn af May June Moberg & Schwendlund Mosebryggersen. Tvilling med Sverre. Værge: May June",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/8fa7df76-bec2-4fe2-9a44-750030a0eda0"
+      },
+      "name" : "XDS document bundled Author Organization",
+      "description" : "Instance of a XDS document bundled  author organization",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/42cb9200-f421-4d08-8391-7d51a2503cb4"
+      },
+      "name" : "XDS document bundled Author Person",
+      "description" : "Instance of a XDS document bundled  author person",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/37628912-7816-47a3-acd8-396b610be142"
+      },
+      "name" : "XDS document bundled Source Patient",
+      "description" : "Instance of a XDS document bundled  source patient",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/AageRelatedToNancy"
+      },
+      "name" : "Åge som far til Nancy",
+      "description" : "Åge er far til Nancy",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Aage"
+      },
+      "name" : "Åge Test Berggren - far til Nancy",
+      "description" : "Åge Test Berggren - Far til Nancy. Værge: Nancy",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    }],
     "page" : {
-      "extension" : [
-        {
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "toc.html"
-        }
-      ],
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+        "valueUrl" : "toc.html"
+      }],
       "nameUrl" : "toc.html",
       "title" : "Table of Contents",
       "generation" : "html",
-      "page" : [
-        {
-          "extension" : [
-            {
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "index.html"
-            }
-          ],
-          "nameUrl" : "index.html",
-          "title" : "Home",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [
-            {
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "downloads.html"
-            }
-          ],
-          "nameUrl" : "downloads.html",
-          "title" : "Downloads",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [
-            {
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "extensions.html"
-            }
-          ],
-          "nameUrl" : "extensions.html",
-          "title" : "Extensions",
-          "generation" : "html"
-        },
-        {
-          "extension" : [
-            {
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "guidance.html"
-            }
-          ],
-          "nameUrl" : "guidance.html",
-          "title" : "Guidance",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [
-            {
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "profiles.html"
-            }
-          ],
-          "nameUrl" : "profiles.html",
-          "title" : "Profiles",
-          "generation" : "html"
-        },
-        {
-          "extension" : [
-            {
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "terminology.html"
-            }
-          ],
-          "nameUrl" : "terminology.html",
-          "title" : "Terminology",
-          "generation" : "html"
-        }
-      ]
+      "page" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "index.html"
+        }],
+        "nameUrl" : "index.html",
+        "title" : "Home",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "downloads.html"
+        }],
+        "nameUrl" : "downloads.html",
+        "title" : "Downloads",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "extensions.html"
+        }],
+        "nameUrl" : "extensions.html",
+        "title" : "Extensions",
+        "generation" : "html"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "guidance.html"
+        }],
+        "nameUrl" : "guidance.html",
+        "title" : "Guidance",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "profiles.html"
+        }],
+        "nameUrl" : "profiles.html",
+        "title" : "Profiles",
+        "generation" : "html"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "terminology.html"
+        }],
+        "nameUrl" : "terminology.html",
+        "title" : "Terminology",
+        "generation" : "html"
+      }]
     },
-    "parameter" : [
-      {
-        "code" : "path-resource",
-        "value" : "input/capabilities"
-      },
-      {
-        "code" : "path-resource",
-        "value" : "input/examples"
-      },
-      {
-        "code" : "path-resource",
-        "value" : "input/extensions"
-      },
-      {
-        "code" : "path-resource",
-        "value" : "input/models"
-      },
-      {
-        "code" : "path-resource",
-        "value" : "input/operations"
-      },
-      {
-        "code" : "path-resource",
-        "value" : "input/profiles"
-      },
-      {
-        "code" : "path-resource",
-        "value" : "input/resources"
-      },
-      {
-        "code" : "path-resource",
-        "value" : "input/vocabulary"
-      },
-      {
-        "code" : "path-resource",
-        "value" : "input/maps"
-      },
-      {
-        "code" : "path-resource",
-        "value" : "input/testing"
-      },
-      {
-        "code" : "path-resource",
-        "value" : "input/history"
-      },
-      {
-        "code" : "path-resource",
-        "value" : "fsh-generated/resources"
-      },
-      {
-        "code" : "path-pages",
-        "value" : "template/config"
-      },
-      {
-        "code" : "path-pages",
-        "value" : "input/images"
-      },
-      {
-        "code" : "path-tx-cache",
-        "value" : "input-cache/txcache"
-      }
-    ]
+    "parameter" : [{
+      "code" : "path-resource",
+      "value" : "input/capabilities"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/examples"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/extensions"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/models"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/operations"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/profiles"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/resources"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/vocabulary"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/maps"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/testing"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/history"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "fsh-generated/resources"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "template/config"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "input/images"
+    },
+    {
+      "code" : "path-tx-cache",
+      "value" : "input-cache/txcache"
+    }]
   }
 }
 

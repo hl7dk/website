@@ -1,4 +1,4 @@
-# Danish Core Condition Profile - HL7 FHIR Implementation Guide: DK Core v3.5.0
+# Danish Core Condition Profile - HL7 FHIR Implementation Guide: DK Core v3.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition | *Version*:3.5.0 |
-| Active as of 2025-12-19 | *Computable Name*:DkCoreCondition |
+| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition | *Version*:3.6.0 |
+| Active as of 2026-03-11 | *Computable Name*:DkCoreCondition |
 
  
 HL7 Denmark core profile for professionally asserted conditions, as specified by danish health and social care organizations 
@@ -49,7 +49,7 @@ Condition profile cover both primary sector, secondary sector (medical specialis
 
 * Derived from this Profile: [Danish IPA Core Condition Profile](StructureDefinition-ipa-dk-core-condition.md)
 * Refer to this Profile: [Danish Core Person ServiceRequest Profile](StructureDefinition-dk-core-person-servicerequest.md)
-* Examples for this Profile: [Condition/ConditionPressureUlcer](Condition-ConditionPressureUlcer.md), [Condition/ElseGraviditet](Condition-ElseGraviditet.md), [Condition/JohnDiabetes](Condition-JohnDiabetes.md), [Condition/JohnFracture](Condition-JohnFracture.md)...Show 2 more,[Condition/JohnMelanoma](Condition-JohnMelanoma.md)and[Condition/JohnPacemaker](Condition-JohnPacemaker.md)
+* Examples for this Profile: [Condition/ConditionPressureUlcer](Condition-ConditionPressureUlcer.md), [Condition/ElseGraviditet](Condition-ElseGraviditet.md), [Condition/JohnDiabetes](Condition-JohnDiabetes.md), [Condition/JohnFracture](Condition-JohnFracture.md)... Show 2 more, [Condition/JohnMelanoma](Condition-JohnMelanoma.md) and [Condition/JohnPacemaker](Condition-JohnPacemaker.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.dk.core|current/StructureDefinition/dk-core-condition)
 
@@ -70,273 +70,235 @@ Other representations of profile: [CSV](StructureDefinition-dk-core-condition.cs
   "resourceType" : "StructureDefinition",
   "id" : "dk-core-condition",
   "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition",
-  "version" : "3.5.0",
+  "version" : "3.6.0",
   "name" : "DkCoreCondition",
   "title" : "Danish Core Condition Profile",
   "status" : "active",
-  "date" : "2025-12-19T17:27:08+01:00",
+  "date" : "2026-03-11T23:16:27+01:00",
   "publisher" : "HL7 Denmark",
-  "contact" : [
+  "contact" : [{
+    "name" : "HL7 Denmark",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.dk"
+    },
     {
-      "name" : "HL7 Denmark",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.hl7.dk"
-        },
-        {
-          "system" : "email",
-          "value" : "dk-affiliate@hl7.dk"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "dk-affiliate@hl7.dk"
+    }]
+  }],
   "description" : "HL7 Denmark core profile for professionally asserted conditions, as specified by danish health and social care organizations",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "DK",
-          "display" : "Denmark"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "sct-concept",
-      "uri" : "http://snomed.info/conceptdomain",
-      "name" : "SNOMED CT Concept Domain Binding"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "sct-attr",
-      "uri" : "http://snomed.org/attributebinding",
-      "name" : "SNOMED CT Attribute Binding"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "sct-concept",
+    "uri" : "http://snomed.info/conceptdomain",
+    "name" : "SNOMED CT Concept Domain Binding"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "sct-attr",
+    "uri" : "http://snomed.org/attributebinding",
+    "name" : "SNOMED CT Attribute Binding"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Condition",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Condition",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Condition",
-        "path" : "Condition"
-      },
-      {
-        "id" : "Condition.extension",
-        "path" : "Condition.extension",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "url"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "Condition.extension:dueTo",
-        "path" : "Condition.extension",
-        "sliceName" : "dueTo",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : ["http://hl7.org/fhir/StructureDefinition/condition-dueTo"]
-          }
-        ]
-      },
-      {
-        "id" : "Condition.extension:conditionLastAssertedDate",
-        "path" : "Condition.extension",
-        "sliceName" : "conditionLastAssertedDate",
-        "short" : "Last date a condition was confirmed valid in its current state",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/ConditionLastAssertedDate"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Condition.extension:notFollowedAnymore",
-        "path" : "Condition.extension",
-        "sliceName" : "notFollowedAnymore",
-        "short" : "Date where a condition lost focus in a specific clinical context",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/NotFollowedAnymore"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Condition.code.coding",
-        "path" : "Condition.code.coding",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "system"
-            }
-          ],
-          "description" : "Slice based on the code.system value which allow different code-systems to represent a condition",
-          "ordered" : false,
-          "rules" : "open"
-        },
-        "short" : "Condition code, [DA] tilstandskode"
-      },
-      {
-        "id" : "Condition.code.coding:FSIIIConditionCode",
-        "path" : "Condition.code.coding",
-        "sliceName" : "FSIIIConditionCode",
-        "short" : "[DA] FSIII tilstandskode",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Condition.code.coding:FSIIIConditionCode.system",
-        "path" : "Condition.code.coding.system",
-        "min" : 1,
-        "patternUri" : "urn:oid:1.2.208.176.2.21"
-      },
-      {
-        "id" : "Condition.code.coding:SCTConditionCode",
-        "path" : "Condition.code.coding",
-        "sliceName" : "SCTConditionCode",
-        "short" : "SNOMED CT condition code",
-        "min" : 0,
-        "max" : "1",
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "http://hl7.org/fhir/ValueSet/condition-code"
-        }
-      },
-      {
-        "id" : "Condition.code.coding:SCTConditionCode.system",
-        "path" : "Condition.code.coding.system",
-        "min" : 1,
-        "patternUri" : "http://snomed.info/sct"
-      },
-      {
-        "id" : "Condition.code.coding:FFBConditionCode",
-        "path" : "Condition.code.coding",
-        "sliceName" : "FFBConditionCode",
-        "short" : "[DA] FFB undertemakode",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Condition.code.coding:FFBConditionCode.system",
-        "path" : "Condition.code.coding.system",
-        "min" : 1,
-        "patternUri" : "urn:oid:1.2.208.176.2.22"
-      },
-      {
-        "id" : "Condition.code.coding:SKS-D",
-        "path" : "Condition.code.coding",
-        "sliceName" : "SKS-D",
-        "short" : "[DA] Kode fra D-hierarkiet i SKS",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Condition.code.coding:SKS-D.system",
-        "path" : "Condition.code.coding.system",
-        "min" : 1,
-        "patternUri" : "urn:oid:1.2.208.176.2.4.12"
-      },
-      {
-        "id" : "Condition.code.coding:ICPC2code",
-        "path" : "Condition.code.coding",
-        "sliceName" : "ICPC2code",
-        "short" : "ICPC2 code",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Condition.code.coding:ICPC2code.system",
-        "path" : "Condition.code.coding.system",
-        "min" : 1,
-        "patternUri" : "urn:oid:1.2.208.176.2.31"
-      },
-      {
-        "id" : "Condition.subject",
-        "path" : "Condition.subject",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Condition.recorder",
-        "path" : "Condition.recorder",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner",
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role",
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient",
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Condition.asserter",
-        "path" : "Condition.asserter",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner",
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"
-            ]
-          }
-        ]
+    "element" : [{
+      "id" : "Condition",
+      "path" : "Condition"
+    },
+    {
+      "id" : "Condition.extension",
+      "path" : "Condition.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
       }
-    ]
+    },
+    {
+      "id" : "Condition.extension:dueTo",
+      "path" : "Condition.extension",
+      "sliceName" : "dueTo",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/condition-dueTo"]
+      }]
+    },
+    {
+      "id" : "Condition.extension:conditionLastAssertedDate",
+      "path" : "Condition.extension",
+      "sliceName" : "conditionLastAssertedDate",
+      "short" : "Last date a condition was confirmed valid in its current state",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/ConditionLastAssertedDate"]
+      }]
+    },
+    {
+      "id" : "Condition.extension:notFollowedAnymore",
+      "path" : "Condition.extension",
+      "sliceName" : "notFollowedAnymore",
+      "short" : "Date where a condition lost focus in a specific clinical context",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/NotFollowedAnymore"]
+      }]
+    },
+    {
+      "id" : "Condition.code.coding",
+      "path" : "Condition.code.coding",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "system"
+        }],
+        "description" : "Slice based on the code.system value which allow different code-systems to represent a condition",
+        "ordered" : false,
+        "rules" : "open"
+      },
+      "short" : "Condition code, [DA] tilstandskode"
+    },
+    {
+      "id" : "Condition.code.coding:FSIIIConditionCode",
+      "path" : "Condition.code.coding",
+      "sliceName" : "FSIIIConditionCode",
+      "short" : "[DA] FSIII tilstandskode",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Condition.code.coding:FSIIIConditionCode.system",
+      "path" : "Condition.code.coding.system",
+      "min" : 1,
+      "patternUri" : "urn:oid:1.2.208.176.2.21"
+    },
+    {
+      "id" : "Condition.code.coding:SCTConditionCode",
+      "path" : "Condition.code.coding",
+      "sliceName" : "SCTConditionCode",
+      "short" : "SNOMED CT condition code",
+      "min" : 0,
+      "max" : "1",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/condition-code"
+      }
+    },
+    {
+      "id" : "Condition.code.coding:SCTConditionCode.system",
+      "path" : "Condition.code.coding.system",
+      "min" : 1,
+      "patternUri" : "http://snomed.info/sct"
+    },
+    {
+      "id" : "Condition.code.coding:FFBConditionCode",
+      "path" : "Condition.code.coding",
+      "sliceName" : "FFBConditionCode",
+      "short" : "[DA] FFB undertemakode",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Condition.code.coding:FFBConditionCode.system",
+      "path" : "Condition.code.coding.system",
+      "min" : 1,
+      "patternUri" : "urn:oid:1.2.208.176.2.22"
+    },
+    {
+      "id" : "Condition.code.coding:SKS-D",
+      "path" : "Condition.code.coding",
+      "sliceName" : "SKS-D",
+      "short" : "[DA] Kode fra D-hierarkiet i SKS",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Condition.code.coding:SKS-D.system",
+      "path" : "Condition.code.coding.system",
+      "min" : 1,
+      "patternUri" : "urn:oid:1.2.208.176.2.4.12"
+    },
+    {
+      "id" : "Condition.code.coding:ICPC2code",
+      "path" : "Condition.code.coding",
+      "sliceName" : "ICPC2code",
+      "short" : "ICPC2 code",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Condition.code.coding:ICPC2code.system",
+      "path" : "Condition.code.coding.system",
+      "min" : 1,
+      "patternUri" : "urn:oid:1.2.208.176.2.31"
+    },
+    {
+      "id" : "Condition.subject",
+      "path" : "Condition.subject",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"]
+      }]
+    },
+    {
+      "id" : "Condition.recorder",
+      "path" : "Condition.recorder",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner",
+        "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role",
+        "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient",
+        "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"]
+      }]
+    },
+    {
+      "id" : "Condition.asserter",
+      "path" : "Condition.asserter",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner",
+        "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"]
+      }]
+    }]
   }
 }
 

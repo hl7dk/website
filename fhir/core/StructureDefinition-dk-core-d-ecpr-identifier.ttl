@@ -17,11 +17,11 @@
      fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-d-ecpr-identifier"^^xsd:anyURI ;
      fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-d-ecpr-identifier>
   ] ; # 
-  fhir:version [ fhir:v "3.5.0"] ; # 
+  fhir:version [ fhir:v "3.6.0"] ; # 
   fhir:name [ fhir:v "DkCoreDeCprIdentifier"] ; # 
   fhir:title [ fhir:v "Decentralised eCPR, called D-eCPR"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-12-19T17:27:08+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-03-11T23:16:27+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -438,7 +438,7 @@
          fhir:key [ fhir:v "d-ecpr" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Requirement of danish D-eCPR. See https://www.nspop.dk/pages/viewpage.action?pageId=226757583#eCPRFormater(XeCPRogDeCPR)-Formatetfordecentraleerstatningspersonnumre-D-eCPR" ] ;
-         fhir:expression [ fhir:v "value.matches('^((((0[1-9]|1[0-9]|2[0-9]|3[0-1])(01|03|05|07|08|10|12))|((0[1-9]|1[0-9]|2[0-9]|30)(04|06|09|11))|((0[1-9]|1[0-9]|2[0-9])(02)))([0-9]{2})((0|5|6){1})([A-Z]{2})([0-9]{1}))$')" ] ;
+         fhir:expression [ fhir:v "matches('^((((0[1-9]|1[0-9]|2[0-9]|3[0-1])(01|03|05|07|08|10|12))|((0[1-9]|1[0-9]|2[0-9]|30)(04|06|09|11))|((0[1-9]|1[0-9]|2[0-9])(02)))([0-9]{2})((0|5|6){1})([A-Z]{2})([0-9]{1}))$')" ] ;
          fhir:source [
            fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-d-ecpr-identifier"^^xsd:anyURI ;
            fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-d-ecpr-identifier>
@@ -577,7 +577,7 @@
          fhir:key [ fhir:v "d-ecpr" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Requirement of danish D-eCPR. See https://www.nspop.dk/pages/viewpage.action?pageId=226757583#eCPRFormater(XeCPRogDeCPR)-Formatetfordecentraleerstatningspersonnumre-D-eCPR" ] ;
-         fhir:expression [ fhir:v "value.matches('^((((0[1-9]|1[0-9]|2[0-9]|3[0-1])(01|03|05|07|08|10|12))|((0[1-9]|1[0-9]|2[0-9]|30)(04|06|09|11))|((0[1-9]|1[0-9]|2[0-9])(02)))([0-9]{2})((0|5|6){1})([A-Z]{2})([0-9]{1}))$')" ] ;
+         fhir:expression [ fhir:v "matches('^((((0[1-9]|1[0-9]|2[0-9]|3[0-1])(01|03|05|07|08|10|12))|((0[1-9]|1[0-9]|2[0-9]|30)(04|06|09|11))|((0[1-9]|1[0-9]|2[0-9])(02)))([0-9]{2})((0|5|6){1})([A-Z]{2})([0-9]{1}))$')" ] ;
          fhir:source [
            fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-d-ecpr-identifier"^^xsd:anyURI ;
            fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-d-ecpr-identifier>

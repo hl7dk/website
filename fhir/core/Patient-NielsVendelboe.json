@@ -1,0 +1,45 @@
+{
+  "resourceType" : "Patient",
+  "id" : "NielsVendelboe",
+  "meta" : {
+    "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient NielsVendelboe</b></p><a name=\"NielsVendelboe\"> </a><a name=\"hcNielsVendelboe\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-patient.html\">Danish Core Patient Profile</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Niels Test Vendelboe (official) Male, DoB: 1974-01-30 ( urn:oid:1.2.208.176.1.2#3001749995)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">Testkajen 2 9210 </td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "urn:oid:1.2.208.176.1.2",
+    "value" : "3001749995"
+  }],
+  "name" : [{
+    "use" : "official",
+    "family" : "Vendelboe",
+    "given" : ["Niels",
+    "Test"]
+  }],
+  "gender" : "male",
+  "birthDate" : "1974-01-30",
+  "address" : [{
+    "extension" : [{
+      "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0851"
+        }]
+      }
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166:-2",
+          "code" : "DK-81"
+        }]
+      }
+    }],
+    "line" : ["Testkajen 2"],
+    "postalCode" : "9210"
+  }]
+}

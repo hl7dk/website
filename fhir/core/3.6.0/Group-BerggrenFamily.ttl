@@ -1,0 +1,95 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/Group/BerggrenFamily> a fhir:Group ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BerggrenFamily"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Group BerggrenFamily</b></p><a name=\"BerggrenFamily\"> </a><a name=\"hcBerggrenFamily\"> </a><p><b>type</b>: Person</p><p><b>actual</b>: true</p><p><b>name</b>: Berggren familien</p><p><b>quantity</b>: 12</p><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-Aage.html\">Åge Test Berggren (bedstefar/oldefar)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-NancyAnn.html\">Nancy Ann Test Berggren (bedstemor)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-Bruno.html\">Bruno Test Elmer (Nancys bror)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-MaxBerggren.html\">Max Test Berggren (Nancys søn)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-RuddiBerggren.html\">Ruddi Test Berggren (Nancys søn)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-KirstenBerggren.html\">Kirsten Test Berggren (Nancys datter)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-BritaBerggren.html\">Brita Test Berggren (Nancys datter)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-PiaBerggren.html\">Pia Test Berggren (Kirstens datter)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-GitteNancy.html\">Gitte Nancy Test Berggren (Kirstens datter)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-LarsBerggren.html\">Lars Test Berggren (Kirstens søn)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-RikkeBerggren.html\">Rikke Test Berggren (Kirstens datter)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-AyaBerggren.html\">Aya Test Berggren (Kirstens datter)</a></p></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:type [ fhir:v "person"] ; # 
+  fhir:actual [ fhir:v true] ; # 
+  fhir:name [ fhir:v "Berggren familien"] ; # 
+  fhir:quantity [ fhir:v "12"^^xsd:nonNegativeInteger] ; # 
+  fhir:member ( [
+     fhir:entity [
+       fhir:l <http://hl7.dk/fhir/core/Patient/Aage> ;
+       fhir:reference [ fhir:v "Patient/Aage" ] ;
+       fhir:display [ fhir:v "Åge Test Berggren (bedstefar/oldefar)" ]
+     ]
+  ] [
+     fhir:entity [
+       fhir:l <http://hl7.dk/fhir/core/Patient/NancyAnn> ;
+       fhir:reference [ fhir:v "Patient/NancyAnn" ] ;
+       fhir:display [ fhir:v "Nancy Ann Test Berggren (bedstemor)" ]
+     ]
+  ] [
+     fhir:entity [
+       fhir:l <http://hl7.dk/fhir/core/Patient/Bruno> ;
+       fhir:reference [ fhir:v "Patient/Bruno" ] ;
+       fhir:display [ fhir:v "Bruno Test Elmer (Nancys bror)" ]
+     ]
+  ] [
+     fhir:entity [
+       fhir:l <http://hl7.dk/fhir/core/Patient/MaxBerggren> ;
+       fhir:reference [ fhir:v "Patient/MaxBerggren" ] ;
+       fhir:display [ fhir:v "Max Test Berggren (Nancys søn)" ]
+     ]
+  ] [
+     fhir:entity [
+       fhir:l <http://hl7.dk/fhir/core/Patient/RuddiBerggren> ;
+       fhir:reference [ fhir:v "Patient/RuddiBerggren" ] ;
+       fhir:display [ fhir:v "Ruddi Test Berggren (Nancys søn)" ]
+     ]
+  ] [
+     fhir:entity [
+       fhir:l <http://hl7.dk/fhir/core/Patient/KirstenBerggren> ;
+       fhir:reference [ fhir:v "Patient/KirstenBerggren" ] ;
+       fhir:display [ fhir:v "Kirsten Test Berggren (Nancys datter)" ]
+     ]
+  ] [
+     fhir:entity [
+       fhir:l <http://hl7.dk/fhir/core/Patient/BritaBerggren> ;
+       fhir:reference [ fhir:v "Patient/BritaBerggren" ] ;
+       fhir:display [ fhir:v "Brita Test Berggren (Nancys datter)" ]
+     ]
+  ] [
+     fhir:entity [
+       fhir:l <http://hl7.dk/fhir/core/Patient/PiaBerggren> ;
+       fhir:reference [ fhir:v "Patient/PiaBerggren" ] ;
+       fhir:display [ fhir:v "Pia Test Berggren (Kirstens datter)" ]
+     ]
+  ] [
+     fhir:entity [
+       fhir:l <http://hl7.dk/fhir/core/Patient/GitteNancy> ;
+       fhir:reference [ fhir:v "Patient/GitteNancy" ] ;
+       fhir:display [ fhir:v "Gitte Nancy Test Berggren (Kirstens datter)" ]
+     ]
+  ] [
+     fhir:entity [
+       fhir:l <http://hl7.dk/fhir/core/Patient/LarsBerggren> ;
+       fhir:reference [ fhir:v "Patient/LarsBerggren" ] ;
+       fhir:display [ fhir:v "Lars Test Berggren (Kirstens søn)" ]
+     ]
+  ] [
+     fhir:entity [
+       fhir:l <http://hl7.dk/fhir/core/Patient/RikkeBerggren> ;
+       fhir:reference [ fhir:v "Patient/RikkeBerggren" ] ;
+       fhir:display [ fhir:v "Rikke Test Berggren (Kirstens datter)" ]
+     ]
+  ] [
+     fhir:entity [
+       fhir:l <http://hl7.dk/fhir/core/Patient/AyaBerggren> ;
+       fhir:reference [ fhir:v "Patient/AyaBerggren" ] ;
+       fhir:display [ fhir:v "Aya Test Berggren (Kirstens datter)" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,4 +1,4 @@
-# DK Core LOINC Basic Observations - HL7 FHIR Implementation Guide: DK Core v3.5.0
+# DK Core LOINC Basic Observations - HL7 FHIR Implementation Guide: DK Core v3.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/ValueSet/dk-core-LoincBasicObservation | *Version*:3.5.0 |
-| Active as of 2025-12-19 | *Computable Name*:LoincBasicObservation |
+| *Official URL*:http://hl7.dk/fhir/core/ValueSet/dk-core-LoincBasicObservation | *Version*:3.6.0 |
+| Active as of 2026-03-11 | *Computable Name*:LoincBasicObservation |
 | **Copyright/Legal**: This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc | |
 
  
@@ -47,91 +47,79 @@ LOINC codes describing Basic Observations usable in Denmark.
   "resourceType" : "ValueSet",
   "id" : "dk-core-LoincBasicObservation",
   "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-LoincBasicObservation",
-  "version" : "3.5.0",
+  "version" : "3.6.0",
   "name" : "LoincBasicObservation",
   "title" : "DK Core LOINC Basic Observations",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-19T17:27:08+01:00",
+  "date" : "2026-03-11T23:16:27+01:00",
   "publisher" : "HL7 Denmark",
-  "contact" : [
+  "contact" : [{
+    "name" : "HL7 Denmark",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.dk"
+    },
     {
-      "name" : "HL7 Denmark",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.hl7.dk"
-        },
-        {
-          "system" : "email",
-          "value" : "dk-affiliate@hl7.dk"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "dk-affiliate@hl7.dk"
+    }]
+  }],
   "description" : "LOINC codes describing Basic Observations usable in Denmark.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "DK",
-          "display" : "Denmark"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
   "copyright" : "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "9279-1"
+      },
       {
-        "system" : "http://loinc.org",
-        "concept" : [
-          {
-            "code" : "9279-1"
-          },
-          {
-            "code" : "8867-4"
-          },
-          {
-            "code" : "2708-6"
-          },
-          {
-            "code" : "8310-5"
-          },
-          {
-            "code" : "85353-1"
-          },
-          {
-            "code" : "8302-2"
-          },
-          {
-            "code" : "9843-4"
-          },
-          {
-            "code" : "29463-7"
-          },
-          {
-            "code" : "39156-5"
-          },
-          {
-            "code" : "85354-9"
-          },
-          {
-            "code" : "8480-6"
-          },
-          {
-            "code" : "8462-4"
-          },
-          {
-            "code" : "8478-0"
-          },
-          {
-            "code" : "59408-5"
-          }
-        ]
-      }
-    ]
+        "code" : "8867-4"
+      },
+      {
+        "code" : "2708-6"
+      },
+      {
+        "code" : "8310-5"
+      },
+      {
+        "code" : "85353-1"
+      },
+      {
+        "code" : "8302-2"
+      },
+      {
+        "code" : "9843-4"
+      },
+      {
+        "code" : "29463-7"
+      },
+      {
+        "code" : "39156-5"
+      },
+      {
+        "code" : "85354-9"
+      },
+      {
+        "code" : "8480-6"
+      },
+      {
+        "code" : "8462-4"
+      },
+      {
+        "code" : "8478-0"
+      },
+      {
+        "code" : "59408-5"
+      }]
+    }]
   }
 }
 

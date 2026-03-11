@@ -1,0 +1,44 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "7fd09ef8-213a-4c9c-8824-29b8b7a600cc-11",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/7fd09ef8-213a-4c9c-8824-29b8b7a600cc-11",
+  "name" : "UnionAdministrativeGenderDkSupplementAndAdministrativeGenderDkSupplement",
+  "title" : "Union of DK Administrative Gender Supplement And DK Administrative Gender Supplement",
+  "status" : "active",
+  "date" : "2026-03-11T23:13:10+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "concept" : [{
+    "code" : "male",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Mand"
+    }]
+  },
+  {
+    "code" : "female",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Kvinde"
+    }]
+  },
+  {
+    "code" : "other",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Andet"
+    }]
+  },
+  {
+    "code" : "unknown",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Ukendt"
+    }]
+  }]
+}

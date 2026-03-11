@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.dk.core</b></p><a name=\"hl7.fhir.dk.core\"> </a><a name=\"hchl7.fhir.dk.core\"> </a><h2>DKCore</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core</pre><div><p>A FHIR Implementation Guide for the Danish common needs across healthcare sectors</p>\n</div></div>"
   },
   "url" : "http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core",
-  "version" : "3.5.0",
+  "version" : "3.6.0",
   "name" : "DKCore",
   "title" : "HL7 FHIR Implementation Guide: DK Core",
   "status" : "active",
-  "date" : "2025-12-19T17:27:08+01:00",
+  "date" : "2026-03-11T23:16:27+01:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",
@@ -42,11 +42,11 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.0.1"
+    "version" : "7.1.0"
   },
   {
     "id" : "hl7_fhir_uv_extensions_r4",
-    "uri" : "http://hl7.org/fhir/extensions",
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
     "version" : "5.3.0-ballot-tc1"
   },
@@ -154,17 +154,6 @@
       {
         "url" : "value",
         "valueString" : "urn:oid:1.2.208.176.2.4.12"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://npu-terminology.org"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -533,17 +522,6 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueCode" : "special-url"
-      },
-      {
-        "url" : "value",
-        "valueString" : "http://npu-terminology.org"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
         "valueCode" : "path-expansion-params"
       },
       {
@@ -832,6 +810,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/AliJensen"
+      },
+      "name" : "Ali Test Jensen - søn af Anders",
+      "description" : "Ali Test Jensen - Søn af Anders Jensen",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Location"
       }],
       "reference" : {
@@ -856,6 +846,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/AndersRelatedToAli"
+      },
+      "name" : "Anders som far til Ali",
+      "description" : "Anders er far til Ali",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/AndersJensen"
+      },
+      "name" : "Anders Test Jensen - far til Ali",
+      "description" : "Anders Test Jensen - Far til Ali Jensen",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "DocumentReference"
       }],
       "reference" : {
@@ -864,6 +878,78 @@
       "name" : "APD-DK DocumentReference instance of DkCoreMinimalDocumentReference.",
       "description" : "APD-DK DocumentReference instance of DkCoreMinimalDocumentReference, containing relevant metadata",
       "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-minimaldocumentreference"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/AyaBerggren"
+      },
+      "name" : "Aya Test Berggren - datter af Kirsten",
+      "description" : "Aya Test Berggren - Datter af Kirsten Berggren",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Group"
+      }],
+      "reference" : {
+        "reference" : "Group/BerggrenFamily"
+      },
+      "name" : "Berggren familien",
+      "description" : "Familiegruppe: Nancy Ann Berggren med far Åge, bror Bruno, børn Max, Ruddi, Kirsten, Brita og børnebørn Pia, Gitte, Lars, Rikke, Aya",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/BoVestergaard"
+      },
+      "name" : "Bo Test Vestergaard",
+      "description" : "Bo Test Vestergaard - testpatient",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/BritaBerggren"
+      },
+      "name" : "Brita Test Berggren - datter af Nancy",
+      "description" : "Brita Test Berggren - Datter af Nancy. Værge: Nancy",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/BrunoRelatedToNancy"
+      },
+      "name" : "Bruno som bror til Nancy",
+      "description" : "Bruno er bror til Nancy",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Bruno"
+      },
+      "name" : "Bruno Test Elmer - bror til Nancy",
+      "description" : "Bruno Test Elmer - Bror til Nancy",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
     },
     {
       "extension" : [{
@@ -960,6 +1046,18 @@
       "name" : "cpr",
       "description" : "The Danish civil registration system (\"CPR\") encompasses basic personal data about anyone with a civil registration number. A civil registration number shall be allocated to anyone who: 1) is registered in the national register in Denmark on the grounds of birth or relocation from abroad; 2) is included under Arbejdsmarkedets TillægsPension (ATP); 3) according to the tax authorities, is required to have a civil registration number for the purpose of tax processing in Denmark.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/CaesarOestergaard"
+      },
+      "name" : "Cæsar Test Østergård - markeret som afdød",
+      "description" : "Cæsar Test Østergård - Markeret som 'Afdød' på nspop DTG service",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
     },
     {
       "extension" : [{
@@ -1245,7 +1343,7 @@
       "reference" : {
         "reference" : "CodeSystem/address-type-dk-supplement"
       },
-      "name" : "DK Address Type",
+      "name" : "DK Address Type Supplement",
       "description" : "The type of an address (physical / postal)",
       "exampleBoolean" : false
     },
@@ -1257,7 +1355,7 @@
       "reference" : {
         "reference" : "CodeSystem/address-use-dk-supplement"
       },
-      "name" : "DK Address Use",
+      "name" : "DK Address Use Supplement",
       "description" : "The use of an address",
       "exampleBoolean" : false
     },
@@ -1281,7 +1379,7 @@
       "reference" : {
         "reference" : "CodeSystem/care-team-status-dk-supplement"
       },
-      "name" : "DK CareTeam Status",
+      "name" : "DK CareTeam Status Supplement",
       "description" : "Indicates the status of the care team.",
       "exampleBoolean" : false
     },
@@ -1305,7 +1403,7 @@
       "reference" : {
         "reference" : "CodeSystem/consent-state-codes-dk-supplement"
       },
-      "name" : "DK Consent State",
+      "name" : "DK Consent State Supplement",
       "description" : "Indicates the state of the consent",
       "exampleBoolean" : false
     },
@@ -1384,6 +1482,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/dk-core-organization-1"
+      },
+      "name" : "DK CVR Organization instance of DkCoreOrganization",
+      "description" : "Sample of DK organization",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1401,7 +1511,7 @@
       "reference" : {
         "reference" : "CodeSystem/days-of-week-dk-supplement"
       },
-      "name" : "DK Days Of Week",
+      "name" : "DK Days Of Week Supplement",
       "description" : "The days of the week.",
       "exampleBoolean" : false
     },
@@ -1425,7 +1535,7 @@
       "reference" : {
         "reference" : "CodeSystem/episode-of-care-status-dk-supplement"
       },
-      "name" : "DK Episode Of Care Status",
+      "name" : "DK Episode Of Care Status Supplement",
       "description" : "The status of the episode of care.",
       "exampleBoolean" : false
     },
@@ -1545,7 +1655,7 @@
       "reference" : {
         "reference" : "CodeSystem/publication-status-dk-supplement"
       },
-      "name" : "DK Publication Status",
+      "name" : "DK Publication Status Supplement",
       "description" : "The lifecycle status of a Value Set or Concept Map.",
       "exampleBoolean" : false
     },
@@ -1605,7 +1715,7 @@
       "reference" : {
         "reference" : "CodeSystem/request-status-dk-supplement"
       },
-      "name" : "DK Request Status",
+      "name" : "DK Request Status Supplement",
       "description" : "Codes identifying the stage lifecycle stage of a request",
       "exampleBoolean" : false
     },
@@ -1617,7 +1727,7 @@
       "reference" : {
         "reference" : "CodeSystem/role-code-dk-supplement"
       },
-      "name" : "DK Role Code",
+      "name" : "DK Role Code Supplement",
       "description" : "CodeSystem supplement with danish translations for RoleCode",
       "exampleBoolean" : false
     },
@@ -1672,6 +1782,126 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/DrengLevendefodt2016"
+      },
+      "name" : "Dreng Test Levendefødt (2016) - tvilling",
+      "description" : "Dreng Test Levendefødt født 2016 - Tvilling",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/DrengLevendefodt2024"
+      },
+      "name" : "Dreng Test Levendefødt (2024) - tvilling",
+      "description" : "Dreng Test Levendefødt født 2024 - Tvilling",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/EinerRelatedToEK"
+      },
+      "name" : "Einer som far til EK",
+      "description" : "Einer er far til EK",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/EinerRelatedToEllen"
+      },
+      "name" : "Einer som far til Ellen",
+      "description" : "Einer er far til Ellen Louise",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/EinerRelatedToElse"
+      },
+      "name" : "Einer som far til Else",
+      "description" : "Einer er far til Else",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/EinerRelatedToMagnus"
+      },
+      "name" : "Einer som far til Magnus",
+      "description" : "Einer er far til Magnus",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/EinerRelatedToRasmus"
+      },
+      "name" : "Einer som far til Rasmus",
+      "description" : "Einer er far til Rasmus",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Einer"
+      },
+      "name" : "Einer Test Lauridsen - far i Lauridsen familien",
+      "description" : "Einer Test Lauridsen - Gift med Lonni. Tvillinger Magnus & Rasmus, Trillinger Else & Ellen & EK",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/EK"
+      },
+      "name" : "EK Test Lauridsen - trilling med Ellen & Else",
+      "description" : "EK Test Lauridsen - Søn af Lonni & Einer Lauridsen. Trilling med Ellen & Else",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/EllenLouise"
+      },
+      "name" : "Ellen Louise Test Lauridsen - trilling med EK & Else",
+      "description" : "Ellen Louise Test Lauridsen - Datter af Lonni & Einer Lauridsen. Trilling med EK & Else",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Condition"
       }],
       "reference" : {
@@ -1680,6 +1910,18 @@
       "name" : "Else Graviditet",
       "description" : "Else Graviditet, tilstandskode som indberettes ifm Elses ambulante forløb (fx jordemoder), og ved eventuel indlæggelse i graviditeten",
       "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/ElseLauridsen"
+      },
+      "name" : "Else Test Lauridsen - trilling med EK & Ellen",
+      "description" : "Else Test Lauridsen - Datter af Lonni & Einer Lauridsen. Trilling med EK & Ellen",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
     },
     {
       "extension" : [{
@@ -1941,6 +2183,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/GitteNancy"
+      },
+      "name" : "Gitte Nancy Test Berggren - datter af Kirsten",
+      "description" : "Gitte Nancy Test Berggren - Datter af Kirsten Berggren, Nancys yndlingsbarnebarn",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
@@ -1977,14 +2231,14 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
+        "valueString" : "Group"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/dk-core-documentreference-version-id-extension"
+        "reference" : "Group/JensenFamily"
       },
-      "name" : "HL7 Denmark core DocumentReference Version ID extension",
-      "description" : "Extension containing information about the version of the DocumentReference for a specific standard. The version is included in the R5 version of the resource.",
-      "exampleBoolean" : false
+      "name" : "Jensen familien",
+      "description" : "Familiegruppe: Anders Jensen og hans søn Ali",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -2084,6 +2338,114 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/JulianeJoergensen"
+      },
+      "name" : "Juliane Test Jørgensen",
+      "description" : "Juliane Test Jørgensen - testpatient",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/KajaHansen"
+      },
+      "name" : "Kaja Test Hansen",
+      "description" : "Kaja Test Hansen - testpatient",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/KirstenRelatedToAya"
+      },
+      "name" : "Kirsten som mor til Aya",
+      "description" : "Kirsten er mor til Aya",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/KirstenRelatedToGitte"
+      },
+      "name" : "Kirsten som mor til Gitte",
+      "description" : "Kirsten er mor til Gitte Nancy",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/KirstenRelatedToLars"
+      },
+      "name" : "Kirsten som mor til Lars",
+      "description" : "Kirsten er mor til Lars",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/KirstenRelatedToPia"
+      },
+      "name" : "Kirsten som mor til Pia",
+      "description" : "Kirsten er mor til Pia",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/KirstenRelatedToRikke"
+      },
+      "name" : "Kirsten som mor til Rikke",
+      "description" : "Kirsten er mor til Rikke",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/KirstenBerggren"
+      },
+      "name" : "Kirsten Test Berggren - datter af Nancy",
+      "description" : "Kirsten Test Berggren - Datter af Nancy. Datter Aya.",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/KnutOdvar"
+      },
+      "name" : "Knut Odvar Test Mosebryggersen",
+      "description" : "Knut Odvar Test Mosebryggersen - Søn af May June Moberg & Schwendlund Mosebryggersen",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:complex-type"
       }],
       "reference" : {
@@ -2108,6 +2470,54 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/LarsBerggren"
+      },
+      "name" : "Lars Test Berggren - søn af Kirsten",
+      "description" : "Lars Test Berggren - Søn af Kirsten Berggren",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Group"
+      }],
+      "reference" : {
+        "reference" : "Group/LauridsenFamily"
+      },
+      "name" : "Lauridsen familien",
+      "description" : "Familiegruppe: Einer og Lonni Lauridsen med deres børn - tvillingerne Magnus & Rasmus og trillingerne Else, Ellen & EK",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Group"
+      }],
+      "reference" : {
+        "reference" : "Group/LevendefodtTwins2016"
+      },
+      "name" : "Levendefødt tvillinger 2016",
+      "description" : "Familiegruppe: Tvillinger født 2016",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Group"
+      }],
+      "reference" : {
+        "reference" : "Group/LevendefodtTwins2024"
+      },
+      "name" : "Levendefødt tvillinger 2024",
+      "description" : "Familiegruppe: Tvillinger født 2024",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "PractitionerRole"
       }],
       "reference" : {
@@ -2116,6 +2526,114 @@
       "name" : "Licensed physician in primary care",
       "description" : "This is an example of PractitionerRole profile. The example describes the service which practitioner is performing in a specific location in a specific role.",
       "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/LonniRelatedToEK"
+      },
+      "name" : "Lonni som mor til EK",
+      "description" : "Lonni er mor til EK",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/LonniRelatedToEllen"
+      },
+      "name" : "Lonni som mor til Ellen",
+      "description" : "Lonni er mor til Ellen Louise",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/LonniRelatedToElse"
+      },
+      "name" : "Lonni som mor til Else",
+      "description" : "Lonni er mor til Else",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/LonniRelatedToMagnus"
+      },
+      "name" : "Lonni som mor til Magnus",
+      "description" : "Lonni er mor til Magnus",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/LonniRelatedToRasmus"
+      },
+      "name" : "Lonni som mor til Rasmus",
+      "description" : "Lonni er mor til Rasmus",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/LonniRelatedToEiner"
+      },
+      "name" : "Lonni som ægtefælle til Einer",
+      "description" : "Lonni er gift med Einer",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Lonni"
+      },
+      "name" : "Lonni Test Lauridsen - mor i Lauridsen familien",
+      "description" : "Lonni Test Lauridsen - Gift med Einer. Tvillinger Magnus & Rasmus, Trillinger Else & Ellen & EK",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Magnus"
+      },
+      "name" : "Magnus Test Lauridsen - tvilling med Rasmus",
+      "description" : "Magnus Test Lauridsen - Søn af Lonni & Einer Lauridsen. Tvilling med Rasmus",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/MaxBerggren"
+      },
+      "name" : "Max Test Berggren - søn af Nancy",
+      "description" : "Max Test Berggren - Søn af Nancy",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
     },
     {
       "extension" : [{
@@ -2220,6 +2738,114 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/MayJuneRelatedToKnut"
+      },
+      "name" : "May June som mor til Knut",
+      "description" : "May June er mor til Knut Odvar",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/MayJuneRelatedToOdd"
+      },
+      "name" : "May June som mor til Odd",
+      "description" : "May June er mor til Odd Haugen",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/MayJuneRelatedToSille"
+      },
+      "name" : "May June som mor til Sille",
+      "description" : "May June er mor til Sille June",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/MayJuneRelatedToSverre"
+      },
+      "name" : "May June som mor til Sverre",
+      "description" : "May June er mor til Sverre",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/MayJuneRelatedToTorre"
+      },
+      "name" : "May June som mor til Torre",
+      "description" : "May June er mor til Torre",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/MayJuneGuardianOfSverre"
+      },
+      "name" : "May June som værge for Sverre",
+      "description" : "May June er værge for Sverre",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/MayJuneGuardianOfTorre"
+      },
+      "name" : "May June som værge for Torre",
+      "description" : "May June er værge for Torre",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/MayJuneRelatedToSchwendlund"
+      },
+      "name" : "May June som ægtefælle til Schwendlund",
+      "description" : "May June er gift med Schwendlund",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/MayJune"
+      },
+      "name" : "May June Test Moberg - mor i Mosebryggersen familien",
+      "description" : "May June Test Moberg - Gift med Schwendlund Mosebryggersen. Sønnerne Odd & Knut, Datteren Sille, Tvillingerne Sverre & Torre",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
       }],
       "reference" : {
@@ -2228,6 +2854,126 @@
       "name" : "MedCom Test Organization",
       "description" : "MedCom Test Organization with SOR id",
       "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Group"
+      }],
+      "reference" : {
+        "reference" : "Group/MosebryggerssenFamily"
+      },
+      "name" : "Mosebryggersen familien",
+      "description" : "Familiegruppe: Schwendlund og May June med deres børn - Odd, Knut, Sille og tvillingerne Sverre & Torre",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/MuhammedAbdul"
+      },
+      "name" : "Muhammed Test Abdul",
+      "description" : "Muhammed Test Abdul - testpatient",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/NancyAnn"
+      },
+      "name" : "Nancy Ann Test Berggren - bedstemor i Berggren familien",
+      "description" : "Nancy Ann Test Berggren - Sønnerne Max og Ruddi. Døtrene Kirsten og Britta.",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/NancyRelatedToGitte"
+      },
+      "name" : "Nancy som bedstemor til Gitte",
+      "description" : "Nancy er bedstemor til Gitte (Nancys yndlingsbarnebarn)",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/NancyRelatedToBrita"
+      },
+      "name" : "Nancy som mor til Brita",
+      "description" : "Nancy er mor til Brita",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/NancyRelatedToKirsten"
+      },
+      "name" : "Nancy som mor til Kirsten",
+      "description" : "Nancy er mor til Kirsten",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/NancyRelatedToMax"
+      },
+      "name" : "Nancy som mor til Max",
+      "description" : "Nancy er mor til Max",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/NancyRelatedToRuddi"
+      },
+      "name" : "Nancy som mor til Ruddi",
+      "description" : "Nancy er mor til Ruddi",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/NancyGuardianOfBrita"
+      },
+      "name" : "Nancy som værge for Brita",
+      "description" : "Nancy er værge for Brita",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/NancyGuardianOfAage"
+      },
+      "name" : "Nancy som værge for Åge",
+      "description" : "Nancy er værge for Åge",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
     },
     {
       "extension" : [{
@@ -2255,14 +3001,14 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
+        "valueString" : "Patient"
       }],
       "reference" : {
-        "reference" : "CodeSystem/dk-npu-fragment"
+        "reference" : "Patient/NielsVendelboe"
       },
-      "name" : "Nomenclature for Properties and Units (NPU) - Fragment for DK Core",
-      "description" : "Fragment of the NPU code system used in DK Core. The full version of NPU can be found at http://labterm.dk",
-      "exampleBoolean" : false
+      "name" : "Niels Test Vendelboe",
+      "description" : "Niels Test Vendelboe - testpatient",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
     },
     {
       "extension" : [{
@@ -2275,6 +3021,54 @@
       "name" : "NotFollowedAnymore",
       "description" : "Extension for the date where a condition lost focus in a specific clinical context",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/OddHaugen"
+      },
+      "name" : "Odd Haugen Test Mosebryggersen",
+      "description" : "Odd Haugen Test Mosebryggersen - Søn af May June Moberg & Schwendlund Mosebryggersen",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/PiaBerggren"
+      },
+      "name" : "Pia Test Berggren - datter af Kirsten",
+      "description" : "Pia Test Berggren - Datter af Kirsten Berggren",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/PigeLevendefodt2016"
+      },
+      "name" : "Pige Test Levendefødt (2016) - tvilling",
+      "description" : "Pige Test Levendefødt født 2016 - Tvilling",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/PigeLevendefodt2024"
+      },
+      "name" : "Pige Test Levendefødt (2024) - tvilling",
+      "description" : "Pige Test Levendefødt født 2024 - Tvilling",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
     },
     {
       "extension" : [{
@@ -2435,6 +3229,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Rasmus"
+      },
+      "name" : "Rasmus Test Lauridsen - tvilling med Magnus",
+      "description" : "Rasmus Test Lauridsen - Søn af Lonni & Einer Lauridsen. Tvilling med Magnus",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ServiceRequest"
       }],
       "reference" : {
@@ -2459,6 +3265,114 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/RikkeBerggren"
+      },
+      "name" : "Rikke Test Berggren - datter af Kirsten",
+      "description" : "Rikke Test Berggren - Datter af Kirsten Berggren, Ruddi er værge for Rikke",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/RuddiGuardianOfRikke"
+      },
+      "name" : "Ruddi som værge for Rikke",
+      "description" : "Ruddi er værge for Rikke",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/RuddiBerggren"
+      },
+      "name" : "Ruddi Test Berggren - søn af Nancy",
+      "description" : "Ruddi Test Berggren - Søn af Nancy",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/SchwendlundRelatedToKnut"
+      },
+      "name" : "Schwendlund som far til Knut",
+      "description" : "Schwendlund er far til Knut Odvar",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/SchwendlundRelatedToOdd"
+      },
+      "name" : "Schwendlund som far til Odd",
+      "description" : "Schwendlund er far til Odd Haugen",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/SchwendlundRelatedToSille"
+      },
+      "name" : "Schwendlund som far til Sille",
+      "description" : "Schwendlund er far til Sille June",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/SchwendlundRelatedToSverre"
+      },
+      "name" : "Schwendlund som far til Sverre",
+      "description" : "Schwendlund er far til Sverre",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/SchwendlundRelatedToTorre"
+      },
+      "name" : "Schwendlund som far til Torre",
+      "description" : "Schwendlund er far til Torre",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Schwendlund"
+      },
+      "name" : "Schwendlund Test Mosebryggersen - far i Mosebryggersen familien",
+      "description" : "Schwendlund Test Mosebryggersen - Gift med May June Moberg. Sønnerne Odd & Knut, Datteren Sille, Tvillingerne Sverre & Torre",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Practitioner"
       }],
       "reference" : {
@@ -2467,6 +3381,18 @@
       "name" : "SidselSygeplejerske",
       "description" : "Eksempel på en sygeplejerske",
       "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/SilleJune"
+      },
+      "name" : "Sille June Test Mosebrygersen",
+      "description" : "Sille June Test Mosebrygersen - Datter af May June Moberg & Schwendlund Mosebryggersen",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
     },
     {
       "extension" : [{
@@ -2491,6 +3417,30 @@
       "name" : "SOR Identifier",
       "description" : "Identifier holding the official SOR identifier for a danish healthcare organization",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Sverre"
+      },
+      "name" : "Sverre Test Mosebryggersen - tvilling med Torre",
+      "description" : "Sverre Test Mosebryggersen - Søn af May June Moberg & Schwendlund Mosebryggersen. Tvilling med Torre. Værge: May June",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Torre"
+      },
+      "name" : "Torre Test Mosebryggersen - tvilling med Sverre",
+      "description" : "Torre Test Mosebryggersen - Søn af May June Moberg & Schwendlund Mosebryggersen. Tvilling med Sverre. Værge: May June",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
     },
     {
       "extension" : [{
@@ -2526,6 +3476,30 @@
       },
       "name" : "XDS document bundled Source Patient",
       "description" : "Instance of a XDS document bundled  source patient",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/AageRelatedToNancy"
+      },
+      "name" : "Åge som far til Nancy",
+      "description" : "Åge er far til Nancy",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Aage"
+      },
+      "name" : "Åge Test Berggren - far til Nancy",
+      "description" : "Åge Test Berggren - Far til Nancy. Værge: Nancy",
       "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
     }],
     "page" : {

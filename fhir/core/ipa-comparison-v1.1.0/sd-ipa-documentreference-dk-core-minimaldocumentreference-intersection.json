@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-57",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-57",
+  "id" : "6093be53-3d1d-48b0-b3bb-67287619f74a-57",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/6093be53-3d1d-48b0-b3bb-67287619f74a-57",
   "name" : "IntersectionIPADocumentReferenceAndDkCoreMinimalDocumentReference",
   "title" : "Intersection of IPA-DocumentReference And Danish Core Minimal DocumentReference Profile",
   "status" : "active",
-  "date" : "2025-12-19T17:28:19+01:00",
+  "date" : "2026-03-11T23:17:49+01:00",
   "snapshot" : {
     "element" : [{
       "path" : "DocumentReference",
@@ -483,7 +483,7 @@
       "binding" : {
         "strength" : "required",
         "description" : "The status of the document reference.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-60"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-60"
       },
       "mapping" : [{
         "identity" : "workflow",

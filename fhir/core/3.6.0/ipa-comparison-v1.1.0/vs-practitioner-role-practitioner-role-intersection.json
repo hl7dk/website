@@ -1,0 +1,21 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "39291927-f05b-4991-af90-a2d018809edf-90",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/39291927-f05b-4991-af90-a2d018809edf-90",
+  "name" : "IntersectionPractitionerRoleAndPractitionerRole",
+  "title" : "Intersection of Practitioner role And Practitioner role",
+  "status" : "draft",
+  "date" : "2026-03-11T23:13:12+01:00",
+  "compose" : {
+    "include" : [{
+      
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "223366009"
+      }]
+    }]
+  }
+}

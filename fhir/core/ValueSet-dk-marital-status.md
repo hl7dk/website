@@ -1,4 +1,4 @@
-# DK Core Marital Status - HL7 FHIR Implementation Guide: DK Core v3.5.0
+# DK Core Marital Status - HL7 FHIR Implementation Guide: DK Core v3.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/ValueSet/dk-marital-status | *Version*:3.5.0 |
-| Active as of 2025-12-19 | *Computable Name*: |
+| *Official URL*:http://hl7.dk/fhir/core/ValueSet/dk-marital-status | *Version*:3.6.0 |
+| Active as of 2026-03-11 | *Computable Name*: |
 | **Copyright/Legal**: CC-BY-SA-4.0 | |
 
  
@@ -47,71 +47,55 @@ This value set defines the set of codes that can be used to indicate the marital
   "resourceType" : "ValueSet",
   "id" : "dk-marital-status",
   "url" : "http://hl7.dk/fhir/core/ValueSet/dk-marital-status",
-  "version" : "3.5.0",
+  "version" : "3.6.0",
   "title" : "DK MaritalStatus",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-19T17:27:08+01:00",
+  "date" : "2026-03-11T23:16:27+01:00",
   "publisher" : "HL7 Denmark",
-  "contact" : [
+  "contact" : [{
+    "name" : "HL7 Denmark",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.dk"
+    },
     {
-      "name" : "HL7 Denmark",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.hl7.dk"
-        },
-        {
-          "system" : "email",
-          "value" : "dk-affiliate@hl7.dk"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "dk-affiliate@hl7.dk"
+    }]
+  }],
   "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person in Denmark.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "DK",
-          "display" : "Denmark"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
   "copyright" : "CC-BY-SA-4.0",
   "compose" : {
-    "include" : [
-      {
-        "valueSet" : ["http://hl7.org/fhir/ValueSet/marital-status"]
+    "include" : [{
+      "valueSet" : ["http://hl7.org/fhir/ValueSet/marital-status"]
+    },
+    {
+      "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-marital-status",
+      "concept" : [{
+        "code" : "P",
+        "display" : "Registered partnership",
+        "designation" : [{
+          "language" : "da",
+          "value" : "Registreret partnerskab"
+        }]
       },
       {
-        "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-marital-status",
-        "concept" : [
-          {
-            "code" : "P",
-            "display" : "Registered partnership",
-            "designation" : [
-              {
-                "language" : "da",
-                "value" : "Registreret partnerskab"
-              }
-            ]
-          },
-          {
-            "code" : "O",
-            "display" : "Dissolved partnership",
-            "designation" : [
-              {
-                "language" : "da",
-                "value" : "Ophævet partnerskab"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+        "code" : "O",
+        "display" : "Dissolved partnership",
+        "designation" : [{
+          "language" : "da",
+          "value" : "Ophævet partnerskab"
+        }]
+      }]
+    }]
   }
 }
 

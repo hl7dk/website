@@ -1,97 +1,101 @@
-﻿<!-- get modelType --><?xml version="1.0" encoding="UTF-8"?>
+<!-- get modelType -->
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Danish Core Minimal DocumentReference Profile - HL7 FHIR Implementation Guide: DK Core v3.5.0</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Danish Core Minimal DocumentReference Profile - HL7 FHIR Implementation Guide: DK Core v3.6.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link rel="stylesheet" href="fhir.css"/>
+    <link href="fhir.css" rel="stylesheet"/>
 
-      <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
-      <!-- Project extras -->
-    <link rel="stylesheet" href="assets/css/project.css"/>
-    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
-    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
-  	<link rel="stylesheet" href="assets/css/prism.css"/>
-  	<link rel="stylesheet" href="assets/css/cqf.css"/>
-      <!-- Placeholder for child template CSS declarations -->
-    <link rel="stylesheet" href="assets/css/hl7-dk.css"/>
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7-dk.css" rel="stylesheet"/>
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
-      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- [if lt IE 9]>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif] -->
+    <![endif]-->
 
-      <!-- Favicons -->
-    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
-    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
-    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-    <script src="assets/js/mermaid.js" type="text/javascript"></script>
-    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"7.5"}
     h3,h4,h5,h6{--heading-prefix:"7.5"}</style>
-    <div id="segment-header" class="segment">    <!-- segment-header -->
-      <div class="container">    <!-- container -->
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
 
-          <!-- Placeholder for child template header declarations -->
+        <!-- Placeholder for child template header declarations -->
 
         <div id="hl7-nav">
-          <a no-external="true" id="hl7-logo" href="https://www.hl7.dk">
-            <img src="assets/images/HL7_Denmark.png" alt="Visit the HL7 Danish website" height="50"/>
+          <a id="hl7-logo" no-external="true" href="https://www.hl7.dk">
+            <img height="50" alt="Visit the HL7 Danish website" src="assets/images/HL7_Denmark.png"/>
           </a>
         </div>
         <div id="family-nav">
-          <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
         </div>        
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">HL7 FHIR Implementation Guide: DK Core</span>
             <br/>
-            <span style="display:inline-block;">3.5.0 - release
+            <span style="display:inline-block;">3.6.0 - release
 
 
 
-  <img src="assets/images/dnk.svg" alt="Denmark flag" title="Denmark" height="16"/>
+  <img alt="Denmark flag" src="assets/images/dnk.svg" height="16" title="Denmark"/>
 
 
             </span>
           </p>
         </div>
-      </div>   <!-- /container -->
-    </div>    <!-- /segment-header -->
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">    <!-- container -->
-          <!-- HEADER CONTENT -->
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-            <!-- status-bar -->
+          <!--status-bar-->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-                <!-- menu.xml -->
+              <!-- menu.xml  -->
 
-<ul class="nav navbar-nav">
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="toc.html">Table of Contents</a>
   </li>
@@ -117,31 +121,31 @@
     <a href="downloads.html">Downloads</a>
   </li>
 </ul>
-            </div>    <!-- /.nav-collapse -->
-          </div>    <!-- /.container -->
-        </nav>    <!-- /.navbar -->
-        <!-- /HEADER CONTENT -->
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-navbar -->
-      <!-- status-bar -->
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
 
-    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Danish Core Minimal DocumentReference Profile</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Danish Core Minimal DocumentReference Profile</b></li>
 
         </ul>
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-breadcrumb -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">    <!-- segment-content -->
-      <div class="container">    <!-- container -->
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">This page is part of the HL7 FHIR Implementation Guide: DK Core (v3.5.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://hl7.dk/fhir/core/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the HL7 FHIR Implementation Guide: DK Core (v3.6.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://hl7.dk/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -228,10 +232,10 @@
   <table class="colsi">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.dk/fhir/core/StructureDefinition/dk-core-minimaldocumentreference<button data-clipboard-text="http://hl7.dk/fhir/core/StructureDefinition/dk-core-minimaldocumentreference" title="Click to copy URL" class="btn-copy"></button></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.dk/fhir/core/StructureDefinition/dk-core-minimaldocumentreference<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.dk/fhir/core/StructureDefinition/dk-core-minimaldocumentreference"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">3.5.0<button data-clipboard-text="http://hl7.dk/fhir/core/StructureDefinition/dk-core-minimaldocumentreference|3.5.0" title="Click to copy versioned URL" class="btn-copy"></button></span>
+      <span class="copy-text">3.6.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.dk/fhir/core/StructureDefinition/dk-core-minimaldocumentreference|3.6.0"/></span>
       </td>
     </tr>
 
@@ -247,7 +251,7 @@
         
           Active
           
-            as of 2025-12-19
+            as of 2026-03-11
           
         
       </td>
@@ -269,16 +273,16 @@
 
 
 
-  <!-- insert intro if present -->
+<!-- insert intro if present -->
 
 
 
 
-<div markdown="1" style="display:inline-block">
+<div style="display:inline-block" markdown="1">
 
 <h3 id="scope-and-usage">Scope and Usage</h3>
 
-<p><a name="l377">​</a>The Danish Core MinimalDocumentReference profile is intended to encapsulate the data model of a DocumentReference as used in a Danish context of Document sharing, whether it is FHIR or CDA Documents and whether it is native XDS infrastructure or used in an MHD context <a href="https://profiles.ihe.net/ITI/MHD/4.2.2/StructureDefinition-IHE.MHD.Minimal.DocumentReference.html">IHE MHD DocumentReference Minimal specification 4.2.2</a>.</p>
+<p>The Danish Core MinimalDocumentReference profile is intended to encapsulate the data model of a DocumentReference as used in a Danish context of Document sharing, whether it is FHIR or CDA Documents and whether it is native XDS infrastructure or used in an MHD context <a href="https://profiles.ihe.net/ITI/MHD/4.2.3/StructureDefinition-IHE.MHD.Minimal.DocumentReference.html">IHE MHD DocumentReference Minimal specification 4.2.3</a>.</p>
 
 <p><strong>Conformance to IHE and Danish XDS Context</strong></p>
 
@@ -300,7 +304,7 @@
 </ul>
 <p>You can also check for <a href="https://packages2.fhir.org/xig/hl7.fhir.dk.core|current/StructureDefinition/dk-core-minimaldocumentreference">usages in the FHIR IG Statistics</a></p>
 
-    <!-- no uri -->
+  <!-- no uri -->
   <a name="profile"> </a>
   <h3 id="profile">Formal Views of Profile Content</h3>
   <p>
@@ -318,19 +322,19 @@
         <a href="#tabs-snap">Snapshot Table</a>
       </li>
 
-  <!-- <li>
+<!--      <li>
         <a href="#tabs-xml">Pseudo-XML</a>
-      </li> -->
+      </li>-->
 
 
-  <!-- <li>
+<!--      <li>
         <a href="#tabs-json">Pseudo-JSON</a>
-      </li> -->
+      </li>-->
 
 
-        <!-- <li>
+      <!--<li>
         <a href="#tabs-ttl">Pseudo-TTL</a>
-      </li> -->
+      </li>-->
 
       <li>
         <a href="#tabs-summ">Statistics/References</a>
@@ -502,7 +506,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Main clinical acts documented<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.0.1/ValueSet-v3-ActCode.html" title="http://terminology.hl7.org/ValueSet/v3-ActCode" class="binding">ActCode (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span><br/></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Main clinical acts documented<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.1.0/ValueSet-v3-ActCode.html" title="http://terminology.hl7.org/ValueSet/v3-ActCode" class="binding">ActCode (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span><br/></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aoc" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-dk-core-minimaldocumentreference-definitions.html#DocumentReference.context.period" title="The time period over which the service that is described by the document was provided." data-no-external="true">period</a><a name="k-DocumentReference.context.period"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -523,7 +527,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Patient demographics from source</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 32b445c9-5d60-41f5-b922-fe4ac41dc090
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 934c5021-5647-4873-988a-e047cbf5c753
 document.getElementById('cbdk-core-minimaldocumentreferenceK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('dk-core-minimaldocumentreferenceK'), 'binding', document.getElementById('cbdk-core-minimaldocumentreferenceK-binding').checked, document.getElementById('ppdk-core-minimaldocumentreferenceK'));
 document.getElementById('cbdk-core-minimaldocumentreferenceK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -531,7 +535,7 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceK'), 'constr
 document.getElementById('cbdk-core-minimaldocumentreferenceK-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
 filterDesc(document.getElementById('dk-core-minimaldocumentreferenceK'), 'obligation', document.getElementById('cbdk-core-minimaldocumentreferenceK-obligation').checked, document.getElementById('ppdk-core-minimaldocumentreferenceK'));
 </script></table>
-            <!-- Terminology Bindings heading in the fragment -->
+          <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
 <table class="list" data-fhir="generated-heirarchy">
   <tr>
@@ -681,12 +685,12 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceK'), 'obliga
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.0.1/ValueSet-v3-ActCode.html">v3 Code System ActCode</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.1.0/ValueSet-v3-ActCode.html">v3 Code System ActCode</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActCode|3.0.0" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is explicitly stated to be 3.0.0">&#x1F4CD;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.0.1">THO v7.0</a>
+      <a href="http://terminology.hl7.org/7.1.0">THO v7.1</a>
     </td>
   </tr>
   <tr>
@@ -699,7 +703,7 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceK'), 'obliga
       <a style="opacity: 1.0" href="ValueSet-sor-organization-type.html">DK SOR Organization Type</a>
       <button data-clipboard-text="http://hl7.dk/fhir/core/ValueSet/sor-organization-type" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.5.0</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.6.0</td>
     <td>This IG</td>
   </tr>
   <tr>
@@ -712,17 +716,17 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceK'), 'obliga
       <a style="opacity: 1.0" href="ValueSet-dk-core-practice-setting-code.html">DK SOR Practice Setting Code</a>
       <button data-clipboard-text="http://hl7.dk/fhir/core/ValueSet/dk-core-practice-setting-code" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.5.0</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.6.0</td>
     <td>This IG</td>
   </tr>
 </table>
 
         
           
-            <!-- 218 is size of empty table -->
+          <!-- 218 is size of empty table -->
           
             <a name="inv-key"> </a>
-              <!-- Constraints  heading in the fragment -->
+            <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
 <table class="list presentation" data-fhir="generated-heirarchy">
   <tr>
@@ -861,7 +865,7 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceK'), 'obliga
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Main clinical acts documented</span><br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.0.1/ValueSet-v3-ActCode.html" title="http://terminology.hl7.org/ValueSet/v3-ActCode" class="binding">ActCode (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Main clinical acts documented</span><br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.1.0/ValueSet-v3-ActCode.html" title="http://terminology.hl7.org/ValueSet/v3-ActCode" class="binding">ActCode (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aeb" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-dk-core-minimaldocumentreference-definitions.html#DocumentReference.context.facilityType" data-no-external="true">facilityType</a><a name="DocumentReference.context.facilityType"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
@@ -877,7 +881,7 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceK'), 'obliga
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Patient demographics from source</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 32b445c9-5d60-41f5-b922-fe4ac41dc090
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 934c5021-5647-4873-988a-e047cbf5c753
 document.getElementById('cbdk-core-minimaldocumentreferenceD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('dk-core-minimaldocumentreferenceD'), 'binding', document.getElementById('cbdk-core-minimaldocumentreferenceD-binding').checked, document.getElementById('ppdk-core-minimaldocumentreferenceD'));
 document.getElementById('cbdk-core-minimaldocumentreferenceD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -886,7 +890,7 @@ document.getElementById('cbdk-core-minimaldocumentreferenceD-obligation').checke
 filterDesc(document.getElementById('dk-core-minimaldocumentreferenceD'), 'obligation', document.getElementById('cbdk-core-minimaldocumentreferenceD-obligation').checked, document.getElementById('ppdk-core-minimaldocumentreferenceD'));
 </script></table>
           <a name="tx"> </a>
-            <!-- Terminology Bindings heading in the fragment -->
+          <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings (Differential)</h4>
 <table class="list" data-fhir="generated-heirarchy">
   <tr>
@@ -916,12 +920,12 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceD'), 'obliga
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
     </td>
     <td>
-      <a style="opacity: 0.5" href="http://terminology.hl7.org/7.0.1/ValueSet-v3-ActCode.html">v3 Code System ActCode</a>
+      <a style="opacity: 0.5" href="http://terminology.hl7.org/7.1.0/ValueSet-v3-ActCode.html">v3 Code System ActCode</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActCode|3.0.0" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is explicitly stated to be 3.0.0">&#x1F4CD;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.0.1">THO v7.0</a>
+      <a href="http://terminology.hl7.org/7.1.0">THO v7.1</a>
     </td>
   </tr>
   <tr>
@@ -934,7 +938,7 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceD'), 'obliga
       <a style="opacity: 0.5" href="ValueSet-sor-organization-type.html">DK SOR Organization Type</a>
       <button data-clipboard-text="http://hl7.dk/fhir/core/ValueSet/sor-organization-type" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.5.0</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.6.0</td>
     <td>This IG</td>
   </tr>
   <tr>
@@ -947,14 +951,14 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceD'), 'obliga
       <a style="opacity: 0.5" href="ValueSet-dk-core-practice-setting-code.html">DK SOR Practice Setting Code</a>
       <button data-clipboard-text="http://hl7.dk/fhir/core/ValueSet/dk-core-practice-setting-code" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.5.0</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.6.0</td>
     <td>This IG</td>
   </tr>
 </table>
 
         
           
-            <!-- 218 is size of empty table -->
+          <!-- 218 is size of empty table -->
           
         </div>
       </div>
@@ -1260,7 +1264,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Main clinical acts documented<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.0.1/ValueSet-v3-ActCode.html" title="http://terminology.hl7.org/ValueSet/v3-ActCode" class="binding">ActCode (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span><br/></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Main clinical acts documented<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.1.0/ValueSet-v3-ActCode.html" title="http://terminology.hl7.org/ValueSet/v3-ActCode" class="binding">ActCode (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span><br/></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="avf" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck011.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-dk-core-minimaldocumentreference-definitions.html#DocumentReference.context.period" title="The time period over which the service that is described by the document was provided." data-no-external="true">period</a><a name="s-DocumentReference.context.period"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -1338,7 +1342,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/resource.html">Resource</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Related identifiers or resources<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 32b445c9-5d60-41f5-b922-fe4ac41dc090
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 934c5021-5647-4873-988a-e047cbf5c753
 document.getElementById('cbdk-core-minimaldocumentreferenceS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('dk-core-minimaldocumentreferenceS'), 'binding', document.getElementById('cbdk-core-minimaldocumentreferenceS-binding').checked, document.getElementById('ppdk-core-minimaldocumentreferenceS'));
 document.getElementById('cbdk-core-minimaldocumentreferenceS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1346,7 +1350,7 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceS'), 'constr
 document.getElementById('cbdk-core-minimaldocumentreferenceS-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
 filterDesc(document.getElementById('dk-core-minimaldocumentreferenceS'), 'obligation', document.getElementById('cbdk-core-minimaldocumentreferenceS-obligation').checked, document.getElementById('ppdk-core-minimaldocumentreferenceS'));
 </script></table>
-            <!-- Terminology Bindings heading in the fragment -->
+          <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
 <table class="list" data-fhir="generated-heirarchy">
   <tr>
@@ -1541,12 +1545,12 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceS'), 'obliga
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.0.1/ValueSet-v3-ActCode.html">v3 Code System ActCode</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.1.0/ValueSet-v3-ActCode.html">v3 Code System ActCode</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActCode|3.0.0" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is explicitly stated to be 3.0.0">&#x1F4CD;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.0.1">THO v7.0</a>
+      <a href="http://terminology.hl7.org/7.1.0">THO v7.1</a>
     </td>
   </tr>
   <tr>
@@ -1559,7 +1563,7 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceS'), 'obliga
       <a style="opacity: 1.0" href="ValueSet-sor-organization-type.html">DK SOR Organization Type</a>
       <button data-clipboard-text="http://hl7.dk/fhir/core/ValueSet/sor-organization-type" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.5.0</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.6.0</td>
     <td>This IG</td>
   </tr>
   <tr>
@@ -1572,7 +1576,7 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceS'), 'obliga
       <a style="opacity: 1.0" href="ValueSet-dk-core-practice-setting-code.html">DK SOR Practice Setting Code</a>
       <button data-clipboard-text="http://hl7.dk/fhir/core/ValueSet/dk-core-practice-setting-code" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.5.0</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.6.0</td>
     <td>This IG</td>
   </tr>
   <tr>
@@ -1594,10 +1598,10 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceS'), 'obliga
 
         
           
-            <!-- 218 is size of empty table -->
+          <!-- 218 is size of empty table -->
           
             <a name="inv-snap"> </a>
-              <!-- Constraints  heading in the fragment -->
+            <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
 <table class="list presentation" data-fhir="generated-heirarchy">
   <tr>
@@ -1691,7 +1695,7 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceS'), 'obliga
       </div>
     </div>
 
-  <!-- <a name="tabs-xml"> </a>
+<!--    <a name="tabs-xml"> </a>
     <div id="tabs-xml">
       <div id="xml">
         <div id="xml-inner">
@@ -1699,10 +1703,10 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceS'), 'obliga
 
         </div>
       </div>
-    </div> -->
+    </div>-->
 
 
-  <!-- <a name="tabs-json"> </a>
+<!--    <a name="tabs-json"> </a>
     <div id="tabs-json">
       <div id="json">
         <div id="json-inner">
@@ -1797,10 +1801,10 @@ The type is the Canonical URL of Resource Definition that is the type this refer
 
         </div>
       </div>
-    </div> -->
+    </div>-->
 
 
-      <!-- <a name="tabs-ttl"> </a>
+    <!--<a name="tabs-ttl"> </a>
     <div id="tabs-ttl">
       <div id="ttl">
         <div id="ttl-inner">
@@ -1808,7 +1812,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
 
         </div>
       </div>
-    </div> -->
+    </div>-->
 
     <a name="tabs-summ"> </a>
     <div id="tabs-summ">
@@ -2009,7 +2013,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Main clinical acts documented<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.0.1/ValueSet-v3-ActCode.html" title="http://terminology.hl7.org/ValueSet/v3-ActCode" class="binding">ActCode (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span><br/></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Main clinical acts documented<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.1.0/ValueSet-v3-ActCode.html" title="http://terminology.hl7.org/ValueSet/v3-ActCode" class="binding">ActCode (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span><br/></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aoc" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-dk-core-minimaldocumentreference-definitions.html#DocumentReference.context.period" title="The time period over which the service that is described by the document was provided." data-no-external="true">period</a><a name="ka-DocumentReference.context.period"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -2030,7 +2034,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Patient demographics from source</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 32b445c9-5d60-41f5-b922-fe4ac41dc090
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 934c5021-5647-4873-988a-e047cbf5c753
 document.getElementById('cbdk-core-minimaldocumentreferenceKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('dk-core-minimaldocumentreferenceKA'), 'binding', document.getElementById('cbdk-core-minimaldocumentreferenceKA-binding').checked, document.getElementById('ppdk-core-minimaldocumentreferenceKA'));
 document.getElementById('cbdk-core-minimaldocumentreferenceKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2038,7 +2042,7 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceKA'), 'const
 document.getElementById('cbdk-core-minimaldocumentreferenceKA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
 filterDesc(document.getElementById('dk-core-minimaldocumentreferenceKA'), 'obligation', document.getElementById('cbdk-core-minimaldocumentreferenceKA-obligation').checked, document.getElementById('ppdk-core-minimaldocumentreferenceKA'));
 </script></table>
-            <!-- Terminology Bindings heading in the fragment -->
+          <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
 <table class="list" data-fhir="generated-heirarchy">
   <tr>
@@ -2188,12 +2192,12 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceKA'), 'oblig
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.0.1/ValueSet-v3-ActCode.html">v3 Code System ActCode</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.1.0/ValueSet-v3-ActCode.html">v3 Code System ActCode</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActCode|3.0.0" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is explicitly stated to be 3.0.0">&#x1F4CD;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.0.1">THO v7.0</a>
+      <a href="http://terminology.hl7.org/7.1.0">THO v7.1</a>
     </td>
   </tr>
   <tr>
@@ -2206,7 +2210,7 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceKA'), 'oblig
       <a style="opacity: 1.0" href="ValueSet-sor-organization-type.html">DK SOR Organization Type</a>
       <button data-clipboard-text="http://hl7.dk/fhir/core/ValueSet/sor-organization-type" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.5.0</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.6.0</td>
     <td>This IG</td>
   </tr>
   <tr>
@@ -2219,17 +2223,17 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceKA'), 'oblig
       <a style="opacity: 1.0" href="ValueSet-dk-core-practice-setting-code.html">DK SOR Practice Setting Code</a>
       <button data-clipboard-text="http://hl7.dk/fhir/core/ValueSet/dk-core-practice-setting-code" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.5.0</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.6.0</td>
     <td>This IG</td>
   </tr>
 </table>
 
         
           
-            <!-- 218 is size of empty table -->
+          <!-- 218 is size of empty table -->
           
             <a name="inv-all-key"> </a>
-              <!-- Constraints  heading in the fragment -->
+            <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
 <table class="list presentation" data-fhir="generated-heirarchy">
   <tr>
@@ -2368,7 +2372,7 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceKA'), 'oblig
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Main clinical acts documented</span><br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.0.1/ValueSet-v3-ActCode.html" title="http://terminology.hl7.org/ValueSet/v3-ActCode" class="binding">ActCode (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Main clinical acts documented</span><br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.1.0/ValueSet-v3-ActCode.html" title="http://terminology.hl7.org/ValueSet/v3-ActCode" class="binding">ActCode (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aeb" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-dk-core-minimaldocumentreference-definitions.html#DocumentReference.context.facilityType" data-no-external="true">facilityType</a><a name="a-DocumentReference.context.facilityType"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
@@ -2384,7 +2388,7 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceKA'), 'oblig
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Patient demographics from source</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 32b445c9-5d60-41f5-b922-fe4ac41dc090
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 934c5021-5647-4873-988a-e047cbf5c753
 document.getElementById('cbdk-core-minimaldocumentreferenceDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('dk-core-minimaldocumentreferenceDA'), 'binding', document.getElementById('cbdk-core-minimaldocumentreferenceDA-binding').checked, document.getElementById('ppdk-core-minimaldocumentreferenceDA'));
 document.getElementById('cbdk-core-minimaldocumentreferenceDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2392,7 +2396,7 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceDA'), 'const
 document.getElementById('cbdk-core-minimaldocumentreferenceDA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
 filterDesc(document.getElementById('dk-core-minimaldocumentreferenceDA'), 'obligation', document.getElementById('cbdk-core-minimaldocumentreferenceDA-obligation').checked, document.getElementById('ppdk-core-minimaldocumentreferenceDA'));
 </script></table>
-            <!-- Terminology Bindings heading in the fragment -->
+          <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings (Differential)</h4>
 <table class="list" data-fhir="generated-heirarchy">
   <tr>
@@ -2422,12 +2426,12 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceDA'), 'oblig
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
     </td>
     <td>
-      <a style="opacity: 0.5" href="http://terminology.hl7.org/7.0.1/ValueSet-v3-ActCode.html">v3 Code System ActCode</a>
+      <a style="opacity: 0.5" href="http://terminology.hl7.org/7.1.0/ValueSet-v3-ActCode.html">v3 Code System ActCode</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActCode|3.0.0" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is explicitly stated to be 3.0.0">&#x1F4CD;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.0.1">THO v7.0</a>
+      <a href="http://terminology.hl7.org/7.1.0">THO v7.1</a>
     </td>
   </tr>
   <tr>
@@ -2440,7 +2444,7 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceDA'), 'oblig
       <a style="opacity: 0.5" href="ValueSet-sor-organization-type.html">DK SOR Organization Type</a>
       <button data-clipboard-text="http://hl7.dk/fhir/core/ValueSet/sor-organization-type" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.5.0</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.6.0</td>
     <td>This IG</td>
   </tr>
   <tr>
@@ -2453,14 +2457,14 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceDA'), 'oblig
       <a style="opacity: 0.5" href="ValueSet-dk-core-practice-setting-code.html">DK SOR Practice Setting Code</a>
       <button data-clipboard-text="http://hl7.dk/fhir/core/ValueSet/dk-core-practice-setting-code" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.5.0</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.6.0</td>
     <td>This IG</td>
   </tr>
 </table>
 
         
           
-            <!-- 218 is size of empty table -->
+          <!-- 218 is size of empty table -->
           
         </div>
       </div>
@@ -2766,7 +2770,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Main clinical acts documented<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.0.1/ValueSet-v3-ActCode.html" title="http://terminology.hl7.org/ValueSet/v3-ActCode" class="binding">ActCode (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span><br/></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Main clinical acts documented<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="http://terminology.hl7.org/7.1.0/ValueSet-v3-ActCode.html" title="http://terminology.hl7.org/ValueSet/v3-ActCode" class="binding">ActCode (3.0.0)</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#example" title="Instances are not expected or even encouraged to draw from the specified value set.  The value set merely provides examples of the types of concepts intended to be included." class="binding">example</a><span title="null" class="binding">)</span><br/></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="avf" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck011.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a no-external="true" href="StructureDefinition-dk-core-minimaldocumentreference-definitions.html#DocumentReference.context.period" title="The time period over which the service that is described by the document was provided." data-no-external="true">period</a><a name="sa-DocumentReference.context.period"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -2844,7 +2848,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/resource.html">Resource</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Related identifiers or resources<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 32b445c9-5d60-41f5-b922-fe4ac41dc090
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 934c5021-5647-4873-988a-e047cbf5c753
 document.getElementById('cbdk-core-minimaldocumentreferenceSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('dk-core-minimaldocumentreferenceSA'), 'binding', document.getElementById('cbdk-core-minimaldocumentreferenceSA-binding').checked, document.getElementById('ppdk-core-minimaldocumentreferenceSA'));
 document.getElementById('cbdk-core-minimaldocumentreferenceSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2852,7 +2856,7 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceSA'), 'const
 document.getElementById('cbdk-core-minimaldocumentreferenceSA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
 filterDesc(document.getElementById('dk-core-minimaldocumentreferenceSA'), 'obligation', document.getElementById('cbdk-core-minimaldocumentreferenceSA-obligation').checked, document.getElementById('ppdk-core-minimaldocumentreferenceSA'));
 </script></table>
-            <!-- Terminology Bindings heading in the fragment -->
+          <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
 <table class="list" data-fhir="generated-heirarchy">
   <tr>
@@ -3047,12 +3051,12 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceSA'), 'oblig
       <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[example]">example</a>
     </td>
     <td>
-      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.0.1/ValueSet-v3-ActCode.html">v3 Code System ActCode</a>
+      <a style="opacity: 1.0" href="http://terminology.hl7.org/7.1.0/ValueSet-v3-ActCode.html">v3 Code System ActCode</a>
       <button data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActCode|3.0.0" title="Click to copy URL" class="btn-copy"></button>
     </td>
     <td title="Version is explicitly stated to be 3.0.0">&#x1F4CD;3.0.0</td>
     <td>
-      <a href="http://terminology.hl7.org/7.0.1">THO v7.0</a>
+      <a href="http://terminology.hl7.org/7.1.0">THO v7.1</a>
     </td>
   </tr>
   <tr>
@@ -3065,7 +3069,7 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceSA'), 'oblig
       <a style="opacity: 1.0" href="ValueSet-sor-organization-type.html">DK SOR Organization Type</a>
       <button data-clipboard-text="http://hl7.dk/fhir/core/ValueSet/sor-organization-type" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.5.0</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.6.0</td>
     <td>This IG</td>
   </tr>
   <tr>
@@ -3078,7 +3082,7 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceSA'), 'oblig
       <a style="opacity: 1.0" href="ValueSet-dk-core-practice-setting-code.html">DK SOR Practice Setting Code</a>
       <button data-clipboard-text="http://hl7.dk/fhir/core/ValueSet/dk-core-practice-setting-code" title="Click to copy URL" class="btn-copy"></button>
     </td>
-    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.5.0</td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;3.6.0</td>
     <td>This IG</td>
   </tr>
   <tr>
@@ -3100,10 +3104,10 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceSA'), 'oblig
 
         
           
-            <!-- 218 is size of empty table -->
+          <!-- 218 is size of empty table -->
           
             <a name="inv-all-snap"> </a>
-              <!-- Constraints  heading in the fragment -->
+            <!--Constraints  heading in the fragment -->
             <h4>Constraints</h4>
 <table class="list presentation" data-fhir="generated-heirarchy">
   <tr>
@@ -3196,7 +3200,7 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceSA'), 'oblig
         </div>
       </div>
 
-        <!-- <div id="all-xml">
+      <!--<div id="all-xml">
         <p>
           <b>XML Template</b>
         </p>
@@ -3204,10 +3208,10 @@ filterDesc(document.getElementById('dk-core-minimaldocumentreferenceSA'), 'oblig
           <p><span style="color: maroon; font-weight: bold">yet to be done: Xml template</span></p>
 
         </div>
-      </div> -->
+      </div>-->
 
 
-        <!-- <div id="all-json">
+      <!--<div id="all-json">
         <p>
           <b>JSON Template</b>
         </p>
@@ -3302,10 +3306,10 @@ The type is the Canonical URL of Resource Definition that is the type this refer
   }
 
         </div>
-      </div> -->
+      </div>-->
 
 
-        <!-- <div id="all-ttl">
+      <!--<div id="all-ttl">
         <p>
           <b>TTL Template</b>
         </p>
@@ -3313,7 +3317,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
           <p><span style="color: maroon; font-weight: bold">yet to be done: Turtle template</span></p>
 
         </div>
-      </div> -->
+      </div>-->
 
       <div id="all-summ">
         <p>This structure is derived from <a href="https://profiles.ihe.net/ITI/MHD/4.2.3/StructureDefinition-IHE.MHD.Minimal.DocumentReference.html">MinimalDocumentReference</a>
@@ -3346,38 +3350,38 @@ Summary
       </div>
     </div>
   </div>
-  <p>&nbsp;</p>
+  <p>&#160;</p>
   <p>Other representations of profile: <a href="StructureDefinition-dk-core-minimaldocumentreference.csv">CSV</a>, <a href="StructureDefinition-dk-core-minimaldocumentreference.xlsx">Excel</a>, <a href="StructureDefinition-dk-core-minimaldocumentreference.sch">Schematron</a>
  
   </p>
 
   
 
-  <!-- insert notes if present -->
+<!-- insert notes if present -->
 
 
 
 
 </div>
 
-        </div>    <!-- /inner-wrapper -->
-      </div>    <!-- /row -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-content -->
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
 
-  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script src="assets/js/tabs.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/tabs.js"> </script>
 
-  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
-  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
-    <div class="container">    <!-- container -->
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 19, 2025 17:27+0100">2025-12-19</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.6.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 11, 2026 23:16+0100">2026-03-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -3386,26 +3390,27 @@ Summary
                 
           </span>
         </p>
-      </div>    <!-- /inner-wrapper -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-footer -->
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
-    <div class="container">    <!-- container -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
 
-    <!-- JS and analytics only. -->
-    <!-- Bootstrap core JavaScript
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
   ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
-  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
-    <!-- Analytics Below
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
   ================================================== -->
   </body>
 </html>
+

@@ -1,0 +1,15 @@
+{
+  "resourceType" : "Organization",
+  "id" : "dk-core-organization-1",
+  "meta" : {
+    "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization dk-core-organization-1</b></p><a name=\"dk-core-organization-1\"> </a><a name=\"hcdk-core-organization-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-organization.html\">Danish Core Organization Profile</a></p></div><p><b>identifier</b>: <code>http://cvr.dk</code>/64942212</p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://cvr.dk",
+    "value" : "64942212"
+  }]
+}

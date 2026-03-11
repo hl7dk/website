@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelatedPerson xmlns="http://hl7.org/fhir">
+  <id value="AndersRelatedToAli"/>
+  <meta>
+    <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: RelatedPerson AndersRelatedToAli</b></p><a name="AndersRelatedToAli"> </a><a name="hcAndersRelatedToAli"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dk-core-related-person.html">Danish Core Related Person Profile</a></p></div><p><b>identifier</b>: <code>urn:oid:1.2.208.176.1.2</code>/3103979995</p><p><b>patient</b>: <a href="Patient-AliJensen.html">Ali Test Jensen (official) Male, DoB: 2022-01-31 ( urn:oid:1.2.208.176.1.2#3101229995)</a></p><p><b>relationship</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode FTH}">father</span></p><p><b>name</b>: Anders Test Jensen (Official)</p><p><b>gender</b>: Male</p><p><b>birthDate</b>: 1997-03-31</p></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:1.2.208.176.1.2"/>
+    <value value="3103979995"/>
+  </identifier>
+  <patient>
+    <reference value="Patient/AliJensen"/>
+  </patient>
+  <relationship>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="FTH"/>
+    </coding>
+  </relationship>
+  <name>
+    <use value="official"/>
+    <family value="Jensen"/>
+    <given value="Anders"/>
+    <given value="Test"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1997-03-31"/>
+</RelatedPerson>

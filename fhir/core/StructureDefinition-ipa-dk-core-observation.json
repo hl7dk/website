@@ -10,11 +10,11 @@
     "valueCanonical" : "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation"
   }],
   "url" : "http://hl7.dk/fhir/core/StructureDefinition/ipa-dk-core-observation",
-  "version" : "3.5.0",
+  "version" : "3.6.0",
   "name" : "IpaDkCoreObservation",
   "title" : "Danish IPA Core Observation Profile",
   "status" : "active",
-  "date" : "2025-12-19T17:27:08+01:00",
+  "date" : "2026-03-11T23:16:27+01:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",
@@ -74,7 +74,7 @@
   "snapshot" : {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
-      "valueString" : "3.5.0"
+      "valueString" : "3.6.0"
     }],
     "element" : [{
       "id" : "Observation",

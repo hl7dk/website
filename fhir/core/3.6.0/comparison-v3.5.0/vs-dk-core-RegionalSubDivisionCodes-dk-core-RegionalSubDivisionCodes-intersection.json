@@ -1,0 +1,16 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "7fd09ef8-213a-4c9c-8824-29b8b7a600cc-180",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/7fd09ef8-213a-4c9c-8824-29b8b7a600cc-180",
+  "name" : "IntersectionRegionalSubdivisionCodesAndRegionalSubdivisionCodes",
+  "title" : "Intersection of DK Regional Subdivision Codes And DK Regional Subdivision Codes",
+  "status" : "active",
+  "date" : "2026-03-11T23:13:11+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }]
+}

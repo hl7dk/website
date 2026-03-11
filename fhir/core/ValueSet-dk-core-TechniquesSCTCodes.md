@@ -1,4 +1,4 @@
-# DK TechniquesSCTCodes - HL7 FHIR Implementation Guide: DK Core v3.5.0
+# DK TechniquesSCTCodes - HL7 FHIR Implementation Guide: DK Core v3.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/ValueSet/dk-core-TechniquesSCTCodes | *Version*:3.5.0 |
-| Active as of 2025-12-19 | *Computable Name*:TechniquesSCTCodes |
+| *Official URL*:http://hl7.dk/fhir/core/ValueSet/dk-core-TechniquesSCTCodes | *Version*:3.6.0 |
+| Active as of 2026-03-11 | *Computable Name*:TechniquesSCTCodes |
 | **Copyright/Legal**: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement | |
 
  
@@ -47,59 +47,47 @@ SNOMED CT Codes for the technique used when obtaining an observation
   "resourceType" : "ValueSet",
   "id" : "dk-core-TechniquesSCTCodes",
   "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-TechniquesSCTCodes",
-  "version" : "3.5.0",
+  "version" : "3.6.0",
   "name" : "TechniquesSCTCodes",
   "title" : "DK TechniquesSCTCodes",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-19T17:27:08+01:00",
+  "date" : "2026-03-11T23:16:27+01:00",
   "publisher" : "HL7 Denmark",
-  "contact" : [
+  "contact" : [{
+    "name" : "HL7 Denmark",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.dk"
+    },
     {
-      "name" : "HL7 Denmark",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.hl7.dk"
-        },
-        {
-          "system" : "email",
-          "value" : "dk-affiliate@hl7.dk"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "dk-affiliate@hl7.dk"
+    }]
+  }],
   "description" : "SNOMED CT Codes for the technique used when obtaining an observation",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "DK",
-          "display" : "Denmark"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
   "copyright" : "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/554471000005108",
+      "concept" : [{
+        "code" : "761996005"
+      },
       {
-        "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/554471000005108",
-        "concept" : [
-          {
-            "code" : "761996005"
-          },
-          {
-            "code" : "733985002"
-          },
-          {
-            "code" : "272391002"
-          }
-        ]
-      }
-    ]
+        "code" : "733985002"
+      },
+      {
+        "code" : "272391002"
+      }]
+    }]
   }
 }
 

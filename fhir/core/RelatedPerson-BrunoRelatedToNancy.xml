@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelatedPerson xmlns="http://hl7.org/fhir">
+  <id value="BrunoRelatedToNancy"/>
+  <meta>
+    <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: RelatedPerson BrunoRelatedToNancy</b></p><a name="BrunoRelatedToNancy"> </a><a name="hcBrunoRelatedToNancy"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dk-core-related-person.html">Danish Core Related Person Profile</a></p></div><p><b>identifier</b>: <code>urn:oid:1.2.208.176.1.2</code>/2509479989</p><p><b>patient</b>: <a href="Patient-NancyAnn.html">Nancy Ann Test Berggren (official) Female, DoB: 1948-12-25 ( urn:oid:1.2.208.176.1.2#2512489996)</a></p><p><b>relationship</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode SIB}">sibling</span></p><p><b>name</b>: Bruno Test Elmer (Official)</p><p><b>gender</b>: Male</p><p><b>birthDate</b>: 1947-09-25</p></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:1.2.208.176.1.2"/>
+    <value value="2509479989"/>
+  </identifier>
+  <patient>
+    <reference value="Patient/NancyAnn"/>
+  </patient>
+  <relationship>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="SIB"/>
+    </coding>
+  </relationship>
+  <name>
+    <use value="official"/>
+    <family value="Elmer"/>
+    <given value="Bruno"/>
+    <given value="Test"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1947-09-25"/>
+</RelatedPerson>

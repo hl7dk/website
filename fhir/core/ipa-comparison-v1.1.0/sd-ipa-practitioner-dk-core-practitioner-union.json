@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-86",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-86",
+  "id" : "6093be53-3d1d-48b0-b3bb-67287619f74a-86",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/6093be53-3d1d-48b0-b3bb-67287619f74a-86",
   "name" : "UnionIPAPractitionerAndDkCorePractitioner",
   "title" : "Union of IPA-Practitioner And Danish Core Practitioner Profile",
   "status" : "active",
-  "date" : "2025-12-19T17:28:19+01:00",
+  "date" : "2026-03-11T23:17:49+01:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -204,7 +204,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-5"
       }
     },
     {
@@ -962,7 +962,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-5"
       },
       "mapping" : [{
         "identity" : "v2",

@@ -1,0 +1,58 @@
+{
+  "resourceType" : "Patient",
+  "id" : "Schwendlund",
+  "meta" : {
+    "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient Schwendlund</b></p><a name=\"Schwendlund\"> </a><a name=\"hcSchwendlund\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-patient.html\">Danish Core Patient Profile</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Schwendlund Test Mosebryggersen (official) Male, DoB: 1958-08-01 ( urn:oid:1.2.208.176.1.2#0108589995)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td colspan=\"3\"><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">Testgrusgraven 3, 3.tv 3400 </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>Also see: <a href=\"Patient-MayJune.html\">May June Test Moberg (official) Female, DoB: 1962-08-01 ( urn:oid:1.2.208.176.1.2#0108629996)</a></li></ul></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "urn:oid:1.2.208.176.1.2",
+    "value" : "0108589995"
+  }],
+  "name" : [{
+    "use" : "official",
+    "family" : "Mosebryggersen",
+    "given" : ["Schwendlund",
+    "Test"]
+  }],
+  "gender" : "male",
+  "birthDate" : "1958-08-01",
+  "address" : [{
+    "extension" : [{
+      "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0219"
+        }]
+      }
+    },
+    {
+      "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166:-2",
+          "code" : "DK-84"
+        }]
+      }
+    }],
+    "line" : ["Testgrusgraven 3, 3.tv"],
+    "postalCode" : "3400"
+  }],
+  "maritalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "code" : "M",
+      "display" : "Married"
+    }]
+  },
+  "link" : [{
+    "other" : {
+      "reference" : "Patient/MayJune"
+    },
+    "type" : "seealso"
+  }]
+}

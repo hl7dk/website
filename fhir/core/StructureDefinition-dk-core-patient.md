@@ -1,4 +1,4 @@
-# Danish Core Patient Profile - HL7 FHIR Implementation Guide: DK Core v3.5.0
+# Danish Core Patient Profile - HL7 FHIR Implementation Guide: DK Core v3.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient | *Version*:3.5.0 |
-| Active as of 2025-12-19 | *Computable Name*:DkCorePatient |
+| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient | *Version*:3.6.0 |
+| Active as of 2026-03-11 | *Computable Name*:DkCorePatient |
 
  
 HL7 Denmark core profile for a patient 
@@ -90,8 +90,8 @@ There may be scenarios where it is not possible to supply all values as required
 **Usages:**
 
 * Derived from this Profile: [Danish IPA Core Patient Profile](StructureDefinition-ipa-dk-core-patient.md)
-* Refer to this Profile: [Danish Core Condition Profile](StructureDefinition-dk-core-condition.md), [Danish Core Encounter Profile](StructureDefinition-dk-core-encounter.md), [Danish Core Minimal DocumentReference Profile](StructureDefinition-dk-core-minimaldocumentreference.md), [Danish Core Observation Profile](StructureDefinition-dk-core-observation.md)...Show 3 more,[Danish Core Patient Profile](StructureDefinition-dk-core-patient.md),[Danish Core Person ServiceRequest Profile](StructureDefinition-dk-core-person-servicerequest.md)and[Danish Core Related Person Profile](StructureDefinition-dk-core-related-person.md)
-* Examples for this Profile: [Patient/283](Patient-283.md), [Patient/37628912-7816-47a3-acd8-396b610be142](Patient-37628912-7816-47a3-acd8-396b610be142.md), [Patient/Confidential](Patient-Confidential.md), [Patient/Max](Patient-Max.md)...Show 6 more,[Patient/Poul](Patient-Poul.md),[Patient/else](Patient-else.md),[Patient/john](Patient-john.md),[Patient/ukendt-D-eCPR](Patient-ukendt-D-eCPR.md),[Patient/ukendt-X-eCPR](Patient-ukendt-X-eCPR.md)and[Patient/ukendt](Patient-ukendt.md)
+* Refer to this Profile: [Danish Core Condition Profile](StructureDefinition-dk-core-condition.md), [Danish Core Encounter Profile](StructureDefinition-dk-core-encounter.md), [Danish Core Minimal DocumentReference Profile](StructureDefinition-dk-core-minimaldocumentreference.md), [Danish Core Observation Profile](StructureDefinition-dk-core-observation.md)... Show 3 more, [Danish Core Patient Profile](StructureDefinition-dk-core-patient.md), [Danish Core Person ServiceRequest Profile](StructureDefinition-dk-core-person-servicerequest.md) and [Danish Core Related Person Profile](StructureDefinition-dk-core-related-person.md)
+* Examples for this Profile: [Patient/283](Patient-283.md), [Patient/37628912-7816-47a3-acd8-396b610be142](Patient-37628912-7816-47a3-acd8-396b610be142.md), [Patient/Aage](Patient-Aage.md), [Patient/AliJensen](Patient-AliJensen.md)... Show 44 more, [Patient/AndersJensen](Patient-AndersJensen.md), [Patient/AyaBerggren](Patient-AyaBerggren.md), [Patient/BoVestergaard](Patient-BoVestergaard.md), [Patient/BritaBerggren](Patient-BritaBerggren.md), [Patient/Bruno](Patient-Bruno.md), [Patient/CaesarOestergaard](Patient-CaesarOestergaard.md), [Patient/Confidential](Patient-Confidential.md), [Patient/DrengLevendefodt2016](Patient-DrengLevendefodt2016.md), [Patient/DrengLevendefodt2024](Patient-DrengLevendefodt2024.md), [Patient/EK](Patient-EK.md), [Patient/Einer](Patient-Einer.md), [Patient/EllenLouise](Patient-EllenLouise.md), [Patient/ElseLauridsen](Patient-ElseLauridsen.md), [Patient/GitteNancy](Patient-GitteNancy.md), [Patient/JulianeJoergensen](Patient-JulianeJoergensen.md), [Patient/KajaHansen](Patient-KajaHansen.md), [Patient/KirstenBerggren](Patient-KirstenBerggren.md), [Patient/KnutOdvar](Patient-KnutOdvar.md), [Patient/LarsBerggren](Patient-LarsBerggren.md), [Patient/Lonni](Patient-Lonni.md), [Patient/Magnus](Patient-Magnus.md), [Patient/Max](Patient-Max.md), [Patient/MaxBerggren](Patient-MaxBerggren.md), [Patient/MayJune](Patient-MayJune.md), [Patient/MuhammedAbdul](Patient-MuhammedAbdul.md), [Patient/NancyAnn](Patient-NancyAnn.md), [Patient/NielsVendelboe](Patient-NielsVendelboe.md), [Patient/OddHaugen](Patient-OddHaugen.md), [Patient/PiaBerggren](Patient-PiaBerggren.md), [Patient/PigeLevendefodt2016](Patient-PigeLevendefodt2016.md), [Patient/PigeLevendefodt2024](Patient-PigeLevendefodt2024.md), [Patient/Poul](Patient-Poul.md), [Patient/Rasmus](Patient-Rasmus.md), [Patient/RikkeBerggren](Patient-RikkeBerggren.md), [Patient/RuddiBerggren](Patient-RuddiBerggren.md), [Patient/Schwendlund](Patient-Schwendlund.md), [Patient/SilleJune](Patient-SilleJune.md), [Patient/Sverre](Patient-Sverre.md), [Patient/Torre](Patient-Torre.md), [Patient/else](Patient-else.md), [Patient/john](Patient-john.md), [Patient/ukendt-D-eCPR](Patient-ukendt-D-eCPR.md), [Patient/ukendt-X-eCPR](Patient-ukendt-X-eCPR.md) and [Patient/ukendt](Patient-ukendt.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.dk.core|current/StructureDefinition/dk-core-patient)
 
@@ -116,324 +116,264 @@ Note: feedback is most welcome and should be directed to the danish affiliate's 
   "resourceType" : "StructureDefinition",
   "id" : "dk-core-patient",
   "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient",
-  "version" : "3.5.0",
+  "version" : "3.6.0",
   "name" : "DkCorePatient",
   "title" : "Danish Core Patient Profile",
   "status" : "active",
-  "date" : "2025-12-19T17:27:08+01:00",
+  "date" : "2026-03-11T23:16:27+01:00",
   "publisher" : "HL7 Denmark",
-  "contact" : [
+  "contact" : [{
+    "name" : "HL7 Denmark",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.dk"
+    },
     {
-      "name" : "HL7 Denmark",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.hl7.dk"
-        },
-        {
-          "system" : "email",
-          "value" : "dk-affiliate@hl7.dk"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "dk-affiliate@hl7.dk"
+    }]
+  }],
   "description" : "HL7 Denmark core profile for a patient",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "DK",
-          "display" : "Denmark"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "cda",
-      "uri" : "http://hl7.org/v3/cda",
-      "name" : "CDA (R2)"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "loinc",
-      "uri" : "http://loinc.org",
-      "name" : "LOINC code for the element"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "cda",
+    "uri" : "http://hl7.org/v3/cda",
+    "name" : "CDA (R2)"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "loinc",
+    "uri" : "http://loinc.org",
+    "name" : "LOINC code for the element"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "Patient",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Patient",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Patient",
-        "path" : "Patient",
-        "constraint" : [
-          {
-            "key" : "marital-status-unknown-usage",
-            "requirements" : "Marital status is legally unknown in Denmark",
-            "severity" : "warning",
-            "human" : "The constraint ensures that only permitted forms of marriage can be used in the Danish context, as there will be no authority for other forms. See https://cpr.dk/borgere/hvad-staar-der-om-mig-i-cpr-registerindsigt/hvad-og-hvem-er-registreret-i-cpr-og-hvem-opdaterer-oplysninger-om-dig-i-cpr/",
-            "expression" : "maritalStatus.coding.where(code = 'P' and system = 'http://terminology.hl7.org/CodeSystem/v3-MaritalStatus').empty() or maritalStatus.coding.where(code = 'A' and system = 'http://terminology.hl7.org/CodeSystem/v3-MaritalStatus').empty()",
-            "source" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
-          }
-        ]
+    "element" : [{
+      "id" : "Patient",
+      "path" : "Patient",
+      "constraint" : [{
+        "key" : "marital-status-unknown-usage",
+        "requirements" : "Marital status is legally unknown in Denmark",
+        "severity" : "warning",
+        "human" : "The constraint ensures that only permitted forms of marriage can be used in the Danish context, as there will be no authority for other forms. See https://cpr.dk/borgere/hvad-staar-der-om-mig-i-cpr-registerindsigt/hvad-og-hvem-er-registreret-i-cpr-og-hvem-opdaterer-oplysninger-om-dig-i-cpr/",
+        "expression" : "maritalStatus.coding.where(code = 'P' and system = 'http://terminology.hl7.org/CodeSystem/v3-MaritalStatus').empty() or maritalStatus.coding.where(code = 'A' and system = 'http://terminology.hl7.org/CodeSystem/v3-MaritalStatus').empty()",
+        "source" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+      }]
+    },
+    {
+      "id" : "Patient.identifier",
+      "path" : "Patient.identifier",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "system"
+        }],
+        "rules" : "open"
       },
-      {
-        "id" : "Patient.identifier",
-        "path" : "Patient.identifier",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "system"
-            }
-          ],
-          "rules" : "open"
-        },
-        "min" : 1
-      },
-      {
-        "id" : "Patient.identifier:cpr",
-        "path" : "Patient.identifier",
-        "sliceName" : "cpr",
-        "short" : "[DA] cpr-nummer, som det fremgår af CPR registeret",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Identifier",
-            "profile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-cpr-identifier"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Patient.identifier:x-ecpr",
-        "path" : "Patient.identifier",
-        "sliceName" : "x-ecpr",
-        "short" : "[DA] X-eCPR, tildelt fra den nationale eCPR service",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Identifier",
-            "profile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-x-ecpr-identifier"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Patient.identifier:d-ecpr",
-        "path" : "Patient.identifier",
-        "sliceName" : "d-ecpr",
-        "short" : "[DA] D-eCPR, decentral eCPR",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Identifier",
-            "profile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-d-ecpr-identifier"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Patient.name",
-        "path" : "Patient.name",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "use"
-            }
-          ],
-          "rules" : "open"
-        }
-      },
-      {
-        "id" : "Patient.name:official",
-        "path" : "Patient.name",
-        "sliceName" : "official",
-        "short" : "[DA] Officielt navn, som det fremgår af CPR registeret",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "Patient.name:official.use",
-        "path" : "Patient.name.use",
-        "min" : 1,
-        "fixedCode" : "official"
-      },
-      {
-        "id" : "Patient.name:official.family",
-        "path" : "Patient.name.family",
-        "min" : 1
-      },
-      {
-        "id" : "Patient.address",
-        "path" : "Patient.address",
-        "definition" : "An address for the individual. Danish addresses must comply with directions issued by https://dawa.aws.dk/ and underlying authorities"
-      },
-      {
-        "id" : "Patient.address.extension:municipalityCode",
-        "path" : "Patient.address.extension",
-        "sliceName" : "municipalityCode",
-        "short" : "[DA] Kommunekode",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Patient.address.extension:regionalSubDivisionCodes",
-        "path" : "Patient.address.extension",
-        "sliceName" : "regionalSubDivisionCodes",
-        "short" : "[DA] Regionskode",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Patient.address.extension:address-official",
-        "path" : "Patient.address.extension",
-        "sliceName" : "address-official",
-        "short" : "Indicate that this address is meant to be the 'official' address for that person. This can be indicated by setting the boolean to 'true' or adding a code for the country, e.g. 'DK'. In Denmark the official is the address registered in the CPR-register, see: https://www.retsinformation.dk/eli/lta/2023/1010.",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : ["http://hl7.org/fhir/StructureDefinition/address-official"]
-          }
-        ]
-      },
-      {
-        "id" : "Patient.maritalStatus",
-        "path" : "Patient.maritalStatus",
-        "binding" : {
-          "strength" : "extensible",
-          "valueSet" : "http://hl7.dk/fhir/core/ValueSet/dk-marital-status"
-        }
-      },
-      {
-        "id" : "Patient.contact.relationship",
-        "path" : "Patient.contact.relationship",
-        "binding" : {
-          "strength" : "extensible",
-          "valueSet" : "http://hl7.dk/fhir/core/ValueSet/extended-patient-contactrelationship"
-        }
-      },
-      {
-        "id" : "Patient.generalPractitioner",
-        "path" : "Patient.generalPractitioner",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "identifier.system"
-            }
-          ],
-          "rules" : "open"
-        },
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization",
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner",
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Patient.generalPractitioner:referencedSORUnit",
-        "path" : "Patient.generalPractitioner",
-        "sliceName" : "referencedSORUnit",
-        "short" : "[DA] Praktiserende læges SOR-id på sundhedsinstistutionsniveau",
-        "min" : 0,
-        "max" : "*"
-      },
-      {
-        "id" : "Patient.generalPractitioner:referencedSORUnit.identifier",
-        "path" : "Patient.generalPractitioner.identifier",
-        "type" : [
-          {
-            "code" : "Identifier",
-            "profile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-sor-identifier"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Patient.managingOrganization",
-        "path" : "Patient.managingOrganization",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "Patient.link.other",
-        "path" : "Patient.link.other",
-        "type" : [
-          {
-            "extension" : [
-              {
-                "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
-                "valueBoolean" : false
-              }
-            ],
-            "code" : "Reference",
-            "targetProfile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient",
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"
-            ]
-          }
-        ]
+      "min" : 1
+    },
+    {
+      "id" : "Patient.identifier:cpr",
+      "path" : "Patient.identifier",
+      "sliceName" : "cpr",
+      "short" : "[DA] cpr-nummer, som det fremgår af CPR registeret",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier",
+        "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-cpr-identifier"]
+      }]
+    },
+    {
+      "id" : "Patient.identifier:x-ecpr",
+      "path" : "Patient.identifier",
+      "sliceName" : "x-ecpr",
+      "short" : "[DA] X-eCPR, tildelt fra den nationale eCPR service",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier",
+        "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-x-ecpr-identifier"]
+      }]
+    },
+    {
+      "id" : "Patient.identifier:d-ecpr",
+      "path" : "Patient.identifier",
+      "sliceName" : "d-ecpr",
+      "short" : "[DA] D-eCPR, decentral eCPR",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier",
+        "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-d-ecpr-identifier"]
+      }]
+    },
+    {
+      "id" : "Patient.name",
+      "path" : "Patient.name",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "use"
+        }],
+        "rules" : "open"
       }
-    ]
+    },
+    {
+      "id" : "Patient.name:official",
+      "path" : "Patient.name",
+      "sliceName" : "official",
+      "short" : "[DA] Officielt navn, som det fremgår af CPR registeret",
+      "min" : 0,
+      "max" : "1"
+    },
+    {
+      "id" : "Patient.name:official.use",
+      "path" : "Patient.name.use",
+      "min" : 1,
+      "fixedCode" : "official"
+    },
+    {
+      "id" : "Patient.name:official.family",
+      "path" : "Patient.name.family",
+      "min" : 1
+    },
+    {
+      "id" : "Patient.address",
+      "path" : "Patient.address",
+      "definition" : "An address for the individual. Danish addresses must comply with directions issued by https://dawa.aws.dk/ and underlying authorities"
+    },
+    {
+      "id" : "Patient.address.extension:municipalityCode",
+      "path" : "Patient.address.extension",
+      "sliceName" : "municipalityCode",
+      "short" : "[DA] Kommunekode",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes"]
+      }]
+    },
+    {
+      "id" : "Patient.address.extension:regionalSubDivisionCodes",
+      "path" : "Patient.address.extension",
+      "sliceName" : "regionalSubDivisionCodes",
+      "short" : "[DA] Regionskode",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes"]
+      }]
+    },
+    {
+      "id" : "Patient.address.extension:address-official",
+      "path" : "Patient.address.extension",
+      "sliceName" : "address-official",
+      "short" : "Indicate that this address is meant to be the 'official' address for that person. This can be indicated by setting the boolean to 'true' or adding a code for the country, e.g. 'DK'. In Denmark the official is the address registered in the CPR-register, see: https://www.retsinformation.dk/eli/lta/2023/1010.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/address-official"]
+      }]
+    },
+    {
+      "id" : "Patient.maritalStatus",
+      "path" : "Patient.maritalStatus",
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://hl7.dk/fhir/core/ValueSet/dk-marital-status"
+      }
+    },
+    {
+      "id" : "Patient.contact.relationship",
+      "path" : "Patient.contact.relationship",
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://hl7.dk/fhir/core/ValueSet/extended-patient-contactrelationship"
+      }
+    },
+    {
+      "id" : "Patient.generalPractitioner",
+      "path" : "Patient.generalPractitioner",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "identifier.system"
+        }],
+        "rules" : "open"
+      },
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization",
+        "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner",
+        "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"]
+      }]
+    },
+    {
+      "id" : "Patient.generalPractitioner:referencedSORUnit",
+      "path" : "Patient.generalPractitioner",
+      "sliceName" : "referencedSORUnit",
+      "short" : "[DA] Praktiserende læges SOR-id på sundhedsinstistutionsniveau",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Patient.generalPractitioner:referencedSORUnit.identifier",
+      "path" : "Patient.generalPractitioner.identifier",
+      "type" : [{
+        "code" : "Identifier",
+        "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-sor-identifier"]
+      }]
+    },
+    {
+      "id" : "Patient.managingOrganization",
+      "path" : "Patient.managingOrganization",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"]
+      }]
+    },
+    {
+      "id" : "Patient.link.other",
+      "path" : "Patient.link.other",
+      "type" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
+          "valueBoolean" : false
+        }],
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient",
+        "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"]
+      }]
+    }]
   }
 }
 

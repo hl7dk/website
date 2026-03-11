@@ -1,15 +1,15 @@
-# DK Address Type - HL7 FHIR Implementation Guide: DK Core v3.5.0
+# DK Address Type Supplement - HL7 FHIR Implementation Guide: DK Core v3.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **DK Address Type**
+* **DK Address Type Supplement**
 
-## CodeSystem: DK Address Type 
+## CodeSystem: DK Address Type Supplement 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/CodeSystem/address-type-dk-supplement | *Version*:3.5.0 |
-| Active as of 2025-12-19 | *Computable Name*:AddressType |
+| *Official URL*:http://hl7.dk/fhir/core/CodeSystem/address-type-dk-supplement | *Version*:3.6.0 |
+| Active as of 2026-03-11 | *Computable Name*:AddressType |
 
  
 The type of an address (physical / postal) 
@@ -27,86 +27,67 @@ The type of an address (physical / postal)
   "resourceType" : "CodeSystem",
   "id" : "address-type-dk-supplement",
   "url" : "http://hl7.dk/fhir/core/CodeSystem/address-type-dk-supplement",
-  "version" : "3.5.0",
+  "version" : "3.6.0",
   "name" : "AddressType",
-  "title" : "DK Address Type",
+  "title" : "DK Address Type Supplement",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-19T17:27:08+01:00",
+  "date" : "2026-03-11T23:16:27+01:00",
   "publisher" : "HL7 Denmark",
-  "contact" : [
+  "contact" : [{
+    "name" : "HL7 Denmark",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.dk"
+    },
     {
-      "name" : "HL7 Denmark",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.hl7.dk"
-        },
-        {
-          "system" : "email",
-          "value" : "dk-affiliate@hl7.dk"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "dk-affiliate@hl7.dk"
+    }]
+  }],
   "description" : "The type of an address (physical / postal)",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "DK",
-          "display" : "Denmark"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
   "content" : "supplement",
   "supplements" : "http://hl7.org/fhir/address-type",
-  "concept" : [
-    {
-      "code" : "postal",
-      "designation" : [
-        {
-          "language" : "da",
-          "use" : {
-            "system" : "http://snomed.info/sct",
-            "version" : "http://snomed.info/sct/554471000005108",
-            "code" : "900000000000013009"
-          },
-          "value" : "Post"
-        }
-      ]
-    },
-    {
-      "code" : "physical",
-      "designation" : [
-        {
-          "language" : "da",
-          "use" : {
-            "system" : "http://snomed.info/sct",
-            "version" : "http://snomed.info/sct/554471000005108",
-            "code" : "900000000000013009"
-          },
-          "value" : "Fysisk"
-        }
-      ]
-    },
-    {
-      "code" : "both",
-      "designation" : [
-        {
-          "language" : "da",
-          "use" : {
-            "system" : "http://snomed.info/sct",
-            "version" : "http://snomed.info/sct/554471000005108",
-            "code" : "900000000000013009"
-          },
-          "value" : "Post & fysisk"
-        }
-      ]
-    }
-  ]
+  "concept" : [{
+    "code" : "postal",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Post"
+    }]
+  },
+  {
+    "code" : "physical",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Fysisk"
+    }]
+  },
+  {
+    "code" : "both",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Post & fysisk"
+    }]
+  }]
 }
 
 ```

@@ -1,0 +1,24 @@
+{
+  "resourceType" : "Group",
+  "id" : "LevendefodtTwins2024",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Group LevendefodtTwins2024</b></p><a name=\"LevendefodtTwins2024\"> </a><a name=\"hcLevendefodtTwins2024\"> </a><p><b>type</b>: Person</p><p><b>actual</b>: true</p><p><b>name</b>: Levendefødt tvillinger 2024</p><p><b>quantity</b>: 2</p><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-DrengLevendefodt2024.html\">Dreng Test Levendefødt (tvilling)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-PigeLevendefodt2024.html\">Pige Test Levendefødt (tvilling)</a></p></blockquote></div>"
+  },
+  "type" : "person",
+  "actual" : true,
+  "name" : "Levendefødt tvillinger 2024",
+  "quantity" : 2,
+  "member" : [{
+    "entity" : {
+      "reference" : "Patient/DrengLevendefodt2024",
+      "display" : "Dreng Test Levendefødt (tvilling)"
+    }
+  },
+  {
+    "entity" : {
+      "reference" : "Patient/PigeLevendefodt2024",
+      "display" : "Pige Test Levendefødt (tvilling)"
+    }
+  }]
+}

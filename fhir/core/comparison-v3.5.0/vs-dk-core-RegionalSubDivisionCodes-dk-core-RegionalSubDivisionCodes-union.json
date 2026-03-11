@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "6a74e714-c9a7-4226-8cc2-b29badab828c-179",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/6a74e714-c9a7-4226-8cc2-b29badab828c-179",
+  "name" : "UnionRegionalSubdivisionCodesAndRegionalSubdivisionCodes",
+  "title" : "Union of DK Regional Subdivision Codes And DK Regional Subdivision Codes",
+  "status" : "active",
+  "date" : "2026-03-11T23:17:48+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "DK-84"
+      },
+      {
+        "code" : "DK-82"
+      },
+      {
+        "code" : "DK-81"
+      },
+      {
+        "code" : "DK-85"
+      },
+      {
+        "code" : "DK-83"
+      }]
+    }]
+  }
+}

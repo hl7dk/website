@@ -1,4 +1,4 @@
-# DK priority codes for encounters - HL7 FHIR Implementation Guide: DK Core v3.5.0
+# DK priority codes for encounters - HL7 FHIR Implementation Guide: DK Core v3.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/ValueSet/dk-core-encounter-priority | *Version*:3.5.0 |
-| Active as of 2025-12-19 | *Computable Name*:DkCoreEncounterPriority |
+| *Official URL*:http://hl7.dk/fhir/core/ValueSet/dk-core-encounter-priority | *Version*:3.6.0 |
+| Active as of 2026-03-11 | *Computable Name*:DkCoreEncounterPriority |
 
  
 Value set used for indicating priority of an encounter 
@@ -46,54 +46,42 @@ Value set used for indicating priority of an encounter
   "resourceType" : "ValueSet",
   "id" : "dk-core-encounter-priority",
   "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-encounter-priority",
-  "version" : "3.5.0",
+  "version" : "3.6.0",
   "name" : "DkCoreEncounterPriority",
   "title" : "DK priority codes for encounters",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-19T17:27:08+01:00",
+  "date" : "2026-03-11T23:16:27+01:00",
   "publisher" : "HL7 Denmark",
-  "contact" : [
+  "contact" : [{
+    "name" : "HL7 Denmark",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.dk"
+    },
     {
-      "name" : "HL7 Denmark",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.hl7.dk"
-        },
-        {
-          "system" : "email",
-          "value" : "dk-affiliate@hl7.dk"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "dk-affiliate@hl7.dk"
+    }]
+  }],
   "description" : "Value set used for indicating priority of an encounter",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "DK",
-          "display" : "Denmark"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
+      "concept" : [{
+        "code" : "A"
+      },
       {
-        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
-        "concept" : [
-          {
-            "code" : "A"
-          },
-          {
-            "code" : "EL"
-          }
-        ]
-      }
-    ]
+        "code" : "EL"
+      }]
+    }]
   }
 }
 

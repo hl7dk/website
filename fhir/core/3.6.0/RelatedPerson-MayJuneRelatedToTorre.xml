@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelatedPerson xmlns="http://hl7.org/fhir">
+  <id value="MayJuneRelatedToTorre"/>
+  <meta>
+    <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: RelatedPerson MayJuneRelatedToTorre</b></p><a name="MayJuneRelatedToTorre"> </a><a name="hcMayJuneRelatedToTorre"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dk-core-related-person.html">Danish Core Related Person Profile</a></p></div><p><b>identifier</b>: <code>urn:oid:1.2.208.176.1.2</code>/0108629996</p><p><b>patient</b>: <a href="Patient-Torre.html">Torre Test Mosebryggersen (official) Male, DoB: 1990-04-01 ( urn:oid:1.2.208.176.1.2#0104909989)</a></p><p><b>relationship</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode MTH}">mother</span></p><p><b>name</b>: May June Test Moberg (Official)</p><p><b>gender</b>: Female</p><p><b>birthDate</b>: 1962-08-01</p></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:1.2.208.176.1.2"/>
+    <value value="0108629996"/>
+  </identifier>
+  <patient>
+    <reference value="Patient/Torre"/>
+  </patient>
+  <relationship>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="MTH"/>
+    </coding>
+  </relationship>
+  <name>
+    <use value="official"/>
+    <family value="Moberg"/>
+    <given value="May"/>
+    <given value="June"/>
+    <given value="Test"/>
+  </name>
+  <gender value="female"/>
+  <birthDate value="1962-08-01"/>
+</RelatedPerson>

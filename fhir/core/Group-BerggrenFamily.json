@@ -1,0 +1,84 @@
+{
+  "resourceType" : "Group",
+  "id" : "BerggrenFamily",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Group BerggrenFamily</b></p><a name=\"BerggrenFamily\"> </a><a name=\"hcBerggrenFamily\"> </a><p><b>type</b>: Person</p><p><b>actual</b>: true</p><p><b>name</b>: Berggren familien</p><p><b>quantity</b>: 12</p><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-Aage.html\">Åge Test Berggren (bedstefar/oldefar)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-NancyAnn.html\">Nancy Ann Test Berggren (bedstemor)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-Bruno.html\">Bruno Test Elmer (Nancys bror)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-MaxBerggren.html\">Max Test Berggren (Nancys søn)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-RuddiBerggren.html\">Ruddi Test Berggren (Nancys søn)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-KirstenBerggren.html\">Kirsten Test Berggren (Nancys datter)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-BritaBerggren.html\">Brita Test Berggren (Nancys datter)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-PiaBerggren.html\">Pia Test Berggren (Kirstens datter)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-GitteNancy.html\">Gitte Nancy Test Berggren (Kirstens datter)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-LarsBerggren.html\">Lars Test Berggren (Kirstens søn)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-RikkeBerggren.html\">Rikke Test Berggren (Kirstens datter)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-AyaBerggren.html\">Aya Test Berggren (Kirstens datter)</a></p></blockquote></div>"
+  },
+  "type" : "person",
+  "actual" : true,
+  "name" : "Berggren familien",
+  "quantity" : 12,
+  "member" : [{
+    "entity" : {
+      "reference" : "Patient/Aage",
+      "display" : "Åge Test Berggren (bedstefar/oldefar)"
+    }
+  },
+  {
+    "entity" : {
+      "reference" : "Patient/NancyAnn",
+      "display" : "Nancy Ann Test Berggren (bedstemor)"
+    }
+  },
+  {
+    "entity" : {
+      "reference" : "Patient/Bruno",
+      "display" : "Bruno Test Elmer (Nancys bror)"
+    }
+  },
+  {
+    "entity" : {
+      "reference" : "Patient/MaxBerggren",
+      "display" : "Max Test Berggren (Nancys søn)"
+    }
+  },
+  {
+    "entity" : {
+      "reference" : "Patient/RuddiBerggren",
+      "display" : "Ruddi Test Berggren (Nancys søn)"
+    }
+  },
+  {
+    "entity" : {
+      "reference" : "Patient/KirstenBerggren",
+      "display" : "Kirsten Test Berggren (Nancys datter)"
+    }
+  },
+  {
+    "entity" : {
+      "reference" : "Patient/BritaBerggren",
+      "display" : "Brita Test Berggren (Nancys datter)"
+    }
+  },
+  {
+    "entity" : {
+      "reference" : "Patient/PiaBerggren",
+      "display" : "Pia Test Berggren (Kirstens datter)"
+    }
+  },
+  {
+    "entity" : {
+      "reference" : "Patient/GitteNancy",
+      "display" : "Gitte Nancy Test Berggren (Kirstens datter)"
+    }
+  },
+  {
+    "entity" : {
+      "reference" : "Patient/LarsBerggren",
+      "display" : "Lars Test Berggren (Kirstens søn)"
+    }
+  },
+  {
+    "entity" : {
+      "reference" : "Patient/RikkeBerggren",
+      "display" : "Rikke Test Berggren (Kirstens datter)"
+    }
+  },
+  {
+    "entity" : {
+      "reference" : "Patient/AyaBerggren",
+      "display" : "Aya Test Berggren (Kirstens datter)"
+    }
+  }]
+}

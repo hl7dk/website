@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core"/>
-  <version value="3.5.0"/>
+  <version value="3.6.0"/>
   <name value="DKCore"/>
   <title value="HL7 FHIR Implementation Guide: DK Core"/>
   <status value="active"/>
-  <date value="2025-12-19T17:27:08+01:00"/>
+  <date value="2026-03-11T23:16:27+01:00"/>
   <publisher value="HL7 Denmark"/>
   <contact>
     <name value="HL7 Denmark"/>
@@ -41,10 +41,10 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="7.0.1"/>
+    <version value="7.1.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_uv_extensions_r4">
-    <uri value="http://hl7.org/fhir/extensions"/>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
     <version value="5.3.0-ballot-tc1"/>
   </dependsOn>
@@ -126,14 +126,6 @@
       </extension>
       <extension url="value">
         <valueString value="urn:oid:1.2.208.176.2.4.12"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://npu-terminology.org"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -402,14 +394,6 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
-        <valueCode value="special-url"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://npu-terminology.org"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
         <valueCode value="path-expansion-params"/>
       </extension>
       <extension url="value">
@@ -624,6 +608,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/AliJensen"/>
+      </reference>
+      <name value="Ali Test Jensen - søn af Anders"/>
+      <description value="Ali Test Jensen - Søn af Anders Jensen"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Location"/>
       </extension>
       <reference>
@@ -646,6 +641,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/AndersRelatedToAli"/>
+      </reference>
+      <name value="Anders som far til Ali"/>
+      <description value="Anders er far til Ali"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/AndersJensen"/>
+      </reference>
+      <name value="Anders Test Jensen - far til Ali"/>
+      <description value="Anders Test Jensen - Far til Ali Jensen"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="DocumentReference"/>
       </extension>
       <reference>
@@ -654,6 +671,72 @@
       <name value="APD-DK DocumentReference instance of DkCoreMinimalDocumentReference."/>
       <description value="APD-DK DocumentReference instance of DkCoreMinimalDocumentReference, containing relevant metadata"/>
       <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-minimaldocumentreference"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/AyaBerggren"/>
+      </reference>
+      <name value="Aya Test Berggren - datter af Kirsten"/>
+      <description value="Aya Test Berggren - Datter af Kirsten Berggren"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Group"/>
+      </extension>
+      <reference>
+        <reference value="Group/BerggrenFamily"/>
+      </reference>
+      <name value="Berggren familien"/>
+      <description value="Familiegruppe: Nancy Ann Berggren med far Åge, bror Bruno, børn Max, Ruddi, Kirsten, Brita og børnebørn Pia, Gitte, Lars, Rikke, Aya"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/BoVestergaard"/>
+      </reference>
+      <name value="Bo Test Vestergaard"/>
+      <description value="Bo Test Vestergaard - testpatient"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/BritaBerggren"/>
+      </reference>
+      <name value="Brita Test Berggren - datter af Nancy"/>
+      <description value="Brita Test Berggren - Datter af Nancy. Værge: Nancy"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/BrunoRelatedToNancy"/>
+      </reference>
+      <name value="Bruno som bror til Nancy"/>
+      <description value="Bruno er bror til Nancy"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Bruno"/>
+      </reference>
+      <name value="Bruno Test Elmer - bror til Nancy"/>
+      <description value="Bruno Test Elmer - Bror til Nancy"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -742,6 +825,17 @@
       <name value="cpr"/>
       <description value="The Danish civil registration system (&quot;CPR&quot;) encompasses basic personal data about anyone with a civil registration number. A civil registration number shall be allocated to anyone who: 1) is registered in the national register in Denmark on the grounds of birth or relocation from abroad; 2) is included under Arbejdsmarkedets TillægsPension (ATP); 3) according to the tax authorities, is required to have a civil registration number for the purpose of tax processing in Denmark."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/CaesarOestergaard"/>
+      </reference>
+      <name value="Cæsar Test Østergård - markeret som afdød"/>
+      <description value="Cæsar Test Østergård - Markeret som 'Afdød' på nspop DTG service"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1003,7 +1097,7 @@
       <reference>
         <reference value="CodeSystem/address-type-dk-supplement"/>
       </reference>
-      <name value="DK Address Type"/>
+      <name value="DK Address Type Supplement"/>
       <description value="The type of an address (physical / postal)"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1014,7 +1108,7 @@
       <reference>
         <reference value="CodeSystem/address-use-dk-supplement"/>
       </reference>
-      <name value="DK Address Use"/>
+      <name value="DK Address Use Supplement"/>
       <description value="The use of an address"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1036,7 +1130,7 @@
       <reference>
         <reference value="CodeSystem/care-team-status-dk-supplement"/>
       </reference>
-      <name value="DK CareTeam Status"/>
+      <name value="DK CareTeam Status Supplement"/>
       <description value="Indicates the status of the care team."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1058,7 +1152,7 @@
       <reference>
         <reference value="CodeSystem/consent-state-codes-dk-supplement"/>
       </reference>
-      <name value="DK Consent State"/>
+      <name value="DK Consent State Supplement"/>
       <description value="Indicates the state of the consent"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1130,6 +1224,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/dk-core-organization-1"/>
+      </reference>
+      <name value="DK CVR Organization instance of DkCoreOrganization"/>
+      <description value="Sample of DK organization"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1146,7 +1251,7 @@
       <reference>
         <reference value="CodeSystem/days-of-week-dk-supplement"/>
       </reference>
-      <name value="DK Days Of Week"/>
+      <name value="DK Days Of Week Supplement"/>
       <description value="The days of the week."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1168,7 +1273,7 @@
       <reference>
         <reference value="CodeSystem/episode-of-care-status-dk-supplement"/>
       </reference>
-      <name value="DK Episode Of Care Status"/>
+      <name value="DK Episode Of Care Status Supplement"/>
       <description value="The status of the episode of care."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1278,7 +1383,7 @@
       <reference>
         <reference value="CodeSystem/publication-status-dk-supplement"/>
       </reference>
-      <name value="DK Publication Status"/>
+      <name value="DK Publication Status Supplement"/>
       <description value="The lifecycle status of a Value Set or Concept Map."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1333,7 +1438,7 @@
       <reference>
         <reference value="CodeSystem/request-status-dk-supplement"/>
       </reference>
-      <name value="DK Request Status"/>
+      <name value="DK Request Status Supplement"/>
       <description value="Codes identifying the stage lifecycle stage of a request"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1344,7 +1449,7 @@
       <reference>
         <reference value="CodeSystem/role-code-dk-supplement"/>
       </reference>
-      <name value="DK Role Code"/>
+      <name value="DK Role Code Supplement"/>
       <description value="CodeSystem supplement with danish translations for RoleCode"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1394,6 +1499,116 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/DrengLevendefodt2016"/>
+      </reference>
+      <name value="Dreng Test Levendefødt (2016) - tvilling"/>
+      <description value="Dreng Test Levendefødt født 2016 - Tvilling"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/DrengLevendefodt2024"/>
+      </reference>
+      <name value="Dreng Test Levendefødt (2024) - tvilling"/>
+      <description value="Dreng Test Levendefødt født 2024 - Tvilling"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/EinerRelatedToEK"/>
+      </reference>
+      <name value="Einer som far til EK"/>
+      <description value="Einer er far til EK"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/EinerRelatedToEllen"/>
+      </reference>
+      <name value="Einer som far til Ellen"/>
+      <description value="Einer er far til Ellen Louise"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/EinerRelatedToElse"/>
+      </reference>
+      <name value="Einer som far til Else"/>
+      <description value="Einer er far til Else"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/EinerRelatedToMagnus"/>
+      </reference>
+      <name value="Einer som far til Magnus"/>
+      <description value="Einer er far til Magnus"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/EinerRelatedToRasmus"/>
+      </reference>
+      <name value="Einer som far til Rasmus"/>
+      <description value="Einer er far til Rasmus"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Einer"/>
+      </reference>
+      <name value="Einer Test Lauridsen - far i Lauridsen familien"/>
+      <description value="Einer Test Lauridsen - Gift med Lonni. Tvillinger Magnus &amp; Rasmus, Trillinger Else &amp; Ellen &amp; EK"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/EK"/>
+      </reference>
+      <name value="EK Test Lauridsen - trilling med Ellen &amp; Else"/>
+      <description value="EK Test Lauridsen - Søn af Lonni &amp; Einer Lauridsen. Trilling med Ellen &amp; Else"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/EllenLouise"/>
+      </reference>
+      <name value="Ellen Louise Test Lauridsen - trilling med EK &amp; Else"/>
+      <description value="Ellen Louise Test Lauridsen - Datter af Lonni &amp; Einer Lauridsen. Trilling med EK &amp; Else"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Condition"/>
       </extension>
       <reference>
@@ -1402,6 +1617,17 @@
       <name value="Else Graviditet"/>
       <description value="Else Graviditet, tilstandskode som indberettes ifm Elses ambulante forløb (fx jordemoder), og ved eventuel indlæggelse i graviditeten"/>
       <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/ElseLauridsen"/>
+      </reference>
+      <name value="Else Test Lauridsen - trilling med EK &amp; Ellen"/>
+      <description value="Else Test Lauridsen - Datter af Lonni &amp; Einer Lauridsen. Trilling med EK &amp; Ellen"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1640,6 +1866,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/GitteNancy"/>
+      </reference>
+      <name value="Gitte Nancy Test Berggren - datter af Kirsten"/>
+      <description value="Gitte Nancy Test Berggren - Datter af Kirsten Berggren, Nancys yndlingsbarnebarn"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
@@ -1673,14 +1910,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
+        <valueString value="Group"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/dk-core-documentreference-version-id-extension"/>
+        <reference value="Group/JensenFamily"/>
       </reference>
-      <name value="HL7 Denmark core DocumentReference Version ID extension"/>
-      <description value="Extension containing information about the version of the DocumentReference for a specific standard. The version is included in the R5 version of the resource."/>
-      <exampleBoolean value="false"/>
+      <name value="Jensen familien"/>
+      <description value="Familiegruppe: Anders Jensen og hans søn Ali"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1771,6 +2008,105 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/JulianeJoergensen"/>
+      </reference>
+      <name value="Juliane Test Jørgensen"/>
+      <description value="Juliane Test Jørgensen - testpatient"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/KajaHansen"/>
+      </reference>
+      <name value="Kaja Test Hansen"/>
+      <description value="Kaja Test Hansen - testpatient"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/KirstenRelatedToAya"/>
+      </reference>
+      <name value="Kirsten som mor til Aya"/>
+      <description value="Kirsten er mor til Aya"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/KirstenRelatedToGitte"/>
+      </reference>
+      <name value="Kirsten som mor til Gitte"/>
+      <description value="Kirsten er mor til Gitte Nancy"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/KirstenRelatedToLars"/>
+      </reference>
+      <name value="Kirsten som mor til Lars"/>
+      <description value="Kirsten er mor til Lars"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/KirstenRelatedToPia"/>
+      </reference>
+      <name value="Kirsten som mor til Pia"/>
+      <description value="Kirsten er mor til Pia"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/KirstenRelatedToRikke"/>
+      </reference>
+      <name value="Kirsten som mor til Rikke"/>
+      <description value="Kirsten er mor til Rikke"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/KirstenBerggren"/>
+      </reference>
+      <name value="Kirsten Test Berggren - datter af Nancy"/>
+      <description value="Kirsten Test Berggren - Datter af Nancy. Datter Aya."/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/KnutOdvar"/>
+      </reference>
+      <name value="Knut Odvar Test Mosebryggersen"/>
+      <description value="Knut Odvar Test Mosebryggersen - Søn af May June Moberg &amp; Schwendlund Mosebryggersen"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
@@ -1793,6 +2129,50 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/LarsBerggren"/>
+      </reference>
+      <name value="Lars Test Berggren - søn af Kirsten"/>
+      <description value="Lars Test Berggren - Søn af Kirsten Berggren"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Group"/>
+      </extension>
+      <reference>
+        <reference value="Group/LauridsenFamily"/>
+      </reference>
+      <name value="Lauridsen familien"/>
+      <description value="Familiegruppe: Einer og Lonni Lauridsen med deres børn - tvillingerne Magnus &amp; Rasmus og trillingerne Else, Ellen &amp; EK"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Group"/>
+      </extension>
+      <reference>
+        <reference value="Group/LevendefodtTwins2016"/>
+      </reference>
+      <name value="Levendefødt tvillinger 2016"/>
+      <description value="Familiegruppe: Tvillinger født 2016"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Group"/>
+      </extension>
+      <reference>
+        <reference value="Group/LevendefodtTwins2024"/>
+      </reference>
+      <name value="Levendefødt tvillinger 2024"/>
+      <description value="Familiegruppe: Tvillinger født 2024"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="PractitionerRole"/>
       </extension>
       <reference>
@@ -1801,6 +2181,105 @@
       <name value="Licensed physician in primary care"/>
       <description value="This is an example of PractitionerRole profile. The example describes the service which practitioner is performing in a specific location in a specific role."/>
       <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/LonniRelatedToEK"/>
+      </reference>
+      <name value="Lonni som mor til EK"/>
+      <description value="Lonni er mor til EK"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/LonniRelatedToEllen"/>
+      </reference>
+      <name value="Lonni som mor til Ellen"/>
+      <description value="Lonni er mor til Ellen Louise"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/LonniRelatedToElse"/>
+      </reference>
+      <name value="Lonni som mor til Else"/>
+      <description value="Lonni er mor til Else"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/LonniRelatedToMagnus"/>
+      </reference>
+      <name value="Lonni som mor til Magnus"/>
+      <description value="Lonni er mor til Magnus"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/LonniRelatedToRasmus"/>
+      </reference>
+      <name value="Lonni som mor til Rasmus"/>
+      <description value="Lonni er mor til Rasmus"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/LonniRelatedToEiner"/>
+      </reference>
+      <name value="Lonni som ægtefælle til Einer"/>
+      <description value="Lonni er gift med Einer"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Lonni"/>
+      </reference>
+      <name value="Lonni Test Lauridsen - mor i Lauridsen familien"/>
+      <description value="Lonni Test Lauridsen - Gift med Einer. Tvillinger Magnus &amp; Rasmus, Trillinger Else &amp; Ellen &amp; EK"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Magnus"/>
+      </reference>
+      <name value="Magnus Test Lauridsen - tvilling med Rasmus"/>
+      <description value="Magnus Test Lauridsen - Søn af Lonni &amp; Einer Lauridsen. Tvilling med Rasmus"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/MaxBerggren"/>
+      </reference>
+      <name value="Max Test Berggren - søn af Nancy"/>
+      <description value="Max Test Berggren - Søn af Nancy"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1895,6 +2374,105 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/MayJuneRelatedToKnut"/>
+      </reference>
+      <name value="May June som mor til Knut"/>
+      <description value="May June er mor til Knut Odvar"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/MayJuneRelatedToOdd"/>
+      </reference>
+      <name value="May June som mor til Odd"/>
+      <description value="May June er mor til Odd Haugen"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/MayJuneRelatedToSille"/>
+      </reference>
+      <name value="May June som mor til Sille"/>
+      <description value="May June er mor til Sille June"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/MayJuneRelatedToSverre"/>
+      </reference>
+      <name value="May June som mor til Sverre"/>
+      <description value="May June er mor til Sverre"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/MayJuneRelatedToTorre"/>
+      </reference>
+      <name value="May June som mor til Torre"/>
+      <description value="May June er mor til Torre"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/MayJuneGuardianOfSverre"/>
+      </reference>
+      <name value="May June som værge for Sverre"/>
+      <description value="May June er værge for Sverre"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/MayJuneGuardianOfTorre"/>
+      </reference>
+      <name value="May June som værge for Torre"/>
+      <description value="May June er værge for Torre"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/MayJuneRelatedToSchwendlund"/>
+      </reference>
+      <name value="May June som ægtefælle til Schwendlund"/>
+      <description value="May June er gift med Schwendlund"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/MayJune"/>
+      </reference>
+      <name value="May June Test Moberg - mor i Mosebryggersen familien"/>
+      <description value="May June Test Moberg - Gift med Schwendlund Mosebryggersen. Sønnerne Odd &amp; Knut, Datteren Sille, Tvillingerne Sverre &amp; Torre"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Organization"/>
       </extension>
       <reference>
@@ -1903,6 +2481,116 @@
       <name value="MedCom Test Organization"/>
       <description value="MedCom Test Organization with SOR id"/>
       <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Group"/>
+      </extension>
+      <reference>
+        <reference value="Group/MosebryggerssenFamily"/>
+      </reference>
+      <name value="Mosebryggersen familien"/>
+      <description value="Familiegruppe: Schwendlund og May June med deres børn - Odd, Knut, Sille og tvillingerne Sverre &amp; Torre"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/MuhammedAbdul"/>
+      </reference>
+      <name value="Muhammed Test Abdul"/>
+      <description value="Muhammed Test Abdul - testpatient"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/NancyAnn"/>
+      </reference>
+      <name value="Nancy Ann Test Berggren - bedstemor i Berggren familien"/>
+      <description value="Nancy Ann Test Berggren - Sønnerne Max og Ruddi. Døtrene Kirsten og Britta."/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/NancyRelatedToGitte"/>
+      </reference>
+      <name value="Nancy som bedstemor til Gitte"/>
+      <description value="Nancy er bedstemor til Gitte (Nancys yndlingsbarnebarn)"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/NancyRelatedToBrita"/>
+      </reference>
+      <name value="Nancy som mor til Brita"/>
+      <description value="Nancy er mor til Brita"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/NancyRelatedToKirsten"/>
+      </reference>
+      <name value="Nancy som mor til Kirsten"/>
+      <description value="Nancy er mor til Kirsten"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/NancyRelatedToMax"/>
+      </reference>
+      <name value="Nancy som mor til Max"/>
+      <description value="Nancy er mor til Max"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/NancyRelatedToRuddi"/>
+      </reference>
+      <name value="Nancy som mor til Ruddi"/>
+      <description value="Nancy er mor til Ruddi"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/NancyGuardianOfBrita"/>
+      </reference>
+      <name value="Nancy som værge for Brita"/>
+      <description value="Nancy er værge for Brita"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/NancyGuardianOfAage"/>
+      </reference>
+      <name value="Nancy som værge for Åge"/>
+      <description value="Nancy er værge for Åge"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1927,14 +2615,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
+        <valueString value="Patient"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/dk-npu-fragment"/>
+        <reference value="Patient/NielsVendelboe"/>
       </reference>
-      <name value="Nomenclature for Properties and Units (NPU) - Fragment for DK Core"/>
-      <description value="Fragment of the NPU code system used in DK Core. The full version of NPU can be found at http://labterm.dk"/>
-      <exampleBoolean value="false"/>
+      <name value="Niels Test Vendelboe"/>
+      <description value="Niels Test Vendelboe - testpatient"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1946,6 +2634,50 @@
       <name value="NotFollowedAnymore"/>
       <description value="Extension for the date where a condition lost focus in a specific clinical context"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/OddHaugen"/>
+      </reference>
+      <name value="Odd Haugen Test Mosebryggersen"/>
+      <description value="Odd Haugen Test Mosebryggersen - Søn af May June Moberg &amp; Schwendlund Mosebryggersen"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/PiaBerggren"/>
+      </reference>
+      <name value="Pia Test Berggren - datter af Kirsten"/>
+      <description value="Pia Test Berggren - Datter af Kirsten Berggren"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/PigeLevendefodt2016"/>
+      </reference>
+      <name value="Pige Test Levendefødt (2016) - tvilling"/>
+      <description value="Pige Test Levendefødt født 2016 - Tvilling"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/PigeLevendefodt2024"/>
+      </reference>
+      <name value="Pige Test Levendefødt (2024) - tvilling"/>
+      <description value="Pige Test Levendefødt født 2024 - Tvilling"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2092,6 +2824,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Rasmus"/>
+      </reference>
+      <name value="Rasmus Test Lauridsen - tvilling med Magnus"/>
+      <description value="Rasmus Test Lauridsen - Søn af Lonni &amp; Einer Lauridsen. Tvilling med Magnus"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ServiceRequest"/>
       </extension>
       <reference>
@@ -2114,6 +2857,105 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/RikkeBerggren"/>
+      </reference>
+      <name value="Rikke Test Berggren - datter af Kirsten"/>
+      <description value="Rikke Test Berggren - Datter af Kirsten Berggren, Ruddi er værge for Rikke"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/RuddiGuardianOfRikke"/>
+      </reference>
+      <name value="Ruddi som værge for Rikke"/>
+      <description value="Ruddi er værge for Rikke"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/RuddiBerggren"/>
+      </reference>
+      <name value="Ruddi Test Berggren - søn af Nancy"/>
+      <description value="Ruddi Test Berggren - Søn af Nancy"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/SchwendlundRelatedToKnut"/>
+      </reference>
+      <name value="Schwendlund som far til Knut"/>
+      <description value="Schwendlund er far til Knut Odvar"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/SchwendlundRelatedToOdd"/>
+      </reference>
+      <name value="Schwendlund som far til Odd"/>
+      <description value="Schwendlund er far til Odd Haugen"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/SchwendlundRelatedToSille"/>
+      </reference>
+      <name value="Schwendlund som far til Sille"/>
+      <description value="Schwendlund er far til Sille June"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/SchwendlundRelatedToSverre"/>
+      </reference>
+      <name value="Schwendlund som far til Sverre"/>
+      <description value="Schwendlund er far til Sverre"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/SchwendlundRelatedToTorre"/>
+      </reference>
+      <name value="Schwendlund som far til Torre"/>
+      <description value="Schwendlund er far til Torre"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Schwendlund"/>
+      </reference>
+      <name value="Schwendlund Test Mosebryggersen - far i Mosebryggersen familien"/>
+      <description value="Schwendlund Test Mosebryggersen - Gift med May June Moberg. Sønnerne Odd &amp; Knut, Datteren Sille, Tvillingerne Sverre &amp; Torre"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Practitioner"/>
       </extension>
       <reference>
@@ -2122,6 +2964,17 @@
       <name value="SidselSygeplejerske"/>
       <description value="Eksempel på en sygeplejerske"/>
       <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/SilleJune"/>
+      </reference>
+      <name value="Sille June Test Mosebrygersen"/>
+      <description value="Sille June Test Mosebrygersen - Datter af May June Moberg &amp; Schwendlund Mosebryggersen"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2144,6 +2997,28 @@
       <name value="SOR Identifier"/>
       <description value="Identifier holding the official SOR identifier for a danish healthcare organization"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Sverre"/>
+      </reference>
+      <name value="Sverre Test Mosebryggersen - tvilling med Torre"/>
+      <description value="Sverre Test Mosebryggersen - Søn af May June Moberg &amp; Schwendlund Mosebryggersen. Tvilling med Torre. Værge: May June"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Torre"/>
+      </reference>
+      <name value="Torre Test Mosebryggersen - tvilling med Sverre"/>
+      <description value="Torre Test Mosebryggersen - Søn af May June Moberg &amp; Schwendlund Mosebryggersen. Tvilling med Sverre. Værge: May June"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2176,6 +3051,28 @@
       </reference>
       <name value="XDS document bundled Source Patient"/>
       <description value="Instance of a XDS document bundled  source patient"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/AageRelatedToNancy"/>
+      </reference>
+      <name value="Åge som far til Nancy"/>
+      <description value="Åge er far til Nancy"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Aage"/>
+      </reference>
+      <name value="Åge Test Berggren - far til Nancy"/>
+      <description value="Åge Test Berggren - Far til Nancy. Værge: Nancy"/>
       <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
     </resource>
     <page>

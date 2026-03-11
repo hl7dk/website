@@ -1,4 +1,4 @@
-# DK Core NPU Basic Observation - HL7 FHIR Implementation Guide: DK Core v3.5.0
+# DK Core NPU Basic Observation - HL7 FHIR Implementation Guide: DK Core v3.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/ValueSet/dk-core-NPUBasicObservation | *Version*:3.5.0 |
-| Active as of 2025-12-19 | *Computable Name*:NPUBasicObservation |
+| *Official URL*:http://hl7.dk/fhir/core/ValueSet/dk-core-NPUBasicObservation | *Version*:3.6.0 |
+| Active as of 2026-03-11 | *Computable Name*:NPUBasicObservation |
 
  
 NPU codes for Basic Observations usable in Denmark 
@@ -46,78 +46,66 @@ NPU codes for Basic Observations usable in Denmark
   "resourceType" : "ValueSet",
   "id" : "dk-core-NPUBasicObservation",
   "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-NPUBasicObservation",
-  "version" : "3.5.0",
+  "version" : "3.6.0",
   "name" : "NPUBasicObservation",
   "title" : "DK Core NPU Basic Observation",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-19T17:27:08+01:00",
+  "date" : "2026-03-11T23:16:27+01:00",
   "publisher" : "HL7 Denmark",
-  "contact" : [
+  "contact" : [{
+    "name" : "HL7 Denmark",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.dk"
+    },
     {
-      "name" : "HL7 Denmark",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.hl7.dk"
-        },
-        {
-          "system" : "email",
-          "value" : "dk-affiliate@hl7.dk"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "dk-affiliate@hl7.dk"
+    }]
+  }],
   "description" : "NPU codes for Basic Observations usable in Denmark",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "DK",
-          "display" : "Denmark"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
   "compose" : {
-    "include" : [
+    "include" : [{
+      "system" : "http://npu-terminology.org",
+      "concept" : [{
+        "code" : "NPU03011"
+      },
       {
-        "system" : "http://npu-terminology.org",
-        "concept" : [
-          {
-            "code" : "NPU03011"
-          },
-          {
-            "code" : "NPU27280"
-          },
-          {
-            "code" : "NPU04034"
-          },
-          {
-            "code" : "NPU08676"
-          },
-          {
-            "code" : "NPU57947"
-          },
-          {
-            "code" : "NPU57948"
-          },
-          {
-            "code" : "NPU21692"
-          },
-          {
-            "code" : "NPU03794"
-          },
-          {
-            "code" : "NPU03804"
-          },
-          {
-            "code" : "NPU27281"
-          }
-        ]
-      }
-    ]
+        "code" : "NPU27280"
+      },
+      {
+        "code" : "NPU04034"
+      },
+      {
+        "code" : "NPU08676"
+      },
+      {
+        "code" : "NPU57947"
+      },
+      {
+        "code" : "NPU57948"
+      },
+      {
+        "code" : "NPU21692"
+      },
+      {
+        "code" : "NPU03794"
+      },
+      {
+        "code" : "NPU03804"
+      },
+      {
+        "code" : "NPU27281"
+      }]
+    }]
   }
 }
 

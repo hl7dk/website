@@ -1,4 +1,4 @@
-# Danish Core Minimal DocumentReference Profile - HL7 FHIR Implementation Guide: DK Core v3.5.0
+# Danish Core Minimal DocumentReference Profile - HL7 FHIR Implementation Guide: DK Core v3.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,15 +8,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-minimaldocumentreference | *Version*:3.5.0 |
-| Active as of 2025-12-19 | *Computable Name*:DkCoreMinimalDocumentReference |
+| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-minimaldocumentreference | *Version*:3.6.0 |
+| Active as of 2026-03-11 | *Computable Name*:DkCoreMinimalDocumentReference |
 
  
 HL7 Denmark core profile for a Minimal DocumentReference inherited from IHE MHD Minimal DocumentReference 
 
 ### Scope and Usage
 
-The Danish Core MinimalDocumentReference profile is intended to encapsulate the data model of a DocumentReference as used in a Danish context of Document sharing, whether it is FHIR or CDA Documents and whether it is native XDS infrastructure or used in an MHD context [IHE MHD DocumentReference Minimal specification 4.2.2](https://profiles.ihe.net/ITI/MHD/4.2.2/StructureDefinition-IHE.MHD.Minimal.DocumentReference.html).
+The Danish Core MinimalDocumentReference profile is intended to encapsulate the data model of a DocumentReference as used in a Danish context of Document sharing, whether it is FHIR or CDA Documents and whether it is native XDS infrastructure or used in an MHD context [IHE MHD DocumentReference Minimal specification 4.2.3](https://profiles.ihe.net/ITI/MHD/4.2.3/StructureDefinition-IHE.MHD.Minimal.DocumentReference.html).
 
 **Conformance to IHE and Danish XDS Context**
 
@@ -49,206 +49,172 @@ Other representations of profile: [CSV](StructureDefinition-dk-core-minimaldocum
   "resourceType" : "StructureDefinition",
   "id" : "dk-core-minimaldocumentreference",
   "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-minimaldocumentreference",
-  "version" : "3.5.0",
+  "version" : "3.6.0",
   "name" : "DkCoreMinimalDocumentReference",
   "title" : "Danish Core Minimal DocumentReference Profile",
   "status" : "active",
-  "date" : "2025-12-19T17:27:08+01:00",
+  "date" : "2026-03-11T23:16:27+01:00",
   "publisher" : "HL7 Denmark",
-  "contact" : [
+  "contact" : [{
+    "name" : "HL7 Denmark",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.dk"
+    },
     {
-      "name" : "HL7 Denmark",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.hl7.dk"
-        },
-        {
-          "system" : "email",
-          "value" : "dk-affiliate@hl7.dk"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "dk-affiliate@hl7.dk"
+    }]
+  }],
   "description" : "HL7 Denmark core profile for a Minimal DocumentReference inherited from IHE MHD Minimal DocumentReference",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "DK",
-          "display" : "Denmark"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "DocumentEntry-Mapping",
-      "uri" : "urn:ihe:iti:xds:documententry",
-      "name" : "XDS and MHD Mapping"
-    },
-    {
-      "identity" : "workflow",
-      "uri" : "http://hl7.org/fhir/workflow",
-      "name" : "Workflow Pattern"
-    },
-    {
-      "identity" : "fhircomposition",
-      "uri" : "http://hl7.org/fhir/composition",
-      "name" : "FHIR Composition"
-    },
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    },
-    {
-      "identity" : "cda",
-      "uri" : "http://hl7.org/v3/cda",
-      "name" : "CDA (R2)"
-    },
-    {
-      "identity" : "w5",
-      "uri" : "http://hl7.org/fhir/fivews",
-      "name" : "FiveWs Pattern Mapping"
-    },
-    {
-      "identity" : "v2",
-      "uri" : "http://hl7.org/v2",
-      "name" : "HL7 v2 Mapping"
-    },
-    {
-      "identity" : "xds",
-      "uri" : "http://ihe.net/xds",
-      "name" : "XDS metadata equivalent"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "DocumentEntry-Mapping",
+    "uri" : "urn:ihe:iti:xds:documententry",
+    "name" : "XDS and MHD Mapping"
+  },
+  {
+    "identity" : "workflow",
+    "uri" : "http://hl7.org/fhir/workflow",
+    "name" : "Workflow Pattern"
+  },
+  {
+    "identity" : "fhircomposition",
+    "uri" : "http://hl7.org/fhir/composition",
+    "name" : "FHIR Composition"
+  },
+  {
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  },
+  {
+    "identity" : "cda",
+    "uri" : "http://hl7.org/v3/cda",
+    "name" : "CDA (R2)"
+  },
+  {
+    "identity" : "w5",
+    "uri" : "http://hl7.org/fhir/fivews",
+    "name" : "FiveWs Pattern Mapping"
+  },
+  {
+    "identity" : "v2",
+    "uri" : "http://hl7.org/v2",
+    "name" : "HL7 v2 Mapping"
+  },
+  {
+    "identity" : "xds",
+    "uri" : "http://ihe.net/xds",
+    "name" : "XDS metadata equivalent"
+  }],
   "kind" : "resource",
   "abstract" : false,
   "type" : "DocumentReference",
   "baseDefinition" : "https://profiles.ihe.net/ITI/MHD/StructureDefinition/IHE.MHD.Minimal.DocumentReference",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "DocumentReference",
-        "path" : "DocumentReference"
+    "element" : [{
+      "id" : "DocumentReference",
+      "path" : "DocumentReference"
+    },
+    {
+      "id" : "DocumentReference.extension",
+      "path" : "DocumentReference.extension",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "url"
+        }],
+        "ordered" : false,
+        "rules" : "open"
       },
-      {
-        "id" : "DocumentReference.extension",
-        "path" : "DocumentReference.extension",
-        "slicing" : {
-          "discriminator" : [
-            {
-              "type" : "value",
-              "path" : "url"
-            }
-          ],
-          "ordered" : false,
-          "rules" : "open"
-        },
-        "min" : 1
-      },
-      {
-        "id" : "DocumentReference.extension:versionid",
-        "path" : "DocumentReference.extension",
-        "sliceName" : "versionid",
-        "short" : "Specifies the version of the DocumentReference profile for a standard.",
-        "min" : 1,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Extension",
-            "profile" : [
-              "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.version"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "DocumentReference.subject",
-        "path" : "DocumentReference.subject",
-        "min" : 1,
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "DocumentReference.author",
-        "path" : "DocumentReference.author",
-        "min" : 1,
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient",
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner",
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role",
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person",
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization",
-              "http://hl7.org/fhir/StructureDefinition/Device"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "DocumentReference.authenticator",
-        "path" : "DocumentReference.authenticator",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner",
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role",
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
-            ]
-          }
-        ]
-      },
-      {
-        "id" : "DocumentReference.context.event",
-        "path" : "DocumentReference.context.event",
-        "binding" : {
-          "strength" : "example",
-          "valueSet" : "http://terminology.hl7.org/ValueSet/v3-ActCode|3.0.0"
-        }
-      },
-      {
-        "id" : "DocumentReference.context.facilityType",
-        "path" : "DocumentReference.context.facilityType",
-        "binding" : {
-          "strength" : "extensible",
-          "valueSet" : "http://hl7.dk/fhir/core/ValueSet/sor-organization-type"
-        }
-      },
-      {
-        "id" : "DocumentReference.context.practiceSetting",
-        "path" : "DocumentReference.context.practiceSetting",
-        "binding" : {
-          "strength" : "extensible",
-          "valueSet" : "http://hl7.dk/fhir/core/ValueSet/dk-core-practice-setting-code"
-        }
-      },
-      {
-        "id" : "DocumentReference.context.sourcePatientInfo",
-        "path" : "DocumentReference.context.sourcePatientInfo",
-        "type" : [
-          {
-            "code" : "Reference",
-            "targetProfile" : [
-              "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
-            ]
-          }
-        ]
+      "min" : 1
+    },
+    {
+      "id" : "DocumentReference.extension:versionid",
+      "path" : "DocumentReference.extension",
+      "sliceName" : "versionid",
+      "short" : "Specifies the version of the DocumentReference profile for a standard.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.version"]
+      }]
+    },
+    {
+      "id" : "DocumentReference.subject",
+      "path" : "DocumentReference.subject",
+      "min" : 1,
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"]
+      }]
+    },
+    {
+      "id" : "DocumentReference.author",
+      "path" : "DocumentReference.author",
+      "min" : 1,
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient",
+        "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner",
+        "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role",
+        "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person",
+        "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization",
+        "http://hl7.org/fhir/StructureDefinition/Device"]
+      }]
+    },
+    {
+      "id" : "DocumentReference.authenticator",
+      "path" : "DocumentReference.authenticator",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner",
+        "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role",
+        "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"]
+      }]
+    },
+    {
+      "id" : "DocumentReference.context.event",
+      "path" : "DocumentReference.context.event",
+      "binding" : {
+        "strength" : "example",
+        "valueSet" : "http://terminology.hl7.org/ValueSet/v3-ActCode|3.0.0"
       }
-    ]
+    },
+    {
+      "id" : "DocumentReference.context.facilityType",
+      "path" : "DocumentReference.context.facilityType",
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://hl7.dk/fhir/core/ValueSet/sor-organization-type"
+      }
+    },
+    {
+      "id" : "DocumentReference.context.practiceSetting",
+      "path" : "DocumentReference.context.practiceSetting",
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://hl7.dk/fhir/core/ValueSet/dk-core-practice-setting-code"
+      }
+    },
+    {
+      "id" : "DocumentReference.context.sourcePatientInfo",
+      "path" : "DocumentReference.context.sourcePatientInfo",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"]
+      }]
+    }]
   }
 }
 

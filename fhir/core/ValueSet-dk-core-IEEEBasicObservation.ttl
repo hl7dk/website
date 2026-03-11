@@ -18,12 +18,12 @@
      fhir:v "http://hl7.dk/fhir/core/ValueSet/dk-core-IEEEBasicObservation"^^xsd:anyURI ;
      fhir:l <http://hl7.dk/fhir/core/ValueSet/dk-core-IEEEBasicObservation>
   ] ; # 
-  fhir:version [ fhir:v "3.5.0"] ; # 
+  fhir:version [ fhir:v "3.6.0"] ; # 
   fhir:name [ fhir:v "IEEEBasicObservation"] ; # 
   fhir:title [ fhir:v "Dk Core IEEE Basic Observation"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2025-12-19T17:27:08+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-03-11T23:16:27+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -63,7 +63,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Rate of breathing; method not specified." ]
@@ -77,7 +76,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Rate of breathing; method: direct airway flow measurement." ]
@@ -91,7 +89,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Rate of breathing; method: transthoracic impedance variations." ]
@@ -105,7 +102,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Rate of breathing; method: carbon dioxide measurement." ]
@@ -119,7 +115,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Rate of breathing; method: non-airway pressure measurement, e.g. central venous blood pressure (CVP)." ]
@@ -133,7 +128,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Rate of breathing; method: acoustic." ]
@@ -147,7 +141,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Rate of breathing; method: SpO2 plethysmography." ]
@@ -161,7 +154,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Value of respiration rate. [measured by sleep apnoea breathing therapy equipment]" ]
@@ -175,7 +167,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Rate of blood pulse in an artery." ]
@@ -189,7 +180,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Rate of blood pulse in an artery, measured invasively." ]
@@ -203,7 +193,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Rate of blood pulse in an artery, measured non-invasively." ]
@@ -217,7 +206,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Rate of blood pulse as obtained by pulse oximetry." ]
@@ -231,7 +219,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Rate of cardiac beats (ECG)." ]
@@ -245,7 +232,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Instantaneous heart rate." ]
@@ -259,7 +245,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Heart rate obtained from the variation of transthoracic impedance." ]
@@ -273,7 +258,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Heart rate obtained from an artery that is close to the surface and a pulse can be felt." ]
@@ -287,7 +271,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "This is an object representing the heart rate over a period of time. [Exercise / fitness equipment]" ]
@@ -301,7 +284,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Arterial oxygen saturation. [no method]" ]
@@ -315,7 +297,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Oxygen saturation. [using pulse oximetry]" ]
@@ -329,7 +310,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Body temperature. [unspecified]" ]
@@ -343,7 +323,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Core temperature." ]
@@ -357,7 +336,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Skin temperature." ]
@@ -371,7 +349,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Tympanic temperature." ]
@@ -385,7 +362,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Rectal temperature." ]
@@ -399,7 +375,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Oral temperature." ]
@@ -413,7 +388,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Ear temperature." ]
@@ -427,7 +401,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Axillary (armpit) temperature." ]
@@ -441,7 +414,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Gastro-intestinal tract temperature." ]
@@ -455,7 +427,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "The actual height of the patient." ]
@@ -469,7 +440,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Circumference of the head." ]
@@ -483,7 +453,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "The measurement of the mass of patient." ]
@@ -497,7 +466,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "The individual's body weight, in kilograms, divided by the square of height, in meters (BMI)." ]
@@ -511,7 +479,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Pressure of the blood, obtained noninvasively." ]
@@ -525,7 +492,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Pressure of the blood, obtained noninvasively, at the systolic phase." ]
@@ -539,7 +505,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Pressure of the blood, obtained noninvasively, at the diastolic phase." ]
@@ -553,7 +518,6 @@
                fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
                fhir:l <http://snomed.info/sct>
              ] ;
-             fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
              fhir:code [ fhir:v "900000000000003001" ]
            ] ;
            fhir:value [ fhir:v "Pressure of the blood, obtained noninvasively, as computed by averaging on one cycle." ]

@@ -18,12 +18,12 @@
      fhir:v "http://hl7.dk/fhir/core/CodeSystem/episode-of-care-status-dk-supplement"^^xsd:anyURI ;
      fhir:l <http://hl7.dk/fhir/core/CodeSystem/episode-of-care-status-dk-supplement>
   ] ; # 
-  fhir:version [ fhir:v "3.5.0"] ; # 
+  fhir:version [ fhir:v "3.6.0"] ; # 
   fhir:name [ fhir:v "EpisodeOfCareStatus"] ; # 
-  fhir:title [ fhir:v "DK Episode Of Care Status"] ; # 
+  fhir:title [ fhir:v "DK Episode Of Care Status Supplement"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2025-12-19T17:27:08+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-03-11T23:16:27+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -61,7 +61,6 @@
            fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
            fhir:l <http://snomed.info/sct>
          ] ;
-         fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
          fhir:code [ fhir:v "900000000000013009" ]
        ] ;
        fhir:value [ fhir:v "Planlagt" ]
@@ -76,7 +75,6 @@
            fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
            fhir:l <http://snomed.info/sct>
          ] ;
-         fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
          fhir:code [ fhir:v "900000000000013009" ]
        ] ;
        fhir:value [ fhir:v "Venteliste" ]
@@ -91,7 +89,6 @@
            fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
            fhir:l <http://snomed.info/sct>
          ] ;
-         fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
          fhir:code [ fhir:v "900000000000013009" ]
        ] ;
        fhir:value [ fhir:v "Aktiv" ]
@@ -106,7 +103,6 @@
            fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
            fhir:l <http://snomed.info/sct>
          ] ;
-         fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
          fhir:code [ fhir:v "900000000000013009" ]
        ] ;
        fhir:value [ fhir:v "Pauseret" ]
@@ -121,7 +117,6 @@
            fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
            fhir:l <http://snomed.info/sct>
          ] ;
-         fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
          fhir:code [ fhir:v "900000000000013009" ]
        ] ;
        fhir:value [ fhir:v "Færdig" ]
@@ -136,7 +131,6 @@
            fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
            fhir:l <http://snomed.info/sct>
          ] ;
-         fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
          fhir:code [ fhir:v "900000000000013009" ]
        ] ;
        fhir:value [ fhir:v "Annulleret" ]
@@ -151,7 +145,6 @@
            fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
            fhir:l <http://snomed.info/sct>
          ] ;
-         fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
          fhir:code [ fhir:v "900000000000013009" ]
        ] ;
        fhir:value [ fhir:v "Fejlindtastning" ]

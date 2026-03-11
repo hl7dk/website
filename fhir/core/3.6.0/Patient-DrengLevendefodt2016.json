@@ -1,0 +1,30 @@
+{
+  "resourceType" : "Patient",
+  "id" : "DrengLevendefodt2016",
+  "meta" : {
+    "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient DrengLevendefodt2016</b></p><a name=\"DrengLevendefodt2016\"> </a><a name=\"hcDrengLevendefodt2016\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-patient.html\">Danish Core Patient Profile</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Dreng Test Levendefødt (official) Male, DoB: 2016-10-13 ( urn:oid:1.2.208.176.1.2#1310169995)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known multipleBirth status of Patient\">Multiple Birth:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>Also see: <a href=\"Patient-PigeLevendefodt2016.html\">Pige Test Levendefødt (official) Female, DoB: 2016-10-13 ( urn:oid:1.2.208.176.1.2#1310169996)</a></li></ul></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "urn:oid:1.2.208.176.1.2",
+    "value" : "1310169995"
+  }],
+  "name" : [{
+    "use" : "official",
+    "family" : "Levendefødt",
+    "given" : ["Dreng",
+    "Test"]
+  }],
+  "gender" : "male",
+  "birthDate" : "2016-10-13",
+  "multipleBirthBoolean" : true,
+  "link" : [{
+    "other" : {
+      "reference" : "Patient/PigeLevendefodt2016"
+    },
+    "type" : "seealso"
+  }]
+}

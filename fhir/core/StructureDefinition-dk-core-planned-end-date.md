@@ -1,4 +1,4 @@
-# PlannedEndDate - HL7 FHIR Implementation Guide: DK Core v3.5.0
+# PlannedEndDate - HL7 FHIR Implementation Guide: DK Core v3.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-planned-end-date | *Version*:3.5.0 |
-| Active as of 2025-12-19 | *Computable Name*:PlannedEndDate |
+| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-planned-end-date | *Version*:3.6.0 |
+| Active as of 2026-03-11 | *Computable Name*:PlannedEndDate |
 
 The planned end date/time (or discharge date) of the encounter
 
@@ -43,86 +43,70 @@ Other representations of profile: [CSV](StructureDefinition-dk-core-planned-end-
   "resourceType" : "StructureDefinition",
   "id" : "dk-core-planned-end-date",
   "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-planned-end-date",
-  "version" : "3.5.0",
+  "version" : "3.6.0",
   "name" : "PlannedEndDate",
   "title" : "PlannedEndDate",
   "status" : "active",
-  "date" : "2025-12-19T17:27:08+01:00",
+  "date" : "2026-03-11T23:16:27+01:00",
   "publisher" : "HL7 Denmark",
-  "contact" : [
+  "contact" : [{
+    "name" : "HL7 Denmark",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.dk"
+    },
     {
-      "name" : "HL7 Denmark",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.hl7.dk"
-        },
-        {
-          "system" : "email",
-          "value" : "dk-affiliate@hl7.dk"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "dk-affiliate@hl7.dk"
+    }]
+  }],
   "description" : "The planned end date/time (or discharge date) of the encounter",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "DK",
-          "display" : "Denmark"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
   "kind" : "complex-type",
   "abstract" : false,
-  "context" : [
-    {
-      "type" : "element",
-      "expression" : "Encounter"
-    }
-  ],
+  "context" : [{
+    "type" : "element",
+    "expression" : "Encounter"
+  }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Extension",
-        "path" : "Extension",
-        "short" : "PlannedEndDate",
-        "definition" : "The planned end date/time (or discharge date) of the encounter"
-      },
-      {
-        "id" : "Extension.extension",
-        "path" : "Extension.extension",
-        "max" : "0"
-      },
-      {
-        "id" : "Extension.url",
-        "path" : "Extension.url",
-        "fixedUri" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-planned-end-date"
-      },
-      {
-        "id" : "Extension.value[x]",
-        "path" : "Extension.value[x]",
-        "type" : [
-          {
-            "code" : "dateTime"
-          }
-        ]
-      }
-    ]
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "PlannedEndDate",
+      "definition" : "The planned end date/time (or discharge date) of the encounter"
+    },
+    {
+      "id" : "Extension.extension",
+      "path" : "Extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-planned-end-date"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    }]
   }
 }
 

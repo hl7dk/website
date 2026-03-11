@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-95",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-95",
+  "id" : "6093be53-3d1d-48b0-b3bb-67287619f74a-95",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/6093be53-3d1d-48b0-b3bb-67287619f74a-95",
   "name" : "UnionIPAConditionAndIpaDkCoreCondition",
   "title" : "Union of IPA-Condition And Danish IPA Core Condition Profile",
   "status" : "active",
-  "date" : "2025-12-19T17:28:19+01:00",
+  "date" : "2026-03-11T23:17:49+01:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -249,7 +249,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-5"
       }
     },
     {
@@ -606,7 +606,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A subjective assessment of the severity of the condition as evaluated by the clinician.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-41"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-41"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -657,7 +657,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Identification of the condition or diagnosis.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-44"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-44"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -892,7 +892,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Codes describing anatomical locations. May include laterality.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-23"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-23"
       },
       "mapping" : [{
         "identity" : "sct-concept",
@@ -1380,7 +1380,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Codes describing condition stages (e.g. Cancer stages).",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-47"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-47"
       },
       "mapping" : [{
         "identity" : "sct-concept",
@@ -1452,7 +1452,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Codes describing the kind of condition staging (e.g. clinical or pathological).",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-50"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-50"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -1633,7 +1633,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Codes that describe the manifestation or symptoms of a condition.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-53"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-53"
       },
       "mapping" : [{
         "identity" : "workflow",

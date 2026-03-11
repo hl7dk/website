@@ -1,4 +1,4 @@
-# DK Related Person Relationship Types - HL7 FHIR Implementation Guide: DK Core v3.5.0
+# DK Related Person Relationship Types - HL7 FHIR Implementation Guide: DK Core v3.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/ValueSet/dk-core-RelatedPersonRelationshipTypes | *Version*:3.5.0 |
-| Active as of 2025-12-19 | *Computable Name*:RelatedPersonRelationshipTypes |
+| *Official URL*:http://hl7.dk/fhir/core/ValueSet/dk-core-RelatedPersonRelationshipTypes | *Version*:3.6.0 |
+| Active as of 2026-03-11 | *Computable Name*:RelatedPersonRelationshipTypes |
 
  
 DK Related Person Relationship Types 
@@ -47,108 +47,99 @@ DK Related Person Relationship Types
   "resourceType" : "ValueSet",
   "id" : "dk-core-RelatedPersonRelationshipTypes",
   "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-RelatedPersonRelationshipTypes",
-  "version" : "3.5.0",
+  "version" : "3.6.0",
   "name" : "RelatedPersonRelationshipTypes",
   "title" : "DK Related Person Relationship Types",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-19T17:27:08+01:00",
+  "date" : "2026-03-11T23:16:27+01:00",
   "publisher" : "HL7 Denmark",
-  "contact" : [
+  "contact" : [{
+    "name" : "HL7 Denmark",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.dk"
+    },
     {
-      "name" : "HL7 Denmark",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "http://www.hl7.dk"
-        },
-        {
-          "system" : "email",
-          "value" : "dk-affiliate@hl7.dk"
-        }
-      ]
-    }
-  ],
+      "system" : "email",
+      "value" : "dk-affiliate@hl7.dk"
+    }]
+  }],
   "description" : "DK Related Person Relationship Types",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "DK",
-          "display" : "Denmark"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
   "compose" : {
-    "include" : [
-      {
-        "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
-        "concept" : [
-          {
-            "code" : "FAMMEMB"
-          },
-          {
-            "code" : "CHILD"
-          },
-          {
-            "code" : "DAUC"
-          },
-          {
-            "code" : "SONC"
-          },
-          {
-            "code" : "GRNDCHILD"
-          },
-          {
-            "code" : "CHLDINLAW"
-          },
-          {
-            "code" : "PRN"
-          },
-          {
-            "code" : "FTH"
-          },
-          {
-            "code" : "MTH"
-          },
-          {
-            "code" : "SIB"
-          },
-          {
-            "code" : "DOMPART"
-          },
-          {
-            "code" : "SPS"
-          },
-          {
-            "code" : "FRND"
-          },
-          {
-            "code" : "NBOR"
-          },
-          {
-            "code" : "ROOM"
-          },
-          {
-            "code" : "GUARD"
-          },
-          {
-            "code" : "NOK"
-          },
-          {
-            "code" : "POWATT"
-          },
-          {
-            "code" : "ECON"
-          }
-        ]
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "concept" : [{
+        "code" : "FAMMEMB"
       },
       {
-        "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes"
-      }
-    ]
+        "code" : "CHILD"
+      },
+      {
+        "code" : "DAUC"
+      },
+      {
+        "code" : "SONC"
+      },
+      {
+        "code" : "GRNDCHILD"
+      },
+      {
+        "code" : "GRPRN"
+      },
+      {
+        "code" : "CHLDINLAW"
+      },
+      {
+        "code" : "PRN"
+      },
+      {
+        "code" : "FTH"
+      },
+      {
+        "code" : "MTH"
+      },
+      {
+        "code" : "SIB"
+      },
+      {
+        "code" : "DOMPART"
+      },
+      {
+        "code" : "SPS"
+      },
+      {
+        "code" : "FRND"
+      },
+      {
+        "code" : "NBOR"
+      },
+      {
+        "code" : "ROOM"
+      },
+      {
+        "code" : "GUARD"
+      },
+      {
+        "code" : "NOK"
+      },
+      {
+        "code" : "POWATT"
+      },
+      {
+        "code" : "ECON"
+      }]
+    },
+    {
+      "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes"
+    }]
   }
 }
 

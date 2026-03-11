@@ -17,11 +17,11 @@
      fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-planned-end-date"^^xsd:anyURI ;
      fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-planned-end-date>
   ] ; # 
-  fhir:version [ fhir:v "3.5.0"] ; # 
+  fhir:version [ fhir:v "3.6.0"] ; # 
   fhir:name [ fhir:v "PlannedEndDate"] ; # 
   fhir:title [ fhir:v "PlannedEndDate"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-12-19T17:27:08+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-03-11T23:16:27+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;

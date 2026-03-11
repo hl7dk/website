@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-107",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-107",
+  "id" : "6093be53-3d1d-48b0-b3bb-67287619f74a-107",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/6093be53-3d1d-48b0-b3bb-67287619f74a-107",
   "name" : "UnionIPAPractitionerRoleAndIpaDkCorePractitionerRole",
   "title" : "Union of IPA-PractitionerRole And Danish IPA Core PractitionerRole Profile",
   "status" : "active",
-  "date" : "2025-12-19T17:28:19+01:00",
+  "date" : "2026-03-11T23:17:49+01:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -204,7 +204,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-5"
       }
     },
     {
@@ -554,7 +554,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "The role a person plays representing an organization.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-89"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-89"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -595,7 +595,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "Specific specialty associated with the agency.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-92"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-92"
       },
       "mapping" : [{
         "identity" : "v2",

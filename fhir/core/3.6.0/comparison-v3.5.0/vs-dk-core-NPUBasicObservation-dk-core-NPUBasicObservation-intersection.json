@@ -1,0 +1,50 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "7fd09ef8-213a-4c9c-8824-29b8b7a600cc-177",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/7fd09ef8-213a-4c9c-8824-29b8b7a600cc-177",
+  "name" : "IntersectionNPUBasicObservationAndNPUBasicObservation",
+  "title" : "Intersection of DK Core NPU Basic Observation And DK Core NPU Basic Observation",
+  "status" : "active",
+  "date" : "2026-03-11T23:13:11+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "NPU03011"
+      },
+      {
+        "code" : "NPU27280"
+      },
+      {
+        "code" : "NPU04034"
+      },
+      {
+        "code" : "NPU08676"
+      },
+      {
+        "code" : "NPU57947"
+      },
+      {
+        "code" : "NPU57948"
+      },
+      {
+        "code" : "NPU21692"
+      },
+      {
+        "code" : "NPU03794"
+      },
+      {
+        "code" : "NPU03804"
+      },
+      {
+        "code" : "NPU27281"
+      }]
+    }]
+  }
+}

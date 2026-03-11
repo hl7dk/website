@@ -1,0 +1,56 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "6a74e714-c9a7-4226-8cc2-b29badab828c-33",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/6a74e714-c9a7-4226-8cc2-b29badab828c-33",
+  "name" : "IntersectionDKCoreRegionalSubdivisionCodesAndDKCoreRegionalSubdivisionCodes",
+  "title" : "Intersection of DK Regional Subdivision Codes And DK Regional Subdivision Codes",
+  "status" : "active",
+  "date" : "2026-03-11T23:17:47+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "concept" : [{
+    "code" : "DK-84",
+    "display" : "Capital Region of Denmark",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Hovedstaden"
+    }]
+  },
+  {
+    "code" : "DK-82",
+    "display" : "Central Denmark Region",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Midtjylland"
+    }]
+  },
+  {
+    "code" : "DK-81",
+    "display" : "Nord Denmark Region",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Nordjylland"
+    }]
+  },
+  {
+    "code" : "DK-85",
+    "display" : "Region Zealand",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Sjælland"
+    }]
+  },
+  {
+    "code" : "DK-83",
+    "display" : "Region of Southern Denmark",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Syddanmark"
+    }]
+  }]
+}

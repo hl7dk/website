@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-80",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-80",
+  "id" : "6093be53-3d1d-48b0-b3bb-67287619f74a-80",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/6093be53-3d1d-48b0-b3bb-67287619f74a-80",
   "name" : "UnionIPAObservationAndDkCoreObservation",
   "title" : "Union of IPA-Observation And Danish Core Observation Profile",
   "status" : "active",
-  "date" : "2025-12-19T17:28:19+01:00",
+  "date" : "2026-03-11T23:17:49+01:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -245,7 +245,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-5"
       }
     },
     {
@@ -595,7 +595,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "Codes for high level observation categories.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-8"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-8"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -635,7 +635,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-11"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-11"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -1331,7 +1331,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Codes describing anatomical locations. May include laterality.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-23"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-23"
       },
       "mapping" : [{
         "identity" : "sct-concept",
@@ -1378,7 +1378,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Methods for simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-26"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-26"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -1900,7 +1900,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "Code for the meaning of a reference range.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-32"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-32"
       },
       "mapping" : [{
         "identity" : "sct-concept",
@@ -1943,7 +1943,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Codes identifying the population the reference range applies to.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-35"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-35"
       },
       "mapping" : [{
         "identity" : "sct-concept",
@@ -2264,7 +2264,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Codes identifying names of simple observations.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-11"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-11"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -2854,7 +2854,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "Code for the meaning of a reference range.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-32"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-32"
       },
       "mapping" : [{
         "identity" : "sct-concept",
@@ -2897,7 +2897,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Codes identifying the population the reference range applies to.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-35"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-35"
       },
       "mapping" : [{
         "identity" : "sct-concept",

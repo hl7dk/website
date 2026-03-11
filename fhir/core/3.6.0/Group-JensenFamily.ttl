@@ -1,0 +1,35 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/Group/JensenFamily> a fhir:Group ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "JensenFamily"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Group JensenFamily</b></p><a name=\"JensenFamily\"> </a><a name=\"hcJensenFamily\"> </a><p><b>type</b>: Person</p><p><b>actual</b>: true</p><p><b>name</b>: Jensen familien</p><p><b>quantity</b>: 2</p><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-AndersJensen.html\">Anders Test Jensen (far)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-AliJensen.html\">Ali Test Jensen (søn)</a></p></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:type [ fhir:v "person"] ; # 
+  fhir:actual [ fhir:v true] ; # 
+  fhir:name [ fhir:v "Jensen familien"] ; # 
+  fhir:quantity [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
+  fhir:member ( [
+     fhir:entity [
+       fhir:l <http://hl7.dk/fhir/core/Patient/AndersJensen> ;
+       fhir:reference [ fhir:v "Patient/AndersJensen" ] ;
+       fhir:display [ fhir:v "Anders Test Jensen (far)" ]
+     ]
+  ] [
+     fhir:entity [
+       fhir:l <http://hl7.dk/fhir/core/Patient/AliJensen> ;
+       fhir:reference [ fhir:v "Patient/AliJensen" ] ;
+       fhir:display [ fhir:v "Ali Test Jensen (søn)" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

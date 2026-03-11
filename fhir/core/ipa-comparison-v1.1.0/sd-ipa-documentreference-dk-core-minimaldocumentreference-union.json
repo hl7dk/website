@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-56",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-56",
+  "id" : "6093be53-3d1d-48b0-b3bb-67287619f74a-56",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/6093be53-3d1d-48b0-b3bb-67287619f74a-56",
   "name" : "UnionIPADocumentReferenceAndDkCoreMinimalDocumentReference",
   "title" : "Union of IPA-DocumentReference And Danish Core Minimal DocumentReference Profile",
   "status" : "active",
-  "date" : "2025-12-19T17:28:19+01:00",
+  "date" : "2026-03-11T23:17:49+01:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -498,7 +498,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-5"
       }
     },
     {
@@ -773,7 +773,7 @@
       "binding" : {
         "strength" : "required",
         "description" : "The status of the document reference.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-59"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-59"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -873,7 +873,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "Precise type of clinical document.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-62"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-62"
       },
       "mapping" : [{
         "identity" : "workflow",
@@ -936,7 +936,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "High-level kind of a clinical document at a macro level.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-65"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-65"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -1905,7 +1905,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-5"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-5"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -2157,7 +2157,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "Document Format Codes.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-68"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-68"
       },
       "mapping" : [{
         "identity" : "fhircomposition",
@@ -2390,7 +2390,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "This list of codes represents the main clinical acts being documented.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-71"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-71"
       },
       "mapping" : [{
         "identity" : "fhircomposition",
@@ -2644,7 +2644,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "XDS Facility Type.",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-74"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-74"
       },
       "mapping" : [{
         "identity" : "fhircomposition",
@@ -2695,7 +2695,7 @@
       "binding" : {
         "strength" : "extensible",
         "description" : "Additional details about where the content was created (e.g. clinical specialty).",
-        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/37bbcdbd-46e3-42cc-8cd3-5bd3bf4d822a-77"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/6093be53-3d1d-48b0-b3bb-67287619f74a-77"
       },
       "mapping" : [{
         "identity" : "fhircomposition",
