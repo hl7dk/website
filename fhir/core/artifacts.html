@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - HL7 FHIR Implementation Guide: DK Core v3.6.0</title>
+    <title>Artifacts Summary - HL7 FHIR Implementation Guide: DK Core v3.7.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -61,11 +61,11 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">HL7 FHIR Implementation Guide: DK Core</span>
             <br/>
-            <span style="display:inline-block;">3.6.0 - release
+            <span style="display:inline-block;">3.7.0 - release
 
 
 
-  <img alt="Denmark flag" src="assets/images/dnk.svg" height="16" title="Denmark"/>
+  <span title="">DK</span>
 
 
             </span>
@@ -148,7 +148,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the HL7 FHIR Implementation Guide: DK Core (v3.6.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://hl7.dk/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the HL7 FHIR Implementation Guide: DK Core (v3.7.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://hl7.dk/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -211,6 +211,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>HL7 Denmark core profile for professionally asserted conditions, as specified by danish health and social care organizations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dk-core-diagnostic-report.html"
+                  title="StructureDefinition/dk-core-diagnostic-report">Danish Core Diagnostic Report Profile</a>
+            </td>
+            <td>
+<p>HL7 Denmark profile for diagnostic reports.</p>
 </td>
          </tr>
          <tr>
@@ -527,6 +536,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-dk-core-LoincDiagnosticDocumentTypes.html"
+                  title="ValueSet/dk-core-LoincDiagnosticDocumentTypes">DK Core LOINC Diagnostic Document Types</a>
+            </td>
+            <td>
+<p>LOINC codes describing diagnostic documents that may be used for common Danish use cases.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-dk-core-LoincLabStudyTypes.html"
+                  title="ValueSet/dk-core-LoincLabStudyTypes">DK Core Laboratory study types</a>
+            </td>
+            <td>
+<p>LOINC codes describing laboratory study types that are consistent with European use in EHDS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-dk-marital-status.html"
                   title="ValueSet/dk-marital-status">DK Core Marital Status</a>
             </td>
@@ -635,6 +662,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-dk-core-practice-setting-exclude-lab-code.html"
+                  title="ValueSet/dk-core-practice-setting-exclude-lab-code">DK SOR Practice Setting Code excluding laboratory codes</a>
+            </td>
+            <td>
+<p>Values used for Practice Setting, as described in the SOR registry. This list excludes Laboratory Specialties .</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-dk-core-TechniquesSCTCodes.html"
                   title="ValueSet/dk-core-TechniquesSCTCodes">DK TechniquesSCTCodes</a>
             </td>
@@ -676,6 +712,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>IEEE MDC codes for Basic Observations usable in Denmark</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-dk-core-SCTLaboratorySpecialities.html"
+                  title="ValueSet/dk-core-SCTLaboratorySpecialities">SNOMED CT Laboratory Specialities</a>
+            </td>
+            <td>
+<p>SNOMED CT codes for Laboratory Specialities. Note that this is the set of accepted specialities in Europe</p>
 </td>
          </tr>
       </tbody>
@@ -805,15 +850,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-dk-core-regional-subdivision-codes.html"
-                  title="CodeSystem/dk-core-regional-subdivision-codes">DK Regional Subdivision Codes</a>
-            </td>
-            <td>
-<p>Subdivision codes (Regional codes) used in Denmark as found on https://www.iso.org/obp/ui/#iso:code:3166:DK</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="CodeSystem-dk-relatedperson-relationshipcodes.html"
                   title="CodeSystem/dk-relatedperson-relationshipcodes">DK Related Person Relationship Codes</a>
             </td>
@@ -862,6 +898,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>The Danish civil registration system ("CPR") encompasses basic personal data about anyone with a civil registration number. A civil registration number shall be allocated to anyone who: 1) is registered in the national register in Denmark on the grounds of birth or relocation from abroad; 2) is included under Arbejdsmarkedets TillægsPension (ATP); 3) according to the tax authorities, is required to have a civil registration number for the purpose of tax processing in Denmark.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-cvr.html" title="NamingSystem/cvr">cvr</a>
+            </td>
+            <td>
+<p>The Central Business Register (CVR) is the state's master register for business information. The register contains information about all Danish businesses, including their name, address, industry code, and other relevant details. The CVR is maintained by the Danish Business Authority (Erhvervsstyrelsen) and is used for various purposes, including taxation, business registration, and statistical analysis.</p>
 </td>
          </tr>
          <tr>
@@ -1159,10 +1203,28 @@ time zones.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="DiagnosticReport-ElseLaboratoryReport.html"
+                  title="DiagnosticReport/ElseLaboratoryReport">Else's Laboratory report using EHDS value sets</a>
+            </td>
+            <td>
+<p>An example of clinical chemistry report.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Bundle-ElsesTOBS.html" title="Bundle/ElsesTOBS">Else's TOBS measurements</a>
             </td>
             <td>
 <p>An example of TOBS (Danish: Tidlig opsporing af begyndende sygdom), which includes level of consciousness, heart rate, respiration rate, blood pressure and temperature.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DiagnosticReport-ElseHomeNursingMeasurements.html"
+                  title="DiagnosticReport/ElseHomeNursingMeasurements">Else's TOBS measurements and urin stix</a>
+            </td>
+            <td>
+<p>An example of urin stix and TOBS (Danish: Tidlig opsporing af begyndende sygdom) organized as a DiagnosticReport.</p>
 </td>
          </tr>
          <tr>
@@ -1195,6 +1257,30 @@ time zones.</p>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-ElseHeartRate.html" title="Observation/ElseHeartRate">ElseHeartRate</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ElseINR.html" title="Observation/ElseINR">ElseINR</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ElseKalium.html" title="Observation/ElseKalium">ElseKalium</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ElseNatrium.html" title="Observation/ElseNatrium">ElseNatrium</a>
             </td>
             <td>
 
@@ -1512,6 +1598,15 @@ which requires the value to be unitless.</p>
             </td>
             <td>
 <p>Knut Odvar Test Mosebryggersen - Søn af May June Moberg &amp; Schwendlund Mosebryggersen</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-KliniskBiokemiHBY.html"
+                  title="Organization/KliniskBiokemiHBY">Laboratory instance of DkCoreOrganization</a>
+            </td>
+            <td>
+<p>Laboratory organization</p>
 </td>
          </tr>
          <tr>
@@ -2272,7 +2367,7 @@ state of his CHF condition. This is the app he uses to report the data to his do
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.6.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 11, 2026 23:16+0100">2026-03-11</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, May 30, 2026 15:25+0200">2026-05-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

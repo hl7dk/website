@@ -1,0 +1,26 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "aff99b33-7871-477b-aea5-0888de290586-59",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/aff99b33-7871-477b-aea5-0888de290586-59",
+  "name" : "UnionDocumentReferenceStatusAndDocumentReferenceStats",
+  "title" : "Union of DocumentReferenceStatus And MHD DocumentReference status codes",
+  "status" : "draft",
+  "date" : "2026-05-30T15:18:37+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "current"
+      },
+      {
+        "code" : "superseded"
+      }]
+    }]
+  }
+}

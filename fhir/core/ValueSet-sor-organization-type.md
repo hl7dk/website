@@ -1,4 +1,4 @@
-# DK SOR Organization Type - HL7 FHIR Implementation Guide: DK Core v3.6.0
+# DK SOR Organization Type - HL7 FHIR Implementation Guide: DK Core v3.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/ValueSet/sor-organization-type | *Version*:3.6.0 |
-| Active as of 2026-03-11 | *Computable Name*:SorOrganizationType |
+| *Official URL*:http://hl7.dk/fhir/core/ValueSet/sor-organization-type | *Version*:3.7.0 |
+| Active as of 2026-05-30 | *Computable Name*:SorOrganizationType |
 | **Copyright/Legal**: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement | |
 
  
@@ -48,12 +48,12 @@ Value set used for indicating the organization type for organizations from SOR
   "resourceType" : "ValueSet",
   "id" : "sor-organization-type",
   "url" : "http://hl7.dk/fhir/core/ValueSet/sor-organization-type",
-  "version" : "3.6.0",
+  "version" : "3.7.0",
   "name" : "SorOrganizationType",
   "title" : "DK SOR Organization Type",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-11T23:16:27+01:00",
+  "date" : "2026-05-30T15:25:27+02:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",

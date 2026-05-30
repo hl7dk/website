@@ -1,4 +1,4 @@
-# PlannedStartDate - HL7 FHIR Implementation Guide: DK Core v3.6.0
+# PlannedStartDate - HL7 FHIR Implementation Guide: DK Core v3.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-planned-start-date | *Version*:3.6.0 |
-| Active as of 2026-03-11 | *Computable Name*:PlannedStartDate |
+| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-planned-start-date | *Version*:3.7.0 |
+| Active as of 2026-05-30 | *Computable Name*:PlannedStartDate |
 
 The planned start date/time (or admission date) of the encounter
 
@@ -22,7 +22,7 @@ The planned start date/time (or admission date) of the encounter
 * Use this Extension: [Danish Core Encounter Profile](StructureDefinition-dk-core-encounter.md)
 * Examples for this Extension: [Encounter/0c5e4905-5c2e-4254-8837-770c3724cd13](Encounter-0c5e4905-5c2e-4254-8837-770c3724cd13.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.dk.core|current/StructureDefinition/dk-core-planned-start-date)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.dk.core|current/StructureDefinition/StructureDefinition-dk-core-planned-start-date.json)
 
 ### Formal Views of Extension Content
 
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-dk-core-planned-star
   "resourceType" : "StructureDefinition",
   "id" : "dk-core-planned-start-date",
   "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-planned-start-date",
-  "version" : "3.6.0",
+  "version" : "3.7.0",
   "name" : "PlannedStartDate",
   "title" : "PlannedStartDate",
   "status" : "active",
-  "date" : "2026-03-11T23:16:27+01:00",
+  "date" : "2026-05-30T15:25:27+02:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",

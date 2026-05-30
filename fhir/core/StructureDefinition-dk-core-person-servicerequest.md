@@ -1,4 +1,4 @@
-# Danish Core Person ServiceRequest Profile - HL7 FHIR Implementation Guide: DK Core v3.6.0
+# Danish Core Person ServiceRequest Profile - HL7 FHIR Implementation Guide: DK Core v3.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-person-servicerequest | *Version*:3.6.0 |
-| Active as of 2026-03-11 | *Computable Name*:DkCorePersonServiceRequest |
+| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-person-servicerequest | *Version*:3.7.0 |
+| Active as of 2026-05-30 | *Computable Name*:DkCorePersonServiceRequest |
 
  
 HL7 Denmark core profile for requesting a service, such as diagnostic investigations, nursing services, treatments, and more for a Patient. 
@@ -36,9 +36,10 @@ Another example of the use of category, related to a different aspect, could be 
 
 **Usages:**
 
+* Refer to this Profile: [Danish Core Diagnostic Report Profile](StructureDefinition-dk-core-diagnostic-report.md)
 * Examples for this Profile: [ServiceRequest/JohnsServiceRequest](ServiceRequest-JohnsServiceRequest.md) and [ServiceRequest/MaxServiceRequest](ServiceRequest-MaxServiceRequest.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.dk.core|current/StructureDefinition/dk-core-person-servicerequest)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.dk.core|current/StructureDefinition/StructureDefinition-dk-core-person-servicerequest.json)
 
 ### Formal Views of Profile Content
 
@@ -57,11 +58,11 @@ Other representations of profile: [CSV](StructureDefinition-dk-core-person-servi
   "resourceType" : "StructureDefinition",
   "id" : "dk-core-person-servicerequest",
   "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-person-servicerequest",
-  "version" : "3.6.0",
+  "version" : "3.7.0",
   "name" : "DkCorePersonServiceRequest",
   "title" : "Danish Core Person ServiceRequest Profile",
   "status" : "active",
-  "date" : "2026-03-11T23:16:27+01:00",
+  "date" : "2026-05-30T15:25:27+02:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",

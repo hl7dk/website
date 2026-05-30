@@ -1,0 +1,18 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "224a4df2-98aa-4da7-9fd3-aaf326be0fbc-54",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/224a4df2-98aa-4da7-9fd3-aaf326be0fbc-54",
+  "name" : "IntersectionManifestationAndSymptomCodesAndManifestationAndSymptomCodes",
+  "title" : "Intersection of Manifestation and Symptom Codes And Manifestation and Symptom Codes",
+  "status" : "draft",
+  "date" : "2026-05-30T15:27:21+02:00",
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "404684003"
+      }]
+    }]
+  }
+}

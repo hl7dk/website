@@ -1,4 +1,4 @@
-# DK SOR Practice Setting Code - HL7 FHIR Implementation Guide: DK Core v3.6.0
+# DK SOR Practice Setting Code - HL7 FHIR Implementation Guide: DK Core v3.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,14 +8,16 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/ValueSet/dk-core-practice-setting-code | *Version*:3.6.0 |
-| Active as of 2026-03-11 | *Computable Name*:SorPracticeSettingCode |
+| *Official URL*:http://hl7.dk/fhir/core/ValueSet/dk-core-practice-setting-code | *Version*:3.7.0 |
+| Active as of 2026-05-30 | *Computable Name*:SorPracticeSettingCode |
+| **Copyright/Legal**: This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement | |
 
  
 Values used for the document metadata attribute practiceSettingCode, which is an attribute specifying the clinical specialty where the act that resulted in the document was performed (e.g., Family Practice, Laboratory, Radiology). The value set is based on a subset of the code list from the SOR lookup table 'SOR-Kliniske specialer' (https://sor.sum.dsdn.dk/lookupdata/#clinical_speciality, accessable on Sundhedsdatanettet (SDN)), which is based on SNOMED CT codes. 
 
  **References** 
 
+* Included into [SorPracticeSettingCodeExcludingLab](ValueSet-dk-core-practice-setting-exclude-lab-code.md)
 * [Danish Core Minimal DocumentReference Profile](StructureDefinition-dk-core-minimaldocumentreference.md)
 
 ### Logical Definition (CLD)
@@ -46,12 +48,12 @@ Values used for the document metadata attribute practiceSettingCode, which is an
   "resourceType" : "ValueSet",
   "id" : "dk-core-practice-setting-code",
   "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-practice-setting-code",
-  "version" : "3.6.0",
+  "version" : "3.7.0",
   "name" : "SorPracticeSettingCode",
   "title" : "DK SOR Practice Setting Code",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-11T23:16:27+01:00",
+  "date" : "2026-05-30T15:25:27+02:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",
@@ -72,6 +74,7 @@ Values used for the document metadata attribute practiceSettingCode, which is an
       "display" : "Denmark"
     }]
   }],
+  "copyright" : "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",

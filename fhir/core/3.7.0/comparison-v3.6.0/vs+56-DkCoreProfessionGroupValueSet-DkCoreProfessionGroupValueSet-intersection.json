@@ -1,0 +1,16 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "addf3d41-0b1b-42d4-baf6-b3e7a28b1043-162",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/addf3d41-0b1b-42d4-baf6-b3e7a28b1043-162",
+  "name" : "IntersectionDkCoreProfessionGroupValueSetAndDkCoreProfessionGroupValueSet",
+  "title" : "Intersection of DK Profession Group And DK Profession Group",
+  "status" : "active",
+  "date" : "2026-05-30T15:18:36+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }]
+}

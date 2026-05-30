@@ -1,4 +1,4 @@
-# Danish Core Organization Profile - HL7 FHIR Implementation Guide: DK Core v3.6.0
+# Danish Core Organization Profile - HL7 FHIR Implementation Guide: DK Core v3.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization | *Version*:3.6.0 |
-| Active as of 2026-03-11 | *Computable Name*:DkCoreOrganization |
+| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization | *Version*:3.7.0 |
+| Active as of 2026-05-30 | *Computable Name*:DkCoreOrganization |
 
  
 HL7 Denmark core profile for a danish health organization 
@@ -35,10 +35,10 @@ When using the Danish Core Organization profile for representing a general pract
 
 **Usages:**
 
-* Refer to this Profile: [CareProvider](StructureDefinition-dk-core-care-provider.md), [Danish Core Encounter Profile](StructureDefinition-dk-core-encounter.md), [Danish Core Location Profile](StructureDefinition-dk-core-location.md), [Danish Core Minimal DocumentReference Profile](StructureDefinition-dk-core-minimaldocumentreference.md)... Show 4 more, [Danish Core Observation Profile](StructureDefinition-dk-core-observation.md), [Danish Core Patient Profile](StructureDefinition-dk-core-patient.md), [Danish Core Person ServiceRequest Profile](StructureDefinition-dk-core-person-servicerequest.md) and [Danish Core PractitionerRole Profile](StructureDefinition-dk-core-practitioner-role.md)
-* Examples for this Profile: [Organization/154b8c96-a061-45bf-9ce4-1947c7c3c283](Organization-154b8c96-a061-45bf-9ce4-1947c7c3c283.md), [Ortopædkirurgisk sengeafsnit](Organization-19f9ee18-7677-4caf-88fe-8f6df2f2906e.md), [Ortopædkirurgisk sengeafdeling](Organization-8510eec9-180b-4e9c-95b6-02fad9f853d3.md), [Lægerne Hasseris Bymidte](Organization-8fa7df76-bec2-4fe2-9a44-750030a0eda0.md)... Show 7 more, [Organization/CenterForDiabetes](Organization-CenterForDiabetes.md), [Organization/CenterForDiabetesTeamDiabetes](Organization-CenterForDiabetesTeamDiabetes.md), [Organization/CenterForDiabetesTeamHjerte](Organization-CenterForDiabetesTeamHjerte.md), [Organization/CenterForDiabetesTeamKvalitet](Organization-CenterForDiabetesTeamKvalitet.md), [Lægerne Hasseris Bymidte](Organization-LaegerneHasserisBymidte.md), [Organization/b08997bb-4476-4dd0-84dd-2e297f809364](Organization-b08997bb-4476-4dd0-84dd-2e297f809364.md) and [Organization/dk-core-organization-1](Organization-dk-core-organization-1.md)
+* Refer to this Profile: [CareProvider](StructureDefinition-dk-core-care-provider.md), [Danish Core Diagnostic Report Profile](StructureDefinition-dk-core-diagnostic-report.md), [Danish Core Encounter Profile](StructureDefinition-dk-core-encounter.md), [Danish Core Location Profile](StructureDefinition-dk-core-location.md)... Show 5 more, [Danish Core Minimal DocumentReference Profile](StructureDefinition-dk-core-minimaldocumentreference.md), [Danish Core Observation Profile](StructureDefinition-dk-core-observation.md), [Danish Core Patient Profile](StructureDefinition-dk-core-patient.md), [Danish Core Person ServiceRequest Profile](StructureDefinition-dk-core-person-servicerequest.md) and [Danish Core PractitionerRole Profile](StructureDefinition-dk-core-practitioner-role.md)
+* Examples for this Profile: [Organization/154b8c96-a061-45bf-9ce4-1947c7c3c283](Organization-154b8c96-a061-45bf-9ce4-1947c7c3c283.md), [Ortopædkirurgisk sengeafsnit](Organization-19f9ee18-7677-4caf-88fe-8f6df2f2906e.md), [Ortopædkirurgisk sengeafdeling](Organization-8510eec9-180b-4e9c-95b6-02fad9f853d3.md), [Lægerne Hasseris Bymidte](Organization-8fa7df76-bec2-4fe2-9a44-750030a0eda0.md)... Show 8 more, [Organization/CenterForDiabetes](Organization-CenterForDiabetes.md), [Organization/CenterForDiabetesTeamDiabetes](Organization-CenterForDiabetesTeamDiabetes.md), [Organization/CenterForDiabetesTeamHjerte](Organization-CenterForDiabetesTeamHjerte.md), [Organization/CenterForDiabetesTeamKvalitet](Organization-CenterForDiabetesTeamKvalitet.md), [Organization/KliniskBiokemiHBY](Organization-KliniskBiokemiHBY.md), [Lægerne Hasseris Bymidte](Organization-LaegerneHasserisBymidte.md), [Organization/b08997bb-4476-4dd0-84dd-2e297f809364](Organization-b08997bb-4476-4dd0-84dd-2e297f809364.md) and [Organization/dk-core-organization-1](Organization-dk-core-organization-1.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.dk.core|current/StructureDefinition/dk-core-organization)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.dk.core|current/StructureDefinition/StructureDefinition-dk-core-organization.json)
 
 ### Formal Views of Profile Content
 
@@ -57,11 +57,11 @@ Other representations of profile: [CSV](StructureDefinition-dk-core-organization
   "resourceType" : "StructureDefinition",
   "id" : "dk-core-organization",
   "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization",
-  "version" : "3.6.0",
+  "version" : "3.7.0",
   "name" : "DkCoreOrganization",
   "title" : "Danish Core Organization Profile",
   "status" : "active",
-  "date" : "2026-03-11T23:16:27+01:00",
+  "date" : "2026-05-30T15:25:27+02:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",

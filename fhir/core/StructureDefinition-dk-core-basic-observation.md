@@ -1,4 +1,4 @@
-# Danish Core Basic Observation Profile - HL7 FHIR Implementation Guide: DK Core v3.6.0
+# Danish Core Basic Observation Profile - HL7 FHIR Implementation Guide: DK Core v3.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation | *Version*:3.6.0 |
-| Active as of 2026-03-11 | *Computable Name*:DkCoreBasicObservation |
+| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation | *Version*:3.7.0 |
+| Active as of 2026-05-30 | *Computable Name*:DkCoreBasicObservation |
 
  
 HL7 Denmark core profile for basic observations, which is a profiling of DkCoreObservation. 
@@ -64,7 +64,7 @@ The table below includes instances of the DkCoreBasicObservation used to represe
 
 * Examples for this Profile: [Observation/ElseBloodPressure](Observation-ElseBloodPressure.md), [Observation/ElseBodyTemperature](Observation-ElseBodyTemperature.md), [Observation/ElseHeartRate](Observation-ElseHeartRate.md), [Observation/ElseRespirationRate](Observation-ElseRespirationRate.md)... Show 8 more, [Observation/MaxBloodPressure](Observation-MaxBloodPressure.md), [Observation/MaxBodyTemperature](Observation-MaxBodyTemperature.md), [Observation/MaxHeartRate](Observation-MaxHeartRate.md), [Observation/MaxRespirationRate](Observation-MaxRespirationRate.md), [Observation/MaxSaturation](Observation-MaxSaturation.md), [Observation/MaxVitalSignsPanel](Observation-MaxVitalSignsPanel.md), [Observation/ObservationOxySatBasicObservationOrg](Observation-ObservationOxySatBasicObservationOrg.md) and [Observation/ObservationRespiratoryBasicObservation](Observation-ObservationRespiratoryBasicObservation.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.dk.core|current/StructureDefinition/dk-core-basic-observation)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.dk.core|current/StructureDefinition/StructureDefinition-dk-core-basic-observation.json)
 
 ### Formal Views of Profile Content
 
@@ -83,11 +83,11 @@ Other representations of profile: [CSV](StructureDefinition-dk-core-basic-observ
   "resourceType" : "StructureDefinition",
   "id" : "dk-core-basic-observation",
   "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation",
-  "version" : "3.6.0",
+  "version" : "3.7.0",
   "name" : "DkCoreBasicObservation",
   "title" : "Danish Core Basic Observation Profile",
   "status" : "active",
-  "date" : "2026-03-11T23:16:27+01:00",
+  "date" : "2026-05-30T15:25:27+02:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",

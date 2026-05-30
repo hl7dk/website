@@ -1,4 +1,4 @@
-# DK Publication Status Supplement - HL7 FHIR Implementation Guide: DK Core v3.6.0
+# DK Publication Status Supplement - HL7 FHIR Implementation Guide: DK Core v3.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/CodeSystem/publication-status-dk-supplement | *Version*:3.6.0 |
-| Active as of 2026-03-11 | *Computable Name*:PublicationStatus |
+| *Official URL*:http://hl7.dk/fhir/core/CodeSystem/publication-status-dk-supplement | *Version*:3.7.0 |
+| Active as of 2026-05-30 | *Computable Name*:PublicationStatus |
 
  
 The lifecycle status of a Value Set or Concept Map. 
@@ -27,12 +27,12 @@ The lifecycle status of a Value Set or Concept Map.
   "resourceType" : "CodeSystem",
   "id" : "publication-status-dk-supplement",
   "url" : "http://hl7.dk/fhir/core/CodeSystem/publication-status-dk-supplement",
-  "version" : "3.6.0",
+  "version" : "3.7.0",
   "name" : "PublicationStatus",
   "title" : "DK Publication Status Supplement",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-11T23:16:27+01:00",
+  "date" : "2026-05-30T15:25:27+02:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",

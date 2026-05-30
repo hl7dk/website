@@ -1,0 +1,128 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "a51bbc41-e862-461f-8c45-f8b38f0c1d69-165",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/a51bbc41-e862-461f-8c45-f8b38f0c1d69-165",
+  "name" : "IntersectionIEEEBasicObservationAndIEEEBasicObservation",
+  "title" : "Intersection of Dk Core IEEE Basic Observation And Dk Core IEEE Basic Observation",
+  "status" : "active",
+  "date" : "2026-05-30T15:27:20+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "151562"
+      },
+      {
+        "code" : "151570"
+      },
+      {
+        "code" : "151578"
+      },
+      {
+        "code" : "151594"
+      },
+      {
+        "code" : "151602"
+      },
+      {
+        "code" : "151650"
+      },
+      {
+        "code" : "151658"
+      },
+      {
+        "code" : "8410992"
+      },
+      {
+        "code" : "149514"
+      },
+      {
+        "code" : "149522"
+      },
+      {
+        "code" : "149546"
+      },
+      {
+        "code" : "149530"
+      },
+      {
+        "code" : "147842"
+      },
+      {
+        "code" : "8410590"
+      },
+      {
+        "code" : "149554"
+      },
+      {
+        "code" : "149562"
+      },
+      {
+        "code" : "8454258"
+      },
+      {
+        "code" : "150324"
+      },
+      {
+        "code" : "150456"
+      },
+      {
+        "code" : "150364"
+      },
+      {
+        "code" : "150368"
+      },
+      {
+        "code" : "150388"
+      },
+      {
+        "code" : "150392"
+      },
+      {
+        "code" : "188420"
+      },
+      {
+        "code" : "188424"
+      },
+      {
+        "code" : "188428"
+      },
+      {
+        "code" : "188452"
+      },
+      {
+        "code" : "188456"
+      },
+      {
+        "code" : "188740"
+      },
+      {
+        "code" : "153856"
+      },
+      {
+        "code" : "188736"
+      },
+      {
+        "code" : "188752"
+      },
+      {
+        "code" : "150020"
+      },
+      {
+        "code" : "150021"
+      },
+      {
+        "code" : "150022"
+      },
+      {
+        "code" : "150023"
+      }]
+    }]
+  }
+}

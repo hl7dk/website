@@ -1,4 +1,4 @@
-# Danish Health Professionals Authorization Identifier - HL7 FHIR Implementation Guide: DK Core v3.6.0
+# Danish Health Professionals Authorization Identifier - HL7 FHIR Implementation Guide: DK Core v3.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-authorization-identifier | *Version*:3.6.0 |
-| Active as of 2026-03-11 | *Computable Name*:AuthorizationIdentifier |
+| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-authorization-identifier | *Version*:3.7.0 |
+| Active as of 2026-05-30 | *Computable Name*:AuthorizationIdentifier |
 
  
 Identifier holding the official [authorization identifier](https://en.stps.dk/en/health-professionals-and-authorities/online-register-registered-health-professionals/) for a practitioner. 
@@ -18,7 +18,7 @@ Identifier holding the official [authorization identifier](https://en.stps.dk/en
 
 * Use this DataType Profile: [Danish Core Practitioner Profile](StructureDefinition-dk-core-practitioner.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.dk.core|current/StructureDefinition/dk-core-authorization-identifier)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.dk.core|current/StructureDefinition/StructureDefinition-dk-core-authorization-identifier.json)
 
 ### Formal Views of Profile Content
 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-dk-core-authorizatio
   "resourceType" : "StructureDefinition",
   "id" : "dk-core-authorization-identifier",
   "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-authorization-identifier",
-  "version" : "3.6.0",
+  "version" : "3.7.0",
   "name" : "AuthorizationIdentifier",
   "title" : "Danish Health Professionals Authorization Identifier",
   "status" : "active",
-  "date" : "2026-03-11T23:16:27+01:00",
+  "date" : "2026-05-30T15:25:27+02:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",

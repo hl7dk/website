@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "224a4df2-98aa-4da7-9fd3-aaf326be0fbc-71",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/224a4df2-98aa-4da7-9fd3-aaf326be0fbc-71",
+  "name" : "Unionv3.ActCodeAndActCode",
+  "title" : "Union of v3 Code System ActCode And v3 Code System ActCode",
+  "status" : "active",
+  "date" : "2026-05-30T15:27:21+02:00"
+}

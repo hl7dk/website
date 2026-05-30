@@ -1,4 +1,4 @@
-# Danish Core Minimal DocumentReference Profile - HL7 FHIR Implementation Guide: DK Core v3.6.0
+# Danish Core Minimal DocumentReference Profile - HL7 FHIR Implementation Guide: DK Core v3.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-minimaldocumentreference | *Version*:3.6.0 |
-| Active as of 2026-03-11 | *Computable Name*:DkCoreMinimalDocumentReference |
+| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-minimaldocumentreference | *Version*:3.7.0 |
+| Active as of 2026-05-30 | *Computable Name*:DkCoreMinimalDocumentReference |
 
  
 HL7 Denmark core profile for a Minimal DocumentReference inherited from IHE MHD Minimal DocumentReference 
@@ -30,7 +30,7 @@ Normally, when a DK Core profile is derived from a FHIR Core resource, derivatio
 
 * Examples for this Profile: [DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a12](DocumentReference-94e65db8-2f0c-4a2c-a7c9-06a160d59a12.md) and [DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a13](DocumentReference-94e65db8-2f0c-4a2c-a7c9-06a160d59a13.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.dk.core|current/StructureDefinition/dk-core-minimaldocumentreference)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.dk.core|current/StructureDefinition/StructureDefinition-dk-core-minimaldocumentreference.json)
 
 ### Formal Views of Profile Content
 
@@ -49,11 +49,11 @@ Other representations of profile: [CSV](StructureDefinition-dk-core-minimaldocum
   "resourceType" : "StructureDefinition",
   "id" : "dk-core-minimaldocumentreference",
   "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-minimaldocumentreference",
-  "version" : "3.6.0",
+  "version" : "3.7.0",
   "name" : "DkCoreMinimalDocumentReference",
   "title" : "Danish Core Minimal DocumentReference Profile",
   "status" : "active",
-  "date" : "2026-03-11T23:16:27+01:00",
+  "date" : "2026-05-30T15:25:27+02:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",

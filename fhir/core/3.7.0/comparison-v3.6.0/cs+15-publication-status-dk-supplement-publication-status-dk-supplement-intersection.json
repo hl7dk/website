@@ -1,0 +1,84 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "addf3d41-0b1b-42d4-baf6-b3e7a28b1043-42",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/addf3d41-0b1b-42d4-baf6-b3e7a28b1043-42",
+  "name" : "IntersectionPublicationStatusAndPublicationStatus",
+  "title" : "Intersection of DK Publication Status Supplement And DK Publication Status Supplement",
+  "status" : "active",
+  "date" : "2026-05-30T15:18:35+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "concept" : [{
+    "code" : "draft",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "черновик"
+    },
+    {
+      "language" : "nl",
+      "value" : "ontwerp"
+    },
+    {
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Udkast"
+    }]
+  },
+  {
+    "code" : "active",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "активный"
+    },
+    {
+      "language" : "nl",
+      "value" : "actief"
+    },
+    {
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Aktiv"
+    }]
+  },
+  {
+    "code" : "retired",
+    "designation" : [{
+      "language" : "ru",
+      "value" : "удалён"
+    },
+    {
+      "language" : "nl",
+      "value" : "verouderd"
+    },
+    {
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Udgået"
+    }]
+  },
+  {
+    "code" : "unknown",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Ukendt"
+    }]
+  }]
+}

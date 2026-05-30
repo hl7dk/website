@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Group xmlns="http://hl7.org/fhir">
+  <id value="LauridsenFamily"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Group LauridsenFamily</b></p><a name="LauridsenFamily"> </a><a name="hcLauridsenFamily"> </a><p><b>type</b>: Person</p><p><b>actual</b>: true</p><p><b>name</b>: Lauridsen familien</p><p><b>quantity</b>: 7</p><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Patient-Einer.html">Einer Test Lauridsen (far)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Patient-Lonni.html">Lonni Test Lauridsen (mor)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Patient-Magnus.html">Magnus Test Lauridsen (søn, tvilling)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Patient-Rasmus.html">Rasmus Test Lauridsen (søn, tvilling)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Patient-ElseLauridsen.html">Else Test Lauridsen (datter, trilling)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Patient-EllenLouise.html">Ellen Louise Test Lauridsen (datter, trilling)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Patient-EK.html">EK Test Lauridsen (søn, trilling)</a></p></blockquote></div>
+  </text>
+  <type value="person"/>
+  <actual value="true"/>
+  <name value="Lauridsen familien"/>
+  <quantity value="7"/>
+  <member>
+    <entity>
+      <reference value="Patient/Einer"/>
+      <display value="Einer Test Lauridsen (far)"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Patient/Lonni"/>
+      <display value="Lonni Test Lauridsen (mor)"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Patient/Magnus"/>
+      <display value="Magnus Test Lauridsen (søn, tvilling)"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Patient/Rasmus"/>
+      <display value="Rasmus Test Lauridsen (søn, tvilling)"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Patient/ElseLauridsen"/>
+      <display value="Else Test Lauridsen (datter, trilling)"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Patient/EllenLouise"/>
+      <display value="Ellen Louise Test Lauridsen (datter, trilling)"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Patient/EK"/>
+      <display value="EK Test Lauridsen (søn, trilling)"/>
+    </entity>
+  </member>
+</Group>

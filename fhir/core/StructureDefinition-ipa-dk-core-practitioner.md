@@ -1,4 +1,4 @@
-# Danish IPA Core Practitioner Profile - HL7 FHIR Implementation Guide: DK Core v3.6.0
+# Danish IPA Core Practitioner Profile - HL7 FHIR Implementation Guide: DK Core v3.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/ipa-dk-core-practitioner | *Version*:3.6.0 |
-| Active as of 2026-03-11 | *Computable Name*:IpaDkCorePractitioner |
+| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/ipa-dk-core-practitioner | *Version*:3.7.0 |
+| Active as of 2026-05-30 | *Computable Name*:IpaDkCorePractitioner |
 
  
 HL7 Denmark core profile for IPA and DK Core compliant practitioners 
@@ -20,9 +20,9 @@ The Danish IPA Core Practitioner profile is intended to encapsulate the combined
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* This Profile is not used by any profiles in this Specification
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.dk.core|current/StructureDefinition/ipa-dk-core-practitioner)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.dk.core|current/StructureDefinition/StructureDefinition-ipa-dk-core-practitioner.json)
 
 ### Formal Views of Profile Content
 
@@ -45,11 +45,11 @@ Other representations of profile: [CSV](StructureDefinition-ipa-dk-core-practiti
     "valueCanonical" : "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-practitioner"
   }],
   "url" : "http://hl7.dk/fhir/core/StructureDefinition/ipa-dk-core-practitioner",
-  "version" : "3.6.0",
+  "version" : "3.7.0",
   "name" : "IpaDkCorePractitioner",
   "title" : "Danish IPA Core Practitioner Profile",
   "status" : "active",
-  "date" : "2026-03-11T23:16:27+01:00",
+  "date" : "2026-05-30T15:25:27+02:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",

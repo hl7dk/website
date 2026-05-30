@@ -1,0 +1,30 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "224a4df2-98aa-4da7-9fd3-aaf326be0fbc-50",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/224a4df2-98aa-4da7-9fd3-aaf326be0fbc-50",
+  "name" : "UnionConditionStageTypeAndConditionStageType",
+  "title" : "Union of Condition Stage Type And Condition Stage Type",
+  "status" : "draft",
+  "date" : "2026-05-30T15:27:21+02:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "261023001",
+        "display" : "Pathological staging (qualifier value)"
+      }]
+    },
+    {
+      "concept" : [{
+        "code" : "260998006",
+        "display" : "Clinical staging (qualifier value)"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "254291000"
+      }]
+    }]
+  }
+}

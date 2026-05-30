@@ -1,4 +1,4 @@
-# Danish Core Condition Profile - HL7 FHIR Implementation Guide: DK Core v3.6.0
+# Danish Core Condition Profile - HL7 FHIR Implementation Guide: DK Core v3.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition | *Version*:3.6.0 |
-| Active as of 2026-03-11 | *Computable Name*:DkCoreCondition |
+| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition | *Version*:3.7.0 |
+| Active as of 2026-05-30 | *Computable Name*:DkCoreCondition |
 
  
 HL7 Denmark core profile for professionally asserted conditions, as specified by danish health and social care organizations 
@@ -51,7 +51,7 @@ Condition profile cover both primary sector, secondary sector (medical specialis
 * Refer to this Profile: [Danish Core Person ServiceRequest Profile](StructureDefinition-dk-core-person-servicerequest.md)
 * Examples for this Profile: [Condition/ConditionPressureUlcer](Condition-ConditionPressureUlcer.md), [Condition/ElseGraviditet](Condition-ElseGraviditet.md), [Condition/JohnDiabetes](Condition-JohnDiabetes.md), [Condition/JohnFracture](Condition-JohnFracture.md)... Show 2 more, [Condition/JohnMelanoma](Condition-JohnMelanoma.md) and [Condition/JohnPacemaker](Condition-JohnPacemaker.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.dk.core|current/StructureDefinition/dk-core-condition)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.dk.core|current/StructureDefinition/StructureDefinition-dk-core-condition.json)
 
 ### Formal Views of Profile Content
 
@@ -70,11 +70,11 @@ Other representations of profile: [CSV](StructureDefinition-dk-core-condition.cs
   "resourceType" : "StructureDefinition",
   "id" : "dk-core-condition",
   "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-condition",
-  "version" : "3.6.0",
+  "version" : "3.7.0",
   "name" : "DkCoreCondition",
   "title" : "Danish Core Condition Profile",
   "status" : "active",
-  "date" : "2026-03-11T23:16:27+01:00",
+  "date" : "2026-05-30T15:25:27+02:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",

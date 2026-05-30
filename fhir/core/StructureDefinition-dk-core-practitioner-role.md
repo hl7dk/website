@@ -1,4 +1,4 @@
-# Danish Core PractitionerRole Profile - HL7 FHIR Implementation Guide: DK Core v3.6.0
+# Danish Core PractitionerRole Profile - HL7 FHIR Implementation Guide: DK Core v3.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role | *Version*:3.6.0 |
-| Active as of 2026-03-11 | *Computable Name*:DkCorePractitionerRole |
+| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role | *Version*:3.7.0 |
+| Active as of 2026-05-30 | *Computable Name*:DkCorePractitionerRole |
 
  
 HL7 Denmark core profile for health professional roles 
@@ -21,10 +21,10 @@ This profile is primarily created for completeness towards [International Patien
 **Usages:**
 
 * Derived from this Profile: [Danish IPA Core PractitionerRole Profile](StructureDefinition-ipa-dk-core-practitionerrole.md)
-* Refer to this Profile: [Danish Core Condition Profile](StructureDefinition-dk-core-condition.md), [Danish Core Minimal DocumentReference Profile](StructureDefinition-dk-core-minimaldocumentreference.md), [Danish Core Observation Profile](StructureDefinition-dk-core-observation.md), [Danish Core Patient Profile](StructureDefinition-dk-core-patient.md) and [Danish Core Person ServiceRequest Profile](StructureDefinition-dk-core-person-servicerequest.md)
+* Refer to this Profile: [Danish Core Condition Profile](StructureDefinition-dk-core-condition.md), [Danish Core Diagnostic Report Profile](StructureDefinition-dk-core-diagnostic-report.md), [Danish Core Minimal DocumentReference Profile](StructureDefinition-dk-core-minimaldocumentreference.md), [Danish Core Observation Profile](StructureDefinition-dk-core-observation.md)... Show 2 more, [Danish Core Patient Profile](StructureDefinition-dk-core-patient.md) and [Danish Core Person ServiceRequest Profile](StructureDefinition-dk-core-person-servicerequest.md)
 * Examples for this Profile: [PractitionerRole/AbrahamPractitionerRole](PractitionerRole-AbrahamPractitionerRole.md) and [PractitionerRole/PlaceholderPractitionerRole](PractitionerRole-PlaceholderPractitionerRole.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.dk.core|current/StructureDefinition/dk-core-practitioner-role)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.dk.core|current/StructureDefinition/StructureDefinition-dk-core-practitioner-role.json)
 
 ### Formal Views of Profile Content
 
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-dk-core-practitioner
   "resourceType" : "StructureDefinition",
   "id" : "dk-core-practitioner-role",
   "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner-role",
-  "version" : "3.6.0",
+  "version" : "3.7.0",
   "name" : "DkCorePractitionerRole",
   "title" : "Danish Core PractitionerRole Profile",
   "status" : "active",
-  "date" : "2026-03-11T23:16:27+01:00",
+  "date" : "2026-05-30T15:25:27+02:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",

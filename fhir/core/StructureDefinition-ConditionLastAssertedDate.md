@@ -1,4 +1,4 @@
-# ConditionLastAssertedDate - HL7 FHIR Implementation Guide: DK Core v3.6.0
+# ConditionLastAssertedDate - HL7 FHIR Implementation Guide: DK Core v3.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/ConditionLastAssertedDate | *Version*:3.6.0 |
-| Active as of 2026-03-11 | *Computable Name*:ConditionLastAssertedDate |
+| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/ConditionLastAssertedDate | *Version*:3.7.0 |
+| Active as of 2026-05-30 | *Computable Name*:ConditionLastAssertedDate |
 
 Extension for the last date a Condition-instance was confirmed valid in its current state. E.g. with its current clinical- and verification status, stage and severity. Typically the last performed follow-up
 
@@ -22,7 +22,7 @@ Extension for the last date a Condition-instance was confirmed valid in its curr
 * Use this Extension: [Danish Core Condition Profile](StructureDefinition-dk-core-condition.md)
 * Examples for this Extension: [Condition/ConditionPressureUlcer](Condition-ConditionPressureUlcer.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.dk.core|current/StructureDefinition/ConditionLastAssertedDate)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.dk.core|current/StructureDefinition/StructureDefinition-ConditionLastAssertedDate.json)
 
 ### Formal Views of Extension Content
 
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-ConditionLastAsserte
   "resourceType" : "StructureDefinition",
   "id" : "ConditionLastAssertedDate",
   "url" : "http://hl7.dk/fhir/core/StructureDefinition/ConditionLastAssertedDate",
-  "version" : "3.6.0",
+  "version" : "3.7.0",
   "name" : "ConditionLastAssertedDate",
   "title" : "ConditionLastAssertedDate",
   "status" : "active",
-  "date" : "2026-03-11T23:16:27+01:00",
+  "date" : "2026-05-30T15:25:27+02:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",

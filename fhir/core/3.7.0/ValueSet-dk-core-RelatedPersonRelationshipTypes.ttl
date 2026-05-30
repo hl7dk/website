@@ -1,0 +1,105 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/ValueSet/dk-core-RelatedPersonRelationshipTypes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "dk-core-RelatedPersonRelationshipTypes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet dk-core-RelatedPersonRelationshipTypes</b></p><a name=\"dk-core-RelatedPersonRelationshipTypes\"> </a><a name=\"hcdk-core-RelatedPersonRelationshipTypes\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code><span title=\"Version is explicitly stated to be 2018-08-12\"> version ?2018-08-12</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>FAMMEMB</td><td/></tr><tr><td>CHILD</td><td/></tr><tr><td>DAUC</td><td/></tr><tr><td>SONC</td><td/></tr><tr><td>GRNDCHILD</td><td/></tr><tr><td>GRPRN</td><td/></tr><tr><td>CHLDINLAW</td><td/></tr><tr><td>PRN</td><td/></tr><tr><td>FTH</td><td/></tr><tr><td>MTH</td><td/></tr><tr><td>SIB</td><td/></tr><tr><td>DOMPART</td><td/></tr><tr><td>SPS</td><td/></tr><tr><td>FRND</td><td/></tr><tr><td>NBOR</td><td/></tr><tr><td>ROOM</td><td/></tr><tr><td>GUARD</td><td/></tr><tr><td>NOK</td><td/></tr><tr><td>POWATT</td><td/></tr><tr><td>ECON</td><td/></tr></table></li><li>Include all codes defined in <a href=\"CodeSystem-dk-relatedperson-relationshipcodes.html\"><code>http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?3.7.0</span></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://hl7.dk/fhir/core/ValueSet/dk-core-RelatedPersonRelationshipTypes"^^xsd:anyURI ;
+     fhir:l <http://hl7.dk/fhir/core/ValueSet/dk-core-RelatedPersonRelationshipTypes>
+  ] ; # 
+  fhir:version [ fhir:v "3.7.0"] ; # 
+  fhir:name [ fhir:v "RelatedPersonRelationshipTypes"] ; # 
+  fhir:title [ fhir:v "DK Related Person Relationship Types"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-30T15:15:22+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Denmark" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "dk-affiliate@hl7.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "DK Related Person Relationship Types"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "DK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-RoleCode>
+       ] ;
+       fhir:version [ fhir:v "2018-08-12" ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "FAMMEMB" ]
+       ] [
+         fhir:code [ fhir:v "CHILD" ]
+       ] [
+         fhir:code [ fhir:v "DAUC" ]
+       ] [
+         fhir:code [ fhir:v "SONC" ]
+       ] [
+         fhir:code [ fhir:v "GRNDCHILD" ]
+       ] [
+         fhir:code [ fhir:v "GRPRN" ]
+       ] [
+         fhir:code [ fhir:v "CHLDINLAW" ]
+       ] [
+         fhir:code [ fhir:v "PRN" ]
+       ] [
+         fhir:code [ fhir:v "FTH" ]
+       ] [
+         fhir:code [ fhir:v "MTH" ]
+       ] [
+         fhir:code [ fhir:v "SIB" ]
+       ] [
+         fhir:code [ fhir:v "DOMPART" ]
+       ] [
+         fhir:code [ fhir:v "SPS" ]
+       ] [
+         fhir:code [ fhir:v "FRND" ]
+       ] [
+         fhir:code [ fhir:v "NBOR" ]
+       ] [
+         fhir:code [ fhir:v "ROOM" ]
+       ] [
+         fhir:code [ fhir:v "GUARD" ]
+       ] [
+         fhir:code [ fhir:v "NOK" ]
+       ] [
+         fhir:code [ fhir:v "POWATT" ]
+       ] [
+         fhir:code [ fhir:v "ECON" ]
+       ] )
+     ] [
+       fhir:system [
+         fhir:v "http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes>
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

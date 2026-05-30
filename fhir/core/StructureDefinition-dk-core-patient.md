@@ -1,4 +1,4 @@
-# Danish Core Patient Profile - HL7 FHIR Implementation Guide: DK Core v3.6.0
+# Danish Core Patient Profile - HL7 FHIR Implementation Guide: DK Core v3.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient | *Version*:3.6.0 |
-| Active as of 2026-03-11 | *Computable Name*:DkCorePatient |
+| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient | *Version*:3.7.0 |
+| Active as of 2026-05-30 | *Computable Name*:DkCorePatient |
 
  
 HL7 Denmark core profile for a patient 
@@ -90,10 +90,10 @@ There may be scenarios where it is not possible to supply all values as required
 **Usages:**
 
 * Derived from this Profile: [Danish IPA Core Patient Profile](StructureDefinition-ipa-dk-core-patient.md)
-* Refer to this Profile: [Danish Core Condition Profile](StructureDefinition-dk-core-condition.md), [Danish Core Encounter Profile](StructureDefinition-dk-core-encounter.md), [Danish Core Minimal DocumentReference Profile](StructureDefinition-dk-core-minimaldocumentreference.md), [Danish Core Observation Profile](StructureDefinition-dk-core-observation.md)... Show 3 more, [Danish Core Patient Profile](StructureDefinition-dk-core-patient.md), [Danish Core Person ServiceRequest Profile](StructureDefinition-dk-core-person-servicerequest.md) and [Danish Core Related Person Profile](StructureDefinition-dk-core-related-person.md)
+* Refer to this Profile: [Danish Core Condition Profile](StructureDefinition-dk-core-condition.md), [Danish Core Diagnostic Report Profile](StructureDefinition-dk-core-diagnostic-report.md), [Danish Core Encounter Profile](StructureDefinition-dk-core-encounter.md), [Danish Core Minimal DocumentReference Profile](StructureDefinition-dk-core-minimaldocumentreference.md)... Show 4 more, [Danish Core Observation Profile](StructureDefinition-dk-core-observation.md), [Danish Core Patient Profile](StructureDefinition-dk-core-patient.md), [Danish Core Person ServiceRequest Profile](StructureDefinition-dk-core-person-servicerequest.md) and [Danish Core Related Person Profile](StructureDefinition-dk-core-related-person.md)
 * Examples for this Profile: [Patient/283](Patient-283.md), [Patient/37628912-7816-47a3-acd8-396b610be142](Patient-37628912-7816-47a3-acd8-396b610be142.md), [Patient/Aage](Patient-Aage.md), [Patient/AliJensen](Patient-AliJensen.md)... Show 44 more, [Patient/AndersJensen](Patient-AndersJensen.md), [Patient/AyaBerggren](Patient-AyaBerggren.md), [Patient/BoVestergaard](Patient-BoVestergaard.md), [Patient/BritaBerggren](Patient-BritaBerggren.md), [Patient/Bruno](Patient-Bruno.md), [Patient/CaesarOestergaard](Patient-CaesarOestergaard.md), [Patient/Confidential](Patient-Confidential.md), [Patient/DrengLevendefodt2016](Patient-DrengLevendefodt2016.md), [Patient/DrengLevendefodt2024](Patient-DrengLevendefodt2024.md), [Patient/EK](Patient-EK.md), [Patient/Einer](Patient-Einer.md), [Patient/EllenLouise](Patient-EllenLouise.md), [Patient/ElseLauridsen](Patient-ElseLauridsen.md), [Patient/GitteNancy](Patient-GitteNancy.md), [Patient/JulianeJoergensen](Patient-JulianeJoergensen.md), [Patient/KajaHansen](Patient-KajaHansen.md), [Patient/KirstenBerggren](Patient-KirstenBerggren.md), [Patient/KnutOdvar](Patient-KnutOdvar.md), [Patient/LarsBerggren](Patient-LarsBerggren.md), [Patient/Lonni](Patient-Lonni.md), [Patient/Magnus](Patient-Magnus.md), [Patient/Max](Patient-Max.md), [Patient/MaxBerggren](Patient-MaxBerggren.md), [Patient/MayJune](Patient-MayJune.md), [Patient/MuhammedAbdul](Patient-MuhammedAbdul.md), [Patient/NancyAnn](Patient-NancyAnn.md), [Patient/NielsVendelboe](Patient-NielsVendelboe.md), [Patient/OddHaugen](Patient-OddHaugen.md), [Patient/PiaBerggren](Patient-PiaBerggren.md), [Patient/PigeLevendefodt2016](Patient-PigeLevendefodt2016.md), [Patient/PigeLevendefodt2024](Patient-PigeLevendefodt2024.md), [Patient/Poul](Patient-Poul.md), [Patient/Rasmus](Patient-Rasmus.md), [Patient/RikkeBerggren](Patient-RikkeBerggren.md), [Patient/RuddiBerggren](Patient-RuddiBerggren.md), [Patient/Schwendlund](Patient-Schwendlund.md), [Patient/SilleJune](Patient-SilleJune.md), [Patient/Sverre](Patient-Sverre.md), [Patient/Torre](Patient-Torre.md), [Patient/else](Patient-else.md), [Patient/john](Patient-john.md), [Patient/ukendt-D-eCPR](Patient-ukendt-D-eCPR.md), [Patient/ukendt-X-eCPR](Patient-ukendt-X-eCPR.md) and [Patient/ukendt](Patient-ukendt.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.dk.core|current/StructureDefinition/dk-core-patient)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.dk.core|current/StructureDefinition/StructureDefinition-dk-core-patient.json)
 
 ### Formal Views of Profile Content
 
@@ -116,11 +116,11 @@ Note: feedback is most welcome and should be directed to the danish affiliate's 
   "resourceType" : "StructureDefinition",
   "id" : "dk-core-patient",
   "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient",
-  "version" : "3.6.0",
+  "version" : "3.7.0",
   "name" : "DkCorePatient",
   "title" : "Danish Core Patient Profile",
   "status" : "active",
-  "date" : "2026-03-11T23:16:27+01:00",
+  "date" : "2026-05-30T15:25:27+02:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",

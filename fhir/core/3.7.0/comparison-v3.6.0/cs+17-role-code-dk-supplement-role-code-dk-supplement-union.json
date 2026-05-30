@@ -1,0 +1,149 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "addf3d41-0b1b-42d4-baf6-b3e7a28b1043-47",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/addf3d41-0b1b-42d4-baf6-b3e7a28b1043-47",
+  "name" : "UnionRoleCodeDkSupplementAndRoleCodeDkSupplement",
+  "title" : "Union of DK Role Code Supplement And DK Role Code Supplement",
+  "status" : "active",
+  "date" : "2026-05-30T15:18:35+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "concept" : [{
+    "code" : "FAMMEMB",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Familiemedlem"
+    }]
+  },
+  {
+    "code" : "CHILD",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Barn"
+    }]
+  },
+  {
+    "code" : "DAUC",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Datter"
+    }]
+  },
+  {
+    "code" : "SONC",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Søn"
+    }]
+  },
+  {
+    "code" : "GRNDCHILD",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Barnebarn"
+    }]
+  },
+  {
+    "code" : "CHLDINLAW",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Svigerbarn"
+    }]
+  },
+  {
+    "code" : "PRN",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Forælder"
+    }]
+  },
+  {
+    "code" : "FTH",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Far"
+    }]
+  },
+  {
+    "code" : "MTH",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Mor"
+    }]
+  },
+  {
+    "code" : "SIB",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Søskende"
+    }]
+  },
+  {
+    "code" : "DOMPART",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Registreret partner"
+    }]
+  },
+  {
+    "code" : "SPS",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Ægtefælle"
+    }]
+  },
+  {
+    "code" : "FRND",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Ven (ikke-beslægtet)"
+    }]
+  },
+  {
+    "code" : "NBOR",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Nabo"
+    }]
+  },
+  {
+    "code" : "ROOM",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Samboende"
+    }]
+  },
+  {
+    "code" : "GUARD",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Værge"
+    }]
+  },
+  {
+    "code" : "NOK",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Pårørende"
+    }]
+  },
+  {
+    "code" : "POWATT",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Fuldmagtshaver"
+    }]
+  },
+  {
+    "code" : "ECON",
+    "designation" : [{
+      "language" : "da",
+      "value" : "Primær kontakt"
+    }]
+  }]
+}

@@ -1,7 +1,7 @@
 {
   "codeSystems" : [{
     "url" : "http://hl7.dk/fhir/core/ValueSet/DkCoreDeCPRValueSet",
-    "version" : "3.6.0",
+    "version" : "3.7.0",
     "status" : "active",
     "name" : "DkCoreDeCPRValueSet",
     "title" : "DK D-eCPR OID values",
@@ -13,7 +13,7 @@
   },
   {
     "url" : "http://hl7.dk/fhir/core/ValueSet/DkCoreProfessionGroupValueSet",
-    "version" : "3.6.0",
+    "version" : "3.7.0",
     "status" : "active",
     "name" : "DkCoreProfessionGroupValueSet",
     "title" : "DK Profession Group",
@@ -25,7 +25,7 @@
   },
   {
     "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-IEEEBasicObservation",
-    "version" : "3.6.0",
+    "version" : "3.7.0",
     "status" : "active",
     "name" : "IEEEBasicObservation",
     "title" : "Dk Core IEEE Basic Observation",
@@ -37,7 +37,7 @@
   },
   {
     "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-LoincBasicObservation",
-    "version" : "3.6.0",
+    "version" : "3.7.0",
     "status" : "active",
     "name" : "LoincBasicObservation",
     "title" : "DK Core LOINC Basic Observations",
@@ -48,8 +48,32 @@
     "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
   },
   {
+    "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-LoincDiagnosticDocumentTypes",
+    "version" : "3.7.0",
+    "status" : "active",
+    "name" : "LoincDiagnosticDocumentTypes",
+    "title" : "DK Core LOINC Diagnostic Document Types",
+    "description" : "LOINC codes describing diagnostic documents that may be used for common Danish use cases.",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-dk-core-diagnostic-report.html" : "Danish Core Diagnostic Report Profile"
+  },
+  {
+    "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-LoincLabStudyTypes",
+    "version" : "3.7.0",
+    "status" : "active",
+    "name" : "LoincLabStudyTypes",
+    "title" : "DK Core Laboratory study types",
+    "description" : "LOINC codes describing laboratory study types that are consistent with European use in EHDS.",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-dk-core-diagnostic-report.html" : "Danish Core Diagnostic Report Profile"
+  },
+  {
     "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes",
-    "version" : "3.6.0",
+    "version" : "3.7.0",
     "status" : "active",
     "name" : "MunicipalityCodes",
     "title" : "DK Municipality Codes",
@@ -63,7 +87,7 @@
   },
   {
     "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-NPUBasicObservation",
-    "version" : "3.6.0",
+    "version" : "3.7.0",
     "status" : "active",
     "name" : "NPUBasicObservation",
     "title" : "DK Core NPU Basic Observation",
@@ -75,7 +99,7 @@
   },
   {
     "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes",
-    "version" : "3.6.0",
+    "version" : "3.7.0",
     "status" : "active",
     "name" : "RegionalSubdivisionCodes",
     "title" : "DK Regional Subdivision Codes",
@@ -87,7 +111,7 @@
   },
   {
     "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-RelatedPersonRelationshipTypes",
-    "version" : "3.6.0",
+    "version" : "3.7.0",
     "status" : "active",
     "name" : "RelatedPersonRelationshipTypes",
     "title" : "DK Related Person Relationship Types",
@@ -96,12 +120,12 @@
     "http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes"],
     "uses" : {
     },
-    "ValueSet-extended-patient-contactrelationship.html" : "DK Extended Patient Contact Relationship",
-    "StructureDefinition-dk-core-related-person.html" : "Danish Core Related Person Profile"
+    "StructureDefinition-dk-core-related-person.html" : "Danish Core Related Person Profile",
+    "ValueSet-extended-patient-contactrelationship.html" : "DK Extended Patient Contact Relationship"
   },
   {
     "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-SCTBasicObservation",
-    "version" : "3.6.0",
+    "version" : "3.7.0",
     "status" : "active",
     "name" : "SCTBasicObservation",
     "title" : "DK Core SNOMED CT Basic Observation",
@@ -112,8 +136,20 @@
     "StructureDefinition-dk-core-basic-observation.html" : "Danish Core Basic Observation Profile"
   },
   {
+    "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-SCTLaboratorySpecialities",
+    "version" : "3.7.0",
+    "status" : "active",
+    "name" : "SCTLaboratorySpecialities",
+    "title" : "SNOMED CT Laboratory Specialities",
+    "description" : "SNOMED CT codes for Laboratory Specialities. Note that this is the set of accepted specialities in Europe",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-dk-core-diagnostic-report.html" : "Danish Core Diagnostic Report Profile"
+  },
+  {
     "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-TechniquesSCTCodes",
-    "version" : "3.6.0",
+    "version" : "3.7.0",
     "status" : "active",
     "name" : "TechniquesSCTCodes",
     "title" : "DK TechniquesSCTCodes",
@@ -125,7 +161,7 @@
   },
   {
     "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-UCUM-BasicUnits",
-    "version" : "3.6.0",
+    "version" : "3.7.0",
     "status" : "active",
     "name" : "UCUMBasicUnits",
     "title" : "DK Core UCUM Basic Units",
@@ -137,7 +173,7 @@
   },
   {
     "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-encounter-priority",
-    "version" : "3.6.0",
+    "version" : "3.7.0",
     "status" : "active",
     "name" : "DkCoreEncounterPriority",
     "title" : "DK priority codes for encounters",
@@ -149,7 +185,7 @@
   },
   {
     "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-practice-setting-code",
-    "version" : "3.6.0",
+    "version" : "3.7.0",
     "status" : "active",
     "name" : "SorPracticeSettingCode",
     "title" : "DK SOR Practice Setting Code",
@@ -157,11 +193,24 @@
     "systems" : ["http://snomed.info/sct"],
     "uses" : {
     },
+    "ValueSet-dk-core-practice-setting-exclude-lab-code.html" : "DK SOR Practice Setting Code excluding laboratory codes",
     "StructureDefinition-dk-core-minimaldocumentreference.html" : "Danish Core Minimal DocumentReference Profile"
   },
   {
+    "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-practice-setting-exclude-lab-code",
+    "version" : "3.7.0",
+    "status" : "active",
+    "name" : "SorPracticeSettingCodeExcludingLab",
+    "title" : "DK SOR Practice Setting Code excluding laboratory codes",
+    "description" : "Values used for Practice Setting, as described in the SOR registry. This list excludes Laboratory Specialties .",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-dk-core-diagnostic-report.html" : "Danish Core Diagnostic Report Profile"
+  },
+  {
     "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-priority-codes",
-    "version" : "3.6.0",
+    "version" : "3.7.0",
     "status" : "active",
     "name" : "DkCorePriorityCodes",
     "title" : "DK priority codes",
@@ -173,7 +222,7 @@
   },
   {
     "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-servicerequest-codes",
-    "version" : "3.6.0",
+    "version" : "3.7.0",
     "status" : "active",
     "name" : "DkCoreServiceRequestCodes",
     "title" : "DK codes for ServiceRequest",
@@ -185,7 +234,7 @@
   },
   {
     "url" : "http://hl7.dk/fhir/core/ValueSet/dk-marital-status",
-    "version" : "3.6.0",
+    "version" : "3.7.0",
     "status" : "active",
     "name" : null,
     "title" : "DK MaritalStatus",
@@ -199,9 +248,9 @@
   },
   {
     "url" : "http://hl7.dk/fhir/core/ValueSet/extended-patient-contactrelationship",
-    "version" : "3.6.0",
+    "version" : "3.7.0",
     "status" : "active",
-    "name" : "extended-patient-contactrelationship",
+    "name" : "ExtendedPatientContactRelationship",
     "title" : "DK Extended Patient Contact Relationship",
     "description" : "DK Extended Patient Contact Relationship",
     "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode",
@@ -213,7 +262,7 @@
   },
   {
     "url" : "http://hl7.dk/fhir/core/ValueSet/sor-organization-type",
-    "version" : "3.6.0",
+    "version" : "3.7.0",
     "status" : "active",
     "name" : "SorOrganizationType",
     "title" : "DK SOR Organization Type",

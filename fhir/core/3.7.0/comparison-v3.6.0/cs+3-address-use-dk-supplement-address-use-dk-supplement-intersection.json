@@ -1,0 +1,60 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "addf3d41-0b1b-42d4-baf6-b3e7a28b1043-9",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/addf3d41-0b1b-42d4-baf6-b3e7a28b1043-9",
+  "name" : "IntersectionAddressUseAndAddressUse",
+  "title" : "Intersection of DK Address Use Supplement And DK Address Use Supplement",
+  "status" : "active",
+  "date" : "2026-05-30T15:18:35+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "concept" : [{
+    "code" : "home",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Hjem"
+    }]
+  },
+  {
+    "code" : "work",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Arbejde"
+    }]
+  },
+  {
+    "code" : "temp",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Midlertidig"
+    }]
+  },
+  {
+    "code" : "old",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Gammel / forkert"
+    }]
+  }]
+}

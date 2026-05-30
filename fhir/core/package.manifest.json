@@ -1,7 +1,7 @@
 {
-  "version" : "3.6.0",
+  "version" : "3.7.0",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20260311231627",
+  "date" : "20260530152527",
   "name" : "hl7.fhir.dk.core",
   "jurisdiction" : "urn:iso:std:iso:3166#DK"
 }

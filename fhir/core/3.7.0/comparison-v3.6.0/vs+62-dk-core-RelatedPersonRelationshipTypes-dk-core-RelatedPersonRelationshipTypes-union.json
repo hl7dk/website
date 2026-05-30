@@ -1,0 +1,83 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "addf3d41-0b1b-42d4-baf6-b3e7a28b1043-179",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/addf3d41-0b1b-42d4-baf6-b3e7a28b1043-179",
+  "name" : "UnionRelatedPersonRelationshipTypesAndRelatedPersonRelationshipTypes",
+  "title" : "Union of DK Related Person Relationship Types And DK Related Person Relationship Types",
+  "status" : "active",
+  "date" : "2026-05-30T15:18:36+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "FAMMEMB"
+      },
+      {
+        "code" : "CHILD"
+      },
+      {
+        "code" : "DAUC"
+      },
+      {
+        "code" : "SONC"
+      },
+      {
+        "code" : "GRNDCHILD"
+      },
+      {
+        "code" : "GRPRN"
+      },
+      {
+        "code" : "CHLDINLAW"
+      },
+      {
+        "code" : "PRN"
+      },
+      {
+        "code" : "FTH"
+      },
+      {
+        "code" : "MTH"
+      },
+      {
+        "code" : "SIB"
+      },
+      {
+        "code" : "DOMPART"
+      },
+      {
+        "code" : "SPS"
+      },
+      {
+        "code" : "FRND"
+      },
+      {
+        "code" : "NBOR"
+      },
+      {
+        "code" : "ROOM"
+      },
+      {
+        "code" : "GUARD"
+      },
+      {
+        "code" : "NOK"
+      },
+      {
+        "code" : "POWATT"
+      },
+      {
+        "code" : "ECON"
+      }]
+    },
+    {
+      
+    }]
+  }
+}

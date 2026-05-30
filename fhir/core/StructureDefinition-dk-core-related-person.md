@@ -1,4 +1,4 @@
-# Danish Core Related Person Profile - HL7 FHIR Implementation Guide: DK Core v3.6.0
+# Danish Core Related Person Profile - HL7 FHIR Implementation Guide: DK Core v3.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person | *Version*:3.6.0 |
-| Active as of 2026-03-11 | *Computable Name*:DkCoreRelatedPerson |
+| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person | *Version*:3.7.0 |
+| Active as of 2026-05-30 | *Computable Name*:DkCoreRelatedPerson |
 
  
 HL7 Denmark core profile for a related person 
@@ -68,7 +68,7 @@ Use of this label should be interpreted according to the law, roughly meaning th
 * Refer to this Profile: [Danish Core Condition Profile](StructureDefinition-dk-core-condition.md), [Danish Core Minimal DocumentReference Profile](StructureDefinition-dk-core-minimaldocumentreference.md), [Danish Core Observation Profile](StructureDefinition-dk-core-observation.md), [Danish Core Patient Profile](StructureDefinition-dk-core-patient.md) and [Danish Core Person ServiceRequest Profile](StructureDefinition-dk-core-person-servicerequest.md)
 * Examples for this Profile: [RelatedPerson/AageRelatedToNancy](RelatedPerson-AageRelatedToNancy.md), [RelatedPerson/AndersRelatedToAli](RelatedPerson-AndersRelatedToAli.md), [RelatedPerson/BrunoRelatedToNancy](RelatedPerson-BrunoRelatedToNancy.md), [RelatedPerson/Child](RelatedPerson-Child.md)... Show 38 more, [RelatedPerson/EinerRelatedToEK](RelatedPerson-EinerRelatedToEK.md), [RelatedPerson/EinerRelatedToEllen](RelatedPerson-EinerRelatedToEllen.md), [RelatedPerson/EinerRelatedToElse](RelatedPerson-EinerRelatedToElse.md), [RelatedPerson/EinerRelatedToMagnus](RelatedPerson-EinerRelatedToMagnus.md), [RelatedPerson/EinerRelatedToRasmus](RelatedPerson-EinerRelatedToRasmus.md), [RelatedPerson/KirstenRelatedToAya](RelatedPerson-KirstenRelatedToAya.md), [RelatedPerson/KirstenRelatedToGitte](RelatedPerson-KirstenRelatedToGitte.md), [RelatedPerson/KirstenRelatedToLars](RelatedPerson-KirstenRelatedToLars.md), [RelatedPerson/KirstenRelatedToPia](RelatedPerson-KirstenRelatedToPia.md), [RelatedPerson/KirstenRelatedToRikke](RelatedPerson-KirstenRelatedToRikke.md), [RelatedPerson/LonniRelatedToEK](RelatedPerson-LonniRelatedToEK.md), [RelatedPerson/LonniRelatedToEiner](RelatedPerson-LonniRelatedToEiner.md), [RelatedPerson/LonniRelatedToEllen](RelatedPerson-LonniRelatedToEllen.md), [RelatedPerson/LonniRelatedToElse](RelatedPerson-LonniRelatedToElse.md), [RelatedPerson/LonniRelatedToMagnus](RelatedPerson-LonniRelatedToMagnus.md), [RelatedPerson/LonniRelatedToRasmus](RelatedPerson-LonniRelatedToRasmus.md), [RelatedPerson/MayJuneGuardianOfSverre](RelatedPerson-MayJuneGuardianOfSverre.md), [RelatedPerson/MayJuneGuardianOfTorre](RelatedPerson-MayJuneGuardianOfTorre.md), [RelatedPerson/MayJuneRelatedToKnut](RelatedPerson-MayJuneRelatedToKnut.md), [RelatedPerson/MayJuneRelatedToOdd](RelatedPerson-MayJuneRelatedToOdd.md), [RelatedPerson/MayJuneRelatedToSchwendlund](RelatedPerson-MayJuneRelatedToSchwendlund.md), [RelatedPerson/MayJuneRelatedToSille](RelatedPerson-MayJuneRelatedToSille.md), [RelatedPerson/MayJuneRelatedToSverre](RelatedPerson-MayJuneRelatedToSverre.md), [RelatedPerson/MayJuneRelatedToTorre](RelatedPerson-MayJuneRelatedToTorre.md), [RelatedPerson/NancyGuardianOfAage](RelatedPerson-NancyGuardianOfAage.md), [RelatedPerson/NancyGuardianOfBrita](RelatedPerson-NancyGuardianOfBrita.md), [RelatedPerson/NancyRelatedToBrita](RelatedPerson-NancyRelatedToBrita.md), [RelatedPerson/NancyRelatedToGitte](RelatedPerson-NancyRelatedToGitte.md), [RelatedPerson/NancyRelatedToKirsten](RelatedPerson-NancyRelatedToKirsten.md), [RelatedPerson/NancyRelatedToMax](RelatedPerson-NancyRelatedToMax.md), [RelatedPerson/NancyRelatedToRuddi](RelatedPerson-NancyRelatedToRuddi.md), [RelatedPerson/RuddiGuardianOfRikke](RelatedPerson-RuddiGuardianOfRikke.md), [RelatedPerson/SchwendlundRelatedToKnut](RelatedPerson-SchwendlundRelatedToKnut.md), [RelatedPerson/SchwendlundRelatedToOdd](RelatedPerson-SchwendlundRelatedToOdd.md), [RelatedPerson/SchwendlundRelatedToSille](RelatedPerson-SchwendlundRelatedToSille.md), [RelatedPerson/SchwendlundRelatedToSverre](RelatedPerson-SchwendlundRelatedToSverre.md), [RelatedPerson/SchwendlundRelatedToTorre](RelatedPerson-SchwendlundRelatedToTorre.md) and [RelatedPerson/TwoRelations](RelatedPerson-TwoRelations.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.dk.core|current/StructureDefinition/dk-core-related-person)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.dk.core|current/StructureDefinition/StructureDefinition-dk-core-related-person.json)
 
 ### Formal Views of Profile Content
 
@@ -87,11 +87,11 @@ Other representations of profile: [CSV](StructureDefinition-dk-core-related-pers
   "resourceType" : "StructureDefinition",
   "id" : "dk-core-related-person",
   "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-related-person",
-  "version" : "3.6.0",
+  "version" : "3.7.0",
   "name" : "DkCoreRelatedPerson",
   "title" : "Danish Core Related Person Profile",
   "status" : "active",
-  "date" : "2026-03-11T23:16:27+01:00",
+  "date" : "2026-05-30T15:25:27+02:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",

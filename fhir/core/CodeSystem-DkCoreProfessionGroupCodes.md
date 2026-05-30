@@ -1,4 +1,4 @@
-# DK Profession Group Codes - HL7 FHIR Implementation Guide: DK Core v3.6.0
+# DK Profession Group Codes - HL7 FHIR Implementation Guide: DK Core v3.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes | *Version*:3.6.0 |
-| Active as of 2026-03-11 | *Computable Name*:DkCoreProfessionGroupCodes |
+| *Official URL*:http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes | *Version*:3.7.0 |
+| Active as of 2026-05-30 | *Computable Name*:DkCoreProfessionGroupCodes |
 
  
 DK health ProfessionGroup codes as defined by https://www.retsinformation.dk/eli/lta/2019/731, and derived from http://autregwebservice.sst.dk/autregservice.asmx/GetAllProfessionGroups. Code (5176) was not uniqe, and have been converted to 5176a and 5176b 
@@ -27,12 +27,12 @@ DK health ProfessionGroup codes as defined by https://www.retsinformation.dk/eli
   "resourceType" : "CodeSystem",
   "id" : "DkCoreProfessionGroupCodes",
   "url" : "http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes",
-  "version" : "3.6.0",
+  "version" : "3.7.0",
   "name" : "DkCoreProfessionGroupCodes",
   "title" : "DK Profession Group Codes",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-11T23:16:27+01:00",
+  "date" : "2026-05-30T15:25:27+02:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",

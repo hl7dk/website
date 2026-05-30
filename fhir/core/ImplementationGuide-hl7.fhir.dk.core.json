@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.dk.core</b></p><a name=\"hl7.fhir.dk.core\"> </a><a name=\"hchl7.fhir.dk.core\"> </a><h2>DKCore</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core</pre><div><p>A FHIR Implementation Guide for the Danish common needs across healthcare sectors</p>\n</div></div>"
   },
   "url" : "http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core",
-  "version" : "3.6.0",
+  "version" : "3.7.0",
   "name" : "DKCore",
   "title" : "HL7 FHIR Implementation Guide: DK Core",
   "status" : "active",
-  "date" : "2026-03-11T23:16:27+01:00",
+  "date" : "2026-05-30T15:25:27+02:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",
@@ -45,16 +45,22 @@
     "version" : "7.1.0"
   },
   {
+    "id" : "hl7_fhir_uv_xver_r5_r4",
+    "uri" : "http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4",
+    "packageId" : "hl7.fhir.uv.xver-r5.r4",
+    "version" : "0.1.0"
+  },
+  {
     "id" : "hl7_fhir_uv_extensions_r4",
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.3.0-ballot-tc1"
+    "version" : "5.3.0"
   },
   {
     "id" : "hl7_fhir_uv_phd",
     "uri" : "http://hl7.org/fhir/uv/phd/ImplementationGuide/hl7.fhir.uv.phd",
     "packageId" : "hl7.fhir.uv.phd",
-    "version" : "1.1.0"
+    "version" : "2.0.0"
   },
   {
     "id" : "hl7_fhir_uv_ipa",
@@ -429,7 +435,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.9.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#1.1.2"
     },
     {
       "extension" : [{
@@ -1050,6 +1056,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/cvr"
+      },
+      "name" : "cvr",
+      "description" : "The Central Business Register (CVR) is the state's master register for business information. The register contains information about all Danish businesses, including their name, address, industry code, and other relevant details. The CVR is maintained by the Danish Business Authority (Erhvervsstyrelsen) and is used for various purposes, including taxation, business registration, and statistical analysis.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
       }],
       "reference" : {
@@ -1105,6 +1123,18 @@
       },
       "name" : "Danish Core Condition Profile",
       "description" : "HL7 Denmark core profile for professionally asserted conditions, as specified by danish health and social care organizations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-diagnostic-report"
+      },
+      "name" : "Danish Core Diagnostic Report Profile",
+      "description" : "HL7 Denmark profile for diagnostic reports.",
       "exampleBoolean" : false
     },
     {
@@ -1425,10 +1455,34 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/dk-core-LoincLabStudyTypes"
+      },
+      "name" : "DK Core Laboratory study types",
+      "description" : "LOINC codes describing laboratory study types that are consistent with European use in EHDS.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/dk-core-LoincBasicObservation"
       },
       "name" : "DK Core LOINC Basic Observations",
       "description" : "LOINC codes describing Basic Observations usable in Denmark.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-core-LoincDiagnosticDocumentTypes"
+      },
+      "name" : "DK Core LOINC Diagnostic Document Types",
+      "description" : "LOINC codes describing diagnostic documents that may be used for common Danish use cases.",
       "exampleBoolean" : false
     },
     {
@@ -1677,18 +1731,6 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/dk-core-regional-subdivision-codes"
-      },
-      "name" : "DK Regional Subdivision Codes",
-      "description" : "Subdivision codes (Regional codes) used in Denmark as found on https://www.iso.org/obp/ui/#iso:code:3166:DK",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
         "reference" : "CodeSystem/dk-relatedperson-relationshipcodes"
       },
       "name" : "DK Related Person Relationship Codes",
@@ -1753,6 +1795,18 @@
       },
       "name" : "DK SOR Practice Setting Code",
       "description" : "Values used for the document metadata attribute practiceSettingCode, which is an attribute specifying the clinical specialty where the act that resulted in the document was performed (e.g., Family Practice, Laboratory, Radiology). The value set is based on a subset of the code list from the SOR lookup table 'SOR-Kliniske specialer' (https://sor.sum.dsdn.dk/lookupdata/#clinical_speciality, accessable on Sundhedsdatanettet (SDN)), which is based on SNOMED CT codes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-core-practice-setting-exclude-lab-code"
+      },
+      "name" : "DK SOR Practice Setting Code excluding laboratory codes",
+      "description" : "Values used for Practice Setting, as described in the SOR registry. This list excludes Laboratory Specialties .",
       "exampleBoolean" : false
     },
     {
@@ -1926,6 +1980,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DiagnosticReport"
+      }],
+      "reference" : {
+        "reference" : "DiagnosticReport/ElseLaboratoryReport"
+      },
+      "name" : "Else's Laboratory report using EHDS value sets",
+      "description" : "An example of clinical chemistry report.",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-diagnostic-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
       }],
       "reference" : {
@@ -1934,6 +2000,18 @@
       "name" : "Else's TOBS measurements",
       "description" : "An example of TOBS (Danish: Tidlig opsporing af begyndende sygdom), which includes level of consciousness, heart rate, respiration rate, blood pressure and temperature.",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DiagnosticReport"
+      }],
+      "reference" : {
+        "reference" : "DiagnosticReport/ElseHomeNursingMeasurements"
+      },
+      "name" : "Else's TOBS measurements and urin stix",
+      "description" : "An example of urin stix and TOBS (Danish: Tidlig opsporing af begyndende sygdom) organized as a DiagnosticReport.",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-diagnostic-report"
     },
     {
       "extension" : [{
@@ -1978,6 +2056,39 @@
       },
       "name" : "ElseHeartRate",
       "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ElseINR"
+      },
+      "name" : "ElseINR",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ElseKalium"
+      },
+      "name" : "ElseKalium",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ElseNatrium"
+      },
+      "name" : "ElseNatrium",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
     },
     {
       "extension" : [{
@@ -2454,6 +2565,18 @@
       "name" : "Kombit Organsation Identifier",
       "description" : "Identifier holding the organization code issued by KOMBIT",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/KliniskBiokemiHBY"
+      },
+      "name" : "Laboratory instance of DkCoreOrganization",
+      "description" : "Laboratory organization",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
     },
     {
       "extension" : [{
@@ -3393,6 +3516,18 @@
       "name" : "Sille June Test Mosebrygersen",
       "description" : "Sille June Test Mosebrygersen - Datter af May June Moberg & Schwendlund Mosebryggersen",
       "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-core-SCTLaboratorySpecialities"
+      },
+      "name" : "SNOMED CT Laboratory Specialities",
+      "description" : "SNOMED CT codes for Laboratory Specialities. Note that this is the set of accepted specialities in Europe",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{

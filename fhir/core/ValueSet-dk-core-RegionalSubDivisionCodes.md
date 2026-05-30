@@ -1,4 +1,4 @@
-# DK Regional Subdivision Codes - HL7 FHIR Implementation Guide: DK Core v3.6.0
+# DK Regional Subdivision Codes - HL7 FHIR Implementation Guide: DK Core v3.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes | *Version*:3.6.0 |
-| Active as of 2026-03-11 | *Computable Name*:RegionalSubdivisionCodes |
+| *Official URL*:http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes | *Version*:3.7.0 |
+| Active as of 2026-05-30 | *Computable Name*:RegionalSubdivisionCodes |
 
  
 Subdivision codes (Regional codes) used in Denmark 
@@ -46,12 +46,12 @@ Subdivision codes (Regional codes) used in Denmark
   "resourceType" : "ValueSet",
   "id" : "dk-core-RegionalSubDivisionCodes",
   "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes",
-  "version" : "3.6.0",
+  "version" : "3.7.0",
   "name" : "RegionalSubdivisionCodes",
   "title" : "DK Regional Subdivision Codes",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-11T23:16:27+01:00",
+  "date" : "2026-05-30T15:25:27+02:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",

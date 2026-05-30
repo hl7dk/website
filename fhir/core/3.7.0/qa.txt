@@ -1,0 +1,776 @@
+DKCore : Validation Results
+=========================================
+
+err = 0, warn = 155, info = 132
+IG Publisher Version: 2.2.8
+Generated Sat May 30 15:23:01 CEST 2026. FHIR version 4.0.1 for hl7.fhir.dk.core#3.7.0 (canonical = http://hl7.dk/fhir/core)
+ Build Errors : 0 / 21 / 0
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Bundle-ContinuaBundleWithDevice : 0 / 5 / 59
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Bundle-ElsesTOBS : 0 / 2 / 38
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Bundle-MaxTOKS : 0 / 15 / 42
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/CodeSystem-DkCoreProfessionGroupCodes : 0 / 1 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/CodeSystem-address-type-dk-supplement : 0 / 3 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/CodeSystem-address-use-dk-supplement : 0 / 3 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/CodeSystem-administrative-gender-supplement : 0 / 3 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/CodeSystem-care-team-status-dk-supplement : 0 / 3 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/CodeSystem-consent-state-codes-dk-supplement : 0 / 3 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/CodeSystem-days-of-week-dk-supplement : 0 / 3 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/CodeSystem-dk-core-d-ecpr-codes : 0 / 1 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/CodeSystem-dk-core-municipality-codes : 0 / 1 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/CodeSystem-dk-core-municipality-codes-greenland : 0 / 1 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/CodeSystem-dk-marital-status : 0 / 1 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/CodeSystem-dk-relatedperson-relationshipcodes : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/CodeSystem-episode-of-care-status-dk-supplement : 0 / 3 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/CodeSystem-publication-status-dk-supplement : 0 / 3 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/CodeSystem-request-status-dk-supplement : 0 / 3 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/CodeSystem-role-code-dk-supplement : 0 / 3 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/CodeSystem-v2-0131-supplement : 0 / 3 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Condition-ConditionPressureUlcer : 0 / 4 / 3
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Condition-ElseGraviditet : 0 / 1 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Condition-JohnDiabetes : 0 / 1 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Condition-JohnFracture : 0 / 1 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Condition-JohnMelanoma : 0 / 1 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Condition-JohnPacemaker : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Device-BPMonitor.C4F312FFFE53F2C9 : 0 / 3 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Device-Telma.FEEDDADADEADBEEF : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Device-WeightScale.606405FFFECFC604 : 0 / 2 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/DiagnosticReport-ElseHomeNursingMeasurements : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/DiagnosticReport-ElseLaboratoryReport : 0 / 0 / 3
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/DocumentReference-94e65db8-2f0c-4a2c-a7c9-06a160d59a12 : 0 / 6 / 9
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/DocumentReference-94e65db8-2f0c-4a2c-a7c9-06a160d59a13 : 0 / 5 / 11
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Encounter-0c5e4905-5c2e-4254-8837-770c3724cd13 : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Encounter-915a3cfb-2f3e-477b-8a9d-5d86c30e4929 : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Group-BerggrenFamily : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Group-JensenFamily : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Group-LauridsenFamily : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Group-LevendefodtTwins2016 : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Group-LevendefodtTwins2024 : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Group-MosebryggerssenFamily : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/ImplementationGuide-hl7.fhir.dk.core : 0 / 1 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Location-ambulance : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Location-neuroradiologyUnit : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/NamingSystem-cpr : 0 / 1 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/NamingSystem-cvr : 0 / 1 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/NamingSystem-sor : 0 / 1 / 3
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Observation-CoincidentTimeStamp.0222 : 0 / 0 / 5
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Observation-ElseBloodPressure : 0 / 0 / 6
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Observation-ElseBodyTemperature : 0 / 0 / 4
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Observation-ElseConsciousness : 0 / 0 / 4
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Observation-ElseHeartRate : 0 / 0 / 4
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Observation-ElseINR : 0 / 1 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Observation-ElseKalium : 0 / 1 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Observation-ElseNatrium : 0 / 1 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Observation-ElsePainVRS : 0 / 5 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Observation-ElseRespirationRate : 0 / 0 / 4
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Observation-ElseUrinStix : 0 / 1 / 4
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Observation-ElsesTOBSscore : 0 / 1 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Observation-HeartRate.Poul.1974654 : 0 / 1 / 17
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Observation-MaxBloodPressure : 0 / 2 / 5
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Observation-MaxBodyTemperature : 0 / 2 / 3
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Observation-MaxConsciousness : 0 / 2 / 4
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Observation-MaxGlasgowComaScale : 0 / 6 / 10
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Observation-MaxHeartRate : 0 / 2 / 3
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Observation-MaxRespirationRate : 0 / 1 / 4
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Observation-MaxSaturation : 0 / 2 / 4
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Observation-MaxVitalSignsPanel : 0 / 2 / 3
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Observation-ObservationOxySatBasicObservationOrg : 0 / 1 / 3
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Observation-ObservationOxySatObservation : 0 / 1 / 5
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Observation-ObservationRespiratoryBasicObservation : 0 / 1 / 3
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Observation-Weight.Poul.230221 : 0 / 1 / 17
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Organization-154b8c96-a061-45bf-9ce4-1947c7c3c283 : 0 / 2 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Organization-19f9ee18-7677-4caf-88fe-8f6df2f2906e : 0 / 2 / 3
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Organization-8510eec9-180b-4e9c-95b6-02fad9f853d3 : 0 / 2 / 3
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Organization-8fa7df76-bec2-4fe2-9a44-750030a0eda0 : 0 / 1 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Organization-CenterForDiabetes : 0 / 1 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Organization-CenterForDiabetesTeamDiabetes : 0 / 1 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Organization-CenterForDiabetesTeamHjerte : 0 / 1 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Organization-CenterForDiabetesTeamKvalitet : 0 / 1 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Organization-KliniskBiokemiHBY : 0 / 1 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Organization-LaegerneHasserisBymidte : 0 / 2 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Organization-b08997bb-4476-4dd0-84dd-2e297f809364 : 0 / 3 / 3
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Organization-dk-core-organization-1 : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Parameters-expParam : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-283 : 0 / 1 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-37628912-7816-47a3-acd8-396b610be142 : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-Aage : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-AliJensen : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-AndersJensen : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-AyaBerggren : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-BoVestergaard : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-BritaBerggren : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-Bruno : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-CaesarOestergaard : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-Confidential : 0 / 1 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-DrengLevendefodt2016 : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-DrengLevendefodt2024 : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-EK : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-Einer : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-EllenLouise : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-ElseLauridsen : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-GitteNancy : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-JulianeJoergensen : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-KajaHansen : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-KirstenBerggren : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-KnutOdvar : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-LarsBerggren : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-Lonni : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-Magnus : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-Max : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-MaxBerggren : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-MayJune : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-MuhammedAbdul : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-NancyAnn : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-NielsVendelboe : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-OddHaugen : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-PiaBerggren : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-PigeLevendefodt2016 : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-PigeLevendefodt2024 : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-Poul : 0 / 0 / 5
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-Rasmus : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-RikkeBerggren : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-RuddiBerggren : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-Schwendlund : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-SilleJune : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-Sverre : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-Torre : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-else : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-john : 0 / 1 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-ukendt : 0 / 1 / 3
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-ukendt-D-eCPR : 0 / 1 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Patient-ukendt-X-eCPR : 0 / 1 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Practitioner-42cb9200-f421-4d08-8391-7d51a2503cb4 : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Practitioner-AbrahamLaege : 0 / 2 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Practitioner-HanneSocialraadgiver : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/Practitioner-SidselSygeplejerske : 0 / 1 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/PractitionerRole-AbrahamPractitionerRole : 0 / 1 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/PractitionerRole-PlaceholderPractitionerRole : 0 / 1 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-AageRelatedToNancy : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-AndersRelatedToAli : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-BrunoRelatedToNancy : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-Child : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-EinerRelatedToEK : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-EinerRelatedToEllen : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-EinerRelatedToElse : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-EinerRelatedToMagnus : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-EinerRelatedToRasmus : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-KirstenRelatedToAya : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-KirstenRelatedToGitte : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-KirstenRelatedToLars : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-KirstenRelatedToPia : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-KirstenRelatedToRikke : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-LonniRelatedToEK : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-LonniRelatedToEiner : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-LonniRelatedToEllen : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-LonniRelatedToElse : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-LonniRelatedToMagnus : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-LonniRelatedToRasmus : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-MayJuneGuardianOfSverre : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-MayJuneGuardianOfTorre : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-MayJuneRelatedToKnut : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-MayJuneRelatedToOdd : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-MayJuneRelatedToSchwendlund : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-MayJuneRelatedToSille : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-MayJuneRelatedToSverre : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-MayJuneRelatedToTorre : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-NancyGuardianOfAage : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-NancyGuardianOfBrita : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-NancyRelatedToBrita : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-NancyRelatedToGitte : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-NancyRelatedToKirsten : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-NancyRelatedToMax : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-NancyRelatedToRuddi : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-RuddiGuardianOfRikke : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-SchwendlundRelatedToKnut : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-SchwendlundRelatedToOdd : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-SchwendlundRelatedToSille : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-SchwendlundRelatedToSverre : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-SchwendlundRelatedToTorre : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/RelatedPerson-TwoRelations : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/ServiceRequest-HenvisningFraLageTilSygehus : 0 / 0 / 1
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/ServiceRequest-JohnsServiceRequest : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/ServiceRequest-MaxServiceRequest : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-ConditionLastAssertedDate : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-NotFollowedAnymore : 0 / 1 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-dk-core-RegionalSubDivisionCodes : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-dk-core-authorization-identifier : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-dk-core-basic-observation : 0 / 0 / 5
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-dk-core-care-provider : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-dk-core-condition : 0 / 2 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-dk-core-cpr-identifier : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-dk-core-cvr-identifier : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-dk-core-d-ecpr-identifier : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-dk-core-diagnostic-report : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-dk-core-encounter : 0 / 1 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-dk-core-gln-identifier : 0 / 1 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-dk-core-kombit-org-identifier : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-dk-core-location : 0 / 1 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-dk-core-minimaldocumentreference : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-dk-core-municipalityCodes : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-dk-core-observation : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-dk-core-organization : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-dk-core-patient : 0 / 2 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-dk-core-person-servicerequest : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-dk-core-planned-end-date : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-dk-core-planned-start-date : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-dk-core-practitioner : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-dk-core-practitioner-role : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-dk-core-producent-id : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-dk-core-related-person : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-dk-core-sor-identifier : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-dk-core-x-ecpr-identifier : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-ipa-dk-core-condition : 0 / 2 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-ipa-dk-core-observation : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-ipa-dk-core-patient : 0 / 1 / 3
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-ipa-dk-core-practitioner : 0 / 1 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/StructureDefinition-ipa-dk-core-practitionerrole : 0 / 1 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/ValueSet-DkCoreDeCPRValueSet : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/ValueSet-DkCoreProfessionGroupValueSet : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/ValueSet-dk-core-IEEEBasicObservation : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/ValueSet-dk-core-LoincBasicObservation : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/ValueSet-dk-core-LoincDiagnosticDocumentTypes : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/ValueSet-dk-core-LoincLabStudyTypes : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/ValueSet-dk-core-MunicipalityCodes : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/ValueSet-dk-core-NPUBasicObservation : 0 / 0 / 3
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/ValueSet-dk-core-RegionalSubDivisionCodes : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/ValueSet-dk-core-RelatedPersonRelationshipTypes : 0 / 2 / 3
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/ValueSet-dk-core-SCTBasicObservation : 0 / 0 / 3
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/ValueSet-dk-core-SCTLaboratorySpecialities : 0 / 0 / 3
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/ValueSet-dk-core-TechniquesSCTCodes : 0 / 0 / 3
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/ValueSet-dk-core-UCUM-BasicUnits : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/ValueSet-dk-core-encounter-priority : 0 / 0 / 5
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/ValueSet-dk-core-practice-setting-code : 0 / 0 / 3
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/ValueSet-dk-core-practice-setting-exclude-lab-code : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/ValueSet-dk-core-priority-codes : 0 / 1 / 4
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/ValueSet-dk-core-servicerequest-codes : 0 / 0 / 3
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/ValueSet-dk-marital-status : 0 / 1 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/ValueSet-extended-patient-contactrelationship : 0 / 0 / 2
+ /Users/jkiddo/work/temp/ig-builds/hl7.fhir.dk.core#3.7.0/fsh-generated/resources/ValueSet-sor-organization-type : 0 / 0 / 3
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ElseBloodPressure.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ElseBodyTemperature.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ElseConsciousness.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ElseHeartRate.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ElseINR.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ElseKalium.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ElseNatrium.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ElseRespirationRate.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ElseUrinStix.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ElsesTOBSscore.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ObservationOxySatBasicObservationOrg.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/MaxBloodPressure.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/MaxBodyTemperature.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/MaxConsciousness.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/MaxGlasgowComaScale.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/MaxHeartRate.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/MaxRespirationRate.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/MaxSaturation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/MaxVitalSignsPanel.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Location/neuroradiologyUnit.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: 5: The HTML fragment 'expansion-params.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/Bundle-ContinuaBundleWithDevice.json ==
+WARNING: Bundle/ContinuaBundleWithDevice: Bundle.entry[6].resource/*Observation/HeartRate.Poul.1974654*/.code.coding[2].system: A definition for CodeSystem 'http://npu-terminology.org' could not be found, so the code cannot be validated
+== fsh-generated/resources/Bundle-ElsesTOBS.json ==
+INFORMATION: Bundle/ElsesTOBS: Bundle.entry[1].resource/*Observation/ElseConsciousness*/.method.coding[0].display: 'Reported' is the default display; the code system http://snomed.info/sct has no Display Names for the language da-DK
+INFORMATION: Bundle/ElsesTOBS: Bundle.entry[2].resource/*Observation/ElseBloodPressure*/.code.coding[1]: Reference to draft ValueSet http://hl7.dk/fhir/core/ValueSet/dk-core-SCTBasicObservation|3.7.0
+INFORMATION: Bundle/ElsesTOBS: Bundle.entry[3].resource/*Observation/ElseBodyTemperature*/.code.coding[1]: Reference to draft ValueSet http://hl7.dk/fhir/core/ValueSet/dk-core-SCTBasicObservation|3.7.0
+INFORMATION: Bundle/ElsesTOBS: Bundle.entry[4].resource/*Observation/ElseHeartRate*/.code.coding[1]: Reference to draft ValueSet http://hl7.dk/fhir/core/ValueSet/dk-core-SCTBasicObservation|3.7.0
+INFORMATION: Bundle/ElsesTOBS: Bundle.entry[5].resource/*Observation/ElseRespirationRate*/.code.coding[1]: Reference to draft ValueSet http://hl7.dk/fhir/core/ValueSet/dk-core-SCTBasicObservation|3.7.0
+WARNING: Bundle/ElsesTOBS: Bundle.entry[7].resource/*Practitioner/SidselSygeplejerske*/.qualification[0].identifier[0].system: No definition could be found for URL value 'https://autregweb.sst.dk'
+== fsh-generated/resources/Bundle-MaxTOKS.json ==
+WARNING: Bundle/MaxTOKS: Bundle.entry[1].resource/*Observation/MaxConsciousness*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MaxTOKS: Bundle.entry[1].resource/*Observation/MaxConsciousness*/.code.coding[0].system: A definition for CodeSystem 'http://loinc.org' version 'http://snomed.info/sct/554471000005108' could not be found, so the code cannot be validated. Valid versions: 2.77 or 2.82
+INFORMATION: Bundle/MaxTOKS: Bundle.entry[1].resource/*Observation/MaxConsciousness*/.method.coding[0].display: 'Reported' is the default display; the code system http://snomed.info/sct has no Display Names for the language da-DK
+WARNING: Bundle/MaxTOKS: Bundle.entry[2].resource/*Observation/MaxBloodPressure*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MaxTOKS: Bundle.entry[3].resource/*Observation/MaxBodyTemperature*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MaxTOKS: Bundle.entry[4].resource/*Observation/MaxHeartRate*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MaxTOKS: Bundle.entry[5].resource/*Observation/MaxRespirationRate*/: Best Practice Recommendation: In general, all observations should have a performer
+INFORMATION: Bundle/MaxTOKS: Bundle.entry[5].resource/*Observation/MaxRespirationRate*/.code.coding[1]: Reference to draft ValueSet http://hl7.dk/fhir/core/ValueSet/dk-core-SCTBasicObservation|3.7.0
+WARNING: Bundle/MaxTOKS: Bundle.entry[6].resource/*Observation/MaxGlasgowComaScale*/: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/CodeSystem-DkCoreProfessionGroupCodes.json ==
+INFORMATION: CodeSystem/DkCoreProfessionGroupCodes: CodeSystem.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: CodeSystem/DkCoreProfessionGroupCodes: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a definition
+== fsh-generated/resources/CodeSystem-address-type-dk-supplement.json ==
+INFORMATION: CodeSystem/address-type-dk-supplement: CodeSystem.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: CodeSystem/address-type-dk-supplement: CodeSystem.supplements: There are multiple different potential matches for the url 'http://hl7.org/fhir/address-type'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '4.0.1', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.0.0 (from hl7.fhir.uv.xver-r5.r4#0.1.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/address-type' to 'http://hl7.org/fhir/address-type|4.0.1'
+WARNING: CodeSystem/address-type-dk-supplement: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a display
+WARNING: CodeSystem/address-type-dk-supplement: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a definition
+== fsh-generated/resources/CodeSystem-address-use-dk-supplement.json ==
+INFORMATION: CodeSystem/address-use-dk-supplement: CodeSystem.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: CodeSystem/address-use-dk-supplement: CodeSystem.supplements: There are multiple different potential matches for the url 'http://hl7.org/fhir/address-use'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '4.0.1', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.0.0 (from hl7.fhir.uv.xver-r5.r4#0.1.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/address-use' to 'http://hl7.org/fhir/address-use|4.0.1'
+WARNING: CodeSystem/address-use-dk-supplement: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a display
+WARNING: CodeSystem/address-use-dk-supplement: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a definition
+== fsh-generated/resources/CodeSystem-administrative-gender-supplement.json ==
+INFORMATION: CodeSystem/administrative-gender-supplement: CodeSystem.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: CodeSystem/administrative-gender-supplement: CodeSystem.supplements: There are multiple different potential matches for the url 'http://hl7.org/fhir/administrative-gender'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '4.0.1', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.0.0 (from hl7.fhir.uv.xver-r5.r4#0.1.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/administrative-gender' to 'http://hl7.org/fhir/administrative-gender|4.0.1'
+WARNING: CodeSystem/administrative-gender-supplement: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a display
+WARNING: CodeSystem/administrative-gender-supplement: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a definition
+== fsh-generated/resources/CodeSystem-care-team-status-dk-supplement.json ==
+INFORMATION: CodeSystem/care-team-status-dk-supplement: CodeSystem.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: CodeSystem/care-team-status-dk-supplement: CodeSystem.supplements: There are multiple different potential matches for the url 'http://hl7.org/fhir/care-team-status'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '4.0.1', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.0.0 (from hl7.fhir.uv.xver-r5.r4#0.1.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/care-team-status' to 'http://hl7.org/fhir/care-team-status|4.0.1'
+WARNING: CodeSystem/care-team-status-dk-supplement: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a display
+WARNING: CodeSystem/care-team-status-dk-supplement: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a definition
+== fsh-generated/resources/CodeSystem-consent-state-codes-dk-supplement.json ==
+INFORMATION: CodeSystem/consent-state-codes-dk-supplement: CodeSystem.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: CodeSystem/consent-state-codes-dk-supplement: CodeSystem.supplements: There are multiple different potential matches for the url 'http://hl7.org/fhir/consent-state-codes'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '4.0.1', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.0.0 (from hl7.fhir.uv.xver-r5.r4#0.1.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/consent-state-codes' to 'http://hl7.org/fhir/consent-state-codes|4.0.1'
+WARNING: CodeSystem/consent-state-codes-dk-supplement: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a display
+WARNING: CodeSystem/consent-state-codes-dk-supplement: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a definition
+== fsh-generated/resources/CodeSystem-days-of-week-dk-supplement.json ==
+INFORMATION: CodeSystem/days-of-week-dk-supplement: CodeSystem.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: CodeSystem/days-of-week-dk-supplement: CodeSystem.supplements: There are multiple different potential matches for the url 'http://hl7.org/fhir/days-of-week'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '4.0.1', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.0.0 (from hl7.fhir.uv.xver-r5.r4#0.1.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/days-of-week' to 'http://hl7.org/fhir/days-of-week|4.0.1'
+WARNING: CodeSystem/days-of-week-dk-supplement: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a display
+WARNING: CodeSystem/days-of-week-dk-supplement: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a definition
+== fsh-generated/resources/CodeSystem-dk-core-d-ecpr-codes.json ==
+INFORMATION: CodeSystem/dk-core-d-ecpr-codes: CodeSystem.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: CodeSystem/dk-core-d-ecpr-codes: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a definition
+== fsh-generated/resources/CodeSystem-dk-core-municipality-codes.json ==
+INFORMATION: CodeSystem/dk-core-municipality-codes: CodeSystem.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: CodeSystem/dk-core-municipality-codes: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a definition
+== fsh-generated/resources/CodeSystem-dk-core-municipality-codes-greenland.json ==
+INFORMATION: CodeSystem/dk-core-municipality-codes-greenland: CodeSystem.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: CodeSystem/dk-core-municipality-codes-greenland: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a definition
+== fsh-generated/resources/CodeSystem-dk-marital-status.json ==
+INFORMATION: CodeSystem/dk-marital-status: CodeSystem.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: CodeSystem/dk-marital-status: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a definition
+== fsh-generated/resources/CodeSystem-dk-relatedperson-relationshipcodes.json ==
+INFORMATION: CodeSystem/dk-relatedperson-relationshipcodes: CodeSystem.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/CodeSystem-episode-of-care-status-dk-supplement.json ==
+INFORMATION: CodeSystem/episode-of-care-status-dk-supplement: CodeSystem.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: CodeSystem/episode-of-care-status-dk-supplement: CodeSystem.supplements: There are multiple different potential matches for the url 'http://hl7.org/fhir/episode-of-care-status'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '4.0.1', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.0.0 (from hl7.fhir.uv.xver-r5.r4#0.1.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/episode-of-care-status' to 'http://hl7.org/fhir/episode-of-care-status|4.0.1'
+WARNING: CodeSystem/episode-of-care-status-dk-supplement: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a display
+WARNING: CodeSystem/episode-of-care-status-dk-supplement: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a definition
+== fsh-generated/resources/CodeSystem-publication-status-dk-supplement.json ==
+INFORMATION: CodeSystem/publication-status-dk-supplement: CodeSystem.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: CodeSystem/publication-status-dk-supplement: CodeSystem.supplements: There are multiple different potential matches for the url 'http://hl7.org/fhir/publication-status'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '4.0.1', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.0.0 (from hl7.fhir.uv.xver-r5.r4#0.1.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/publication-status' to 'http://hl7.org/fhir/publication-status|4.0.1'
+WARNING: CodeSystem/publication-status-dk-supplement: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a display
+WARNING: CodeSystem/publication-status-dk-supplement: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a definition
+== fsh-generated/resources/CodeSystem-request-status-dk-supplement.json ==
+INFORMATION: CodeSystem/request-status-dk-supplement: CodeSystem.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: CodeSystem/request-status-dk-supplement: CodeSystem.supplements: There are multiple different potential matches for the url 'http://hl7.org/fhir/request-status'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '4.0.1', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.0.0 (from hl7.fhir.uv.xver-r5.r4#0.1.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/request-status' to 'http://hl7.org/fhir/request-status|4.0.1'
+WARNING: CodeSystem/request-status-dk-supplement: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a display
+WARNING: CodeSystem/request-status-dk-supplement: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a definition
+== fsh-generated/resources/CodeSystem-role-code-dk-supplement.json ==
+INFORMATION: CodeSystem/role-code-dk-supplement: CodeSystem.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: CodeSystem/role-code-dk-supplement: CodeSystem.supplements: There are multiple different potential matches for the url 'http://terminology.hl7.org/CodeSystem/v3-RoleCode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '2018-08-12', found versions: 2.2.0 (from hl7.fhir.uv.xver-r5.r4#0.1.0), 3.0.0 (from hl7.terminology.r4#6.2.0), 4.0.0 (from hl7.terminology.r4#7.1.0). Suggested fix: change the canonical reference from 'http://terminology.hl7.org/CodeSystem/v3-RoleCode' to 'http://terminology.hl7.org/CodeSystem/v3-RoleCode|2018-08-12'
+WARNING: CodeSystem/role-code-dk-supplement: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a display
+WARNING: CodeSystem/role-code-dk-supplement: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a definition
+== fsh-generated/resources/CodeSystem-v2-0131-supplement.json ==
+INFORMATION: CodeSystem/v2-0131-supplement: CodeSystem.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: CodeSystem/v2-0131-supplement: CodeSystem.supplements: There are multiple different potential matches for the url 'http://terminology.hl7.org/CodeSystem/v2-0131'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '2.9', found versions: 2.0.0 (from hl7.terminology.r4#6.2.0), 2.1.0 (from hl7.fhir.uv.xver-r5.r4#0.1.0), 3.0.0 (from hl7.terminology.r4#7.1.0). Suggested fix: change the canonical reference from 'http://terminology.hl7.org/CodeSystem/v2-0131' to 'http://terminology.hl7.org/CodeSystem/v2-0131|2.9'
+WARNING: CodeSystem/v2-0131-supplement: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a display
+WARNING: CodeSystem/v2-0131-supplement: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a definition
+== fsh-generated/resources/Condition-ConditionPressureUlcer.json ==
+WARNING: Condition/ConditionPressureUlcer: Condition.code: Unable to check whether the code is in the value set '' because the code system urn:oid:1.2.208.176.2.21 was not found
+WARNING: Condition/ConditionPressureUlcer: Condition.code.coding[0].system: A definition for CodeSystem 'urn:oid:1.2.208.176.2.21' could not be found, so the code cannot be validated
+WARNING: Condition/ConditionPressureUlcer: Condition.code: Unable to check whether the code is in the value set '' because the code system http://snomed.info/sct|http://snomed.info/sct/554471000005108 was not found
+WARNING: Condition/ConditionPressureUlcer: Condition.code.coding[1].system: A definition for CodeSystem 'urn:oid:1.2.208.176.2.21' could not be found, so the code cannot be validated
+INFORMATION: Condition/ConditionPressureUlcer: Condition.code.coding[1]: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/condition-code|4.0.1
+INFORMATION: Condition/ConditionPressureUlcer: Condition.code.coding[1].display: 'Pressure injury stage II' is the default display; the code system http://snomed.info/sct has no Display Names for the language da-DK
+== fsh-generated/resources/Condition-ElseGraviditet.json ==
+WARNING: Condition/ElseGraviditet: Condition.code.coding[0].system: A definition for CodeSystem 'urn:oid:1.2.208.176.2.4.12' could not be found, so the code cannot be validated
+== fsh-generated/resources/Condition-JohnDiabetes.json ==
+WARNING: Condition/JohnDiabetes: Condition.code.coding[0]: A definition for CodeSystem 'urn:oid:1.2.208.176.2.4.12' could not be found, so the code cannot be validated
+== fsh-generated/resources/Condition-JohnFracture.json ==
+WARNING: Condition/JohnFracture: Condition.code.coding[0]: A definition for CodeSystem 'urn:oid:1.2.208.176.2.4.12' could not be found, so the code cannot be validated
+== fsh-generated/resources/Condition-JohnMelanoma.json ==
+WARNING: Condition/JohnMelanoma: Condition.code.coding[0]: A definition for CodeSystem 'urn:oid:1.2.208.176.2.4.12' could not be found, so the code cannot be validated
+== fsh-generated/resources/Condition-JohnPacemaker.json ==
+INFORMATION: Condition/JohnPacemaker: Condition.code.coding[0]: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/condition-code|4.0.1
+== fsh-generated/resources/Device-BPMonitor.C4F312FFFE53F2C9.json ==
+== fsh-generated/resources/Device-Telma.FEEDDADADEADBEEF.json ==
+== fsh-generated/resources/Device-WeightScale.606405FFFECFC604.json ==
+== fsh-generated/resources/DiagnosticReport-ElseHomeNursingMeasurements.json ==
+== fsh-generated/resources/DiagnosticReport-ElseLaboratoryReport.json ==
+== fsh-generated/resources/DocumentReference-94e65db8-2f0c-4a2c-a7c9-06a160d59a12.json ==
+WARNING: DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a12: DocumentReference.contained[1]/*Organization/8fa7df76-bec2-4fe2-9a44-750030a0eda0*/.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.208.176.1.1'
+INFORMATION: DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a12: DocumentReference.status: Reference to draft CodeSystem http://hl7.org/fhir/document-reference-status|4.0.1
+WARNING: DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a12: DocumentReference.category[0].coding[0].system: A definition for CodeSystem 'urn:oid:1.2.208.184.100.9' could not be found, so the code cannot be validated
+WARNING: DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a12: DocumentReference.securityLabel[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a12: DocumentReference.content[0].attachment.url: No definition could be found for URL value 'DOC001.XML'
+WARNING: DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a12: DocumentReference.content[0].format.system: A definition for CodeSystem 'urn:oid:1.2.208.184.100.10' could not be found, so the code cannot be validated
+INFORMATION: DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a12: DocumentReference.content[0].format: The code provided (urn:oid:1.2.208.184.100.10#urn:ad:dk:medcom:apd-v2.0.1:full) is not in the value set 'IHE ValueSet of Format Codes for use with Document Sharing' (http://ihe.net/fhir/ihe.formatcode.fhir/ValueSet/formatcode|1.4.0), and a code is recommended to come from this value set
+== fsh-generated/resources/DocumentReference-94e65db8-2f0c-4a2c-a7c9-06a160d59a13.json ==
+WARNING: DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a13: DocumentReference.contained[1]/*Organization/8fa7df76-bec2-4fe2-9a44-750030a0eda0*/.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.208.176.1.1'
+INFORMATION: DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a13: DocumentReference.status: Reference to draft CodeSystem http://hl7.org/fhir/document-reference-status|4.0.1
+INFORMATION: DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a13: DocumentReference.type: None of the codings provided are in the value set 'Document Type Value Set' (http://hl7.org/fhir/ValueSet/c80-doc-typecodes|4.0.1), and a coding is recommended to come from this value set (codes = http://loinc.org#11450-4)
+WARNING: DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a13: DocumentReference.category[0].coding[0].system: A definition for CodeSystem 'urn:oid:1.2.208.184.100.9' could not be found, so the code cannot be validated
+WARNING: DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a13: DocumentReference.securityLabel[0].coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a13: DocumentReference.content[0].attachment.url: No definition could be found for URL value 'DOC001.XML'
+WARNING: DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a13: DocumentReference.content[0].format.system: A definition for CodeSystem 'urn:oid:1.2.208.184.100.10' could not be found, so the code cannot be validated
+INFORMATION: DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a13: DocumentReference.content[0].format: The code provided (urn:oid:1.2.208.184.100.10#urn:ad:dk:medcom:plr-v1.0:full) is not in the value set 'IHE ValueSet of Format Codes for use with Document Sharing' (http://ihe.net/fhir/ihe.formatcode.fhir/ValueSet/formatcode|1.4.0), and a code is recommended to come from this value set
+== fsh-generated/resources/Encounter-0c5e4905-5c2e-4254-8837-770c3724cd13.json ==
+INFORMATION: Encounter/0c5e4905-5c2e-4254-8837-770c3724cd13: Encounter.class: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/v3-ActCode|2018-08-12
+== fsh-generated/resources/Encounter-915a3cfb-2f3e-477b-8a9d-5d86c30e4929.json ==
+INFORMATION: Encounter/915a3cfb-2f3e-477b-8a9d-5d86c30e4929: Encounter.class: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/v3-ActCode|2018-08-12
+== fsh-generated/resources/Group-BerggrenFamily.json ==
+== fsh-generated/resources/Group-JensenFamily.json ==
+== fsh-generated/resources/Group-LauridsenFamily.json ==
+== fsh-generated/resources/Group-LevendefodtTwins2016.json ==
+== fsh-generated/resources/Group-LevendefodtTwins2024.json ==
+== fsh-generated/resources/Group-MosebryggerssenFamily.json ==
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.dk.core.json ==
+INFORMATION: ImplementationGuide/hl7.fhir.dk.core: ImplementationGuide.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: ImplementationGuide/hl7.fhir.dk.core: ImplementationGuide.dependsOn[5]: The ImplementationGuide uses package ihe.iti.mhd#4.2.3 released on 2025-10-31, but the most recent appropriate version is 5.0.0. This reference is getting old and the more recent version should be considered
+== fsh-generated/resources/Location-ambulance.json ==
+INFORMATION: Location/ambulance: Location.physicalType: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/location-physical-type|4.0.1
+== fsh-generated/resources/Location-neuroradiologyUnit.json ==
+INFORMATION: Location/neuroradiologyUnit: Location.physicalType: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/location-physical-type|4.0.1
+== fsh-generated/resources/NamingSystem-cpr.json ==
+INFORMATION: NamingSystem/cpr: NamingSystem.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: NamingSystem/cpr: NamingSystem: Constraint failed: nsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation (name.matches('[A-Z]([A-Za-z0-9_]){0,254}'))'
+== fsh-generated/resources/NamingSystem-cvr.json ==
+INFORMATION: NamingSystem/cvr: NamingSystem.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: NamingSystem/cvr: NamingSystem: Constraint failed: nsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation (name.matches('[A-Z]([A-Za-z0-9_]){0,254}'))'
+== fsh-generated/resources/NamingSystem-sor.json ==
+INFORMATION: NamingSystem/sor: NamingSystem.type.coding[0].display: There are no valid display names found for the code http://terminology.hl7.org/CodeSystem/v2-0203#PRN for language(s) 'da-DK'. The display is 'Provider number' which is the default language display
+INFORMATION: NamingSystem/sor: NamingSystem.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: NamingSystem/sor: NamingSystem: Constraint failed: nsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation (name.matches('[A-Z]([A-Za-z0-9_]){0,254}'))'
+== fsh-generated/resources/Observation-CoincidentTimeStamp.0222.json ==
+== fsh-generated/resources/Observation-ElseBloodPressure.json ==
+INFORMATION: Observation/ElseBloodPressure: Observation.code.coding[1]: Reference to draft ValueSet http://hl7.dk/fhir/core/ValueSet/dk-core-SCTBasicObservation|3.7.0
+== fsh-generated/resources/Observation-ElseBodyTemperature.json ==
+INFORMATION: Observation/ElseBodyTemperature: Observation.code.coding[1]: Reference to draft ValueSet http://hl7.dk/fhir/core/ValueSet/dk-core-SCTBasicObservation|3.7.0
+== fsh-generated/resources/Observation-ElseConsciousness.json ==
+INFORMATION: Observation/ElseConsciousness: Observation.method.coding[0].display: 'Reported' is the default display; the code system http://snomed.info/sct has no Display Names for the language da-DK
+== fsh-generated/resources/Observation-ElseHeartRate.json ==
+INFORMATION: Observation/ElseHeartRate: Observation.code.coding[1]: Reference to draft ValueSet http://hl7.dk/fhir/core/ValueSet/dk-core-SCTBasicObservation|3.7.0
+== fsh-generated/resources/Observation-ElseINR.json ==
+INFORMATION: Observation/ElseINR: Observation.code.coding[0].display: 'P—Coagulation, tissue factor-induced; rel.time(actual/norm;INR;IRP 67/40;proc.) = ?' is the default display; the code system http://npu-terminology.org has no Display Names for the language da-DK
+WARNING: Observation/ElseINR: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-ElseKalium.json ==
+INFORMATION: Observation/ElseKalium: Observation.code.coding[0].display: 'P—Potassium ion; subst.c. = ? mmol/L' is the default display; the code system http://npu-terminology.org has no Display Names for the language da-DK
+WARNING: Observation/ElseKalium: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-ElseNatrium.json ==
+INFORMATION: Observation/ElseNatrium: Observation.code.coding[0].display: 'P—Sodium ion; subst.c. = ? mmol/L' is the default display; the code system http://npu-terminology.org has no Display Names for the language da-DK
+WARNING: Observation/ElseNatrium: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-ElsePainVRS.json ==
+WARNING: Observation/ElsePainVRS: Observation.value.ofType(CodeableConcept): Unable to check whether the code is in the value set '' because the code system http://localSystem.dk was not found
+WARNING: Observation/ElsePainVRS: Observation.value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://localSystem.dk' could not be found, so the code cannot be validated
+WARNING: Observation/ElsePainVRS: Observation.value.ofType(CodeableConcept): Unable to check whether the code is in the value set '' because the code system http://snomed.info/sct|http://snomed.info/sct/554471000005108 was not found
+WARNING: Observation/ElsePainVRS: Observation.value.ofType(CodeableConcept).coding[1].system: A definition for CodeSystem 'http://localSystem.dk' could not be found, so the code cannot be validated
+WARNING: Observation/ElsePainVRS: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-ElseRespirationRate.json ==
+INFORMATION: Observation/ElseRespirationRate: Observation.code.coding[1]: Reference to draft ValueSet http://hl7.dk/fhir/core/ValueSet/dk-core-SCTBasicObservation|3.7.0
+== fsh-generated/resources/Observation-ElseUrinStix.json ==
+INFORMATION: Observation/ElseUrinStix: Observation.code.coding[0].display: 'U—Leukocytes; arb.c.(proc.) = ?' is the default display; the code system http://npu-terminology.org has no Display Names for the language da-DK
+WARNING: Observation/ElseUrinStix: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-ElsesTOBSscore.json ==
+== fsh-generated/resources/Observation-HeartRate.Poul.1974654.json ==
+WARNING: Observation/HeartRate.Poul.1974654: Observation.code.coding[2].system: A definition for CodeSystem 'http://npu-terminology.org' could not be found, so the code cannot be validated
+== fsh-generated/resources/Observation-MaxBloodPressure.json ==
+WARNING: Observation/MaxBloodPressure: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-MaxBodyTemperature.json ==
+WARNING: Observation/MaxBodyTemperature: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-MaxConsciousness.json ==
+WARNING: Observation/MaxConsciousness: Observation.code.coding[0].system: A definition for CodeSystem 'http://loinc.org' version 'http://snomed.info/sct/554471000005108' could not be found, so the code cannot be validated. Valid versions: 2.77 or 2.82
+INFORMATION: Observation/MaxConsciousness: Observation.method.coding[0].display: 'Reported' is the default display; the code system http://snomed.info/sct has no Display Names for the language da-DK
+WARNING: Observation/MaxConsciousness: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-MaxGlasgowComaScale.json ==
+WARNING: Observation/MaxGlasgowComaScale: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-MaxHeartRate.json ==
+WARNING: Observation/MaxHeartRate: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-MaxRespirationRate.json ==
+INFORMATION: Observation/MaxRespirationRate: Observation.code.coding[1]: Reference to draft ValueSet http://hl7.dk/fhir/core/ValueSet/dk-core-SCTBasicObservation|3.7.0
+WARNING: Observation/MaxRespirationRate: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-MaxSaturation.json ==
+WARNING: Observation/MaxSaturation: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-MaxVitalSignsPanel.json ==
+WARNING: Observation/MaxVitalSignsPanel: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-ObservationOxySatBasicObservationOrg.json ==
+== fsh-generated/resources/Observation-ObservationOxySatObservation.json ==
+== fsh-generated/resources/Observation-ObservationRespiratoryBasicObservation.json ==
+== fsh-generated/resources/Observation-Weight.Poul.230221.json ==
+WARNING: Observation/Weight.Poul.230221: Observation.code.coding[2].system: A definition for CodeSystem 'http://npu-terminology.org' could not be found, so the code cannot be validated
+== fsh-generated/resources/Organization-154b8c96-a061-45bf-9ce4-1947c7c3c283.json ==
+WARNING: Organization/154b8c96-a061-45bf-9ce4-1947c7c3c283: Organization.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.208.176.1.1'
+WARNING: Organization/154b8c96-a061-45bf-9ce4-1947c7c3c283: Organization.identifier[1].system: No definition could be found for URL value 'http://medcomfhir.dk/ig/terminology/CodeSystem/MedComProducentID'
+== fsh-generated/resources/Organization-19f9ee18-7677-4caf-88fe-8f6df2f2906e.json ==
+WARNING: Organization/19f9ee18-7677-4caf-88fe-8f6df2f2906e: Organization.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.208.176.1.1'
+INFORMATION: Organization/19f9ee18-7677-4caf-88fe-8f6df2f2906e: Organization.identifier[1].system: A definition could not be found for Canonical URL 'https://www.gs1.org/gln' but a definition can be found for 'http://www.gs1.org/gln' - change from https: to http:
+WARNING: Organization/19f9ee18-7677-4caf-88fe-8f6df2f2906e: Organization.identifier[1].system: No definition could be found for URL value 'https://www.gs1.org/gln'
+== fsh-generated/resources/Organization-8510eec9-180b-4e9c-95b6-02fad9f853d3.json ==
+WARNING: Organization/8510eec9-180b-4e9c-95b6-02fad9f853d3: Organization.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.208.176.1.1'
+INFORMATION: Organization/8510eec9-180b-4e9c-95b6-02fad9f853d3: Organization.identifier[1].system: A definition could not be found for Canonical URL 'https://www.gs1.org/gln' but a definition can be found for 'http://www.gs1.org/gln' - change from https: to http:
+WARNING: Organization/8510eec9-180b-4e9c-95b6-02fad9f853d3: Organization.identifier[1].system: No definition could be found for URL value 'https://www.gs1.org/gln'
+== fsh-generated/resources/Organization-8fa7df76-bec2-4fe2-9a44-750030a0eda0.json ==
+WARNING: Organization/8fa7df76-bec2-4fe2-9a44-750030a0eda0: Organization.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.208.176.1.1'
+== fsh-generated/resources/Organization-CenterForDiabetes.json ==
+WARNING: Organization/CenterForDiabetes: Organization.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.208.176.1.1'
+== fsh-generated/resources/Organization-CenterForDiabetesTeamDiabetes.json ==
+WARNING: Organization/CenterForDiabetesTeamDiabetes: Organization.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.208.176.1.1'
+== fsh-generated/resources/Organization-CenterForDiabetesTeamHjerte.json ==
+WARNING: Organization/CenterForDiabetesTeamHjerte: Organization.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.208.176.1.1'
+== fsh-generated/resources/Organization-CenterForDiabetesTeamKvalitet.json ==
+WARNING: Organization/CenterForDiabetesTeamKvalitet: Organization.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.208.176.1.1'
+== fsh-generated/resources/Organization-KliniskBiokemiHBY.json ==
+WARNING: Organization/KliniskBiokemiHBY: Organization.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.208.176.1.1'
+== fsh-generated/resources/Organization-LaegerneHasserisBymidte.json ==
+WARNING: Organization/LaegerneHasserisBymidte: Organization.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.208.176.1.1'
+WARNING: Organization/LaegerneHasserisBymidte: Organization.identifier[1].system: No definition could be found for URL value 'urn:oid:1.2.208.176.1.4'
+== fsh-generated/resources/Organization-b08997bb-4476-4dd0-84dd-2e297f809364.json ==
+WARNING: Organization/b08997bb-4476-4dd0-84dd-2e297f809364: Organization.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.208.176.1.1'
+INFORMATION: Organization/b08997bb-4476-4dd0-84dd-2e297f809364: Organization.identifier[2].system: A definition could not be found for Canonical URL 'https://www.gs1.org/gln' but a definition can be found for 'http://www.gs1.org/gln' - change from https: to http:
+WARNING: Organization/b08997bb-4476-4dd0-84dd-2e297f809364: Organization.identifier[2].system: No definition could be found for URL value 'https://www.gs1.org/gln'
+WARNING: Organization/b08997bb-4476-4dd0-84dd-2e297f809364: Organization.identifier[3].system: No definition could be found for URL value 'https://kombit.dk/sts/organisation'
+== fsh-generated/resources/Organization-dk-core-organization-1.json ==
+== fsh-generated/resources/Parameters-expParam.json ==
+== fsh-generated/resources/Patient-283.json ==
+WARNING: Patient/283: Patient.generalPractitioner[0].identifier.system: No definition could be found for URL value 'urn:oid:1.2.208.176.1.1'
+== fsh-generated/resources/Patient-37628912-7816-47a3-acd8-396b610be142.json ==
+== fsh-generated/resources/Patient-Aage.json ==
+== fsh-generated/resources/Patient-AliJensen.json ==
+== fsh-generated/resources/Patient-AndersJensen.json ==
+== fsh-generated/resources/Patient-AyaBerggren.json ==
+== fsh-generated/resources/Patient-BoVestergaard.json ==
+== fsh-generated/resources/Patient-BritaBerggren.json ==
+== fsh-generated/resources/Patient-Bruno.json ==
+== fsh-generated/resources/Patient-CaesarOestergaard.json ==
+== fsh-generated/resources/Patient-Confidential.json ==
+WARNING: Patient/Confidential: Patient.meta.security[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+== fsh-generated/resources/Patient-DrengLevendefodt2016.json ==
+== fsh-generated/resources/Patient-DrengLevendefodt2024.json ==
+== fsh-generated/resources/Patient-EK.json ==
+== fsh-generated/resources/Patient-Einer.json ==
+== fsh-generated/resources/Patient-EllenLouise.json ==
+== fsh-generated/resources/Patient-ElseLauridsen.json ==
+== fsh-generated/resources/Patient-GitteNancy.json ==
+== fsh-generated/resources/Patient-JulianeJoergensen.json ==
+== fsh-generated/resources/Patient-KajaHansen.json ==
+== fsh-generated/resources/Patient-KirstenBerggren.json ==
+== fsh-generated/resources/Patient-KnutOdvar.json ==
+== fsh-generated/resources/Patient-LarsBerggren.json ==
+== fsh-generated/resources/Patient-Lonni.json ==
+== fsh-generated/resources/Patient-Magnus.json ==
+== fsh-generated/resources/Patient-Max.json ==
+== fsh-generated/resources/Patient-MaxBerggren.json ==
+== fsh-generated/resources/Patient-MayJune.json ==
+== fsh-generated/resources/Patient-MuhammedAbdul.json ==
+== fsh-generated/resources/Patient-NancyAnn.json ==
+== fsh-generated/resources/Patient-NielsVendelboe.json ==
+== fsh-generated/resources/Patient-OddHaugen.json ==
+== fsh-generated/resources/Patient-PiaBerggren.json ==
+== fsh-generated/resources/Patient-PigeLevendefodt2016.json ==
+== fsh-generated/resources/Patient-PigeLevendefodt2024.json ==
+== fsh-generated/resources/Patient-Poul.json ==
+== fsh-generated/resources/Patient-Rasmus.json ==
+== fsh-generated/resources/Patient-RikkeBerggren.json ==
+== fsh-generated/resources/Patient-RuddiBerggren.json ==
+== fsh-generated/resources/Patient-Schwendlund.json ==
+== fsh-generated/resources/Patient-SilleJune.json ==
+== fsh-generated/resources/Patient-Sverre.json ==
+== fsh-generated/resources/Patient-Torre.json ==
+== fsh-generated/resources/Patient-else.json ==
+== fsh-generated/resources/Patient-john.json ==
+WARNING: Patient/john: Patient.generalPractitioner[0].identifier.system: No definition could be found for URL value 'urn:oid:1.2.208.176.1.1'
+== fsh-generated/resources/Patient-ukendt.json ==
+WARNING: Patient/ukendt: Patient.identifier[0].system: No definition could be found for URL value 'http://rn.dk'
+== fsh-generated/resources/Patient-ukendt-D-eCPR.json ==
+WARNING: Patient/ukendt-D-eCPR: Patient.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.208.176.1.6.1.3.177'
+== fsh-generated/resources/Patient-ukendt-X-eCPR.json ==
+WARNING: Patient/ukendt-X-eCPR: Patient.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.208.176.1.6.1.1'
+== fsh-generated/resources/Practitioner-42cb9200-f421-4d08-8391-7d51a2503cb4.json ==
+== fsh-generated/resources/Practitioner-AbrahamLaege.json ==
+WARNING: Practitioner/AbrahamLaege: Practitioner.qualification[0].identifier[0].system: No definition could be found for URL value 'https://autregweb.sst.dk'
+WARNING: Practitioner/AbrahamLaege: Practitioner.qualification[1].identifier[0].system: No definition could be found for URL value 'https://autregweb.sst.dk'
+== fsh-generated/resources/Practitioner-HanneSocialraadgiver.json ==
+== fsh-generated/resources/Practitioner-SidselSygeplejerske.json ==
+WARNING: Practitioner/SidselSygeplejerske: Practitioner.qualification[0].identifier[0].system: No definition could be found for URL value 'https://autregweb.sst.dk'
+== fsh-generated/resources/PractitionerRole-AbrahamPractitionerRole.json ==
+WARNING: PractitionerRole/AbrahamPractitionerRole: PractitionerRole.specialty[0].coding[0].system: A definition for CodeSystem 'http://snomed.info/sct/554471000005108' could not be found, so the code cannot be validated
+INFORMATION: PractitionerRole/AbrahamPractitionerRole: PractitionerRole.specialty[0]: None of the codings provided are in the value set 'Practice Setting Code Value Set' (http://hl7.org/fhir/ValueSet/c80-practice-codes|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct/554471000005108#408443003)
+== fsh-generated/resources/PractitionerRole-PlaceholderPractitionerRole.json ==
+WARNING: PractitionerRole/PlaceholderPractitionerRole: PractitionerRole.specialty[0].coding[0].system: A definition for CodeSystem 'http://snomed.info/sct/554471000005108' could not be found, so the code cannot be validated
+INFORMATION: PractitionerRole/PlaceholderPractitionerRole: PractitionerRole.specialty[0]: None of the codings provided are in the value set 'Practice Setting Code Value Set' (http://hl7.org/fhir/ValueSet/c80-practice-codes|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct/554471000005108#408443003)
+== fsh-generated/resources/RelatedPerson-AageRelatedToNancy.json ==
+== fsh-generated/resources/RelatedPerson-AndersRelatedToAli.json ==
+== fsh-generated/resources/RelatedPerson-BrunoRelatedToNancy.json ==
+== fsh-generated/resources/RelatedPerson-Child.json ==
+== fsh-generated/resources/RelatedPerson-EinerRelatedToEK.json ==
+== fsh-generated/resources/RelatedPerson-EinerRelatedToEllen.json ==
+== fsh-generated/resources/RelatedPerson-EinerRelatedToElse.json ==
+== fsh-generated/resources/RelatedPerson-EinerRelatedToMagnus.json ==
+== fsh-generated/resources/RelatedPerson-EinerRelatedToRasmus.json ==
+== fsh-generated/resources/RelatedPerson-KirstenRelatedToAya.json ==
+== fsh-generated/resources/RelatedPerson-KirstenRelatedToGitte.json ==
+== fsh-generated/resources/RelatedPerson-KirstenRelatedToLars.json ==
+== fsh-generated/resources/RelatedPerson-KirstenRelatedToPia.json ==
+== fsh-generated/resources/RelatedPerson-KirstenRelatedToRikke.json ==
+== fsh-generated/resources/RelatedPerson-LonniRelatedToEK.json ==
+== fsh-generated/resources/RelatedPerson-LonniRelatedToEiner.json ==
+== fsh-generated/resources/RelatedPerson-LonniRelatedToEllen.json ==
+== fsh-generated/resources/RelatedPerson-LonniRelatedToElse.json ==
+== fsh-generated/resources/RelatedPerson-LonniRelatedToMagnus.json ==
+== fsh-generated/resources/RelatedPerson-LonniRelatedToRasmus.json ==
+== fsh-generated/resources/RelatedPerson-MayJuneGuardianOfSverre.json ==
+== fsh-generated/resources/RelatedPerson-MayJuneGuardianOfTorre.json ==
+== fsh-generated/resources/RelatedPerson-MayJuneRelatedToKnut.json ==
+== fsh-generated/resources/RelatedPerson-MayJuneRelatedToOdd.json ==
+== fsh-generated/resources/RelatedPerson-MayJuneRelatedToSchwendlund.json ==
+== fsh-generated/resources/RelatedPerson-MayJuneRelatedToSille.json ==
+== fsh-generated/resources/RelatedPerson-MayJuneRelatedToSverre.json ==
+== fsh-generated/resources/RelatedPerson-MayJuneRelatedToTorre.json ==
+== fsh-generated/resources/RelatedPerson-NancyGuardianOfAage.json ==
+== fsh-generated/resources/RelatedPerson-NancyGuardianOfBrita.json ==
+== fsh-generated/resources/RelatedPerson-NancyRelatedToBrita.json ==
+== fsh-generated/resources/RelatedPerson-NancyRelatedToGitte.json ==
+== fsh-generated/resources/RelatedPerson-NancyRelatedToKirsten.json ==
+== fsh-generated/resources/RelatedPerson-NancyRelatedToMax.json ==
+== fsh-generated/resources/RelatedPerson-NancyRelatedToRuddi.json ==
+== fsh-generated/resources/RelatedPerson-RuddiGuardianOfRikke.json ==
+== fsh-generated/resources/RelatedPerson-SchwendlundRelatedToKnut.json ==
+== fsh-generated/resources/RelatedPerson-SchwendlundRelatedToOdd.json ==
+== fsh-generated/resources/RelatedPerson-SchwendlundRelatedToSille.json ==
+== fsh-generated/resources/RelatedPerson-SchwendlundRelatedToSverre.json ==
+== fsh-generated/resources/RelatedPerson-SchwendlundRelatedToTorre.json ==
+== fsh-generated/resources/RelatedPerson-TwoRelations.json ==
+== fsh-generated/resources/ServiceRequest-HenvisningFraLageTilSygehus.json ==
+== fsh-generated/resources/ServiceRequest-JohnsServiceRequest.json ==
+INFORMATION: ServiceRequest/JohnsServiceRequest: ServiceRequest.priority: Reference to draft CodeSystem http://hl7.org/fhir/request-priority|4.0.1
+== fsh-generated/resources/ServiceRequest-MaxServiceRequest.json ==
+INFORMATION: ServiceRequest/MaxServiceRequest: ServiceRequest.priority: Reference to draft CodeSystem http://hl7.org/fhir/request-priority|4.0.1
+== fsh-generated/resources/StructureDefinition-ConditionLastAssertedDate.json ==
+INFORMATION: StructureDefinition/ConditionLastAssertedDate: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/StructureDefinition-NotFollowedAnymore.json ==
+INFORMATION: StructureDefinition/NotFollowedAnymore: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: StructureDefinition.where(url = 'http://hl7.dk/fhir/core/StructureDefinition/NotFollowedAnymore'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-dk-core-RegionalSubDivisionCodes.json ==
+INFORMATION: StructureDefinition/dk-core-RegionalSubDivisionCodes: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/StructureDefinition-dk-core-authorization-identifier.json ==
+INFORMATION: StructureDefinition/dk-core-authorization-identifier: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/StructureDefinition-dk-core-basic-observation.json ==
+INFORMATION: StructureDefinition/dk-core-basic-observation: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+INFORMATION: StructureDefinition/dk-core-basic-observation: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0 is deprecated with the note: 'Use additionalBinding extension or element instead'
+INFORMATION: StructureDefinition/dk-core-basic-observation: StructureDefinition.snapshot.element[13].pattern.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|4.0.1
+INFORMATION: StructureDefinition/dk-core-basic-observation: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/observation-category|4.0.1
+== fsh-generated/resources/StructureDefinition-dk-core-care-provider.json ==
+INFORMATION: StructureDefinition/dk-core-care-provider: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/StructureDefinition-dk-core-condition.json ==
+INFORMATION: StructureDefinition/dk-core-condition: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: StructureDefinition/dk-core-condition: StructureDefinition.snapshot.element[8].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/condition-dueTo'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.3.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0), 5.3.0 (from hl7.fhir.uv.extensions.r4#5.3.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/condition-dueTo' to 'http://hl7.org/fhir/StructureDefinition/condition-dueTo|5.3.0'
+WARNING: StructureDefinition/dk-core-condition: StructureDefinition.differential.element[2].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/condition-dueTo'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.3.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0), 5.3.0 (from hl7.fhir.uv.extensions.r4#5.3.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/condition-dueTo' to 'http://hl7.org/fhir/StructureDefinition/condition-dueTo|5.3.0'
+== fsh-generated/resources/StructureDefinition-dk-core-cpr-identifier.json ==
+INFORMATION: StructureDefinition/dk-core-cpr-identifier: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/StructureDefinition-dk-core-cvr-identifier.json ==
+INFORMATION: StructureDefinition/dk-core-cvr-identifier: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/StructureDefinition-dk-core-d-ecpr-identifier.json ==
+INFORMATION: StructureDefinition/dk-core-d-ecpr-identifier: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/StructureDefinition-dk-core-diagnostic-report.json ==
+INFORMATION: StructureDefinition/dk-core-diagnostic-report: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/StructureDefinition-dk-core-encounter.json ==
+INFORMATION: StructureDefinition/dk-core-encounter: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: StructureDefinition/dk-core-encounter: StructureDefinition.snapshot.element[60].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v2-0092'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '2.9', found versions: 2.0.0 (from hl7.terminology.r4#6.2.0), 3.0.0 (from hl7.terminology.r4#7.1.0). Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v2-0092' to 'http://terminology.hl7.org/ValueSet/v2-0092|2.9'
+== fsh-generated/resources/StructureDefinition-dk-core-gln-identifier.json ==
+INFORMATION: StructureDefinition/dk-core-gln-identifier: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: StructureDefinition.where(url = 'http://hl7.dk/fhir/core/StructureDefinition/dk-core-gln-identifier'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-dk-core-kombit-org-identifier.json ==
+INFORMATION: StructureDefinition/dk-core-kombit-org-identifier: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/StructureDefinition-dk-core-location.json ==
+INFORMATION: StructureDefinition/dk-core-location: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: StructureDefinition/dk-core-location: StructureDefinition.snapshot.element[11].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v2-0116'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '2.9', found versions: 2.0.0 (from hl7.terminology.r4#6.2.0), 3.0.0 (from hl7.terminology.r4#7.1.0). Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v2-0116' to 'http://terminology.hl7.org/ValueSet/v2-0116|2.9'
+== fsh-generated/resources/StructureDefinition-dk-core-minimaldocumentreference.json ==
+INFORMATION: StructureDefinition/dk-core-minimaldocumentreference: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/StructureDefinition-dk-core-municipalityCodes.json ==
+INFORMATION: StructureDefinition/dk-core-municipalityCodes: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/StructureDefinition-dk-core-observation.json ==
+INFORMATION: StructureDefinition/dk-core-observation: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/StructureDefinition-dk-core-organization.json ==
+INFORMATION: StructureDefinition/dk-core-organization: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/StructureDefinition-dk-core-patient.json ==
+INFORMATION: StructureDefinition/dk-core-patient: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: StructureDefinition/dk-core-patient: StructureDefinition.snapshot.element[34].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/address-official'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.3.0', found versions: 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0), 5.3.0 (from hl7.fhir.uv.extensions.r4#5.3.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/address-official' to 'http://hl7.org/fhir/StructureDefinition/address-official|5.3.0'
+WARNING: StructureDefinition/dk-core-patient: StructureDefinition.differential.element[12].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/address-official'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.3.0', found versions: 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0), 5.3.0 (from hl7.fhir.uv.extensions.r4#5.3.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/address-official' to 'http://hl7.org/fhir/StructureDefinition/address-official|5.3.0'
+== fsh-generated/resources/StructureDefinition-dk-core-person-servicerequest.json ==
+INFORMATION: StructureDefinition/dk-core-person-servicerequest: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/StructureDefinition-dk-core-planned-end-date.json ==
+INFORMATION: StructureDefinition/dk-core-planned-end-date: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/StructureDefinition-dk-core-planned-start-date.json ==
+INFORMATION: StructureDefinition/dk-core-planned-start-date: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/StructureDefinition-dk-core-practitioner.json ==
+INFORMATION: StructureDefinition/dk-core-practitioner: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/StructureDefinition-dk-core-practitioner-role.json ==
+INFORMATION: StructureDefinition/dk-core-practitioner-role: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/StructureDefinition-dk-core-producent-id.json ==
+INFORMATION: StructureDefinition/dk-core-producent-id: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/StructureDefinition-dk-core-related-person.json ==
+INFORMATION: StructureDefinition/dk-core-related-person: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/StructureDefinition-dk-core-sor-identifier.json ==
+INFORMATION: StructureDefinition/dk-core-sor-identifier: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/StructureDefinition-dk-core-x-ecpr-identifier.json ==
+INFORMATION: StructureDefinition/dk-core-x-ecpr-identifier: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/StructureDefinition-ipa-dk-core-condition.json ==
+INFORMATION: StructureDefinition/ipa-dk-core-condition: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: StructureDefinition/ipa-dk-core-condition: StructureDefinition.snapshot.element[8].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/condition-dueTo'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.3.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0), 5.3.0 (from hl7.fhir.uv.extensions.r4#5.3.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/condition-dueTo' to 'http://hl7.org/fhir/StructureDefinition/condition-dueTo|5.3.0'
+WARNING: StructureDefinition.where(url = 'http://hl7.dk/fhir/core/StructureDefinition/ipa-dk-core-condition'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ipa-dk-core-observation.json ==
+INFORMATION: StructureDefinition/ipa-dk-core-observation: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/StructureDefinition-ipa-dk-core-patient.json ==
+INFORMATION: StructureDefinition/ipa-dk-core-patient: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: StructureDefinition/ipa-dk-core-patient: StructureDefinition.snapshot.element[34].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/address-official'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.3.0', found versions: 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0), 5.3.0 (from hl7.fhir.uv.extensions.r4#5.3.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/address-official' to 'http://hl7.org/fhir/StructureDefinition/address-official|5.3.0'
+INFORMATION: StructureDefinition.where(url = 'http://hl7.dk/fhir/core/StructureDefinition/ipa-dk-core-patient'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated/resources/StructureDefinition-ipa-dk-core-practitioner.json ==
+INFORMATION: StructureDefinition/ipa-dk-core-practitioner: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: StructureDefinition.where(url = 'http://hl7.dk/fhir/core/StructureDefinition/ipa-dk-core-practitioner'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ipa-dk-core-practitionerrole.json ==
+INFORMATION: StructureDefinition/ipa-dk-core-practitionerrole: StructureDefinition.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: StructureDefinition.where(url = 'http://hl7.dk/fhir/core/StructureDefinition/ipa-dk-core-practitionerrole'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/ValueSet-DkCoreDeCPRValueSet.json ==
+INFORMATION: ValueSet/DkCoreDeCPRValueSet: ValueSet.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/ValueSet-DkCoreProfessionGroupValueSet.json ==
+INFORMATION: ValueSet/DkCoreProfessionGroupValueSet: ValueSet.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/ValueSet-dk-core-IEEEBasicObservation.json ==
+INFORMATION: ValueSet/dk-core-IEEEBasicObservation: ValueSet.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/ValueSet-dk-core-LoincBasicObservation.json ==
+INFORMATION: ValueSet/dk-core-LoincBasicObservation: ValueSet.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/ValueSet-dk-core-LoincDiagnosticDocumentTypes.json ==
+INFORMATION: ValueSet/dk-core-LoincDiagnosticDocumentTypes: ValueSet.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/ValueSet-dk-core-LoincLabStudyTypes.json ==
+INFORMATION: ValueSet/dk-core-LoincLabStudyTypes: ValueSet.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/ValueSet-dk-core-MunicipalityCodes.json ==
+INFORMATION: ValueSet/dk-core-MunicipalityCodes: ValueSet.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/ValueSet-dk-core-NPUBasicObservation.json ==
+INFORMATION: ValueSet/dk-core-NPUBasicObservation: ValueSet.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+INFORMATION: ValueSet/dk-core-NPUBasicObservation: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the terminology server https://tx-nordics.fhir.org/fhir/r4 does not support batch validation (tests version < 1.7.8)
+== fsh-generated/resources/ValueSet-dk-core-RegionalSubDivisionCodes.json ==
+INFORMATION: ValueSet/dk-core-RegionalSubDivisionCodes: ValueSet.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/ValueSet-dk-core-RelatedPersonRelationshipTypes.json ==
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of http://terminology.hl7.org/CodeSystem/v3-RoleCode to 2018-08-12 from choices of 2.2.0 (hl7.fhir.uv.xver-r5.r4#0.1.0), 3.0.0 (hl7.terminology.r4#6.3.0), 4.0.0 (hl7.terminology.r4#7.1.0)
+INFORMATION: ValueSet/dk-core-RelatedPersonRelationshipTypes: ValueSet.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: ValueSet/dk-core-RelatedPersonRelationshipTypes: ValueSet.compose.include[0].concept[17]: The concept 'NOK' is deprecated and its use should be reviewed
+WARNING: ValueSet/dk-core-RelatedPersonRelationshipTypes: ValueSet.compose.include[0].concept[19]: The concept 'ECON' is deprecated and its use should be reviewed
+== fsh-generated/resources/ValueSet-dk-core-SCTBasicObservation.json ==
+INFORMATION: ValueSet/dk-core-SCTBasicObservation: ValueSet.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+INFORMATION: ValueSet/dk-core-SCTBasicObservation: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the terminology server https://tx-nordics.fhir.org/fhir/r4 does not support batch validation (tests version < 1.7.8)
+== fsh-generated/resources/ValueSet-dk-core-SCTLaboratorySpecialities.json ==
+INFORMATION: ValueSet/dk-core-SCTLaboratorySpecialities: ValueSet.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+INFORMATION: ValueSet/dk-core-SCTLaboratorySpecialities: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the terminology server https://tx-nordics.fhir.org/fhir/r4 does not support batch validation (tests version < 1.7.8)
+== fsh-generated/resources/ValueSet-dk-core-TechniquesSCTCodes.json ==
+INFORMATION: ValueSet/dk-core-TechniquesSCTCodes: ValueSet.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+INFORMATION: ValueSet/dk-core-TechniquesSCTCodes: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the terminology server https://tx-nordics.fhir.org/fhir/r4 does not support batch validation (tests version < 1.7.8)
+== fsh-generated/resources/ValueSet-dk-core-UCUM-BasicUnits.json ==
+INFORMATION: ValueSet/dk-core-UCUM-BasicUnits: ValueSet.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/ValueSet-dk-core-encounter-priority.json ==
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of http://terminology.hl7.org/CodeSystem/v3-ActPriority to 2018-08-12 from choices of 2.1.0 (hl7.fhir.uv.xver-r5.r4#0.1.0), 3.0.0 (hl7.terminology.r4#6.3.0), 4.0.0 (hl7.terminology.r4#7.1.0)
+INFORMATION: ValueSet/dk-core-encounter-priority: ValueSet.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+INFORMATION: ValueSet/dk-core-encounter-priority: ValueSet.compose.include[0].concept[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/v3-ActPriority|2018-08-12 from hl7.fhir.r4.core#4.0.1
+INFORMATION: ValueSet/dk-core-encounter-priority: ValueSet.compose.include[0].concept[1]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/v3-ActPriority|2018-08-12 from hl7.fhir.r4.core#4.0.1
+== fsh-generated/resources/ValueSet-dk-core-practice-setting-code.json ==
+INFORMATION: ValueSet/dk-core-practice-setting-code: ValueSet.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+INFORMATION: ValueSet/dk-core-practice-setting-code: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the terminology server https://tx-nordics.fhir.org/fhir/r4 does not support batch validation (tests version < 1.7.8)
+== fsh-generated/resources/ValueSet-dk-core-practice-setting-exclude-lab-code.json ==
+INFORMATION: ValueSet/dk-core-practice-setting-exclude-lab-code: ValueSet.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/ValueSet-dk-core-priority-codes.json ==
+INFORMATION: ValueSet/dk-core-priority-codes: ValueSet.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: ValueSet/dk-core-priority-codes: ValueSet.compose.exclude[0].system: There are multiple different potential matches for the url 'http://hl7.org/fhir/request-priority'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '4.0.1', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.0.0 (from hl7.fhir.uv.xver-r5.r4#0.1.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/request-priority' to 'http://hl7.org/fhir/request-priority|4.0.1'
+INFORMATION: ValueSet/dk-core-priority-codes: ValueSet.compose.exclude[0].concept[0]: Reference to draft CodeSystem http://hl7.org/fhir/request-priority|4.0.1
+INFORMATION: ValueSet/dk-core-priority-codes: ValueSet.compose.exclude[0].concept[1]: Reference to draft CodeSystem http://hl7.org/fhir/request-priority|4.0.1
+== fsh-generated/resources/ValueSet-dk-core-servicerequest-codes.json ==
+INFORMATION: ValueSet/dk-core-servicerequest-codes: ValueSet.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+INFORMATION: ValueSet/dk-core-servicerequest-codes: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the terminology server https://tx-nordics.fhir.org/fhir/r4 does not support batch validation (tests version < 1.7.8)
+== fsh-generated/resources/ValueSet-dk-marital-status.json ==
+INFORMATION: ValueSet/dk-marital-status: ValueSet.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+WARNING: ValueSet/dk-marital-status: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.name should be present, but it is not
+== fsh-generated/resources/ValueSet-extended-patient-contactrelationship.json ==
+INFORMATION: ValueSet/extended-patient-contactrelationship: ValueSet.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+== fsh-generated/resources/ValueSet-sor-organization-type.json ==
+INFORMATION: ValueSet/sor-organization-type: ValueSet.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DK for language(s) 'da-DK'. The display is 'Denmark' which is the default language display
+INFORMATION: ValueSet/sor-organization-type: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the terminology server https://tx-nordics.fhir.org/fhir/r4 does not support batch validation (tests version < 1.7.8)

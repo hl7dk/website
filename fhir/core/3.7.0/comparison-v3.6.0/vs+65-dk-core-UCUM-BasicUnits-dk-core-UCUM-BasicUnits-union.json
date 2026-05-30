@@ -1,0 +1,59 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "addf3d41-0b1b-42d4-baf6-b3e7a28b1043-188",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/addf3d41-0b1b-42d4-baf6-b3e7a28b1043-188",
+  "name" : "UnionUCUMBasicUnitsAndUCUMBasicUnits",
+  "title" : "Union of DK Core UCUM Basic Units And DK Core UCUM Basic Units",
+  "status" : "active",
+  "date" : "2026-05-30T15:18:36+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "%"
+      },
+      {
+        "code" : "cm"
+      },
+      {
+        "code" : "[in_i]"
+      },
+      {
+        "code" : "kg"
+      },
+      {
+        "code" : "g"
+      },
+      {
+        "code" : "[lb_av]"
+      },
+      {
+        "code" : "Cel"
+      },
+      {
+        "code" : "[degF]"
+      },
+      {
+        "code" : "mm[Hg]"
+      },
+      {
+        "code" : "/min"
+      },
+      {
+        "code" : "kg/m2"
+      },
+      {
+        "code" : "m2"
+      },
+      {
+        "code" : "{fraction}"
+      }]
+    }]
+  }
+}

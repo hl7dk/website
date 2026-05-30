@@ -1,4 +1,4 @@
-# Danish Central Business Register (CVR) Identifier - HL7 FHIR Implementation Guide: DK Core v3.6.0
+# Danish Central Business Register (CVR) Identifier - HL7 FHIR Implementation Guide: DK Core v3.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-cvr-identifier | *Version*:3.6.0 |
-| Active as of 2026-03-11 | *Computable Name*:CVRIdentifier |
+| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-cvr-identifier | *Version*:3.7.0 |
+| Active as of 2026-05-30 | *Computable Name*:CVRIdentifier |
 
  
 Identifier holding a danish [CVR](https://datacvr.virk.dk/data/) number. 
@@ -18,7 +18,7 @@ Identifier holding a danish [CVR](https://datacvr.virk.dk/data/) number.
 
 * Use this DataType Profile: [Danish Core Organization Profile](StructureDefinition-dk-core-organization.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.dk.core|current/StructureDefinition/dk-core-cvr-identifier)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.dk.core|current/StructureDefinition/StructureDefinition-dk-core-cvr-identifier.json)
 
 ### Formal Views of Profile Content
 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-dk-core-cvr-identifi
   "resourceType" : "StructureDefinition",
   "id" : "dk-core-cvr-identifier",
   "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-cvr-identifier",
-  "version" : "3.6.0",
+  "version" : "3.7.0",
   "name" : "CVRIdentifier",
   "title" : "Danish Central Business Register (CVR) Identifier",
   "status" : "active",
-  "date" : "2026-03-11T23:16:27+01:00",
+  "date" : "2026-05-30T15:25:27+02:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",

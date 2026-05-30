@@ -1,4 +1,4 @@
-# NotFollowedAnymore - HL7 FHIR Implementation Guide: DK Core v3.6.0
+# NotFollowedAnymore - HL7 FHIR Implementation Guide: DK Core v3.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/NotFollowedAnymore | *Version*:3.6.0 |
-| Active as of 2026-03-11 | *Computable Name*:NotFollowedAnymore |
+| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/NotFollowedAnymore | *Version*:3.7.0 |
+| Active as of 2026-05-30 | *Computable Name*:NotFollowedAnymore |
 
 Extension for the date where a condition lost focus in a specific clinical context
 
@@ -21,7 +21,7 @@ Extension for the date where a condition lost focus in a specific clinical conte
 
 * Use this Extension: [Danish Core Condition Profile](StructureDefinition-dk-core-condition.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.dk.core|current/StructureDefinition/NotFollowedAnymore)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.dk.core|current/StructureDefinition/StructureDefinition-NotFollowedAnymore.json)
 
 ### Formal Views of Extension Content
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-NotFollowedAnymore.c
   "resourceType" : "StructureDefinition",
   "id" : "NotFollowedAnymore",
   "url" : "http://hl7.dk/fhir/core/StructureDefinition/NotFollowedAnymore",
-  "version" : "3.6.0",
+  "version" : "3.7.0",
   "name" : "NotFollowedAnymore",
   "title" : "NotFollowedAnymore",
   "status" : "active",
-  "date" : "2026-03-11T23:16:27+01:00",
+  "date" : "2026-05-30T15:25:27+02:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",

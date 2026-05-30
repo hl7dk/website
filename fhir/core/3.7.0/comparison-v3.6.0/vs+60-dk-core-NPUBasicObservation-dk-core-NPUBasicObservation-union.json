@@ -1,0 +1,50 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "addf3d41-0b1b-42d4-baf6-b3e7a28b1043-173",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/addf3d41-0b1b-42d4-baf6-b3e7a28b1043-173",
+  "name" : "UnionNPUBasicObservationAndNPUBasicObservation",
+  "title" : "Union of DK Core NPU Basic Observation And DK Core NPU Basic Observation",
+  "status" : "active",
+  "date" : "2026-05-30T15:18:36+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "NPU03011"
+      },
+      {
+        "code" : "NPU27280"
+      },
+      {
+        "code" : "NPU04034"
+      },
+      {
+        "code" : "NPU08676"
+      },
+      {
+        "code" : "NPU57947"
+      },
+      {
+        "code" : "NPU57948"
+      },
+      {
+        "code" : "NPU21692"
+      },
+      {
+        "code" : "NPU03794"
+      },
+      {
+        "code" : "NPU03804"
+      },
+      {
+        "code" : "NPU27281"
+      }]
+    }]
+  }
+}

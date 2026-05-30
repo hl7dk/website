@@ -1,0 +1,93 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "addf3d41-0b1b-42d4-baf6-b3e7a28b1043-21",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/addf3d41-0b1b-42d4-baf6-b3e7a28b1043-21",
+  "name" : "IntersectionDaysOfWeekAndDaysOfWeek",
+  "title" : "Intersection of DK Days Of Week Supplement And DK Days Of Week Supplement",
+  "status" : "active",
+  "date" : "2026-05-30T15:18:35+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "concept" : [{
+    "code" : "mon",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Mandag"
+    }]
+  },
+  {
+    "code" : "tue",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Tirsdag"
+    }]
+  },
+  {
+    "code" : "wed",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Onsdag"
+    }]
+  },
+  {
+    "code" : "thu",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Torsdag"
+    }]
+  },
+  {
+    "code" : "fri",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Fredag"
+    }]
+  },
+  {
+    "code" : "sat",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Lørdag"
+    }]
+  },
+  {
+    "code" : "sun",
+    "designation" : [{
+      "language" : "da",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000013009"
+      },
+      "value" : "Søndag"
+    }]
+  }]
+}

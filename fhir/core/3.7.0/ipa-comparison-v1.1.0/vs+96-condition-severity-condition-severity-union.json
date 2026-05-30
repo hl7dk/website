@@ -1,0 +1,22 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "aff99b33-7871-477b-aea5-0888de290586-41",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/aff99b33-7871-477b-aea5-0888de290586-41",
+  "name" : "UnionCondition/DiagnosisSeverityAndCondition/DiagnosisSeverity",
+  "title" : "Union of Condition/Diagnosis Severity And Condition/Diagnosis Severity",
+  "status" : "draft",
+  "date" : "2026-05-30T15:18:37+02:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "24484000"
+      },
+      {
+        "code" : "6736007"
+      },
+      {
+        "code" : "255604002"
+      }]
+    }]
+  }
+}

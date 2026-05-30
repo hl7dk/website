@@ -17,11 +17,11 @@
      fhir:v "http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core"^^xsd:anyURI ;
      fhir:l <http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core>
   ] ; # 
-  fhir:version [ fhir:v "3.6.0"] ; # 
+  fhir:version [ fhir:v "3.7.0"] ; # 
   fhir:name [ fhir:v "DKCore"] ; # 
   fhir:title [ fhir:v "HL7 FHIR Implementation Guide: DK Core"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-03-11T23:16:27+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-30T15:25:27+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Denmark" ] ;
@@ -66,13 +66,21 @@
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
      fhir:version [ fhir:v "7.1.0" ]
   ] [
+     fhir:id [ fhir:v "hl7_fhir_uv_xver_r5_r4" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.xver-r5.r4" ] ;
+     fhir:version [ fhir:v "0.1.0" ]
+  ] [
      fhir:id [ fhir:v "hl7_fhir_uv_extensions_r4" ] ;
      fhir:uri [
        fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
        fhir:l <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
-     fhir:version [ fhir:v "5.3.0-ballot-tc1" ]
+     fhir:version [ fhir:v "5.3.0" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_uv_phd" ] ;
      fhir:uri [
@@ -80,7 +88,7 @@
        fhir:l <http://hl7.org/fhir/uv/phd/ImplementationGuide/hl7.fhir.uv.phd>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.phd" ] ;
-     fhir:version [ fhir:v "1.1.0" ]
+     fhir:version [ fhir:v "2.0.0" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_uv_ipa" ] ;
      fhir:uri [
@@ -884,7 +892,7 @@
        ] ;
        fhir:value [
          a fhir:Code ;
-         fhir:v "hl7.fhir.uv.tools.r4#0.9.0"
+         fhir:v "hl7.fhir.uv.tools.r4#1.1.2"
        ]
      ] [
        fhir:extension ( [
@@ -2143,6 +2151,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "NamingSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/NamingSystem/cvr> ;
+         fhir:reference [ fhir:v "NamingSystem/cvr" ]
+       ] ;
+       fhir:name [ fhir:v "cvr" ] ;
+       fhir:description [ fhir:v "The Central Business Register (CVR) is the state's master register for business information. The register contains information about all Danish businesses, including their name, address, industry code, and other relevant details. The CVR is maintained by the Danish Business Authority (Erhvervsstyrelsen) and is used for various purposes, including taxation, business registration, and statistical analysis." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Patient"
          ]
        ] ) ;
@@ -2237,6 +2266,27 @@
        ] ;
        fhir:name [ fhir:v "Danish Core Condition Profile" ] ;
        fhir:description [ fhir:v "HL7 Denmark core profile for professionally asserted conditions, as specified by danish health and social care organizations" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-diagnostic-report> ;
+         fhir:reference [ fhir:v "StructureDefinition/dk-core-diagnostic-report" ]
+       ] ;
+       fhir:name [ fhir:v "Danish Core Diagnostic Report Profile" ] ;
+       fhir:description [ fhir:v "HL7 Denmark profile for diagnostic reports." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2799,11 +2849,53 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/ValueSet/dk-core-LoincLabStudyTypes> ;
+         fhir:reference [ fhir:v "ValueSet/dk-core-LoincLabStudyTypes" ]
+       ] ;
+       fhir:name [ fhir:v "DK Core Laboratory study types" ] ;
+       fhir:description [ fhir:v "LOINC codes describing laboratory study types that are consistent with European use in EHDS." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <http://hl7.dk/fhir/core/ValueSet/dk-core-LoincBasicObservation> ;
          fhir:reference [ fhir:v "ValueSet/dk-core-LoincBasicObservation" ]
        ] ;
        fhir:name [ fhir:v "DK Core LOINC Basic Observations" ] ;
        fhir:description [ fhir:v "LOINC codes describing Basic Observations usable in Denmark." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/ValueSet/dk-core-LoincDiagnosticDocumentTypes> ;
+         fhir:reference [ fhir:v "ValueSet/dk-core-LoincDiagnosticDocumentTypes" ]
+       ] ;
+       fhir:name [ fhir:v "DK Core LOINC Diagnostic Document Types" ] ;
+       fhir:description [ fhir:v "LOINC codes describing diagnostic documents that may be used for common Danish use cases." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -3241,27 +3333,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes> ;
-         fhir:reference [ fhir:v "CodeSystem/dk-core-regional-subdivision-codes" ]
-       ] ;
-       fhir:name [ fhir:v "DK Regional Subdivision Codes" ] ;
-       fhir:description [ fhir:v "Subdivision codes (Regional codes) used in Denmark as found on https://www.iso.org/obp/ui/#iso:code:3166:DK" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "CodeSystem"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:l <http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes> ;
          fhir:reference [ fhir:v "CodeSystem/dk-relatedperson-relationshipcodes" ]
        ] ;
@@ -3372,6 +3443,27 @@
        ] ;
        fhir:name [ fhir:v "DK SOR Practice Setting Code" ] ;
        fhir:description [ fhir:v "Values used for the document metadata attribute practiceSettingCode, which is an attribute specifying the clinical specialty where the act that resulted in the document was performed (e.g., Family Practice, Laboratory, Radiology). The value set is based on a subset of the code list from the SOR lookup table 'SOR-Kliniske specialer' (https://sor.sum.dsdn.dk/lookupdata/#clinical_speciality, accessable on Sundhedsdatanettet (SDN)), which is based on SNOMED CT codes." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/ValueSet/dk-core-practice-setting-exclude-lab-code> ;
+         fhir:reference [ fhir:v "ValueSet/dk-core-practice-setting-exclude-lab-code" ]
+       ] ;
+       fhir:name [ fhir:v "DK SOR Practice Setting Code excluding laboratory codes" ] ;
+       fhir:description [ fhir:v "Values used for Practice Setting, as described in the SOR registry. This list excludes Laboratory Specialties ." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -3690,6 +3782,28 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "DiagnosticReport"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/DiagnosticReport/ElseLaboratoryReport> ;
+         fhir:reference [ fhir:v "DiagnosticReport/ElseLaboratoryReport" ]
+       ] ;
+       fhir:name [ fhir:v "Else's Laboratory report using EHDS value sets" ] ;
+       fhir:description [ fhir:v "An example of clinical chemistry report." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-diagnostic-report"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-diagnostic-report>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Bundle"
          ]
        ] ) ;
@@ -3702,6 +3816,28 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "DiagnosticReport"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/DiagnosticReport/ElseHomeNursingMeasurements> ;
+         fhir:reference [ fhir:v "DiagnosticReport/ElseHomeNursingMeasurements" ]
+       ] ;
+       fhir:name [ fhir:v "Else's TOBS measurements and urin stix" ] ;
+       fhir:description [ fhir:v "An example of urin stix and TOBS (Danish: Tidlig opsporing af begyndende sygdom) organized as a DiagnosticReport." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-diagnostic-report"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-diagnostic-report>
        ]
      ] [
        fhir:extension ( [
@@ -3786,6 +3922,69 @@
          a fhir:Canonical ;
          fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"^^xsd:anyURI ;
          fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Observation/ElseINR> ;
+         fhir:reference [ fhir:v "Observation/ElseINR" ]
+       ] ;
+       fhir:name [ fhir:v "ElseINR" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Observation/ElseKalium> ;
+         fhir:reference [ fhir:v "Observation/ElseKalium" ]
+       ] ;
+       fhir:name [ fhir:v "ElseKalium" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Observation/ElseNatrium> ;
+         fhir:reference [ fhir:v "Observation/ElseNatrium" ]
+       ] ;
+       fhir:name [ fhir:v "ElseNatrium" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation>
        ]
      ] [
        fhir:extension ( [
@@ -4657,6 +4856,28 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/Organization/KliniskBiokemiHBY> ;
+         fhir:reference [ fhir:v "Organization/KliniskBiokemiHBY" ]
+       ] ;
+       fhir:name [ fhir:v "Laboratory instance of DkCoreOrganization" ] ;
+       fhir:description [ fhir:v "Laboratory organization" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"^^xsd:anyURI ;
+         fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization>
        ]
      ] [
        fhir:extension ( [
@@ -6372,6 +6593,27 @@
          a fhir:Canonical ;
          fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"^^xsd:anyURI ;
          fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.dk/fhir/core/ValueSet/dk-core-SCTLaboratorySpecialities> ;
+         fhir:reference [ fhir:v "ValueSet/dk-core-SCTLaboratorySpecialities" ]
+       ] ;
+       fhir:name [ fhir:v "SNOMED CT Laboratory Specialities" ] ;
+       fhir:description [ fhir:v "SNOMED CT codes for Laboratory Specialities. Note that this is the set of accepted specialities in Europe" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
        ]
      ] [
        fhir:extension ( [

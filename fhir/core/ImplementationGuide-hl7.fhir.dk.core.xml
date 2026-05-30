@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core"/>
-  <version value="3.6.0"/>
+  <version value="3.7.0"/>
   <name value="DKCore"/>
   <title value="HL7 FHIR Implementation Guide: DK Core"/>
   <status value="active"/>
-  <date value="2026-03-11T23:16:27+01:00"/>
+  <date value="2026-05-30T15:25:27+02:00"/>
   <publisher value="HL7 Denmark"/>
   <contact>
     <name value="HL7 Denmark"/>
@@ -43,15 +43,20 @@
     <packageId value="hl7.terminology.r4"/>
     <version value="7.1.0"/>
   </dependsOn>
+  <dependsOn id="hl7_fhir_uv_xver_r5_r4">
+    <uri value="http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4"/>
+    <packageId value="hl7.fhir.uv.xver-r5.r4"/>
+    <version value="0.1.0"/>
+  </dependsOn>
   <dependsOn id="hl7_fhir_uv_extensions_r4">
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="5.3.0-ballot-tc1"/>
+    <version value="5.3.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_uv_phd">
     <uri value="http://hl7.org/fhir/uv/phd/ImplementationGuide/hl7.fhir.uv.phd"/>
     <packageId value="hl7.fhir.uv.phd"/>
-    <version value="1.1.0"/>
+    <version value="2.0.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_uv_ipa">
     <uri value="http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa"/>
@@ -326,7 +331,7 @@
       </valueReference>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r4#0.9.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#1.1.2"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -828,6 +833,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/cvr"/>
+      </reference>
+      <name value="cvr"/>
+      <description value="The Central Business Register (CVR) is the state's master register for business information. The register contains information about all Danish businesses, including their name, address, industry code, and other relevant details. The CVR is maintained by the Danish Business Authority (Erhvervsstyrelsen) and is used for various purposes, including taxation, business registration, and statistical analysis."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
@@ -879,6 +895,17 @@
       </reference>
       <name value="Danish Core Condition Profile"/>
       <description value="HL7 Denmark core profile for professionally asserted conditions, as specified by danish health and social care organizations"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/dk-core-diagnostic-report"/>
+      </reference>
+      <name value="Danish Core Diagnostic Report Profile"/>
+      <description value="HL7 Denmark profile for diagnostic reports."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1172,10 +1199,32 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/dk-core-LoincLabStudyTypes"/>
+      </reference>
+      <name value="DK Core Laboratory study types"/>
+      <description value="LOINC codes describing laboratory study types that are consistent with European use in EHDS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/dk-core-LoincBasicObservation"/>
       </reference>
       <name value="DK Core LOINC Basic Observations"/>
       <description value="LOINC codes describing Basic Observations usable in Denmark."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/dk-core-LoincDiagnosticDocumentTypes"/>
+      </reference>
+      <name value="DK Core LOINC Diagnostic Document Types"/>
+      <description value="LOINC codes describing diagnostic documents that may be used for common Danish use cases."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1403,17 +1452,6 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/dk-core-regional-subdivision-codes"/>
-      </reference>
-      <name value="DK Regional Subdivision Codes"/>
-      <description value="Subdivision codes (Regional codes) used in Denmark as found on https://www.iso.org/obp/ui/#iso:code:3166:DK"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
         <reference value="CodeSystem/dk-relatedperson-relationshipcodes"/>
       </reference>
       <name value="DK Related Person Relationship Codes"/>
@@ -1473,6 +1511,17 @@
       </reference>
       <name value="DK SOR Practice Setting Code"/>
       <description value="Values used for the document metadata attribute practiceSettingCode, which is an attribute specifying the clinical specialty where the act that resulted in the document was performed (e.g., Family Practice, Laboratory, Radiology). The value set is based on a subset of the code list from the SOR lookup table 'SOR-Kliniske specialer' (https://sor.sum.dsdn.dk/lookupdata/#clinical_speciality, accessable on Sundhedsdatanettet (SDN)), which is based on SNOMED CT codes."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/dk-core-practice-setting-exclude-lab-code"/>
+      </reference>
+      <name value="DK SOR Practice Setting Code excluding laboratory codes"/>
+      <description value="Values used for Practice Setting, as described in the SOR registry. This list excludes Laboratory Specialties ."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1631,6 +1680,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/ElseLaboratoryReport"/>
+      </reference>
+      <name value="Else's Laboratory report using EHDS value sets"/>
+      <description value="An example of clinical chemistry report."/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-diagnostic-report"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Bundle"/>
       </extension>
       <reference>
@@ -1639,6 +1699,17 @@
       <name value="Else's TOBS measurements"/>
       <description value="An example of TOBS (Danish: Tidlig opsporing af begyndende sygdom), which includes level of consciousness, heart rate, respiration rate, blood pressure and temperature."/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/ElseHomeNursingMeasurements"/>
+      </reference>
+      <name value="Else's TOBS measurements and urin stix"/>
+      <description value="An example of urin stix and TOBS (Danish: Tidlig opsporing af begyndende sygdom) organized as a DiagnosticReport."/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-diagnostic-report"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1679,6 +1750,36 @@
       </reference>
       <name value="ElseHeartRate"/>
       <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ElseINR"/>
+      </reference>
+      <name value="ElseINR"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ElseKalium"/>
+      </reference>
+      <name value="ElseKalium"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ElseNatrium"/>
+      </reference>
+      <name value="ElseNatrium"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2115,6 +2216,17 @@
       <name value="Kombit Organsation Identifier"/>
       <description value="Identifier holding the organization code issued by KOMBIT"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/KliniskBiokemiHBY"/>
+      </reference>
+      <name value="Laboratory instance of DkCoreOrganization"/>
+      <description value="Laboratory organization"/>
+      <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2975,6 +3087,17 @@
       <name value="Sille June Test Mosebrygersen"/>
       <description value="Sille June Test Mosebrygersen - Datter af May June Moberg &amp; Schwendlund Mosebryggersen"/>
       <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/dk-core-SCTLaboratorySpecialities"/>
+      </reference>
+      <name value="SNOMED CT Laboratory Specialities"/>
+      <description value="SNOMED CT codes for Laboratory Specialities. Note that this is the set of accepted specialities in Europe"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

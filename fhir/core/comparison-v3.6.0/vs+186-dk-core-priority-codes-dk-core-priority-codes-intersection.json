@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "a51bbc41-e862-461f-8c45-f8b38f0c1d69-198",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/a51bbc41-e862-461f-8c45-f8b38f0c1d69-198",
+  "name" : "IntersectionDkCorePriorityCodesAndDkCorePriorityCodes",
+  "title" : "Intersection of DK priority codes And DK priority codes",
+  "status" : "active",
+  "date" : "2026-05-30T15:27:20+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DK",
+      "display" : "Denmark"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://hl7.org/fhir/ValueSet/request-priority"]
+    }],
+    "exclude" : [{
+      "concept" : [{
+        "code" : "urgent"
+      },
+      {
+        "code" : "stat"
+      }]
+    }]
+  }
+}

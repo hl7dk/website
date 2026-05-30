@@ -1,0 +1,82 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/DiagnosticReport/ElseLaboratoryReport> a fhir:DiagnosticReport ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ElseLaboratoryReport"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-diagnostic-report"^^xsd:anyURI ;
+       fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-diagnostic-report>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport ElseLaboratoryReport</b></p><a name=\"ElseLaboratoryReport\"> </a><a name=\"hcElseLaboratoryReport\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-diagnostic-report.html\">Danish Core Diagnostic Report Profile</a></p></div><h2><span title=\"Codes:{http://loinc.org 11502-2}\">Laboratory report</span> (<span title=\"Codes:{http://snomed.info/sct 394596001}\">klinisk biokemi</span>, <span title=\"Codes:{http://loinc.org 18719-5}\">Chemistry studies (set)</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Else Test Lauridsen(official) Female, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#DK Central Person Registry (CPR)#0201919990)</td></tr><tr><td>When For</td><td>2023-09-15 10:00:00+0000</td></tr><tr><td>Performer</td><td> <a href=\"Organization-KliniskBiokemiHBY.html\">Organization: identifier = urn:oid:1.2.208.176.1.1#275871000016006</a></td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>When For</b></td></tr><tr><td><a href=\"Observation-ElseINR.html\"><span title=\"Codes:{http://npu-terminology.org NPU01685}\">P—Coagulation, tissue factor-induced; rel.time(actual/norm;INR;IRP 67/40;proc.) = ?</span></a></td><td>1 1<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></td><td>Final</td><td>2023-09-15 09:15:00+0000</td></tr><tr><td><a href=\"Observation-ElseKalium.html\"><span title=\"Codes:{http://npu-terminology.org NPU03230}\">P—Potassium ion; subst.c. = ? mmol/L</span></a></td><td>3 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/L = 'mmol/L')</span></td><td>Final</td><td>2023-09-15 09:15:00+0000</td></tr><tr><td><a href=\"Observation-ElseNatrium.html\"><span title=\"Codes:{http://npu-terminology.org NPU03429}\">P—Sodium ion; subst.c. = ? mmol/L</span></a></td><td>150 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/L = 'mmol/L')</span></td><td>Final</td><td>2023-09-15 09:15:00+0000</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a sct:394596001 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
+       fhir:code [ fhir:v "394596001" ] ;
+       fhir:display [ fhir:v "klinisk biokemi" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       a loinc:18719-5 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "18719-5" ] ;
+       fhir:display [ fhir:v "Chemistry studies (set)" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:11502-2 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "11502-2" ] ;
+       fhir:display [ fhir:v "Laboratory report" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://hl7.dk/fhir/core/Patient/else> ;
+     fhir:reference [ fhir:v "Patient/else" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2023-09-15T10:00:00.000Z"^^xsd:dateTime
+  ] ; # 
+  fhir:performer ( [
+     fhir:l <http://hl7.dk/fhir/core/Organization/KliniskBiokemiHBY> ;
+     fhir:reference [ fhir:v "Organization/KliniskBiokemiHBY" ]
+  ] ) ; # 
+  fhir:result ( [
+     fhir:l <http://hl7.dk/fhir/core/Observation/ElseINR> ;
+     fhir:reference [ fhir:v "Observation/ElseINR" ]
+  ] [
+     fhir:l <http://hl7.dk/fhir/core/Observation/ElseKalium> ;
+     fhir:reference [ fhir:v "Observation/ElseKalium" ]
+  ] [
+     fhir:l <http://hl7.dk/fhir/core/Observation/ElseNatrium> ;
+     fhir:reference [ fhir:v "Observation/ElseNatrium" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

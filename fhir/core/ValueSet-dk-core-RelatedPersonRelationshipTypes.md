@@ -1,4 +1,4 @@
-# DK Related Person Relationship Types - HL7 FHIR Implementation Guide: DK Core v3.6.0
+# DK Related Person Relationship Types - HL7 FHIR Implementation Guide: DK Core v3.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,15 +8,15 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/ValueSet/dk-core-RelatedPersonRelationshipTypes | *Version*:3.6.0 |
-| Active as of 2026-03-11 | *Computable Name*:RelatedPersonRelationshipTypes |
+| *Official URL*:http://hl7.dk/fhir/core/ValueSet/dk-core-RelatedPersonRelationshipTypes | *Version*:3.7.0 |
+| Active as of 2026-05-30 | *Computable Name*:RelatedPersonRelationshipTypes |
 
  
 DK Related Person Relationship Types 
 
  **References** 
 
-* Included into [extended-patient-contactrelationship](ValueSet-extended-patient-contactrelationship.md)
+* Included into [ExtendedPatientContactRelationship](ValueSet-extended-patient-contactrelationship.md)
 * [Danish Core Related Person Profile](StructureDefinition-dk-core-related-person.md)
 
 ### Logical Definition (CLD)
@@ -47,12 +47,12 @@ DK Related Person Relationship Types
   "resourceType" : "ValueSet",
   "id" : "dk-core-RelatedPersonRelationshipTypes",
   "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-RelatedPersonRelationshipTypes",
-  "version" : "3.6.0",
+  "version" : "3.7.0",
   "name" : "RelatedPersonRelationshipTypes",
   "title" : "DK Related Person Relationship Types",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-11T23:16:27+01:00",
+  "date" : "2026-05-30T15:25:27+02:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",
@@ -76,6 +76,7 @@ DK Related Person Relationship Types
   "compose" : {
     "include" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "version" : "2018-08-12",
       "concept" : [{
         "code" : "FAMMEMB"
       },

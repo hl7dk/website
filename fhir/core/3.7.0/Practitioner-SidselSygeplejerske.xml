@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="SidselSygeplejerske"/>
+  <meta>
+    <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-practitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner SidselSygeplejerske</b></p><a name="SidselSygeplejerske"> </a><a name="hcSidselSygeplejerske"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-dk-core-practitioner.html">Danish Core Practitioner Profile</a></p></div><p><b>name</b>: Sidsel Andersen</p><h3>Qualifications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Identifier</b></td><td><b>Code</b></td><td><b>Period</b></td></tr><tr><td style="display: none">*</td><td><code>https://autregweb.sst.dk</code>/CBDJ6</td><td><span title="Codes:{http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes 5166}">Sygeplejerske</span></td><td>2010-06-01 --&gt; 2028-12-31</td></tr></table></div>
+  </text>
+  <name>
+    <text value="Sidsel Andersen"/>
+    <family value="Andersen"/>
+    <given value="Sidsel"/>
+  </name>
+  <qualification>
+    <identifier>
+      <system value="https://autregweb.sst.dk"/>
+      <value value="CBDJ6"/>
+    </identifier>
+    <code>
+      <coding>
+        <system value="http://hl7.dk/fhir/core/CodeSystem/DkCoreProfessionGroupCodes"/>
+        <code value="5166"/>
+        <display value="Sygeplejerske"/>
+      </coding>
+    </code>
+    <period>
+      <start value="2010-06-01"/>
+      <end value="2028-12-31"/>
+    </period>
+  </qualification>
+</Practitioner>

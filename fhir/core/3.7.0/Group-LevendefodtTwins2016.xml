@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Group xmlns="http://hl7.org/fhir">
+  <id value="LevendefodtTwins2016"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Group LevendefodtTwins2016</b></p><a name="LevendefodtTwins2016"> </a><a name="hcLevendefodtTwins2016"> </a><p><b>type</b>: Person</p><p><b>actual</b>: true</p><p><b>name</b>: Levendefødt tvillinger 2016</p><p><b>quantity</b>: 2</p><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Patient-DrengLevendefodt2016.html">Dreng Test Levendefødt (tvilling)</a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Patient-PigeLevendefodt2016.html">Pige Test Levendefødt (tvilling)</a></p></blockquote></div>
+  </text>
+  <type value="person"/>
+  <actual value="true"/>
+  <name value="Levendefødt tvillinger 2016"/>
+  <quantity value="2"/>
+  <member>
+    <entity>
+      <reference value="Patient/DrengLevendefodt2016"/>
+      <display value="Dreng Test Levendefødt (tvilling)"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Patient/PigeLevendefodt2016"/>
+      <display value="Pige Test Levendefødt (tvilling)"/>
+    </entity>
+  </member>
+</Group>

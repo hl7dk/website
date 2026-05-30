@@ -1,0 +1,25 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "224a4df2-98aa-4da7-9fd3-aaf326be0fbc-35",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/224a4df2-98aa-4da7-9fd3-aaf326be0fbc-35",
+  "name" : "UnionObservationReferenceRangeAppliesToCodesAndObservationReferenceRangeAppliesToCodes",
+  "title" : "Union of Observation Reference Range Applies To Codes And Observation Reference Range Applies To Codes",
+  "status" : "draft",
+  "date" : "2026-05-30T15:27:21+02:00",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://terminology.hl7.org/ValueSet/v3-Race"]
+    },
+    {
+      "concept" : [{
+        "code" : "248153007"
+      },
+      {
+        "code" : "248152002"
+      },
+      {
+        "code" : "77386006"
+      }]
+    }]
+  }
+}

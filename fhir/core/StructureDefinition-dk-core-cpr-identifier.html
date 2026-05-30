@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Danish Central Person Register (CPR) Identifier - HL7 FHIR Implementation Guide: DK Core v3.6.0</title>
+    <title>Danish Central Person Register (CPR) Identifier - HL7 FHIR Implementation Guide: DK Core v3.7.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -46,8 +46,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.19"}
-    h3,h4,h5,h6{--heading-prefix:"7.19"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.20"}
+    h3,h4,h5,h6{--heading-prefix:"7.20"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -65,11 +65,11 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">HL7 FHIR Implementation Guide: DK Core</span>
             <br/>
-            <span style="display:inline-block;">3.6.0 - release
+            <span style="display:inline-block;">3.7.0 - release
 
 
 
-  <img alt="Denmark flag" src="assets/images/dnk.svg" height="16" title="Denmark"/>
+  <span title="">DK</span>
 
 
             </span>
@@ -145,7 +145,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the HL7 FHIR Implementation Guide: DK Core (v3.6.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://hl7.dk/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the HL7 FHIR Implementation Guide: DK Core (v3.7.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://hl7.dk/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -225,7 +225,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.dk/fhir/core/StructureDefinition/dk-core-cpr-identifier<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.dk/fhir/core/StructureDefinition/dk-core-cpr-identifier"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">3.6.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.dk/fhir/core/StructureDefinition/dk-core-cpr-identifier|3.6.0"/></span>
+      <span class="copy-text">3.7.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.dk/fhir/core/StructureDefinition/dk-core-cpr-identifier|3.7.0"/></span>
       </td>
     </tr>
 
@@ -241,7 +241,7 @@
         
           Active
           
-            as of 2026-03-11
+            as of 2026-05-30
           
         
       </td>
@@ -272,7 +272,7 @@
 <ul>
  <li>Use this DataType Profile: <a href="StructureDefinition-dk-core-patient.html">Danish Core Patient Profile</a> and <a href="StructureDefinition-dk-core-related-person.html">Danish Core Related Person Profile</a></li>
 </ul>
-<p>You can also check for <a href="https://packages2.fhir.org/xig/hl7.fhir.dk.core|current/StructureDefinition/dk-core-cpr-identifier">usages in the FHIR IG Statistics</a></p>
+<p>You can also check for <a href="https://packages2.fhir.org/xig/resource/hl7.fhir.dk.core|current/StructureDefinition/StructureDefinition-dk-core-cpr-identifier.json">usages in the FHIR IG Statistics</a></p>
 
   <!-- no uri -->
   <a name="profile"> </a>
@@ -338,7 +338,7 @@
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The value that is unique<br class="constraint"/><span title="null" class="constraint">Constraints: </span><span style="font-weight:bold" title="Requirement of danish civil registration numbers. See https://cpr.dk/cpr-systemet/opbygning-af-cpr-nummeret/#:~:text=5%20%2D%206%20position%20angiver%20personens,i%20personnummeret%20angiver%20personens%20k%C3%B8n." class="constraint">cpr</span><br/><span style="font-weight:bold">Example General: </span><span style="color: darkgreen">123456</span><br/><span style="font-weight:bold">Max Length:</span><span style="color: darkgreen">10</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 934c5021-5647-4873-988a-e047cbf5c753
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // fbb2a90d-ad52-4565-8b1f-b67c2a00025e
 document.getElementById('cbdk-core-cpr-identifierK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('dk-core-cpr-identifierK'), 'binding', document.getElementById('cbdk-core-cpr-identifierK-binding').checked, document.getElementById('ppdk-core-cpr-identifierK'));
 document.getElementById('cbdk-core-cpr-identifierK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -471,7 +471,7 @@ Requirements:       <div>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">The value that is unique</span><br class="constraint"/><span title="null" class="constraint">Constraints: </span><span style="font-weight:bold" title="Requirement of danish civil registration numbers. See https://cpr.dk/cpr-systemet/opbygning-af-cpr-nummeret/#:~:text=5%20%2D%206%20position%20angiver%20personens,i%20personnummeret%20angiver%20personens%20k%C3%B8n." class="constraint">cpr</span><br/><span style="font-weight:bold">Max Length:</span><span style="color: darkgreen">10</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 934c5021-5647-4873-988a-e047cbf5c753
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // fbb2a90d-ad52-4565-8b1f-b67c2a00025e
 document.getElementById('cbdk-core-cpr-identifierD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('dk-core-cpr-identifierD'), 'binding', document.getElementById('cbdk-core-cpr-identifierD-binding').checked, document.getElementById('ppdk-core-cpr-identifierD'));
 document.getElementById('cbdk-core-cpr-identifierD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -579,7 +579,7 @@ Requirements:       <div>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/organization.html">Organization</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Organization that issued id (may be just text)</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 934c5021-5647-4873-988a-e047cbf5c753
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // fbb2a90d-ad52-4565-8b1f-b67c2a00025e
 document.getElementById('cbdk-core-cpr-identifierS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('dk-core-cpr-identifierS'), 'binding', document.getElementById('cbdk-core-cpr-identifierS-binding').checked, document.getElementById('ppdk-core-cpr-identifierS'));
 document.getElementById('cbdk-core-cpr-identifierS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -798,7 +798,7 @@ Summary
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The value that is unique<br class="constraint"/><span title="null" class="constraint">Constraints: </span><span style="font-weight:bold" title="Requirement of danish civil registration numbers. See https://cpr.dk/cpr-systemet/opbygning-af-cpr-nummeret/#:~:text=5%20%2D%206%20position%20angiver%20personens,i%20personnummeret%20angiver%20personens%20k%C3%B8n." class="constraint">cpr</span><br/><span style="font-weight:bold">Example General: </span><span style="color: darkgreen">123456</span><br/><span style="font-weight:bold">Max Length:</span><span style="color: darkgreen">10</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 934c5021-5647-4873-988a-e047cbf5c753
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // fbb2a90d-ad52-4565-8b1f-b67c2a00025e
 document.getElementById('cbdk-core-cpr-identifierKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('dk-core-cpr-identifierKA'), 'binding', document.getElementById('cbdk-core-cpr-identifierKA-binding').checked, document.getElementById('ppdk-core-cpr-identifierKA'));
 document.getElementById('cbdk-core-cpr-identifierKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -931,7 +931,7 @@ Requirements:       <div>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">The value that is unique</span><br class="constraint"/><span title="null" class="constraint">Constraints: </span><span style="font-weight:bold" title="Requirement of danish civil registration numbers. See https://cpr.dk/cpr-systemet/opbygning-af-cpr-nummeret/#:~:text=5%20%2D%206%20position%20angiver%20personens,i%20personnummeret%20angiver%20personens%20k%C3%B8n." class="constraint">cpr</span><br/><span style="font-weight:bold">Max Length:</span><span style="color: darkgreen">10</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 934c5021-5647-4873-988a-e047cbf5c753
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // fbb2a90d-ad52-4565-8b1f-b67c2a00025e
 document.getElementById('cbdk-core-cpr-identifierDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('dk-core-cpr-identifierDA'), 'binding', document.getElementById('cbdk-core-cpr-identifierDA-binding').checked, document.getElementById('ppdk-core-cpr-identifierDA'));
 document.getElementById('cbdk-core-cpr-identifierDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1038,7 +1038,7 @@ Requirements:       <div>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/organization.html">Organization</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Organization that issued id (may be just text)</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 934c5021-5647-4873-988a-e047cbf5c753
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // fbb2a90d-ad52-4565-8b1f-b67c2a00025e
 document.getElementById('cbdk-core-cpr-identifierSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('dk-core-cpr-identifierSA'), 'binding', document.getElementById('cbdk-core-cpr-identifierSA-binding').checked, document.getElementById('ppdk-core-cpr-identifierSA'));
 document.getElementById('cbdk-core-cpr-identifierSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1257,7 +1257,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.6.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 11, 2026 23:16+0100">2026-03-11</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.core#3.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, May 30, 2026 15:25+0200">2026-05-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

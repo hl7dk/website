@@ -1,4 +1,4 @@
-# SOR Identifier - HL7 FHIR Implementation Guide: DK Core v3.6.0
+# SOR Identifier - HL7 FHIR Implementation Guide: DK Core v3.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-sor-identifier | *Version*:3.6.0 |
-| Active as of 2026-03-11 | *Computable Name*:SORIdentifier |
+| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-sor-identifier | *Version*:3.7.0 |
+| Active as of 2026-05-30 | *Computable Name*:SORIdentifier |
 
  
 Identifier holding the official SOR identifier for a danish healthcare organization 
@@ -18,7 +18,7 @@ Identifier holding the official SOR identifier for a danish healthcare organizat
 
 * Use this DataType Profile: [Danish Core Organization Profile](StructureDefinition-dk-core-organization.md) and [Danish Core Patient Profile](StructureDefinition-dk-core-patient.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.dk.core|current/StructureDefinition/dk-core-sor-identifier)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.dk.core|current/StructureDefinition/StructureDefinition-dk-core-sor-identifier.json)
 
 ### Formal Views of Profile Content
 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-dk-core-sor-identifi
   "resourceType" : "StructureDefinition",
   "id" : "dk-core-sor-identifier",
   "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-sor-identifier",
-  "version" : "3.6.0",
+  "version" : "3.7.0",
   "name" : "SORIdentifier",
   "title" : "SOR Identifier",
   "status" : "active",
-  "date" : "2026-03-11T23:16:27+01:00",
+  "date" : "2026-05-30T15:25:27+02:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",

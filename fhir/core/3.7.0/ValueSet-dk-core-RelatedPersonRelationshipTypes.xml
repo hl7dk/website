@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="dk-core-RelatedPersonRelationshipTypes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet dk-core-RelatedPersonRelationshipTypes</b></p><a name="dk-core-RelatedPersonRelationshipTypes"> </a><a name="hcdk-core-RelatedPersonRelationshipTypes"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code><span title="Version is explicitly stated to be 2018-08-12"> version &#x1F4CD;2018-08-12</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>FAMMEMB</td><td/></tr><tr><td>CHILD</td><td/></tr><tr><td>DAUC</td><td/></tr><tr><td>SONC</td><td/></tr><tr><td>GRNDCHILD</td><td/></tr><tr><td>GRPRN</td><td/></tr><tr><td>CHLDINLAW</td><td/></tr><tr><td>PRN</td><td/></tr><tr><td>FTH</td><td/></tr><tr><td>MTH</td><td/></tr><tr><td>SIB</td><td/></tr><tr><td>DOMPART</td><td/></tr><tr><td>SPS</td><td/></tr><tr><td>FRND</td><td/></tr><tr><td>NBOR</td><td/></tr><tr><td>ROOM</td><td/></tr><tr><td>GUARD</td><td/></tr><tr><td>NOK</td><td/></tr><tr><td>POWATT</td><td/></tr><tr><td>ECON</td><td/></tr></table></li><li>Include all codes defined in <a href="CodeSystem-dk-relatedperson-relationshipcodes.html"><code>http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;3.7.0</span></li></ul></div>
+  </text>
+  <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-RelatedPersonRelationshipTypes"/>
+  <version value="3.7.0"/>
+  <name value="RelatedPersonRelationshipTypes"/>
+  <title value="DK Related Person Relationship Types"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-05-30T15:15:22+02:00"/>
+  <publisher value="HL7 Denmark"/>
+  <contact>
+    <name value="HL7 Denmark"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="dk-affiliate@hl7.dk"/>
+    </telecom>
+  </contact>
+  <description value="DK Related Person Relationship Types"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <version value="2018-08-12"/>
+      <concept>
+        <code value="FAMMEMB"/>
+      </concept>
+      <concept>
+        <code value="CHILD"/>
+      </concept>
+      <concept>
+        <code value="DAUC"/>
+      </concept>
+      <concept>
+        <code value="SONC"/>
+      </concept>
+      <concept>
+        <code value="GRNDCHILD"/>
+      </concept>
+      <concept>
+        <code value="GRPRN"/>
+      </concept>
+      <concept>
+        <code value="CHLDINLAW"/>
+      </concept>
+      <concept>
+        <code value="PRN"/>
+      </concept>
+      <concept>
+        <code value="FTH"/>
+      </concept>
+      <concept>
+        <code value="MTH"/>
+      </concept>
+      <concept>
+        <code value="SIB"/>
+      </concept>
+      <concept>
+        <code value="DOMPART"/>
+      </concept>
+      <concept>
+        <code value="SPS"/>
+      </concept>
+      <concept>
+        <code value="FRND"/>
+      </concept>
+      <concept>
+        <code value="NBOR"/>
+      </concept>
+      <concept>
+        <code value="ROOM"/>
+      </concept>
+      <concept>
+        <code value="GUARD"/>
+      </concept>
+      <concept>
+        <code value="NOK"/>
+      </concept>
+      <concept>
+        <code value="POWATT"/>
+      </concept>
+      <concept>
+        <code value="ECON"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://hl7.dk/fhir/core/CodeSystem/dk-relatedperson-relationshipcodes"/>
+    </include>
+  </compose>
+</ValueSet>

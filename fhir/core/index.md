@@ -1,4 +1,4 @@
-# Home - HL7 FHIR Implementation Guide: DK Core v3.6.0
+# Home - HL7 FHIR Implementation Guide: DK Core v3.7.0
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core | *Version*:3.6.0 |
-| Active as of 2026-03-11 | *Computable Name*:DKCore |
+| *Official URL*:http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core | *Version*:3.7.0 |
+| Active as of 2026-05-30 | *Computable Name*:DKCore |
 
 ### Introduction
 
@@ -121,7 +121,14 @@ This publication includes IP covered under the following statements.
 
 * [https://cms.npu-terminology.org/wp-content/uploads/2024/06/NPU-License-Terms-of-Use.pdf](https://cms.npu-terminology.org/wp-content/uploads/2024/06/NPU-License-Terms-of-Use.pdf)
 
-* [Nomenclature for Properties and Units (NPU)](http://terminology.hl7.org/6.5.0/CodeSystem-NPU.html): [Bundle/ContinuaBundleWithDevice](Bundle-ContinuaBundleWithDevice.md), [DkCoreBasicObservation](StructureDefinition-dk-core-basic-observation.md)... Show 5 more, [NPUBasicObservation](ValueSet-dk-core-NPUBasicObservation.md), [Observation/ElseUrinStix](Observation-ElseUrinStix.md), [Observation/HeartRate.Poul.1974654](Observation-HeartRate.Poul.1974654.md), [Observation/ObservationOxySatObservation](Observation-ObservationOxySatObservation.md) and [Observation/Weight.Poul.230221](Observation-Weight.Poul.230221.md)
+* [Nomenclature for Properties and Units (NPU)](http://terminology.hl7.org/6.5.0/CodeSystem-NPU.html): [Bundle/ContinuaBundleWithDevice](Bundle-ContinuaBundleWithDevice.md), [DkCoreBasicObservation](StructureDefinition-dk-core-basic-observation.md)... Show 8 more, [NPUBasicObservation](ValueSet-dk-core-NPUBasicObservation.md), [Observation/ElseINR](Observation-ElseINR.md), [Observation/ElseKalium](Observation-ElseKalium.md), [Observation/ElseNatrium](Observation-ElseNatrium.md), [Observation/ElseUrinStix](Observation-ElseUrinStix.md), [Observation/HeartRate.Poul.1974654](Observation-HeartRate.Poul.1974654.md), [Observation/ObservationOxySatObservation](Observation-ObservationOxySatObservation.md) and [Observation/Weight.Poul.230221](Observation-Weight.Poul.230221.md)
+
+
+* Continua Terminology Content is copyright © Healthcare Information and Management Systems Society. Used with permission of Healthcare Information and Management Systems Society. All rights reserved.
+
+* [Continua Health and Fitness Service Interfaces](http://hl7.org/fhir/uv/phd/STU2/CodeSystem-ContinuaHFS.html): [Bundle/ContinuaBundleWithDevice](Bundle-ContinuaBundleWithDevice.md) and [Device/Telma.FEEDDADADEADBEEF](Device-Telma.FEEDDADADEADBEEF.md)
+* [Continua Device Interface Identifiers](http://hl7.org/fhir/uv/phd/STU2/CodeSystem-ContinuaPHDInterfaceIDs.html): [Bundle/ContinuaBundleWithDevice](Bundle-ContinuaBundleWithDevice.md), [Device/BPMonitor.C4F312FFFE53F2C9](Device-BPMonitor.C4F312FFFE53F2C9.md), [Device/Telma.FEEDDADADEADBEEF](Device-Telma.FEEDDADADEADBEEF.md) and [Device/WeightScale.606405FFFECFC604](Device-WeightScale.606405FFFECFC604.md)
+* [Continua Device Identifiers](http://hl7.org/fhir/uv/phd/STU2/CodeSystem-ContinuaDeviceIdentifiers.html): [Bundle/ContinuaBundleWithDevice](Bundle-ContinuaBundleWithDevice.md), [Device/BPMonitor.C4F312FFFE53F2C9](Device-BPMonitor.C4F312FFFE53F2C9.md), [Device/Telma.FEEDDADADEADBEEF](Device-Telma.FEEDDADADEADBEEF.md) and [Device/WeightScale.606405FFFECFC604](Device-WeightScale.606405FFFECFC604.md)
 
 
 * IEEE maintains copyright on all content from IEEE 11073 standards. All rights reserved. Implementers should obtain official copies of all applicable standards documents directly from IEEE. The inclusion of IEEE 11073 terminology codes and definitions in HL7 messages and related implementation guides is permitted under existing agreements. For permission regarding any other usage, please contact IEEE at copyrights@ieee.org.
@@ -131,39 +138,23 @@ This publication includes IP covered under the following statements.
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
 
-* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [AddressType](CodeSystem-address-type-dk-supplement.md), [AddressUse](CodeSystem-address-use-dk-supplement.md)... Show 69 more, [AdministrativeGenderDkSupplement](CodeSystem-administrative-gender-supplement.md), [AuthorizationIdentifier](StructureDefinition-dk-core-authorization-identifier.md), [CVRIdentifier](StructureDefinition-dk-core-cvr-identifier.md), [CareProvider](StructureDefinition-dk-core-care-provider.md), [CareTeamStatus](CodeSystem-care-team-status-dk-supplement.md), [ConditionLastAssertedDate](StructureDefinition-ConditionLastAssertedDate.md), [ConsentState](CodeSystem-consent-state-codes-dk-supplement.md), [DK Central Healthcare Organization Registry (SOR)](NamingSystem-sor.md), [DK Central Person Registry (CPR)](NamingSystem-cpr.md), [DKCore](index.md), [DKCoreRegionalSubdivisionCodes](CodeSystem-dk-core-regional-subdivision-codes.md), [DaysOfWeek](CodeSystem-days-of-week-dk-supplement.md), [DkCoreBasicObservation](StructureDefinition-dk-core-basic-observation.md), [DkCoreCondition](StructureDefinition-dk-core-condition.md), [DkCoreCprIdentifier](StructureDefinition-dk-core-cpr-identifier.md), [DkCoreDeCPRCodes](CodeSystem-dk-core-d-ecpr-codes.md), [DkCoreDeCPRValueSet](ValueSet-DkCoreDeCPRValueSet.md), [DkCoreDeCprIdentifier](StructureDefinition-dk-core-d-ecpr-identifier.md), [DkCoreEncounter](StructureDefinition-dk-core-encounter.md), [DkCoreEncounterPriority](ValueSet-dk-core-encounter-priority.md), [DkCoreLocation](StructureDefinition-dk-core-location.md), [DkCoreMinimalDocumentReference](StructureDefinition-dk-core-minimaldocumentreference.md), [DkCoreObservation](StructureDefinition-dk-core-observation.md), [DkCoreOrganization](StructureDefinition-dk-core-organization.md), [DkCorePatient](StructureDefinition-dk-core-patient.md), [DkCorePersonServiceRequest](StructureDefinition-dk-core-person-servicerequest.md), [DkCorePractitioner](StructureDefinition-dk-core-practitioner.md), [DkCorePractitionerRole](StructureDefinition-dk-core-practitioner-role.md), [DkCorePriorityCodes](ValueSet-dk-core-priority-codes.md), [DkCoreProfessionGroupCodes](CodeSystem-DkCoreProfessionGroupCodes.md), [DkCoreProfessionGroupValueSet](ValueSet-DkCoreProfessionGroupValueSet.md), [DkCoreRelatedPerson](StructureDefinition-dk-core-related-person.md), [DkCoreServiceRequestCodes](ValueSet-dk-core-servicerequest-codes.md), [DkCoreXeCprIdentifier](StructureDefinition-dk-core-x-ecpr-identifier.md), [DkMaritalStatus](CodeSystem-dk-marital-status.md), [DkRelatedPersonRelationshipCodes](CodeSystem-dk-relatedperson-relationshipcodes.md), [EpisodeOfCareStatus](CodeSystem-episode-of-care-status-dk-supplement.md), [GLNIdentifier](StructureDefinition-dk-core-gln-identifier.md), [GreenlandMunicipalityCodes](CodeSystem-dk-core-municipality-codes-greenland.md), [IEEEBasicObservation](ValueSet-dk-core-IEEEBasicObservation.md), [IpaDkCoreCondition](StructureDefinition-ipa-dk-core-condition.md), [IpaDkCoreObservation](StructureDefinition-ipa-dk-core-observation.md), [IpaDkCorePatient](StructureDefinition-ipa-dk-core-patient.md), [IpaDkCorePractitioner](StructureDefinition-ipa-dk-core-practitioner.md), [IpaDkCorePractitionerRole](StructureDefinition-ipa-dk-core-practitionerrole.md), [KombitOrgIdentifier](StructureDefinition-dk-core-kombit-org-identifier.md), [LoincBasicObservation](ValueSet-dk-core-LoincBasicObservation.md), [MunicipalityCodes](ValueSet-dk-core-MunicipalityCodes.md), [NPUBasicObservation](ValueSet-dk-core-NPUBasicObservation.md), [NotFollowedAnymore](StructureDefinition-NotFollowedAnymore.md), [Patient/283](Patient-283.md), [PlannedEndDate](StructureDefinition-dk-core-planned-end-date.md), [PlannedStartDate](StructureDefinition-dk-core-planned-start-date.md), [ProducentId](StructureDefinition-dk-core-producent-id.md), [PublicationStatus](CodeSystem-publication-status-dk-supplement.md), [RegionalSubDivisionCodes](StructureDefinition-dk-core-RegionalSubDivisionCodes.md), [RegionalSubdivisionCodes](ValueSet-dk-core-RegionalSubDivisionCodes.md), [RelatedPersonRelationshipTypes](ValueSet-dk-core-RelatedPersonRelationshipTypes.md), [RequestStatus](CodeSystem-request-status-dk-supplement.md), [RoleCodeDkSupplement](CodeSystem-role-code-dk-supplement.md), [SCTBasicObservation](ValueSet-dk-core-SCTBasicObservation.md), [SORIdentifier](StructureDefinition-dk-core-sor-identifier.md), [SorOrganizationType](ValueSet-sor-organization-type.md), [SorPracticeSettingCode](ValueSet-dk-core-practice-setting-code.md), [TechniquesSCTCodes](ValueSet-dk-core-TechniquesSCTCodes.md), [UCUMBasicUnits](ValueSet-dk-core-UCUM-BasicUnits.md), [ValueSet/dk-marital-status](ValueSet-dk-marital-status.md), [extended-patient-contactrelationship](ValueSet-extended-patient-contactrelationship.md) and [v2-0131DkSupplement](CodeSystem-v2-0131-supplement.md)
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [AddressType](CodeSystem-address-type-dk-supplement.md), [AddressUse](CodeSystem-address-use-dk-supplement.md)... Show 74 more, [AdministrativeGenderDkSupplement](CodeSystem-administrative-gender-supplement.md), [AuthorizationIdentifier](StructureDefinition-dk-core-authorization-identifier.md), [CVRIdentifier](StructureDefinition-dk-core-cvr-identifier.md), [CareProvider](StructureDefinition-dk-core-care-provider.md), [CareTeamStatus](CodeSystem-care-team-status-dk-supplement.md), [ConditionLastAssertedDate](StructureDefinition-ConditionLastAssertedDate.md), [ConsentState](CodeSystem-consent-state-codes-dk-supplement.md), [DK Central Business Register (CVR)](NamingSystem-cvr.md), [DK Central Healthcare Organization Registry (SOR)](NamingSystem-sor.md), [DK Central Person Registry (CPR)](NamingSystem-cpr.md), [DKCore](index.md), [DaysOfWeek](CodeSystem-days-of-week-dk-supplement.md), [DkCoreBasicObservation](StructureDefinition-dk-core-basic-observation.md), [DkCoreCondition](StructureDefinition-dk-core-condition.md), [DkCoreCprIdentifier](StructureDefinition-dk-core-cpr-identifier.md), [DkCoreDeCPRCodes](CodeSystem-dk-core-d-ecpr-codes.md), [DkCoreDeCPRValueSet](ValueSet-DkCoreDeCPRValueSet.md), [DkCoreDeCprIdentifier](StructureDefinition-dk-core-d-ecpr-identifier.md), [DkCoreDiagnosticReport](StructureDefinition-dk-core-diagnostic-report.md), [DkCoreEncounter](StructureDefinition-dk-core-encounter.md), [DkCoreEncounterPriority](ValueSet-dk-core-encounter-priority.md), [DkCoreLocation](StructureDefinition-dk-core-location.md), [DkCoreMinimalDocumentReference](StructureDefinition-dk-core-minimaldocumentreference.md), [DkCoreObservation](StructureDefinition-dk-core-observation.md), [DkCoreOrganization](StructureDefinition-dk-core-organization.md), [DkCorePatient](StructureDefinition-dk-core-patient.md), [DkCorePersonServiceRequest](StructureDefinition-dk-core-person-servicerequest.md), [DkCorePractitioner](StructureDefinition-dk-core-practitioner.md), [DkCorePractitionerRole](StructureDefinition-dk-core-practitioner-role.md), [DkCorePriorityCodes](ValueSet-dk-core-priority-codes.md), [DkCoreProfessionGroupCodes](CodeSystem-DkCoreProfessionGroupCodes.md), [DkCoreProfessionGroupValueSet](ValueSet-DkCoreProfessionGroupValueSet.md), [DkCoreRelatedPerson](StructureDefinition-dk-core-related-person.md), [DkCoreServiceRequestCodes](ValueSet-dk-core-servicerequest-codes.md), [DkCoreXeCprIdentifier](StructureDefinition-dk-core-x-ecpr-identifier.md), [DkMaritalStatus](CodeSystem-dk-marital-status.md), [DkRelatedPersonRelationshipCodes](CodeSystem-dk-relatedperson-relationshipcodes.md), [EpisodeOfCareStatus](CodeSystem-episode-of-care-status-dk-supplement.md), [ExtendedPatientContactRelationship](ValueSet-extended-patient-contactrelationship.md), [GLNIdentifier](StructureDefinition-dk-core-gln-identifier.md), [GreenlandMunicipalityCodes](CodeSystem-dk-core-municipality-codes-greenland.md), [IEEEBasicObservation](ValueSet-dk-core-IEEEBasicObservation.md), [IpaDkCoreCondition](StructureDefinition-ipa-dk-core-condition.md), [IpaDkCoreObservation](StructureDefinition-ipa-dk-core-observation.md), [IpaDkCorePatient](StructureDefinition-ipa-dk-core-patient.md), [IpaDkCorePractitioner](StructureDefinition-ipa-dk-core-practitioner.md), [IpaDkCorePractitionerRole](StructureDefinition-ipa-dk-core-practitionerrole.md), [KombitOrgIdentifier](StructureDefinition-dk-core-kombit-org-identifier.md), [LoincBasicObservation](ValueSet-dk-core-LoincBasicObservation.md), [LoincDiagnosticDocumentTypes](ValueSet-dk-core-LoincDiagnosticDocumentTypes.md), [LoincLabStudyTypes](ValueSet-dk-core-LoincLabStudyTypes.md), [MunicipalityCodes](ValueSet-dk-core-MunicipalityCodes.md), [NPUBasicObservation](ValueSet-dk-core-NPUBasicObservation.md), [NotFollowedAnymore](StructureDefinition-NotFollowedAnymore.md), [Patient/283](Patient-283.md), [PlannedEndDate](StructureDefinition-dk-core-planned-end-date.md), [PlannedStartDate](StructureDefinition-dk-core-planned-start-date.md), [ProducentId](StructureDefinition-dk-core-producent-id.md), [PublicationStatus](CodeSystem-publication-status-dk-supplement.md), [RegionalSubDivisionCodes](StructureDefinition-dk-core-RegionalSubDivisionCodes.md), [RegionalSubdivisionCodes](ValueSet-dk-core-RegionalSubDivisionCodes.md), [RelatedPersonRelationshipTypes](ValueSet-dk-core-RelatedPersonRelationshipTypes.md), [RequestStatus](CodeSystem-request-status-dk-supplement.md), [RoleCodeDkSupplement](CodeSystem-role-code-dk-supplement.md), [SCTBasicObservation](ValueSet-dk-core-SCTBasicObservation.md), [SCTLaboratorySpecialities](ValueSet-dk-core-SCTLaboratorySpecialities.md), [SORIdentifier](StructureDefinition-dk-core-sor-identifier.md), [SorOrganizationType](ValueSet-sor-organization-type.md), [SorPracticeSettingCode](ValueSet-dk-core-practice-setting-code.md), [SorPracticeSettingCodeExcludingLab](ValueSet-dk-core-practice-setting-exclude-lab-code.md), [TechniquesSCTCodes](ValueSet-dk-core-TechniquesSCTCodes.md), [UCUMBasicUnits](ValueSet-dk-core-UCUM-BasicUnits.md), [V2_0131DkSupplement](CodeSystem-v2-0131-supplement.md) and [ValueSet/dk-marital-status](ValueSet-dk-marital-status.md)
 * [ISO 3166-2 Codes for the representation of names of countries and their subdivisions — Part 2: Country subdivision code](http://terminology.hl7.org/6.5.0/CodeSystem-v3-iso3166-2.html): [Patient/283](Patient-283.md), [Patient/Aage](Patient-Aage.md)... Show 35 more, [Patient/AliJensen](Patient-AliJensen.md), [Patient/AndersJensen](Patient-AndersJensen.md), [Patient/AyaBerggren](Patient-AyaBerggren.md), [Patient/BoVestergaard](Patient-BoVestergaard.md), [Patient/BritaBerggren](Patient-BritaBerggren.md), [Patient/Bruno](Patient-Bruno.md), [Patient/CaesarOestergaard](Patient-CaesarOestergaard.md), [Patient/EK](Patient-EK.md), [Patient/Einer](Patient-Einer.md), [Patient/EllenLouise](Patient-EllenLouise.md), [Patient/ElseLauridsen](Patient-ElseLauridsen.md), [Patient/GitteNancy](Patient-GitteNancy.md), [Patient/JulianeJoergensen](Patient-JulianeJoergensen.md), [Patient/KajaHansen](Patient-KajaHansen.md), [Patient/KirstenBerggren](Patient-KirstenBerggren.md), [Patient/KnutOdvar](Patient-KnutOdvar.md), [Patient/LarsBerggren](Patient-LarsBerggren.md), [Patient/Lonni](Patient-Lonni.md), [Patient/Magnus](Patient-Magnus.md), [Patient/MaxBerggren](Patient-MaxBerggren.md), [Patient/MayJune](Patient-MayJune.md), [Patient/MuhammedAbdul](Patient-MuhammedAbdul.md), [Patient/NancyAnn](Patient-NancyAnn.md), [Patient/NielsVendelboe](Patient-NielsVendelboe.md), [Patient/OddHaugen](Patient-OddHaugen.md), [Patient/PiaBerggren](Patient-PiaBerggren.md), [Patient/Rasmus](Patient-Rasmus.md), [Patient/RikkeBerggren](Patient-RikkeBerggren.md), [Patient/RuddiBerggren](Patient-RuddiBerggren.md), [Patient/Schwendlund](Patient-Schwendlund.md), [Patient/SilleJune](Patient-SilleJune.md), [Patient/Sverre](Patient-Sverre.md), [Patient/Torre](Patient-Torre.md), [RegionalSubDivisionCodes](StructureDefinition-dk-core-RegionalSubDivisionCodes.md) and [RegionalSubdivisionCodes](ValueSet-dk-core-RegionalSubDivisionCodes.md)
 
 
 * The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. [https://ucum.org/trac/wiki/TermsOfUse](https://ucum.org/trac/wiki/TermsOfUse)
 
-* [Unified Code for Units of Measure (UCUM)](http://terminology.hl7.org/6.5.0/CodeSystem-v3-ucum.html): [Bundle/ContinuaBundleWithDevice](Bundle-ContinuaBundleWithDevice.md), [Bundle/ElsesTOBS](Bundle-ElsesTOBS.md)... Show 19 more, [Bundle/MaxTOKS](Bundle-MaxTOKS.md), [DkCoreBasicObservation](StructureDefinition-dk-core-basic-observation.md), [Observation/ElseBloodPressure](Observation-ElseBloodPressure.md), [Observation/ElseBodyTemperature](Observation-ElseBodyTemperature.md), [Observation/ElseHeartRate](Observation-ElseHeartRate.md), [Observation/ElseRespirationRate](Observation-ElseRespirationRate.md), [Observation/ElsesTOBSscore](Observation-ElsesTOBSscore.md), [Observation/HeartRate.Poul.1974654](Observation-HeartRate.Poul.1974654.md), [Observation/MaxBloodPressure](Observation-MaxBloodPressure.md), [Observation/MaxBodyTemperature](Observation-MaxBodyTemperature.md), [Observation/MaxGlasgowComaScale](Observation-MaxGlasgowComaScale.md), [Observation/MaxHeartRate](Observation-MaxHeartRate.md), [Observation/MaxRespirationRate](Observation-MaxRespirationRate.md), [Observation/MaxSaturation](Observation-MaxSaturation.md), [Observation/ObservationOxySatBasicObservationOrg](Observation-ObservationOxySatBasicObservationOrg.md), [Observation/ObservationOxySatObservation](Observation-ObservationOxySatObservation.md), [Observation/ObservationRespiratoryBasicObservation](Observation-ObservationRespiratoryBasicObservation.md), [Observation/Weight.Poul.230221](Observation-Weight.Poul.230221.md) and [UCUMBasicUnits](ValueSet-dk-core-UCUM-BasicUnits.md)
+* [Unified Code for Units of Measure (UCUM)](http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/CodeSystem-v3-ucum.html): [Bundle/ContinuaBundleWithDevice](Bundle-ContinuaBundleWithDevice.md), [Bundle/ElsesTOBS](Bundle-ElsesTOBS.md)... Show 22 more, [Bundle/MaxTOKS](Bundle-MaxTOKS.md), [DkCoreBasicObservation](StructureDefinition-dk-core-basic-observation.md), [Observation/ElseBloodPressure](Observation-ElseBloodPressure.md), [Observation/ElseBodyTemperature](Observation-ElseBodyTemperature.md), [Observation/ElseHeartRate](Observation-ElseHeartRate.md), [Observation/ElseINR](Observation-ElseINR.md), [Observation/ElseKalium](Observation-ElseKalium.md), [Observation/ElseNatrium](Observation-ElseNatrium.md), [Observation/ElseRespirationRate](Observation-ElseRespirationRate.md), [Observation/ElsesTOBSscore](Observation-ElsesTOBSscore.md), [Observation/HeartRate.Poul.1974654](Observation-HeartRate.Poul.1974654.md), [Observation/MaxBloodPressure](Observation-MaxBloodPressure.md), [Observation/MaxBodyTemperature](Observation-MaxBodyTemperature.md), [Observation/MaxGlasgowComaScale](Observation-MaxGlasgowComaScale.md), [Observation/MaxHeartRate](Observation-MaxHeartRate.md), [Observation/MaxRespirationRate](Observation-MaxRespirationRate.md), [Observation/MaxSaturation](Observation-MaxSaturation.md), [Observation/ObservationOxySatBasicObservationOrg](Observation-ObservationOxySatBasicObservationOrg.md), [Observation/ObservationOxySatObservation](Observation-ObservationOxySatObservation.md), [Observation/ObservationRespiratoryBasicObservation](Observation-ObservationRespiratoryBasicObservation.md), [Observation/Weight.Poul.230221](Observation-Weight.Poul.230221.md) and [UCUMBasicUnits](ValueSet-dk-core-UCUM-BasicUnits.md)
 
 
 * This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
 
-* [LOINC](http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html): [Bundle/ContinuaBundleWithDevice](Bundle-ContinuaBundleWithDevice.md), [Bundle/ElsesTOBS](Bundle-ElsesTOBS.md)... Show 22 more, [Bundle/MaxTOKS](Bundle-MaxTOKS.md), [DkCoreBasicObservation](StructureDefinition-dk-core-basic-observation.md), [DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a12](DocumentReference-94e65db8-2f0c-4a2c-a7c9-06a160d59a12.md), [DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a13](DocumentReference-94e65db8-2f0c-4a2c-a7c9-06a160d59a13.md), [LoincBasicObservation](ValueSet-dk-core-LoincBasicObservation.md), [Observation/ElseBloodPressure](Observation-ElseBloodPressure.md), [Observation/ElseBodyTemperature](Observation-ElseBodyTemperature.md), [Observation/ElseHeartRate](Observation-ElseHeartRate.md), [Observation/ElseRespirationRate](Observation-ElseRespirationRate.md), [Observation/HeartRate.Poul.1974654](Observation-HeartRate.Poul.1974654.md), [Observation/MaxBloodPressure](Observation-MaxBloodPressure.md), [Observation/MaxBodyTemperature](Observation-MaxBodyTemperature.md), [Observation/MaxConsciousness](Observation-MaxConsciousness.md), [Observation/MaxGlasgowComaScale](Observation-MaxGlasgowComaScale.md), [Observation/MaxHeartRate](Observation-MaxHeartRate.md), [Observation/MaxRespirationRate](Observation-MaxRespirationRate.md), [Observation/MaxSaturation](Observation-MaxSaturation.md), [Observation/MaxVitalSignsPanel](Observation-MaxVitalSignsPanel.md), [Observation/ObservationOxySatBasicObservationOrg](Observation-ObservationOxySatBasicObservationOrg.md), [Observation/ObservationOxySatObservation](Observation-ObservationOxySatObservation.md), [Observation/ObservationRespiratoryBasicObservation](Observation-ObservationRespiratoryBasicObservation.md) and [Observation/Weight.Poul.230221](Observation-Weight.Poul.230221.md)
+* [LOINC](http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html): [Bundle/ContinuaBundleWithDevice](Bundle-ContinuaBundleWithDevice.md), [Bundle/ElsesTOBS](Bundle-ElsesTOBS.md)... Show 27 more, [Bundle/MaxTOKS](Bundle-MaxTOKS.md), [DiagnosticReport/ElseHomeNursingMeasurements](DiagnosticReport-ElseHomeNursingMeasurements.md), [DiagnosticReport/ElseLaboratoryReport](DiagnosticReport-ElseLaboratoryReport.md), [DkCoreBasicObservation](StructureDefinition-dk-core-basic-observation.md), [DkCoreDiagnosticReport](StructureDefinition-dk-core-diagnostic-report.md), [DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a12](DocumentReference-94e65db8-2f0c-4a2c-a7c9-06a160d59a12.md), [DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a13](DocumentReference-94e65db8-2f0c-4a2c-a7c9-06a160d59a13.md), [LoincBasicObservation](ValueSet-dk-core-LoincBasicObservation.md), [LoincDiagnosticDocumentTypes](ValueSet-dk-core-LoincDiagnosticDocumentTypes.md), [LoincLabStudyTypes](ValueSet-dk-core-LoincLabStudyTypes.md), [Observation/ElseBloodPressure](Observation-ElseBloodPressure.md), [Observation/ElseBodyTemperature](Observation-ElseBodyTemperature.md), [Observation/ElseHeartRate](Observation-ElseHeartRate.md), [Observation/ElseRespirationRate](Observation-ElseRespirationRate.md), [Observation/HeartRate.Poul.1974654](Observation-HeartRate.Poul.1974654.md), [Observation/MaxBloodPressure](Observation-MaxBloodPressure.md), [Observation/MaxBodyTemperature](Observation-MaxBodyTemperature.md), [Observation/MaxConsciousness](Observation-MaxConsciousness.md), [Observation/MaxGlasgowComaScale](Observation-MaxGlasgowComaScale.md), [Observation/MaxHeartRate](Observation-MaxHeartRate.md), [Observation/MaxRespirationRate](Observation-MaxRespirationRate.md), [Observation/MaxSaturation](Observation-MaxSaturation.md), [Observation/MaxVitalSignsPanel](Observation-MaxVitalSignsPanel.md), [Observation/ObservationOxySatBasicObservationOrg](Observation-ObservationOxySatBasicObservationOrg.md), [Observation/ObservationOxySatObservation](Observation-ObservationOxySatObservation.md), [Observation/ObservationRespiratoryBasicObservation](Observation-ObservationRespiratoryBasicObservation.md) and [Observation/Weight.Poul.230221](Observation-Weight.Poul.230221.md)
 
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
 
-* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://tx.fhir.org/r4/ValueSet/snomedct): [AddressType](CodeSystem-address-type-dk-supplement.md), [AddressUse](CodeSystem-address-use-dk-supplement.md)... Show 49 more, [Bundle/ElsesTOBS](Bundle-ElsesTOBS.md), [Bundle/MaxTOKS](Bundle-MaxTOKS.md), [CareTeamStatus](CodeSystem-care-team-status-dk-supplement.md), [Condition/ConditionPressureUlcer](Condition-ConditionPressureUlcer.md), [Condition/JohnPacemaker](Condition-JohnPacemaker.md), [ConsentState](CodeSystem-consent-state-codes-dk-supplement.md), [DaysOfWeek](CodeSystem-days-of-week-dk-supplement.md), [DkCoreBasicObservation](StructureDefinition-dk-core-basic-observation.md), [DkCoreCondition](StructureDefinition-dk-core-condition.md), [DkCoreMinimalDocumentReference](StructureDefinition-dk-core-minimaldocumentreference.md), [DkCoreObservation](StructureDefinition-dk-core-observation.md), [DkCoreOrganization](StructureDefinition-dk-core-organization.md), [DkCorePersonServiceRequest](StructureDefinition-dk-core-person-servicerequest.md), [DkCoreServiceRequestCodes](ValueSet-dk-core-servicerequest-codes.md), [DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a12](DocumentReference-94e65db8-2f0c-4a2c-a7c9-06a160d59a12.md), [DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a13](DocumentReference-94e65db8-2f0c-4a2c-a7c9-06a160d59a13.md), [EpisodeOfCareStatus](CodeSystem-episode-of-care-status-dk-supplement.md), [IEEEBasicObservation](ValueSet-dk-core-IEEEBasicObservation.md), [Lægerne Hasseris Bymidte](Organization-LaegerneHasserisBymidte.md), [Observation/ElseBloodPressure](Observation-ElseBloodPressure.md), [Observation/ElseBodyTemperature](Observation-ElseBodyTemperature.md), [Observation/ElseConsciousness](Observation-ElseConsciousness.md), [Observation/ElseHeartRate](Observation-ElseHeartRate.md), [Observation/ElsePainVRS](Observation-ElsePainVRS.md), [Observation/ElseRespirationRate](Observation-ElseRespirationRate.md), [Observation/ElseUrinStix](Observation-ElseUrinStix.md), [Observation/MaxBloodPressure](Observation-MaxBloodPressure.md), [Observation/MaxBodyTemperature](Observation-MaxBodyTemperature.md), [Observation/MaxConsciousness](Observation-MaxConsciousness.md), [Observation/MaxGlasgowComaScale](Observation-MaxGlasgowComaScale.md), [Observation/MaxHeartRate](Observation-MaxHeartRate.md), [Observation/MaxRespirationRate](Observation-MaxRespirationRate.md), [Observation/MaxSaturation](Observation-MaxSaturation.md), [Organization/154b8c96-a061-45bf-9ce4-1947c7c3c283](Organization-154b8c96-a061-45bf-9ce4-1947c7c3c283.md), [Organization/CenterForDiabetes](Organization-CenterForDiabetes.md), [Organization/CenterForDiabetesTeamDiabetes](Organization-CenterForDiabetesTeamDiabetes.md), [Organization/CenterForDiabetesTeamHjerte](Organization-CenterForDiabetesTeamHjerte.md), [Organization/CenterForDiabetesTeamKvalitet](Organization-CenterForDiabetesTeamKvalitet.md), [Organization/b08997bb-4476-4dd0-84dd-2e297f809364](Organization-b08997bb-4476-4dd0-84dd-2e297f809364.md), [Ortopædkirurgisk sengeafdeling](Organization-8510eec9-180b-4e9c-95b6-02fad9f853d3.md), [Ortopædkirurgisk sengeafsnit](Organization-19f9ee18-7677-4caf-88fe-8f6df2f2906e.md), [PublicationStatus](CodeSystem-publication-status-dk-supplement.md), [RequestStatus](CodeSystem-request-status-dk-supplement.md), [SCTBasicObservation](ValueSet-dk-core-SCTBasicObservation.md), [ServiceRequest/JohnsServiceRequest](ServiceRequest-JohnsServiceRequest.md), [ServiceRequest/MaxServiceRequest](ServiceRequest-MaxServiceRequest.md), [SorOrganizationType](ValueSet-sor-organization-type.md), [SorPracticeSettingCode](ValueSet-dk-core-practice-setting-code.md) and [TechniquesSCTCodes](ValueSet-dk-core-TechniquesSCTCodes.md)
-
-
-* This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
-
-* [Condition Category Codes](http://terminology.hl7.org/7.1.0/CodeSystem-condition-category.html): [Condition/ConditionPressureUlcer](Condition-ConditionPressureUlcer.md), [Condition/ElseGraviditet](Condition-ElseGraviditet.md)... Show 4 more, [Condition/JohnDiabetes](Condition-JohnDiabetes.md), [Condition/JohnFracture](Condition-JohnFracture.md), [Condition/JohnMelanoma](Condition-JohnMelanoma.md) and [Condition/JohnPacemaker](Condition-JohnPacemaker.md)
-* [Condition Clinical Status Codes](http://terminology.hl7.org/7.1.0/CodeSystem-condition-clinical.html): [Condition/ConditionPressureUlcer](Condition-ConditionPressureUlcer.md), [Condition/ElseGraviditet](Condition-ElseGraviditet.md)... Show 4 more, [Condition/JohnDiabetes](Condition-JohnDiabetes.md), [Condition/JohnFracture](Condition-JohnFracture.md), [Condition/JohnMelanoma](Condition-JohnMelanoma.md) and [Condition/JohnPacemaker](Condition-JohnPacemaker.md)
-* [ConditionVerificationStatus](http://terminology.hl7.org/7.1.0/CodeSystem-condition-ver-status.html): [Condition/ElseGraviditet](Condition-ElseGraviditet.md), [Condition/JohnDiabetes](Condition-JohnDiabetes.md), [Condition/JohnFracture](Condition-JohnFracture.md), [Condition/JohnMelanoma](Condition-JohnMelanoma.md) and [Condition/JohnPacemaker](Condition-JohnPacemaker.md)
-* [Location type](http://terminology.hl7.org/7.1.0/CodeSystem-location-physical-type.html): [Location/ambulance](Location-ambulance.md) and [Neuro unit](Location-neuroradiologyUnit.md)
-* [Observation Category Codes](http://terminology.hl7.org/7.1.0/CodeSystem-observation-category.html): [Bundle/ContinuaBundleWithDevice](Bundle-ContinuaBundleWithDevice.md), [Bundle/ElsesTOBS](Bundle-ElsesTOBS.md)... Show 18 more, [Bundle/MaxTOKS](Bundle-MaxTOKS.md), [DkCoreBasicObservation](StructureDefinition-dk-core-basic-observation.md), [Observation/ElseBloodPressure](Observation-ElseBloodPressure.md), [Observation/ElseBodyTemperature](Observation-ElseBodyTemperature.md), [Observation/ElseHeartRate](Observation-ElseHeartRate.md), [Observation/ElseRespirationRate](Observation-ElseRespirationRate.md), [Observation/HeartRate.Poul.1974654](Observation-HeartRate.Poul.1974654.md), [Observation/MaxBloodPressure](Observation-MaxBloodPressure.md), [Observation/MaxBodyTemperature](Observation-MaxBodyTemperature.md), [Observation/MaxConsciousness](Observation-MaxConsciousness.md), [Observation/MaxHeartRate](Observation-MaxHeartRate.md), [Observation/MaxRespirationRate](Observation-MaxRespirationRate.md), [Observation/MaxSaturation](Observation-MaxSaturation.md), [Observation/MaxVitalSignsPanel](Observation-MaxVitalSignsPanel.md), [Observation/ObservationOxySatBasicObservationOrg](Observation-ObservationOxySatBasicObservationOrg.md), [Observation/ObservationOxySatObservation](Observation-ObservationOxySatObservation.md), [Observation/ObservationRespiratoryBasicObservation](Observation-ObservationRespiratoryBasicObservation.md) and [Observation/Weight.Poul.230221](Observation-Weight.Poul.230221.md)
-* [contactRole2](http://terminology.hl7.org/7.1.0/CodeSystem-v2-0131.html): [v2-0131DkSupplement](CodeSystem-v2-0131-supplement.md)
-* [identifierType](http://terminology.hl7.org/7.1.0/CodeSystem-v2-0203.html): [Bundle/ContinuaBundleWithDevice](Bundle-ContinuaBundleWithDevice.md), [DK Central Healthcare Organization Registry (SOR)](NamingSystem-sor.md) and [Patient/Poul](Patient-Poul.md)
-* [providerRole](http://terminology.hl7.org/7.1.0/CodeSystem-v2-0286.html): [PractitionerRole/AbrahamPractitionerRole](PractitionerRole-AbrahamPractitionerRole.md) and [PractitionerRole/PlaceholderPractitionerRole](PractitionerRole-PlaceholderPractitionerRole.md)
-* [ActCode](http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html): [DkCoreMinimalDocumentReference](StructureDefinition-dk-core-minimaldocumentreference.md), [Encounter/0c5e4905-5c2e-4254-8837-770c3724cd13](Encounter-0c5e4905-5c2e-4254-8837-770c3724cd13.md) and [Encounter/915a3cfb-2f3e-477b-8a9d-5d86c30e4929](Encounter-915a3cfb-2f3e-477b-8a9d-5d86c30e4929.md)
-* [ActPriority](http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActPriority.html): [DkCoreEncounter](StructureDefinition-dk-core-encounter.md) and [DkCoreEncounterPriority](ValueSet-dk-core-encounter-priority.md)
-* [MaritalStatus](http://terminology.hl7.org/7.1.0/CodeSystem-v3-MaritalStatus.html): [Bundle/ElsesTOBS](Bundle-ElsesTOBS.md), [Patient/283](Patient-283.md)... Show 5 more, [Patient/Einer](Patient-Einer.md), [Patient/Lonni](Patient-Lonni.md), [Patient/MayJune](Patient-MayJune.md), [Patient/Schwendlund](Patient-Schwendlund.md) and [Patient/else](Patient-else.md)
-* [RoleCode](http://terminology.hl7.org/7.1.0/CodeSystem-v3-RoleCode.html): [DkCoreRelatedPerson](StructureDefinition-dk-core-related-person.md), [Location/ambulance](Location-ambulance.md)... Show 45 more, [Neuro unit](Location-neuroradiologyUnit.md), [RelatedPerson/AageRelatedToNancy](RelatedPerson-AageRelatedToNancy.md), [RelatedPerson/AndersRelatedToAli](RelatedPerson-AndersRelatedToAli.md), [RelatedPerson/BrunoRelatedToNancy](RelatedPerson-BrunoRelatedToNancy.md), [RelatedPerson/Child](RelatedPerson-Child.md), [RelatedPerson/EinerRelatedToEK](RelatedPerson-EinerRelatedToEK.md), [RelatedPerson/EinerRelatedToEllen](RelatedPerson-EinerRelatedToEllen.md), [RelatedPerson/EinerRelatedToElse](RelatedPerson-EinerRelatedToElse.md), [RelatedPerson/EinerRelatedToMagnus](RelatedPerson-EinerRelatedToMagnus.md), [RelatedPerson/EinerRelatedToRasmus](RelatedPerson-EinerRelatedToRasmus.md), [RelatedPerson/KirstenRelatedToAya](RelatedPerson-KirstenRelatedToAya.md), [RelatedPerson/KirstenRelatedToGitte](RelatedPerson-KirstenRelatedToGitte.md), [RelatedPerson/KirstenRelatedToLars](RelatedPerson-KirstenRelatedToLars.md), [RelatedPerson/KirstenRelatedToPia](RelatedPerson-KirstenRelatedToPia.md), [RelatedPerson/KirstenRelatedToRikke](RelatedPerson-KirstenRelatedToRikke.md), [RelatedPerson/LonniRelatedToEK](RelatedPerson-LonniRelatedToEK.md), [RelatedPerson/LonniRelatedToEiner](RelatedPerson-LonniRelatedToEiner.md), [RelatedPerson/LonniRelatedToEllen](RelatedPerson-LonniRelatedToEllen.md), [RelatedPerson/LonniRelatedToElse](RelatedPerson-LonniRelatedToElse.md), [RelatedPerson/LonniRelatedToMagnus](RelatedPerson-LonniRelatedToMagnus.md), [RelatedPerson/LonniRelatedToRasmus](RelatedPerson-LonniRelatedToRasmus.md), [RelatedPerson/MayJuneGuardianOfSverre](RelatedPerson-MayJuneGuardianOfSverre.md), [RelatedPerson/MayJuneGuardianOfTorre](RelatedPerson-MayJuneGuardianOfTorre.md), [RelatedPerson/MayJuneRelatedToKnut](RelatedPerson-MayJuneRelatedToKnut.md), [RelatedPerson/MayJuneRelatedToOdd](RelatedPerson-MayJuneRelatedToOdd.md), [RelatedPerson/MayJuneRelatedToSchwendlund](RelatedPerson-MayJuneRelatedToSchwendlund.md), [RelatedPerson/MayJuneRelatedToSille](RelatedPerson-MayJuneRelatedToSille.md), [RelatedPerson/MayJuneRelatedToSverre](RelatedPerson-MayJuneRelatedToSverre.md), [RelatedPerson/MayJuneRelatedToTorre](RelatedPerson-MayJuneRelatedToTorre.md), [RelatedPerson/NancyGuardianOfAage](RelatedPerson-NancyGuardianOfAage.md), [RelatedPerson/NancyGuardianOfBrita](RelatedPerson-NancyGuardianOfBrita.md), [RelatedPerson/NancyRelatedToBrita](RelatedPerson-NancyRelatedToBrita.md), [RelatedPerson/NancyRelatedToGitte](RelatedPerson-NancyRelatedToGitte.md), [RelatedPerson/NancyRelatedToKirsten](RelatedPerson-NancyRelatedToKirsten.md), [RelatedPerson/NancyRelatedToMax](RelatedPerson-NancyRelatedToMax.md), [RelatedPerson/NancyRelatedToRuddi](RelatedPerson-NancyRelatedToRuddi.md), [RelatedPerson/RuddiGuardianOfRikke](RelatedPerson-RuddiGuardianOfRikke.md), [RelatedPerson/SchwendlundRelatedToKnut](RelatedPerson-SchwendlundRelatedToKnut.md), [RelatedPerson/SchwendlundRelatedToOdd](RelatedPerson-SchwendlundRelatedToOdd.md), [RelatedPerson/SchwendlundRelatedToSille](RelatedPerson-SchwendlundRelatedToSille.md), [RelatedPerson/SchwendlundRelatedToSverre](RelatedPerson-SchwendlundRelatedToSverre.md), [RelatedPerson/SchwendlundRelatedToTorre](RelatedPerson-SchwendlundRelatedToTorre.md), [RelatedPerson/TwoRelations](RelatedPerson-TwoRelations.md), [RelatedPersonRelationshipTypes](ValueSet-dk-core-RelatedPersonRelationshipTypes.md) and [RoleCodeDkSupplement](CodeSystem-role-code-dk-supplement.md)
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [AddressType](CodeSystem-address-type-dk-supplement.md), [AddressUse](CodeSystem-address-use-dk-supplement.md)... Show 53 more, [Bundle/ElsesTOBS](Bundle-ElsesTOBS.md), [Bundle/MaxTOKS](Bundle-MaxTOKS.md), [CareTeamStatus](CodeSystem-care-team-status-dk-supplement.md), [Condition/ConditionPressureUlcer](Condition-ConditionPressureUlcer.md), [Condition/JohnPacemaker](Condition-JohnPacemaker.md), [ConsentState](CodeSystem-consent-state-codes-dk-supplement.md), [DaysOfWeek](CodeSystem-days-of-week-dk-supplement.md), [DiagnosticReport/ElseHomeNursingMeasurements](DiagnosticReport-ElseHomeNursingMeasurements.md), [DiagnosticReport/ElseLaboratoryReport](DiagnosticReport-ElseLaboratoryReport.md), [DkCoreBasicObservation](StructureDefinition-dk-core-basic-observation.md), [DkCoreCondition](StructureDefinition-dk-core-condition.md), [DkCoreDiagnosticReport](StructureDefinition-dk-core-diagnostic-report.md), [DkCoreMinimalDocumentReference](StructureDefinition-dk-core-minimaldocumentreference.md), [DkCoreObservation](StructureDefinition-dk-core-observation.md), [DkCoreOrganization](StructureDefinition-dk-core-organization.md), [DkCorePersonServiceRequest](StructureDefinition-dk-core-person-servicerequest.md), [DkCoreServiceRequestCodes](ValueSet-dk-core-servicerequest-codes.md), [DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a12](DocumentReference-94e65db8-2f0c-4a2c-a7c9-06a160d59a12.md), [DocumentReference/94e65db8-2f0c-4a2c-a7c9-06a160d59a13](DocumentReference-94e65db8-2f0c-4a2c-a7c9-06a160d59a13.md), [EpisodeOfCareStatus](CodeSystem-episode-of-care-status-dk-supplement.md), [IEEEBasicObservation](ValueSet-dk-core-IEEEBasicObservation.md), [Lægerne Hasseris Bymidte](Organization-LaegerneHasserisBymidte.md), [Observation/ElseBloodPressure](Observation-ElseBloodPressure.md), [Observation/ElseBodyTemperature](Observation-ElseBodyTemperature.md), [Observation/ElseConsciousness](Observation-ElseConsciousness.md), [Observation/ElseHeartRate](Observation-ElseHeartRate.md), [Observation/ElsePainVRS](Observation-ElsePainVRS.md), [Observation/ElseRespirationRate](Observation-ElseRespirationRate.md), [Observation/ElseUrinStix](Observation-ElseUrinStix.md), [Observation/MaxBloodPressure](Observation-MaxBloodPressure.md), [Observation/MaxBodyTemperature](Observation-MaxBodyTemperature.md), [Observation/MaxConsciousness](Observation-MaxConsciousness.md), [Observation/MaxGlasgowComaScale](Observation-MaxGlasgowComaScale.md), [Observation/MaxHeartRate](Observation-MaxHeartRate.md), [Observation/MaxRespirationRate](Observation-MaxRespirationRate.md), [Observation/MaxSaturation](Observation-MaxSaturation.md), [Organization/154b8c96-a061-45bf-9ce4-1947c7c3c283](Organization-154b8c96-a061-45bf-9ce4-1947c7c3c283.md), [Organization/CenterForDiabetes](Organization-CenterForDiabetes.md), [Organization/CenterForDiabetesTeamDiabetes](Organization-CenterForDiabetesTeamDiabetes.md), [Organization/CenterForDiabetesTeamHjerte](Organization-CenterForDiabetesTeamHjerte.md), [Organization/CenterForDiabetesTeamKvalitet](Organization-CenterForDiabetesTeamKvalitet.md), [Organization/b08997bb-4476-4dd0-84dd-2e297f809364](Organization-b08997bb-4476-4dd0-84dd-2e297f809364.md), [Ortopædkirurgisk sengeafdeling](Organization-8510eec9-180b-4e9c-95b6-02fad9f853d3.md), [Ortopædkirurgisk sengeafsnit](Organization-19f9ee18-7677-4caf-88fe-8f6df2f2906e.md), [PublicationStatus](CodeSystem-publication-status-dk-supplement.md), [RequestStatus](CodeSystem-request-status-dk-supplement.md), [SCTBasicObservation](ValueSet-dk-core-SCTBasicObservation.md), [SCTLaboratorySpecialities](ValueSet-dk-core-SCTLaboratorySpecialities.md), [ServiceRequest/JohnsServiceRequest](ServiceRequest-JohnsServiceRequest.md), [ServiceRequest/MaxServiceRequest](ServiceRequest-MaxServiceRequest.md), [SorOrganizationType](ValueSet-sor-organization-type.md), [SorPracticeSettingCode](ValueSet-dk-core-practice-setting-code.md) and [TechniquesSCTCodes](ValueSet-dk-core-TechniquesSCTCodes.md)
 
 
 ### Cross Version Analysis
@@ -171,7 +162,6 @@ This publication includes IP covered under the following statements.
 This is an R4 IG. None of the features it uses are changed in R4B, so it can be used as is with R4B systems. Packages for both [R4 (hl7.fhir.dk.core.r4)](package.r4.tgz) and [R4B (hl7.fhir.dk.core.r4b)](package.r4b.tgz) are available.
 
 ### Dependency Table
-
 
 
 
@@ -194,11 +184,11 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
   "resourceType" : "ImplementationGuide",
   "id" : "hl7.fhir.dk.core",
   "url" : "http://hl7.dk/fhir/core/ImplementationGuide/hl7.fhir.dk.core",
-  "version" : "3.6.0",
+  "version" : "3.7.0",
   "name" : "DKCore",
   "title" : "HL7 FHIR Implementation Guide: DK Core",
   "status" : "active",
-  "date" : "2026-03-11T23:16:27+01:00",
+  "date" : "2026-05-30T15:25:27+02:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",
@@ -233,16 +223,22 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
     "version" : "7.1.0"
   },
   {
+    "id" : "hl7_fhir_uv_xver_r5_r4",
+    "uri" : "http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4",
+    "packageId" : "hl7.fhir.uv.xver-r5.r4",
+    "version" : "0.1.0"
+  },
+  {
     "id" : "hl7_fhir_uv_extensions_r4",
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.3.0-ballot-tc1"
+    "version" : "5.3.0"
   },
   {
     "id" : "hl7_fhir_uv_phd",
     "uri" : "http://hl7.org/fhir/uv/phd/ImplementationGuide/hl7.fhir.uv.phd",
     "packageId" : "hl7.fhir.uv.phd",
-    "version" : "1.1.0"
+    "version" : "2.0.0"
   },
   {
     "id" : "hl7_fhir_uv_ipa",
@@ -617,7 +613,7 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.9.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#1.1.2"
     },
     {
       "extension" : [{
@@ -1238,6 +1234,18 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/cvr"
+      },
+      "name" : "cvr",
+      "description" : "The Central Business Register (CVR) is the state's master register for business information. The register contains information about all Danish businesses, including their name, address, industry code, and other relevant details. The CVR is maintained by the Danish Business Authority (Erhvervsstyrelsen) and is used for various purposes, including taxation, business registration, and statistical analysis.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
       }],
       "reference" : {
@@ -1293,6 +1301,18 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
       },
       "name" : "Danish Core Condition Profile",
       "description" : "HL7 Denmark core profile for professionally asserted conditions, as specified by danish health and social care organizations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/dk-core-diagnostic-report"
+      },
+      "name" : "Danish Core Diagnostic Report Profile",
+      "description" : "HL7 Denmark profile for diagnostic reports.",
       "exampleBoolean" : false
     },
     {
@@ -1613,10 +1633,34 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/dk-core-LoincLabStudyTypes"
+      },
+      "name" : "DK Core Laboratory study types",
+      "description" : "LOINC codes describing laboratory study types that are consistent with European use in EHDS.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/dk-core-LoincBasicObservation"
       },
       "name" : "DK Core LOINC Basic Observations",
       "description" : "LOINC codes describing Basic Observations usable in Denmark.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-core-LoincDiagnosticDocumentTypes"
+      },
+      "name" : "DK Core LOINC Diagnostic Document Types",
+      "description" : "LOINC codes describing diagnostic documents that may be used for common Danish use cases.",
       "exampleBoolean" : false
     },
     {
@@ -1865,18 +1909,6 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/dk-core-regional-subdivision-codes"
-      },
-      "name" : "DK Regional Subdivision Codes",
-      "description" : "Subdivision codes (Regional codes) used in Denmark as found on https://www.iso.org/obp/ui/#iso:code:3166:DK",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
         "reference" : "CodeSystem/dk-relatedperson-relationshipcodes"
       },
       "name" : "DK Related Person Relationship Codes",
@@ -1941,6 +1973,18 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
       },
       "name" : "DK SOR Practice Setting Code",
       "description" : "Values used for the document metadata attribute practiceSettingCode, which is an attribute specifying the clinical specialty where the act that resulted in the document was performed (e.g., Family Practice, Laboratory, Radiology). The value set is based on a subset of the code list from the SOR lookup table 'SOR-Kliniske specialer' (https://sor.sum.dsdn.dk/lookupdata/#clinical_speciality, accessable on Sundhedsdatanettet (SDN)), which is based on SNOMED CT codes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-core-practice-setting-exclude-lab-code"
+      },
+      "name" : "DK SOR Practice Setting Code excluding laboratory codes",
+      "description" : "Values used for Practice Setting, as described in the SOR registry. This list excludes Laboratory Specialties .",
       "exampleBoolean" : false
     },
     {
@@ -2114,6 +2158,18 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DiagnosticReport"
+      }],
+      "reference" : {
+        "reference" : "DiagnosticReport/ElseLaboratoryReport"
+      },
+      "name" : "Else's Laboratory report using EHDS value sets",
+      "description" : "An example of clinical chemistry report.",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-diagnostic-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
       }],
       "reference" : {
@@ -2122,6 +2178,18 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
       "name" : "Else's TOBS measurements",
       "description" : "An example of TOBS (Danish: Tidlig opsporing af begyndende sygdom), which includes level of consciousness, heart rate, respiration rate, blood pressure and temperature.",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DiagnosticReport"
+      }],
+      "reference" : {
+        "reference" : "DiagnosticReport/ElseHomeNursingMeasurements"
+      },
+      "name" : "Else's TOBS measurements and urin stix",
+      "description" : "An example of urin stix and TOBS (Danish: Tidlig opsporing af begyndende sygdom) organized as a DiagnosticReport.",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-diagnostic-report"
     },
     {
       "extension" : [{
@@ -2166,6 +2234,39 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
       },
       "name" : "ElseHeartRate",
       "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-basic-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ElseINR"
+      },
+      "name" : "ElseINR",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ElseKalium"
+      },
+      "name" : "ElseKalium",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ElseNatrium"
+      },
+      "name" : "ElseNatrium",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"
     },
     {
       "extension" : [{
@@ -2642,6 +2743,18 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
       "name" : "Kombit Organsation Identifier",
       "description" : "Identifier holding the organization code issued by KOMBIT",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/KliniskBiokemiHBY"
+      },
+      "name" : "Laboratory instance of DkCoreOrganization",
+      "description" : "Laboratory organization",
+      "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-organization"
     },
     {
       "extension" : [{
@@ -3581,6 +3694,18 @@ This is an R4 IG. None of the features it uses are changed in R4B, so it can be 
       "name" : "Sille June Test Mosebrygersen",
       "description" : "Sille June Test Mosebrygersen - Datter af May June Moberg & Schwendlund Mosebryggersen",
       "exampleCanonical" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dk-core-SCTLaboratorySpecialities"
+      },
+      "name" : "SNOMED CT Laboratory Specialities",
+      "description" : "SNOMED CT codes for Laboratory Specialities. Note that this is the set of accepted specialities in Europe",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{

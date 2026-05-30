@@ -1,0 +1,85 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/DiagnosticReport/ElseHomeNursingMeasurements> a fhir:DiagnosticReport ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ElseHomeNursingMeasurements"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.dk/fhir/core/StructureDefinition/dk-core-diagnostic-report"^^xsd:anyURI ;
+       fhir:l <http://hl7.dk/fhir/core/StructureDefinition/dk-core-diagnostic-report>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport ElseHomeNursingMeasurements</b></p><a name=\"ElseHomeNursingMeasurements\"> </a><a name=\"hcElseHomeNursingMeasurements\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-diagnostic-report.html\">Danish Core Diagnostic Report Profile</a></p></div><h2><span title=\"Codes:{http://loinc.org 11506-3}\">Progress note</span> (<span title=\"Codes:{http://snomed.info/sct 658161000005107}\">hjemmesygepleje</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Else Test Lauridsen(official) Female, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#DK Central Person Registry (CPR)#0201919990)</td></tr><tr><td>When For</td><td>2023-09-12 17:45:00+0000</td></tr><tr><td>Performer</td><td> <a href=\"Practitioner-SidselSygeplejerske.html\">Practitioner Sidsel Andersen</a></td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td></tr><tr><td><a href=\"Observation-ElseConsciousness.html\"><span title=\"Codes:{http://snomed.info/sct 6942003}\">Level of consciousness</span></a></td><td><span title=\"Codes:{http://snomed.info/sct 450847001}\">Responds to pain</span></td><td>Final</td></tr><tr><td><a href=\"Observation-ElseBloodPressure.html\"><span title=\"Codes:{http://loinc.org 85354-9}, {http://snomed.info/sct 75367002}\">Blood pressure panel with all children optional</span></a></td><td/><td>Final</td></tr><tr><td><a href=\"Observation-ElseBodyTemperature.html\"><span title=\"Codes:{http://loinc.org 8310-5}, {http://snomed.info/sct 276885007}\">Body temperature</span></a></td><td>38.7 grader celcius<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></td><td>Final</td></tr><tr><td><a href=\"Observation-ElseHeartRate.html\"><span title=\"Codes:{http://loinc.org 8867-4}, {http://snomed.info/sct 364075005}\">Heart rate</span></a></td><td>92 slag/minut<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/min = '/min')</span></td><td>Final</td></tr><tr><td><a href=\"Observation-ElseRespirationRate.html\"><span title=\"Codes:{http://loinc.org 9279-1}, {http://snomed.info/sct 86290005}\">Respiratory rate</span></a></td><td>19 /min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/min = '/min')</span></td><td>Final</td></tr><tr><td><a href=\"Observation-ElsesTOBSscore.html\"><span title=\"Codes:{http://medcomfhir.dk/ig/terminology/CodeSystem/medcom-observation-codes MCS88125}\">Pt—Tidlig Opsporing af Begyndende Sygdom (TOBS) score; antal (værdi 0-15) = ?</span></a></td><td>3 1<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></td><td>Final</td></tr><tr><td><a href=\"Observation-ElseUrinStix.html\"><span title=\"Codes:{http://npu-terminology.org NPU03987}, {http://snomed.info/sct 252385000}\">U—Leukocytes; arb.c.(proc.) = ?</span></a></td><td>Påviselige leukocytter</td><td>Final</td></tr></table><p>Elses lidt høje TOBS og leukocytter i urin gør det nødvendigt med lægetilsyn snarest.</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a sct:658161000005107 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/554471000005108" ] ;
+       fhir:code [ fhir:v "658161000005107" ] ;
+       fhir:display [ fhir:v "hjemmesygepleje" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:11506-3 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "11506-3" ] ;
+       fhir:display [ fhir:v "Progress note" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <http://hl7.dk/fhir/core/Patient/else> ;
+     fhir:reference [ fhir:v "Patient/else" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2023-09-12T17:45:00.000Z"^^xsd:dateTime
+  ] ; # 
+  fhir:performer ( [
+     fhir:l <http://hl7.dk/fhir/core/Practitioner/SidselSygeplejerske> ;
+     fhir:reference [ fhir:v "Practitioner/SidselSygeplejerske" ]
+  ] ) ; # 
+  fhir:result ( [
+     fhir:l <http://hl7.dk/fhir/core/Observation/ElseConsciousness> ;
+     fhir:reference [ fhir:v "Observation/ElseConsciousness" ]
+  ] [
+     fhir:l <http://hl7.dk/fhir/core/Observation/ElseBloodPressure> ;
+     fhir:reference [ fhir:v "Observation/ElseBloodPressure" ]
+  ] [
+     fhir:l <http://hl7.dk/fhir/core/Observation/ElseBodyTemperature> ;
+     fhir:reference [ fhir:v "Observation/ElseBodyTemperature" ]
+  ] [
+     fhir:l <http://hl7.dk/fhir/core/Observation/ElseHeartRate> ;
+     fhir:reference [ fhir:v "Observation/ElseHeartRate" ]
+  ] [
+     fhir:l <http://hl7.dk/fhir/core/Observation/ElseRespirationRate> ;
+     fhir:reference [ fhir:v "Observation/ElseRespirationRate" ]
+  ] [
+     fhir:l <http://hl7.dk/fhir/core/Observation/ElsesTOBSscore> ;
+     fhir:reference [ fhir:v "Observation/ElsesTOBSscore" ]
+  ] [
+     fhir:l <http://hl7.dk/fhir/core/Observation/ElseUrinStix> ;
+     fhir:reference [ fhir:v "Observation/ElseUrinStix" ]
+  ] ) ; # 
+  fhir:conclusion [ fhir:v "Elses lidt høje TOBS og leukocytter i urin gør det nødvendigt med lægetilsyn snarest."] . # 
+
+# -------------------------------------------------------------------------------------
+

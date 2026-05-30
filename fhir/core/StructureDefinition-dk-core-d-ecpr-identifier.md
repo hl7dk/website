@@ -1,4 +1,4 @@
-# Decentralised eCPR, called D-eCPR - HL7 FHIR Implementation Guide: DK Core v3.6.0
+# Decentralised eCPR, called D-eCPR - HL7 FHIR Implementation Guide: DK Core v3.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-d-ecpr-identifier | *Version*:3.6.0 |
-| Active as of 2026-03-11 | *Computable Name*:DkCoreDeCprIdentifier |
+| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-d-ecpr-identifier | *Version*:3.7.0 |
+| Active as of 2026-05-30 | *Computable Name*:DkCoreDeCprIdentifier |
 
  
 This strucure holds the danish [D-eCPR](https://www.nspop.dk/pages/viewpage.action?pageId=226757583#eCPRFormater(XeCPRogDeCPR)-Formatetfordecentraleerstatningspersonnumre-D-eCPR) identifier, which is often used by the Danish regions. 
@@ -18,7 +18,7 @@ This strucure holds the danish [D-eCPR](https://www.nspop.dk/pages/viewpage.acti
 
 * Use this DataType Profile: [Danish Core Patient Profile](StructureDefinition-dk-core-patient.md) and [Danish Core Related Person Profile](StructureDefinition-dk-core-related-person.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.dk.core|current/StructureDefinition/dk-core-d-ecpr-identifier)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.dk.core|current/StructureDefinition/StructureDefinition-dk-core-d-ecpr-identifier.json)
 
 ### Formal Views of Profile Content
 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-dk-core-d-ecpr-ident
   "resourceType" : "StructureDefinition",
   "id" : "dk-core-d-ecpr-identifier",
   "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-d-ecpr-identifier",
-  "version" : "3.6.0",
+  "version" : "3.7.0",
   "name" : "DkCoreDeCprIdentifier",
   "title" : "Decentralised eCPR, called D-eCPR",
   "status" : "active",
-  "date" : "2026-03-11T23:16:27+01:00",
+  "date" : "2026-05-30T15:25:27+02:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",

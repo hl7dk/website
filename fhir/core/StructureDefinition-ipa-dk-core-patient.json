@@ -10,11 +10,11 @@
     "valueCanonical" : "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient"
   }],
   "url" : "http://hl7.dk/fhir/core/StructureDefinition/ipa-dk-core-patient",
-  "version" : "3.6.0",
+  "version" : "3.7.0",
   "name" : "IpaDkCorePatient",
   "title" : "Danish IPA Core Patient Profile",
   "status" : "active",
-  "date" : "2026-03-11T23:16:27+01:00",
+  "date" : "2026-05-30T15:25:27+02:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",
@@ -69,7 +69,7 @@
   "snapshot" : {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
-      "valueString" : "3.6.0"
+      "valueString" : "3.7.0"
     }],
     "element" : [{
       "id" : "Patient",

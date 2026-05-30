@@ -1,0 +1,28 @@
+{
+  "resourceType" : "Observation",
+  "id" : "ElseKalium",
+  "meta" : {
+    "profile" : ["http://hl7.dk/fhir/core/StructureDefinition/dk-core-observation"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ElseKalium</b></p><a name=\"ElseKalium\"> </a><a name=\"hcElseKalium\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dk-core-observation.html\">Danish Core Observation Profile</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://npu-terminology.org NPU03230}\">P—Potassium ion; subst.c. = ? mmol/L</span></p><p><b>subject</b>: <a href=\"Patient-else.html\">Else Test Lauridsen(official) Female, DoB: 1991-02-02 ( urn:oid:1.2.208.176.1.2#DK Central Person Registry (CPR)#0201919990)</a></p><p><b>effective</b>: 2023-09-15 09:15:00+0000</p><p><b>value</b>: 3 mmol/L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemmol/L = 'mmol/L')</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://npu-terminology.org",
+      "code" : "NPU03230",
+      "display" : "P—Potassium ion; subst.c. = ? mmol/L"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/else"
+  },
+  "effectiveDateTime" : "2023-09-15T09:15:00.000Z",
+  "valueQuantity" : {
+    "value" : 3,
+    "system" : "http://unitsofmeasure.org",
+    "code" : "mmol/L"
+  }
+}

@@ -1,4 +1,4 @@
-# DK Extended Patient Contact Relationship - HL7 FHIR Implementation Guide: DK Core v3.6.0
+# DK Extended Patient Contact Relationship - HL7 FHIR Implementation Guide: DK Core v3.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/ValueSet/extended-patient-contactrelationship | *Version*:3.6.0 |
-| Active as of 2026-03-11 | *Computable Name*:extended-patient-contactrelationship |
+| *Official URL*:http://hl7.dk/fhir/core/ValueSet/extended-patient-contactrelationship | *Version*:3.7.0 |
+| Active as of 2026-05-30 | *Computable Name*:ExtendedPatientContactRelationship |
 
  
 DK Extended Patient Contact Relationship 
@@ -46,12 +46,12 @@ DK Extended Patient Contact Relationship
   "resourceType" : "ValueSet",
   "id" : "extended-patient-contactrelationship",
   "url" : "http://hl7.dk/fhir/core/ValueSet/extended-patient-contactrelationship",
-  "version" : "3.6.0",
-  "name" : "extended-patient-contactrelationship",
+  "version" : "3.7.0",
+  "name" : "ExtendedPatientContactRelationship",
   "title" : "DK Extended Patient Contact Relationship",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-11T23:16:27+01:00",
+  "date" : "2026-05-30T15:25:27+02:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",

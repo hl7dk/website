@@ -1,4 +1,4 @@
-# Danish Core Municipality codes - HL7 FHIR Implementation Guide: DK Core v3.6.0
+# Danish Core Municipality codes - HL7 FHIR Implementation Guide: DK Core v3.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes | *Version*:3.6.0 |
-| Active as of 2026-03-11 | *Computable Name*:MunicipalityCodes |
+| *Official URL*:http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes | *Version*:3.7.0 |
+| Active as of 2026-05-30 | *Computable Name*:MunicipalityCodes |
 
 Identifier holding the official identifier for a danish municipality
 
@@ -22,7 +22,7 @@ Identifier holding the official identifier for a danish municipality
 * Use this Extension: [Danish Core Patient Profile](StructureDefinition-dk-core-patient.md)
 * Examples for this Extension: [Patient/283](Patient-283.md), [Patient/Aage](Patient-Aage.md), [Patient/AliJensen](Patient-AliJensen.md), [Patient/AndersJensen](Patient-AndersJensen.md)... Show 31 more, [Patient/AyaBerggren](Patient-AyaBerggren.md), [Patient/BoVestergaard](Patient-BoVestergaard.md), [Patient/BritaBerggren](Patient-BritaBerggren.md), [Patient/Bruno](Patient-Bruno.md), [Patient/CaesarOestergaard](Patient-CaesarOestergaard.md), [Patient/EK](Patient-EK.md), [Patient/Einer](Patient-Einer.md), [Patient/EllenLouise](Patient-EllenLouise.md), [Patient/ElseLauridsen](Patient-ElseLauridsen.md), [Patient/GitteNancy](Patient-GitteNancy.md), [Patient/JulianeJoergensen](Patient-JulianeJoergensen.md), [Patient/KajaHansen](Patient-KajaHansen.md), [Patient/KirstenBerggren](Patient-KirstenBerggren.md), [Patient/KnutOdvar](Patient-KnutOdvar.md), [Patient/LarsBerggren](Patient-LarsBerggren.md), [Patient/Lonni](Patient-Lonni.md), [Patient/Magnus](Patient-Magnus.md), [Patient/MaxBerggren](Patient-MaxBerggren.md), [Patient/MayJune](Patient-MayJune.md), [Patient/MuhammedAbdul](Patient-MuhammedAbdul.md), [Patient/NancyAnn](Patient-NancyAnn.md), [Patient/NielsVendelboe](Patient-NielsVendelboe.md), [Patient/OddHaugen](Patient-OddHaugen.md), [Patient/PiaBerggren](Patient-PiaBerggren.md), [Patient/Rasmus](Patient-Rasmus.md), [Patient/RikkeBerggren](Patient-RikkeBerggren.md), [Patient/RuddiBerggren](Patient-RuddiBerggren.md), [Patient/Schwendlund](Patient-Schwendlund.md), [Patient/SilleJune](Patient-SilleJune.md), [Patient/Sverre](Patient-Sverre.md) and [Patient/Torre](Patient-Torre.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.dk.core|current/StructureDefinition/dk-core-municipalityCodes)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.dk.core|current/StructureDefinition/StructureDefinition-dk-core-municipalityCodes.json)
 
 ### Formal Views of Extension Content
 
@@ -45,11 +45,11 @@ Other representations of profile: [CSV](StructureDefinition-dk-core-municipality
   "resourceType" : "StructureDefinition",
   "id" : "dk-core-municipalityCodes",
   "url" : "http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes",
-  "version" : "3.6.0",
+  "version" : "3.7.0",
   "name" : "MunicipalityCodes",
   "title" : "Danish Core Municipality codes",
   "status" : "active",
-  "date" : "2026-03-11T23:16:27+01:00",
+  "date" : "2026-05-30T15:25:27+02:00",
   "publisher" : "HL7 Denmark",
   "contact" : [{
     "name" : "HL7 Denmark",
