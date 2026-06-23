@@ -36,5 +36,24 @@
       "date" : "2025-02-01",
       "path" : "http://hl7.dk/fhir/smart/1.0.0"
     }
+  },
+  {
+    "path" : "hackathons/package-list.json",
+    "package-id" : "hl7.fhir.dk.hackathons",
+    "title" : "HL7 FHIR Implementation Guide: DK Hackathons",
+    "canonical" : "http://hl7.dk/fhir/hackathons",
+    "category" : "Hackathons",
+    "ci-build" : "https://build.fhir.org/ig/hl7dk/dk-hackathons",
+    "version-count" : 1,
+    "latest" : {
+      "version" : "1.0.0",
+      "date" : "2026-06-23",
+      "path" : "http://hl7.dk/fhir/hackathons/1.0.0"
+    },
+    "milestone" : {
+      "version" : "1.0.0",
+      "date" : "2026-06-23",
+      "path" : "http://hl7.dk/fhir/hackathons/1.0.0"
+    }
   }]
 }
