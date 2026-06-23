@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="LoveCodes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet LoveCodes</b></p><a name="LoveCodes"> </a><a name="hcLoveCodes"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-MentalHealthCodes.html"><code>http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;1.0.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-8270c0ae-2ae5-4204-8c12-bd35e61b7498">8270c0ae-2ae5-4204-8c12-bd35e61b7498</a></td><td>Jeg føler mig elsket</td></tr><tr><td><a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-2620845c-4831-4291-a02c-b56b2c8908fe">2620845c-4831-4291-a02c-b56b2c8908fe</a></td><td>Jeg føler mig nogle gange elsket</td></tr><tr><td><a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-1a705260-cf44-4dd8-83fb-994baf656a6a">1a705260-cf44-4dd8-83fb-994baf656a6a</a></td><td>Jeg føler mig ikke elsket</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/LoveCodes"/>
+  <version value="1.0.0"/>
+  <title value="Kærlighed"/>
+  <status value="active"/>
+  <date value="2026-06-23T17:13:16+02:00"/>
+  <publisher value="HL7 Denmark"/>
+  <contact>
+    <name value="HL7 Denmark"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="dk-affiliate@hl7.dk"/>
+    </telecom>
+  </contact>
+  <description value="Svarmuligheder for kærlighed i forbindelse med psykisk helbred questionnaire hackathon 2022"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"/>
+      <concept>
+        <code value="8270c0ae-2ae5-4204-8c12-bd35e61b7498"/>
+        <display value="Jeg føler mig elsket"/>
+      </concept>
+      <concept>
+        <code value="2620845c-4831-4291-a02c-b56b2c8908fe"/>
+        <display value="Jeg føler mig nogle gange elsket"/>
+      </concept>
+      <concept>
+        <code value="1a705260-cf44-4dd8-83fb-994baf656a6a"/>
+        <display value="Jeg føler mig ikke elsket"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

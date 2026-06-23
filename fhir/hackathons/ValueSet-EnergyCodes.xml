@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="EnergyCodes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet EnergyCodes</b></p><a name="EnergyCodes"> </a><a name="hcEnergyCodes"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-MentalHealthCodes.html"><code>http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;1.0.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-a5341a86-677d-4d53-84a1-498dc1a4ed42">a5341a86-677d-4d53-84a1-498dc1a4ed42</a></td><td>Jeg føler mig klar og frisk de fleste dage</td></tr><tr><td><a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-ea31af7a-cf51-4b53-b4d2-bef393b42946">ea31af7a-cf51-4b53-b4d2-bef393b42946</a></td><td>Jeg har følt mig uoplagt et par gange om ugen</td></tr><tr><td><a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-6f4db47c-cf6a-44c4-b434-aa6edec6e064">6f4db47c-cf6a-44c4-b434-aa6edec6e064</a></td><td>Jeg er hele tiden træt</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/EnergyCodes"/>
+  <version value="1.0.0"/>
+  <title value="Oplagthed"/>
+  <status value="active"/>
+  <date value="2026-06-23T17:17:05+02:00"/>
+  <publisher value="HL7 Denmark"/>
+  <contact>
+    <name value="HL7 Denmark"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="dk-affiliate@hl7.dk"/>
+    </telecom>
+  </contact>
+  <description value="Svarmuligheder for oplagthed i forbindelse med psykisk helbred questionnaire hackathon 2022"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"/>
+      <concept>
+        <code value="a5341a86-677d-4d53-84a1-498dc1a4ed42"/>
+        <display value="Jeg føler mig klar og frisk de fleste dage"/>
+      </concept>
+      <concept>
+        <code value="ea31af7a-cf51-4b53-b4d2-bef393b42946"/>
+        <display value="Jeg har følt mig uoplagt et par gange om ugen"/>
+      </concept>
+      <concept>
+        <code value="6f4db47c-cf6a-44c4-b434-aa6edec6e064"/>
+        <display value="Jeg er hele tiden træt"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

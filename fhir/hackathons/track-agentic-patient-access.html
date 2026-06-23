@@ -1,0 +1,569 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Track 1: Agentic Patient Access - Danish Hackathon 2026 v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/hl7-dk.css"/>
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a no-external="true" id="hl7-logo" href="https://www.hl7.dk">
+            <img src="assets/images/HL7_Denmark.png" alt="Visit the HL7 Danish website" height="50"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+        </div>        
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Danish Hackathon 2026</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - Release
+
+
+
+  <img src="assets/images/dnk.svg" alt="Denmark flag" title="Denmark" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="preparation.html">Preparation</a>
+  </li>
+  <li>
+    <a href="track-agentic-patient-access.html">Agentic Patient Access</a>
+  </li>
+  <li>
+    <a href="track-telemedicine.html">Telemedicine</a>
+  </li>
+  <li>
+    <a href="track-3.html">Track 3</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="results.html">Results</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Track 1: Agentic Patient Access</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">This page is part of the HL7 FHIR Implementation Guide: DK Hackathons (v1.0.0: Release) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="http://hl7.dk/fhir/hackathons/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Track 1: Agentic Patient Access</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#goals" id="markdown-toc-goals">Goals</a></li>
+  <li><a href="#candidate-danish-systems" id="markdown-toc-candidate-danish-systems">Candidate Danish Systems</a></li>
+  <li><a href="#prerequisites" id="markdown-toc-prerequisites">Prerequisites</a></li>
+  <li><a href="#tasks" id="markdown-toc-tasks">Tasks</a></li>
+  <li><a href="#using-the-c3po-add-ons-plugin" id="markdown-toc-using-the-c3po-add-ons-plugin">Using the c3po add-ons plugin</a></li>
+  <li><a href="#expected-outcomes" id="markdown-toc-expected-outcomes">Expected Outcomes</a></li>
+  <li><a href="#resources" id="markdown-toc-resources">Resources</a></li>
+  <li><a href="#results" id="markdown-toc-results">Results</a></li>
+</ul>
+
+</div>
+<p><strong>Track lead: Jens Villadsen</strong></p>
+
+<h3 id="overview">Overview</h3>
+
+<p>This track explores whether AI agents can give patients programmatic, FHIR-based access to Danish health data portals that do <strong>not</strong> natively expose a FHIR API. The approach is inspired by the <a href="https://github.com/c3po-initiative/Dhroxy">Dhroxy</a> project, developed as part of the <a href="https://github.com/orgs/c3po-initiative/repositories">c3po initiative</a>, which already uses AI agents to map the data models and REST APIs of <a href="https://www.sundhed.dk/">sundhed.dk</a> onto a FHIR REST interface.</p>
+
+<p>In a Danish setting, sundhed.dk is only the beginning. Patients meet their data through a fragmented landscape of GP apps, regional booking portals and national registers — most of which have no FHIR endpoint at all. The challenge for this track is to pick one of these portals and stand up a FHIR facade in front of it, reusing and extending the c3po patterns rather than starting from scratch.</p>
+
+<p>To make this concrete, the track leans on two c3po assets:</p>
+
+<ul>
+  <li><strong><a href="https://github.com/c3po-initiative/Dhroxy">Dhroxy</a></strong> — a working Kotlin reference proxy for sundhed.dk you can extend or learn from.</li>
+  <li><strong><a href="https://github.com/c3po-initiative/add-ons">c3po add-ons</a></strong> — a Claude Code plugin whose <code class="language-plaintext highlighter-rouge">fhir-facade-plan</code> skill walks you from a captured HAR/OpenAPI all the way to an implementation plan (see <a href="#using-the-c3po-add-ons-plugin">Using the c3po add-ons plugin</a> below).</li>
+</ul>
+
+<h3 id="goals">Goals</h3>
+
+<ul>
+  <li>Reverse-engineer the HTTP/API traffic of a patient-facing Danish health portal that does not expose a FHIR API</li>
+  <li>Build an AI-assisted proxy (or FHIR facade) that translates the portal's internal data into FHIR R4 resources</li>
+  <li>Profile the output against the Danish national profiles — <a href="https://hl7.dk/fhir/core/">dk-core</a> and the <a href="https://ehealth.sundhed.dk/fhir/">eHealth Infrastructure IG</a> (<code class="language-plaintext highlighter-rouge">dk.ehealth.sundhed.fhir.ig.core</code>) — not just vanilla R4</li>
+  <li>Document the approach so others can replicate it for other portals and contribute it back to the c3po initiative</li>
+</ul>
+
+<h3 id="candidate-danish-systems">Candidate Danish Systems</h3>
+
+<p>The table below lists ten Danish patient-facing portals and central systems that are not (yet) reachable as FHIR. Any of these are valid targets. Participants are also welcome to bring their own favourite portal.</p>
+
+<p>Two things are common to almost all of them: citizens authenticate with <strong><a href="https://www.mitid.dk/">MitID</a></strong> (typically brokered through <strong>NemLog-in</strong> as OIDC/SAML), and the patient is identified by <strong>CPR-nummer</strong> — the Danish equivalents of the Swedish BankID and personnummer. National backend services on the <strong>NSP</strong> (<a href="https://www.nspop.dk/">Den Nationale Serviceplatform</a>) add their own layer: professional access uses a <strong>SOSI ID-kort</strong> SAML assertion over <strong>DGWS</strong> (Den Gode Webservice, SOAP), while delegated citizen access uses <strong>OIO-IDWS</strong>, all carried over <strong>Sundhedsdatanettet (SDN)</strong>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>System</th>
+      <th>Operator</th>
+      <th>Patient access</th>
+      <th>Authentication</th>
+      <th>FHIR target resources</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="https://www.sundhed.dk/">sundhed.dk</a> / MinSundhed app</td>
+      <td>Sundhedsdatastyrelsen, Danske Regioner &amp; KL</td>
+      <td><strong>Direct</strong> — MitID login</td>
+      <td>MitID via NemLog-in (OIDC) → session cookie; CPR identifies the citizen</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient</code>, <code class="language-plaintext highlighter-rouge">Condition</code>, <code class="language-plaintext highlighter-rouge">Observation</code>, <code class="language-plaintext highlighter-rouge">MedicationStatement</code>, <code class="language-plaintext highlighter-rouge">Immunization</code>, <code class="language-plaintext highlighter-rouge">AllergyIntolerance</code>, <code class="language-plaintext highlighter-rouge">DocumentReference</code> — <em>already partly covered by <a href="https://github.com/c3po-initiative/Dhroxy">Dhroxy</a>; the natural starting point is to extend it</em></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="https://minlaegeapp.dk/">Min Læge</a> (minlaegeapp.dk)</td>
+      <td>PLO / Sundhedsministeriet; clinical data brokered via PLSP</td>
+      <td><strong>Direct</strong> — MitID</td>
+      <td>MitID → app session token; GP-record data is exposed only after the citizen grants consent, then served from the Primary Sector's service platform (PLSP)</td>
+      <td><code class="language-plaintext highlighter-rouge">Appointment</code>, <code class="language-plaintext highlighter-rouge">Communication</code> (e-konsultation), <code class="language-plaintext highlighter-rouge">MedicationRequest</code> (receptfornyelse), <code class="language-plaintext highlighter-rouge">Observation</code>/<code class="language-plaintext highlighter-rouge">DiagnosticReport</code> (prøvesvar), <code class="language-plaintext highlighter-rouge">Immunization</code></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="https://booking.rm.dk/MineAftaler/">MineAftaler Region Midtjylland</a> (booking.rm.dk)</td>
+      <td>Region Midtjylland (BookPlan)</td>
+      <td><strong>Direct</strong> — MitID, or anonymous via booking number (bon-nummer)</td>
+      <td>MitID → session cookie; a bon-nummer from the appointment letter grants scoped anonymous access to a single appointment</td>
+      <td><code class="language-plaintext highlighter-rouge">Appointment</code>, <code class="language-plaintext highlighter-rouge">Schedule</code>, <code class="language-plaintext highlighter-rouge">Slot</code></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="https://booking.rn.dk/">MineAftaler Region Nordjylland</a> (booking.rn.dk)</td>
+      <td>Region Nordjylland (BookPlan)</td>
+      <td><strong>Direct</strong> — MitID</td>
+      <td>Same BookPlan pattern as Region Midtjylland</td>
+      <td><code class="language-plaintext highlighter-rouge">Appointment</code>, <code class="language-plaintext highlighter-rouge">Schedule</code>, <code class="language-plaintext highlighter-rouge">Slot</code></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><a href="https://mit.rsyd.dk/">Mit Sygehus / MineAftaler Syddanmark</a> (mitsygehus.dk)</td>
+      <td>Region Syddanmark (Medware)</td>
+      <td><strong>Direct</strong> — MitID</td>
+      <td>MitID → session; consent required on first login. <em>Note: Mit Sygehus closed 28 May 2026 and was replaced by MineAftaler Syddanmark — target the current app</em></td>
+      <td><code class="language-plaintext highlighter-rouge">Appointment</code>, <code class="language-plaintext highlighter-rouge">Communication</code>, <code class="language-plaintext highlighter-rouge">CarePlan</code>, <code class="language-plaintext highlighter-rouge">DocumentReference</code></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><a href="https://minsp.dk/">Min Sundhedsplatform</a> (minsp.dk)</td>
+      <td>Region Hovedstaden &amp; Region Sjælland (Epic MyChart)</td>
+      <td><strong>Direct</strong> — MitID</td>
+      <td>MitID → MyChart session. Epic speaks FHIR internally (see <a href="https://fhir.epic.com/">fhir.epic.com</a>), but the regions publish <strong>no</strong> patient-facing FHIR endpoint — the MyChart web/JSON API has to be mapped</td>
+      <td><code class="language-plaintext highlighter-rouge">Patient</code>, <code class="language-plaintext highlighter-rouge">Observation</code>, <code class="language-plaintext highlighter-rouge">DiagnosticReport</code>, <code class="language-plaintext highlighter-rouge">Appointment</code>, <code class="language-plaintext highlighter-rouge">MedicationRequest</code>, <code class="language-plaintext highlighter-rouge">DocumentReference</code></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><a href="https://www.fmk.dk/">Fælles Medicinkort (FMK)</a></td>
+      <td>Sundhedsdatastyrelsen (NSP)</td>
+      <td><strong>Indirect</strong> — citizens see FMK via sundhed.dk / Min Læge; a direct B2B interface exists</td>
+      <td>Citizen access: MitID → <strong>OIO-IDWS</strong> SAML token; professional access: <strong>SOSI ID-kort</strong> + <strong>DGWS</strong> SOAP over SDN. No public REST/FHIR</td>
+      <td><code class="language-plaintext highlighter-rouge">MedicationStatement</code>, <code class="language-plaintext highlighter-rouge">MedicationRequest</code>, <code class="language-plaintext highlighter-rouge">MedicationDispense</code></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td><a href="https://www.sundhedsdatastyrelsen.dk/">Det Danske Vaccinationsregister (DDV)</a></td>
+      <td>Sundhedsdatastyrelsen (NSP)</td>
+      <td><strong>Indirect</strong> — viewed via sundhed.dk &amp; Min Læge (MitID)</td>
+      <td>Same NSP pattern as FMK: MitID/OIO-IDWS (citizen) or SOSI/DGWS (professional)</td>
+      <td><code class="language-plaintext highlighter-rouge">Immunization</code></td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td><a href="https://www.webreq.dk/">WebReq / WebPatient</a></td>
+      <td>DXC Technology / regional laboratories</td>
+      <td><strong>Direct (WebPatient)</strong> — MitID; results mostly surfaced via sundhed.dk</td>
+      <td>MitID → session; WebPatient serves patient-entered questionnaires, while lab orders/results flow over MedCom EDIFACT/XML behind the scenes</td>
+      <td><code class="language-plaintext highlighter-rouge">ServiceRequest</code>, <code class="language-plaintext highlighter-rouge">DiagnosticReport</code>, <code class="language-plaintext highlighter-rouge">Observation</code>, <code class="language-plaintext highlighter-rouge">QuestionnaireResponse</code></td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td><a href="https://sundhedsdatastyrelsen.dk/digitale-loesninger/digitalt-graviditetsforloeb/app">Min Graviditet / Graviditetsmappen</a></td>
+      <td>Sundhedsdatastyrelsen (NSP)</td>
+      <td><strong>Direct</strong> — MitID</td>
+      <td>MitID → app session; measurements, scan results and consultation notes are drawn from the national Graviditetsmappe on the NSP</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation</code> (målinger/scanninger), <code class="language-plaintext highlighter-rouge">CarePlan</code> (forløb), <code class="language-plaintext highlighter-rouge">Appointment</code>, <code class="language-plaintext highlighter-rouge">DocumentReference</code> (noter)</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p><strong>Note:</strong> Some Danish systems are deliberately <em>not</em> on this list because they already speak FHIR — you should map <em>to</em> these, not reverse-engineer them:</p>
+  <ul>
+    <li>The national <strong>"Et samlet patientoverblik"</strong> services — <em>Aftaleoversigt</em>, <em>Fælles Stamkort</em>, <em>Planer og indsatser</em> — are FHIR R4 services on the NSP.</li>
+    <li>The <strong>eHealth Infrastructure / FUT</strong> platform (<a href="https://ehealth.sundhed.dk/fhir/">ehealth.sundhed.dk/fhir</a>, package <code class="language-plaintext highlighter-rouge">dk.ehealth.sundhed.fhir.ig.core</code>) is a national FHIR R4 backbone for telemedicine and shared care — and the conformance target for the resources you produce in this track.</li>
+    <li><strong><a href="https://github.com/c3po-initiative/Dhroxy">Dhroxy</a></strong> already proxies much of <strong>sundhed.dk</strong> to FHIR — extend it rather than starting over.</li>
+  </ul>
+</blockquote>
+
+<p>Most of these systems also have Android apps on Google Play (e.g. <em>Min Læge</em>, <em>MinSundhed</em>, <em>MineAftaler</em>, <em>Mit Sygehus</em>, Epic <em>MyChart</em>). These apps are valid targets for decompilation and static analysis (e.g. using <a href="https://github.com/skylot/jadx">jadx</a> or <a href="https://apktool.org/">apktool</a>) and can reveal API endpoints, request formats, and authentication flows that are not documented anywhere publicly.</p>
+
+<blockquote>
+  <p><strong>A note on fair game:</strong> Treat every portal here as a black box and work only from what you can observe yourself — your own test/personal login, traffic you capture, and a publicly available APK. Don't rely on internal or vendor-confidential knowledge of how any of these systems are built.</p>
+</blockquote>
+
+<h3 id="prerequisites">Prerequisites</h3>
+
+<p>Attendees need to bring three things:</p>
+
+<ol>
+  <li><strong>A target system</strong> — either pick one from the table above or bring your own favourite Danish health portal that is not already on FHIR</li>
+  <li><strong>An AI tool</strong> to which you have a license (Claude Code, Cursor, Copilot, or similar)</li>
+  <li><strong>The <a href="https://github.com/c3po-initiative/add-ons">c3po add-ons</a> plugin</strong> installed (if you use Claude Code) — see below</li>
+</ol>
+
+<p>Everything else should be possible to do at the hackathon.</p>
+
+<h3 id="tasks">Tasks</h3>
+
+<ol>
+  <li><strong>Explore</strong> — Log into your target portal with a test or personal account and capture the HTTP traffic using one of the methods below. Identify the key API calls that return health data.
+    <ul>
+      <li><strong>Browser DevTools — Copy as cURL</strong> — The quickest way to capture a single request. Open the Network tab, right-click any request, and choose <strong>Copy → Copy as cURL</strong> (see <a href="https://www.scrapingbee.com/tutorials/how-to-extract-curl-requests-from-chrome/">full tutorial</a>). The result is a self-contained shell command you can paste directly into a terminal or hand to an AI tool:
+        <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="s1">'https://booking.rm.dk/MineAftaler/api/appointments'</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'Accept: application/json'</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'X-Requested-With: XMLHttpRequest'</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s1">'Cookie: SESSION=abc123; XSRF-TOKEN=xyz'</span>
+</code></pre></div>        </div>
+      </li>
+      <li><strong>Browser DevTools — Export HAR</strong> — Right-click anywhere in the Network tab request list and choose <strong>Save all as HAR with content</strong>, or use the download icon. A HAR file captures the full session (all requests, all responses, all headers) in one JSON file — better than individual cURL commands when you want an AI to reason across many requests at once.</li>
+      <li><strong>Proxy</strong> — Route traffic through <a href="https://mitmproxy.org/">mitmproxy</a> or Charles Proxy for richer inspection and scripting.</li>
+      <li><strong>Android app decompilation</strong> — If the portal has an Android app, download the APK and decompile it with <a href="https://github.com/skylot/jadx">jadx</a> or <a href="https://apktool.org/">apktool</a> to extract hardcoded endpoints and request schemas without needing to intercept live traffic.</li>
+    </ul>
+
+    <blockquote>
+      <p><strong>Tip:</strong> Before feeding a HAR file to an AI tool, scrub or replace real patient values (names, CPR-numre, dates of birth) with synthetic equivalents — the structure and field names are what matter for mapping, not the actual data. <a href="https://github.com/cloudflare/har-sanitizer">har-sanitizer</a> (Cloudflare) can help automate this step. Alternatively, <a href="https://github.com/ChromeDevTools/chrome-devtools-mcp">chrome-devtools-mcp</a> lets an AI agent connect directly to Chrome DevTools and observe network traffic in real time, skipping the manual export step entirely.</p>
+    </blockquote>
+  </li>
+  <li><strong>Map</strong> — For each data type returned (appointments, lab results, medications, …) identify the closest FHIR R4 resource and draft a simple mapping table. Where a Danish profile exists, map to it: prefer <a href="https://hl7.dk/fhir/core/">dk-core</a> profiles and the <a href="https://ehealth.sundhed.dk/fhir/">eHealth Infrastructure IG</a> (<code class="language-plaintext highlighter-rouge">dk.ehealth.sundhed.fhir.ig.core</code>) over plain R4, and use Danish/Nordic code systems (CPR, SOR, the <a href="https://tx-nordics.fhir.org/fhir">Nordic terminology server</a>) where they apply.</li>
+  <li><strong>Build</strong> — Use an AI coding agent to scaffold a lightweight proxy server (any language/framework) that authenticates against the target portal and re-exposes the data as FHIR R4. If you are working in Claude Code, drive the planning with the <strong><code class="language-plaintext highlighter-rouge">fhir-facade-plan</code></strong> skill from the c3po add-ons plugin (see below). If your target is sundhed.dk, start from <a href="https://github.com/c3po-initiative/Dhroxy">Dhroxy</a> instead of an empty repo.</li>
+  <li><strong>Validate</strong> — Run the FHIR responses through the <a href="https://validator.fhir.org">FHIR validator</a> or a local validator, with the Danish packages loaded so you check conformance against the real national profiles:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="nt">-jar</span> validator_cli.jar myresource.json <span class="se">\</span>
+  <span class="nt">-version</span> 4.0.1 <span class="se">\</span>
+  <span class="nt">-ig</span> dk.ehealth.sundhed.fhir.ig.core#9.0.1 <span class="se">\</span>
+  <span class="nt">-ig</span> hl7.fhir.dk.core
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Document</strong> — Write a short README that explains the authentication flow (MitID/NemLog-in, and any NSP/OIO-IDWS hops), the endpoint mapping, and any known limitations.</li>
+  <li><strong>API Documentation</strong> — Consider using <a href="https://github.com/mikkelkrogsholm/api-mapper">api-mapper</a> to turn your captured traffic into an OpenAPI spec.</li>
+</ol>
+
+<h3 id="using-the-c3po-add-ons-plugin">Using the c3po add-ons plugin</h3>
+
+<p>The <a href="https://github.com/c3po-initiative/add-ons">c3po add-ons</a> repository is a Claude Code plugin that packages the <code class="language-plaintext highlighter-rouge">fhir-facade-plan</code> skill. The skill <em>is</em> the planning workflow this track is built around: you hand it your captured HAR (and optionally an OpenAPI spec), and it walks Phases 1–5 below — HAR/OpenAPI analysis → FHIR resource mapping → tech-stack recommendation → architecture → implementation roadmap — entirely in plan mode, surfacing decisions for your approval before any code is written.</p>
+
+<p><strong>Install it</strong> (Claude Code):</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/c3po-initiative/add-ons.git
+<span class="c"># then, inside Claude Code:</span>
+/plugin <span class="nb">install</span> /absolute/path/to/add-ons
+</code></pre></div></div>
+
+<p><strong>Invoke it</strong> — once installed, just point it at your sanitized capture:</p>
+
+<blockquote>
+  <p>"Plan a FHIR facade for <code class="language-plaintext highlighter-rouge">./minelaftaler.har</code> and <code class="language-plaintext highlighter-rouge">./openapi.yaml</code>, targeting the Danish dk-core and dk.ehealth.sundhed.fhir.ig.core profiles."</p>
+</blockquote>
+
+<p>If you are <em>not</em> using Claude Code, the skill's full prompt is reproduced below — paste it into your AI tool of choice and provide the same inputs.</p>
+
+<h4 id="the-fhir-facade-plan-prompt-manual-fallback">The fhir-facade-plan prompt (manual fallback)</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># FHIR Facade Implementation — Plan Mode
+
+You are a senior healthcare integration engineer. Your task is to **analyze provided artifacts and produce a detailed implementation plan** for a FHIR R4 facade layer before writing any code.
+
+## Inputs provided
+- One or more **HAR files** (browser network captures) showing real HTTP traffic from the underlying proprietary API
+- An **OpenAPI specification** describing the underlying API's endpoints, schemas, and authentication
+- The **target FHIR profiles**: Danish dk-core (hl7.fhir.dk.core) and the eHealth Infrastructure IG (dk.ehealth.sundhed.fhir.ig.core). Conform to these, not just base R4, where applicable.
+
+---
+
+## Phase 1 — Analysis (complete before any planning)
+
+### HAR file analysis
+For each HAR file:
+1. Identify all unique API endpoints called (method + path)
+2. Extract request headers and authentication patterns (tokens, cookies, API keys)
+   - **Note:** If the HAR contains login/auth flows (e.g. MitID/NemLog-in redirects, `/oauth/token`, `/auth`), you may **skip detailed analysis of those flows** unless they reveal something structurally important about how session tokens are used downstream. Just note that auth exists and what credential type is passed on subsequent requests.
+3. Document request/response payload shapes with representative field names and value types
+4. Note pagination patterns, error response formats, and any behaviors not reflected in the OpenAPI spec
+5. Flag discrepancies between actual HAR traffic and the OpenAPI spec
+
+### OpenAPI spec analysis
+1. List all available endpoints and operations
+2. Identify data models and their fields
+3. Note authentication/authorization schemes (summary only — implementation detail deferred)
+4. Flag endpoints that appear unused or absent in the HAR captures
+
+---
+
+## Phase 2 — FHIR Resource Identification &amp; Mapping
+
+**Infer the appropriate FHIR R4 resources from the HAR and OpenAPI data.** Do not assume a fixed resource set — let the underlying data model drive what FHIR resources make sense to expose. Prefer the Danish profiles (dk-core, dk.ehealth.sundhed.fhir.ig.core) and Danish/Nordic code systems (CPR, SOR) over plain R4 where they fit.
+
+For each identified mapping:
+
+| Underlying resource (HAR/OpenAPI) | FHIR R4 Resource / Danish profile | Confidence | Mapping notes / gaps |
+|-----------------------------------|-----------------------------------|------------|----------------------|
+| ...                               | ...                               | High/Med/Low | ...                |
+
+For each FHIR resource:
+- Which underlying API calls are needed to populate it?
+- What field-level transformations are required (renaming, type coercion, unit conversion, code system mapping)?
+- Which mandatory FHIR fields cannot be populated from available data? (mark for `extension`, stub value, or omission with justification)
+- Which FHIR search parameters (`_id`, `subject`, `date`, etc.) can be realistically supported?
+
+---
+
+## Phase 3 — Tech Stack Recommendation
+
+Based on the complexity, payload shapes, and patterns observed in the HAR/OpenAPI data, recommend the most appropriate tech stack for this facade. Consider:
+
+- **Ecosystem maturity** for FHIR (existing libraries, validators, terminology servers)
+- **Transformation complexity** — if mappings are heavy, prefer a language with strong data manipulation ergonomics
+- **Operational simplicity** — prefer something deployable as a single service without heavy infrastructure
+- **Reuse** — if the target is sundhed.dk, the Kotlin Dhroxy proxy is the obvious base; factor that in
+- **Team familiarity signals** — if the OpenAPI spec or HAR reveals tech clues (e.g. JSON conventions, versioning style), factor that in
+
+Provide a brief justification for your recommendation and name any key libraries (e.g. `fhir.js`, `fhirpy`, `HAPI FHIR`, `medplum`, Firely .NET SDK).
+
+---
+
+## Phase 4 — Architecture Plan
+
+Outline the facade's internal structure:
+
+1. **Layer breakdown**
+   - FHIR REST layer — handles incoming FHIR requests, routing, and basic validation
+   - Mapping/translation layer — bidirectional transforms between FHIR and proprietary models
+   - Upstream client layer — calls the underlying API; handles auth token injection, retries, and error normalization
+2. **Authentication strategy**
+   - How the facade authenticates *to* the upstream API (based on HAR evidence — MitID/NemLog-in session, NSP OIO-IDWS token, header name, refresh pattern)
+   - How the facade authenticates *its own callers* (recommend a sensible default; note this can be swapped out)
+   - Flag whether credential handling can be simplified or stubbed for an initial implementation
+3. **Caching strategy** — where caching adds value given observed traffic patterns
+4. **Error handling** — how upstream errors map to FHIR `OperationOutcome` responses
+5. **Capability statement** — what the `/metadata` endpoint will advertise
+
+---
+
+## Phase 5 — Implementation Roadmap
+
+Break work into ordered milestones. For each, list the modules/files to be created:
+
+- **Milestone 1:** Project scaffold + upstream API client (raw calls working, auth token injected)
+- **Milestone 2:** First FHIR resource end-to-end — pick the simplest/most complete mapping from Phase 2
+- **Milestone 3:** Remaining FHIR resources in priority order
+- **Milestone 4:** Search parameter support
+- **Milestone 5:** Validation against the Danish profiles, error normalization, `/metadata` conformance statement
+- **Milestone 6:** Tests — unit for mappers, integration against a FHIR validator, contract tests
+
+---
+
+## Flags &amp; Decisions Required
+
+Before finishing the plan, surface:
+- **Ambiguities** in the HAR/OpenAPI that need a human decision before implementation can proceed
+- **Mandatory FHIR fields** that are unavailable from the source system and require a policy decision
+- **Security observations** from the HAR (tokens in query strings, missing headers, overly broad scopes)
+- **Scope recommendations** — if the HAR reveals the system is large, suggest a phased scope rather than boiling the ocean
+
+---
+
+**Do not write implementation code yet.**
+Deliver the full analysis and plan, then pause and wait for review and approval before proceeding.
+</code></pre></div></div>
+
+<h3 id="expected-outcomes">Expected Outcomes</h3>
+
+<ul>
+  <li>A GitHub repository (or a branch in an existing repo) containing a working or partially working FHIR proxy/facade for at least one non-FHIR Danish health system</li>
+  <li>A mapping document (could be a simple markdown table) showing how the target system's data model maps to FHIR R4 — ideally to the Danish dk-core / eHealth Infrastructure profiles</li>
+  <li>A short demo or write-up suitable for contributing back to the <a href="https://github.com/orgs/c3po-initiative/repositories">c3po initiative</a></li>
+</ul>
+
+<h3 id="resources">Resources</h3>
+
+<ul>
+  <li><a href="https://github.com/orgs/c3po-initiative/repositories">c3po initiative repositories</a> — reference implementations including Dhroxy (Denmark) and inroxy (Sweden)</li>
+  <li><a href="https://github.com/c3po-initiative/Dhroxy">Dhroxy</a> — a working FHIR proxy that maps sundhed.dk to a FHIR REST interface; the natural starting point for a sundhed.dk target</li>
+  <li><a href="https://github.com/c3po-initiative/add-ons">c3po add-ons</a> — Claude Code plugin providing the <code class="language-plaintext highlighter-rouge">fhir-facade-plan</code> skill used in this track</li>
+  <li><a href="https://ehealth.sundhed.dk/fhir/">eHealth Infrastructure FHIR IG</a> — Danish national FHIR R4 profiles (<code class="language-plaintext highlighter-rouge">dk.ehealth.sundhed.fhir.ig.core</code>); the conformance target for your output</li>
+  <li><a href="https://hl7.dk/fhir/core/">dk-core</a> — HL7 Denmark's base FHIR profiles (Patient, Organization, etc.)</li>
+  <li><a href="https://www.nspop.dk/">NSP / nspop</a> — documentation for Den Nationale Serviceplatform and its security services (DGWS, OIO-IDWS, SOSI)</li>
+  <li><a href="https://www.medcom.dk/">MedCom</a> — Danish standards body for healthcare data exchange</li>
+  <li><a href="https://validator.fhir.org">FHIR Validator</a> — validate FHIR resources online</li>
+  <li><a href="https://github.com/ChromeDevTools/chrome-devtools-mcp">chrome-devtools-mcp</a> — MCP server that gives an AI agent direct access to Chrome DevTools (network tab, console, DOM) — useful for live traffic inspection without a manual HAR export</li>
+  <li><a href="https://github.com/mikkelkrogsholm/api-mapper">api-mapper</a> — turn captured traffic into an OpenAPI spec</li>
+</ul>
+
+<h3 id="results">Results</h3>
+
+<p><a name="l1274">​</a>See the <a href="results.html#agentic-patient-access">Results</a> page.</p>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.dk">HL7 Denmark</a>.  Package hl7.fhir.dk.hackathons#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 23, 2026 17:17+0200">2026-06-23</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

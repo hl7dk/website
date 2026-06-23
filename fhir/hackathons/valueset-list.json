@@ -1,0 +1,83 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/DesireToBeWithOthersCodes",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : null,
+    "title" : "Lyst til at være sammen med andre",
+    "description" : "Svarmuligheder for lyst til at være sammen med andre i forbindelse med psykisk helbred questionnaire hackathon 2022",
+    "systems" : ["http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"]
+  },
+  {
+    "url" : "http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/EnergyCodes",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : null,
+    "title" : "Oplagthed",
+    "description" : "Svarmuligheder for oplagthed i forbindelse med psykisk helbred questionnaire hackathon 2022",
+    "systems" : ["http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"]
+  },
+  {
+    "url" : "http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/FriendshipCodes",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : null,
+    "title" : "Venskaber",
+    "description" : "Svarmuligheder for venskaber i forbindelse med psykisk helbred questionnaire hackathon 2022",
+    "systems" : ["http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"]
+  },
+  {
+    "url" : "http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/LoveCodes",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : null,
+    "title" : "Kærlighed",
+    "description" : "Svarmuligheder for kærlighed i forbindelse med psykisk helbred questionnaire hackathon 2022",
+    "systems" : ["http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"]
+  },
+  {
+    "url" : "http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/MoodCodes",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : null,
+    "title" : "Humør",
+    "description" : "Svarmuligheder for humør i forbindelse med psykisk helbred questionnaire hackathon 2022",
+    "systems" : ["http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"]
+  },
+  {
+    "url" : "http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/PressureCodes",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : null,
+    "title" : "Pres",
+    "description" : "Svarmuligheder for pres i forbindelse med psykisk helbred questionnaire hackathon 2022",
+    "systems" : ["http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"]
+  },
+  {
+    "url" : "http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/WorkSchoolExpectationCodes",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : null,
+    "title" : "Arbejde/skole forventning",
+    "description" : "Svarmuligheder for arbejde/skole forventning i forbindelse med psykisk helbred questionnaire hackathon 2022",
+    "systems" : ["http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"]
+  },
+  {
+    "url" : "http://hl7.dk/fhir/hackathons/ValueSet/ActivityCodes",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "ActivityCodes",
+    "title" : "ObservationCodes",
+    "description" : "Observation codes value set",
+    "systems" : ["http://snomed.info/sct"]
+  },
+  {
+    "url" : "http://hl7.dk/fhir/hackathons/ValueSet/ObservationCodesSCT",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "ObservationCodesSCT",
+    "title" : "ObservationCodesSCT",
+    "description" : "Observation codes value set",
+    "systems" : ["http://snomed.info/sct"]
+  }]
+}

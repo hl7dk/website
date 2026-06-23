@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/hackathons/ValueSet/DesireToBeWithOthersCodes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DesireToBeWithOthersCodes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet DesireToBeWithOthersCodes</b></p><a name=\"DesireToBeWithOthersCodes\"> </a><a name=\"hcDesireToBeWithOthersCodes\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-MentalHealthCodes.html\"><code>http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-MentalHealthCodes.html#MentalHealthCodes-bf1232a5-f7fa-470f-9b22-58e850a047a9\">bf1232a5-f7fa-470f-9b22-58e850a047a9</a></td><td>Jeg vil gerne være sammen med andre</td></tr><tr><td><a href=\"CodeSystem-MentalHealthCodes.html#MentalHealthCodes-48405c96-5f94-4ccf-b9ef-44579da052a8\">48405c96-5f94-4ccf-b9ef-44579da052a8</a></td><td>Nogle få gange ugentligt har jeg lyst til at være sammen med andre</td></tr><tr><td><a href=\"CodeSystem-MentalHealthCodes.html#MentalHealthCodes-cbce7f88-408f-45bf-bfcf-5ea995476bb7\">cbce7f88-408f-45bf-bfcf-5ea995476bb7</a></td><td>Jeg har aldrig lyst til at være sammen med andre</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/DesireToBeWithOthersCodes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:title [ fhir:v "Lyst til at være sammen med andre"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-06-23T17:13:16+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Denmark" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "dk-affiliate@hl7.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Svarmuligheder for lyst til at være sammen med andre i forbindelse med psykisk helbred questionnaire hackathon 2022"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "bf1232a5-f7fa-470f-9b22-58e850a047a9" ] ;
+         fhir:display [ fhir:v "Jeg vil gerne være sammen med andre" ]
+       ] [
+         fhir:code [ fhir:v "48405c96-5f94-4ccf-b9ef-44579da052a8" ] ;
+         fhir:display [ fhir:v "Nogle få gange ugentligt har jeg lyst til at være sammen med andre" ]
+       ] [
+         fhir:code [ fhir:v "cbce7f88-408f-45bf-bfcf-5ea995476bb7" ] ;
+         fhir:display [ fhir:v "Jeg har aldrig lyst til at være sammen med andre" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

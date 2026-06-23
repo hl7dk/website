@@ -1,0 +1,2476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="34b555c1-33db-46c3-8319-72c7a49978c8"/>
+  <meta>
+    <lastUpdated value="2026-06-23T17:17:05.374+02:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://hl7.dk/fhir/hackathons/ValueSet/ActivityCodes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set expansion contains 48 concepts.</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (da)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-418305009"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/418305009">418305009</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;418305009&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;418305009&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-63448001"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/63448001">63448001</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;63448001&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;63448001&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-129006008"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/129006008">129006008</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;129006008&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;129006008&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-250000008"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/250000008">250000008</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;250000008&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;250000008&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-250001007"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/250001007">250001007</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;250001007&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;250001007&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-271705001"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/271705001">271705001</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;271705001&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;271705001&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-282097004"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/282097004">282097004</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;282097004&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;282097004&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-282148005"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/282148005">282148005</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;282148005&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;282148005&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-282154006"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/282154006">282154006</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;282154006&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;282154006&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-282160006"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/282160006">282160006</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;282160006&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;282160006&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-282166000"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/282166000">282166000</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;282166000&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;282166000&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-282172000"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/282172000">282172000</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;282172000&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;282172000&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-282202008"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/282202008">282202008</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;282202008&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;282202008&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-282208007"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/282208007">282208007</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;282208007&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;282208007&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-282214000"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/282214000">282214000</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;282214000&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;282214000&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-282221000"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/282221000">282221000</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;282221000&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;282221000&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-282227001"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/282227001">282227001</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;282227001&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;282227001&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-282233005"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/282233005">282233005</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;282233005&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;282233005&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-282239009"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/282239009">282239009</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;282239009&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;282239009&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-363836006"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/363836006">363836006</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;363836006&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;363836006&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-363837002"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/363837002">363837002</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;363837002&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;363837002&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-364578004"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/364578004">364578004</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;364578004&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;364578004&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-418060005"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/418060005">418060005</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;418060005&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;418060005&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-418594001"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/418594001">418594001</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;418594001&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;418594001&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-443618001"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/443618001">443618001</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;443618001&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;443618001&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-443657009"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/443657009">443657009</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;443657009&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;443657009&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-443707009"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/443707009">443707009</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;443707009&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;443707009&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-700486009"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/700486009">700486009</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;700486009&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;700486009&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-700487000"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/700487000">700487000</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;700487000&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;700487000&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-715010008"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/715010008">715010008</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;715010008&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;715010008&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-724237005"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/724237005">724237005</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;724237005&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;724237005&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-870594006"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/870594006">870594006</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;870594006&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;870594006&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-870598009"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/870598009">870598009</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;870598009&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;870598009&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-1144649008"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/1144649008">1144649008</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;1144649008&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;1144649008&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-1222610002"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/1222610002">1222610002</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;1222610002&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;1222610002&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-1222611003"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/1222611003">1222611003</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;1222611003&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;1222611003&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-256235009"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/256235009">256235009</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;256235009&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;256235009&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-7934008"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/7934008">7934008</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;7934008&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;7934008&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-35360009"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/35360009">35360009</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;35360009&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;35360009&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-61686008"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/61686008">61686008</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;61686008&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;61686008&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-86047003"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/86047003">86047003</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;86047003&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;86047003&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-225924002"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/225924002">225924002</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;225924002&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;225924002&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-225925001"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/225925001">225925001</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;225925001&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;225925001&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-129016000"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/129016000">129016000</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;129016000&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;129016000&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-68130003"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/68130003">68130003</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;68130003&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;68130003&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-4751000"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/4751000">4751000</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;4751000&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;4751000&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-14468000"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/14468000">14468000</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;14468000&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;14468000&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-9011000175102"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/9011000175102">9011000175102</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;9011000175102&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;9011000175102&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.dk/fhir/hackathons/ValueSet/ActivityCodes"/>
+        <version value="1.0.0"/>
+        <name value="ActivityCodes"/>
+        <title value="ObservationCodes"/>
+        <status value="active"/>
+        <date value="2026-06-23T17:17:05+02:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DK"/>
+            <display value="Denmark"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
+            <valueBoolean value="true"/>
+          </extension>
+          <identifier value="urn:uuid:4d2891f9-991a-4a55-8807-1559841e6e05"/>
+          <timestamp value="2026-06-23T17:17:55+02:00"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="da"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="includeDefinition"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="418305009"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="63448001"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="129006008"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="250000008"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="250001007"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="271705001"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="282097004"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="282148005"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="282154006"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="282160006"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="282166000"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="282172000"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="282202008"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="282208007"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="282214000"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="282221000"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="282227001"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="282233005"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="282239009"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="363836006"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="363837002"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="364578004"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="418060005"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="418594001"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="443618001"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="443657009"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="443707009"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="700486009"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="700487000"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="715010008"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="724237005"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="870594006"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="870598009"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1144649008"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1222610002"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1222611003"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="256235009"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="7934008"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="35360009"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="61686008"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="86047003"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="225924002"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="225925001"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="129016000"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68130003"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="4751000"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="14468000"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="9011000175102"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.dk/fhir/hackathons/ValueSet/ObservationCodesSCT"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (da)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-68130003:704323007=385673002"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://browser.ihtsdotools.org/">68130003:704323007=385673002</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;68130003:704323007=385673002&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;68130003:704323007=385673002&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-68130003"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/68130003">68130003</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;68130003&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;68130003&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-68130003:719722006=415577004"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="https://browser.ihtsdotools.org/">68130003:719722006=415577004</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;68130003:719722006=415577004&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;68130003:719722006=415577004&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://snomed.info/sct-248263006"> </a>
+                  <code>http://snomed.info/sct</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="http://snomed.info/id/248263006">248263006</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;248263006&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;248263006&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.dk/fhir/hackathons/ValueSet/ObservationCodesSCT"/>
+        <version value="1.0.0"/>
+        <name value="ObservationCodesSCT"/>
+        <title value="ObservationCodesSCT"/>
+        <status value="active"/>
+        <date value="2026-06-23T17:17:05+02:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DK"/>
+            <display value="Denmark"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:990be9fc-da99-4e2d-afdc-e7b83cdbc3b8"/>
+          <timestamp value="2026-06-23T17:17:58+02:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="da"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="includeDefinition"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68130003:704323007=385673002"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68130003"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="68130003:719722006=415577004"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="248263006"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/DesireToBeWithOthersCodes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-MentalHealthCodes.html">codesystem Psykisk helbred koder v1.0.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (da)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes-bf1232a5-f7fa-470f-9b22-58e850a047a9"> </a>
+                  <code>http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-bf1232a5-f7fa-470f-9b22-58e850a047a9">bf1232a5-f7fa-470f-9b22-58e850a047a9</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;bf1232a5-f7fa-470f-9b22-58e850a047a9&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;bf1232a5-f7fa-470f-9b22-58e850a047a9&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes-48405c96-5f94-4ccf-b9ef-44579da052a8"> </a>
+                  <code>http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-48405c96-5f94-4ccf-b9ef-44579da052a8">48405c96-5f94-4ccf-b9ef-44579da052a8</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;48405c96-5f94-4ccf-b9ef-44579da052a8&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;48405c96-5f94-4ccf-b9ef-44579da052a8&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes-cbce7f88-408f-45bf-bfcf-5ea995476bb7"> </a>
+                  <code>http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-cbce7f88-408f-45bf-bfcf-5ea995476bb7">cbce7f88-408f-45bf-bfcf-5ea995476bb7</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;cbce7f88-408f-45bf-bfcf-5ea995476bb7&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;cbce7f88-408f-45bf-bfcf-5ea995476bb7&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/DesireToBeWithOthersCodes"/>
+        <version value="1.0.0"/>
+        <title value="Lyst til at være sammen med andre"/>
+        <status value="active"/>
+        <date value="2026-06-23T17:17:05+02:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DK"/>
+            <display value="Denmark"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:ee939c59-e988-442c-93b3-5054cd9b59cb"/>
+          <timestamp value="2026-06-23T17:17:58+02:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="da"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"/>
+            <code value="bf1232a5-f7fa-470f-9b22-58e850a047a9"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"/>
+            <code value="48405c96-5f94-4ccf-b9ef-44579da052a8"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"/>
+            <code value="cbce7f88-408f-45bf-bfcf-5ea995476bb7"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/EnergyCodes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-MentalHealthCodes.html">codesystem Psykisk helbred koder v1.0.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (da)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes-a5341a86-677d-4d53-84a1-498dc1a4ed42"> </a>
+                  <code>http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-a5341a86-677d-4d53-84a1-498dc1a4ed42">a5341a86-677d-4d53-84a1-498dc1a4ed42</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;a5341a86-677d-4d53-84a1-498dc1a4ed42&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;a5341a86-677d-4d53-84a1-498dc1a4ed42&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes-ea31af7a-cf51-4b53-b4d2-bef393b42946"> </a>
+                  <code>http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-ea31af7a-cf51-4b53-b4d2-bef393b42946">ea31af7a-cf51-4b53-b4d2-bef393b42946</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;ea31af7a-cf51-4b53-b4d2-bef393b42946&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;ea31af7a-cf51-4b53-b4d2-bef393b42946&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes-6f4db47c-cf6a-44c4-b434-aa6edec6e064"> </a>
+                  <code>http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-6f4db47c-cf6a-44c4-b434-aa6edec6e064">6f4db47c-cf6a-44c4-b434-aa6edec6e064</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;6f4db47c-cf6a-44c4-b434-aa6edec6e064&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;6f4db47c-cf6a-44c4-b434-aa6edec6e064&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/EnergyCodes"/>
+        <version value="1.0.0"/>
+        <title value="Oplagthed"/>
+        <status value="active"/>
+        <date value="2026-06-23T17:17:05+02:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DK"/>
+            <display value="Denmark"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:04d756d7-cfe8-4825-ada0-054ddd1a0601"/>
+          <timestamp value="2026-06-23T17:17:58+02:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="da"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"/>
+            <code value="a5341a86-677d-4d53-84a1-498dc1a4ed42"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"/>
+            <code value="ea31af7a-cf51-4b53-b4d2-bef393b42946"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"/>
+            <code value="6f4db47c-cf6a-44c4-b434-aa6edec6e064"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/FriendshipCodes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-MentalHealthCodes.html">codesystem Psykisk helbred koder v1.0.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (da)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes-60e95414-b97d-4197-af85-d5efc5628e86"> </a>
+                  <code>http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-60e95414-b97d-4197-af85-d5efc5628e86">60e95414-b97d-4197-af85-d5efc5628e86</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;60e95414-b97d-4197-af85-d5efc5628e86&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;60e95414-b97d-4197-af85-d5efc5628e86&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes-93105f14-245e-4e66-8db0-86866978de58"> </a>
+                  <code>http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-93105f14-245e-4e66-8db0-86866978de58">93105f14-245e-4e66-8db0-86866978de58</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;93105f14-245e-4e66-8db0-86866978de58&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;93105f14-245e-4e66-8db0-86866978de58&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes-597872aa-a00e-4de3-b0a3-03dae9fd890a"> </a>
+                  <code>http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-597872aa-a00e-4de3-b0a3-03dae9fd890a">597872aa-a00e-4de3-b0a3-03dae9fd890a</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;597872aa-a00e-4de3-b0a3-03dae9fd890a&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;597872aa-a00e-4de3-b0a3-03dae9fd890a&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/FriendshipCodes"/>
+        <version value="1.0.0"/>
+        <title value="Venskaber"/>
+        <status value="active"/>
+        <date value="2026-06-23T17:17:05+02:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DK"/>
+            <display value="Denmark"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:a3efee2e-328e-438c-955d-2269a2fdf6ae"/>
+          <timestamp value="2026-06-23T17:17:58+02:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="da"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"/>
+            <code value="60e95414-b97d-4197-af85-d5efc5628e86"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"/>
+            <code value="93105f14-245e-4e66-8db0-86866978de58"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"/>
+            <code value="597872aa-a00e-4de3-b0a3-03dae9fd890a"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/LoveCodes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-MentalHealthCodes.html">codesystem Psykisk helbred koder v1.0.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (da)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes-8270c0ae-2ae5-4204-8c12-bd35e61b7498"> </a>
+                  <code>http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-8270c0ae-2ae5-4204-8c12-bd35e61b7498">8270c0ae-2ae5-4204-8c12-bd35e61b7498</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;8270c0ae-2ae5-4204-8c12-bd35e61b7498&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;8270c0ae-2ae5-4204-8c12-bd35e61b7498&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes-2620845c-4831-4291-a02c-b56b2c8908fe"> </a>
+                  <code>http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-2620845c-4831-4291-a02c-b56b2c8908fe">2620845c-4831-4291-a02c-b56b2c8908fe</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;2620845c-4831-4291-a02c-b56b2c8908fe&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;2620845c-4831-4291-a02c-b56b2c8908fe&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes-1a705260-cf44-4dd8-83fb-994baf656a6a"> </a>
+                  <code>http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-1a705260-cf44-4dd8-83fb-994baf656a6a">1a705260-cf44-4dd8-83fb-994baf656a6a</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;1a705260-cf44-4dd8-83fb-994baf656a6a&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;1a705260-cf44-4dd8-83fb-994baf656a6a&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/LoveCodes"/>
+        <version value="1.0.0"/>
+        <title value="Kærlighed"/>
+        <status value="active"/>
+        <date value="2026-06-23T17:17:05+02:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DK"/>
+            <display value="Denmark"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:71da0135-ab2d-429f-b4ed-ac836b6d259e"/>
+          <timestamp value="2026-06-23T17:17:58+02:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="da"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"/>
+            <code value="8270c0ae-2ae5-4204-8c12-bd35e61b7498"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"/>
+            <code value="2620845c-4831-4291-a02c-b56b2c8908fe"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"/>
+            <code value="1a705260-cf44-4dd8-83fb-994baf656a6a"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/MoodCodes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-MentalHealthCodes.html">codesystem Psykisk helbred koder v1.0.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (da)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes-b9453f69-31a2-4a67-a453-569d7cd9691a"> </a>
+                  <code>http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-b9453f69-31a2-4a67-a453-569d7cd9691a">b9453f69-31a2-4a67-a453-569d7cd9691a</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;b9453f69-31a2-4a67-a453-569d7cd9691a&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;b9453f69-31a2-4a67-a453-569d7cd9691a&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes-18b6720d-8ae2-4abf-87e7-c068efb5346c"> </a>
+                  <code>http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-18b6720d-8ae2-4abf-87e7-c068efb5346c">18b6720d-8ae2-4abf-87e7-c068efb5346c</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;18b6720d-8ae2-4abf-87e7-c068efb5346c&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;18b6720d-8ae2-4abf-87e7-c068efb5346c&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes-f78ce5be-f7d1-4f03-9eed-bd2563466abe"> </a>
+                  <code>http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-f78ce5be-f7d1-4f03-9eed-bd2563466abe">f78ce5be-f7d1-4f03-9eed-bd2563466abe</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;f78ce5be-f7d1-4f03-9eed-bd2563466abe&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;f78ce5be-f7d1-4f03-9eed-bd2563466abe&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/MoodCodes"/>
+        <version value="1.0.0"/>
+        <title value="Humør"/>
+        <status value="active"/>
+        <date value="2026-06-23T17:17:05+02:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DK"/>
+            <display value="Denmark"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:0c1e4724-f670-4b0f-b0bb-1a36c1a1d567"/>
+          <timestamp value="2026-06-23T17:17:58+02:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="da"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"/>
+            <code value="b9453f69-31a2-4a67-a453-569d7cd9691a"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"/>
+            <code value="18b6720d-8ae2-4abf-87e7-c068efb5346c"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"/>
+            <code value="f78ce5be-f7d1-4f03-9eed-bd2563466abe"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/PressureCodes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-MentalHealthCodes.html">codesystem Psykisk helbred koder v1.0.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (da)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes-be7fa5d8-ad1f-49c4-9bce-4370c81f6ac9"> </a>
+                  <code>http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-be7fa5d8-ad1f-49c4-9bce-4370c81f6ac9">be7fa5d8-ad1f-49c4-9bce-4370c81f6ac9</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;be7fa5d8-ad1f-49c4-9bce-4370c81f6ac9&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;be7fa5d8-ad1f-49c4-9bce-4370c81f6ac9&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes-7cffb548-c0ff-4521-9782-4d862d952885"> </a>
+                  <code>http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-7cffb548-c0ff-4521-9782-4d862d952885">7cffb548-c0ff-4521-9782-4d862d952885</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;7cffb548-c0ff-4521-9782-4d862d952885&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;7cffb548-c0ff-4521-9782-4d862d952885&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes-14293f45-25fc-48a1-b8be-918d44009e91"> </a>
+                  <code>http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-14293f45-25fc-48a1-b8be-918d44009e91">14293f45-25fc-48a1-b8be-918d44009e91</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;14293f45-25fc-48a1-b8be-918d44009e91&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;14293f45-25fc-48a1-b8be-918d44009e91&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/PressureCodes"/>
+        <version value="1.0.0"/>
+        <title value="Pres"/>
+        <status value="active"/>
+        <date value="2026-06-23T17:17:05+02:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DK"/>
+            <display value="Denmark"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:6d44d97d-8650-4bd5-84af-d21644c78075"/>
+          <timestamp value="2026-06-23T17:17:58+02:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="da"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"/>
+            <code value="be7fa5d8-ad1f-49c4-9bce-4370c81f6ac9"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"/>
+            <code value="7cffb548-c0ff-4521-9782-4d862d952885"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"/>
+            <code value="14293f45-25fc-48a1-b8be-918d44009e91"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/WorkSchoolExpectationCodes"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-MentalHealthCodes.html">codesystem Psykisk helbred koder v1.0.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes|1.0.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (da)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes-6eb62a15-8b69-4940-9276-704a0a1c0a60"> </a>
+                  <code>http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-6eb62a15-8b69-4940-9276-704a0a1c0a60">6eb62a15-8b69-4940-9276-704a0a1c0a60</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;6eb62a15-8b69-4940-9276-704a0a1c0a60&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;6eb62a15-8b69-4940-9276-704a0a1c0a60&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes-f1898e69-7602-4e4d-9dbb-43deb9a51c2b"> </a>
+                  <code>http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-f1898e69-7602-4e4d-9dbb-43deb9a51c2b">f1898e69-7602-4e4d-9dbb-43deb9a51c2b</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;f1898e69-7602-4e4d-9dbb-43deb9a51c2b&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;f1898e69-7602-4e4d-9dbb-43deb9a51c2b&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes-bd91207b-2ade-4d91-871f-8c64f32c9782"> </a>
+                  <code>http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-bd91207b-2ade-4d91-871f-8c64f32c9782">bd91207b-2ade-4d91-871f-8c64f32c9782</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;bd91207b-2ade-4d91-871f-8c64f32c9782&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;bd91207b-2ade-4d91-871f-8c64f32c9782&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/WorkSchoolExpectationCodes"/>
+        <version value="1.0.0"/>
+        <title value="Arbejde/skole forventning"/>
+        <status value="active"/>
+        <date value="2026-06-23T17:17:05+02:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DK"/>
+            <display value="Denmark"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:d9267edc-a899-449e-ae28-2ff9e47944d3"/>
+          <timestamp value="2026-06-23T17:17:58+02:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="da"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"/>
+            <code value="6eb62a15-8b69-4940-9276-704a0a1c0a60"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"/>
+            <code value="f1898e69-7602-4e4d-9dbb-43deb9a51c2b"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"/>
+            <code value="bd91207b-2ade-4d91-871f-8c64f32c9782"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

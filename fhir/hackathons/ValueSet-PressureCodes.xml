@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="PressureCodes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet PressureCodes</b></p><a name="PressureCodes"> </a><a name="hcPressureCodes"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-MentalHealthCodes.html"><code>http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;1.0.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-be7fa5d8-ad1f-49c4-9bce-4370c81f6ac9">be7fa5d8-ad1f-49c4-9bce-4370c81f6ac9</a></td><td>Jeg klarer mine opgaver uden at føle mig presset</td></tr><tr><td><a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-7cffb548-c0ff-4521-9782-4d862d952885">7cffb548-c0ff-4521-9782-4d862d952885</a></td><td>Jeg presser mig selv hele tiden for at klare mine daglige opgaver</td></tr><tr><td><a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-14293f45-25fc-48a1-b8be-918d44009e91">14293f45-25fc-48a1-b8be-918d44009e91</a></td><td>Jeg klarer ikke mine daglige opgaver</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/PressureCodes"/>
+  <version value="1.0.0"/>
+  <title value="Pres"/>
+  <status value="active"/>
+  <date value="2026-06-23T17:17:05+02:00"/>
+  <publisher value="HL7 Denmark"/>
+  <contact>
+    <name value="HL7 Denmark"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="dk-affiliate@hl7.dk"/>
+    </telecom>
+  </contact>
+  <description value="Svarmuligheder for pres i forbindelse med psykisk helbred questionnaire hackathon 2022"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"/>
+      <concept>
+        <code value="be7fa5d8-ad1f-49c4-9bce-4370c81f6ac9"/>
+        <display value="Jeg klarer mine opgaver uden at føle mig presset"/>
+      </concept>
+      <concept>
+        <code value="7cffb548-c0ff-4521-9782-4d862d952885"/>
+        <display value="Jeg presser mig selv hele tiden for at klare mine daglige opgaver"/>
+      </concept>
+      <concept>
+        <code value="14293f45-25fc-48a1-b8be-918d44009e91"/>
+        <display value="Jeg klarer ikke mine daglige opgaver"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

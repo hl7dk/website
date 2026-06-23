@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EpisodeOfCare xmlns="http://hl7.org/fhir">
+  <id value="EpisodeOfCareExample"/>
+  <meta>
+    <profile value="http://hl7.dk/fhir/hackathons/StructureDefinition/TelemedicineEpisodeOfCare"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: EpisodeOfCare EpisodeOfCareExample</b></p><a name="EpisodeOfCareExample"> </a><a name="hcEpisodeOfCareExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-TelemedicineEpisodeOfCare.html">TelemedicineEpisodeOfCare</a></p></div><p><b>status</b>: Active</p><p><b>patient</b>: <a href="Patient-PatientExample.html">Nancy Ann Berggren (official) Unknown, DoB Unknown ( urn:oid:1.2.208.176.1.2#DK Central Person Registry (CPR)#2512489996 (use: official, ))</a></p><p><b>period</b>: 2022-09-01 00:00:00+0200 --&gt; (ongoing)</p></div>
+  </text>
+  <status value="active"/>
+  <patient>
+    <reference value="Patient/PatientExample"/>
+  </patient>
+  <period>
+    <start value="2022-09-01T00:00:00+02:00"/>
+  </period>
+</EpisodeOfCare>

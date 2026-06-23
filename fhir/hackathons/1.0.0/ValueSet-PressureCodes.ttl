@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/hackathons/ValueSet/PressureCodes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PressureCodes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet PressureCodes</b></p><a name=\"PressureCodes\"> </a><a name=\"hcPressureCodes\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-MentalHealthCodes.html\"><code>http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-MentalHealthCodes.html#MentalHealthCodes-be7fa5d8-ad1f-49c4-9bce-4370c81f6ac9\">be7fa5d8-ad1f-49c4-9bce-4370c81f6ac9</a></td><td>Jeg klarer mine opgaver uden at føle mig presset</td></tr><tr><td><a href=\"CodeSystem-MentalHealthCodes.html#MentalHealthCodes-7cffb548-c0ff-4521-9782-4d862d952885\">7cffb548-c0ff-4521-9782-4d862d952885</a></td><td>Jeg presser mig selv hele tiden for at klare mine daglige opgaver</td></tr><tr><td><a href=\"CodeSystem-MentalHealthCodes.html#MentalHealthCodes-14293f45-25fc-48a1-b8be-918d44009e91\">14293f45-25fc-48a1-b8be-918d44009e91</a></td><td>Jeg klarer ikke mine daglige opgaver</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/PressureCodes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:title [ fhir:v "Pres"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-06-23T17:13:16+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Denmark" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "dk-affiliate@hl7.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Svarmuligheder for pres i forbindelse med psykisk helbred questionnaire hackathon 2022"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "be7fa5d8-ad1f-49c4-9bce-4370c81f6ac9" ] ;
+         fhir:display [ fhir:v "Jeg klarer mine opgaver uden at føle mig presset" ]
+       ] [
+         fhir:code [ fhir:v "7cffb548-c0ff-4521-9782-4d862d952885" ] ;
+         fhir:display [ fhir:v "Jeg presser mig selv hele tiden for at klare mine daglige opgaver" ]
+       ] [
+         fhir:code [ fhir:v "14293f45-25fc-48a1-b8be-918d44009e91" ] ;
+         fhir:display [ fhir:v "Jeg klarer ikke mine daglige opgaver" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

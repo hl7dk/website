@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="MentalHealthCodes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem MentalHealthCodes</b></p><a name="MentalHealthCodes"> </a><a name="hcMentalHealthCodes"> </a><p>This  code system <code>http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">60e95414-b97d-4197-af85-d5efc5628e86<a name="MentalHealthCodes-60e95414-b97d-4197-af85-d5efc5628e86"> </a></td><td>Jeg føler mig tæt på mine venner</td></tr><tr><td style="white-space:nowrap">93105f14-245e-4e66-8db0-86866978de58<a name="MentalHealthCodes-93105f14-245e-4e66-8db0-86866978de58"> </a></td><td>Jeg har venner, men de er ikke tætte mere</td></tr><tr><td style="white-space:nowrap">597872aa-a00e-4de3-b0a3-03dae9fd890a<a name="MentalHealthCodes-597872aa-a00e-4de3-b0a3-03dae9fd890a"> </a></td><td>Jeg har ingen venner</td></tr><tr><td style="white-space:nowrap">bf1232a5-f7fa-470f-9b22-58e850a047a9<a name="MentalHealthCodes-bf1232a5-f7fa-470f-9b22-58e850a047a9"> </a></td><td>Jeg vil gerne være sammen med andre</td></tr><tr><td style="white-space:nowrap">48405c96-5f94-4ccf-b9ef-44579da052a8<a name="MentalHealthCodes-48405c96-5f94-4ccf-b9ef-44579da052a8"> </a></td><td>Nogle få gange ugentligt har jeg lyst til at være sammen med andre</td></tr><tr><td style="white-space:nowrap">cbce7f88-408f-45bf-bfcf-5ea995476bb7<a name="MentalHealthCodes-cbce7f88-408f-45bf-bfcf-5ea995476bb7"> </a></td><td>Jeg har aldrig lyst til at være sammen med andre</td></tr><tr><td style="white-space:nowrap">8270c0ae-2ae5-4204-8c12-bd35e61b7498<a name="MentalHealthCodes-8270c0ae-2ae5-4204-8c12-bd35e61b7498"> </a></td><td>Jeg føler mig elsket</td></tr><tr><td style="white-space:nowrap">2620845c-4831-4291-a02c-b56b2c8908fe<a name="MentalHealthCodes-2620845c-4831-4291-a02c-b56b2c8908fe"> </a></td><td>Jeg føler mig nogle gange elsket</td></tr><tr><td style="white-space:nowrap">1a705260-cf44-4dd8-83fb-994baf656a6a<a name="MentalHealthCodes-1a705260-cf44-4dd8-83fb-994baf656a6a"> </a></td><td>Jeg føler mig ikke elsket</td></tr><tr><td style="white-space:nowrap">6eb62a15-8b69-4940-9276-704a0a1c0a60<a name="MentalHealthCodes-6eb62a15-8b69-4940-9276-704a0a1c0a60"> </a></td><td>Jeg gør det, der forventes</td></tr><tr><td style="white-space:nowrap">f1898e69-7602-4e4d-9dbb-43deb9a51c2b<a name="MentalHealthCodes-f1898e69-7602-4e4d-9dbb-43deb9a51c2b"> </a></td><td>Jeg gør det, der forventes det meste af tiden</td></tr><tr><td style="white-space:nowrap">bd91207b-2ade-4d91-871f-8c64f32c9782<a name="MentalHealthCodes-bd91207b-2ade-4d91-871f-8c64f32c9782"> </a></td><td>Jeg gør ikke det, der forventes</td></tr><tr><td style="white-space:nowrap">be7fa5d8-ad1f-49c4-9bce-4370c81f6ac9<a name="MentalHealthCodes-be7fa5d8-ad1f-49c4-9bce-4370c81f6ac9"> </a></td><td>Jeg klarer mine opgaver uden at føle mig presset</td></tr><tr><td style="white-space:nowrap">7cffb548-c0ff-4521-9782-4d862d952885<a name="MentalHealthCodes-7cffb548-c0ff-4521-9782-4d862d952885"> </a></td><td>Jeg presser mig selv hele tiden for at klare mine daglige opgaver</td></tr><tr><td style="white-space:nowrap">14293f45-25fc-48a1-b8be-918d44009e91<a name="MentalHealthCodes-14293f45-25fc-48a1-b8be-918d44009e91"> </a></td><td>Jeg klarer ikke mine daglige opgaver</td></tr><tr><td style="white-space:nowrap">a5341a86-677d-4d53-84a1-498dc1a4ed42<a name="MentalHealthCodes-a5341a86-677d-4d53-84a1-498dc1a4ed42"> </a></td><td>Jeg føler mig klar og frisk de fleste dage</td></tr><tr><td style="white-space:nowrap">ea31af7a-cf51-4b53-b4d2-bef393b42946<a name="MentalHealthCodes-ea31af7a-cf51-4b53-b4d2-bef393b42946"> </a></td><td>Jeg har følt mig uoplagt et par gange om ugen</td></tr><tr><td style="white-space:nowrap">6f4db47c-cf6a-44c4-b434-aa6edec6e064<a name="MentalHealthCodes-6f4db47c-cf6a-44c4-b434-aa6edec6e064"> </a></td><td>Jeg er hele tiden træt</td></tr><tr><td style="white-space:nowrap">b9453f69-31a2-4a67-a453-569d7cd9691a<a name="MentalHealthCodes-b9453f69-31a2-4a67-a453-569d7cd9691a"> </a></td><td>Jeg er glad</td></tr><tr><td style="white-space:nowrap">18b6720d-8ae2-4abf-87e7-c068efb5346c<a name="MentalHealthCodes-18b6720d-8ae2-4abf-87e7-c068efb5346c"> </a></td><td>Jeg er trist det meste af tiden</td></tr><tr><td style="white-space:nowrap">f78ce5be-f7d1-4f03-9eed-bd2563466abe<a name="MentalHealthCodes-f78ce5be-f7d1-4f03-9eed-bd2563466abe"> </a></td><td>Jeg er trist hele tiden og har trang til at græde hver dag</td></tr></table></div>
+  </text>
+  <url value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"/>
+  <version value="1.0.0"/>
+  <title value="Psykisk helbred koder"/>
+  <status value="active"/>
+  <date value="2022-06-17T10:13:23+00:00"/>
+  <publisher value="HL7 Denmark"/>
+  <contact>
+    <name value="HL7 Denmark"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="dk-affiliate@hl7.dk"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem indeholdende valgmuligheder i forbindelse med psykisk helbred spørgeskema til hackathon 2022"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <concept>
+    <code value="60e95414-b97d-4197-af85-d5efc5628e86"/>
+    <display value="Jeg føler mig tæt på mine venner"/>
+  </concept>
+  <concept>
+    <code value="93105f14-245e-4e66-8db0-86866978de58"/>
+    <display value="Jeg har venner, men de er ikke tætte mere"/>
+  </concept>
+  <concept>
+    <code value="597872aa-a00e-4de3-b0a3-03dae9fd890a"/>
+    <display value="Jeg har ingen venner"/>
+  </concept>
+  <concept>
+    <code value="bf1232a5-f7fa-470f-9b22-58e850a047a9"/>
+    <display value="Jeg vil gerne være sammen med andre"/>
+  </concept>
+  <concept>
+    <code value="48405c96-5f94-4ccf-b9ef-44579da052a8"/>
+    <display value="Nogle få gange ugentligt har jeg lyst til at være sammen med andre"/>
+  </concept>
+  <concept>
+    <code value="cbce7f88-408f-45bf-bfcf-5ea995476bb7"/>
+    <display value="Jeg har aldrig lyst til at være sammen med andre"/>
+  </concept>
+  <concept>
+    <code value="8270c0ae-2ae5-4204-8c12-bd35e61b7498"/>
+    <display value="Jeg føler mig elsket"/>
+  </concept>
+  <concept>
+    <code value="2620845c-4831-4291-a02c-b56b2c8908fe"/>
+    <display value="Jeg føler mig nogle gange elsket"/>
+  </concept>
+  <concept>
+    <code value="1a705260-cf44-4dd8-83fb-994baf656a6a"/>
+    <display value="Jeg føler mig ikke elsket"/>
+  </concept>
+  <concept>
+    <code value="6eb62a15-8b69-4940-9276-704a0a1c0a60"/>
+    <display value="Jeg gør det, der forventes"/>
+  </concept>
+  <concept>
+    <code value="f1898e69-7602-4e4d-9dbb-43deb9a51c2b"/>
+    <display value="Jeg gør det, der forventes det meste af tiden"/>
+  </concept>
+  <concept>
+    <code value="bd91207b-2ade-4d91-871f-8c64f32c9782"/>
+    <display value="Jeg gør ikke det, der forventes"/>
+  </concept>
+  <concept>
+    <code value="be7fa5d8-ad1f-49c4-9bce-4370c81f6ac9"/>
+    <display value="Jeg klarer mine opgaver uden at føle mig presset"/>
+  </concept>
+  <concept>
+    <code value="7cffb548-c0ff-4521-9782-4d862d952885"/>
+    <display value="Jeg presser mig selv hele tiden for at klare mine daglige opgaver"/>
+  </concept>
+  <concept>
+    <code value="14293f45-25fc-48a1-b8be-918d44009e91"/>
+    <display value="Jeg klarer ikke mine daglige opgaver"/>
+  </concept>
+  <concept>
+    <code value="a5341a86-677d-4d53-84a1-498dc1a4ed42"/>
+    <display value="Jeg føler mig klar og frisk de fleste dage"/>
+  </concept>
+  <concept>
+    <code value="ea31af7a-cf51-4b53-b4d2-bef393b42946"/>
+    <display value="Jeg har følt mig uoplagt et par gange om ugen"/>
+  </concept>
+  <concept>
+    <code value="6f4db47c-cf6a-44c4-b434-aa6edec6e064"/>
+    <display value="Jeg er hele tiden træt"/>
+  </concept>
+  <concept>
+    <code value="b9453f69-31a2-4a67-a453-569d7cd9691a"/>
+    <display value="Jeg er glad"/>
+  </concept>
+  <concept>
+    <code value="18b6720d-8ae2-4abf-87e7-c068efb5346c"/>
+    <display value="Jeg er trist det meste af tiden"/>
+  </concept>
+  <concept>
+    <code value="f78ce5be-f7d1-4f03-9eed-bd2563466abe"/>
+    <display value="Jeg er trist hele tiden og har trang til at græde hver dag"/>
+  </concept>
+</CodeSystem>

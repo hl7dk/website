@@ -1,0 +1,117 @@
+[{
+  "id" : "MentalHealthCodes",
+  "type" : "CodeSystem",
+  "url" : "http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes",
+  "version" : "1.0.0"
+},
+{
+  "id" : "DesireToBeWithOthersCodes",
+  "type" : "ValueSet",
+  "url" : "http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/DesireToBeWithOthersCodes",
+  "version" : "1.0.0"
+},
+{
+  "id" : "EnergyCodes",
+  "type" : "ValueSet",
+  "url" : "http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/EnergyCodes",
+  "version" : "1.0.0"
+},
+{
+  "id" : "FriendshipCodes",
+  "type" : "ValueSet",
+  "url" : "http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/FriendshipCodes",
+  "version" : "1.0.0"
+},
+{
+  "id" : "LoveCodes",
+  "type" : "ValueSet",
+  "url" : "http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/LoveCodes",
+  "version" : "1.0.0"
+},
+{
+  "id" : "MoodCodes",
+  "type" : "ValueSet",
+  "url" : "http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/MoodCodes",
+  "version" : "1.0.0"
+},
+{
+  "id" : "PressureCodes",
+  "type" : "ValueSet",
+  "url" : "http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/PressureCodes",
+  "version" : "1.0.0"
+},
+{
+  "id" : "WorkSchoolExpectationCodes",
+  "type" : "ValueSet",
+  "url" : "http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/WorkSchoolExpectationCodes",
+  "version" : "1.0.0"
+},
+{
+  "id" : "hl7.fhir.dk.hackathons",
+  "type" : "ImplementationGuide",
+  "url" : "http://hl7.dk/fhir/hackathons/ImplementationGuide/hl7.fhir.dk.hackathons",
+  "version" : "1.0.0",
+  "name" : "DKHackathons"
+},
+{
+  "id" : "PhysicalActivityObservation",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.dk/fhir/hackathons/StructureDefinition/PhysicalActivityObservation",
+  "version" : "1.0.0",
+  "name" : "PhysicalActivityObservation"
+},
+{
+  "id" : "SleepObservation",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.dk/fhir/hackathons/StructureDefinition/SleepObservation",
+  "version" : "1.0.0",
+  "name" : "SleepObservation"
+},
+{
+  "id" : "TelemedicineEpisodeOfCare",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.dk/fhir/hackathons/StructureDefinition/TelemedicineEpisodeOfCare",
+  "version" : "1.0.0",
+  "name" : "TelemedicineEpisodeOfCare"
+},
+{
+  "id" : "TelemedicinePatient",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.dk/fhir/hackathons/StructureDefinition/TelemedicinePatient",
+  "version" : "1.0.0",
+  "name" : "TelemedicinePatient"
+},
+{
+  "id" : "TelemedicineQuestionnaire",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.dk/fhir/hackathons/StructureDefinition/TelemedicineQuestionnaire",
+  "version" : "1.0.0",
+  "name" : "TelemedicineQuestionnaire"
+},
+{
+  "id" : "TelemedicineQuestionnaireResponse",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.dk/fhir/hackathons/StructureDefinition/TelemedicineQuestionnaireResponse",
+  "version" : "1.0.0",
+  "name" : "TelemedicineQuestionnaireResponse"
+},
+{
+  "id" : "ActivityCodes",
+  "type" : "ValueSet",
+  "url" : "http://hl7.dk/fhir/hackathons/ValueSet/ActivityCodes",
+  "version" : "1.0.0",
+  "name" : "ActivityCodes"
+},
+{
+  "id" : "ObservationCodesSCT",
+  "type" : "ValueSet",
+  "url" : "http://hl7.dk/fhir/hackathons/ValueSet/ObservationCodesSCT",
+  "version" : "1.0.0",
+  "name" : "ObservationCodesSCT"
+},
+{
+  "id" : "MentalHealthQuestionnaire",
+  "type" : "Questionnaire",
+  "url" : "http://hl7.org/fhir/Questionnaire/MentalHealthQuestionnaire",
+  "version" : "1.0.0"
+}]

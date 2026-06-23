@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ActivityCodes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ActivityCodes</b></p><a name="ActivityCodes"> </a><a name="hcActivityCodes"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a 418305009 (Self-propelled locomotion activity (observable entity))</li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a 256235009 (Exercise)</li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/129016000">129016000</a></td><td/></tr></table></li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a 68130003 (Physical activity)</li></ul></div>
+  </text>
+  <url value="http://hl7.dk/fhir/hackathons/ValueSet/ActivityCodes"/>
+  <version value="1.0.0"/>
+  <name value="ActivityCodes"/>
+  <title value="ObservationCodes"/>
+  <status value="active"/>
+  <date value="2026-06-23T17:13:16+02:00"/>
+  <publisher value="HL7 Denmark"/>
+  <contact>
+    <name value="HL7 Denmark"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="dk-affiliate@hl7.dk"/>
+    </telecom>
+  </contact>
+  <description value="Observation codes value set"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="418305009"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="256235009"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="129016000"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="68130003"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,54 @@
+# hl7.fhir.dk.hackathons#1.0.0: Danish Hackathon 2026
+
+## Pages
+
+* [Home](index.md)
+* [Artifacts Summary](artifacts.md)
+* [Track 2: Telemedicine](track-telemedicine.md)
+* [Results](results.md)
+* [Track 3: To be announced](track-3.md)
+* [Preparation](preparation.md)
+* [Track 1: Agentic Patient Access](track-agentic-patient-access.md)
+
+## Resources
+
+### CodeSystems
+
+* [Psykisk helbred koder](CodeSystem-MentalHealthCodes.md)
+
+### ValueSets
+
+* [ObservationCodes](ValueSet-ActivityCodes.md)
+* [Lyst til at være sammen med andre](ValueSet-DesireToBeWithOthersCodes.md)
+* [Oplagthed](ValueSet-EnergyCodes.md)
+* [Venskaber](ValueSet-FriendshipCodes.md)
+* [Kærlighed](ValueSet-LoveCodes.md)
+* [Humør](ValueSet-MoodCodes.md)
+* [ObservationCodesSCT](ValueSet-ObservationCodesSCT.md)
+* [Pres](ValueSet-PressureCodes.md)
+* [Arbejde/skole forventning](ValueSet-WorkSchoolExpectationCodes.md)
+
+### Resource Profiles
+
+* [PhysicalActivityObservation](StructureDefinition-PhysicalActivityObservation.md)
+* [SleepObservation](StructureDefinition-SleepObservation.md)
+* [TelemedicineEpisodeOfCare](StructureDefinition-TelemedicineEpisodeOfCare.md)
+* [TelemedicinePatient](StructureDefinition-TelemedicinePatient.md)
+* [TelemedicineQuestionnaire](StructureDefinition-TelemedicineQuestionnaire.md)
+* [TelemedicineQuestionnaireResponse](StructureDefinition-TelemedicineQuestionnaireResponse.md)
+
+### ImplementationGuides
+
+* [Danish Hackathon 2026](index.md)
+
+### Questionnaires
+
+* [Psykisk helbred questionnaire](Questionnaire-MentalHealthQuestionnaire.md)
+
+### Examples
+
+* [EpisodeOfCareExample (EpisodeOfCare)](EpisodeOfCare-EpisodeOfCareExample.md)
+* [PhysicalActivityObservationExample (Observation)](Observation-PhysicalActivityObservationExample.md)
+* [SleepObservationExample (Observation)](Observation-SleepObservationExample.md)
+* [PatientExample (Patient)](Patient-PatientExample.md)
+* [TelemedicineQuestionnaireResponseExample (QuestionnaireResponse)](QuestionnaireResponse-TelemedicineQuestionnaireResponseExample.md)

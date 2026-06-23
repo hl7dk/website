@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/hackathons/ValueSet/LoveCodes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "LoveCodes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet LoveCodes</b></p><a name=\"LoveCodes\"> </a><a name=\"hcLoveCodes\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-MentalHealthCodes.html\"><code>http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?1.0.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-MentalHealthCodes.html#MentalHealthCodes-8270c0ae-2ae5-4204-8c12-bd35e61b7498\">8270c0ae-2ae5-4204-8c12-bd35e61b7498</a></td><td>Jeg føler mig elsket</td></tr><tr><td><a href=\"CodeSystem-MentalHealthCodes.html#MentalHealthCodes-2620845c-4831-4291-a02c-b56b2c8908fe\">2620845c-4831-4291-a02c-b56b2c8908fe</a></td><td>Jeg føler mig nogle gange elsket</td></tr><tr><td><a href=\"CodeSystem-MentalHealthCodes.html#MentalHealthCodes-1a705260-cf44-4dd8-83fb-994baf656a6a\">1a705260-cf44-4dd8-83fb-994baf656a6a</a></td><td>Jeg føler mig ikke elsket</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/LoveCodes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:title [ fhir:v "Kærlighed"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-06-23T17:13:16+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Denmark"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Denmark" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.dk" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "dk-affiliate@hl7.dk" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Svarmuligheder for kærlighed i forbindelse med psykisk helbred questionnaire hackathon 2022"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DK" ] ;
+       fhir:display [ fhir:v "Denmark" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "8270c0ae-2ae5-4204-8c12-bd35e61b7498" ] ;
+         fhir:display [ fhir:v "Jeg føler mig elsket" ]
+       ] [
+         fhir:code [ fhir:v "2620845c-4831-4291-a02c-b56b2c8908fe" ] ;
+         fhir:display [ fhir:v "Jeg føler mig nogle gange elsket" ]
+       ] [
+         fhir:code [ fhir:v "1a705260-cf44-4dd8-83fb-994baf656a6a" ] ;
+         fhir:display [ fhir:v "Jeg føler mig ikke elsket" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

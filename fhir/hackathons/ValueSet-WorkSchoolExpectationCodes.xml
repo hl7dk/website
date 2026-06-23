@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="WorkSchoolExpectationCodes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet WorkSchoolExpectationCodes</b></p><a name="WorkSchoolExpectationCodes"> </a><a name="hcWorkSchoolExpectationCodes"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-MentalHealthCodes.html"><code>http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;1.0.0</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-6eb62a15-8b69-4940-9276-704a0a1c0a60">6eb62a15-8b69-4940-9276-704a0a1c0a60</a></td><td>Jeg gør det, der forventes</td></tr><tr><td><a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-f1898e69-7602-4e4d-9dbb-43deb9a51c2b">f1898e69-7602-4e4d-9dbb-43deb9a51c2b</a></td><td>Jeg gør det, der forventes det meste af tiden</td></tr><tr><td><a href="CodeSystem-MentalHealthCodes.html#MentalHealthCodes-bd91207b-2ade-4d91-871f-8c64f32c9782">bd91207b-2ade-4d91-871f-8c64f32c9782</a></td><td>Jeg gør ikke det, der forventes</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/WorkSchoolExpectationCodes"/>
+  <version value="1.0.0"/>
+  <title value="Arbejde/skole forventning"/>
+  <status value="active"/>
+  <date value="2026-06-23T17:17:05+02:00"/>
+  <publisher value="HL7 Denmark"/>
+  <contact>
+    <name value="HL7 Denmark"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="dk-affiliate@hl7.dk"/>
+    </telecom>
+  </contact>
+  <description value="Svarmuligheder for arbejde/skole forventning i forbindelse med psykisk helbred questionnaire hackathon 2022"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DK"/>
+      <display value="Denmark"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.dk/fhir/Hackathon-Sep-2022/CodeSystem/MentalHealthCodes"/>
+      <concept>
+        <code value="6eb62a15-8b69-4940-9276-704a0a1c0a60"/>
+        <display value="Jeg gør det, der forventes"/>
+      </concept>
+      <concept>
+        <code value="f1898e69-7602-4e4d-9dbb-43deb9a51c2b"/>
+        <display value="Jeg gør det, der forventes det meste af tiden"/>
+      </concept>
+      <concept>
+        <code value="bd91207b-2ade-4d91-871f-8c64f32c9782"/>
+        <display value="Jeg gør ikke det, der forventes"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

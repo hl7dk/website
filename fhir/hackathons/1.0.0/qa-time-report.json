@@ -1,0 +1,1065 @@
+{
+  "date" : "Tue, 23 Jun, 2026 17:13:16 +0200",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [{
+    "name" : "/fsh-generated/resources/ImplementationGuide-hl7.fhir.dk.hackathons.json",
+    "size" : 8639,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 86,
+      "length" : 5
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 86,
+      "length" : 8
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 86,
+      "length" : 62
+    },
+    {
+      "activity" : "validate",
+      "start" : 110,
+      "length" : 7183
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 117,
+      "length" : 2
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 117,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 121,
+      "length" : 64
+    },
+    {
+      "activity" : "generate2",
+      "start" : 126,
+      "length" : 63
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 156,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/EpisodeOfCare-EpisodeOfCareExample.json",
+    "size" : 338,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 86,
+      "length" : 4
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 86,
+      "length" : 3
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 86,
+      "length" : 8824
+    },
+    {
+      "activity" : "validate",
+      "start" : 117,
+      "length" : 10
+    },
+    {
+      "activity" : "generate1",
+      "start" : 121,
+      "length" : 9
+    },
+    {
+      "activity" : "generate2",
+      "start" : 126,
+      "length" : 15
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-PhysicalActivityObservationExample.json",
+    "size" : 840,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 86,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 95,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 117,
+      "length" : 536
+    },
+    {
+      "activity" : "generate1",
+      "start" : 122,
+      "length" : 9
+    },
+    {
+      "activity" : "generate2",
+      "start" : 126,
+      "length" : 23
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-SleepObservationExample.json",
+    "size" : 829,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 86,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 95,
+      "length" : 1134
+    },
+    {
+      "activity" : "validate",
+      "start" : 118,
+      "length" : 12
+    },
+    {
+      "activity" : "generate1",
+      "start" : 122,
+      "length" : 11
+    },
+    {
+      "activity" : "generate2",
+      "start" : 126,
+      "length" : 15
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Patient-PatientExample.json",
+    "size" : 1564,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 86,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 96,
+      "length" : 9
+    },
+    {
+      "activity" : "validate",
+      "start" : 118,
+      "length" : 1411
+    },
+    {
+      "activity" : "generate1",
+      "start" : 122,
+      "length" : 10
+    },
+    {
+      "activity" : "generate2",
+      "start" : 126,
+      "length" : 18
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/QuestionnaireResponse-TelemedicineQuestionnaireResponseExample.json",
+    "size" : 3821,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 86,
+      "length" : 2
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 86,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 96,
+      "length" : 108
+    },
+    {
+      "activity" : "validate",
+      "start" : 119,
+      "length" : 17
+    },
+    {
+      "activity" : "generate1",
+      "start" : 122,
+      "length" : 51
+    },
+    {
+      "activity" : "generate2",
+      "start" : 126,
+      "length" : 24
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-PhysicalActivityObservation.json",
+    "size" : 3018,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 86,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 86,
+      "length" : 4
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 86,
+      "length" : 25
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 97,
+      "length" : 42
+    },
+    {
+      "activity" : "validate",
+      "start" : 108,
+      "length" : 388
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 117,
+      "length" : 1
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 117,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 117,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 122,
+      "length" : 222
+    },
+    {
+      "activity" : "generate2",
+      "start" : 126,
+      "length" : 3643
+    },
+    {
+      "activity" : "generate2",
+      "start" : 134,
+      "length" : 1558
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 156,
+      "length" : 6
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 167,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-SleepObservation.json",
+    "size" : 3018,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 86,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 86,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 86,
+      "length" : 24
+    },
+    {
+      "activity" : "loadDepInfo",
+      "start" : 86,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 97,
+      "length" : 26
+    },
+    {
+      "activity" : "validate",
+      "start" : 108,
+      "length" : 990
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 117,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 117,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 122,
+      "length" : 224
+    },
+    {
+      "activity" : "generate2",
+      "start" : 130,
+      "length" : 1785
+    },
+    {
+      "activity" : "generate2",
+      "start" : 135,
+      "length" : 192
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 156,
+      "length" : 5
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 167,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-TelemedicineEpisodeOfCare.json",
+    "size" : 996,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 86,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 86,
+      "length" : 11
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 97,
+      "length" : 7
+    },
+    {
+      "activity" : "validate",
+      "start" : 109,
+      "length" : 126
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 117,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 122,
+      "length" : 105
+    },
+    {
+      "activity" : "generate2",
+      "start" : 132,
+      "length" : 166
+    },
+    {
+      "activity" : "generate2",
+      "start" : 135,
+      "length" : 85
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 156,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-TelemedicinePatient.json",
+    "size" : 651,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 86,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 86,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 86,
+      "length" : 23
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 97,
+      "length" : 19
+    },
+    {
+      "activity" : "validate",
+      "start" : 109,
+      "length" : 341
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 117,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 117,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 122,
+      "length" : 221
+    },
+    {
+      "activity" : "generate2",
+      "start" : 132,
+      "length" : 280
+    },
+    {
+      "activity" : "generate2",
+      "start" : 136,
+      "length" : 233
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 156,
+      "length" : 5
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 167,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-TelemedicineQuestionnaire.json",
+    "size" : 651,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 86,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 86,
+      "length" : 1
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 86,
+      "length" : 19
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 97,
+      "length" : 19
+    },
+    {
+      "activity" : "validate",
+      "start" : 110,
+      "length" : 225
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 117,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 122,
+      "length" : 213
+    },
+    {
+      "activity" : "generate2",
+      "start" : 132,
+      "length" : 234
+    },
+    {
+      "activity" : "generate2",
+      "start" : 136,
+      "length" : 167
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 156,
+      "length" : 4
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-TelemedicineQuestionnaireResponse.json",
+    "size" : 2294,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 86,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 86,
+      "length" : 11
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 97,
+      "length" : 7
+    },
+    {
+      "activity" : "validate",
+      "start" : 110,
+      "length" : 199
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 117,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 123,
+      "length" : 171
+    },
+    {
+      "activity" : "generate2",
+      "start" : 133,
+      "length" : 169
+    },
+    {
+      "activity" : "generate2",
+      "start" : 136,
+      "length" : 88
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 156,
+      "length" : 3
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 167,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-ActivityCodes.json",
+    "size" : 1067,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 86,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 86,
+      "length" : 4
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 97,
+      "length" : 3581
+    },
+    {
+      "activity" : "validate",
+      "start" : 104,
+      "length" : 2773
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 117,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 123,
+      "length" : 12
+    },
+    {
+      "activity" : "generate2",
+      "start" : 133,
+      "length" : 62
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-ObservationCodesSCT.json",
+    "size" : 670,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 86,
+      "length" : 2
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 86,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 100,
+      "length" : 644
+    },
+    {
+      "activity" : "validate",
+      "start" : 107,
+      "length" : 1313
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 117,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 123,
+      "length" : 9
+    },
+    {
+      "activity" : "generate2",
+      "start" : 133,
+      "length" : 671
+    }]
+  },
+  {
+    "name" : "input/profiles/MentalHealthQuestionnaire.json",
+    "size" : 1949,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 86,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 86,
+      "length" : 8
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 86,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 101,
+      "length" : 18
+    },
+    {
+      "activity" : "validate",
+      "start" : 117,
+      "length" : 37
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 117,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 123,
+      "length" : 52
+    },
+    {
+      "activity" : "generate2",
+      "start" : 133,
+      "length" : 32
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 156,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "input/vocabulary/CodeSystem-MentalHealthCodes.json",
+    "size" : 2834,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 86,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 86,
+      "length" : 6
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 101,
+      "length" : 4
+    },
+    {
+      "activity" : "validate",
+      "start" : 101,
+      "length" : 2844
+    },
+    {
+      "activity" : "generate1",
+      "start" : 123,
+      "length" : 20
+    },
+    {
+      "activity" : "generate2",
+      "start" : 133,
+      "length" : 39
+    }]
+  },
+  {
+    "name" : "input/vocabulary/ValueSet-DesireToBeWithOthersCodes.json",
+    "size" : 929,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 86,
+      "length" : 4
+    },
+    {
+      "activity" : "load",
+      "start" : 86,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 101,
+      "length" : 5
+    },
+    {
+      "activity" : "validate",
+      "start" : 108,
+      "length" : 29
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 117,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 123,
+      "length" : 11
+    },
+    {
+      "activity" : "generate2",
+      "start" : 133,
+      "length" : 36
+    }]
+  },
+  {
+    "name" : "input/vocabulary/ValueSet-EnergyCodes.json",
+    "size" : 810,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 86,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 86,
+      "length" : 3
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 101,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 108,
+      "length" : 12
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 117,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 123,
+      "length" : 11
+    },
+    {
+      "activity" : "generate2",
+      "start" : 134,
+      "length" : 31
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 156,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "input/vocabulary/ValueSet-FriendshipCodes.json",
+    "size" : 803,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 86,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 86,
+      "length" : 3
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 101,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 108,
+      "length" : 11
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 117,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 123,
+      "length" : 12
+    },
+    {
+      "activity" : "generate2",
+      "start" : 134,
+      "length" : 30
+    }]
+  },
+  {
+    "name" : "input/vocabulary/ValueSet-LoveCodes.json",
+    "size" : 776,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 86,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 101,
+      "length" : 21
+    },
+    {
+      "activity" : "validate",
+      "start" : 108,
+      "length" : 9
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 117,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 117,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 123,
+      "length" : 14
+    },
+    {
+      "activity" : "generate2",
+      "start" : 134,
+      "length" : 28
+    }]
+  },
+  {
+    "name" : "input/vocabulary/ValueSet-MoodCodes.json",
+    "size" : 789,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 86,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 86,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 101,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 108,
+      "length" : 8
+    },
+    {
+      "activity" : "generate1",
+      "start" : 123,
+      "length" : 11
+    },
+    {
+      "activity" : "generate2",
+      "start" : 134,
+      "length" : 30
+    }]
+  },
+  {
+    "name" : "input/vocabulary/ValueSet-PressureCodes.json",
+    "size" : 842,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 86,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 86,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 86,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 101,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 108,
+      "length" : 7
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 117,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 123,
+      "length" : 10
+    },
+    {
+      "activity" : "generate2",
+      "start" : 134,
+      "length" : 32
+    }]
+  },
+  {
+    "name" : "input/vocabulary/ValueSet-WorkSchoolExpectationCodes.json",
+    "size" : 865,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 86,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 86,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 101,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 108,
+      "length" : 6
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 117,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 123,
+      "length" : 11
+    },
+    {
+      "activity" : "generate2",
+      "start" : 134,
+      "length" : 33
+    }]
+  },
+  {
+    "name" : "/fsh-generated/includes/fsh-link-references.md",
+    "size" : 1429
+  },
+  {
+    "name" : "/fsh-generated/includes/menu.xml",
+    "size" : 1373
+  },
+  {
+    "name" : "/input/pagecontent/preparation.md",
+    "size" : 1269
+  },
+  {
+    "name" : "/input/pagecontent/track-telemedicine.md",
+    "size" : 7512,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 134,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/track-3.md",
+    "size" : 131
+  },
+  {
+    "name" : "/input/pagecontent/results.md",
+    "size" : 516
+  },
+  {
+    "name" : "/input/pagecontent/index.md",
+    "size" : 2145
+  },
+  {
+    "name" : "/input/pagecontent/track-agentic-patient-access.md",
+    "size" : 22005,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 134,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/template/config",
+    "size" : 0
+  },
+  {
+    "name" : "/template/config/_config.yml",
+    "size" : 140
+  },
+  {
+    "name" : "/temp/pages/_includes/artifacts.xml",
+    "size" : 10965,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 134,
+      "length" : 1
+    }]
+  }]
+}

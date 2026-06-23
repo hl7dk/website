@@ -1,0 +1,10 @@
+URL,Version,Status,OIDs,Name,Title,Description,Uses,Used,Sources
+http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/DesireToBeWithOthersCodes,1.0.0,active,,,Lyst til at være sammen med andre,"Svarmuligheder for lyst til at være sammen med andre i forbindelse med psykisk helbred questionnaire hackathon 2022","Questionnaire/MentalHealthQuestionnaire","Internal"
+http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/EnergyCodes,1.0.0,active,,,Oplagthed,"Svarmuligheder for oplagthed i forbindelse med psykisk helbred questionnaire hackathon 2022","Questionnaire/MentalHealthQuestionnaire","Internal"
+http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/FriendshipCodes,1.0.0,active,,,Venskaber,"Svarmuligheder for venskaber i forbindelse med psykisk helbred questionnaire hackathon 2022","Questionnaire/MentalHealthQuestionnaire","Internal"
+http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/LoveCodes,1.0.0,active,,,Kærlighed,"Svarmuligheder for kærlighed i forbindelse med psykisk helbred questionnaire hackathon 2022","Questionnaire/MentalHealthQuestionnaire","Internal"
+http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/MoodCodes,1.0.0,active,,,Humør,"Svarmuligheder for humør i forbindelse med psykisk helbred questionnaire hackathon 2022","Questionnaire/MentalHealthQuestionnaire","Internal"
+http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/PressureCodes,1.0.0,active,,,Pres,"Svarmuligheder for pres i forbindelse med psykisk helbred questionnaire hackathon 2022","Questionnaire/MentalHealthQuestionnaire","Internal"
+http://hl7.dk/fhir/Hackathon-Sep-2022/ValueSet/WorkSchoolExpectationCodes,1.0.0,active,,,Arbejde/skole forventning,"Svarmuligheder for arbejde/skole forventning i forbindelse med psykisk helbred questionnaire hackathon 2022","Questionnaire/MentalHealthQuestionnaire","Internal"
+http://hl7.dk/fhir/hackathons/ValueSet/ActivityCodes,1.0.0,active,,ActivityCodes,ObservationCodes,"Observation codes value set","StructureDefinition/PhysicalActivityObservation","SCT"
+http://hl7.dk/fhir/hackathons/ValueSet/ObservationCodesSCT,1.0.0,active,,ObservationCodesSCT,ObservationCodesSCT,"Observation codes value set",,"SCT"
